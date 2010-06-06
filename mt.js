@@ -262,9 +262,6 @@ function mtCommentSessionVerify(app_user) {
         mtClearUser();
         mtFireEvent('usersignin');
 
-        mtShow('comments-form');
-        mtHide('comments-open-footer');
-
     }
 }
 
@@ -280,8 +277,6 @@ function mtUserOnLoad() {
             if (mtCaptchaVisible)
                 mtHide('comments-open-captcha');
         } else {
-
-            mtHide('comments-form');
 
         }
         if ( u && u.is_banned )
@@ -417,7 +412,7 @@ function mtSignOutOnClick() {
 
 function mtShowGreeting() {
 
-    var reg_reqd = true;
+    var reg_reqd = false;
 
     var cf = document['comments_form'];
     if (!cf) return;
