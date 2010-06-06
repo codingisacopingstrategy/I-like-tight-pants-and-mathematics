@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>I like tight pants and mathematics</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
+    <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/atom.xml" />
+    <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
+    <updated>2010-06-06T00:41:31Z</updated>
+    
+    <generator uri="http://www.sixapart.com/movabletype/">Movable Type 4.261</generator>
+
+<entry>
+    <title>The perspective of content</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the_perspective_of_content.html" />
+    <id>tag:i.liketightpants.net,2010:/and//1.9</id>
+
+    <published>2010-04-27T22:03:21Z</published>
+    <updated>2010-06-06T00:41:31Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>Eric</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-US" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p><img src="http://schr.fr/cntnt/fromacontentperspective.png" style="width:600px;height:1615px;" alt="a hand drawn diagram in blue, in three parts." /></p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>The problem with web apps</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the_problem_with_web_apps.html" />
+    <id>tag:i.liketightpants.net,2010:/and//1.8</id>
+
+    <published>2010-04-07T18:10:09Z</published>
+    <updated>2010-06-06T00:43:44Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>Eric</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-US" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p><img src="/and/assets/called/theproblemwithwebapps__1.png" /><br />
+<img src="/and/assets/called/theproblemwithwebapps__2.png" />
+</p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Juxtapositions</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/juxtapositions.html" />
+    <id>tag:i.liketightpants.net,2010:/and//1.7</id>
+
+    <published>2010-03-14T20:32:48Z</published>
+    <updated>2010-05-29T15:59:53Z</updated>
+
+    <summary> Maybe I was emerging into the era of post-modernism but I put it down far more to ADD &#8211; Attention Deficiency Disorder [laughs]. I just think that I couldn&apos;t concentrate. I never have been able to concentrate on one...</summary>
+    <author>
+        <name>Eric</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-US" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[ <blockquote><p>Maybe I was emerging into the era of post-modernism but I put it down far more to ADD &#8211; Attention Deficiency Disorder [laughs].  I just think that I couldn't concentrate. I never have been able to concentrate on one thing for very long with getting kind of itchy. I did always feel that there was some kind of area in rock that I could work comfortably using and working with all of my enthusiasms. I am a guy of enthusiasms. I get terribly excited about things that are new to me and it just seemed a perfectly natural for me at the time to put together all these odds and ends of art and culture that I really adore.</p></blockquote>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Heroes</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/heroes.html" />
+    <id>tag:i.liketightpants.net,2010:/and//1.2</id>
+
+    <published>2010-03-08T19:06:05Z</published>
+    <updated>2010-05-29T14:22:21Z</updated>
+
+    <summary> taken in my studio by Johan Nieuwenhuize...</summary>
+    <author>
+        <name>Eric</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-US" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[ <p><img src="http://i.liketightpants.net/and/assets/called/bowie.jpg" alt="You see a picture of a small poster stuck behind some files. It says 'Guided by Heroes' and it shows David Bowie." /></p>
+<p>taken in my studio by <a href="http://johannieuwenhuize.nl/">Johan Nieuwenhuize</a></p>]]>
+        
+    </content>
+</entry>
+
+</feed>
+
