@@ -1,0 +1,22 @@
+body {
+  font-family: free sans, nimbus sans, helvetica, arial, sans-serif;
+  line-height: 140%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a, a:active, a.visited {
+  color: #0000ff;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+li {
+  list-style: none;
+}
