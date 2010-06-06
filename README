@@ -1,0 +1,11 @@
+This is a blog. On git to enable collaboration between contributors.
+
+Movable type handles comments etc. We hope to edit the pages via the 
+filesystem, than feed the changes back into MT using XML-RPC, filtering out the 
+relevant sections using XPath.
+
+Licensing will be a mess: probably a mix between copyright, copyleft and public 
+domain licensing, depending on the nature of the material and the contributors.
+
+Thanks for reading, E.
+
