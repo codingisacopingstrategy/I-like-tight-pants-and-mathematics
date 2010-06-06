@@ -210,7 +210,7 @@ function mtFetchUser(cb) {
         mtFetchedUser = true;
         var script = document.createElement('script');
         var ts = new Date().getTime();
-        script.src = 'http://i.liketightpants.net/mt-comments.cgi?__mode=session_js&blog_id=1&jsonp=' + cb + '&ts=' + ts;
+        script.src = 'http://mt.schr.fr/mt-comments.cgi?__mode=session_js&blog_id=1&jsonp=' + cb + '&ts=' + ts;
         (document.getElementsByTagName('head'))[0].appendChild(script);
     }
 }
@@ -343,7 +343,7 @@ mtAttachEvent('usersignin', mtUserOnLoad);
 function mtSignIn() {
     var doc_url = document.URL;
     doc_url = doc_url.replace(/#.+/, '');
-    var url = 'http://i.liketightpants.net/mt-comments.cgi?__mode=login&blog_id=1';
+    var url = 'http://mt.schr.fr/mt-comments.cgi?__mode=login&blog_id=1';
     if (is_preview) {
         if ( document['comments_form'] ) {
             var entry_id = document['comments_form'].entry_id.value;
@@ -388,7 +388,7 @@ function mtSignOut(entry_id) {
     mtClearUser();
     var doc_url = document.URL;
     doc_url = doc_url.replace(/#.+/, '');
-    var url = 'http://i.liketightpants.net/mt-comments.cgi?__mode=handle_sign_in&static=0&logout=1';
+    var url = 'http://mt.schr.fr/mt-comments.cgi?__mode=handle_sign_in&static=0&logout=1';
     if (is_preview) {
         if ( document['comments_form'] ) {
             var entry_id = document['comments_form'].entry_id.value;
@@ -435,7 +435,7 @@ function mtShowGreeting() {
         } else {
             var user_link;
             if ( u.is_author ) {
-                user_link = '<a href="http://i.liketightpants.net/mt-comments.cgi?__mode=edit_profile&return_url=' + encodeURIComponent( location.href );
+                user_link = '<a href="http://mt.schr.fr/mt-comments.cgi?__mode=edit_profile&return_url=' + encodeURIComponent( location.href );
                 user_link += '">' + u.name + '</a>';
             } else {
                 // registered user, but not a user with posting rights
