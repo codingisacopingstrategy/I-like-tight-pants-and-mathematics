@@ -79,7 +79,7 @@
     <id>tag:i.liketightpants.net,2010:/and//1.2</id>
 
     <published>2010-03-08T19:06:05Z</published>
-    <updated>2010-05-29T14:22:21Z</updated>
+    <updated>2010-06-07T06:41:21Z</updated>
 
     <summary> taken in my studio by Johan Nieuwenhuize...</summary>
     <author>
@@ -89,8 +89,10 @@
     
     
     <content type="html" xml:lang="en-US" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[ <p><img src="http://i.liketightpants.net/and/assets/called/bowie.jpg" alt="You see a picture of a small poster stuck behind some files. It says 'Guided by Heroes' and it shows David Bowie." /></p>
-<p>taken in my studio by <a href="http://johannieuwenhuize.nl/">Johan Nieuwenhuize</a></p>]]>
+        <![CDATA[<div class="content">
+  <p><img src="http://i.liketightpants.net/and/assets/called/bowie.jpg" alt="You see a picture of a small poster stuck behind some files. It says 'Guided by Heroes' and it shows David Bowie." /></p>
+  <p>taken in my studio by <a href="http://johannieuwenhuize.nl/">Johan Nieuwenhuize</a></p>
+</div>]]>
         
     </content>
 </entry>

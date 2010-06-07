@@ -8,12 +8,31 @@ body {
   padding: 0;
 }
 
+body > div  {
+  padding: 10px;
+}
+
+h1,h2,h3,h4,h5,h6  {
+font-weight:normal;
+font-size:18px;
+}
+
 a, a:active, a.visited {
   color: #0000ff;
   text-decoration:none;
 }
 
 a:hover {
+  text-decoration:underline;
+}
+
+div.header, div.footer {
+  background:#0000ff;
+  color:#ffffff;
+}
+
+div.header a, div.footer a {
+  color:#ffffff;
   text-decoration:underline;
 }
 
