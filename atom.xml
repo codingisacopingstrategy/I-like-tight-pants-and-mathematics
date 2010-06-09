@@ -4,9 +4,33 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/atom.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2010-06-06T00:41:31Z</updated>
+    <updated>2010-06-09T00:54:51Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 4.261</generator>
+
+<entry>
+    <title>Talking of content</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/talking_of_content.html" />
+    <id>tag:i.liketightpants.net,2010:/and//1.11</id>
+
+    <published>2010-06-08T21:05:38Z</published>
+    <updated>2010-06-09T00:54:51Z</updated>
+
+    <summary> At the Libre Graphics Meeting, a four day event bringing together open source developers and graphic professionals. Video originally on http://river-valley.tv/content-centric-architecture-and-distributed-versioning/...</summary>
+    <author>
+        <name>Eric</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-US" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<object width="920" height="483"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=12366245&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=369aff&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=12366245&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=369aff&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="920" height="483"></embed></object>
+
+<p>At the <a href="http://libregraphicsmeeting.org/2010/">Libre Graphics Meeting</a>, a four day event bringing together open source developers and graphic professionals.</p>
+<p>Video originally on <a href="http://river-valley.tv/content-centric-architecture-and-distributed-versioning/">http://river-valley.tv/content-centric-architecture-and-distributed-versioning/</a></p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>The perspective of content</title>
