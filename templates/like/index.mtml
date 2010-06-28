@@ -6,13 +6,19 @@
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="<$mt:Link template="rsd"$>" />
     <title><$mt:BlogName encode_html="1"$></title>
 </head>
-<body>
+<body id="home">
+<div class="header">
+<h1>I like tight pants and mathematics</h1>
+<h2>Connecting science and the humanities from the bottom up</h2>
+</div>
 <div class="content">
-<mt:Entries>
-<mt:EntriesHeader><ul></mt:EntriesHeader>
-  <li><a href="<$mt:EntryPermalink$>">I like tight pants and <$mt:EntryTitle lower_case="1" $></a></li>
-<mt:EntriesFooter></ul></mt:EntriesFooter>
+<mt:Entries sort_order="ascend">
+<mt:EntriesHeader><dl></mt:EntriesHeader>
+  <dt><a href="<$mt:EntryPermalink$>">I like tight pants and <$mt:EntryTitle lower_case="1" $></a></dt>
+  <dd><$mt:EntryDate$></dd>
+<mt:EntriesFooter></dl></mt:EntriesFooter>
 </mt:Entries>
 </div>
+<$mt:Include module="Footer"$>
 </body>
 </html>

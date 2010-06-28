@@ -37,6 +37,11 @@ div.header a, div.footer a {
   text-decoration:underline;
 }
 
+#home .footer {
+  position: fixed;
+  bottom: 0;
+}
+
 li {
   list-style: none;
 }
