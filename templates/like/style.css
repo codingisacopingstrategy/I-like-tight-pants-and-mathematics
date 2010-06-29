@@ -2,6 +2,7 @@ body {
   font-family: free sans, nimbus sans, helvetica, arial, sans-serif;
   font-weight: 300;
   line-height: 140%;
+  font: 16px/22.4px 'CharterBT', 'Bitstream Charter', 'Charis SIL', Georgia, serif;
 }
 
 * {
@@ -10,7 +11,7 @@ body {
 }
 
 body > div  {
-  padding: 10px;
+  padding: 10px 16px;
 }
 
 h1,h2,h3,h4,h5,h6  {
@@ -19,7 +20,7 @@ font-size:18px;
 }
 
 a, a:active, a.visited {
-  color: #0000ff;
+  color: #369aff;
   text-decoration:none;
 }
 
@@ -28,7 +29,7 @@ a:hover {
 }
 
 div.header, div.footer {
-  background:#0000ff;
+  background:#369aff;
   color:#ffffff;
 }
 
@@ -44,4 +45,40 @@ div.header a, div.footer a {
 
 li {
   list-style: none;
+}
+
+div.content {
+  margin: 50px 80px;
+}
+.content h2 {
+  font: 64px/64px 'CharterBT', 'Bitstream Charter', 'Charis SIL', Georgia, serif;
+  margin: 0 0 12.8px 0;
+  padding: 0;
+  color: #369aff;
+  text-transform: lowercase;
+  letter-spacing: -5.1px
+}
+.content p {
+  font: 17.6px/24.6px 'CharterBT', 'Bitstream Charter', 'Charis SIL', Georgia, serif;
+  color: #000;
+  width: 440px;
+  margin: 0 0 10.6px 0;
+  padding: 0 17.6px;
+  text-indent: -8.8px;
+}
+
+blockquote {
+  font: 17.6px/24.6px 'CharterBT', 'Bitstream Charter', 'Charis SIL', Georgia, serif;
+  color: #000;
+  width: 431px;
+  margin: 0 0 10.6px 0;
+  padding: 0 17.6px;
+  text-indent: -8.8px;
+  border-left: 9px solid #9accff;
+  font-style: italic;
+}
+
+div.comments, div.trackbacks {
+  color: #464646;
+  margin: 25px 40px;
 }
