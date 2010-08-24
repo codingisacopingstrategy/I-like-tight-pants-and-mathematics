@@ -3,14 +3,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <$mt:Include module="HTML Head"$>
-    <mt:EntryPrevious><link rel="prev bookmark" href="<$mt:EntryPermalink$>" title="<$mt:EntryTitle encode_html="1"$>" /></mt:EntryPrevious>
-    <mt:EntryNext><link rel="next bookmark" href="<$mt:EntryPermalink$>" title="<$mt:EntryTitle encode_html="1"$>" /></mt:EntryNext>
+    <mt:EntryPrevious><link rel="prev bookmark" href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>" title="I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$>" /></mt:EntryPrevious>
+    <mt:EntryNext><link rel="next bookmark" href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>" title="I like tight pants and <$mt:EntryTitle encode_html="1"$ lower_case="1">" /></mt:EntryNext>
     <$mt:EntryTrackbackData$>
-    <title>I like tight pants and <$mt:EntryTitle encode_html="1"$></title>
+    <title>I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$></title>
 </head>
 <body>
 <div class="header">
-<h1><a href="<$mt:BlogURL$>" accesskey="1">I like tight pants and</a> <$mt:EntryTitle lower_case="1"$></h1>
+<h1><a href="/and/" accesskey="1">I like tight pants and</a> <$mt:EntryTitle lower_case="1"$></h1>
 <p>
 <mt:If tag="EntryAuthorDisplayName">
 By <span class="vcard author"><$mt:EntryAuthorLink show_hcard="1"$></span> on <abbr class="published" title="<$mt:EntryDate format_name="iso8601"$>"><$mt:EntryDate format="%x %X"$></abbr>
@@ -19,15 +19,15 @@ By <span class="vcard author"><$mt:EntryAuthorLink show_hcard="1"$></span> on <a
 </mt:If>
 </span>
 <mt:IfCommentsActive>
-<span class="separator">|</span> <a href="<$mt:EntryPermalink$>#comments"><$mt:EntryCommentCount singular="1 Comment" plural="# Comments" none="No Comments"$></a>
+<span class="separator">|</span> <a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>#comments"><$mt:EntryCommentCount singular="1 Comment" plural="# Comments" none="No Comments"$></a>
 </mt:IfCommentsActive>
 <mt:IfPingsActive>
-<span class="separator">|</span> <a href="<$mt:EntryPermalink$>#trackbacks"><$mt:EntryTrackbackCount singular="1 TrackBack" plural="# TrackBacks" none="No TrackBacks"$></a>
+<span class="separator">|</span> <a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>#trackbacks"><$mt:EntryTrackbackCount singular="1 TrackBack" plural="# TrackBacks" none="No TrackBacks"$></a>
 </mt:IfPingsActive>
 </p>
 <p>
-  <mt:EntryPrevious>Previous: <a href="<$mt:EntryPermalink$>">I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$></a></mt:EntryPrevious>
-  <mt:EntryNext>Next: <a href="<$mt:EntryPermalink$>">I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$></a></mt:EntryNext>
+  <mt:EntryPrevious>Previous: <a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$></a></mt:EntryPrevious>
+  <mt:EntryNext>Next: <a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$></a></mt:EntryNext>
 </p>
 </div>
 <div class="content">

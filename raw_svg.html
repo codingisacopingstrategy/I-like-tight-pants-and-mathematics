@@ -3,14 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="Movable Type 4.261" />
-<link rel="stylesheet" href="http://i.liketightpants.net/and/style/in/style.css" type="text/css" />
-<link rel="start" href="http://i.liketightpants.net/and/" title="Home" />
-<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
-<script type="text/javascript" src="http://i.liketightpants.net/and/mt.js"></script>
+<link rel="stylesheet" href="/and/style/in/style.css" type="text/css" />
+<link rel="start" href="/and/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/and/feed/us/recent_entries.xml" />
+<script type="text/javascript" src="/and/mt.js"></script>
 
 
-    <link rel="prev bookmark" href="http://i.liketightpants.net/and/honest_artist_statements.html" title="Honest artist statements" />
+    <link rel="prev bookmark" href="/and/honest_artist_statements" title="I like tight pants and honest artist statements" />
     
     <!--
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -28,25 +27,25 @@
 </rdf:RDF>
 -->
 
-    <title>I like tight pants and Raw SVG</title>
+    <title>I like tight pants and raw svg</title>
 </head>
 <body>
 <div class="header">
-<h1><a href="http://i.liketightpants.net/and/" accesskey="1">I like tight pants and</a> raw svg</h1>
+<h1><a href="/and/" accesskey="1">I like tight pants and</a> raw svg</h1>
 <p>
 
 By <span class="vcard author">Eric</span> on <abbr class="published" title="2010-08-09T23:04:33+01:00">August  9, 2010 11:04 PM</abbr>
 
 </span>
 
-<span class="separator">|</span> <a href="http://i.liketightpants.net/and/raw_svg.html#comments">No Comments</a>
+<span class="separator">|</span> <a href="/and/raw_svg#comments">No Comments</a>
 
 
-<span class="separator">|</span> <a href="http://i.liketightpants.net/and/raw_svg.html#trackbacks">No TrackBacks</a>
+<span class="separator">|</span> <a href="/and/raw_svg#trackbacks">No TrackBacks</a>
 
 </p>
 <p>
-  Previous: <a href="http://i.liketightpants.net/and/honest_artist_statements.html">I like tight pants and honest artist statements</a>
+  Previous: <a href="/and/honest_artist_statements">I like tight pants and honest artist statements</a>
   
 </p>
 </div>
@@ -78,12 +77,12 @@ By <span class="vcard author">Eric</span> on <abbr class="published" title="2010
 
 <h3>Implementing SVG</h3>
 
-<p>I know that SVG’s are supported in Firefox and Safari, so I want them on this website. I figured I could best look how it is done in the wild. I looked at <a href="http://www.schepers.cc/" title="Reinventing Fire">the site of Doug Schepers</a> because he works for the W3C SVG working group so he must know what he is doing (the <a href="http://www.w3.org/" title="The World Wide Web Consortium (W3C)">W3C</a> is the body that develops web standards like HTML and SVG). This is how he embeds an SVG graphic in his HTML:</p>
+<p>I know that SVG's are supported in Firefox and Safari, so I want them on this website. I figured I could best look how it is done in the wild. I looked at <a href="http://www.schepers.cc/" title="Reinventing Fire">the site of Doug Schepers</a> because he works for the W3C SVG working group so he must know what he is doing (the <a href="http://www.w3.org/" title="The World Wide Web Consortium (W3C)">W3C</a> is the body that develops web standards like HTML and SVG). This is how he embeds an SVG graphic in his HTML:</p>
 
 <p><pre><code><span class="nt">&lt;object</span> <span class="na">type=</span><span class="s">&quot;image/svg+xml&quot;</span> <span class="na">width=</span><span class="s">&quot;420&quot;</span> <span class="na">height=</span><span class="s">&quot;120&quot;</span> <span class="na">data=</span><span class="s">&quot;http://schepers.cc/svg/path/pathpoints.svg&quot;</span><span class="nt">&gt;</span>Please use a modern browser.<span class="nt">&lt;/object&gt;</span>
 </pre></code></p>
 
-<p>Very simple. The object tag can be used to embed any kind of content. The type is specified by the <code>type</code> attribute and if the browser can not display this particular kind of content, it will fall back and display what’s contained <em>within</em> the object tag. In this case the text: ‘Please use a modern browser.’.</p>
+<p>Very simple. The object tag can be used to embed any kind of content. The type is specified by the <code>type</code> attribute and if the browser can not display this particular kind of content, it will fall back and display what's contained <em>within</em> the object tag. In this case the text: 'Please use a modern browser.'.</p>
 
 <p>The message looks a bit rude though. I suppose it is okay for Doug because he is part of the working group and they are pushing their format hard, and they want people to take notice when browsers do not support the standards they are working so hard at. In this case, the browser which is not being cooperative is Internet Explorer (up until version 8).</p>
 
@@ -95,7 +94,7 @@ By <span class="vcard author">Eric</span> on <abbr class="published" title="2010
 
 <p><pre><span class="nt">&lt;p&gt;</span>
   <span class="nt">&lt;object</span> <span class="na">type=</span><span class="s">&quot;image/svg+xml&quot;</span> <span class="na">style=</span><span class="s">&quot;width:736px;height:880px;&quot;</span> <span class="na">data=</span><span class="s">&quot;/and/assets/called/theproblemwithwebapps.svg&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/and/assets/called/theproblemwithwebapps.png&quot;</span> <span class="na">style=</span><span class="s">&quot;width:736px;height:880px;&quot;</span> <span class="na">alt=</span><span class="s">&quot;‘Apps become like this:’ a circle labelled APP encapsulating a circle labelled DATA. The app interfaces with a square with rounded corners labeled USER, as shown by two way arrows. ‘While potentially they could be:’ the user interfaces with a circle APP which interfaces with a separate circle DATA. ‘The latter could enable’: the USER interfaces with an APP which interfaces with an APP which interfaces with an APP which interfaces with DATA. ‘As well as:’ the USER interfaces with three APPS that all interface with DATA. ‘(Or any combination of the two)’ &quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/and/assets/called/theproblemwithwebapps.png&quot;</span> <span class="na">style=</span><span class="s">&quot;width:736px;height:880px;&quot;</span> <span class="na">alt=</span><span class="s">&quot;'Apps become like this:' a circle labelled APP encapsulating a circle labelled DATA. The app interfaces with a square with rounded corners labeled USER, as shown by two way arrows. 'While potentially they could be:' the user interfaces with a circle APP which interfaces with a separate circle DATA. 'The latter could enable': the USER interfaces with an APP which interfaces with an APP which interfaces with an APP which interfaces with DATA. 'As well as:' the USER interfaces with three APPS that all interface with DATA. '(Or any combination of the two)' &quot;</span> <span class="nt">/&gt;</span>
   <span class="nt">&lt;/object&gt;</span>
 <span class="nt">&lt;/p&gt;</span>
 </pre></p>
@@ -104,14 +103,14 @@ By <span class="vcard author">Eric</span> on <abbr class="published" title="2010
 
 <h3>SVG in the wild</h3>
 
-<p>You will not find too many web sites using SVG directly. Wikipedia, which hosts a lot of SVG’s, converts them to PNG before displaying.
-Other websites use a JavaScript library like <a href="http://raphaeljs.com/" title="Raphaël—JavaScript Library">Raphael</a> to render vector graphics.</p>
+<p>You will not find too many web sites using SVG directly. Wikipedia, which hosts a lot of SVG's, converts them to PNG before displaying.
+Other websites use a JavaScript library like <a href="http://raphaeljs.com/" title="Raphaël--JavaScript Library">Raphael</a> to render vector graphics.</p>
 
-<p>Part of this has to do with the lack of support from Internet Explorer, but when I used SVG on a private wiki a while back another reason became apparent: rendering SVG’s can be slow and unstable. It managed to crash Safari a couple of times.</p>
+<p>Part of this has to do with the lack of support from Internet Explorer, but when I used SVG on a private wiki a while back another reason became apparent: rendering SVG's can be slow and unstable. It managed to crash Safari a couple of times.</p>
 
 <p>This makes sense: there is no reason for browser vendors to spend a lot and time of effort in optimising a feature that is not used much. However, as long as it functions lackluster, people will also be less prone to use the feature.</p>
 
-<p>I do not care for Catch 22’s though, so I say bring on the raw SVG (Rip ODB). Maybe browsers handle it better than they did a year ago. Maybe they will not. But in that case, an increase in bug reports will show the vendors soon enough that this format is to be reckoned with, and they will improve their rendering.</p>
+<p>I do not care for Catch 22's though, so I say bring on the raw SVG (Rip ODB). Maybe browsers handle it better than they did a year ago. Maybe they will not. But in that case, an increase in bug reports will show the vendors soon enough that this format is to be reckoned with, and they will improve their rendering.</p>
 
 <hr />
 
