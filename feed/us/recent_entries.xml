@@ -4,9 +4,53 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2010-08-14T15:13:04Z</updated>
+    <updated>2010-12-15T23:09:37Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 4.261</generator>
+
+<entry>
+    <title>Beta</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/beta.html" />
+    <id>tag:i.liketightpants.net,2010:/and//1.16</id>
+
+    <published>2010-09-04T22:15:37Z</published>
+    <updated>2010-12-15T23:09:37Z</updated>
+
+    <summary>Beta Reading yet another programming blog with great design, I feel ashamed for the shape this site is in. Well, it is in beta! Apparently there are people who can pull it of, but I think my website will be...</summary>
+    <author>
+        <name>Eric</name>
+        
+    </author>
+    
+    <category term="beta" label="beta" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="collaboration" label="collaboration" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="construction" label="construction" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="design" label="design" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<h2>Beta</h2>
+
+<p>Reading yet <a href="http://blog.peepcode.com/tutorials/2010/about-this-blog" title="About this Blog | Free PeepCode Blog">another programming blog with great design</a>, I feel ashamed for the shape this site is in.</p>
+
+<p>Well, it is in beta! Apparently there are people who can pull it of, but I think my website will be better if I do not develop, design and write it all at the same time.</p>
+
+<p>For the visual identity I am now working with <a href="http://www.mccuskey.nl/" title="Jij &amp; McCuskey">Rowan</a>. I am sure it will turn out wonderful. Stay tuned.</p>
+
+<img src="/and/assets/called/AIconsWwwConst_anim.gif" style="width:38px;height:38px;" alt="AIconsWwwConst Anim" />
+<img src="/and/assets/called/AIconsWwwConst_area.png" style="width:78px;height:53px;" alt="AIconsWwwConst Area" />
+<img src="/and/assets/called/AIconsWwwConst_barrier.png" style="width:39px;height:35px;" alt="AIconsWwwConst Barrier" />
+<img src="/and/assets/called/AIconsWwwConst_build.png" style="width:64px;height:38px;" alt="AIconsWwwConst Build" />
+<img src="/and/assets/called/AIconsWwwConst_gear.gif" style="width:93px;height:70px;" alt="AIconsWwwConst Gear" />
+<img src="/and/assets/called/AIconsWwwConst_hat.png" style="width:32px;height:32px;" alt="AIconsWwwConst Hat" />
+<img src="/and/assets/called/AIconsWwwConst_hole.png" style="width:144px;height:50px;" alt="AIconsWwwConst Hole" />
+<img src="/and/assets/called/AIconsWwwConst_landscape.gif" style="width:249px;height:87px;" alt="AIconsWwwConst Landscape" />
+<img src="/and/assets/called/AIconsWwwConst_sign.gif" style="width:246px;height:63px;" alt="AIconsWwwConst Sign" />
+<img src="/and/assets/called/AIconsWwwConst_under.png" style="width:125px;height:39px;" alt="AIconsWwwConst Under" />
+<img src="/and/assets/called/AIconsWwwConst_warn.png" style="width:49px;height:43px;" alt="AIconsWwwConst Warn" />
+<img src="/and/assets/called/AIconsWwwConstruction.png" style="width:40px;height:40px;" alt="AIconsWwwConstruction" />]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Raw SVG</title>
@@ -14,9 +58,9 @@
     <id>tag:i.liketightpants.net,2010:/and//1.15</id>
 
     <published>2010-08-09T21:04:33Z</published>
-    <updated>2010-08-14T15:13:04Z</updated>
+    <updated>2010-12-15T23:09:04Z</updated>
 
-    <summary>A very popular way to describe an image is as a matrix of lots of small squares. This is called a raster image. Rasterised images are convenient because a computer screen is a raster too. On the internet raster formats...</summary>
+    <summary>raw svg A very popular way to describe an image is as a matrix of lots of small squares. This is called a raster image. Rasterised images are convenient because a computer screen is a raster too. On the internet...</summary>
     <author>
         <name>Eric</name>
         
@@ -24,7 +68,11 @@
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p>A very popular way to describe an image is as a matrix of lots of small squares. This is called a raster image.</p>
+        <![CDATA[<h2>raw svg</h2>
+
+<div class="span-11 colborder">
+
+<p>A very popular way to describe an image is as a matrix of lots of small squares. This is called a raster image.</p>
 
 <p>Rasterised images are convenient because a computer screen is a raster too. On the internet raster formats are predominant, JPEG and PNG. Normally, the squares in the picture map to the squares of the screen.</p>
 
@@ -38,6 +86,9 @@
 
 <p>(SVG has more going for it than just being scalable: it is a web-standard that ties in well with the other web technologies, HTML, CSS and JavaScript. For example, you can make parts of your drawing interactive with JavaScript. )</p>
 
+</div>
+
+<div class="span-12 last">
 <h3>Why has SVG not made it big (yet)?</h3>
 
 <p>Vector graphics shine when you scale your page. All major browsers now implement full page zooming, meaning you can zoom in on the web page with  + or Ctrl +. While raster based images will get fuzzy, vector based images retain a sharp outline. Likewise, when you print a webpage, vector images come off much cleaner than rasters, since you have scaled to a higher resolution device.</p>
@@ -91,7 +142,9 @@ Other websites use a JavaScript library like <a href="http://raphaeljs.com/" tit
 
 <p><small>One other potentially interesting way to use SVG is to directly put the SVG code inside the HTML. This is called <em>inline</em>. Since HTML is in a transitional phase now (towards HTML 5) this warrants its own investigation.</small></p>
 
-<p><small>If you want to see some SVG pictures, there are a lot of them to be found at <a href="http://commons.wikimedia.org/" title="Wikimedia Commons">Wikimedia Commons</a>. And big up to the <a href="http://openclipart.org/" title="Open Clip Art Library">Open Clipart Library</a>, a group of volunteers that has already produced more than 20.000 images in the format, all available in the public domain.</small></p>]]>
+<p><small>If you want to see some SVG pictures, there are a lot of them to be found at <a href="http://commons.wikimedia.org/" title="Wikimedia Commons">Wikimedia Commons</a>. And big up to the <a href="http://openclipart.org/" title="Open Clip Art Library">Open Clipart Library</a>, a group of volunteers that has already produced more than 20.000 images in the format, all available in the public domain.</small></p>
+
+</div>]]>
         
     </content>
 </entry>
@@ -102,9 +155,9 @@ Other websites use a JavaScript library like <a href="http://raphaeljs.com/" tit
     <id>tag:i.liketightpants.net,2010:/and//1.12</id>
 
     <published>2010-07-09T16:15:35Z</published>
-    <updated>2010-07-09T16:26:54Z</updated>
+    <updated>2010-12-15T23:08:12Z</updated>
 
-    <summary>I keep changing around this text. Because I do not know who you are I get no clues as to what I should talk about. I talk in abstractions of meaning, art and revolution. You of course stay silent. I...</summary>
+    <summary>honest artist statements I keep changing around this text. Because I do not know who you are I get no clues as to what I should talk about. I talk in abstractions of meaning, art and revolution. You of course...</summary>
     <author>
         <name>Eric</name>
         
@@ -112,7 +165,10 @@ Other websites use a JavaScript library like <a href="http://raphaeljs.com/" tit
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p>I keep changing around this text. Because I do not know who you are I get no clues as to what I should talk about. I talk in abstractions of meaning, art and revolution.</p> 
+        <![CDATA[<h2>honest artist statements</h2>
+<div class="span-14 last">
+
+<p>I keep changing around this text. Because I do not know who you are I get no clues as to what I should talk about. I talk in abstractions of meaning, art and revolution.</p> 
 
 <p>You of course stay silent.</p>
 
@@ -124,7 +180,9 @@ Other websites use a JavaScript library like <a href="http://raphaeljs.com/" tit
 
 <p>What I think I am actually saying is: I would like you to talk to me. That would be good. You can call or mail me, and we will meet and talk. Or just look out of the window together, which is even better.</p>
 
-<p>There is a second message. Which is: let us mount shows with my pictures. I would like that.</p>]]>
+<p>There is a second message. Which is: let us mount shows with my pictures. I would like that.</p>
+
+</div>]]>
         
     </content>
 </entry>
@@ -135,9 +193,9 @@ Other websites use a JavaScript library like <a href="http://raphaeljs.com/" tit
     <id>tag:i.liketightpants.net,2010:/and//1.11</id>
 
     <published>2010-06-08T21:05:38Z</published>
-    <updated>2010-06-09T00:54:51Z</updated>
+    <updated>2010-12-15T23:07:13Z</updated>
 
-    <summary> At the Libre Graphics Meeting, a four day event bringing together open source developers and graphic professionals. Video originally on http://river-valley.tv/content-centric-architecture-and-distributed-versioning/...</summary>
+    <summary>talking of content At the Libre Graphics Meeting, a four day event bringing together open source developers and graphic professionals. Correction @ 4:52: the Open Baskerville project has been initiated by Simon Pascal Klein from Australia (not Pascal Simon Klein...</summary>
     <author>
         <name>Eric</name>
         
@@ -145,9 +203,14 @@ Other websites use a JavaScript library like <a href="http://raphaeljs.com/" tit
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<object width="920" height="483"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=12366245&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=369aff&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=12366245&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=369aff&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="920" height="483"></embed></object>
+        <![CDATA[<h2>talking of content</h2>
+
+<object width="920" height="483"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=12366245&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=369aff&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=12366245&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=369aff&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="920" height="483"></embed></object>
 
 <p>At the <a href="http://libregraphicsmeeting.org/2010/">Libre Graphics Meeting</a>, a four day event bringing together open source developers and graphic professionals.</p>
+
+<p>Correction @ 4:52: the <a href="http://klepas.org/openbaskerville/" title="Open Baskerville">Open Baskerville</a> project has been initiated by <a href="http://klepas.org/" title="Simon Pascal Klein&thinsp;&mdash;&thinsp;Graphic &amp; web design professional">Simon Pascal Klein</a> from Australia (not Pascal Simon Klein from Germany). Apologies!</p>
+
 <p>Video originally on <a href="http://river-valley.tv/content-centric-architecture-and-distributed-versioning/">http://river-valley.tv/content-centric-architecture-and-distributed-versioning/</a></p>]]>
         
     </content>
@@ -159,9 +222,9 @@ Other websites use a JavaScript library like <a href="http://raphaeljs.com/" tit
     <id>tag:i.liketightpants.net,2010:/and//1.9</id>
 
     <published>2010-04-27T22:03:21Z</published>
-    <updated>2010-06-06T00:41:31Z</updated>
+    <updated>2010-12-15T23:05:30Z</updated>
 
-    <summary></summary>
+    <summary>the perspective of content...</summary>
     <author>
         <name>Eric</name>
         
@@ -169,7 +232,8 @@ Other websites use a JavaScript library like <a href="http://raphaeljs.com/" tit
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><img src="http://schr.fr/cntnt/fromacontentperspective.png" style="width:600px;height:1615px;" alt="a hand drawn diagram in blue, in three parts." /></p>]]>
+        <![CDATA[<h2>the perspective of content</h2>
+<p><img src="http://schr.fr/cntnt/fromacontentperspective.png" style="width:600px;height:1615px;" alt="a hand drawn diagram in blue, in three parts." /></p>]]>
         
     </content>
 </entry>
@@ -180,9 +244,9 @@ Other websites use a JavaScript library like <a href="http://raphaeljs.com/" tit
     <id>tag:i.liketightpants.net,2010:/and//1.8</id>
 
     <published>2010-04-07T18:10:09Z</published>
-    <updated>2010-06-06T00:43:44Z</updated>
+    <updated>2010-12-15T23:04:56Z</updated>
 
-    <summary></summary>
+    <summary>the problem with web apps...</summary>
     <author>
         <name>Eric</name>
         
@@ -190,7 +254,8 @@ Other websites use a JavaScript library like <a href="http://raphaeljs.com/" tit
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><img src="/and/assets/called/theproblemwithwebapps__1.png" /><br />
+        <![CDATA[<h2>the problem with web apps</h2>
+<p><img src="/and/assets/called/theproblemwithwebapps__1.png" /><br />
 <img src="/and/assets/called/theproblemwithwebapps__2.png" />
 </p>]]>
         
@@ -203,9 +268,9 @@ Other websites use a JavaScript library like <a href="http://raphaeljs.com/" tit
     <id>tag:i.liketightpants.net,2010:/and//1.7</id>
 
     <published>2010-03-14T20:32:48Z</published>
-    <updated>2010-06-29T00:22:17Z</updated>
+    <updated>2010-12-15T23:04:20Z</updated>
 
-    <summary> Maybe I was emerging into the era of post-modernism but I put it down far more to ADD &#8211; Attention Deficiency Disorder [laughs]. I just think that I couldn&apos;t concentrate. I never have been able to concentrate on one...</summary>
+    <summary>juxtapositions Maybe I was emerging into the era of post-modernism but I put it down far more to ADD &#8211; Attention Deficiency Disorder [laughs]. I just think that I couldn&apos;t concentrate. I never have been able to concentrate on one...</summary>
     <author>
         <name>Eric</name>
         
@@ -213,7 +278,8 @@ Other websites use a JavaScript library like <a href="http://raphaeljs.com/" tit
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[ <blockquote>Maybe I was emerging into the era of post-modernism but I put it down far more to ADD &#8211; Attention Deficiency Disorder [laughs].  I just think that I couldn't concentrate. I never have been able to concentrate on one thing for very long with getting kind of itchy. I did always feel that there was some kind of area in rock that I could work comfortably using and working with all of my enthusiasms. I am a guy of enthusiasms. I get terribly excited about things that are new to me and it just seemed a perfectly natural for me at the time to put together all these odds and ends of art and culture that I really adore.</blockquote>
+        <![CDATA[<h2>juxtapositions</h2> 
+<blockquote>Maybe I was emerging into the era of post-modernism but I put it down far more to ADD &#8211; Attention Deficiency Disorder [laughs].  I just think that I couldn't concentrate. I never have been able to concentrate on one thing for very long with getting kind of itchy. I did always feel that there was some kind of area in rock that I could work comfortably using and working with all of my enthusiasms. I am a guy of enthusiasms. I get terribly excited about things that are new to me and it just seemed a perfectly natural for me at the time to put together all these odds and ends of art and culture that I really adore.</blockquote>
 <p><em><a href="http://5years.com/quotes.htm" title="The Ziggy Stardust Companion - In Their Own Words (1/2)">Source</a></em></p>]]>
         
     </content>
