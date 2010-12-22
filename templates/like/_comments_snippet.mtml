@@ -2,7 +2,7 @@
 <!-- Display comments for the entry/page or commenting form if entry/page is accepting comments -->
 </mt:Ignore>
 <mt:IfCommentsActive>
-<div id="comments" class="comments span-24">
+<div id="comments" class="comments span-11">
 
 
     <mt:Ignore>
@@ -10,7 +10,7 @@
     </mt:Ignore>
     <mt:Comments>
         <mt:CommentsHeader>
-    <h2 class="comments-header"><$mt:EntryCommentCount singular="1 Comment" plural="# Comments" none="No Comments"$></h2>
+    <h4 class="comments-header"><$mt:EntryCommentCount singular="1 Comment" plural="# Comments" none="No Comments"$></h4>
     <div class="comments-content">
         </mt:CommentsHeader>
         <div id="comment-<$mt:CommentID$>" class="comment<mt:IfCommentParent> comment-reply</mt:IfCommentParent><mt:IfCommenterIsEntryAuthor> entry-author-comment</mt:IfCommenterIsEntryAuthor>">
@@ -47,7 +47,7 @@
     </mt:Ignore>
     <mt:IfCommentsAccepted>
     <div class="comments-open" id="comments-open">
-        <h2 class="comments-open-header">Leave a comment</h2>
+        <h4 class="comments-open-header">Leave a comment</h4>
         <div class="comments-open-content">
 
         <mt:Ignore>
@@ -65,15 +65,15 @@
                 <input type="hidden" name="sid" value="" />
                 <div id="comments-open-data">
                     <div id="comment-form-name">
-                        <label for="comment-author">Name</label>
+                        <label for="comment-author" class="span-4">Name</label>
                         <input id="comment-author" name="author" size="30" value="" onfocus="mtCommentFormOnFocus()" />
                     </div>
                     <div id="comment-form-email">
-                        <label for="comment-email">Email Address</label>
+                        <label for="comment-email" class="span-4">Email Address</label>
                         <input id="comment-email" name="email" size="30" value="" onfocus="mtCommentFormOnFocus()" />
                     </div>
                     <div id="comment-form-url">
-                        <label for="comment-url">URL</label>
+                        <label for="comment-url" class="span-4">URL</label>
                         <input id="comment-url" name="url" size="30" value="" onfocus="mtCommentFormOnFocus()" />
                     </div>
                     <div id="comment-form-remember-me">
@@ -88,7 +88,7 @@
                 <div id="comments-open-text">
                     <label for="comment-text">Comments
                     <mt:IfAllowCommentHTML>(You may use HTML tags for style)</mt:IfAllowCommentHTML></label><br />
-                    <textarea id="comment-text" name="text" rows="15" cols="80" onfocus="mtCommentFormOnFocus()"></textarea>
+                    <textarea id="comment-text" name="text" rows="15" style="width:100%;" onfocus="mtCommentFormOnFocus()"></textarea>
                 </div>
                 <div id="comments-open-captcha"></div>
                 <div id="comments-open-footer">

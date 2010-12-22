@@ -1,0 +1,17 @@
+<div class="header span-23 prepend-1 last">
+<p><a href="/and/" accesskey="1">I like tight pants and</a>
+    <span style="display:inline-block;float:right;">
+    <mt:If tag="EntryPermalink" ne="http://i.liketightpants.net/and/heroes.html">
+        <a href="/and/heroes">Oldest</a> |
+    </mt:If>
+    <mt:EntryPrevious>
+        <a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">Older</a> |
+    </mt:EntryPrevious>
+    <mt:EntryNext>
+        <a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">Newer</a> |
+    </mt:EntryNext>
+    <mt:Entries lastn="1">
+        <a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">Newest</a>
+    </mt:Entries></a>
+</p>
+</div>

@@ -21,7 +21,7 @@
     dc:title="Raw SVG"
     dc:identifier="http://i.liketightpants.net/and/raw_svg.html"
     dc:subject=""
-    dc:description="raw svg A very popular way to describe an image is as a matrix of lots of small squares. This is called a raster image. Rasterised images are convenient because a computer screen is a raster too. On the internet..."
+    dc:description=" raw svg A very popular way to describe an image is as a matrix of lots of small squares. This is called a raster image. Rasterised images are convenient because a computer screen is a raster too. On the..."
     dc:creator="Eric"
     dc:date="2010-08-09T23:04:33+01:00" />
 </rdf:RDF>
@@ -30,29 +30,30 @@
     <title>I like tight pants and raw svg</title>
 </head>
 <body>
-<div class="header">
-<h1><a href="/and/" accesskey="1">I like tight pants and</a> raw svg</h1>
-<p>
-
-By <span class="vcard author">Eric</span> on <abbr class="published" title="2010-08-09T23:04:33+01:00">August  9, 2010 11:04 PM</abbr>
-
-</span>
-
-<span class="separator">|</span> <a href="/and/raw_svg#comments">No Comments</a>
-
-
-<span class="separator">|</span> <a href="/and/raw_svg#trackbacks">No TrackBacks</a>
-
-</p>
-<p>
-  Previous: <a href="/and/honest_artist_statements">I like tight pants and honest artist statements</a>
-  Next: <a href="/and/beta">I like tight pants and beta</a>
+<div class="content container">
+<div class="header span-23 prepend-1 last">
+<p><a href="/and/" accesskey="1">I like tight pants and</a>
+    <span style="display:inline-block;float:right;">
+    
+        <a href="/and/heroes">Oldest</a> |
+    
+    
+        <a href="/and/honest_artist_statements">Older</a> |
+    
+    
+        <a href="/and/beta">Newer</a> |
+    
+    
+        <a href="/and/beta">Newest</a>
+    </a>
 </p>
 </div>
-<div class="content container">
+<div class="span-22 prepend-1 append-1 last">
+<div class="span-22">
 <h2>raw svg</h2>
+</div>
 
-<div class="span-11 colborder">
+<div class="span-11">
 
 <p>A very popular way to describe an image is as a matrix of lots of small squares. This is called a raster image.</p>
 
@@ -70,7 +71,7 @@ By <span class="vcard author">Eric</span> on <abbr class="published" title="2010
 
 </div>
 
-<div class="span-12 last">
+<div class="span-11 last">
 <h3>Why has SVG not made it big (yet)?</h3>
 
 <p>Vector graphics shine when you scale your page. All major browsers now implement full page zooming, meaning you can zoom in on the web page with  + or Ctrl +. While raster based images will get fuzzy, vector based images retain a sharp outline. Likewise, when you print a webpage, vector images come off much cleaner than rasters, since you have scaled to a higher resolution device.</p>
@@ -85,8 +86,8 @@ By <span class="vcard author">Eric</span> on <abbr class="published" title="2010
 
 <p>I know that SVG's are supported in Firefox and Safari, so I want them on this website. I figured I could best look how it is done in the wild. I looked at <a href="http://www.schepers.cc/" title="Reinventing Fire">the site of Doug Schepers</a> because he works for the W3C SVG working group so he must know what he is doing (the <a href="http://www.w3.org/" title="The World Wide Web Consortium (W3C)">W3C</a> is the body that develops web standards like HTML and SVG). This is how he embeds an SVG graphic in his HTML:</p>
 
-<p><pre><code><span class="nt">&lt;object</span> <span class="na">type=</span><span class="s">&quot;image/svg+xml&quot;</span> <span class="na">width=</span><span class="s">&quot;420&quot;</span> <span class="na">height=</span><span class="s">&quot;120&quot;</span> <span class="na">data=</span><span class="s">&quot;http://schepers.cc/svg/path/pathpoints.svg&quot;</span><span class="nt">&gt;</span>Please use a modern browser.<span class="nt">&lt;/object&gt;</span>
-</pre></code></p>
+<p><pre><span class="nt">&lt;object</span> <span class="na">type=</span><span class="s">&quot;image/svg+xml&quot;</span> <span class="na">width=</span><span class="s">&quot;420&quot;</span> <span class="na">height=</span><span class="s">&quot;120&quot;</span> <span class="na">data=</span><span class="s">&quot;http://schepers.cc/svg/path/pathpoints.svg&quot;</span><span class="nt">&gt;</span>Please use a modern browser.<span class="nt">&lt;/object&gt;</span>
+</pre></p>
 
 <p>Very simple. The object tag can be used to embed any kind of content. The type is specified by the <code>type</code> attribute and if the browser can not display this particular kind of content, it will fall back and display what's contained <em>within</em> the object tag. In this case the text: 'Please use a modern browser.'.</p>
 
@@ -127,7 +128,7 @@ Other websites use a JavaScript library like <a href="http://raphaeljs.com/" tit
 <p><small>If you want to see some SVG pictures, there are a lot of them to be found at <a href="http://commons.wikimedia.org/" title="Wikimedia Commons">Wikimedia Commons</a>. And big up to the <a href="http://openclipart.org/" title="Open Clip Art Library">Open Clipart Library</a>, a group of volunteers that has already produced more than 20.000 images in the format, all available in the public domain.</small></p>
 
 </div>
-<div id="comments" class="comments span-24">
+<div id="comments" class="comments span-11">
 
 
     
@@ -137,7 +138,7 @@ Other websites use a JavaScript library like <a href="http://raphaeljs.com/" tit
     
     
     <div class="comments-open" id="comments-open">
-        <h2 class="comments-open-header">Leave a comment</h2>
+        <h4 class="comments-open-header">Leave a comment</h4>
         <div class="comments-open-content">
 
         
@@ -153,15 +154,15 @@ Other websites use a JavaScript library like <a href="http://raphaeljs.com/" tit
                 <input type="hidden" name="sid" value="" />
                 <div id="comments-open-data">
                     <div id="comment-form-name">
-                        <label for="comment-author">Name</label>
+                        <label for="comment-author" class="span-4">Name</label>
                         <input id="comment-author" name="author" size="30" value="" onfocus="mtCommentFormOnFocus()" />
                     </div>
                     <div id="comment-form-email">
-                        <label for="comment-email">Email Address</label>
+                        <label for="comment-email" class="span-4">Email Address</label>
                         <input id="comment-email" name="email" size="30" value="" onfocus="mtCommentFormOnFocus()" />
                     </div>
                     <div id="comment-form-url">
-                        <label for="comment-url">URL</label>
+                        <label for="comment-url" class="span-4">URL</label>
                         <input id="comment-url" name="url" size="30" value="" onfocus="mtCommentFormOnFocus()" />
                     </div>
                     <div id="comment-form-remember-me">
@@ -176,7 +177,7 @@ Other websites use a JavaScript library like <a href="http://raphaeljs.com/" tit
                 <div id="comments-open-text">
                     <label for="comment-text">Comments
                     (You may use HTML tags for style)</label><br />
-                    <textarea id="comment-text" name="text" rows="15" cols="80" onfocus="mtCommentFormOnFocus()"></textarea>
+                    <textarea id="comment-text" name="text" rows="15" style="width:100%;" onfocus="mtCommentFormOnFocus()"></textarea>
                 </div>
                 <div id="comments-open-captcha"></div>
                 <div id="comments-open-footer">
@@ -200,8 +201,8 @@ Other websites use a JavaScript library like <a href="http://raphaeljs.com/" tit
 </div>
 
 
-<div id="trackbacks" class="trackbacks span-24">
-    <h2 class="trackbacks-header">No TrackBacks</h2>
+<div id="trackbacks" class="trackbacks span-11 last">
+    <h4 class="trackbacks-header">No TrackBacks</h4>
 
     
     
@@ -217,8 +218,9 @@ Other websites use a JavaScript library like <a href="http://raphaeljs.com/" tit
 
 
 </div>
-<div class="footer">
+<div class="footer span-23 prepend-1 last">
   <p><a href="http://schr.fr">schr.fr</a> | <a href="http://ericschrijver.nl">ericschrijver.nl</a></p>
+</div>
 </div>
 </body>
 </html>

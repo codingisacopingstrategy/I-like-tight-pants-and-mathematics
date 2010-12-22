@@ -1,176 +1,14 @@
-/* start fontsquirrel generated at-fontface */
-@font-face {
-  font-family: 'LatinModernRoman10Regular';
-  src: url("lmroman10-regular-webfont.eot");
-  src: local("☺"), url("lmroman10-regular-webfont.woff") format("woff"), url("lmroman10-regular-webfont.ttf") format("truetype"), url("lmroman10-regular-webfont.svg#webfontg3VAmqr8") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'LatinModernRoman10Italic';
-  src: url("lmroman10-italic-webfont.eot");
-  src: local("☺"), url("lmroman10-italic-webfont.woff") format("woff"), url("lmroman10-italic-webfont.ttf") format("truetype"), url("lmroman10-italic-webfont.svg#webfont1YvZMafy") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* stop fontsquirrel generated at-fontface */
 body {
-  font-weight: 300;
-  line-height: 140%;
-  font: 16px/22.4px Palatino;
+  background: url(/and/assets/called/grid.png);
 }
 
+/* I prefer a poor man’s reset */
 * {
   margin: 0;
   padding: 0;
 }
 
-body > div {
-  padding: 10px 16px;
-}
-
-.comments > div {
-  padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-}
-
-h1 {
-  font-size: 3em;
-  line-height: 1;
-  margin-bottom: 0.50em;
-}
-
-h2 {
-  font-size: 2em;
-  margin-bottom: 0.75em;
-}
-
-h3 {
-  font-size: 1.5em;
-  line-height: 1;
-  margin-bottom: 1.00em;
-}
-
-h4 {
-  font-size: 1.2em;
-  line-height: 1.25;
-  margin-bottom: 1.25em;
-}
-
-h5 {
-  font-size: 1em;
-  margin-bottom: 1.50em;
-}
-
-h6 {
-  font-size: 1em;
-}
-
-.header h1, .header h2, .header h3, .header h4, .header h5, .header h6 {
-  font-weight: normal;
-  font-size: 18px;
-}
-
-a, a:active, a.visited {
-  color: #369aff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-em {
-  font-style: normal;
-  font-family: 'LatinModernRoman10Italic';
-}
-
-div.header, div.footer {
-  background: #369aff;
-  color: #ffffff;
-}
-
-div.header a, div.footer a {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-.container p, .comments p {
-  margin: 0 0 1.5em;
-}
-
-li {
-  list-style: none;
-}
-
-/*
-div.content {
-  margin: 50px 80px;
-}
-.content h2 {
-  font: 64px/64px $font-family;
-  margin: 0 0 12.8px 0;
-  padding: 0;
-  color: #369aff;
-  text-transform: lowercase;
-  letter-spacing: -5.1px
-}
-
-.content h3 {
-  font: 36px/36px $font-family;
-  margin: 26.4px 0 12.8px 8.8px;
-  padding: 0;
-  color: #369aff;
-  text-transform: lowercase;
-  letter-spacing: -1px
-}
-
-.content h4 {
-  font: 24px/24px $font-family;
-  margin: 26.4px 0 12.8px 8.8px;
-  padding: 0;
-  color: #369aff;
-  text-transform: lowercase;
-  letter-spacing: -1px
-
-}
-
-.content p, .comments p {
-  font: 17.6px/24.6px $font-family;
-  color: #000;
-  width: 440px;
-  margin: 0 0 10.6px 0;
-  padding: 0 17.6px;
-  text-indent: -8.8px;
-}
-*/
-hr {
-  width: 440px;
-}
-
-blockquote {
-  font: 17.6px/24.6px Palatino;
-  color: #000;
-  width: 431px;
-  margin: 0 0 10.6px 0;
-  padding: 0 17.6px;
-  text-indent: -8.8px;
-  border-left: 9px solid #9accff;
-}
-
-pre {
-  white-space: pre-wrap;
-}
-
-div.comments, div.trackbacks {
-  color: #464646;
-}
-
+/* Here comes blueprint */
 body .clear {
   clear: both;
 }
@@ -843,8 +681,202 @@ input.span-24, textarea.span-24, select.span-24 {
 
 .container {
   margin: 0;
+  background: url(/and/assets/called/grid.png);
+  line-height: 1.5;
+  font-family: Palatino, Palladio, serif;
+  color: #333333;
+  font-size: 100%;
+}
+.container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {
+  font-weight: normal;
+  color: #222222;
+}
+.container h1 img, .container h2 img, .container h3 img, .container h4 img, .container h5 img, .container h6 img {
+  margin: 0;
+}
+.container h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 0.50em;
+}
+.container h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+.container h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1.00em;
+}
+.container h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+.container h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.50em;
+}
+.container h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+.container p {
+  margin: 0 0 1.5em;
+}
+.container p img.left {
+  display: inline;
+  float: left;
+  margin: 1.5em 1.5em 1.5em 0;
+  padding: 0;
+}
+.container p img.right {
+  display: inline;
+  float: right;
+  margin: 1.5em 0 1.5em 1.5em;
+  padding: 0;
+}
+.container a {
+  text-decoration: underline;
+  color: #000099;
+}
+.container a:visited {
+  color: #000066;
+}
+.container a:focus {
+  color: black;
+}
+.container a:hover {
+  color: black;
+}
+.container a:active {
+  color: #cc0099;
+}
+.container blockquote {
+  margin: 1.5em;
+  color: #666666;
+  font-style: italic;
+}
+.container strong {
+  font-weight: bold;
+}
+.container em {
+  font-style: italic;
+}
+.container dfn {
+  font-style: italic;
+  font-weight: bold;
+}
+.container sup, .container sub {
+  line-height: 0;
+}
+.container abbr, .container acronym {
+  border-bottom: 1px dotted #666666;
+}
+.container address {
+  margin: 0 0 1.5em;
+  font-style: italic;
+}
+.container del {
+  color: #666666;
+}
+.container pre {
+  margin: 1.5em 0;
+  white-space: pre;
+}
+.container pre, .container code, .container tt {
+  font: 1em "andale mono", "lucida console", monospace;
+  line-height: 1.5;
+}
+.container li ul, .container li ol {
+  margin: 0;
+}
+.container ul, .container ol {
+  margin: 0 1.5em 1.5em 0;
+  padding-left: 3.333em;
+}
+.container ul {
+  list-style-type: disc;
+}
+.container ol {
+  list-style-type: decimal;
+}
+.container dl {
+  margin: 0 0 1.5em 0;
+}
+.container dl dt {
+  font-weight: bold;
+}
+.container dd {
+  margin-left: 1.5em;
+}
+.container table {
+  margin-bottom: 1.4em;
+  width: 100%;
+}
+.container th {
+  font-weight: bold;
+}
+.container thead th {
+  background: #c3d9ff;
+}
+.container th, .container td, .container caption {
+  padding: 4px 10px 4px 5px;
+}
+.container tr.even td {
+  background: #e5ecf9;
+}
+.container tfoot {
+  font-style: italic;
+}
+.container caption {
+  background: #eeeeee;
+}
+.container .quiet {
+  color: #666666;
+}
+.container .loud {
+  color: #111111;
 }
 
+/* overriding blueprint */
+a, a:active, a.visited {
+  color: #369aff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+div.header, div.footer {
+  background: #369aff;
+  color: #ffffff;
+}
+
+div.header a, div.footer a {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+li {
+  list-style: none;
+}
+
+blockquote {
+  border-left: 9px solid #9accff;
+}
+
+.comments label {
+  display: inline-block;
+}
+
+.container pre {
+  white-space: pre-wrap;
+}
+
+/* Syntax highlighting, courtesy of Pygments */
 /* code highlighting by the wonderful pygments library */
 .hll {
   background-color: #ffffcc;
