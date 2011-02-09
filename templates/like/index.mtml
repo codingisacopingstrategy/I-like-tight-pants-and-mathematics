@@ -53,9 +53,9 @@ margin-left: 40px;
 <h2>Connecting science and the humanities from the bottom up</h2>
 </div>
 <div class="content">
-<mt:Entries sort_order="ascend">
+<mt:Entries sort_order="descend">
 <mt:EntriesHeader><dl></mt:EntriesHeader>
-  <dt><a href="<$mt:EntryPermalink$>">I like tight pants and <$mt:EntryTitle lower_case="1" $></a></dt>
+  <dt><a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">I like tight pants and <$mt:EntryTitle lower_case="1" $></a></dt>
   <dd><$mt:EntryDate$></dd>
 <mt:EntriesFooter></dl></mt:EntriesFooter>
 </mt:Entries>
