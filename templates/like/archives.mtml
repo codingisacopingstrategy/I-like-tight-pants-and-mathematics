@@ -1,173 +1,65 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <$mt:Include module="HTML Head"$>
-    <title><$mt:BlogName encode_html="1"$>: Archives</title>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="<$mt:Link template="rsd" replace="http://i.liketightpants.net","" $>" />
+    <title><$mt:BlogName encode_html="1"$></title>
+<style>
+
+#home .header, #home .footer {
+  margin: 25px 40px;
+  background-color: transparent;
+  color: #369aff;
+}
+
+#home div.header a, div.footer a {
+  color: #369aff;
+}
+
+#home {
+  background: #fff url(logo.png) 570px 144px no-repeat;
+}
+
+#home h1 {
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -2px
+}
+
+#home h2 {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1px
+}
+
+#home dt {
+  font-size: 20px;
+}
+
+#home dd {
+  margin-left: 8.8px;
+}
+
+#home div.content {
+margin-left: 40px;
+}
+
+</style>
 </head>
-<body id="<$mt:BlogTemplateSetID$>" class="mt-archive-index <$mt:Var name="page_layout"$>">
-    <div id="container">
-        <div id="container-inner">
-
-
-            <$mt:Include module="Banner Header"$>
-
-
-            <div id="content">
-                <div id="content-inner">
-
-
-                    <div id="alpha">
-                        <div id="alpha-inner">
-
-                            <h1 id="page-title" class="archive-title">Archives</h1>
-
-<mt:Ignore>
-    <!-- List of monthly archives, if monthly archives are enabled -->
-</mt:Ignore>
-<mt:IfArchiveTypeEnabled archive_type="Monthly">
-                            <div class="archive-monthly archive-date-based archive">
-    <mt:ArchiveList archive_type="Monthly">
-        <mt:ArchiveListHeader>
-                                <h2 class="archive-header">Monthly Archives</h2>
-                                <div class="archive-content">
-                                    <ul>
-        </mt:ArchiveListHeader>
-                                        <li><a href="<$mt:ArchiveLink$>"><$mt:ArchiveTitle$></a></li>
-        <mt:ArchiveListFooter>
-                                    </ul>
-                                </div>
-        </mt:ArchiveListFooter>
-    </mt:ArchiveList>
-                            </div>
-</mt:IfArchiveTypeEnabled>
-
-
-<mt:Ignore>
-    <!-- List of category archives, if category archives are enabled -->
-</mt:Ignore>
-<mt:IfArchiveTypeEnabled archive_type="Category">
-                            <div class="archive-category archive">
-                                <h2 class="archive-header">Categories</h2>
-                                <div class="archive-content">
-    <mt:TopLevelCategories>
-        <mt:SubCatIsFirst>
-                                    <ul>
-        </mt:SubCatIsFirst>
-        <mt:If tag="CategoryCount">
-                                        <li><a href="<$mt:CategoryArchiveLink$>" title="<$mt:CategoryDescription$>"><$mt:CategoryLabel$></a>
-        <mt:Else>
-                                        <li><$mt:CategoryLabel$>
-        </mt:If>
-        <$mt:SubCatsRecurse$>
-                                        </li>
-        <mt:SubCatIsLast>
-                                    </ul>
-        </mt:SubCatIsLast>
-    </mt:TopLevelCategories>
-                                </div>
-                            </div>
-</mt:IfArchiveTypeEnabled>
-
-
-<mt:Ignore>
-    <!-- List of author archives, if category author are enabled -->
-    <mt:IfArchiveTypeEnabled archive_type="Author">
-                                <div class="archive-author archive">
-        <mt:ArchiveList archive_type="Author">
-            <mt:ArchiveListHeader>
-                                    <h2 class="archive-header">Author Archives</h2>
-                                    <div class="archive-content">
-                                        <ul>
-            </mt:ArchiveListHeader>
-                                            <li><a href="<$mt:ArchiveLink$>"><$mt:ArchiveTitle$></a></li>
-            <mt:ArchiveListFooter>
-                                        </ul>
-                                    </div>
-            </mt:ArchiveListFooter>
-        </mt:ArchiveList>
-                                </div>
-    </mt:IfArchiveTypeEnabled>
-</mt:Ignore>
-
-
-<mt:Ignore>
-    <!-- List of category archives by month, if category archives are enabled -->
-    <mt:IfArchiveTypeEnabled archive_type="Category-Monthly">
-                                <div class="archive-category-monthly archive">
-        <mt:ArchiveList archive_type="Category-Monthly">
-            <mt:ArchiveListHeader>
-                                    <h2 class="archive-header">Category Monthly Archives</h2>
-                                    <div class="archive-content">
-                                        <ul>
-            </mt:ArchiveListHeader>
-                                            <li><a href="<$mt:ArchiveLink$>"><$mt:ArchiveTitle$></a></li>
-            <mt:ArchiveListFooter>
-                                        </ul>
-                                    </div>
-            </mt:ArchiveListFooter>
-        </mt:ArchiveList>
-                                </div>
-    </mt:IfArchiveTypeEnabled>
-</mt:Ignore>
-
-
-<mt:Ignore>
-    <!-- List of author archives, if category archives are enabled -->
-    <mt:IfArchiveTypeEnabled archive_type="Author-Monthly">
-                                <div class="archive-author-monthly archive">
-        <mt:ArchiveList archive_type="Author-Monthly">
-            <mt:ArchiveListHeader>
-                                    <h2 class="archive-header">Author Monthly Archives</h2>
-                                    <div class="archive-content">
-                                        <ul>
-            </mt:ArchiveListHeader>
-                                            <li><a href="<$mt:ArchiveLink$>"><$mt:ArchiveTitle$></a></li>
-            <mt:ArchiveListFooter>
-                                        </ul>
-                                    </div>
-            </mt:ArchiveListFooter>
-        </mt:ArchiveList>
-                                </div>
-    </mt:IfArchiveTypeEnabled>
-</mt:Ignore>
-
-
-<mt:Ignore>
-    <!-- List of entry archives, if entry archives are enabled -->
-<mt:IfArchiveTypeEnabled archive_type="Individual">
-                            <div class="archive-individual archive-date-based archive">
-    <mt:ArchiveList archive_type="Individual">
-        <mt:ArchiveListHeader>
-                                <div class="archive-content">
-                                    <ul>
-        </mt:ArchiveListHeader>
-                                        <li><$mt:ArchiveDate format="%Y.%m.%d"$>: <a href="<$mt:ArchiveLink$>"><$mt:ArchiveTitle$></a></li>
-        <mt:ArchiveListFooter>
-                                    </ul>
-                                </div>
-        </mt:ArchiveListFooter>
-    </mt:ArchiveList>
-                            </div>
-</mt:IfArchiveTypeEnabled>
-</mt:Ignore>
-
-
-                        </div>
-                    </div>
-
-
-                    <$mt:Include module="Sidebar"$>
-
-
-                </div>
-            </div>
-
-
-            <$mt:Include module="Banner Footer"$>
-
-
-        </div>
-    </div>
+<body id="home">
+<div class="header">
+<h1>I like tight pants and mathematics</h1>
+<h2>Connecting science and the humanities from the bottom up</h2>
+</div>
+<div class="content">
+<mt:Entries sort_order="descend">
+<mt:EntriesHeader><dl></mt:EntriesHeader>
+  <dt><a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">I like tight pants and <$mt:EntryTitle lower_case="1" $></a></dt>
+  <dd><$mt:EntryDate$></dd>
+<mt:EntriesFooter></dl></mt:EntriesFooter>
+</mt:Entries>
+</div>
+<$mt:Include module="Footer"$>
 </body>
 </html>
