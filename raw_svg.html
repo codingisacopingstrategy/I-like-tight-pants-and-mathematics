@@ -21,7 +21,7 @@
     dc:title="Raw SVG"
     dc:identifier="http://i.liketightpants.net/and/raw_svg.html"
     dc:subject=""
-    dc:description=" raw svg A very popular way to describe an image is as a matrix of lots of small squares. This is called a raster image. Rasterised images are convenient because a computer screen is a raster too. On the..."
+    dc:description=" raw svg Implementing SVG I know that SVG&apos;s are supported in Firefox and Safari, so I want them on this website. I figured I could best look how it is done in the wild. I looked at the site..."
     dc:creator="Eric"
     dc:date="2010-08-09T23:04:33+01:00" />
 </rdf:RDF>
@@ -54,10 +54,58 @@
 </div>
 
 <div class="span-11">
+<h3>Implementing SVG</h3>
 
-<p>A very popular way to describe an image is as a matrix of lots of small squares. This is called a raster image.</p>
+<p>I know that SVG's are supported in Firefox and Safari, so I want them on this website. I figured I could best look how it is done in the wild. I looked at <a title="Reinventing Fire" href="http://www.schepers.cc/">the site of Doug Schepers</a> because he works for the W3C SVG working group so he must know what he is doing. This is how he embeds an SVG graphic in his HTML:</p>
 
-<p>Rasterised images are convenient because a computer screen is a raster too. On the internet raster formats are predominant, JPEG and PNG. Normally, the squares in the picture map to the squares of the screen.</p>
+<p></p><pre><span class="nt">&lt;object</span> <span class="na">type=</span><span class="s">"image/svg+xml"</span> <span class="na">width=</span><span class="s">"420"</span> <span class="na">height=</span><span class="s">"120"</span> <span class="na">data=</span><span class="s">"http://schepers.cc/svg/path/pathpoints.svg"</span><span class="nt">&gt;</span>Please use a modern browser.<span class="nt">&lt;/object&gt;</span>
+</pre>
+
+<p>Very simple. The object tag can be used to embed any kind of content. The type is specified by the <code>type</code> attribute and if the browser can not display this particular kind of content, it will fall back and display what's contained <em>within</em> the object tag. In this case the text: 'Please use a modern browser.'.</p>
+
+<p>The message looks a bit rude though. I suppose it is okay for Doug because he is part of the working group and they are pushing their format hard, and they want people to take notice when browsers do not support the standards they are working so hard at. In this case, the browser which is not being cooperative is Internet Explorer (up until version 8).</p>
+
+<p>I do not think I can afford making such a statement at the viewers expense though. Most people who visit my site probably use Firefox, Chrome or Safari. But people who work for larger cultural organisations, or for businesses or governments, will often have to put up with Internet explorer. <a title="Much Ado About IE6 | Digg About" href="http://about.digg.com/blog/much-ado-about-ie6">Often they do not even want to use this browser, but the IT department mandates it</a>. I would not like it if someone who has to decide over a funding application or an exhibition or a sponsorship is unable to access my content because he happens to be using a suboptimal computer.</p>
+
+<p>Then there is also the possibility that people are using a web browser that does not display images. Such browsers exist, <a title="Lynx (web browser) - Wikipedia, the free encyclopedia" href="http://en.wikipedia.org/wiki/Lynx_(web_browser)">lynx</a> is an example. More importantly, there are people who can not see, and therefore use programs called screen readers that read the web page to them. We have to take them into account too.</p>
+
+<p>So this is how I did it, you will find the SVG on the page <a title="I like tight pants and the problem with web apps" href="http://i.liketightpants.net/and/the_problem_with_web_apps.html">I like tight pants and the problem with web apps</a>.</p>
+
+<p></p><pre><span class="nt">&lt;p&gt;</span>
+  <span class="nt">&lt;object</span> <span class="na">type=</span><span class="s">"image/svg+xml"</span> <span class="na">style=</span><span class="s">"width:736px;height:880px;"</span> <span class="na">data=</span><span class="s">"/and/assets/called/theproblemwithwebapps.svg"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/and/assets/called/theproblemwithwebapps.png"</span> <span class="na">style=</span><span class="s">"width:736px;height:880px;"</span> <span class="na">alt=</span><span class="s">"'Apps become like this:' a circle labelled APP encapsulating a circle labelled DATA. The app interfaces with a square with rounded corners labeled USER, as shown by two way arrows. 'While potentially they could be:' the user interfaces with a circle APP which interfaces with a separate circle DATA. 'The latter could enable': the USER interfaces with an APP which interfaces with an APP which interfaces with an APP which interfaces with DATA. 'As well as:' the USER interfaces with three APPS that all interface with DATA. '(Or any combination of the two)' "</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;/object&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+</pre>
+
+<p>I saved the image both as a SVG picture and a traditional PNG picture. Most browsers display the SVG. Internet Explorer falls back to the image tag contained within the object tag, and shows the PNG. Text only browsers and screen readers fall back from the object tag to the image tag, and instead of the image they display the alt text (<a title="" href="http://i.liketightpants.net/and/assets/called/Schermafbeelding%202010-08-09%20om%2023.57.06.png">screenshot</a>).</p>
+
+<h3>SVG in the wild</h3>
+
+<p>You will not find too many web sites using SVG directly. Wikipedia, which hosts a lot of SVG's, converts them to PNG before displaying.
+Other websites use a JavaScript library like <a title="Raphaël--JavaScript Library" href="http://raphaeljs.com/">Raphael</a> to render vector graphics.</p>
+
+<p>Part of this has to do with the lack of support from Internet Explorer, but when I used SVG on a private wiki a while back another reason became apparent: rendering SVG's can be slow and unstable. It managed to crash Safari a couple of times.</p>
+
+<p>This makes sense: there is no reason for browser vendors to spend a lot and time of effort in optimising a feature that is not used much. However, as long as it functions lackluster, people will also be less prone to use the feature.</p>
+
+<p>I do not care for Catch 22's, so I say bring on the raw SVG (Rip ODB). Maybe browsers handle it better than they did a year ago. Maybe they will not. But in that case, an increase in bug reports will show the vendors soon enough that this format is to be reckoned with, and they will improve their rendering.</p>
+
+<hr>
+
+<div class="small">
+<h4>Additional points:</h4>
+
+<p>One other potentially interesting way to use SVG is to directly put the SVG code inside the HTML. There are a whole lot of caveats for this with XHTML, but it works differently in HTML5. I'll have to look into this.</p>
+
+<p>If you want to see some SVG pictures, there are a lot of them to be found at <a title="Wikimedia Commons" href="http://commons.wikimedia.org/">Wikimedia Commons</a>. And big up to the <a title="Open Clip Art Library" href="http://openclipart.org/">Open Clipart Library</a>, a group of volunteers that has already produced more than 20.000 images in the format, all available in the public domain.</p>
+</div>
+</div>
+
+<div class="span-9 prepend-2 last small">
+<h3>What is SVG?</h3>
+
+<p>A very popular way to describe an image is as a matrix of lots of small squares. This is called a raster image. Rasterised images are convenient because a computer screen is a raster too. On the internet raster formats are predominant, JPEG and PNG. Normally, the squares in the picture map to the squares of the screen.</p>
 
 <p>The other popular way to describe an image as a collection of curves and shapes, called vectors, that can be described by mathematical formulas. The shape of the curves is determined by control points. Shapes are created by filling curves with colour. </p>
 
@@ -69,9 +117,7 @@
 
 <p>(SVG has more going for it than just being scalable: it is a web-standard that ties in well with the other web technologies, HTML, CSS and JavaScript. For example, you can make parts of your drawing interactive with JavaScript. )</p>
 
-</div>
 
-<div class="span-11 last">
 <h3>Why has SVG not made it big (yet)?</h3>
 
 <p>Vector graphics shine when you scale your page. All major browsers now implement full page zooming, meaning you can zoom in on the web page with  + or Ctrl +. While raster based images will get fuzzy, vector based images retain a sharp outline. Likewise, when you print a webpage, vector images come off much cleaner than rasters, since you have scaled to a higher resolution device.</p>
@@ -81,52 +127,6 @@
 <p>All this changes with the new generation of mobile devices. The user interface of the iPhone does not operate on a fixed resolution. Rather it loads the whole page into and subsequently allows you to do a continuous zoom onto relevant parts.</p>
 
 <p>On the high resolution of displays of contemporary mobile phones you will be looking at razor sharp text and fuzzy images.</p>
-
-<h3>Implementing SVG</h3>
-
-<p>I know that SVG's are supported in Firefox and Safari, so I want them on this website. I figured I could best look how it is done in the wild. I looked at <a href="http://www.schepers.cc/" title="Reinventing Fire">the site of Doug Schepers</a> because he works for the W3C SVG working group so he must know what he is doing (the <a href="http://www.w3.org/" title="The World Wide Web Consortium (W3C)">W3C</a> is the body that develops web standards like HTML and SVG). This is how he embeds an SVG graphic in his HTML:</p>
-
-<p><pre><span class="nt">&lt;object</span> <span class="na">type=</span><span class="s">&quot;image/svg+xml&quot;</span> <span class="na">width=</span><span class="s">&quot;420&quot;</span> <span class="na">height=</span><span class="s">&quot;120&quot;</span> <span class="na">data=</span><span class="s">&quot;http://schepers.cc/svg/path/pathpoints.svg&quot;</span><span class="nt">&gt;</span>Please use a modern browser.<span class="nt">&lt;/object&gt;</span>
-</pre></p>
-
-<p>Very simple. The object tag can be used to embed any kind of content. The type is specified by the <code>type</code> attribute and if the browser can not display this particular kind of content, it will fall back and display what's contained <em>within</em> the object tag. In this case the text: 'Please use a modern browser.'.</p>
-
-<p>The message looks a bit rude though. I suppose it is okay for Doug because he is part of the working group and they are pushing their format hard, and they want people to take notice when browsers do not support the standards they are working so hard at. In this case, the browser which is not being cooperative is Internet Explorer (up until version 8).</p>
-
-<p>I do not think I can afford making such a statement at the viewers expense though. Most people who visit my site probably use Firefox or Safari. But people who work for larger cultural organisations, or for businesses or governments, will often have to put up with Internet explorer. <a href="http://about.digg.com/blog/much-ado-about-ie6" title="Much Ado About IE6 | Digg About">Often they do not even want to use this browser, but the IT department mandates it</a>. I would not like it if someone who has to decide over a funding application or an exhibition or a sponsorship is unable to access my content because he happens to be using a suboptimal computer.</p>
-
-<p>Then there is also the possibility that people are using a web browser that does not display images. Such browsers exist, <a href="http://en.wikipedia.org/wiki/Lynx_(web_browser)" title="Lynx (web browser) - Wikipedia, the free encyclopedia">lynx</a> is an example. More importantly, there are people who can not see, and therefore use programs called screen readers that read the web page to them. We have to take them into account too.</p>
-
-<p>So this is how I did it, you will find the SVG on the page <a href="http://i.liketightpants.net/and/the_problem_with_web_apps.html" title="I like tight pants and the problem with web apps">I like tight pants and the problem with web apps</a>.</p>
-
-<p><pre><span class="nt">&lt;p&gt;</span>
-  <span class="nt">&lt;object</span> <span class="na">type=</span><span class="s">&quot;image/svg+xml&quot;</span> <span class="na">style=</span><span class="s">&quot;width:736px;height:880px;&quot;</span> <span class="na">data=</span><span class="s">&quot;/and/assets/called/theproblemwithwebapps.svg&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/and/assets/called/theproblemwithwebapps.png&quot;</span> <span class="na">style=</span><span class="s">&quot;width:736px;height:880px;&quot;</span> <span class="na">alt=</span><span class="s">&quot;'Apps become like this:' a circle labelled APP encapsulating a circle labelled DATA. The app interfaces with a square with rounded corners labeled USER, as shown by two way arrows. 'While potentially they could be:' the user interfaces with a circle APP which interfaces with a separate circle DATA. 'The latter could enable': the USER interfaces with an APP which interfaces with an APP which interfaces with an APP which interfaces with DATA. 'As well as:' the USER interfaces with three APPS that all interface with DATA. '(Or any combination of the two)' &quot;</span> <span class="nt">/&gt;</span>
-  <span class="nt">&lt;/object&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-</pre></p>
-
-<p>I saved the image both as a SVG picture and a traditional PNG picture. Most browsers display the SVG. Internet Explorer falls back to the image tag contained within the object tag, and shows the PNG. Text only browsers and screen readers fall back from the object tag to the image tag, and instead of the image they display the alt text (<a href="http://i.liketightpants.net/and/assets/called/Schermafbeelding%202010-08-09%20om%2023.57.06.png" title="">screenshot</a>).</p>
-
-<h3>SVG in the wild</h3>
-
-<p>You will not find too many web sites using SVG directly. Wikipedia, which hosts a lot of SVG's, converts them to PNG before displaying.
-Other websites use a JavaScript library like <a href="http://raphaeljs.com/" title="Raphaël--JavaScript Library">Raphael</a> to render vector graphics.</p>
-
-<p>Part of this has to do with the lack of support from Internet Explorer, but when I used SVG on a private wiki a while back another reason became apparent: rendering SVG's can be slow and unstable. It managed to crash Safari a couple of times.</p>
-
-<p>This makes sense: there is no reason for browser vendors to spend a lot and time of effort in optimising a feature that is not used much. However, as long as it functions lackluster, people will also be less prone to use the feature.</p>
-
-<p>I do not care for Catch 22's though, so I say bring on the raw SVG (Rip ODB). Maybe browsers handle it better than they did a year ago. Maybe they will not. But in that case, an increase in bug reports will show the vendors soon enough that this format is to be reckoned with, and they will improve their rendering.</p>
-
-<hr />
-
-<h4>Additional points:</h4>
-
-<p><small>One other potentially interesting way to use SVG is to directly put the SVG code inside the HTML. This is called <em>inline</em>. Since HTML is in a transitional phase now (towards HTML 5) this warrants its own investigation.</small></p>
-
-<p><small>If you want to see some SVG pictures, there are a lot of them to be found at <a href="http://commons.wikimedia.org/" title="Wikimedia Commons">Wikimedia Commons</a>. And big up to the <a href="http://openclipart.org/" title="Open Clip Art Library">Open Clipart Library</a>, a group of volunteers that has already produced more than 20.000 images in the format, all available in the public domain.</small></p>
-
 </div>
 <div id="comments" class="comments span-11">
 
