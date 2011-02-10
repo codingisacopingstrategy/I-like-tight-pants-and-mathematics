@@ -10,7 +10,7 @@
 <mt:Entries lastn="15">
 <entry>
     <title><$mt:EntryTitle remove_html="1" encode_xml="1"$></title>
-    <link rel="alternate" type="text/html" href="<$mt:EntryPermalink encode_xml="1"$>" />
+    <link rel="alternate" type="text/html" href="<$mt:EntryPermalink replace=".html","" encode_xml="1"$>" />
     <id><$mt:EntryAtomID$></id>
 
     <published><$mt:EntryDate utc="1" format="%Y-%m-%dT%H:%M:%SZ"$></published>
