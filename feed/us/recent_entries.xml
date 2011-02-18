@@ -297,7 +297,7 @@ Other websites use a JavaScript library like <a title="Raphaël--JavaScript Libr
     <id>tag:i.liketightpants.net,2010:/and//1.2</id>
 
     <published>2010-03-08T19:06:05Z</published>
-    <updated>2010-06-28T23:55:22Z</updated>
+    <updated>2011-02-18T13:27:54Z</updated>
 
     <summary> taken in my studio by Johan Nieuwenhuize...</summary>
     <author>
@@ -307,7 +307,7 @@ Other websites use a JavaScript library like <a title="Raphaël--JavaScript Libr
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[  <p><img src="http://i.liketightpants.net/and/assets/called/bowie.jpg" alt="You see a picture of a small poster stuck behind some files. It says 'Guided by Heroes' and it shows David Bowie." /></p>
+        <![CDATA[  <p><img src="http://i.liketightpants.net/and/assets/called/bowie.jpg" alt="You see a picture of a small poster stuck behind some files. It says 'Guided by Heroes' and it shows David Bowie."  style="width:900px;height:1124px;"/></p>
   <p>taken in my studio by <a href="http://johannieuwenhuize.nl/">Johan Nieuwenhuize</a></p>]]>
         
     </content>
