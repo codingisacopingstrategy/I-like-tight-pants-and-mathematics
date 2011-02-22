@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/beta');
+header('Location: /and/illustration');
 ?>

@@ -4,9 +4,40 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2010-12-21T16:51:57Z</updated>
+    <updated>2011-02-20T19:17:51Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 4.33-en</generator>
+
+<entry>
+    <title>Illustration</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/illustration" />
+    <id>tag:i.liketightpants.net,2011:/and//1.18</id>
+
+    <published>2011-02-20T19:12:06Z</published>
+    <updated>2011-02-20T19:17:51Z</updated>
+
+    <summary>Illustration...</summary>
+    <author>
+        <name>Eric</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<h2>Illustration</h2>
+<p>
+  <object type="image/svg+xml" style="width:900px;height:900px;" data="/and/assets/called/computer.svg">
+    <img src="/and/assets/called/computer.png" style="width:900px;height:900px;" alt="A stylised image of a computer displaying a window manager. The image is constituted of diagonal contours following a criss cross coarse grid." />
+  </object>
+</p>
+<p>
+  <object type="image/svg+xml" style="width:900px;height:900px;" data="/and/assets/called/triangle.svg">
+    <img src="/and/assets/called/triangle.png" style="width:900px;height:900px;" alt="A stylised image of a penrose triangle. The image is constituted of diagonal contours following a criss cross coarse grid." />
+  </object>
+</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Beta</title>
@@ -14,7 +45,7 @@
     <id>tag:i.liketightpants.net,2010:/and//1.16</id>
 
     <published>2010-09-04T22:15:37Z</published>
-    <updated>2010-12-21T16:51:57Z</updated>
+    <updated>2011-02-18T13:37:15Z</updated>
 
     <summary> Beta Reading yet another programming blog with great design, I feel ashamed for the shape this site is in. Well, it is in beta! Apparently there are people who can pull it of, but I think my website will...</summary>
     <author>
@@ -30,13 +61,14 @@
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[<div class="span-22 last">
 <h2>Beta</h2>
-
+<div class="span-11">
 <p>Reading yet <a href="http://blog.peepcode.com/tutorials/2010/about-this-blog" title="About this Blog | Free PeepCode Blog">another programming blog with great design</a>, I feel ashamed for the shape this site is in.</p>
 
 <p>Well, it is in beta! Apparently there are people who can pull it of, but I think my website will be better if I do not develop, design and write it all at the same time.</p>
 
 <p>For the visual identity I am now working with <a href="http://www.mccuskey.nl/" title="Jij &amp; McCuskey">Rowan</a>. I am sure it will turn out wonderful. Stay tuned.</p>
-
+</div>
+<div class="span-11 last">
 <img src="/and/assets/called/AIconsWwwConst_anim.gif" style="width:38px;height:38px;" alt="AIconsWwwConst Anim" />
 <img src="/and/assets/called/AIconsWwwConst_area.png" style="width:78px;height:53px;" alt="AIconsWwwConst Area" />
 <img src="/and/assets/called/AIconsWwwConst_barrier.png" style="width:39px;height:35px;" alt="AIconsWwwConst Barrier" />
@@ -49,6 +81,7 @@
 <img src="/and/assets/called/AIconsWwwConst_under.png" style="width:125px;height:39px;" alt="AIconsWwwConst Under" />
 <img src="/and/assets/called/AIconsWwwConst_warn.png" style="width:49px;height:43px;" alt="AIconsWwwConst Warn" />
 <img src="/and/assets/called/AIconsWwwConstruction.png" style="width:40px;height:40px;" alt="AIconsWwwConstruction" />
+</div>
 </div>]]>
         
     </content>
@@ -248,7 +281,7 @@ Other websites use a JavaScript library like <a title="Raphaël--JavaScript Libr
     <id>tag:i.liketightpants.net,2010:/and//1.8</id>
 
     <published>2010-04-07T18:10:09Z</published>
-    <updated>2011-02-03T23:42:52Z</updated>
+    <updated>2011-02-20T16:32:01Z</updated>
 
     <summary>the problem with web apps...</summary>
     <author>
@@ -260,10 +293,20 @@ Other websites use a JavaScript library like <a title="Raphaël--JavaScript Libr
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[<h2>the problem with web apps</h2>
 <p>
-  <object type="image/svg+xml" style="width:736px;height:880px;" data="/and/assets/called/theproblemwithwebapps.svg">
+  <object type="image/svg+xml" style="width:900px;height:1076px;" data="/and/assets/called/theproblemwithwebapps.svg">
     <img src="/and/assets/called/theproblemwithwebapps.png" style="width:736px;height:880px;" alt="'Apps become like this:' a circle labelled APP encapsulating a circle labelled DATA. The app interfaces with a square with rounded corners labeled USER, as shown by two way arrows. 'While potentially they could be:' the user interfaces with a circle APP which interfaces with a separate circle DATA. 'The latter could enable': the USER interfaces with an APP which interfaces with an APP which interfaces with an APP which interfaces with DATA. 'As well as:' the USER interfaces with three APPS that all interface with DATA. '(Or any combination of the two)' " />
   </object>
-</p>]]>
+</p>
+<!--
+kladblok
+
+And I asked Alexandre, isn't the Semantic Web is supposed to solve? That's not t
+
+I think these are the data silos TBL talks about
+
+golden
+ola maciejewska in a piece by bruno listapod photography jette schneider / danslab
+-->]]>
         
     </content>
 </entry>
