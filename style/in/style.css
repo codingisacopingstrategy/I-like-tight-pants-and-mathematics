@@ -876,6 +876,24 @@ blockquote {
   white-space: pre-wrap;
 }
 
+div.header ul {
+  margin: 0;
+}
+
+div.header ul li {
+  display: inline-block;
+  border-left: 1px solid white;
+  padding: 0 6px 0 6px;
+}
+
+div.header ul li:first-child {
+  border-left: none;
+}
+
+div.header ul li:last-child {
+  border-right: none;
+}
+
 /* Syntax highlighting, courtesy of Pygments */
 /* code highlighting by the wonderful pygments library */
 .hll {

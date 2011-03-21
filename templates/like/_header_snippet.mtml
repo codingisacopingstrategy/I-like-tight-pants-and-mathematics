@@ -1,18 +1,22 @@
 <div class="header span-22 prepend-1 append-1">
-<a href="/and/" accesskey="1">I like tight pants and</a>
-    <span style="display:inline-block;float:right;">
+<a style="float:left" href="/and/">I like tight pants and</a>
+<a style="float:left;margin-left:239px;" href="/and/archives">Archives</a>
+    <ul style="float:right;">
     <mt:If tag="EntryPrevious">
-        <a href="/and/heroes">Oldest</a> |
+        <li><a href="/and/heroes">Oldest</a></li>
     </mt:If>
     <mt:EntryPrevious>
-        <a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">Older</a>&nbsp;
+        <li><a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">Older</a></li>
     </mt:EntryPrevious>
     <mt:EntryNext>
-        | <a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">Newer</a>&nbsp;
-    </mt:EntryNext>
+        <li><a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">Newer</a>&nbsp;
+    </mt:EntryNext></li>
     <mt:If tag="EntryNext">
     <mt:Entries lastn="1">
-        | <a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">Newest</a>
-    </mt:Entries>
+        <li><a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">Newest</a>
+    </mt:Entries></li>
+    <mt:Else>
+    <li style="width:123px;">&nbsp;</li>
     </mt:If>
+    <ul>
 </div>
