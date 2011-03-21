@@ -88,14 +88,14 @@
 </entry>
 
 <entry>
-    <title>Raw SVG</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/raw-svg" />
+    <title>Accessible SVG</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/accessible-svg" />
     <id>tag:i.liketightpants.net,2010:/and//1.15</id>
 
     <published>2010-08-09T21:04:33Z</published>
-    <updated>2011-02-03T23:20:46Z</updated>
+    <updated>2011-03-16T13:43:20Z</updated>
 
-    <summary> raw svg Implementing SVG I know that SVG&apos;s are supported in Firefox and Safari, so I want them on this website. I figured I could best look how it is done in the wild. I looked at the site...</summary>
+    <summary> Accessible svg Implementing SVG I know that SVG&apos;s are supported in Firefox and Safari, so I want them on this website. I figured I could best look how it is done in the wild. I looked at the site...</summary>
     <author>
         <name>Eric</name>
         
@@ -104,7 +104,7 @@
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[<div class="span-22">
-<h2>raw svg</h2>
+<h2>Accessible svg</h2>
 </div>
 
 <div class="span-11">
@@ -192,9 +192,9 @@ Other websites use a JavaScript library like <a title="Raphaël--JavaScript Libr
     <id>tag:i.liketightpants.net,2010:/and//1.12</id>
 
     <published>2010-07-09T16:15:35Z</published>
-    <updated>2011-02-03T23:26:52Z</updated>
+    <updated>2011-03-16T13:00:54Z</updated>
 
-    <summary>honest artist statements I keep changing around this text. Because I do not know who you are I get no clues as to what I should talk about. I talk in abstractions of meaning, art and revolution. You of course...</summary>
+    <summary> #text p{ font-size: 200%; } honest artist statements An artist statement is a text you write when you apply for a scholarship or open call, and that you keep around on your website. I keep changing around this text....</summary>
     <author>
         <name>Eric</name>
         
@@ -202,8 +202,16 @@ Other websites use a JavaScript library like <a title="Raphaël--JavaScript Libr
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<h2>honest artist statements</h2>
-<div class="span-14 append-bottom last">
+        <![CDATA[<style>
+#text p{
+font-size: 200%;
+}
+</style>
+<h2>honest artist statements</h2>
+
+<p class="span-12 prepend-10">An artist statement is a text you write when you apply for a scholarship or open call, and that you keep around on your website.</p>
+
+<div id="text" class="span-16 append-bottom last">
 
 <p>I keep changing around this text. Because I do not know who you are I get no clues as to what I should talk about. I talk in abstractions of meaning, art and revolution.</p> 
 
@@ -230,7 +238,7 @@ Other websites use a JavaScript library like <a title="Raphaël--JavaScript Libr
     <id>tag:i.liketightpants.net,2010:/and//1.11</id>
 
     <published>2010-06-08T21:05:38Z</published>
-    <updated>2010-12-15T23:07:13Z</updated>
+    <updated>2011-03-16T15:37:11Z</updated>
 
     <summary>talking of content At the Libre Graphics Meeting, a four day event bringing together open source developers and graphic professionals. Correction @ 4:52: the Open Baskerville project has been initiated by Simon Pascal Klein from Australia (not Pascal Simon Klein...</summary>
     <author>
@@ -242,7 +250,7 @@ Other websites use a JavaScript library like <a title="Raphaël--JavaScript Libr
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[<h2>talking of content</h2>
 
-<object width="920" height="483"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=12366245&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=369aff&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=12366245&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=369aff&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="920" height="483"></embed></object>
+<iframe src="http://player.vimeo.com/video/12366245?byline=0&amp;portrait=0&amp;color=369aff" width="920" height="483" frameborder="0"></iframe>
 
 <p>At the <a href="http://libregraphicsmeeting.org/2010/">Libre Graphics Meeting</a>, a four day event bringing together open source developers and graphic professionals.</p>
 
@@ -254,34 +262,12 @@ Other websites use a JavaScript library like <a title="Raphaël--JavaScript Libr
 </entry>
 
 <entry>
-    <title>The perspective of content</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-perspective-of-content" />
-    <id>tag:i.liketightpants.net,2010:/and//1.9</id>
-
-    <published>2010-04-27T22:03:21Z</published>
-    <updated>2010-12-15T23:05:30Z</updated>
-
-    <summary>the perspective of content...</summary>
-    <author>
-        <name>Eric</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<h2>the perspective of content</h2>
-<p><img src="http://schr.fr/cntnt/fromacontentperspective.png" style="width:600px;height:1615px;" alt="a hand drawn diagram in blue, in three parts." /></p>]]>
-        
-    </content>
-</entry>
-
-<entry>
     <title>The problem with web apps</title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-problem-with-web-apps" />
     <id>tag:i.liketightpants.net,2010:/and//1.8</id>
 
     <published>2010-04-07T18:10:09Z</published>
-    <updated>2011-02-20T16:32:01Z</updated>
+    <updated>2011-03-16T13:08:30Z</updated>
 
     <summary>the problem with web apps...</summary>
     <author>
@@ -296,7 +282,9 @@ Other websites use a JavaScript library like <a title="Raphaël--JavaScript Libr
   <object type="image/svg+xml" style="width:900px;height:1076px;" data="/and/assets/called/theproblemwithwebapps.svg">
     <img src="/and/assets/called/theproblemwithwebapps.png" style="width:736px;height:880px;" alt="'Apps become like this:' a circle labelled APP encapsulating a circle labelled DATA. The app interfaces with a square with rounded corners labeled USER, as shown by two way arrows. 'While potentially they could be:' the user interfaces with a circle APP which interfaces with a separate circle DATA. 'The latter could enable': the USER interfaces with an APP which interfaces with an APP which interfaces with an APP which interfaces with DATA. 'As well as:' the USER interfaces with three APPS that all interface with DATA. '(Or any combination of the two)' " />
   </object>
+<img src="http://schr.fr/cntnt/fromacontentperspective.png" style="width:600px;height:1615px;" alt="a hand drawn diagram in blue, in three parts." />
 </p>
+
 <!--
 kladblok
 
@@ -304,9 +292,30 @@ And I asked Alexandre, isn't the Semantic Web is supposed to solve? That's not t
 
 I think these are the data silos TBL talks about
 
-golden
-ola maciejewska in a piece by bruno listapod photography jette schneider / danslab
 -->]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Golden</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/golden" />
+    <id>tag:i.liketightpants.net,2010:/and//1.19</id>
+
+    <published>2010-03-25T13:13:59Z</published>
+    <updated>2011-03-16T13:25:46Z</updated>
+
+    <summary> ola maciejewska in a performance by bruno listapod photography jette schneider / danslab...</summary>
+    <author>
+        <name>Eric</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<img src="/and/assets/called/ola_bruno_golden.jpg" style="width:900;height:602;" alt="Ola Bruno Golden" title="">
+
+<p><a href="http://contemporaryperformance.org/profile/olamaciejewska" title="Ola Maciejewska&#039;s Page - Contemporary Performance Network">ola maciejewska</a> in a performance by <a href="http://www.disjointedarts.com/" title="Bruno Listopad | DISJOINTED ARTS - DISJOINTED ARTS">bruno listapod</a> photography jette schneider / <a href="http://www.danslab.nl/" title="News">danslab</a></p>]]>
         
     </content>
 </entry>
@@ -317,9 +326,9 @@ ola maciejewska in a piece by bruno listapod photography jette schneider / dansl
     <id>tag:i.liketightpants.net,2010:/and//1.7</id>
 
     <published>2010-03-14T20:32:48Z</published>
-    <updated>2010-12-15T23:04:20Z</updated>
+    <updated>2011-03-16T13:11:59Z</updated>
 
-    <summary>juxtapositions Maybe I was emerging into the era of post-modernism but I put it down far more to ADD &#8211; Attention Deficiency Disorder [laughs]. I just think that I couldn&apos;t concentrate. I never have been able to concentrate on one...</summary>
+    <summary> blockquote { font-size: 200% } juxtapositions Maybe I was emerging into the era of post-modernism but I put it down far more to ADD &#8211; Attention Deficiency Disorder [laughs]. I just think that I couldn&apos;t concentrate. I never have...</summary>
     <author>
         <name>Eric</name>
         
@@ -327,7 +336,13 @@ ola maciejewska in a piece by bruno listapod photography jette schneider / dansl
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<h2>juxtapositions</h2> 
+        <![CDATA[<style>
+blockquote {
+    font-size: 200%
+}
+</style>
+
+<h2>juxtapositions</h2> 
 <blockquote>Maybe I was emerging into the era of post-modernism but I put it down far more to ADD &#8211; Attention Deficiency Disorder [laughs].  I just think that I couldn't concentrate. I never have been able to concentrate on one thing for very long with getting kind of itchy. I did always feel that there was some kind of area in rock that I could work comfortably using and working with all of my enthusiasms. I am a guy of enthusiasms. I get terribly excited about things that are new to me and it just seemed a perfectly natural for me at the time to put together all these odds and ends of art and culture that I really adore.</blockquote>
 <p><em><a href="http://5years.com/quotes.htm" title="The Ziggy Stardust Companion - In Their Own Words (1/2)">Source</a></em></p>]]>
         
