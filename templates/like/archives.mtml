@@ -5,61 +5,23 @@
     <$mt:Include module="HTML Head"$>
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="<$mt:Link template="rsd" replace="http://i.liketightpants.net","" $>" />
     <title><$mt:BlogName encode_html="1"$></title>
-<style>
-
-#home .header, #home .footer {
-  margin: 25px 40px;
-  background-color: transparent;
-  color: #369aff;
-}
-
-#home div.header a, div.footer a {
-  color: #369aff;
-}
-
-#home {
-  background: #fff url(logo.png) 570px 144px no-repeat;
-}
-
-#home h1 {
-  font-size: 64px;
-  line-height: 64px;
-  letter-spacing: -2px
-}
-
-#home h2 {
-  font-size: 48px;
-  line-height: 48px;
-  letter-spacing: -1px
-}
-
-#home dt {
-  font-size: 20px;
-}
-
-#home dd {
-  margin-left: 8.8px;
-}
-
-#home div.content {
-margin-left: 40px;
-}
-
-</style>
 </head>
-<body id="home">
-<div class="header">
-<h1>I like tight pants and mathematics</h1>
-<h2>Connecting science and the humanities from the bottom up</h2>
+<body>
+<div class="content container">
+<div class="header span-22 prepend-1 append-1">
+<a href="/and/" accesskey="1">I like tight pants and</a>
 </div>
-<div class="content">
-<mt:Entries sort_order="descend">
-<mt:EntriesHeader><dl></mt:EntriesHeader>
-  <dt><a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">I like tight pants and <$mt:EntryTitle lower_case="1" $></a></dt>
-  <dd><$mt:EntryDate$></dd>
-<mt:EntriesFooter></dl></mt:EntriesFooter>
+<div class="span-22 prepend-1 append-1 prepend-top append-bottom last">
+<mt:Entries lastn="0" sort_order="ascend">
+    <div class="span-11<mt:if name="__even__"> last</mt:if>">
+        <a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">
+          <img src="/and/assets/as/screenshots/of/<$mt:EntryBaseName separator="-"$>.png" style="width:440px;height:550px;" alt="I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$>">
+        </a>
+          <p>I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$></p>
+    </div>
 </mt:Entries>
 </div>
 <$mt:Include module="Footer"$>
+</div>
 </body>
 </html>
