@@ -1,15 +1,14 @@
+# -*- coding: utf-8 -*-
+
 import os
 import subprocess
 from glob import iglob
 from random import randint
 
-"""posts = dict((i.replace('.html',''), ('http://i.liketightpants.net/and/' + i.replace('.html',''))) for i in iglob('*.html') if i not in ['index.html','archives.html'])"""
-
 posts = {}
 
 for i in iglob('*.html'):
-    # talking-of-content.html contains flash and crashes webkit2png
-    if i not in ['index.html','archives.html','talking-of-content.html']: 
+    if i not in ['index.html','archives.html']: 
         i = i.replace('.html','')
         posts[i] = 'http://i.liketightpants.net/and/' + i
 
@@ -28,5 +27,3 @@ for post, url in posts.iteritems():
     pipe.wait()
     # remove post-full.png
     os.remove(outfile_def)
-
-
