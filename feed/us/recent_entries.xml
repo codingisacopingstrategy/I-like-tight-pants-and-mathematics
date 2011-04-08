@@ -303,9 +303,9 @@ I think these are the data silos TBL talks about
     <id>tag:i.liketightpants.net,2010:/and//1.19</id>
 
     <published>2010-03-25T13:13:59Z</published>
-    <updated>2011-03-16T13:25:46Z</updated>
+    <updated>2011-04-02T15:20:28Z</updated>
 
-    <summary> ola maciejewska in a performance by bruno listapod photography jette schneider / danslab...</summary>
+    <summary> Eric Schrijver and ola maciejewska in a performance by bruno listopad photography jette schneider / danslab...</summary>
     <author>
         <name>Eric</name>
         
@@ -313,9 +313,11 @@ I think these are the data silos TBL talks about
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<img src="/and/assets/called/ola_bruno_golden.jpg" style="width:900;height:602;" alt="Ola Bruno Golden" title="">
+        <![CDATA[<img src="/and/assets/called/selfconstruction_01.jpg" style="width:900px;height:602px;">
 
-<p><a href="http://contemporaryperformance.org/profile/olamaciejewska" title="Ola Maciejewska&#039;s Page - Contemporary Performance Network">ola maciejewska</a> in a performance by <a href="http://www.disjointedarts.com/" title="Bruno Listopad | DISJOINTED ARTS - DISJOINTED ARTS">bruno listapod</a> photography jette schneider / <a href="http://www.danslab.nl/" title="News">danslab</a></p>]]>
+<img src="/and/assets/called/ola_bruno_golden.jpg" style="width:900;height:602;" alt="Ola Bruno Golden" title="">
+
+<p class="small">Eric Schrijver and <a href="http://contemporaryperformance.org/profile/olamaciejewska" title="Ola Maciejewska&#039;s Page - Contemporary Performance Network">ola maciejewska</a> in a performance by <a href="http://www.disjointedarts.com/" title="Bruno Listopad | DISJOINTED ARTS - DISJOINTED ARTS">bruno listopad</a> photography jette schneider / <a href="http://www.danslab.nl/" title="News">danslab</a></p>]]>
         
     </content>
 </entry>
