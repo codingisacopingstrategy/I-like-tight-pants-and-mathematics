@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/illustration');
+header('Location: /and/gerard-reve-a-new-hymn-for-easter');
 ?>

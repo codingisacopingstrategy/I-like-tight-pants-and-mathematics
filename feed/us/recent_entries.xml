@@ -4,9 +4,67 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2011-02-20T19:17:51Z</updated>
+    <updated>2011-04-25T19:07:39Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 4.33-en</generator>
+
+<entry>
+    <title>Gerard Reve -- A New Hymn for Easter</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/gerard-reve-a-new-hymn-for-easter" />
+    <id>tag:i.liketightpants.net,2011:/and//1.21</id>
+
+    <published>2011-04-25T18:54:37Z</published>
+    <updated>2011-04-25T19:07:39Z</updated>
+
+    <summary> body, .container { background: none; } To celebrate easter I translated Gerard Reve&apos;s (1923-2006) een Nieuw Paaslied (1962) :) A new hymn for Easter Without having drunk, I praise God. Today many things happened. Strolling through the lower city,...</summary>
+    <author>
+        <name>Eric</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<style>
+body, .container {
+background: none;
+}
+</style>
+
+<p>To celebrate easter I translated Gerard Reve's (1923-2006) een Nieuw Paaslied (1962) :)</p>
+
+<p><em>A new hymn for Easter</em></p>
+
+<p>Without having drunk, I praise God.
+Today many things happened.<br />
+Strolling through the lower city,<br />
+thinking of the Final Things,<br />
+I saw a boy, presumably a German tourist,<br />
+and followed him while I thought:<br />
+I'll slap your ass or if that won't work<br />
+you can hit me,<br />
+the main thing is we're occupied--<br />
+until he entered De Bijenkorf and I,<br />
+dizzy with horniness, bumping into people,<br />
+lost his trail.<br />
+Nevertheless I didn't forego praising You.<br />
+For unfathomably grand are all your labours:<br />
+Thou, who hast made the being<br />
+that has a cunt from behind and a tail in front.<br />
+Like I said, I hadn't even drunk, and yet I wanted<br />
+To honour you weeping and kneel for You in tears,<br />
+Oh Master, Slave and Brother, Slaughtered and Risen God.<br />
+Humming and secretly prophetising,<br />
+I continued on my way.<br />
+Then I saw Bet van Beeren, at a little white table<br />
+sitting in front of her café, trying with fork and knife<br />
+to open up a macrel to eat it in the sun.<br />
+I thought look. How beatifully is made everything in Nature.<br />
+(Just think about those stars and their lightyears.)<br />
+I did want to go to some kind of evening mass,<br />
+but there was none.</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Illustration</title>
@@ -303,9 +361,9 @@ I think these are the data silos TBL talks about
     <id>tag:i.liketightpants.net,2010:/and//1.19</id>
 
     <published>2010-03-25T13:13:59Z</published>
-    <updated>2011-04-02T15:20:28Z</updated>
+    <updated>2011-04-25T18:50:41Z</updated>
 
-    <summary> Eric Schrijver and ola maciejewska in a performance by bruno listopad photography jette schneider / danslab...</summary>
+    <summary> .credits p { font-size: 13px; } Ola and Eric in a performance by Bruno. Photo by Jette / Danslab....</summary>
     <author>
         <name>Eric</name>
         
@@ -313,11 +371,20 @@ I think these are the data silos TBL talks about
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<img src="/and/assets/called/selfconstruction_01.jpg" style="width:900px;height:602px;">
+        <![CDATA[<style>
+.credits p {
+  font-size: 13px;
+}
+</style>
 
-<img src="/and/assets/called/ola_bruno_golden.jpg" style="width:900;height:602;" alt="Ola Bruno Golden" title="">
 
-<p class="small">Eric Schrijver and <a href="http://contemporaryperformance.org/profile/olamaciejewska" title="Ola Maciejewska&#039;s Page - Contemporary Performance Network">ola maciejewska</a> in a performance by <a href="http://www.disjointedarts.com/" title="Bruno Listopad | DISJOINTED ARTS - DISJOINTED ARTS">bruno listopad</a> photography jette schneider / <a href="http://www.danslab.nl/" title="News">danslab</a></p>]]>
+<img src="/and/assets/called/selfconstruction_01.jpg" style="width:900px;height:602px;" class="append-bottom">
+
+<img src="/and/assets/called/ola_bruno_golden.jpg" style="width:900;height:602;" alt="Ola Bruno Golden" title="" class="append-bottom">
+
+<div class="span-22 credits">
+<p><a href="http://contemporaryperformance.org/profile/olamaciejewska" title="Ola Maciejewska&#039;s Page - Contemporary Performance Network">Ola</a> and Eric in a performance by <a href="http://disjointedarts.com/da" title="BRUNO LISTOPAD - OFFICIAL SITE - DISJOINTED ARTS">Bruno</a>. Photo by <a href="http://www.danslab.nl/" title="News">Jette</a> / Danslab.</p>
+</div>]]>
         
     </content>
 </entry>
