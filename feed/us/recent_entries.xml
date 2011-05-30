@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>I like tight pants and mathematics</title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
@@ -6,7 +6,7 @@
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
     <updated>2011-04-25T19:07:39Z</updated>
     
-    <generator uri="http://www.sixapart.com/movabletype/">Movable Type 4.33-en</generator>
+    <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
 
 <entry>
     <title>Gerard Reve -- A New Hymn for Easter</title>

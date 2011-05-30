@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <rsd version="1.0" xmlns="http://archipelago.phrasewise.com/rsd">
 <service>
-<engineName>Movable Type 4.33-en</engineName>
+<engineName>Melody 1.0.0</engineName>
 <engineLink>http://www.sixapart.com/movabletype/</engineLink>
 <homePageLink>http://i.liketightpants.net/and/</homePageLink>
 <apis>
-<api name="MetaWeblog" preferred="true" apiLink="http://mt.schr.fr/mt-xmlrpc.cgi" blogID="1" />
-<api name="MovableType" preferred="false" apiLink="http://mt.schr.fr/mt-xmlrpc.cgi" blogID="1" />
-<api name="Blogger" preferred="false" apiLink="http://mt.schr.fr/mt-xmlrpc.cgi" blogID="1" />
-<api name="Atom" preferred="false" apiLink="http://mt.schr.fr/mt-atom.cgi/weblog" blogID="1" />
+<api name="MetaWeblog" preferred="true" apiLink="http://mt.schr.fr/xmlrpc.cgi" blogID="1" />
+<api name="MovableType" preferred="false" apiLink="http://mt.schr.fr/xmlrpc.cgi" blogID="1" />
+<api name="Blogger" preferred="false" apiLink="http://mt.schr.fr/xmlrpc.cgi" blogID="1" />
+<api name="Atom" preferred="false" apiLink="http://mt.schr.fr/atom.cgi/weblog" blogID="1" />
 </apis>
 </service>
 </rsd>

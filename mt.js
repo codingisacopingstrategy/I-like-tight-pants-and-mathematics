@@ -81,7 +81,7 @@ function mtEditLink(entry_id, author_id) {
     if (! entry_id) return;
     if (! author_id) return;
     if (u.id != author_id) return;
-    var link = '<a href="mt.cgi?__mode=view&amp;_type=entry&amp;id=' + entry_id + '">Edit</a>';
+    var link = '<a href="index.cgi?__mode=view&amp;_type=entry&amp;id=' + entry_id + '">Edit</a>';
     document.write(link);
 }
 
@@ -100,7 +100,7 @@ function mtShowCaptcha() {
     if (mtCaptchaVisible) return;
     var div = document.getElementById('comments-open-captcha');
     if (div) {
-        div.innerHTML = '<div class="label"><label for="captcha_code">Captcha:</label></div><div class="field"><input type="hidden" name="token" value="fJjmR4JtF47asobgqfkk2hpzJ7VFGaCvRVirJIq7" /><img src="http://mt.schr.fr/mt-comments.cgi/captcha/1/fJjmR4JtF47asobgqfkk2hpzJ7VFGaCvRVirJIq7" width="150" height="35" /><br /><input name="captcha_code" id="captcha_code" value="" autocomplete="off" /><p>Type the characters you see in the picture above.</p></div>';
+        div.innerHTML = '<div class="label"><label for="captcha_code">Captcha:</label></div><div class="field"><input type="hidden" name="token" value="g2N01kGcMm7exomald8bxksh8H1qBJkWvZ6mjb6k" /><img src="http://mt.schr.fr/comments.cgi/captcha/1/g2N01kGcMm7exomald8bxksh8H1qBJkWvZ6mjb6k" width="150" height="35" /><br /><input name="captcha_code" id="captcha_code" value="" autocomplete="off" /><p>Type the characters you see in the picture above.</p></div>';
         mtCaptchaVisible = true;
     }
 }
@@ -210,7 +210,7 @@ function mtFetchUser(cb) {
         mtFetchedUser = true;
         var script = document.createElement('script');
         var ts = new Date().getTime();
-        script.src = 'http://mt.schr.fr/mt-comments.cgi?__mode=session_js&blog_id=1&jsonp=' + cb + '&ts=' + ts;
+        script.src = 'http://mt.schr.fr/comments.cgi?__mode=session_js&blog_id=1&jsonp=' + cb + '&ts=' + ts;
         (document.getElementsByTagName('head'))[0].appendChild(script);
     }
 }
@@ -343,7 +343,7 @@ mtAttachEvent('usersignin', mtUserOnLoad);
 function mtSignIn() {
     var doc_url = document.URL;
     doc_url = doc_url.replace(/#.+/, '');
-    var url = 'http://mt.schr.fr/mt-comments.cgi?__mode=login&blog_id=1';
+    var url = 'http://mt.schr.fr/comments.cgi?__mode=login&blog_id=1';
     if (is_preview) {
         if ( document['comments_form'] ) {
             var entry_id = document['comments_form'].entry_id.value;
@@ -388,7 +388,7 @@ function mtSignOut(entry_id) {
     mtClearUser();
     var doc_url = document.URL;
     doc_url = doc_url.replace(/#.+/, '');
-    var url = 'http://mt.schr.fr/mt-comments.cgi?__mode=handle_sign_in&static=0&logout=1';
+    var url = 'http://mt.schr.fr/comments.cgi?__mode=handle_sign_in&static=0&logout=1';
     if (is_preview) {
         if ( document['comments_form'] ) {
             var entry_id = document['comments_form'].entry_id.value;
@@ -435,7 +435,7 @@ function mtShowGreeting() {
         } else {
             var user_link;
             if ( u.is_author ) {
-                user_link = '<a href="http://mt.schr.fr/mt-comments.cgi?__mode=edit_profile&return_url=' + encodeURIComponent( location.href );
+                user_link = '<a href="http://mt.schr.fr/comments.cgi?__mode=edit_profile&return_url=' + encodeURIComponent( location.href );
                 user_link += '">' + u.name + '</a>';
             } else {
                 // registered user, but not a user with posting rights
