@@ -20,3 +20,8 @@
     </mt:If>
     <ul>
 </div>
+<mt:If tag="EntryAuthorDisplayName">
+<div class="subheader span-22 prepend-1 append-1">
+By <$mt:EntryAuthorLink$> on <abbr class="published" title="<$mt:EntryDate format_name="iso8601"$>"><$mt:EntryDate format="%x"$></abbr>
+</div>
+</mt:if>
