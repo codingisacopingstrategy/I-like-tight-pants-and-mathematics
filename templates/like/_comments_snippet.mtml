@@ -5,41 +5,56 @@
 <div id="comments" class="comments span-11">
 
 
-    <mt:Ignore>
-    <!-- Display comments -->
-    </mt:Ignore>
-    <mt:Comments>
-        <mt:CommentsHeader>
-    <h4 class="comments-header"><$mt:EntryCommentCount singular="1 Comment" plural="# Comments" none="No Comments"$></h4>
-    <div class="comments-content">
-        </mt:CommentsHeader>
-        <div id="comment-<$mt:CommentID$>" class="comment<mt:IfCommentParent> comment-reply</mt:IfCommentParent><mt:IfCommenterIsEntryAuthor> entry-author-comment</mt:IfCommenterIsEntryAuthor>">
-            <div class="inner">
-                <div class="comment-header">
-                    <div class="asset-meta">
-                        <span class="byline">
-                            <$mt:CommentAuthorIdentity$>
-        <mt:IfCommentParent>
-                            <span class="vcard author"><$mt:CommentAuthorLink$></span> replied to <a href="<mt:CommentParent><$mt:CommentLink$></mt:CommentParent>">comment from <mt:CommentParent><$mt:CommentAuthor$></mt:CommentParent></a>
-        <mt:Else>
-                            <span class="vcard author"><$mt:CommentAuthorLink$></span>
-        </mt:IfCommentParent>
-                            | <a href="<$mt:CommentLink$>"><abbr class="published" title="<$mt:CommentDate format_name="iso8601"$>"><$mt:CommentDate$></abbr></a>
-        <mt:IfCommentsAccepted>
-                            | <$mt:CommentReplyToLink$>
-        </mt:IfCommentsAccepted>
-                        </span>
-                    </div>
-                </div>
-                <div class="comment-content">
-                    <$mt:CommentBody$>
+<mt:SetVarTemplate name="comment_detail_template">
+    <div id="comment-<$MTCommentID$>" class="comment<mt:IfCommentParent> comment-reply</mt:IfCommentParent>">
+        <div class="inner">
+            <div class="comment-header">
+                <div class="asset-meta">
+                    <span class="byline">
+                        <$MTCommentAuthorIdentity$>
+    <mt:IfCommentParent>
+                        <span class="vcard author"><$MTCommentAuthorLink$></span> replied to <a href="<mt:CommentParent><$mt:CommentLink$></mt:CommentParent>">comment from <mt:CommentParent><$MTCommentAuthor$></mt:CommentParent></a>
+    <mt:else>
+                        <span class="vcard author"><$MTCommentAuthorLink$></span>
+    </mt:IfCommentParent>
+                        | <a href="<$mt:CommentLink$>"><abbr class="published" title="<$MTCommentDate format_name="iso8601"$>"><$MTCommentDate$></abbr></a>
+    <MTIfCommentsAccepted>
+                        | <$MTCommentReplyToLink$>
+    </MTIfCommentsAccepted>
+                    </span>
                 </div>
             </div>
+            <div class="comment-content">
+                <$MTCommentBody$>
+            </div>
         </div>
-        <mt:CommentsFooter>
     </div>
-        </mt:CommentsFooter>
-    </mt:Comments>
+</mt:SetVarTemplate>
+
+
+<MTComments>
+    <MTCommentsHeader>
+<h2 class="comments-header"><$MTEntryCommentCount singular="1 Comment" plural="# Comments" none="No Comments"$></h2>
+<div class="comments-content">
+    </MTCommentsHeader>
+    <mt:IfCommentParent> <!-- If comment has a parent comment. We ignore this, as we just want the top-level-parent comments -->
+        <mt:Else> <!-- If comment doesn't have a top-level-parent -->
+            <$mt:var name="comment_detail_template"$>
+        <mt:CommentReplies> <!-- Loop through the reply comments -->
+            <mt:CommentsHeader>
+            <div style="margin-left: 20px;">
+            </mt:CommentsHeader>
+            <$mt:var name="comment_detail_template"$>
+            <$mt:CommentRepliesRecurse$> <!-- For each reply comment, recursively display any reply comments -->    
+            <mt:CommentsFooter>
+            </div>
+            </mt:CommentsFooter>
+        </mt:CommentReplies>
+    </mt:IfCommentParent>
+    <MTCommentsFooter>
+</div>
+    </MTCommentsFooter>
+</MTComments>
 
 
     <mt:Ignore>
