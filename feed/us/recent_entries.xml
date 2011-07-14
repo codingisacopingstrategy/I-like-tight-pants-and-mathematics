@@ -4,9 +4,68 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2011-06-03T14:54:47Z</updated>
+    <updated>2011-06-07T21:55:53Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
+
+<entry>
+    <title>Judging art</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/judging-art" />
+    <id>tag:i.liketightpants.net,2011:/and//1.22</id>
+
+    <published>2011-06-07T15:35:15Z</published>
+    <updated>2011-06-07T21:55:53Z</updated>
+
+    <summary> body, .container, textarea { font-family: Georgia, serif; background-image:none; } h1 { color: #FD297E; font-size: 64px; line-height: 64px; font-weight: normal; letter-spacing: -5px; margin-bottom: 38px; text-transform: lowercase; } p, textarea { font-size: 18px; line-height: 25px; padding-left: 16px; text-indent: -8px; text-align: left;...</summary>
+    <author>
+        <name>Critically</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<style>
+body, .container, textarea {
+    font-family: Georgia, serif;
+  background-image:none;
+}
+
+h1 {
+    color: #FD297E;
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: normal;
+    letter-spacing: -5px;
+    margin-bottom: 38px;
+    text-transform: lowercase;
+}
+p, textarea { 
+    font-size: 18px;
+    line-height: 25px;
+    padding-left: 16px;
+    text-indent: -8px;
+    text-align: left;
+    width: 440px;
+}    
+    
+</style>
+
+<div class="span-22 prepend-top append-bottom last">
+<h2>Judging Art</h2>
+
+<iframe src="http://player.vimeo.com/video/21128026?portrait=0" width="601" height="338" frameborder="0"></iframe>
+</div>
+
+<div class="span-11 append-bottom">
+<p><a href="http://www.stroom.nl/" title="Stroom Den Haag">Stroom</a> is the local arts body in the city I live in. The city is not very big. To keep cultural live vibrant, the city government tries hard to stimulate the art scene, so that not all artists move to more famous cities. As part of this, for the second time I will be part of <a href="http://www.stroom.nl/paginas/pagina.php?pa_id=9842884" title="Stroom Den Haag - Stroom Invest Programma 2011">a program that introduces artists to curators</a>.</p>
+
+<p>I remember the director of Stroom explaining to us, how do we deal with a curator. We should not act too self-assured. Rather, we present an open ended view of our work. Also, we must not expect these curators to make exhibitions with us. We get taught to be subservient.</p>
+
+<p>Well I'd rather be inquisitive. Once again, I'll spend three days talking to art professionals. I'm not going to try and act spontaneous. This time I'll be keeping notes and I'll share them here. I hope we can answer this question: can the world of contemporary art be fixed?</p>
+</div>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Gerard Reve -- A New Hymn for Easter</title>
@@ -286,6 +345,32 @@ font-size: 200%;
 <p>There is a second message. Which is: let us mount shows with my pictures. I would like that.</p>
 
 </div>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Code voorbeeld</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/code-voorbeeld" />
+    <id>tag:i.liketightpants.net,2010:/and//1.23</id>
+
+    <published>2010-06-10T15:15:15Z</published>
+    <updated>2011-06-10T15:16:06Z</updated>
+
+    <summary><![CDATA[&lt;p&gt; &lt;object type="image/svg+xml" style="width:736px;height:880px;" data="/and/assets/called/theproblemwithwebapps.svg"&gt; &lt;img src="/and/assets/called/theproblemwithwebapps.png" style="width:736px;height:880px;" alt="'Apps become like this:' a circle labelled APP encapsulating a circle labelled DATA. The app interfaces with a square with rounded corners labeled USER, as shown by two way arrows. 'While potentially...]]></summary>
+    <author>
+        <name>Eric</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p><pre><span class="nt">&lt;p&gt;</span>
+  <span class="nt">&lt;object</span> <span class="na">type=</span><span class="s">"image/svg+xml"</span> <span class="na">style=</span><span class="s">"width:736px;height:880px;"</span> <span class="na">data=</span><span class="s">"/and/assets/called/theproblemwithwebapps.svg"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/and/assets/called/theproblemwithwebapps.png"</span> <span class="na">style=</span><span class="s">"width:736px;height:880px;"</span> <span class="na">alt=</span><span class="s">"'Apps become like this:' a circle labelled APP encapsulating a circle labelled DATA. The app interfaces with a square with rounded corners labeled USER, as shown by two way arrows. 'While potentially they could be:' the user interfaces with a circle APP which interfaces with a separate circle DATA. 'The latter could enable': the USER interfaces with an APP which interfaces with an APP which interfaces with an APP which interfaces with DATA. 'As well as:' the USER interfaces with three APPS that all interface with DATA. '(Or any combination of the two)' "</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;/object&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+</pre></p>]]>
         
     </content>
 </entry>
