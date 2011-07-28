@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/judging-art');
+header('Location: /and/uroboroses');
 ?>

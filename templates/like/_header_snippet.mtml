@@ -1,27 +1,19 @@
-<div class="header span-22 prepend-1 append-1">
-<a style="float:left" href="/and/">I like tight pants and</a>
-<a style="float:left;margin-left:239px;" href="/and/archives">Archives</a>
-    <ul style="float:right;">
-    <mt:If tag="EntryPrevious">
-        <li><a href="/and/heroes">Oldest</a></li>
-    </mt:If>
-    <mt:EntryPrevious>
-        <li><a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">Older</a></li>
-    </mt:EntryPrevious>
-    <mt:EntryNext>
-        <li><a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">Newer</a>&nbsp;
-    </mt:EntryNext></li>
+<div id="header" class="container_7">
+  <div class="grid_2">
+  <h1><a href="/and/">i . like tight pants . net</a></h1>
+  </div>
+  <div class="grid_3">
+  <ul>
     <mt:If tag="EntryNext">
     <mt:Entries lastn="1">
-        <li><a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">Newest</a>
-    </mt:Entries></li>
+    <li><a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">latest</a></li></mt:Entries>
     <mt:Else>
-    <li style="width:123px;">&nbsp;</li>
+    <li class="current">latest</li>
     </mt:If>
-    <ul>
+    <li><a href="/and/archives">index</a></li>
+  </ul>
+  </div>
+  <div class="grid_2">
+  &nbsp; <!-- <h4>search box</h4> -->
+  </div>
 </div>
-<mt:If tag="EntryAuthorDisplayName">
-<div class="subheader span-22 prepend-1 append-1">
-By <$mt:EntryAuthorLink$> on <abbr class="published" title="<$mt:EntryDate format_name="iso8601"$>"><$mt:EntryDate format="%x"$></abbr>
-</div>
-</mt:if>

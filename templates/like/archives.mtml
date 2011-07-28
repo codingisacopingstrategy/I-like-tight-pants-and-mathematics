@@ -1,28 +1,41 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
+<meta charset="utf-8">
     <$mt:Include module="HTML Head"$>
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="<$mt:Link template="rsd" replace="http://i.liketightpants.net","" $>" />
     <title><$mt:BlogName encode_html="1"$></title>
 </head>
 <body>
-<div class="content container">
-<div class="header span-22 prepend-1 append-1">
-<a href="/and/" accesskey="1">I like tight pants and</a>
-</div>
-<div class="span-22 prepend-1 append-1 prepend-top append-bottom last">
-<mt:Entries lastn="0" sort_order="ascend">
-    <div class="span-11<mt:if name="__even__"> last</mt:if>">
-        <a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">
-          <img src="/and/assets/as/screenshots/of/<$mt:EntryBaseName separator="-"$>.png" style="width:440px;height:550px;" alt="I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$>">
-        </a>
-          <p>I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$></p>
+  <div id="header" class="container_7">
+    <div class="grid_2">
+    <h1><a href="/and/">i . like tight pants . net</a></h1>
     </div>
+    <div class="grid_3">
+    <ul>
+      <mt:Entries lastn="1">
+      <li><a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">latest</a></li></mt:Entries>
+      <li class="current">index</li>
+    </ul>
+    </div>
+    <div class="grid_2">
+    &nbsp; <!-- <h4>search box</h4> -->
+    </div>
+  </div>
+<div id="content" class="content container_7">
+<mt:Entries lastn="0" sort_order="ascend">
+  <mt:Ignore> http://www.movabletips.com/2011/06/treating-every-nth-out-of-x-entries-as-special-in-movable-type.html </mt:Ignore>
+  <mt:var name="__counter__" op="%" value="7" setvar="modulo">
+    <div class="grid_1">
+          <a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">
+            <img src="/and/assets/as/screenshots/of/<$mt:EntryBaseName separator="-"$>.png" style="width:150px;height:110px;" alt="I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$>">
+          </a>
+          <p class="byline"><$mt:EntryTitle$></p>
+    </div>
+    <mt:if name="modulo" eq="0"></div><div class="content container_7"></mt:if>
 </mt:Entries>
 </div>
-<$mt:Include module="Footer"$>
-</div>
+<div id="bar">&nbsp;</div>
 <$mt:Include module="Analytics"$>
 </body>
 </html>

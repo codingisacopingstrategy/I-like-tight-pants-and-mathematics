@@ -1,0 +1,3 @@
+$.SyntaxHighlighter.init({
+'lineNumbers': false,
+});

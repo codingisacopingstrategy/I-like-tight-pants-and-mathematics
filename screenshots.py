@@ -19,11 +19,11 @@ for post, url in posts.iteritems():
     outfile = "assets/as/screenshots/of/%s" % post
     # webkit2png automatically appends '-full' to the output (bad idea, imho)
     outfile_def = outfile + '-full.png' 
-    pipe = subprocess.Popen(['webkit2png', '-o', outfile, '-W', '1040', '-H' '1300', '-F', url])
+    pipe = subprocess.Popen(['webkit2png', '-o', outfile, '-W', '1190', '-H' '873', '-F', url])
     pipe.wait()
-    # convert post-full.png to 440 by 500 assets/as/screenshots/of/post.png
+    # convert post-full.png to 150 by 110 assets/as/screenshots/of/post.png
     # use imagemagick, because webkit2png’s built in resize looks fuzzy
-    pipe = subprocess.Popen("convert %s -resize 440x550^ -gravity North -extent 440x550 assets/as/screenshots/of/%s.png" % (outfile_def, post), shell=True)
+    pipe = subprocess.Popen("convert %s -resize 150x110^ -gravity North -extent 150x110 assets/as/screenshots/of/%s.png" % (outfile_def, post), shell=True)
     pipe.wait()
     # remove post-full.png
     os.remove(outfile_def)

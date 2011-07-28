@@ -1,22 +1,131 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
+<meta charset="utf-8">
     <$mt:Include module="HTML Head"$>
+    <link rel="stylesheet" href="/and/style/in/<$mt:EntryAuthorUsername$>.css" type="text/css" />
     <mt:EntryPrevious><link rel="prev bookmark" href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>" title="I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$>" /></mt:EntryPrevious>
     <mt:EntryNext><link rel="next bookmark" href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>" title="I like tight pants and <$mt:EntryTitle encode_html="1"$ lower_case="1">" /></mt:EntryNext>
     <$mt:EntryTrackbackData$>
     <title>I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$></title>
+    <meta property="og:title" content="I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$>"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="<$mt:EntryPermalink replace=".html","" encode_xml="1"$>"/>
+    <$mt:AuthorUserpicURL setvar="author_img"$>
+    <meta property="og:image" content="<$mt:EntryKeywords _default="$author_img"$>"/>
+    <meta property="og:site_name" content="<$mt:BlogName$>"/>
+    <meta property="og:description"
+          content="<$mt:EntryExcerpt$>"/>
 </head>
 <body>
-<div class="content container">
 <$mt:Include module="Header"$>
-<div class="span-22 prepend-1 append-1 prepend-top append-bottom last">
-<$mt:EntryBody$>
-<$mt:Include module="Comments"$>
+
+<div id="content" class="container_7">
+<div class="grid_1">
+  
+  <$mt:AuthorUserpic$>
+  
+  <h4><$mt:EntryAuthorDisplayName$></h4>
+  <p>&nbsp;</p>
+  
+  <hr />
+  
+  <h4>Articles</h4>
+  <dl>
+  <$mt:EntryAuthorUsername setvar="entry_author_username"$>
+  <mt:Entries author="$entry_author_username">
+  <dt><a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>"><$mt:EntryTitle$></a></dt>
+  <dd><$mt:EntryDate $></dd>
+  </mt:Entries>
+  </dl>
+
+  <h4>Comments</h4>
+  <dl>
+  <mt:Comments author="$entry_author_username" lastn="10">
+  <MTIfCommenterIsEntryAuthor>
+    <dt><$mt:CommentAuthor$> on <a href ="<$mt:CommentLink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>"><mt:CommentEntry><$mt:EntryTitle$></mt:CommentEntry></a></dt>
+    <dd><$mt:CommentDate$></dd>
+  </MTIfCommenterIsEntryAuthor>
+  </mt:Comments>
+  </dl>
+
+<!--
+  <h4>Shouts</h4>
+  <dl>
+    <dt>Article name could be very llong indeed</dt>
+    <dd>23 days ago - 23 likes</dd>
+    <dt>Article name could be very llong indeed</dt>
+    <dd>23 days ago - 23 likes</dd>
+  </dl>
+-->  
+  <hr />
+  
+  <h4>Other writers</h4>
+  <ul>
+  <mt:Authors>
+    <li><$mt:AuthorDisplayName$></li>
+  </mt:Authors>
+  </ul>
+    
 </div>
-<$mt:Include module="Footer"$>
+<div class="grid_5">
+  <p class="byline"><mt:EntryPrevious>
+  <a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">Previous</a> 
+  </mt:EntryPrevious>
+  <mt:EntryNext>
+    / <a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>">Next</a>
+  </mt:EntryNext></p>
+  <div>
+    <div class="article grid_3 alpha omega suffix_2">
+    <h4><$mt:EntryTitle$></h4>
+    <$mt:EntryBody$>
+    <$mt:Include module="Comments"$>
+    </div>
+  </div>
+  <hr />
+  
+  <!--<h4>Related articles</h4>
+  <dl>
+  <dt>Article name could be very llong indeed</dt>
+  <dd>23 days ago - 23 likes</dd>
+  <dt>Article name could be very llong indeed</dt>
+  <dd>23 days ago - 23 likes</dd>
+  <dt>Article name could be very llong indeed</dt>
+  <dd>23 days ago - 23 likes</dd>
+  </dl>-->
 </div>
+
+<div class="grid_1">
+  <h4>Latest articles</h4>
+  <dl>
+  <mt:Entries lastn="10">
+  <dt><a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>"><$mt:EntryTitle$></a></dt>
+  <dd><$mt:EntryDate $></dd>
+  </mt:Entries>
+  </dl>
+
+  <h4>Latest comments</h4>
+  <dl>
+  <mt:Comments lastn="10">  
+    <dt><a href ="<$mt:CommentLink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>"><$mt:CommentAuthor$> on <mt:CommentEntry><$mt:EntryTitle$></mt:CommentEntry></a></dt>
+    <dd><$mt:CommentDate$></dd>
+  </mt:Comments>
+  </dl>
+
+<!--
+  <h4>Last 10 shouts</h4>
+  <dl>
+  <dt>Article name could be very llong indeed</dt>
+  <dd>23 days ago - 23 likes</dd>
+  <dt>Article name could be very llong indeed</dt>
+  <dd>23 days ago - 23 likes</dd>
+  <dt>Article name could be very llong indeed</dt>
+  <dd>23 days ago - 23 likes</dd>
+  </dl>
+-->
+</div>
+</div>
+<div id="bar">&nbsp;</div>
 <$mt:Include module="Analytics"$>
 </body>
 </html>
