@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/uroboroses');
+header('Location: /and/statistical-tables');
 ?>

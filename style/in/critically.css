@@ -73,9 +73,6 @@ div#content {
   div#content ul, div#content dl, div#content div.article, div#content iframe, div#content blockquote {
     margin-bottom: 14px; }
 
-div.content:first-child {
-  margin-top: 39px; }
-
 div#bar {
   height: 26px;
   padding-top: 6px;
@@ -94,3 +91,7 @@ img.lrg_profile {
 pre {
   font-family: "andale mono", "lucida console", monospace;
   white-space: pre-wrap; }
+
+div#header p, div#header p.byline {
+  margin: 0;
+  line-height: 24px; }
