@@ -4,9 +4,59 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2011-07-28T21:48:38Z</updated>
+    <updated>2011-08-11T00:39:16Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
+
+<entry>
+    <title>Pattern Recognition</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/pattern-recognition" />
+    <id>tag:i.liketightpants.net,2011:/and//1.27</id>
+
+    <published>2011-08-11T00:24:44Z</published>
+    <updated>2011-08-11T00:39:16Z</updated>
+
+    <summary>You see the same man twice: In his forties, curly hair, broad, probably Irish descent. The left hand picture sees him en profil, facing right, with his head turned back towards the camera. The other picture is formal, and in black and white. His head turned slightly to the right, the man looks reserved but seemingly content.</summary>
+    <author>
+        <name>jenseits</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<img src="/and/assets/that/are/screenshots/numbered/0101.png" alt="You see the same man twice: In his forties, curly hair, broad, probably Irish descent. The left hand picture sees him en profil, facing right, with his head turned back towards the camera. He wears a jacket (corduroy?) and a patterned shirt: judging by the colours this photograph is from the 1970ies. The right hand picture is black and white, and looks like it has been taken in the nineteenth century, in a formal sitting. Our subject has turned his head slightly to the right and gazes in the distance, his look reserved but seemingly content." title="" usemap="2john" class="margin-bottom" />
+<map name="2john"
+<area shape="rect" coords="0,0,340,380" href="http://www.imdb.com/media/rm169246720/nm0000604" title="Pictures & Photos of John C. Reilly - IMDb" />
+<area shape="rect" coords="348,0,688,382" href="http://www.loc.gov/pictures/item/2006686882/" title="George Henry Boker, 1823-1890, bust, facing left]" />
+</map>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>The Fortran Automatic Coding System for the IBM 704</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-fortran-automatic-coding-system-for-the-ibm-704" />
+    <id>tag:i.liketightpants.net,2011:/and//1.26</id>
+
+    <published>2011-08-03T20:22:42Z</published>
+    <updated>2011-08-03T20:37:24Z</updated>
+
+    <summary>You see the front cover to a book, labelled, in bold slab serif letters: Fortran. The cover itself is brown and three holes are pierced through the side</summary>
+    <author>
+        <name>baseline</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p><img src="/and/assets/called/fortran_acs_cover.jpg" title="" style="width:610px;height:780px;" alt="You see the front cover to a book, labelled, in bold slab serif letters: Fortran. The cover itself is brown and three holes are pierced through the side." /></p>
+
+<p>This is so beatiful, it is the front cover of the manual for The Fortran Automatic Coding System for the IBM 704, 1956. The typeface is <a href="http://en.wikipedia.org/wiki/Clarendon_(typeface)" title="Clarendon (typeface) - Wikipedia, the free encyclopedia">Clarendon</a>. </p>
+
+<p>IBM’s corporate identity was designed by <a href="http://www.paul-rand.com/site/ibm/" title="Paul-Rand.com :: IBM">Paul Rand</a></p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Statistical tables</title>

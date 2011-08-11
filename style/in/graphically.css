@@ -72,6 +72,8 @@ div#content {
   margin-top: 39px; }
   div#content ul, div#content dl, div#content div.article, div#content iframe, div#content blockquote {
     margin-bottom: 14px; }
+  div#content .margin-bottom {
+    margin-bottom: 14px; }
 
 div#bar {
   height: 26px;

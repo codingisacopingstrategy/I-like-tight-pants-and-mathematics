@@ -39,15 +39,19 @@
   </mt:Entries>
   </dl>
 
+  <mt:Comments lastn="10">
+  <mt:CommentsHeader>
   <h4>Comments</h4>
   <dl>
-  <mt:Comments author="$entry_author_username" lastn="10">
+  </mt:CommentsHeader>
   <MTIfCommenterIsEntryAuthor>
     <dt><$mt:CommentAuthor$> on <a href ="<$mt:CommentLink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>"><mt:CommentEntry><$mt:EntryTitle$></mt:CommentEntry></a></dt>
     <dd><$mt:CommentDate$></dd>
   </MTIfCommenterIsEntryAuthor>
-  </mt:Comments>
+  <mt:CommentsFooter>
   </dl>
+  </mt:CommentsFooter>
+  </mt:Comments>
 
 <!--
   <h4>Shouts</h4>
@@ -104,13 +108,7 @@
   </mt:Entries>
   </dl>
 
-  <h4>Latest comments</h4>
-  <dl>
-  <mt:Comments lastn="10">  
-    <dt><a href ="<$mt:CommentLink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>"><$mt:CommentAuthor$> on <mt:CommentEntry><$mt:EntryTitle$></mt:CommentEntry></a></dt>
-    <dd><$mt:CommentDate$></dd>
-  </mt:Comments>
-  </dl>
+  <$mt:Include widget="Recent Comments"$>
 
 <!--
   <h4>Last 10 shouts</h4>

@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/statistical-tables');
+header('Location: /and/pattern-recognition');
 ?>
