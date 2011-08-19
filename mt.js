@@ -100,7 +100,7 @@ function mtShowCaptcha() {
     if (mtCaptchaVisible) return;
     var div = document.getElementById('comments-open-captcha');
     if (div) {
-        div.innerHTML = '<div class="label"><label for="captcha_code">Captcha:</label></div><div class="field"><input type="hidden" name="token" value="0iXXGWPxjTXa8IpfRgLCsRY3CFXWL9rb5wpJp8MV" /><img src="http://mt.schr.fr/comments.cgi/captcha/1/0iXXGWPxjTXa8IpfRgLCsRY3CFXWL9rb5wpJp8MV" width="150" height="35" /><br /><input name="captcha_code" id="captcha_code" value="" autocomplete="off" /><p>Type the characters you see in the picture above.</p></div>';
+        div.innerHTML = '<div class="label"><label for="captcha_code">Captcha:</label></div><div class="field"><input type="hidden" name="token" value="HAFDvGosO0tI6gC6LUjduFTeT7QGgIudmt63TQFR" /><img src="http://mt.schr.fr/comments.cgi/captcha/1/HAFDvGosO0tI6gC6LUjduFTeT7QGgIudmt63TQFR" width="150" height="35" /><br /><input name="captcha_code" id="captcha_code" value="" autocomplete="off" /><p>Type the characters you see in the picture above.</p></div>';
         mtCaptchaVisible = true;
     }
 }

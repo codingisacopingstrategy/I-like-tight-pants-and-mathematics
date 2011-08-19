@@ -4,9 +4,51 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2011-08-11T00:39:16Z</updated>
+    <updated>2011-08-11T09:08:59Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
+
+<entry>
+    <title>Learning how to program</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/learning-how-to-program" />
+    <id>tag:i.liketightpants.net,2011:/and//1.28</id>
+
+    <published>2011-08-11T09:04:34Z</published>
+    <updated>2011-08-11T09:08:59Z</updated>
+
+    <summary>I get the big blue book, and I start watching the screencasts. Parts of me get stimulated that I had forgotten I have. Like some kind of abstraction gland. It’s pretty nice.</summary>
+    <author>
+        <name>tellyou</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<img src="/and/assets/scaled/to/490/wide/and/called/cs61a.png" alt="You see a lecture hall from above. Computer code is projected above the blackboards that contain formulas. The professor stands behind his desk. Many students have computers. To the left one large student wears no shirt." title="" />
+
+<p class="byline"><a href="http://rbmntjs.tumblr.com/post/56407340/check-out-this-douchebag" title="Rob’s brain">Rob notes a shirtless man in CS61A</a></p>
+
+<p>I want to learn how to program. Why, that is for another post. But then where to begin. You can’t just learn programming, it seems, you have to pick one among many of programming languages to learn. And each programming language has a corresponding community. And these communities behave like football supporters for their own language. While they would be better pressed to support programming in general ’cause that’s a cause for which many new converts can still be made, and these converts don’t care for the particularities of your language—yet. Anyway, this turns me off.</p>
+
+<p>So this sounds just right:</p>
+
+<blockquote>In CS 61A, we are interested in teaching you about programming, not about any particular programming language. We consider a series of techniques for controlling program complexity, such as functional programming, data abstraction, object-oriented programming, and query systems. To get past generalities you must have programming practice in some particular language, and in this course we use Scheme, a dialect of Lisp. This language is particularly well-suited to the organizing ideas we want to teach. Our hope, however, is that once you have learned the essence of programming, you will find that picking up a new programming language is but a few days’ work.</blockquote>
+
+<p class="byline"><a href="http://inst.eecs.berkeley.edu/~cs61a/sp11/0.pdf" title="">source</a></p>
+
+<p>I get the <a href="http://mitpress.mit.edu/sicp/full-text/book/book.html" title="Structure and Interpretation 
+of Computer Programs">big blue book</a>, and I start watching the <a href="http://webcast.berkeley.edu/search?cx=005415252586317091923%3Anp2thtbsmyq&amp;cof=FORID%3A10&amp;ie=UTF-8&amp;q=61a&amp;sa=Search&amp;siteurl=webcast.berkeley.edu%2F" title="UC Berkeley Webcasts | Video and Podcasts: Search Courses and Events">screencasts</a>. Parts of me get stimulated that I had forgotten I have. Like some kind of abstraction gland. It’s pretty nice.</p>
+
+<img src="/and/assets/called/sicp_cover.jpg" style="width:400px;height:579px" alt="You see a blue book cover. The title reads, in white: Structure and Interpretation of Computer Programs. Over a read background, in black and white, a woodcut of two people engaged in alchemistic practice. Below, the authors read as Harold Abelson and Gerald Jay Sussman, with Julie Sussman" title="" />
+
+<p>But it’s also way too difficult. The way in which Abelson &amp; Sussman explain computation is by consistently comparing it to math. Math is probably a way of thinking in which Science majors are already comfortable. Yet I don’t do math on a regular basis. So it’s like teaching me a language I don’t know by comparing it to another language I don’t really speak either.</p>
+
+<p>A different strategy is needed. I need to work with what I know: words, images. <a href="http://norvig.com/21-days.html" title="Teach Yourself Programming in Ten Years">Peter Norvig says</a> to use whatever your friends are using: “The advantage you get from learning from your friends will offset any intrinsic difference between OS, or between programming languages.” I’m gonna ask my friends to help me get started.</p>
+
+<p>To be continued.</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Pattern Recognition</title>
