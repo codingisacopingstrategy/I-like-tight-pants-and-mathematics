@@ -60,13 +60,11 @@ p.byline, h4 span {
 p.byline {
   margin-top: 11px; }
 
-.comment p.byline {
-  margin-top: -18px; }
-
 blockquote {
   border-left: 9px solid #4d4d4d;
-  font-size: 22px;
-  line-height: 28px; }
+  padding-left: 3px;
+  font-size: 14px;
+  line-height: 18px; }
 
 div#content {
   margin-top: 39px; }
