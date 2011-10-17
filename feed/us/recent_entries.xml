@@ -4,9 +4,54 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2011-08-11T09:08:59Z</updated>
+    <updated>2011-09-22T17:24:08Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
+
+<entry>
+    <title>Physical Hyperlinks that Glitter</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/physical-hyperlinks-that-glitter" />
+    <id>tag:i.liketightpants.net,2011:/and//1.29</id>
+
+    <published>2011-09-22T14:11:40Z</published>
+    <updated>2011-09-22T17:24:08Z</updated>
+
+    <summary>I cut out 424 squares in sparkly adhesive and create the QR-code for the hyperlink to this very blog.</summary>
+    <author>
+        <name>baseline</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<style>
+#content .grid_1 {
+  color: #999;
+}
+
+#content .grid_1 a {
+  color: #bbb;
+}
+
+#content .grid_1 h4.author {
+  color: #000;
+}
+
+
+</style>
+
+<p><img src="/and/assets/scaled/to/830/wide/and/called/physical_hyperlinks_that_glitter.jpg" alt="You see a white wall on which is constructed a QR-code. The squares that constitute the code are pink and glittery, made from some thick adhesive pasted to the wall." title="" style="width:830px;height:551px;"/></p>
+
+<p class="byline">Photo by <a href="http://www.jhoeko.com/">Jhoeko</a></p>
+
+<p>For the shared exhibition of our <a href="http://www.dedcr.nl">studio complex</a> I want to show current work. But most of what I do is for the screen now. So I make a physical hyperlink to the blogosphere. I cut out 424 squares in sparkly adhesive and create the QR-code for the hyperlink to this very blog. Not every phone manages to scan it correctly—I’m not sure if it’s because the grid is slightly crooked, or because the glitter is confusing.</p>
+
+<p><img src="/and/assets/scaled/to/490/wide/and/called/try_glitter_link.jpg" style="width:490px;height:370px;" alt="You see a group of people in front of the glitter code, trying it out with their telephone"/></p>
+
+<p class="byline">Floris Schönfeld gives a guided tour, visitors try to visit the glitterlink. Photo Eelco van der Lingen</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Learning how to program</title>
@@ -425,28 +470,6 @@ but there was none.</p>]]>
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[<blockquote>Maybe I was emerging into the era of post-modernism but I put it down far more to ADD &#8211; Attention Deficiency Disorder [laughs].  I just think that I couldn't concentrate. I never have been able to concentrate on one thing for very long without getting kind of itchy. I did always feel that there was some kind of area in rock that I could work comfortably using and working with all of my enthusiasms. I am a guy of enthusiasms. I get terribly excited about things that are new to me and it just seemed a perfectly natural for me at the time to put together all these odds and ends of art and culture that I really adore.</blockquote>
 <p><em><a href="http://5years.com/quotes.htm" title="The Ziggy Stardust Companion - In Their Own Words (1/2)">Source</a></em></p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Heroes</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/heroes" />
-    <id>tag:i.liketightpants.net,2010:/and//1.2</id>
-
-    <published>2010-03-08T19:06:05Z</published>
-    <updated>2011-07-28T20:49:26Z</updated>
-
-    <summary>You see a picture of a small poster stuck behind some files. It says &apos;Guided by Heroes&apos; and it shows David Bowie.</summary>
-    <author>
-        <name>tellyou</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[  <p><img src="http://i.liketightpants.net/and/assets/scaled/to/1037/high/and/called/bowie.jpg" alt="You see a picture of a small poster stuck behind some files. It says 'Guided by Heroes' and it shows David Bowie."  style="width:830px;height:1037px;"/></p>
-  <p>taken in my studio by <a href="http://johannieuwenhuize.nl/">Johan Nieuwenhuize</a></p>]]>
         
     </content>
 </entry>

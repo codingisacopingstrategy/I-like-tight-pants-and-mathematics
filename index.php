@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/learning-how-to-program');
+header('Location: /and/physical-hyperlinks-that-glitter');
 ?>
