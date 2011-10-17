@@ -1,0 +1,136 @@
+$lineheight: 14px;
+$accent: #ff0000 !default;
+
+@mixin bar {
+    height: 26px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+@font-face {
+    font-family: 'JottFLFBold';
+    src: url('jottflf-bold-webfont.eot');
+    src: url('jottflf-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('jottflf-bold-webfont.woff') format('woff'),
+         url('jottflf-bold-webfont.ttf') format('truetype'),
+         url('jottflf-bold-webfont.svg#JottFLFBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: Arial;
+    font-size: 11px;
+    line-height: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+h4.comments-header {
+    margin-bottom: 18px;
+}
+
+a img {
+    border: none;
+}
+
+a, a:active, a:visited {
+    color: $accent;
+}
+
+a:hover {
+    color: lighten($accent, 30%);
+}
+
+li {
+    list-style: none;
+}
+
+h1, #header ul li {
+    font-size: 24px;
+}
+
+div#header {
+    @include bar;
+    font-family: 'JottFLFBold', Arial;
+}
+
+#header ul li {
+    display: inline;
+}
+
+
+h4, .shout_number {
+    font-family: Verdana;
+    font-weight: 700;
+}
+
+p, textarea {
+    font-family: Georgia;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 18px;
+}
+
+p.byline, h4 span {
+    font-family: Arial;
+    font-size: 11px;
+    line-height: 14px;    
+}
+
+p.byline {
+    margin-top: 11px;
+}
+
+.comment p.byline {
+//    margin-top: -18px;
+}
+
+blockquote {
+    border-left: 9px solid lighten($accent, 30%);
+    padding-left: 3px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+div#content {
+    margin-top: 39px;
+    
+    ul, dl, div.article, iframe, blockquote, img {
+    margin-bottom: $lineheight;
+ }
+ 
+   .margin-bottom {
+    margin-bottom: $lineheight;
+   }
+}
+
+div#bar {
+    @include bar;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+img.lrg_profile {
+    width: 150px;
+    height: 110px;
+}
+
+pre {
+    font-family: "andale mono", "lucida console", monospace;
+    white-space: pre-wrap;
+}
+
+div#header {
+    p, p.byline {
+        margin: 0;
+        line-height: 24px;
+    } 
+}
