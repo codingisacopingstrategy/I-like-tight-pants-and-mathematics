@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/physical-hyperlinks-that-glitter');
+header('Location: /and/the-voice-of-the-shell');
 ?>
