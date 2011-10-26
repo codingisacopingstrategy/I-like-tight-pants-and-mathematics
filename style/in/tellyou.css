@@ -20,10 +20,10 @@ a img {
   border: none; }
 
 a, a:active, a:visited {
-  color: #d42a30; }
+  color: #3e4f5f; }
 
 a:hover {
-  color: #eea9ab; }
+  color: #869cb0; }
 
 li {
   list-style: none; }
@@ -61,10 +61,14 @@ p.byline {
   margin-top: 11px; }
 
 blockquote {
-  border-left: 9px solid #eea9ab;
+  border-left: 9px solid #869cb0;
   padding-left: 3px;
   font-size: 14px;
   line-height: 18px; }
+
+div#aside p {
+  font-family: Arial;
+  padding-left: 12px; }
 
 div#content {
   margin-top: 39px; }
