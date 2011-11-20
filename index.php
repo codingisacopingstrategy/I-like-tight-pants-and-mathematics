@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/the-voice-of-the-shell');
+header('Location: /and/albert-camus-his-algorithm');
 ?>

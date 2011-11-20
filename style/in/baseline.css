@@ -66,6 +66,10 @@ blockquote {
   font-size: 14px;
   line-height: 18px; }
 
+div#aside p {
+  font-family: Arial;
+  padding-left: 12px; }
+
 div#content {
   margin-top: 39px; }
   div#content ul, div#content dl, div#content div.article, div#content iframe, div#content blockquote, div#content img {
