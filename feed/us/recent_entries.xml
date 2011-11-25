@@ -4,9 +4,53 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2011-10-30T22:53:49Z</updated>
+    <updated>2011-11-24T15:02:20Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
+
+<entry>
+    <title>We like tight pants and mathematics</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/we-like-tight-pants-and-mathematics" />
+    <id>tag:i.liketightpants.net,2011:/and//1.32</id>
+
+    <published>2011-11-23T09:27:27Z</published>
+    <updated>2011-11-24T15:02:20Z</updated>
+
+    <summary>To give programming a productive place in your arts and design practice, you need to get to know programming culture, and, ideally, take part in (re)shaping it. To feel comfortable with being a programmer, you might want to change what a programmer is.</summary>
+    <author>
+        <name>tellyou</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p><img src="/and/assets/scaled/to/830/wide/and/called/workshop_effective.jpg" title="" alt="" style="width:830;height:553;" /></p>
+<p class="byline">The students in Rotterdam take up my cues.</p>
+
+<p>I have given a workshop at the Master <a href="http://pzwart.wdka.nl/networked-media/" title="Networked Media">Networked Media
+</a> at the Piet Zwart institute, Rotterdam. One of the few master courses <a href="http://river-valley.tv/how-to-run-an-art-school-on-free-and-open-source-software/" title="How to Run an Art School on Free and Open Source Software | River Valley TV">that runs on free and open source software
+</a>, and the surrounding culture of sharing and hacking. The workshop is called:</p>
+
+<p><em>I like tight pants and mathematics.<br/>
+Queering up programming culture.</em></p>
+
+<blockquote>To give programming a productive place in your arts and design practice, you need to get to know programming culture, and, ideally, take part in (re)shaping it. To feel comfortable with being a programmer, you might want to change what a programmer is. With queering up I am not referring to homosexuality, but rather to an approach that undermines existing masculine, heteronormative ideals.  An historical example would be Glam rock’s appropriation of the traditional ‘earnest’ masculine rock musician into the polysexual identity mirror palace created by musicians as David Bowie and Freddy Mercury.</blockquote>
+
+<p>I am planning a longer write up, but for now you might be interested in <a href="http://titanpad.com/2z2De9BZ20" title="TitanPad: 2z2De9BZ20">the lecture notes
+</a>.</p>
+
+
+<p><img src="/and/assets/scaled/to/490/wide/and/called/workshop_i_present_in_the_beamer.jpg" title="" alt="" style="width:490;height:735;" /></p>
+<p class="byline">Presenting in the light of the beamer</p>
+
+<p><img src="/and/assets/scaled/to/490/wide/and/called/workshop_and_serious_discussion_ensued.jpg" title="" alt="" style="width:490;height:326;" /></p>
+<p class="byline">And serious discussion ensues</p>
+
+<p><img src="/and/assets/scaled/to/490/wide/and/called/workshop_on_both_sides_of_the_table.jpg" title="" alt="" style="width:490;height:326;" /></p>
+<p class="byline">On both sides of the table</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Albert Camus’ algorithm</title>
@@ -481,35 +525,6 @@ but there was none.</p>]]>
 <p>Correction @ 4:52: the <a href="http://klepas.org/openbaskerville/" title="Open Baskerville">Open Baskerville</a> project has been initiated by <a href="http://klepas.org/" title="Simon Pascal Klein&thinsp;&mdash;&thinsp;Graphic &amp; web design professional">Simon Pascal Klein</a> from Australia (not Pascal Simon Klein from Germany). Apologies!</p>
 
 <p>Video originally on <a href="http://river-valley.tv/content-centric-architecture-and-distributed-versioning/">http://river-valley.tv/content-centric-architecture-and-distributed-versioning/</a></p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>The problem with web apps</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-problem-with-web-apps" />
-    <id>tag:i.liketightpants.net,2010:/and//1.8</id>
-
-    <published>2010-04-07T18:10:09Z</published>
-    <updated>2011-07-28T21:05:16Z</updated>
-
-    <summary>Apps become like this:&apos; a circle labelled APP encapsulating a circle labelled DATA. The app interfaces with a square with rounded corners labeled USER, as shown by two way arrows. &apos;While potentially they could be:&apos; the user interfaces with a circle APP which interfaces with a separate circle DATA. &apos;The latter could enable&apos;: the USER interfaces with an APP which interfaces with an APP which interfaces with an APP which interfaces with DATA. &apos;As well as:&apos; the USER interfaces with three APPS that all interface with DATA. &apos;(Or any combination of the two)&apos;</summary>
-    <author>
-        <name>jenseits</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p>
-  <object type="image/svg+xml" style="width:830px;height:992px;" data="/and/assets/called/theproblemwithwebapps.svg">
-    <img src="/and/assets/called/theproblemwithwebapps.png" style="width:736px;height:880px;" alt="'Apps become like this:' a circle labelled APP encapsulating a circle labelled DATA. The app interfaces with a square with rounded corners labeled USER, as shown by two way arrows. 'While potentially they could be:' the user interfaces with a circle APP which interfaces with a separate circle DATA. 'The latter could enable': the USER interfaces with an APP which interfaces with an APP which interfaces with an APP which interfaces with DATA. 'As well as:' the USER interfaces with three APPS that all interface with DATA. '(Or any combination of the two)' " />
-  </object>
-</p>
-
-<p>Applied to blogging software:</p>
-
-<p><img src="/and/assets/called/fromacontentperspective.png" style="width:600px;height:1615px;"></p>]]>
         
     </content>
 </entry>

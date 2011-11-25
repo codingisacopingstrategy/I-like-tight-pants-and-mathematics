@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/albert-camus-his-algorithm');
+header('Location: /and/we-like-tight-pants-and-mathematics');
 ?>
