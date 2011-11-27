@@ -4,9 +4,103 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2011-11-24T15:02:20Z</updated>
+    <updated>2011-11-25T17:48:41Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
+
+<entry>
+    <title>Vector pixels</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/vector-pixels" />
+    <id>tag:i.liketightpants.net,2011:/and//1.33</id>
+
+    <published>2011-11-25T16:14:10Z</published>
+    <updated>2011-11-25T17:48:41Z</updated>
+
+    <summary>Creating a vector image from a raster image usually consists of imagining some kind of curve, responsible for the pixels. But this is guess work at best. Why don’t we work with what’s actually there—points?</summary>
+    <author>
+        <name>bnf</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p>
+<img src="/and/assets/called/vector_pixel_city_pixels.png" style="width:16px;height:16px;" alt="A stylised image of a skyscraper, in 16 by 16 pixels." title="" />
+<object type="image/svg+xml" style="width:384px;height:384px;" data="/and/assets/called/vector_pixel_city.svg">
+    <img src="/and/assets/called/vector_pixel_city.png" style="width:384px;height:384px;" alt="A stylised image of a skyscraper. The building is made out of square shapes on a 16 by 16 grid. The squares have rounded corners." />
+ </object>
+</p>
+
+<pre>#!/usr/bin/env python
+"""  Turns an image into a two-colored grid of vectorpixels: squares,
+circles, or squares with rounded corners.
+
+Creating a vector image from a raster image usually consists of
+imagining some kind of curve, responsible for the pixels. But this
+is guess work at best. Why don’t we work with what’s actually
+there—points?
+
+This script turns an image into a grid of vector squares, circles,
+or squares with rounded corners.
+
+usage (command line):
+
+python vectorpixel.py inputimage.png > outputimage.svg
+
+ TODO: allow multi-colour pictures, implement vertical and horiontal scanlines """
+
+import Image
+import sys
+
+class vectorpixel:
+    def __init__(self, image):
+        self.i = Image.open(image)
+        self.i.convert("1")
+        self.px = self.i.load()
+        self.constructed = False
+
+    def construct(self, grid=24, line=1, rounded=4, test=(lambda x: x != 0)):
+        self.grid = grid
+        self.line = line
+        self.rounded = rounded
+        self.width = self.height = self.grid - 2 * self.line
+        self.test = test
+        self.fill = '#000000'
+        self.constructed = True
+
+    def _yieldlocations(self):
+        for x in range(self.i.size[0]):
+            for y in range(self.i.size[1]):
+                if self.test(self.px[x,y]):
+                    yield (x,y)
+
+    def _mkelements(self):
+        for l in self._yieldlocations():
+            yield "&lt;rect x='%s' y='%s' width='%s' height='%s' rx='%s' fill='%s'/&gt;" % (
+    self.grid * l[0] + self.line, self.grid * l[1] + self.line, self.width, self.height, self.rounded, self.fill)
+
+    def _format(self):
+        output = '&lt;svg xmlns="http://www.w3.org/2000/svg" width="%s" height="%s"&gt;\n' % (self.i.size[0] * self.grid, self.i.size[1] * self.grid)
+        for e in self._mkelements():
+            output += e
+            output += '\n'
+        output += '&lt;/svg&gt;'
+        return output
+
+    def generate(self):
+        if not self.constructed:
+            self.construct()
+        return self._format()
+
+    
+if __name__ == "__main__":
+    v = vectorpixel(sys.argv[1])
+    v.construct()
+    print v.count_elements()</pre>
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>We like tight pants and mathematics</title>
@@ -498,33 +592,6 @@ but there was none.</p>]]>
 <p>What I think I am actually saying is: I would like you to talk to me. That would be good. You can call or mail me, and we will meet and talk. Or just look out of the window together, which is even better.</p>
 
 <p>There is a second message. Which is: let us mount shows with my pictures. I would like that.</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Talking of content</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/talking-of-content" />
-    <id>tag:i.liketightpants.net,2010:/and//1.11</id>
-
-    <published>2010-06-08T21:05:38Z</published>
-    <updated>2011-07-28T20:39:27Z</updated>
-
-    <summary>My strongest first impression was the sense of confrontation that was instigated, not in the content per se but as evident from the two questions (…). The stance is important, and even political. It reminds me of feminism. And I suppose its the direct reply to that “geeky” fear we have.</summary>
-    <author>
-        <name>jenseits</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<iframe src="http://player.vimeo.com/video/12366245?byline=0&amp;portrait=0&amp;color=7C26FF" width="830" height="436" frameborder="0"></iframe><p class="byline"><a href="http://vimeo.com/12366245">Content centric architecture and distributed versioning</a> from <a href="http://vimeo.com/seeculture">See Culture</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
-
-<p>At the <a href="http://libregraphicsmeeting.org/2010/">Libre Graphics Meeting</a>, a four day event bringing together open source developers and graphic professionals.</p>
-
-<p>Correction @ 4:52: the <a href="http://klepas.org/openbaskerville/" title="Open Baskerville">Open Baskerville</a> project has been initiated by <a href="http://klepas.org/" title="Simon Pascal Klein&thinsp;&mdash;&thinsp;Graphic &amp; web design professional">Simon Pascal Klein</a> from Australia (not Pascal Simon Klein from Germany). Apologies!</p>
-
-<p>Video originally on <a href="http://river-valley.tv/content-centric-architecture-and-distributed-versioning/">http://river-valley.tv/content-centric-architecture-and-distributed-versioning/</a></p>]]>
         
     </content>
 </entry>
