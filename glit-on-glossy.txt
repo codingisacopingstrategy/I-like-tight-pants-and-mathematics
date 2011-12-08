@@ -1,0 +1,17 @@
+Glit here. So maybe you read Bnf’s latest article, and you can not make chocolate out of it. The little program he writes, is a script that runs on the command line. [The shell]. 
+
+Imagine you’re an art student. And you just bought an expensive aluminium computer, because that’s part of the deal of being an art student today. What programs are you planning to run on it? Photoshop, Safari… Illustrator and inDesign maybe?
+
+That’s so boring! There’s ways to be vastly more intimate and experimental with your computer, and since you have endeavored to study art 
+
+You couldn’t tell by the glossy exterior, but your Mac runs actually quite an old fashioned system, called Unix. Unix has been around since like forever. Or at least the 1970ies. Unix used to run on big computers in universities and enterprises, but in Mac Os X it has now found it’s way to personal computers. 
+
+Because Unix used to be the system that computer scientists and system administrators would run, almost all of the cool programming tools have been developed for Unix. Your mac comes preinstalled with all the major programming languages: Python, Ruby, Perl, PHP. It comes with the webserver that runs many of the websites on the internet: Apache. And because it is a Unix system, you can easily expand with all the open source software that is being written today.
+
+So here’s a sweet deal: your shiny expensive computer comes with a lot of programs for free, and you didn’t even know about it. Plus, you can tap into all the open source development that is being done right now. So whenever someone writes a new creative, clever or useful open source software tool, you can get that for free too!
+
+Now here’s the catch. Computer programmers and system administrators have a culture all of their own. One of the defining characteristics is, within this culture, graphical user interfaces like your Mac’s windows and buttons are not seen as the easiest way to deal with a program. Rather, you are expected to deal with your program through a <em>Terminal</em>. This is a window in which you type commands. Just like in DOS, for those of you who have used a computer before 1995.
+
+So to benefit from the culture of open source and programming, you have to learn how to use the terminal to run your programs. Other than that, you have to learn to use a program called a ‘package manager’ to easily install new programs. We’re going to learn both of these things. And to achieve the latter, we’re also going to install a compiler—having a compiler around is an integral part of this lifestyle.
+
+I’ll hand it back to bnf to introduce you to the terminal!

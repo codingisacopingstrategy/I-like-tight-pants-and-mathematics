@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="/and/style/in/style.css" type="text/css" />
+<link rel="stylesheet" href="/and/style/in/reset.css" type="text/css" />
+<link rel="stylesheet" href="/and/style/in/grid.css" type="text/css" />
+<link rel="stylesheet" href="/and/style/in/style.css" type="text/css" />
+<link rel="start" href="/and/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/and/feed/us/recent_entries.xml" />
+<script type="text/javascript" src="/and/scripts/being/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="/and/scripts/being/jquery.syntaxhighlighter.min.js"></script>
+<script type="text/javascript" src="/and/scripts/being/scripts.js"></script>
+<script type="text/javascript" src="/and/mt.js"></script>
+
+
+    <link rel="stylesheet" href="/and/style/in/bnf.css" type="text/css" />
+    <link rel="prev bookmark" href="/and/installing-compilers" title="I like tight pants and installing compilers" />
+    
+    <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-2.html"
+    trackback:ping="http://mt.schr.fr/tb.cgi/34"
+    dc:title="Absolute Beginners: Unix for Art Students – Part 2"
+    dc:identifier="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-2.html"
+    dc:subject=""
+    dc:description="This is how you use the terminal."
+    dc:creator="bnf"
+    dc:date="2011-12-02T02:16:05+01:00" />
+</rdf:RDF>
+-->
+
+    <title>I like tight pants and absolute beginners: unix for art students – part 2</title>
+    <meta property="og:title" content="I like tight pants and absolute beginners: unix for art students – part 2"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-2"/>
+    
+    <meta property="og:image" content="http://i.liketightpants.net/and/assets/scaled/to/830/wide/and/called/absolute_beginners_figlet.png"/>
+    <meta property="og:site_name" content="I like tight pants and mathematics"/>
+    <meta property="og:description"
+          content="This is how you use the terminal."/>
+    <meta property="fb:admins" content="1488294875"/>
+</head>
+<body>
+<div id="header" class="container_7">
+  <div class="grid_2">
+  <h1><a href="/and/">i . like tight pants . net</a></h1>
+  </div>
+  <div class="grid_3">
+  <ul>
+    
+    <li class="current">latest</li>
+    
+    <li><a href="/and/about">about</a></li>
+    <li><a href="/and/archives">index</a></li>
+  </ul>
+  </div>
+  <div class="grid_2">
+  <p class="byline">New entries published Monday and Thursday, 22:00 CET (<a href="/and/feed/us/recent_entries.xml">RSS</a>)</p><!-- <h4>search box</h4> -->
+  </div>
+</div>
+
+<div id="content" class="container_7">
+<div class="grid_1">
+  
+  <img src="http://mt.schr.fr/lib/support/assets_c/userpics/userpic-8-100x100.png?6" width="100" height="100" alt="" />
+  
+  <h4 class="author">bnf</h4>
+  <p>&nbsp;</p>
+  
+  <hr />
+  
+  <h4>Articles</h4>
+  <dl>
+  
+  
+  <dt><a href="/and/absolute-beginners-unix-for-art-students-part-2">Absolute Beginners: Unix for Art Students – Part 2</a></dt>
+  <dd>December  2, 2011  2:16 AM</dd>
+  
+  <dt><a href="/and/vector-pixels">Vector pixels</a></dt>
+  <dd>November 25, 2011  5:14 PM</dd>
+  
+  </dl>
+
+  
+
+<!--
+  <h4>Shouts</h4>
+  <dl>
+    <dt>Article name could be very llong indeed</dt>
+    <dd>23 days ago - 23 likes</dd>
+    <dt>Article name could be very llong indeed</dt>
+    <dd>23 days ago - 23 likes</dd>
+  </dl>
+-->  
+  <hr />
+  
+  <h4>Other writers</h4>
+  <ul>
+  
+    <li>glit</li>
+  
+    <li>jenseits</li>
+  
+    <li>habitus</li>
+  
+    <li>tellyou</li>
+  
+    <li>baseline</li>
+  
+    <li>bnf</li>
+  
+  </ul>
+    
+</div>
+<div class="grid_5 post">
+  <p class="byline">
+  <a href="/and/installing-compilers">Previous</a> 
+  
+  </p>
+  <div>
+    <div class="article grid_3 alpha omega suffix_2">
+    <h4>Absolute Beginners: Unix for Art Students – Part 2</h4>
+    <p><a href="/and/assets/called/absolute_beginners_figlet.png"><img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_figlet.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, showing an ascii art that reads: “Absolute beginners”." title="" style="width:830px;height:518px;" /></a></p>
+
+<p>If I type</p>
+
+<pre>$ figlet absolute beginners</pre>
+
+<p>into my terminal, this is what I get:</p>
+
+<pre>       _               _       _       
+  __ _| |__  ___  ___ | |_   _| |_ ___ 
+ / _` | '_ \/ __|/ _ \| | | | | __/ _ \
+| (_| | |_) \__ \ (_) | | |_| | ||  __/
+ \__,_|_.__/|___/\___/|_|\__,_|\__\___|
+                                       
+ _                _                           
+| |__   ___  __ _(_)_ __  _ __   ___ _ __ ___ 
+| '_ \ / _ \/ _` | | '_ \| '_ \ / _ \ '__/ __|
+| |_) |  __/ (_| | | | | | | | |  __/ |  \__ \
+|_.__/ \___|\__, |_|_| |_|_| |_|\___|_|  |___/
+            |___/                             
+</pre>
+
+<p>Figlet has proved to be a gateway drug for extended terminal usage. Figlet is not on your computer by default though. Even though your mac comes with a lot of unix software already, not a lot of it is graphics software. To install new software you need to install what is called a package manager, as explained in <a href="/and/installing-compilers">I like tight pants and installing compilers</a>. This article will continue with an introduction that tells you how to use the terminal!</p>
+
+<p>In your Applications folder, choose Accessories, and open Terminal. Now you can talk with your computer. He can tell you who you are. Type:</p>
+
+<pre>$ whoami</pre>
+
+<p>(without the $ and the space, that’s just a convention to denote text that you enter into the terminal). And press enter. The computer outputs your username! The computer also knows where you are, at least where you are on the hard disk. Enter:</p>
+
+<pre>$ pwd</pre>
+
+<p>And the computer will repond with <code>/Users/yourusername</code>. It would make sense if you could say <code>whereami</code> but consistency is not Unix greatest strength. You are now in what is called your home folder.<br />
+You can always return to your home folder by typing:</p>
+
+<pre>$ cd</pre>
+
+<p><code>cd</code> is also the commando to use to go to another folder. You can use the tab button to make this go quicker.<br/>
+Type, by example:</p>
+
+<pre>$ cd Do(tab)</pre>
+
+<p>You will see</p>
+
+<pre>Documents/ Downloads/</pre>
+
+<p>Complete further to</p>
+
+<pre>$ cd Doc(tab)</pre>
+
+<p>And your line will be extended to form:</p>
+
+<pre>$ cd Documents/</pre>
+
+<p>When you push enter, you will arrive into the folder Documents. You can check this by again typing</p>
+
+<pre>$ pwd</pre>
+
+<p>To see what files are part of the folder you are in:</p>
+
+<pre>$ ls</pre>
+
+<p>You can also check this in the finder, if you want. You can use the terminal and the finder at the same time. This can make it easier to learn what is going on. You can launch the finder from the terminal.</p>
+
+<pre>$ open .</pre>
+
+<p><code>.</code> refers to the current folder. <code>open .</code> will open the current folder with the associated program, which is the finder.</p>
+
+<p>To make a new empty file:</p>
+
+<pre>$ touch my_text_file.txt</pre>
+
+<p>If you still have the Finder open, you will see it appear! To open with the text editor:</p>
+
+<pre>$ open mijn_tekst_bestand.txt</pre>
+
+<p>These are the basics of navigating around the terminal.</p>
+
+    <div id="comments" class="comments">
+<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fi.liketightpants.net%2Fand%2Fabsolute-beginners-unix-for-art-students-part-2.html&amp;send=false&amp;layout=standard&amp;width=530&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:530px; height:21px;" allowTransparency="true"></iframe>
+
+
+
+
+
+
+
+    
+    
+    <div class="comments-open" id="comments-open">
+        <h4 class="comments-open-header">Leave a comment</h4>
+        <div class="comments-open-content">
+
+        
+            <div id="comment-greeting"></div>
+
+            <form method="post" action="http://mt.schr.fr/comments.cgi" name="comments_form" id="comments-form" onsubmit="return mtCommentOnSubmit(this)">
+                <input type="hidden" name="static" value="1" />
+                <input type="hidden" name="entry_id" value="35" />
+                <input type="hidden" name="__lang" value="en" />
+                <input type="hidden" name="parent_id" value="" id="comment-parent-id" />
+                <input type="hidden" name="armor" value="1" />
+                <input type="hidden" name="preview" value="" />
+                <input type="hidden" name="sid" value="" />
+                <div id="comments-open-data">
+                    <div id="comment-form-name">
+                      <div class="alpha grid_1"><label for="comment-author" class="span-4">Name</label></div>
+                        <div class="omega grid_2"><input id="comment-author" name="author" size="30" value="" onfocus="mtCommentFormOnFocus()" /></div>
+                    </div>
+                    <div id="comment-form-email">
+                        <div class="alpha grid_1"><label for="comment-email" class="span-4">Email Address</label></div>
+                        <div class="omega grid_2"><input id="comment-email" name="email" size="30" value="" onfocus="mtCommentFormOnFocus()" /></div>
+                    </div>
+                    <div id="comment-form-url">
+                        <div class="alpha grid_1"><label for="comment-url" class="span-4">URL</label></div>
+                        <div class="omega grid_2"><input id="comment-url" name="url" size="30" value="" onfocus="mtCommentFormOnFocus()" /></div>
+                    </div>
+                    <div id="comment-form-remember-me">
+                        <input type="checkbox" id="comment-bake-cookie" name="bakecookie" onclick="mtRememberMeOnClick(this)" value="1" accesskey="r" />
+                        <label for="comment-bake-cookie">Remember personal info?</label>
+                    </div>
+                </div>
+                <div id="comment-form-reply" style="display:none">
+                    <input type="checkbox" id="comment-reply" name="comment_reply" value="" onclick="mtSetCommentParentID()" />
+                    <label for="comment-reply" id="comment-reply-label"></label>
+                </div>
+                <div id="comments-open-text">
+                    <label for="comment-text">Comments
+                    (You may use HTML tags for style)</label><br />
+                    <textarea id="comment-text" name="text" rows="15" style="width:100%;" onfocus="mtCommentFormOnFocus()"></textarea>
+                </div>
+                <div id="comments-open-captcha"></div>
+                <div id="comments-open-footer">
+                    <input type="submit" accesskey="v" name="preview_button" id="comment-preview" value="Preview" onclick="this.form.preview.value='1';" />
+                    <input type="submit" accesskey="s" name="post" id="comment-submit" value="Submit" />
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+    <script type="text/javascript">
+    <!--
+    mtAttachEvent("load", mtEntryOnLoad);
+    mtAttachEvent("unload", mtEntryOnUnload);
+    //-->
+    </script>
+    
+
+
+</div>
+
+
+    </div>
+  </div>
+  <hr />
+  
+  <!--<h4>Related articles</h4>
+  <dl>
+  <dt>Article name could be very llong indeed</dt>
+  <dd>23 days ago - 23 likes</dd>
+  <dt>Article name could be very llong indeed</dt>
+  <dd>23 days ago - 23 likes</dd>
+  <dt>Article name could be very llong indeed</dt>
+  <dd>23 days ago - 23 likes</dd>
+  </dl>-->
+</div>
+
+<div class="grid_1">
+  <h4>Latest articles</h4>
+  <dl>
+  
+  <dt><a href="/and/absolute-beginners-unix-for-art-students-part-2">Absolute Beginners: Unix for Art Students – Part 2</a></dt>
+  <dd>December  2, 2011  2:16 AM</dd>
+  
+  <dt><a href="/and/installing-compilers">Installing compilers</a></dt>
+  <dd>December  1, 2011  3:13 PM</dd>
+  
+  <dt><a href="/and/absolute-beginners-unix-for-art-students-part-1">Absolute Beginners: Unix for Art Students – part 1</a></dt>
+  <dd>November 28, 2011 11:30 PM</dd>
+  
+  <dt><a href="/and/vector-pixels">Vector pixels</a></dt>
+  <dd>November 25, 2011  5:14 PM</dd>
+  
+  <dt><a href="/and/we-like-tight-pants-and-mathematics">We like tight pants and mathematics</a></dt>
+  <dd>November 23, 2011 10:27 AM</dd>
+  
+  <dt><a href="/and/albert-camus-his-algorithm">Albert Camus’ algorithm</a></dt>
+  <dd>October 30, 2011 10:58 PM</dd>
+  
+  <dt><a href="/and/the-voice-of-the-shell">The voice of the shell</a></dt>
+  <dd>October 26, 2011  8:20 PM</dd>
+  
+  <dt><a href="/and/physical-hyperlinks-that-glitter">Physical Hyperlinks that Glitter</a></dt>
+  <dd>September 22, 2011  4:11 PM</dd>
+  
+  <dt><a href="/and/learning-how-to-program">Learning how to program</a></dt>
+  <dd>August 11, 2011 11:04 AM</dd>
+  
+  <dt><a href="/and/pattern-recognition">Pattern Recognition</a></dt>
+  <dd>August 11, 2011  2:24 AM</dd>
+  
+  </dl>
+
+  
+
+<!--
+  <h4>Last 10 shouts</h4>
+  <dl>
+  <dt>Article name could be very llong indeed</dt>
+  <dd>23 days ago - 23 likes</dd>
+  <dt>Article name could be very llong indeed</dt>
+  <dd>23 days ago - 23 likes</dd>
+  <dt>Article name could be very llong indeed</dt>
+  <dd>23 days ago - 23 likes</dd>
+  </dl>
+-->
+</div>
+</div>
+<div id="bar">&nbsp;</div>
+<!-- Piwik, Open Source Analytics,
+let’s not give Google more data then necessary! Eric --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://var.schr.fr/piwik/" : "http://var.schr.fr/piwik/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://var.schr.fr/piwik/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+</body>
+</html>

@@ -4,9 +4,154 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2011-11-28T22:56:02Z</updated>
+    <updated>2011-12-08T14:46:36Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
+
+<entry>
+    <title>Absolute Beginners: Unix for Art Students – Part 2</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-2" />
+    <id>tag:i.liketightpants.net,2011:/and//1.35</id>
+
+    <published>2011-12-02T01:16:05Z</published>
+    <updated>2011-12-08T14:46:36Z</updated>
+
+    <summary>This is how you use the terminal.</summary>
+    <author>
+        <name>bnf</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p><a href="/and/assets/called/absolute_beginners_figlet.png"><img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_figlet.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, showing an ascii art that reads: “Absolute beginners”." title="" style="width:830px;height:518px;" /></a></p>
+
+<p>If I type</p>
+
+<pre>$ figlet absolute beginners</pre>
+
+<p>into my terminal, this is what I get:</p>
+
+<pre>       _               _       _       
+  __ _| |__  ___  ___ | |_   _| |_ ___ 
+ / _` | '_ \/ __|/ _ \| | | | | __/ _ \
+| (_| | |_) \__ \ (_) | | |_| | ||  __/
+ \__,_|_.__/|___/\___/|_|\__,_|\__\___|
+                                       
+ _                _                           
+| |__   ___  __ _(_)_ __  _ __   ___ _ __ ___ 
+| '_ \ / _ \/ _` | | '_ \| '_ \ / _ \ '__/ __|
+| |_) |  __/ (_| | | | | | | | |  __/ |  \__ \
+|_.__/ \___|\__, |_|_| |_|_| |_|\___|_|  |___/
+            |___/                             
+</pre>
+
+<p>Figlet has proved to be a gateway drug for extended terminal usage. Figlet is not on your computer by default though. Even though your mac comes with a lot of unix software already, not a lot of it is graphics software. To install new software you need to install what is called a package manager, as explained in <a href="/and/installing-compilers">I like tight pants and installing compilers</a>. This article will continue with an introduction that tells you how to use the terminal!</p>
+
+<p>In your Applications folder, choose Accessories, and open Terminal. Now you can talk with your computer. He can tell you who you are. Type:</p>
+
+<pre>$ whoami</pre>
+
+<p>(without the $ and the space, that’s just a convention to denote text that you enter into the terminal). And press enter. The computer outputs your username! The computer also knows where you are, at least where you are on the hard disk. Enter:</p>
+
+<pre>$ pwd</pre>
+
+<p>And the computer will repond with <code>/Users/yourusername</code>. It would make sense if you could say <code>whereami</code> but consistency is not Unix greatest strength. You are now in what is called your home folder.<br />
+You can always return to your home folder by typing:</p>
+
+<pre>$ cd</pre>
+
+<p><code>cd</code> is also the commando to use to go to another folder. You can use the tab button to make this go quicker.<br/>
+Type, by example:</p>
+
+<pre>$ cd Do(tab)</pre>
+
+<p>You will see</p>
+
+<pre>Documents/ Downloads/</pre>
+
+<p>Complete further to</p>
+
+<pre>$ cd Doc(tab)</pre>
+
+<p>And your line will be extended to form:</p>
+
+<pre>$ cd Documents/</pre>
+
+<p>When you push enter, you will arrive into the folder Documents. You can check this by again typing</p>
+
+<pre>$ pwd</pre>
+
+<p>To see what files are part of the folder you are in:</p>
+
+<pre>$ ls</pre>
+
+<p>You can also check this in the finder, if you want. You can use the terminal and the finder at the same time. This can make it easier to learn what is going on. You can launch the finder from the terminal.</p>
+
+<pre>$ open .</pre>
+
+<p><code>.</code> refers to the current folder. <code>open .</code> will open the current folder with the associated program, which is the finder.</p>
+
+<p>To make a new empty file:</p>
+
+<pre>$ touch my_text_file.txt</pre>
+
+<p>If you still have the Finder open, you will see it appear! To open with the text editor:</p>
+
+<pre>$ open mijn_tekst_bestand.txt</pre>
+
+<p>These are the basics of navigating around the terminal.</p>
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Installing compilers</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/installing-compilers" />
+    <id>tag:i.liketightpants.net,2011:/and//1.36</id>
+
+    <published>2011-12-01T14:13:57Z</published>
+    <updated>2011-12-08T14:45:01Z</updated>
+
+    <summary>To easily install new unix graphics software, you need a package manager. Homebrew is the best option for the Mac. For Homebrew you need to install a compiler, that&apos;s part of the lifestyle.</summary>
+    <author>
+        <name>tellyou</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p><a href="/and/assets/called/absolute_beginners_homebrew.png"><img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_homebrew.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, showing the output of installing software through the homebrew package manager." title="" style="width:830px;height:518px;" /></a></p>
+
+<p>We will install <a href="http://mxcl.github.com/homebrew/" title="Homebrew — MacPorts driving you to drink? Try Homebrew!">homebrew</a> to make it easy to install software. One of the upsides to installing homebrew is that you are also forced to install a compiler. A compiler is, <a href="/and/absolute-beginners-unix-for-art-students-part-1">like glit says</a>, part of this lifestyle: there are many other ways to install software than through homebrew, but most of them require a working compiler setup.</p>
+
+<p>At the <a href="http://www.kabk.nl/" title="Royal Academy of Art, The Hague (NL) | KABK">KABK</a> we installed Homebrow on a variety of Macs. The instructions differ slightly from version to version.</p>
+
+<p>For homebrew, you need an Intel Mac with OS X 10.5 (Leopard) or newer. To install, we do as instructed on the website: there is a command</p>
+
+<pre>/usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"</pre>
+
+<p>Copy and paste it into a terminal window and press enter.</p>
+
+<p>When the command has run, homebrew tells you to install XCode and Xquartz.</p>
+
+<p>To download XCode for 10.5 or 10.6, you need to become a <a href="http://developer.apple.com/" title="Apple Developer">registered Apple Developer</a>. The site makes it look like you need to pay, but you can register for free.<br/>
+For 10.5 you can download Xcode 3.1.4<br/>
+For 10.6 can you download Xcode 3.2.6</p>
+
+<p>For 10.7 you can download XCode 4.2 from the App store. This will put a program in your Applications folder that will install XCode. Run this too. Since this version of XCode doesn’t come with the time tested GCC compiler, and some software (such as ffmpeg) will refuse to compile on the newer compiler. That’s why you also need to install GCC, <a href="https://github.com/kennethreitz/osx-gcc-installer#readme">available here</a> (“Pre-built binary”).</p>
+
+<p>With <a href="http://xquartz.macosforge.org/trac/wiki/Releases" title="Releases – XQuartz">XQuartz</a> you install a compatibility layer for Unix software that requires a graphical user interface. Follow the instructions on their website.</p>
+
+<p>With all this installed, you can install your first unix software package: git</p>
+
+<pre>brew install git</pre>
+
+<p>Git is needed to keep your homebrew installation up to date. And now you are all set!</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Absolute Beginners: Unix for Art Students – part 1</title>
@@ -14,7 +159,7 @@
     <id>tag:i.liketightpants.net,2011:/and//1.34</id>
 
     <published>2011-11-28T22:30:57Z</published>
-    <updated>2011-11-28T22:56:02Z</updated>
+    <updated>2011-12-08T14:28:56Z</updated>
 
     <summary>You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, that reads: “Last login: Sat Oct 9 04:23:06 on console; computer-van-eric-schrijver:~ eric$</summary>
     <author>
@@ -24,7 +169,7 @@
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><a href="/and/assets/called/absolute_beginners_terminal.png"><img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_terminal.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, that reads: “Last login: Sat Oct 9 04:23:06 on console; computer-van-eric-schrijver:~ eric$”" title="" /></a></p>
+        <![CDATA[<p><a href="/and/assets/called/absolute_beginners_terminal.png"><img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_terminal.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, that reads: “Last login: Sat Oct 9 04:23:06 on console; computer-van-eric-schrijver:~ eric$”" title="" style="width:830px;height:518px;/></a></p>
 
 <p>Glit here. So maybe you read bnf’s latest article, and you can not make chocolate out of it. The <a href="http://i.liketightpants.net/and/vector-pixels" title="I like tight pants and vector pixels">little program</a> he writes, is a script that runs on the <a href="/and/the-voice-of-the-shell" title="I like tight pants and the voice of the shell">command line
 </a>. You may have never used the command line before. You might not even want to. But I’m here to tell you it’s a smart move.</p>
@@ -43,7 +188,7 @@
 
 <p>So to benefit from the culture of open source and programming, you have to learn how to use the terminal to run your programs. Other than that, you have to learn to use a program called a ‘package manager’ to easily install new programs. My colleagues are going to learn you both of these things. And to achieve the latter, we’re also going to install a compiler—having a compiler around is an integral part of this lifestyle.</p>
 
-<p>I’ll hand it back to bnf to introduce you to the terminal!</p>
+<p>I’ll hand it back to bnf to <a href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-2" title="I like tight pants and absolute beginners: unix for art students – part 2">introduce you to the terminal!</a></p>
 ]]>
         
     </content>
@@ -524,80 +669,6 @@ I thought look. How beatifully is made everything in Nature.<br />
 (Just think about those stars and their lightyears.)<br />
 I did want to go to some kind of evening mass,<br />
 but there was none.</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Illustration</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/illustration" />
-    <id>tag:i.liketightpants.net,2011:/and//1.18</id>
-
-    <published>2011-02-20T19:12:06Z</published>
-    <updated>2011-07-28T20:33:29Z</updated>
-
-    <summary>You see black and white illustrations of a computer and a penrose triangle, constituted of diagonal contours following a criss cross coarse grid.</summary>
-    <author>
-        <name>baseline</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p>
-  <object type="image/svg+xml" style="width:900px;height:900px;" data="/and/assets/called/computer.svg">
-    <img src="/and/assets/called/computer.png" style="width:900px;height:900px;" alt="A stylised image of a computer displaying a window manager. The image is constituted of diagonal contours following a criss cross coarse grid." />
-  </object>
-</p>
-<p>
-  <object type="image/svg+xml" style="width:900px;height:900px;" data="/and/assets/called/triangle.svg">
-    <img src="/and/assets/called/triangle.png" style="width:900px;height:900px;" alt="A stylised image of a penrose triangle. The image is constituted of diagonal contours following a criss cross coarse grid." />
-  </object>
-</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Beta</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/beta" />
-    <id>tag:i.liketightpants.net,2010:/and//1.16</id>
-
-    <published>2010-09-04T22:15:37Z</published>
-    <updated>2011-07-28T20:36:37Z</updated>
-
-    <summary>You see a number of GIF illustrations from the 1990ies. Apparently there are people who can develop, design and write it all at the same time. I can not. That’s why it’s BETA. But luckily I am working with Rowan now.</summary>
-    <author>
-        <name>baseline</name>
-        
-    </author>
-    
-    <category term="beta" label="beta" scheme="http://www.sixapart.com/ns/types#tag" />
-    <category term="collaboration" label="collaboration" scheme="http://www.sixapart.com/ns/types#tag" />
-    <category term="construction" label="construction" scheme="http://www.sixapart.com/ns/types#tag" />
-    <category term="design" label="design" scheme="http://www.sixapart.com/ns/types#tag" />
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p>
-<img src="/and/assets/called/AIconsWwwConst_anim.gif" style="width:38px;height:38px;" alt="AIconsWwwConst Anim" />
-<img src="/and/assets/called/AIconsWwwConst_area.png" style="width:78px;height:53px;" alt="AIconsWwwConst Area" />
-<img src="/and/assets/called/AIconsWwwConst_barrier.png" style="width:39px;height:35px;" alt="AIconsWwwConst Barrier" />
-<img src="/and/assets/called/AIconsWwwConst_build.png" style="width:64px;height:38px;" alt="AIconsWwwConst Build" />
-<img src="/and/assets/called/AIconsWwwConst_gear.gif" style="width:93px;height:70px;" alt="AIconsWwwConst Gear" />
-<img src="/and/assets/called/AIconsWwwConst_hat.png" style="width:32px;height:32px;" alt="AIconsWwwConst Hat" />
-<img src="/and/assets/called/AIconsWwwConst_hole.png" style="width:144px;height:50px;" alt="AIconsWwwConst Hole" />
-<img src="/and/assets/called/AIconsWwwConst_landscape.gif" style="width:249px;height:87px;" alt="AIconsWwwConst Landscape" />
-<img src="/and/assets/called/AIconsWwwConst_sign.gif" style="width:246px;height:63px;" alt="AIconsWwwConst Sign" />
-<img src="/and/assets/called/AIconsWwwConst_under.png" style="width:125px;height:39px;" alt="AIconsWwwConst Under" />
-<img src="/and/assets/called/AIconsWwwConst_warn.png" style="width:49px;height:43px;" alt="AIconsWwwConst Warn" />
-<img src="/and/assets/called/AIconsWwwConstruction.png" style="width:40px;height:40px;" alt="AIconsWwwConstruction" />
-</p>
-
-<p>Reading yet <a href="http://blog.peepcode.com/tutorials/2010/about-this-blog" title="About this Blog | Free PeepCode Blog">another programming blog with great design</a>, I feel ashamed for the shape this site is in.</p>
-
-<p>Well, it is in beta! Apparently there are people who can pull it off, but I think my website will be better if I do not develop, design and write it all at the same time.</p>
-
-<p>For the visual identity I am now working with <a href="http://www.mccuskey.nl/" title="Jij &amp; McCuskey">Rowan</a>. I am sure it will turn out wonderful. Stay tuned.</p>]]>
         
     </content>
 </entry>
