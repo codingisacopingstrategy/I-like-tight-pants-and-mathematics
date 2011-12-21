@@ -4,9 +4,38 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2011-12-08T14:46:36Z</updated>
+    <updated>2011-12-17T04:14:01Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
+
+<entry>
+    <title>I have relocated to Brussels</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/i-have-relocated-to-brussels" />
+    <id>tag:i.liketightpants.net,2011:/and//1.37</id>
+
+    <published>2011-12-17T03:17:53Z</published>
+    <updated>2011-12-17T04:14:01Z</updated>
+
+    <summary>Fabien is making his way through part 2 of Absolute Beginners: Unix for Art Students. The architecture here is great. And on sundays we debate who cleans the marble.</summary>
+    <author>
+        <name>glit</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p><a href="/and/assets/called/fabien_in_brussels.jpg"><img src="/and/assets/scaled/to/830/wide/and/called/fabien_in_brussels.jpg" alt="You see a young man sitting at the bottom of a staircase. The staircase ends in a marble piece and the floor is marble as well. The young man looks into the screen of his laptop." title="" /></a></p>
+
+<p>This is Fabien. He is making his way through <a href="/and/absolute-beginners-unix-for-art-students-part-2" title="I like tight pants and absolute beginners: unix for art students – part 2">part 2</a> of <a href="/and/absolute-beginners-unix-for-art-students-part-1" title="I like tight pants and absolute beginners: unix for art students – part 1">Absolute Beginners: Unix for Art Students</a>. Fabien is an art student, in graphic design, at <a href="http://www.lacambre.be/" title=".: LA CAMBRE / ECOLE NATIONALE SUPERIEURE DES ARTS VISUELS :.">La Cambre</a>, the French speaking art academy in Brussels.</p>
+
+<p>The architecture here is great. Unlike, for example, Paris, where most buildings are larger apartment complexes, Brussels consists of “maisons de maitre”, large houses that were built by the bourgeoisie to house a family and their servants.</p>
+
+<p>I live in such a house with a group of housemates. We are our own servants, so we use the food elevator to bring the meal we cook up from the kitchen to the salon. And on Sundays we debate who cleans the marble.</p>
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Absolute Beginners: Unix for Art Students – Part 2</title>
@@ -159,7 +188,7 @@ For 10.6 can you download Xcode 3.2.6</p>
     <id>tag:i.liketightpants.net,2011:/and//1.34</id>
 
     <published>2011-11-28T22:30:57Z</published>
-    <updated>2011-12-08T14:28:56Z</updated>
+    <updated>2011-12-08T15:16:11Z</updated>
 
     <summary>You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, that reads: “Last login: Sat Oct 9 04:23:06 on console; computer-van-eric-schrijver:~ eric$</summary>
     <author>
@@ -169,7 +198,7 @@ For 10.6 can you download Xcode 3.2.6</p>
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><a href="/and/assets/called/absolute_beginners_terminal.png"><img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_terminal.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, that reads: “Last login: Sat Oct 9 04:23:06 on console; computer-van-eric-schrijver:~ eric$”" title="" style="width:830px;height:518px;/></a></p>
+        <![CDATA[<p><a href="/and/assets/called/absolute_beginners_terminal.png"><img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_terminal.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, that reads: “Last login: Sat Oct 9 04:23:06 on console; computer-van-eric-schrijver:~ eric$”" title="" style="width:830px;height:518px;"/></a></p>
 
 <p>Glit here. So maybe you read bnf’s latest article, and you can not make chocolate out of it. The <a href="http://i.liketightpants.net/and/vector-pixels" title="I like tight pants and vector pixels">little program</a> he writes, is a script that runs on the <a href="/and/the-voice-of-the-shell" title="I like tight pants and the voice of the shell">command line
 </a>. You may have never used the command line before. You might not even want to. But I’m here to tell you it’s a smart move.</p>
@@ -188,7 +217,7 @@ For 10.6 can you download Xcode 3.2.6</p>
 
 <p>So to benefit from the culture of open source and programming, you have to learn how to use the terminal to run your programs. Other than that, you have to learn to use a program called a ‘package manager’ to easily install new programs. My colleagues are going to learn you both of these things. And to achieve the latter, we’re also going to install a compiler—having a compiler around is an integral part of this lifestyle.</p>
 
-<p>I’ll hand it back to bnf to <a href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-2" title="I like tight pants and absolute beginners: unix for art students – part 2">introduce you to the terminal!</a></p>
+<p>I’ll hand it back to bnf to <a href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-2" title="I like tight pants and absolute beginners: unix for art students – part 2">introduce you to the terminal!</a>. Subsequently, tellyou tackles installing new unix software in <a href="/and/installing-compilers">I like tight pants and installing compilers</a>.</p>
 ]]>
         
     </content>
@@ -621,54 +650,6 @@ of Computer Programs">big blue book</a>, and I start watching the <a href="http:
 <p>I remember the director of Stroom explaining to us, how do we deal with a curator. We should not act too self-assured. Rather, we present an open ended view of our work. Also, we must not expect these curators to make exhibitions with us. We get taught to be subservient.</p>
 
 <p>Well I'd rather be inquisitive. Once again, I'll spend three days talking to art professionals. I'm not going to try and act spontaneous. This time I'll be keeping notes and I'll share them here. I hope we can answer this question: can the world of contemporary art be fixed?</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>A New Hymn for Easter</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/a-new-hymn-for-easter" />
-    <id>tag:i.liketightpants.net,2011:/and//1.21</id>
-
-    <published>2011-04-25T18:54:37Z</published>
-    <updated>2011-07-28T20:31:37Z</updated>
-
-    <summary>To celebrate Easter I translated Gerard Reve&apos;s (1923-2006) ‘Een Nieuw Paaslied’ (1962): “until he entered De Bijenkorf and I, // dizzy with horniness, bumping into people, // lost his trail.”</summary>
-    <author>
-        <name>glit</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p>Without having drunk, I praise God.
-Today many things happened.<br />
-Strolling through the lower city,<br />
-thinking of the Final Things,<br />
-I saw a boy, presumably a German tourist,<br />
-and followed him while I thought:<br />
-I'll slap your ass or if that won't work<br />
-you can hit me,<br />
-the main thing is we're occupied—<br />
-until he entered De Bijenkorf and I,<br />
-dizzy with horniness, bumping into people,<br />
-lost his trail.<br />
-Nevertheless I didn't forego praising You.<br />
-For unfathomably grand are all your labours:<br />
-Thou, who hast made the being<br />
-that has a cunt from behind and a tail in front.<br />
-Like I said, I hadn't even drunk, and yet I wanted<br />
-To honour you weeping and kneel for You in tears,<br />
-Oh Master, Slave and Brother, Slaughtered and Risen God.<br />
-Humming and secretly prophetising,<br />
-I continued on my way.<br />
-Then I saw Bet van Beeren, at a little white table<br />
-sitting in front of her café, trying with fork and knife<br />
-to open up a macrel to eat it in the sun.<br />
-I thought look. How beatifully is made everything in Nature.<br />
-(Just think about those stars and their lightyears.)<br />
-I did want to go to some kind of evening mass,<br />
-but there was none.</p>]]>
         
     </content>
 </entry>

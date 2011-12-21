@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/absolute-beginners-unix-for-art-students-part-2');
+header('Location: /and/i-have-relocated-to-brussels');
 ?>
