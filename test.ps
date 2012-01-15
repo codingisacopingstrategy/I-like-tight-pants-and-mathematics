@@ -1,0 +1,1615 @@
+%!PS-Adobe-3.0
+%%BoundingBox: 38 24 574 768
+%%Title: Enscript Output
+%%For: Eric Schrijver
+%%Creator: GNU enscript 1.6.4
+%%CreationDate: Fri Dec 23 00:52:11 2011
+%%Orientation: Portrait
+%%Pages: (atend)
+%%DocumentMedia: Letter 612 792 0 () ()
+%%DocumentNeededResources: (atend)
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset Enscript-Prolog 1.6 4
+%
+% Procedures.
+%
+
+/_S {	% save current state
+  /_s save def
+} def
+/_R {	% restore from saved state
+  _s restore
+} def
+
+/S {	% showpage protecting gstate
+  gsave
+  showpage
+  grestore
+} bind def
+
+/MF {	% fontname newfontname -> -	make a new encoded font
+  /newfontname exch def
+  /fontname exch def
+
+  /fontdict fontname findfont def
+  /newfont fontdict maxlength dict def
+
+  fontdict {
+    exch
+    dup /FID eq {
+      % skip FID pair
+      pop pop
+    } {
+      % copy to the new font dictionary
+      exch newfont 3 1 roll put
+    } ifelse
+  } forall
+
+  newfont /FontName newfontname put
+
+  % insert only valid encoding vectors
+  encoding_vector length 256 eq {
+    newfont /Encoding encoding_vector put
+  } if
+
+  newfontname newfont definefont pop
+} def
+
+/MF_PS { % fontname newfontname -> -	make a new font preserving its enc
+  /newfontname exch def
+  /fontname exch def
+
+  /fontdict fontname findfont def
+  /newfont fontdict maxlength dict def
+
+  fontdict {
+    exch
+    dup /FID eq {
+      % skip FID pair
+      pop pop
+    } {
+      % copy to the new font dictionary
+      exch newfont 3 1 roll put
+    } ifelse
+  } forall
+
+  newfont /FontName newfontname put
+
+  newfontname newfont definefont pop
+} def
+
+/SF { % fontname width height -> -	set a new font
+  /height exch def
+  /width exch def
+
+  findfont
+  [width 0 0 height 0 0] makefont setfont
+} def
+
+/SUF { % fontname width height -> -	set a new user font
+  /height exch def
+  /width exch def
+
+  /F-gs-user-font MF
+  /F-gs-user-font width height SF
+} def
+
+/SUF_PS { % fontname width height -> -	set a new user font preserving its enc
+  /height exch def
+  /width exch def
+
+  /F-gs-user-font MF_PS
+  /F-gs-user-font width height SF
+} def
+
+/M {moveto} bind def
+/s {show} bind def
+
+/Box {	% x y w h -> -			define box path
+  /d_h exch def /d_w exch def /d_y exch def /d_x exch def
+  d_x d_y  moveto
+  d_w 0 rlineto
+  0 d_h rlineto
+  d_w neg 0 rlineto
+  closepath
+} def
+
+/bgs {	% x y height blskip gray str -> -	show string with bg color
+  /str exch def
+  /gray exch def
+  /blskip exch def
+  /height exch def
+  /y exch def
+  /x exch def
+
+  gsave
+    x y blskip sub str stringwidth pop height Box
+    gray setgray
+    fill
+  grestore
+  x y M str s
+} def
+
+/bgcs { % x y height blskip red green blue str -> -  show string with bg color
+  /str exch def
+  /blue exch def
+  /green exch def
+  /red exch def
+  /blskip exch def
+  /height exch def
+  /y exch def
+  /x exch def
+
+  gsave
+    x y blskip sub str stringwidth pop height Box
+    red green blue setrgbcolor
+    fill
+  grestore
+  x y M str s
+} def
+
+% Highlight bars.
+/highlight_bars {	% nlines lineheight output_y_margin gray -> -
+  gsave
+    setgray
+    /ymarg exch def
+    /lineheight exch def
+    /nlines exch def
+
+    % This 2 is just a magic number to sync highlight lines to text.
+    0 d_header_y ymarg sub 2 sub translate
+
+    /cw d_output_w cols div def
+    /nrows d_output_h ymarg 2 mul sub lineheight div cvi def
+
+    % for each column
+    0 1 cols 1 sub {
+      cw mul /xp exch def
+
+      % for each rows
+      0 1 nrows 1 sub {
+        /rn exch def
+        rn lineheight mul neg /yp exch def
+        rn nlines idiv 2 mod 0 eq {
+	  % Draw highlight bar.  4 is just a magic indentation.
+	  xp 4 add yp cw 8 sub lineheight neg Box fill
+	} if
+      } for
+    } for
+
+  grestore
+} def
+
+% Line highlight bar.
+/line_highlight {	% x y width height gray -> -
+  gsave
+    /gray exch def
+    Box gray setgray fill
+  grestore
+} def
+
+% Column separator lines.
+/column_lines {
+  gsave
+    .1 setlinewidth
+    0 d_footer_h translate
+    /cw d_output_w cols div def
+    1 1 cols 1 sub {
+      cw mul 0 moveto
+      0 d_output_h rlineto stroke
+    } for
+  grestore
+} def
+
+% Column borders.
+/column_borders {
+  gsave
+    .1 setlinewidth
+    0 d_footer_h moveto
+    0 d_output_h rlineto
+    d_output_w 0 rlineto
+    0 d_output_h neg rlineto
+    closepath stroke
+  grestore
+} def
+
+% Do the actual underlay drawing
+/draw_underlay {
+  ul_style 0 eq {
+    ul_str true charpath stroke
+  } {
+    ul_str show
+  } ifelse
+} def
+
+% Underlay
+/underlay {	% - -> -
+  gsave
+    0 d_page_h translate
+    d_page_h neg d_page_w atan rotate
+
+    ul_gray setgray
+    ul_font setfont
+    /dw d_page_h dup mul d_page_w dup mul add sqrt def
+    ul_str stringwidth pop dw exch sub 2 div ul_h_ptsize -2 div moveto
+    draw_underlay
+  grestore
+} def
+
+/user_underlay {	% - -> -
+  gsave
+    ul_x ul_y translate
+    ul_angle rotate
+    ul_gray setgray
+    ul_font setfont
+    0 0 ul_h_ptsize 2 div sub moveto
+    draw_underlay
+  grestore
+} def
+
+% Page prefeed
+/page_prefeed {		% bool -> -
+  statusdict /prefeed known {
+    statusdict exch /prefeed exch put
+  } {
+    pop
+  } ifelse
+} def
+
+% Wrapped line markers
+/wrapped_line_mark {	% x y charwith charheight type -> -
+  /type exch def
+  /h exch def
+  /w exch def
+  /y exch def
+  /x exch def
+
+  type 2 eq {
+    % Black boxes (like TeX does)
+    gsave
+      0 setlinewidth
+      x w 4 div add y M
+      0 h rlineto w 2 div 0 rlineto 0 h neg rlineto
+      closepath fill
+    grestore
+  } {
+    type 3 eq {
+      % Small arrows
+      gsave
+        .2 setlinewidth
+        x w 2 div add y h 2 div add M
+        w 4 div 0 rlineto
+        x w 4 div add y lineto stroke
+
+        x w 4 div add w 8 div add y h 4 div add M
+        x w 4 div add y lineto
+	w 4 div h 8 div rlineto stroke
+      grestore
+    } {
+      % do nothing
+    } ifelse
+  } ifelse
+} def
+
+% EPSF import.
+
+/BeginEPSF {
+  /b4_Inc_state save def    		% Save state for cleanup
+  /dict_count countdictstack def	% Count objects on dict stack
+  /op_count count 1 sub def		% Count objects on operand stack
+  userdict begin
+  /showpage { } def
+  0 setgray 0 setlinecap
+  1 setlinewidth 0 setlinejoin
+  10 setmiterlimit [ ] 0 setdash newpath
+  /languagelevel where {
+    pop languagelevel
+    1 ne {
+      false setstrokeadjust false setoverprint
+    } if
+  } if
+} bind def
+
+/EndEPSF {
+  count op_count sub { pos } repeat	% Clean up stacks
+  countdictstack dict_count sub { end } repeat
+  b4_Inc_state restore
+} bind def
+
+% Check PostScript language level.
+/languagelevel where {
+  pop /gs_languagelevel languagelevel def
+} {
+  /gs_languagelevel 1 def
+} ifelse
+%%EndResource
+%%BeginResource: procset Enscript-Encoding-88591 1.6 4
+/encoding_vector [
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/space        	/exclam       	/quotedbl     	/numbersign   	
+/dollar       	/percent      	/ampersand    	/quoteright   	
+/parenleft    	/parenright   	/asterisk     	/plus         	
+/comma        	/hyphen       	/period       	/slash        	
+/zero         	/one          	/two          	/three        	
+/four         	/five         	/six          	/seven        	
+/eight        	/nine         	/colon        	/semicolon    	
+/less         	/equal        	/greater      	/question     	
+/at           	/A            	/B            	/C            	
+/D            	/E            	/F            	/G            	
+/H            	/I            	/J            	/K            	
+/L            	/M            	/N            	/O            	
+/P            	/Q            	/R            	/S            	
+/T            	/U            	/V            	/W            	
+/X            	/Y            	/Z            	/bracketleft  	
+/backslash    	/bracketright 	/asciicircum  	/underscore   	
+/quoteleft    	/a            	/b            	/c            	
+/d            	/e            	/f            	/g            	
+/h            	/i            	/j            	/k            	
+/l            	/m            	/n            	/o            	
+/p            	/q            	/r            	/s            	
+/t            	/u            	/v            	/w            	
+/x            	/y            	/z            	/braceleft    	
+/bar          	/braceright   	/tilde        	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/space        	/exclamdown   	/cent         	/sterling     	
+/currency     	/yen          	/brokenbar    	/section      	
+/dieresis     	/copyright    	/ordfeminine  	/guillemotleft	
+/logicalnot   	/hyphen       	/registered   	/macron       	
+/degree       	/plusminus    	/twosuperior  	/threesuperior	
+/acute        	/mu           	/paragraph    	/bullet       	
+/cedilla      	/onesuperior  	/ordmasculine 	/guillemotright	
+/onequarter   	/onehalf      	/threequarters	/questiondown 	
+/Agrave       	/Aacute       	/Acircumflex  	/Atilde       	
+/Adieresis    	/Aring        	/AE           	/Ccedilla     	
+/Egrave       	/Eacute       	/Ecircumflex  	/Edieresis    	
+/Igrave       	/Iacute       	/Icircumflex  	/Idieresis    	
+/Eth          	/Ntilde       	/Ograve       	/Oacute       	
+/Ocircumflex  	/Otilde       	/Odieresis    	/multiply     	
+/Oslash       	/Ugrave       	/Uacute       	/Ucircumflex  	
+/Udieresis    	/Yacute       	/Thorn        	/germandbls   	
+/agrave       	/aacute       	/acircumflex  	/atilde       	
+/adieresis    	/aring        	/ae           	/ccedilla     	
+/egrave       	/eacute       	/ecircumflex  	/edieresis    	
+/igrave       	/iacute       	/icircumflex  	/idieresis    	
+/eth          	/ntilde       	/ograve       	/oacute       	
+/ocircumflex  	/otilde       	/odieresis    	/divide       	
+/oslash       	/ugrave       	/uacute       	/ucircumflex  	
+/udieresis    	/yacute       	/thorn        	/ydieresis    	
+] def
+%%EndResource
+%%EndProlog
+%%BeginSetup
+%%IncludeResource: font Helvetica
+%%IncludeResource: font Courier-Bold
+/HFpt_w 10 def
+/HFpt_h 10 def
+/Courier-Bold /HF-gs-font MF
+/HF /HF-gs-font findfont [HFpt_w 0 0 HFpt_h 0 0] makefont def
+/Helvetica /F-gs-font MF
+/F-gs-font 10 10 SF
+/#copies 1 def
+% Pagedevice definitions:
+gs_languagelevel 1 gt {
+  <<
+    /PageSize [612 792] 
+  >> setpagedevice
+} if
+/d_page_w 536 def
+/d_page_h 744 def
+/d_header_x 0 def
+/d_header_y 744 def
+/d_header_w 536 def
+/d_header_h 0 def
+/d_footer_x 0 def
+/d_footer_y 0 def
+/d_footer_w 536 def
+/d_footer_h 0 def
+/d_output_w 536 def
+/d_output_h 744 def
+/cols 8 def
+%%EndSetup
+%%Page: (1) 1
+%%BeginPageSetup
+_S
+38 24 translate
+/pagenum 1 def
+/fname () def
+/fdir () def
+/ftail () def
+/user_header_p false def
+/user_footer_p false def
+%%EndPageSetup
+5 720 M
+(1) s
+5 709 M
+(1970ies) s
+5 698 M
+(1972) s
+5 687 M
+(19th) s
+5 676 M
+(2) s
+5 665 M
+(20th) s
+5 654 M
+(3) s
+5 643 M
+(7) s
+5 632 M
+(a) s
+5 621 M
+(able) s
+5 610 M
+(achieve) s
+5 599 M
+(across) s
+5 588 M
+(acting) s
+5 577 M
+(actor) s
+5 566 M
+(add) s
+5 555 M
+(added) s
+5 544 M
+(after) s
+5 533 M
+(again) s
+5 522 M
+(age) s
+5 511 M
+(ago) s
+5 500 M
+(album) s
+5 489 M
+(albums) s
+5 478 M
+(all) s
+5 467 M
+(allows) s
+5 456 M
+(alone) s
+5 445 M
+(already) s
+5 434 M
+(also) s
+5 423 M
+(although) s
+5 412 M
+(always) s
+5 401 M
+(am) s
+5 390 M
+(among) s
+5 379 M
+(an) s
+5 368 M
+(and) s
+5 357 M
+(andy) s
+5 346 M
+(another) s
+5 335 M
+(anything) s
+5 324 M
+(apparently) s
+5 313 M
+(appreciated) s
+5 302 M
+(apt) s
+5 291 M
+(are) s
+5 280 M
+(argues) s
+5 269 M
+(art) s
+5 258 M
+(artdesign) s
+5 247 M
+(arthur) s
+5 236 M
+(articulating) s
+5 225 M
+(artifact) s
+5 214 M
+(artists) s
+5 203 M
+(arts) s
+5 192 M
+(as) s
+5 181 M
+(ask) s
+5 170 M
+(asking) s
+5 159 M
+(aspect) s
+5 148 M
+(aspirations) s
+5 137 M
+(at) s
+5 126 M
+(attributed) s
+5 115 M
+(audience) s
+5 104 M
+(author) s
+5 93 M
+(authors) s
+5 82 M
+(autobiograp) s
+5 71 M
+(hies) s
+5 60 M
+(available) s
+5 49 M
+(avantgarde) s
+5 38 M
+(away) s
+5 27 M
+(back) s
+5 16 M
+(band) s
+5 5 M
+(be) s
+72 731 M
+(because) s
+72 720 M
+(been) s
+72 709 M
+(before) s
+72 698 M
+(ben) s
+72 687 M
+(better) s
+72 676 M
+(between) s
+72 665 M
+(book) s
+72 654 M
+(both) s
+72 643 M
+(bowie) s
+72 632 M
+(bowies) s
+72 621 M
+(broad) s
+72 610 M
+(by) s
+72 599 M
+(b\303\266se) s
+72 588 M
+(c) s
+72 577 M
+(can) s
+72 566 M
+(case) s
+72 555 M
+(catchy) s
+72 544 M
+(cave) s
+72 533 M
+(celebrating) s
+72 522 M
+(century) s
+72 511 M
+(change) s
+72 500 M
+(characters) s
+72 489 M
+(choice) s
+72 478 M
+(christian) s
+72 467 M
+(claims) s
+72 456 M
+(clearly) s
+72 445 M
+(clich\303\251s) s
+72 434 M
+(combine) s
+72 423 M
+(come) s
+72 412 M
+(comes) s
+72 401 M
+(comment) s
+72 390 M
+(communicati) s
+72 379 M
+(on) s
+72 368 M
+(compared) s
+72 357 M
+(compel) s
+72 346 M
+(conceded) s
+72 335 M
+(conceived) s
+72 324 M
+(confessions) s
+72 313 M
+(constraints) s
+72 302 M
+(contemporar) s
+72 291 M
+(ies) s
+72 280 M
+(contemporar) s
+72 269 M
+(y) s
+72 258 M
+(contrast) s
+72 247 M
+(contributed) s
+72 236 M
+(control) s
+72 225 M
+(could) s
+72 214 M
+(course) s
+72 203 M
+(crafted) s
+72 192 M
+(create) s
+72 181 M
+(crowd) s
+72 170 M
+(cultural) s
+72 159 M
+(culture) s
+72 148 M
+(dance) s
+72 137 M
+(dancers) s
+72 126 M
+(danto) s
+72 115 M
+(david) s
+72 104 M
+(day) s
+72 93 M
+(death) s
+72 82 M
+(decidedly) s
+72 71 M
+(defining) s
+72 60 M
+(description) s
+72 49 M
+(designed) s
+72 38 M
+(designer) s
+72 27 M
+(designs) s
+72 16 M
+(did) s
+72 5 M
+(difference) s
+139 731 M
+(different) s
+139 720 M
+(difficulties) s
+139 709 M
+(digital) s
+139 698 M
+(direct) s
+139 687 M
+(directly) s
+139 676 M
+(dislike) s
+139 665 M
+(disposal) s
+139 654 M
+(disqus) s
+139 643 M
+(disseminatio) s
+139 632 M
+(n) s
+139 621 M
+(do) s
+139 610 M
+(does) s
+139 599 M
+(dory) s
+139 588 M
+(dots) s
+139 577 M
+(down) s
+139 566 M
+(duncan) s
+139 555 M
+(during) s
+139 544 M
+(early) s
+139 533 M
+(earth) s
+139 522 M
+(edge) s
+139 511 M
+(elaborate) s
+139 500 M
+(element) s
+139 489 M
+(email) s
+139 478 M
+(embracing) s
+139 467 M
+(enabling) s
+139 456 M
+(endeavour) s
+139 445 M
+(ended) s
+139 434 M
+(engineer) s
+139 423 M
+(engineers) s
+139 412 M
+(especially) s
+139 401 M
+(even) s
+139 390 M
+(eventual) s
+139 379 M
+(ever) s
+139 368 M
+(examples) s
+139 357 M
+(exemplified) s
+139 346 M
+(exemplify) s
+139 335 M
+(experience) s
+139 324 M
+(exploding) s
+139 313 M
+(explores) s
+139 302 M
+(factors) s
+139 291 M
+(failed) s
+139 280 M
+(fall) s
+139 269 M
+(fang) s
+139 258 M
+(fashion) s
+139 247 M
+(fasten) s
+139 236 M
+(fears) s
+139 225 M
+(featured) s
+139 214 M
+(figure) s
+139 203 M
+(find) s
+139 192 M
+(first) s
+139 181 M
+(fix) s
+139 170 M
+(following) s
+139 159 M
+(for) s
+139 148 M
+(forego) s
+139 137 M
+(forerunners) s
+139 126 M
+(freedom) s
+139 115 M
+(friedrich) s
+139 104 M
+(from) s
+139 93 M
+(fruition) s
+139 82 M
+(fulfill) s
+139 71 M
+(full) s
+139 60 M
+(further) s
+139 49 M
+(future) s
+139 38 M
+(general) s
+139 27 M
+(george) s
+139 16 M
+(goal) s
+139 5 M
+(going) s
+206 731 M
+(good) s
+206 720 M
+(graham) s
+206 709 M
+(group) s
+206 698 M
+(gut) s
+206 687 M
+(had) s
+206 676 M
+(hair) s
+206 665 M
+(hairdresser) s
+206 654 M
+(has) s
+206 643 M
+(have) s
+206 632 M
+(he) s
+206 621 M
+(her) s
+206 610 M
+(herald) s
+206 599 M
+(highly) s
+206 588 M
+(him) s
+206 577 M
+(his) s
+206 566 M
+(holzer) s
+206 555 M
+(home) s
+206 544 M
+(host) s
+206 533 M
+(how) s
+206 522 M
+(however) s
+206 511 M
+(hunky) s
+206 500 M
+(hypothesis) s
+206 489 M
+(i) s
+206 478 M
+(idea) s
+206 467 M
+(ideal) s
+206 456 M
+(ideas) s
+206 445 M
+(if) s
+206 434 M
+(im) s
+206 423 M
+(image) s
+206 412 M
+(images) s
+206 401 M
+(important) s
+206 390 M
+(imprint) s
+206 379 M
+(in) s
+206 368 M
+(indeed) s
+206 357 M
+(individual) s
+206 346 M
+(inevitable) s
+206 335 M
+(insane) s
+206 324 M
+(inspired) s
+206 313 M
+(instance) s
+206 302 M
+(institutionali) s
+206 291 M
+(sed) s
+206 280 M
+(intellectual) s
+206 269 M
+(interdisciplin) s
+206 258 M
+(ary) s
+206 247 M
+(interests) s
+206 236 M
+(into) s
+206 225 M
+(introspection) s
+206 214 M
+(invention) s
+206 203 M
+(inward) s
+206 192 M
+(is) s
+206 181 M
+(isadora) s
+206 170 M
+(it) s
+206 159 M
+(its) s
+206 148 M
+(japanese) s
+206 137 M
+(jenny) s
+206 126 M
+(jenseits) s
+206 115 M
+(join) s
+206 104 M
+(jolly) s
+206 93 M
+(just) s
+206 82 M
+(kimerer) s
+206 71 M
+(kind) s
+206 60 M
+(kiss) s
+206 49 M
+(knots) s
+206 38 M
+(know) s
+206 27 M
+(l) s
+206 16 M
+(lamothe) s
+206 5 M
+(landscape) s
+273 731 M
+(language) s
+273 720 M
+(large) s
+273 709 M
+(later) s
+273 698 M
+(learning) s
+273 687 M
+(least) s
+273 676 M
+(leave) s
+273 665 M
+(leaving) s
+273 654 M
+(lieder) s
+273 643 M
+(lifetime) s
+273 632 M
+(like) s
+273 621 M
+(liked) s
+273 610 M
+(literally) s
+273 599 M
+(login) s
+273 588 M
+(look) s
+273 577 M
+(looking) s
+273 566 M
+(looks) s
+273 555 M
+(lot) s
+273 544 M
+(loud) s
+273 533 M
+(lyrics) s
+273 522 M
+(m) s
+273 511 M
+(made) s
+273 500 M
+(main) s
+273 489 M
+(making) s
+273 478 M
+(man) s
+273 467 M
+(managed) s
+273 456 M
+(maniacal) s
+273 445 M
+(mars) s
+273 434 M
+(marshallcors) s
+273 423 M
+(er) s
+273 412 M
+(martha) s
+273 401 M
+(mass) s
+273 390 M
+(massive) s
+273 379 M
+(me) s
+273 368 M
+(means) s
+273 357 M
+(meant) s
+273 346 M
+(mechanical) s
+273 335 M
+(media) s
+273 324 M
+(medium) s
+273 313 M
+(megalomani) s
+273 302 M
+(a) s
+273 291 M
+(men) s
+273 280 M
+(metaphors) s
+273 269 M
+(methodologi) s
+273 258 M
+(es) s
+273 247 M
+(mick) s
+273 236 M
+(microphone) s
+273 225 M
+(might) s
+273 214 M
+(millenniums) s
+273 203 M
+(millions) s
+273 192 M
+(mime) s
+273 181 M
+(mind) s
+273 170 M
+(mirrors) s
+273 159 M
+(modern) s
+273 148 M
+(modes) s
+273 137 M
+(moment) s
+273 126 M
+(months) s
+273 115 M
+(more) s
+273 104 M
+(moreover) s
+273 93 M
+(mortal) s
+273 82 M
+(much) s
+273 71 M
+(multi) s
+273 60 M
+(music) s
+273 49 M
+(musical) s
+273 38 M
+(musicians) s
+273 27 M
+(my) s
+273 16 M
+(myself) s
+273 5 M
+(mystification) s
+340 731 M
+(n) s
+340 720 M
+(nailed) s
+340 709 M
+(narrative) s
+340 698 M
+(need) s
+340 687 M
+(never) s
+340 676 M
+(new) s
+340 665 M
+(next) s
+340 654 M
+(nexus) s
+340 643 M
+(nietszche) s
+340 632 M
+(nietzsche) s
+340 621 M
+(nietzschean) s
+340 610 M
+(nietzsches) s
+340 599 M
+(no) s
+340 588 M
+(nobody) s
+340 577 M
+(not) s
+340 566 M
+(now) s
+340 555 M
+(o) s
+340 544 M
+(of) s
+340 533 M
+(off) s
+340 522 M
+(on) s
+340 511 M
+(one) s
+340 500 M
+(only) s
+340 489 M
+(or) s
+340 478 M
+(order) s
+340 467 M
+(other) s
+340 456 M
+(others) s
+340 445 M
+(otherwise) s
+340 434 M
+(our) s
+340 423 M
+(out) s
+340 412 M
+(over) s
+340 401 M
+(own) s
+340 390 M
+(part) s
+340 379 M
+(paths) s
+340 368 M
+(perform) s
+340 357 M
+(performative) s
+340 346 M
+(person) s
+340 335 M
+(philosopher) s
+340 324 M
+(philosophers) s
+340 313 M
+(philosophy) s
+340 302 M
+(philosophys) s
+340 291 M
+(photographi) s
+340 280 M
+(c) s
+340 269 M
+(place) s
+340 258 M
+(plastic) s
+340 247 M
+(platform) s
+340 236 M
+(points) s
+340 225 M
+(pop) s
+340 214 M
+(possess) s
+340 203 M
+(possessed) s
+340 192 M
+(post) s
+340 181 M
+(postculture) s
+340 170 M
+(potential) s
+340 159 M
+(practice) s
+340 148 M
+(precipitate) s
+340 137 M
+(predecessor) s
+340 126 M
+(s) s
+340 115 M
+(prelude) s
+340 104 M
+(prepared) s
+340 93 M
+(present) s
+340 82 M
+(previous) s
+340 71 M
+(prince) s
+340 60 M
+(private) s
+340 49 M
+(process) s
+340 38 M
+(producer) s
+340 27 M
+(production) s
+340 16 M
+(project) s
+340 5 M
+(projections) s
+407 731 M
+(prophet) s
+407 720 M
+(public) s
+407 709 M
+(pull) s
+407 698 M
+(put) s
+407 687 M
+(question) s
+407 676 M
+(questions) s
+407 665 M
+(quicksand) s
+407 654 M
+(quite) s
+407 643 M
+(range) s
+407 632 M
+(read) s
+407 621 M
+(readily) s
+407 610 M
+(really) s
+407 599 M
+(reception) s
+407 588 M
+(recognition) s
+407 577 M
+(record) s
+407 566 M
+(recording) s
+407 555 M
+(records) s
+407 544 M
+(refer) s
+407 533 M
+(references) s
+407 522 M
+(reinvent) s
+407 511 M
+(release) s
+407 500 M
+(reply) s
+407 489 M
+(reproduced) s
+407 478 M
+(reproduction) s
+407 467 M
+(resonate) s
+407 456 M
+(revaluation) s
+407 445 M
+(revolution) s
+407 434 M
+(rewriting) s
+407 423 M
+(right) s
+407 412 M
+(rise) s
+407 401 M
+(ritual) s
+407 390 M
+(rock) s
+407 379 M
+(rockstar) s
+407 368 M
+(role) s
+407 357 M
+(roll) s
+407 346 M
+(room) s
+407 335 M
+(rss) s
+407 324 M
+(s) s
+407 313 M
+(sacrilege) s
+407 302 M
+(said) s
+407 291 M
+(scale) s
+407 280 M
+(scholars) s
+407 269 M
+(seemed) s
+407 258 M
+(seems) s
+407 247 M
+(seen) s
+407 236 M
+(self) s
+407 225 M
+(selfimage) s
+407 214 M
+(seminal) s
+407 203 M
+(sending) s
+407 192 M
+(sensibilities) s
+407 181 M
+(session) s
+407 170 M
+(set) s
+407 159 M
+(setting) s
+407 148 M
+(several) s
+407 137 M
+(sexy) s
+407 126 M
+(shall) s
+407 115 M
+(shares) s
+407 104 M
+(shifted) s
+407 93 M
+(shoes) s
+407 82 M
+(should) s
+407 71 M
+(showing) s
+407 60 M
+(shows) s
+407 49 M
+(sign) s
+407 38 M
+(similar) s
+407 27 M
+(sing) s
+407 16 M
+(sings) s
+407 5 M
+(sketches) s
+474 731 M
+(skilled) s
+474 720 M
+(skills) s
+474 709 M
+(so) s
+474 698 M
+(sold) s
+474 687 M
+(song) s
+474 676 M
+(songs) s
+474 665 M
+(sound) s
+474 654 M
+(space) s
+474 643 M
+(spiders) s
+474 632 M
+(spiritual) s
+474 621 M
+(sprach) s
+474 610 M
+(stardom) s
+474 599 M
+(stardust) s
+474 588 M
+(starts) s
+474 577 M
+(statements) s
+474 566 M
+(steiner) s
+474 555 M
+(still) s
+474 544 M
+(stone) s
+474 533 M
+(stresses) s
+474 522 M
+(struck) s
+474 511 M
+(studio) s
+474 500 M
+(style) s
+474 489 M
+(sublimated) s
+474 478 M
+(subscribe) s
+474 467 M
+(subsequent) s
+474 456 M
+(subtitle) s
+474 445 M
+(succeeded) s
+474 434 M
+(successful) s
+474 423 M
+(successor) s
+474 412 M
+(such) s
+474 401 M
+(suffice) s
+474 390 M
+(suits) s
+474 379 M
+(superman) s
+474 368 M
+(supermen) s
+474 357 M
+(suspect) s
+474 346 M
+(take) s
+474 335 M
+(takes) s
+474 324 M
+(talents) s
+474 313 M
+(talk) s
+474 302 M
+(teachings) s
+474 291 M
+(technology) s
+474 280 M
+(term) s
+474 269 M
+(than) s
+474 258 M
+(that) s
+474 247 M
+(the) s
+474 236 M
+(their) s
+474 225 M
+(themselves) s
+474 214 M
+(there) s
+474 203 M
+(these) s
+474 192 M
+(they) s
+474 181 M
+(thinking) s
+474 170 M
+(thinks) s
+474 159 M
+(thinly) s
+474 148 M
+(this) s
+474 137 M
+(though) s
+474 126 M
+(through) s
+474 115 M
+(time) s
+474 104 M
+(times) s
+474 93 M
+(to) s
+474 82 M
+(top) s
+474 71 M
+(touched) s
+474 60 M
+(transdiscipli) s
+474 49 M
+(nary) s
+474 38 M
+(translate) s
+474 27 M
+(truisms) s
+474 16 M
+(turns) s
+474 5 M
+(two) s
+_R
+S
+%%Page: (2) 2
+%%BeginPageSetup
+_S
+38 24 translate
+/pagenum 2 def
+/fname () def
+/fdir () def
+/ftail () def
+/user_header_p false def
+/user_footer_p false def
+%%EndPageSetup
+5 731 M
+(und) s
+5 720 M
+(underground) s
+5 709 M
+(unprecedent) s
+5 698 M
+(ed) s
+5 687 M
+(unusual) s
+5 676 M
+(up) s
+5 665 M
+(values) s
+5 654 M
+(veiled) s
+5 643 M
+(velvet) s
+5 632 M
+(verse) s
+5 621 M
+(vipers) s
+5 610 M
+(visual) s
+5 599 M
+(vocals) s
+5 588 M
+(voice) s
+5 577 M
+(von) s
+5 566 M
+(warhol) s
+5 555 M
+(was) s
+5 544 M
+(wasnt) s
+5 533 M
+(way) s
+5 522 M
+(we) s
+5 511 M
+(well) s
+5 500 M
+(went) s
+5 489 M
+(were) s
+5 478 M
+(what) s
+5 467 M
+(when) s
+5 456 M
+(where) s
+5 445 M
+(whereas) s
+5 434 M
+(which) s
+5 423 M
+(who) s
+5 412 M
+(whose) s
+5 401 M
+(why) s
+5 390 M
+(will) s
+5 379 M
+(with) s
+5 368 M
+(words) s
+5 357 M
+(work) s
+5 346 M
+(works) s
+5 335 M
+(world) s
+5 324 M
+(worn) s
+5 313 M
+(would) s
+5 302 M
+(writers) s
+5 291 M
+(writing) s
+5 280 M
+(wrote) s
+5 269 M
+(yet) s
+5 258 M
+(zarathustra) s
+5 247 M
+(ziggy) s
+_R
+S
+%%Trailer
+%%Pages: 2
+%%DocumentNeededResources: font Helvetica Courier-Bold 
+%%EOF
