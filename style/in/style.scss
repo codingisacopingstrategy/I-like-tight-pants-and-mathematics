@@ -65,9 +65,13 @@ div#header {
 }
 
 
-h4, .shout_number {
+h2, h3, h4, h5, h6, .shout_number {
     font-family: Verdana;
     font-weight: 700;
+}
+
+h2, h3 {
+    margin-bottom: 18px;
 }
 
 p, textarea {

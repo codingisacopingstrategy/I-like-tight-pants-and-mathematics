@@ -4,9 +4,173 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2012-01-08T15:45:28Z</updated>
+    <updated>2012-01-25T12:19:14Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
+
+<entry>
+    <title>The Thinking Body</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-thinking-body" />
+    <id>tag:i.liketightpants.net,2012:/and//1.41</id>
+
+    <published>2012-01-25T11:59:10Z</published>
+    <updated>2012-01-25T12:19:14Z</updated>
+
+    <summary>You see a black laptop posited on a hardboard floor, upon the laptop is written in chalk: BODY</summary>
+    <author>
+        <name>jenseits</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p><a href="/and/assets/called/the_thinking_body.jpg"><img src="/and/assets/scaled/to/830/wide/and/called/the_thinking_body.jpg" style="width:830;height:622;" alt="You see a black laptop posited on a hardboard floor, upon the laptop is written in chalk: BODY." title="" /></a></p>
+
+<p class="byline">by <a href="http://www.google.be/search?q=bruno+listopad&amp;ie=UTF-8&amp;oe=UTF-8" title="bruno listopad - Google zoeken">Bruno</a>, <a href="http://www.danslab.nl/projects/season-2008-2009/2ndresearch0/bruno/" title="Bruno Listopad">researching</a> at <a href="http://www.danslab.nl/" title="News">danslab</a></p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Absolute Beginners: Unix for Art Students – part 3</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-3" />
+    <id>tag:i.liketightpants.net,2012:/and//1.40</id>
+
+    <published>2012-01-15T23:46:09Z</published>
+    <updated>2012-01-20T01:19:25Z</updated>
+
+    <summary>Using a set of unix commands to lay out Jenny Holzer tweets.</summary>
+    <author>
+        <name>baseline</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p><a href="/and/assets/called/sex_differences_are_here_to_stay.jpg"><img src="/and/assets/scaled/to/830/wide/and/called/sex_differences_are_here_to_stay.jpg" alt="In what is probably an office space or design studio (you can make out a laser printer, the back of a flatscreen monitor) a text is tacked to the wall constructed of a number of A4 sheets collated together: SEX DIFFERENCES ARE HERE TO STAY" style="width:830px;height:553px;" title="" /></a></p>
+
+<p>After working through the <a href="/and/absolute-beginners-unix-for-art-students-part-1" title="I like tight pants and absolute beginners: unix for art students – part 1">first</a> <a href="/and/absolute-beginners-unix-for-art-students-part-2" title="I like tight pants and absolute beginners: unix for art students – part 2">two</a> <a href="/and/installing-compilers" title="I like tight pants and installing compilers">parts</a> of Absolute Beginners: Unix for Art Students <a href="/and/i-have-relocated-to-brussels" title="I like tight pants and i have relocated to brussels">Fabien</a> asked me how you can than actually use the terminal to make something. That is a good question. In <a href="/and/absolute-beginners-unix-for-art-students-part-1" title="I like tight pants and absolute beginners: unix for art students – part 1">part 1</a> gilt writes that it is commendable to find a more intimate way of dealing with your computer, but that does not enter the question <em>what</em> you could be doing with your terminal. Taking cues from a <a href="http://schr.fr/hypermap" title="HYPERMAP | schr.fr">design installation</a> we developed for the Performance Studies International festival, I would like to show an example of using the command line to create graphic images, and the kind of design processes that it can accommodate.</p>
+
+<h3>Building pipelines</h3>
+
+<p>The unix command line is built around passing around text. Programs generate text, and other programs can take this as their input. You can start to create whole ‘pipelines’ of programs all connected together.</p>
+
+<p>As our input today we take the <a href="http://twitter.com/jennyholzer" title="Twitter | Jenny Holzer">tweets of Jenny Holzer</a>. I do not know if you’ve heard of her, but Jenny Holzer is an artist who’s work prefigures contemporary social media: long before the advent of Facebook and twitter she has been claiming public space with her written truisms that, <a href="http://i.liketightpants.net/and/i-like-ziggy-over-zarathustra#jennyholzer" title="I like tight pants and ziggy over zarathustra">like habitus says</a>, always precipitate on the edge between worn clichés and individual confessions (<em>with you inside me comes the knowledge of my own death</em>).</p>
+
+<p>Seeing how Holzer has built her oeuvre and her career around the logic of the status update since well before it existed, it was a small step for her to take her work to twitter.</p>
+
+<p>Today we are not going to visit the twitter website, we are going to access it via the terminal. To get the latest tweet from Jenny Holzer we use the command:</p>
+
+<pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1"</pre>
+
+<p>The output will be something like:</p>
+
+<pre>[{"coordinates":null,"truncated":false,"place":null,"geo":null,"in_reply_to_user_id":null,"retweet_count":36,"favorited":false,"in_reply_to_status_id_str":null,"user":{"listed_count":1572,"contributors_enabled":false,"lang":"en","profile_text_color":"000000","protected":false,"location":"","statuses_count":359,"profile_background_image_url":"http:\/\/a0.twimg.com\/images\/themes\/theme1\/bg.png","name":"Jenny Holzer","default_profile":false,"profile_link_color":"D73030","url":"http:\/\/en.wikipedia.org\/wiki\/Jenny_Holzer","utc_offset":-18000,"description":"Abuse of power comes as no surprise.","friends_count":0,"profile_background_color":"D73030","following":true,"profile_background_tile":false,"followers_count":37419,"profile_image_url":"http:\/\/a2.twimg.com\/profile_images\/25643062\/jenny_holzer_normal.jpg","default_profile_image":false,"geo_enabled":false,"created_at":"Wed May 30 19:07:47 +0000 2007","profile_sidebar_fill_color":"F0F0F0","profile_background_image_url_https":"https:\/\/si0.twimg.com\/images\/themes\/theme1\/bg.png","favourites_count":0,"is_translator":false,"show_all_inline_media":false,"follow_request_sent":false,"notifications":false,"profile_sidebar_border_color":"000000","profile_image_url_https":"https:\/\/si0.twimg.com\/profile_images\/25643062\/jenny_holzer_normal.jpg","screen_name":"jennyholzer","id_str":"6451032","verified":false,"id":6451032,"profile_use_background_image":false,"time_zone":"Eastern Time (US & Canada)"},"in_reply_to_screen_name":null,"created_at":"Fri Jan 13 15:34:55 +0000 2012","in_reply_to_user_id_str":null,"retweeted":false,"source":"\u003Ca href=\"http:\/\/twitter.com\/#!\/download\/iphone\" rel=\"nofollow\"\u003ETwitter for iPhone\u003C\/a\u003E","id_str":"157848105683922945","in_reply_to_status_id":null,"id":157848105683922945,"contributors":null,"text":"SEX DIFFERENCES ARE HERE TO STAY"}]</pre>
+
+<p>Curl is a program that gets the contents of a document on the web, and prints it out to the terminal.</p>
+
+<p>We have requested the status from twitters API, which is a way for twitter to present the data in a format that is more easy for computer programs to consume. It uses JSON format, which is great and all, but it’s just a little bit to new-fashioned for our means: we want plain old fashioned text.</p>
+
+<p>To go from the JSON to the old fashioned text, we are constructing the first part of our timeline.</p>
+
+<p>Try:</p>
+
+<pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\(.*\)"}]/\1/g'</pre>
+
+<p>The output is:</p>
+
+<pre>SEX DIFFERENCES ARE HERE TO STAY</pre>
+
+<p>The <code>|</code> symbol feeds the output from the curl command to the sed command. The exact arguments we are using for sed we will not go into today, because it is a bit daunting if you are just getting into this sort of thing, but it suffices to understand that sed manipulates it input so that everything but the little part inside text=" " is maintained.</p>
+
+<p>Now we have the plain text as output, which we could use as input for another program. For example:</p>
+
+<pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\(.*\)"}]/\1/g' | figlet</pre>
+
+<pre> ____  _______  __
+/ ___|| ____\ \/ /
+\___ \|  _|  \  / 
+ ___) | |___ /  \ 
+|____/|_____/_/\_\
+                  
+ ____ ___ _____ _____ _____ ____  _____ _   _  ____ _____ ____  
+|  _ \_ _|  ___|  ___| ____|  _ \| ____| \ | |/ ___| ____/ ___| 
+| | | | || |_  | |_  |  _| | |_) |  _| |  \| | |   |  _| \___ \ 
+| |_| | ||  _| |  _| | |___|  _ &lt;| |___| |\  | |___| |___ ___) |
+|____/___|_|   |_|   |_____|_| \_\_____|_| \_|\____|_____|____/ 
+                                                                
+    _    ____  _____   _   _ _____ ____  _____   _____ ___  
+   / \  |  _ \| ____| | | | | ____|  _ \| ____| |_   _/ _ \ 
+  / _ \ | |_) |  _|   | |_| |  _| | |_) |  _|     | || | | |
+ / ___ \|  _ &lt;| |___  |  _  | |___|  _ &lt;| |___    | || |_| |
+/_/   \_\_| \_\_____| |_| |_|_____|_| \_\_____|   |_| \___/ 
+                                                            
+ ____ _____  _ __   __
+/ ___|_   _|/ \\ \ / /
+\___ \ | | / _ \\ V / 
+ ___) || |/ ___ \| |  
+|____/ |_/_/   \_\_|  
+</pre>
+
+<p>Now we have Jenny Holzer ascii art!</p>
+
+<p>We are going to go a bit further with this. What we want to do is layout this plain text in such a way that we could display it or print it. For this we are going to use a program called pango-view.</p>
+
+<p>In fact, pango-view, spoils the fun somewhat, because it doesn’t let you use it as part of a pipeline. We’ll have to store the Jenny tweet into a text file:</p>
+
+<pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\(.*\)"}]/\1/g' > jennytweet.txt</pre>
+
+<p>The <code>></code> lets you store text output into a file. So we are storing the output of are pipeline, the plain text tweet, into the file <code>jennytweet.txt</code>.</p>
+
+<p>Pango-view lets us lay-out the text and output it as a picture:</p>
+
+<pre>pango-view -q -o jennytweet.png jennytweet.txt</pre>
+
+<p><img src="/and/assets/called/jennytweet-plain.png" style="width:353;height:39;" alt="‘SEX DIFFERENCES ARE HERE TO STAY’ set in pango-view’s default font" title="" /></p>
+
+<p>If you type <code>man pango-view</code> you get an overview of the different options you have. <code>-q</code>, for example suppresses the default behavior to also display the result in a window.  <code>-o</code> specifies the output file, in this case jennytweet.png. Next to these two options, we also specify an <em>argument</em>, which is the inputfile to use. The program knows it is an argument instead of option, because it is not preceded by a dash and an option name.</p>
+
+<p>In the man page, we read that we can use <code>--font</code> to specify a font. It does not tell you the format to do so, which is the name followed by the size:</p>
+
+<pre>pango-view -q -o jennytweet.png --font "Futura 36" jennytweet.txt</pre>
+
+<p><img src="/and/assets/called/jennytweet-banner.png" style="width:882;height:83;" alt="‘SEX DIFFERENCES ARE HERE TO STAY’ set in Futura" title="" /></p>
+
+<p>By default, pango-view thinks in pixels. So the Futura will have an x-height of 36 pixels. If we don’t specify any measurement for the width, the text will by laid out on one line like a long banner, the width determined by the width of the text.</p>
+
+<p>If we want to produce the look of a laid-out piece of text, we will have to specify a width:</p>
+
+<pre>pango-view -q -o jennytweet-laidout.png --font "Futura 36" -w 400 jennytweet.txt</pre>
+
+<p><img src="/and/assets/called/jennytweet-laidout.png" style="width:553;height:146;" alt="‘SEX DIFFERENCES ARE HERE TO STAY’ set in Futura, laid out to a maximum width" title="" /></p>
+
+<p>The cool thing about pango-view is that it can also generate vector files: pdf, but also svg and postscript. You just change the filename, and it does it automatically.</p>
+
+<pre>pango-view -q -o jennytweet-laidout.ps --font "Futura 36" -w 400 jennytweet.txt</pre>
+
+<p>(Check out the resulting file in preview with <code>open jennytweet-laidout.ps</code>.)</p>
+
+<p>Why postscript? Well, we have this really cool old-school postscript utility called poster. And we are going to use this to create a tiling version of the image we just created, that spans many sheets of paper. First install poster:</p>
+
+<pre>brew update
+brew install poster</pre>
+
+<p>(You do no have the brew command? See tellyou’s post about homebrew). To generate a poster, you can do:</p>
+
+<pre>poster -s 4.4 jennytweet-laidout.ps > jennyposter.ps</pre>
+
+<p>The -s 4.4 scales our original image 4.4 times. The original image has no real size declared in cm, so I did not know beforehand how big the result was going to be. I just came up with this 4.4 value by trail and error.</p>
+
+<p><a href="/and/assets/called/jennytweet-pages.png"><img src="/and/assets/scaled/to/490/wide/and/called/jennytweet-pages.png" style="width:421px;height:490px" /></a></p>
+
+<p>Voilà. One can open this in preview and print it. Heck, one can even print it from the command line:</p>
+
+<pre>lpr jennyposter.ps</pre>
+
+<p>Let’s hang it on the wall.</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Ziggy over Zarathustra</title>
@@ -14,7 +178,7 @@
     <id>tag:i.liketightpants.net,2012:/and//1.39</id>
 
     <published>2012-01-08T15:43:10Z</published>
-    <updated>2012-01-08T15:45:28Z</updated>
+    <updated>2012-01-15T23:42:39Z</updated>
 
     <summary>My hypothesis is that David Bowie succeeded where Friedrich Nietzsche failed.</summary>
     <author>
@@ -28,7 +192,7 @@
 <li>takes place on the nexus of pop culture and institutionalised art</li>
 <li>is at the nexus of private introspection and public dissemination</li>
 <li>readily explores all available technology in order to do so.</li>
-</ul><p>Two more examples come to mind: Jenny Holzer, whose truisms always precipitate on the edge between worn clichés and individual confessions, and who claims public space through all media for these inward looking statements.</p><p>And Prince. Prince, when recording the vocals for the Sign o’ the times album, would do so in the control room of the studio, sending away all engineers after they prepared the session, leaving him alone with the microphone to sing. I am struck by the contrast between this highly inward looking ritual, and its imprint as an artifact that is reproduced literally millions of times.</p><h2>1: Why are Bowie and Nietzsche similar?</h2><p>In the early 1970ies David Bowie starts to refer to Friedrich Nietzsche in his lyrics, on both his albums ‘the Man Who Sold the World’ and ‘Hunky Dory’. In the song Quicksand he sings: I’m not a prophet or a stone age man, just a mortal with potential of a superman’. And: ‘Should I kiss the viper’s fang, and herald loud the death of man?’</p><p>The direct successor to these records, the 1972 ‘the Rise and Fall of Ziggy Stardust and the Spiders from Mars’ seems to forego Nietzsche references for images of rock stardom. </p><p>In a way, though, this album is much more Nietzschean than its predecessors. </p><p>The narrative of a rockstar from space making it on earth before his eventual fall, can be seen as a more catchy instance of the supermen of the previous records. Moreover, the work can be directly compared to Nietzsche’s ‘Also sprach Zarathustra’ in which a prophet comes down from his cave to do his teachings to the public.</p><p>Both works can be read as thinly veiled autobiographies, where the choice of an unusual medium verse (Nietzsche) and rock (Bowie) allows the author to put in a lot of his ideas and fears and aspirations, that might otherwise have come across as megalomania or sacrilege. The process of mystification through the invention of the characters of Ziggy and Zarathustra allows the authors to take the freedom to reinvent themselves. Bowie later said: ‘it was like rewriting myself, really’. </p><h2>2: Why are Bowie and Nietzsche different?</h2><p>When looking back on the Ziggy project Bowie stresses the aspect of embracing the present:</p><p>“Writers like George Steiner had nailed the sexy term post-culture and it seemed a jolly good idea to join up the dots for rock. The main platform would be, other than shoes, ‘we are the future, now’ and the one way of celebrating that was to create it by the only means at our disposal. With, of course, a rock ‘n’ roll band.”</p><p>For Bowie the future was now. Whereas for Nietzsche the future was still clearly in the future. After writing Zarathustra he had conceded that his philosophy would not be read and appreciated in his own time. His subsequent book ‘Jenseits von gut und böse’ has as its subtitle: prelude to a philosophy of the future. He also thinks it will not be him that is going to fulfill philosophy’s potential. He sketches the need for ‘new philosophers’: ‘in forerunners, in men of the future, who in the present shall fix the constraints and fasten the knots which will compel millenniums to take NEW paths’.</p><p>Man of the future, acting in the present. An apt description of Ziggy.</p><p>The difference in self-image mirrors the difference in reception by their contemporaries. Bowie managed to find a massive crowd, Nietzsche never did during his lifetime. And although both men went through difficulties following the release of their seminal works, Bowie ended up on top. Nietzsche went insane.</p><h2>3: Why could Bowie do what Nietzsche could not?</h2><p>That Nietzsche had to leave for the future, what Bowie could achieve in his own time, can be attributed to several factors.</p><p>In the first place, Nietzsche was alone. And nobody can do anything alone.</p><p>We have already touched on the enabling role of modern mass media. This for me is exemplified by by the contrast between the highly inward looking ritual of the recording session, and its imprint as an artifact (the record) that is meant to be reproduced literally millions of times. Prince, when recording the vocals for the Sign o’ the times album, would do so in the control room of the studio, sending away all engineers after they prepared the session, leaving him alone with the microphone to sing. </p><p>Yet there is another important aspect: the rise of interdisciplinary practice.</p><p>Both men possessed (and in Bowie’s case still possess) a range of skills.</p><p>Bowie was skilled both with words and with music, and had experience as an actor. With the Ziggy project he added his own talents to these of a host of others in a decidedly transdisciplinary endeavour. Bowie contributed songs, words, voice and looks. The musicians, the producer and the engineer contributed further to the sound. The photographic look was crafted by Mick Rock, the suits were designed by a Japanese fashion designer, and even Bowie’s hair style was conceived especially for him by his hairdresser. The early shows were inspired by the ‘Exploding plastic inevitable’ multi media shows Warhol made with The Velvet Underground. The shows featured elaborate set designs, projections and a mime group.</p><p>Nietzsche apparently had a broad range of talents and interests as well. He was quite musical and wrote Lieder. Next to that, ‘Also Sprach Zarathustra’ is full of references to dance. In her book: ‘Nietzsche’s Dancers: Isadora Duncan, Martha Graham, and the Revaluation of Christian Values’ Kimerer L. LaMothe argues that these references should not be seen as metaphors: dance was important to Nietzsche in its own right.</p><p>In his work, however, there was no way yet for these different media to fruition. It is just language that has to pull it off.</p><p>The world just wasn’t transdisciplinary yet in the 19th century. It would take the 20th century avant-garde to change that.</p><p>A question I would like to ask is if language alone could ever suffice for the kind of questions Bowie and Nietzsche were asking. There is a maniacal element to their thinking which I suspect can only really be sublimated in a performative setting. I know for my self, at least, that I talk better when I perform.</p>]]>
+</ul><p id="jennyholzer">Two more examples come to mind: Jenny Holzer, whose truisms always precipitate on the edge between worn clichés and individual confessions, and who claims public space through all media for these inward looking statements.</p><p>And Prince. Prince, when recording the vocals for the Sign o’ the times album, would do so in the control room of the studio, sending away all engineers after they prepared the session, leaving him alone with the microphone to sing. I am struck by the contrast between this highly inward looking ritual, and its imprint as an artifact that is reproduced literally millions of times.</p><h2>1: Why are Bowie and Nietzsche similar?</h2><p>In the early 1970ies David Bowie starts to refer to Friedrich Nietzsche in his lyrics, on both his albums ‘the Man Who Sold the World’ and ‘Hunky Dory’. In the song Quicksand he sings: I’m not a prophet or a stone age man, just a mortal with potential of a superman’. And: ‘Should I kiss the viper’s fang, and herald loud the death of man?’</p><p>The direct successor to these records, the 1972 ‘the Rise and Fall of Ziggy Stardust and the Spiders from Mars’ seems to forego Nietzsche references for images of rock stardom. </p><p>In a way, though, this album is much more Nietzschean than its predecessors. </p><p>The narrative of a rockstar from space making it on earth before his eventual fall, can be seen as a more catchy instance of the supermen of the previous records. Moreover, the work can be directly compared to Nietzsche’s ‘Also sprach Zarathustra’ in which a prophet comes down from his cave to do his teachings to the public.</p><p>Both works can be read as thinly veiled autobiographies, where the choice of an unusual medium verse (Nietzsche) and rock (Bowie) allows the author to put in a lot of his ideas and fears and aspirations, that might otherwise have come across as megalomania or sacrilege. The process of mystification through the invention of the characters of Ziggy and Zarathustra allows the authors to take the freedom to reinvent themselves. Bowie later said: ‘it was like rewriting myself, really’. </p><h2>2: Why are Bowie and Nietzsche different?</h2><p>When looking back on the Ziggy project Bowie stresses the aspect of embracing the present:</p><p>“Writers like George Steiner had nailed the sexy term post-culture and it seemed a jolly good idea to join up the dots for rock. The main platform would be, other than shoes, ‘we are the future, now’ and the one way of celebrating that was to create it by the only means at our disposal. With, of course, a rock ‘n’ roll band.”</p><p>For Bowie the future was now. Whereas for Nietzsche the future was still clearly in the future. After writing Zarathustra he had conceded that his philosophy would not be read and appreciated in his own time. His subsequent book ‘Jenseits von gut und böse’ has as its subtitle: prelude to a philosophy of the future. He also thinks it will not be him that is going to fulfill philosophy’s potential. He sketches the need for ‘new philosophers’: ‘in forerunners, in men of the future, who in the present shall fix the constraints and fasten the knots which will compel millenniums to take NEW paths’.</p><p>Man of the future, acting in the present. An apt description of Ziggy.</p><p>The difference in self-image mirrors the difference in reception by their contemporaries. Bowie managed to find a massive crowd, Nietzsche never did during his lifetime. And although both men went through difficulties following the release of their seminal works, Bowie ended up on top. Nietzsche went insane.</p><h2>3: Why could Bowie do what Nietzsche could not?</h2><p>That Nietzsche had to leave for the future, what Bowie could achieve in his own time, can be attributed to several factors.</p><p>In the first place, Nietzsche was alone. And nobody can do anything alone.</p><p>We have already touched on the enabling role of modern mass media. This for me is exemplified by by the contrast between the highly inward looking ritual of the recording session, and its imprint as an artifact (the record) that is meant to be reproduced literally millions of times. Prince, when recording the vocals for the Sign o’ the times album, would do so in the control room of the studio, sending away all engineers after they prepared the session, leaving him alone with the microphone to sing. </p><p>Yet there is another important aspect: the rise of interdisciplinary practice.</p><p>Both men possessed (and in Bowie’s case still possess) a range of skills.</p><p>Bowie was skilled both with words and with music, and had experience as an actor. With the Ziggy project he added his own talents to these of a host of others in a decidedly transdisciplinary endeavour. Bowie contributed songs, words, voice and looks. The musicians, the producer and the engineer contributed further to the sound. The photographic look was crafted by Mick Rock, the suits were designed by a Japanese fashion designer, and even Bowie’s hair style was conceived especially for him by his hairdresser. The early shows were inspired by the ‘Exploding plastic inevitable’ multi media shows Warhol made with The Velvet Underground. The shows featured elaborate set designs, projections and a mime group.</p><p>Nietzsche apparently had a broad range of talents and interests as well. He was quite musical and wrote Lieder. Next to that, ‘Also Sprach Zarathustra’ is full of references to dance. In her book: ‘Nietzsche’s Dancers: Isadora Duncan, Martha Graham, and the Revaluation of Christian Values’ Kimerer L. LaMothe argues that these references should not be seen as metaphors: dance was important to Nietzsche in its own right.</p><p>In his work, however, there was no way yet for these different media to fruition. It is just language that has to pull it off.</p><p>The world just wasn’t transdisciplinary yet in the 19th century. It would take the 20th century avant-garde to change that.</p><p>A question I would like to ask is if language alone could ever suffice for the kind of questions Bowie and Nietzsche were asking. There is a maniacal element to their thinking which I suspect can only really be sublimated in a performative setting. I know for my self, at least, that I talk better when I perform.</p>]]>
         
     </content>
 </entry>
@@ -604,52 +768,6 @@ of Computer Programs">big blue book</a>, and I start watching the <a href="http:
 <area shape="rect" coords="0,0,340,380" href="http://www.imdb.com/media/rm169246720/nm0000604" title="Pictures & Photos of John C. Reilly - IMDb" />
 <area shape="rect" coords="348,0,688,382" href="http://www.loc.gov/pictures/item/2006686882/" title="George Henry Boker, 1823-1890, bust, facing left]" />
 </map>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>The Fortran Automatic Coding System for the IBM 704</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-fortran-automatic-coding-system-for-the-ibm-704" />
-    <id>tag:i.liketightpants.net,2011:/and//1.26</id>
-
-    <published>2011-08-03T20:22:42Z</published>
-    <updated>2011-08-03T20:37:24Z</updated>
-
-    <summary>You see the front cover to a book, labelled, in bold slab serif letters: Fortran. The cover itself is brown and three holes are pierced through the side</summary>
-    <author>
-        <name>baseline</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><img src="/and/assets/called/fortran_acs_cover.jpg" title="" style="width:610px;height:780px;" alt="You see the front cover to a book, labelled, in bold slab serif letters: Fortran. The cover itself is brown and three holes are pierced through the side." /></p>
-
-<p>This is so beatiful, it is the front cover of the manual for The Fortran Automatic Coding System for the IBM 704, 1956. The typeface is <a href="http://en.wikipedia.org/wiki/Clarendon_(typeface)" title="Clarendon (typeface) - Wikipedia, the free encyclopedia">Clarendon</a>. </p>
-
-<p>IBM’s corporate identity was designed by <a href="http://www.paul-rand.com/site/ibm/" title="Paul-Rand.com :: IBM">Paul Rand</a></p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Statistical tables</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/statistical-tables" />
-    <id>tag:i.liketightpants.net,2011:/and//1.25</id>
-
-    <published>2011-07-28T19:56:12Z</published>
-    <updated>2011-07-28T21:48:38Z</updated>
-
-    <summary>You see a picture of a book labelled ‘statistical tables’, positioned on top of a computer mini-tower.</summary>
-    <author>
-        <name>jenseits</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<img src="/and/assets/scaled/to/830/wide/and/called/IMG_3205.JPG" alt="You see a picture of a book labelled ‘statistical tables’, positioned on top of a computer mini-tower." title="" />]]>
         
     </content>
 </entry>
