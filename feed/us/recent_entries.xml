@@ -4,9 +4,46 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2012-02-08T10:55:27Z</updated>
+    <updated>2012-02-16T23:36:07Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
+
+<entry>
+    <title>Daniela likes Fosdem</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/daniela-likes-fosdem" />
+    <id>tag:i.liketightpants.net,2012:/and//1.45</id>
+
+    <published>2012-02-17T21:55:41Z</published>
+    <updated>2012-02-16T23:36:07Z</updated>
+
+    <summary>Daniela likes tight pants. And she is ready to engage with the world of computer programmers. When a large group of open source software developers pass by our city, we grab our chance. </summary>
+    <author>
+        <name>glit</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p><a href="/and/assets/called/daniela_likes_fosdem.jpg"><img src="/and/assets/scaled/to/830/wide/and/called/daniela_likes_fosdem.jpg" style="width:830;height:553;" alt="" title="" /></a></p>
+
+<p>Daniela likes tight pants. I guess that makes it easy for her to relate to our blog. As an art student, she is ready to <a href="/and/absolute-beginners-unix-for-art-students-part-1" title="I like tight pants and absolute beginners: unix for art students – part 1">learn about unix</a>.</p>
+
+<p>I tell Daniela that we are in luck, because this weekend, there is the largest gathering of open source computer programmers in Europe, <a href="/and/why-would-europes-largest-open-source-convention-identify-itself-with-a-large-shrivelled-brain" title="I like tight pants and why would europe’s largest open source convention identify itself with a large shrivelled brain?">Fosdem</a>. We go. I’m always scared to blend in too much at computer conferences like this so I put on a Lady Gaga t-shirt.</p>
+
+<p>We plan to visit the final keynote speech because like this you experience a lot of people together. Plus, the topic tends to be of interest to a broader public. This year it is the Freedom box, a kind of mini server for your private data, the idea being that if everyone has such a box they can hook up together to create a more secure and more private social networking experience.</p>
+
+<p>Tellyou is there too and he does some translating for us (‘what is Debian?’). We can relate to the topic even though the speaker does not seem to be to joyous. Daniela notices he mentions ‘community’ a lot. I think this is because in cyberspace, the community is less bound by place and more volatile so you have to stress it is actually there. The organising commitee comes on stage to provide both a song and a fosdem dance.</p>
+
+<p>As we leave, Daniela asks me if I think they will succeed with the Freedom box. I think they will, up to a degree, and then the technology will be re appropriated and made popular by more business minded people.</p>
+
+<p><a href="/and/assets/called/daniela_likes_tight_pants.jpg"><img src="/and/assets/scaled/to/490/wide/and/called/daniela_likes_tight_pants.jpg" style="width:490;height:326;" alt="You see a group of young people on a coach, among which a man with glasses and a colourful tracker jacket, and a girl holding a telephone, wearing a pinstriped legging and a blazer." title="" /></a></p>
+
+<div id="aside">
+  <img src="/and/assets/called/a_long_pink_arrow.png" style="width:99px;height:618px;margin-top:554px;" alt="Arrow that goes right and then down ↴" title="" />
+</div>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Why Would Europe’s Largest Open Source Convention Identify Itself With a Large Shrivelled Brain?</title>
@@ -725,70 +762,6 @@ Queering up programming culture.</em></p>
         <![CDATA[<p><a href="/and/assets/called/zuid_superia_400_6_bij_6.jpg"><img src="/and/assets/scaled/to/830/wide/and/called/zuid_superia_400_6_bij_6.jpg" alt="You see a swimming pool in the south, lined with azaleas." title="" /></a></p>
 
 <p>This is how I imagine Camus when I read his diary, and this seems like a good model for living: you go to a swimming pool in Algiers, swim, dry in the sun, look at the beautiful boys and girls, think really hard, look at the beautiful boys and girls, think really hard, write a sentence, rewrite the sentence, swim, dry in the sun, rewrite the sentence, think really hard, rewrite the sentence, look at the beautiful boys and girls, rewrite the sentence.</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>The voice of the shell</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-voice-of-the-shell" />
-    <id>tag:i.liketightpants.net,2011:/and//1.30</id>
-
-    <published>2011-10-26T18:20:28Z</published>
-    <updated>2011-10-26T22:44:54Z</updated>
-
-    <summary>I am moved by the program telling me everything is ok. (…) In any case it’s endearing: I imagine the programmer as a pretty dark-haired boy. He is shy and his eyes that hide already behind large glasses avoid your gaze. And Igor is not so handy with words, but he means good with the world. </summary>
-    <author>
-        <name>tellyou</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p>I tell my students that the command line is the way to go. I am not the kind of person who thinks the command-line is somehow a more true experience though—it’s another modality, another way of accessing and manipulating the data on your machine.</p>
-
-<p>The query-response format is wonderful. I amaze students with the whoami command—the computer knows the answer! This gives the impression, to some, that the console allows you to have conversations with your computer.</p>
-
-<p>I do often feel like I am talking to the computer. But when the computer talks balk to me, from time to time the voice of the computer gives way to the voice of the programmer who wrote it. Or at least, my image of this programmer. This is the output of a 7zip command:</p>
-
-<pre>7-Zip  4.44 beta  Copyright © 1999-2007 Igor Pavlov  2007-01-20
-p7zip Version 4.44 (locale=nl_NL.UTF-8,Utf16=on,HugeFiles=on,2 CPUs)
-
-Processing archive: Fedora 9.7z
-
-Extracting  Fedora 9/Fedora 9.vmkd
-Extracting  Fedora 9/Fedora 9.nvram
-Extracting  Fedora 9/users.txt
-Extracting  Fedora 9/Fedora 9.vmx.lck/M00232.lck
-Extracting  Fedora 9/Fedora 9.vmx
-Extracting  Fedora 9/Fedora 9.vmxf
-Extracting  Fedora 9/Fedora 9.vmsd
-Extracting  Fedora 9/Fedora 9.vmx.lck
-Extracting  Fedora 9
-
-Everything is Ok</pre>
-
-<p>I am moved by the program telling me everything is ok. I am not sure if Igor Pavlov meant to give me consolation from the console—after all, the sentence is logically equivalent to ‘there are no errors’. It could be a simple observation.</p>
-
-<p>In any case it’s endearing: I imagine the programmer as a pretty dark-haired boy. He is shy and his eyes that hide already behind large glasses avoid your gaze. And Igor is not so handy with words, but he means good with the world. </p>
-
-<p>But the encounter is not always so nice. The reason I install Fedora is because I have to compile some Perl modules to put on my shared hosting service to make Movable Type work (all of this takes place some time back). The interactive mode of CPAN has the most condescending error messages ever.</p>
-
-<p>Yet nothing beats Telnet. When typing in RCPT: instead of the required RCPT TO: I get:</p>
-
-<pre>Error: I can break rules, too. Goodbye.</pre>
-
-<p>And my connection is closed. I feel like I can actually strangle the programmer responsible for this behaviour. The rude message is a catalyst for my negative passions. I imagine the programmer delighting in his sense of control over me and I want to smash the keyboard on his head.</p>
-
-<p>I project in my mind this monster: crouched behind his computer, staring intently at the screen, a system administrator, overweight and unkempt hair, staring maniacally at the screen, laughing out loud about this error message that is going to upset the people using his code. But I have been awake too long. I made him in my own image; look at me: I’m also alone, staring maniacally at the screen, making up these stories about computer programmers.</p>
-
-<p>With minds so volatile and temperaments so inflammable, it’s important we stay nice to each other. If the only way we talk to each other is through error messages, we better make these exceptionally kind.</p>
-
-
-<div id="aside"><p>The shell is the text-based environment in which you give commands to your computer. Quite similar to the way the DOS operating system worked. On a contemporary Linux or Mac OS X system you have access to a fully functioning shell (Applications, Accesoires, Terminal).</p>
-
-<p>This article was written for <a href="http://libregraphicsmag.com/" title="Libre Graphics Magazine">Libre Graphics Magazine</a>. A magazine dedicated to showcasing graphic design done with free and open source tools. <a href="http://libregraphicsmag.com/buy.html" title="Libre Graphics Magazine: now.">Buy</a>, <a href="http://libregraphicsmag.com/download.html" title="Libre Graphics Magazine">download</a>!</p>
-</div>]]>
         
     </content>
 </entry>

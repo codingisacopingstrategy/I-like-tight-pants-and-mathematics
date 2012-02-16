@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/why-would-europes-largest-open-source-convention-identify-itself-with-a-large-shrivelled-brain');
+header('Location: /and/daniela-likes-fosdem');
 ?>
