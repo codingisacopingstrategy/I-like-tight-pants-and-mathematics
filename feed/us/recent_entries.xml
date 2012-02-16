@@ -4,9 +4,132 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2012-01-25T12:19:14Z</updated>
+    <updated>2012-02-08T10:55:27Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
+
+<entry>
+    <title>Why Would Europe’s Largest Open Source Convention Identify Itself With a Large Shrivelled Brain?</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/why-would-europes-largest-open-source-convention-identify-itself-with-a-large-shrivelled-brain" />
+    <id>tag:i.liketightpants.net,2012:/and//1.44</id>
+
+    <published>2012-02-03T18:55:34Z</published>
+    <updated>2012-02-08T10:55:27Z</updated>
+
+    <summary>From the perspective of visual communication, I wonder. What is it they are trying to communicate? A kind of crude parody of Cartesian dualism perhaps?</summary>
+    <author>
+        <name>baseline</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p><a href="http://www.flickr.com/photos/comzeradd/4767178153/" title="fosdem launch by comzeradd, on Flickr"><img src="http://i.liketightpants.net/and/assets/scaled/to/830/wide/and/called/fosdem.jpg" width="830" height="555" alt="fosdem launch"></a></p>
+
+<p class="byline">Launch of <a href="http://fosdem.org/2012/">Fosdem</a> conference, <a href="http://www.flickr.com/photos/comzeradd/4767178153">photo by comzeradd</a></p>
+
+<p><img src="http://i.liketightpants.net/and/assets/called/FOSDEM11_date2.jpg" style="width:300px;height:338px;" /></p>
+
+<p>Coming from the perspective of visual communication, I wonder. What is it they are trying to communicate? A kind of crude parody of <a href="http://en.wikipedia.org/wiki/Dualism_%28philosophy_of_mind%29">Cartesian dualism</a> perhaps? </p>
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Downloading funghi, from Wikimedia Commons</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/downloading-funghi" />
+    <id>tag:i.liketightpants.net,2012:/and//1.43</id>
+
+    <published>2012-02-03T17:36:40Z</published>
+    <updated>2012-02-03T18:03:07Z</updated>
+
+    <summary># print the urls of all the images in a category of Wikimedia Commons
+# example:
+# $ python get_commons.py &quot;Category:Illustrations_of_fungi&quot;</summary>
+    <author>
+        <name>bnf</name>
+        
+    </author>
+    
+        <category term="Scripts" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<pre>#!/usr/bin/env python
+# print the urls of all the images in a category of Wikimedia Commons
+# example:
+# $ python get_commons.py "Category:Illustrations_of_fungi"
+
+# pipe to wget for download:
+# $ python get_commons.py [category] | wget -i - --wait 1
+
+import sys
+import json
+import urllib2
+from urllib import quote
+
+def make_api_query(category, q_continue=""):
+    if q_continue:
+        q_continue = '&gcmcontinue=' + q_continue
+    url = 'http://commons.wikimedia.org/w/api.php?action=query&generator=categorymembers&gcmtitle=' + category + q_continue + '&gcmlimit=500&prop=imageinfo&iiprop=url&format=json'
+    request = json.loads(urllib2.urlopen(url).read())
+    if 'error' in request:
+        sys.exit(request['error']['info'])
+    for page in request['query']['pages'].values():
+        try:
+            print page['imageinfo'][0]['url']
+        except KeyError: pass
+    # there is a maximum of 500 results in one request, for paging
+    # we use the query-continue value:
+    if 'query-continue' in request:
+        q_continue = quote(request['query-continue']['categorymembers']['gcmcontinue'])
+        make_api_query(category, q_continue)
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        sys.exit("usage: python get_commons.py [category]")
+    make_api_query(sys.argv[1])</pre>
+
+<p><a href="/and/get_commons.py">Download</a></p>
+
+<p><img src="/and/assets/called/funghi.png" style="width:603px;height:390px;" /></p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Making unix programs</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/making-unix-programs" />
+    <id>tag:i.liketightpants.net,2012:/and//1.42</id>
+
+    <published>2012-02-02T12:33:26Z</published>
+    <updated>2012-02-03T15:42:26Z</updated>
+
+    <summary>It is really easy to add your own commands to Unix. Which is actually the reason it is a mess sometimes.</summary>
+    <author>
+        <name>tellyou</name>
+        
+    </author>
+    
+        <category term="Absolute Beginners: Unix for Art Students" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p><a href="http://i.liketightpants.net/and/assets/called/serious_as_inverse_steve.jpg" /><img src="http://i.liketightpants.net/and/assets/scaled/to/490/wide/and/called/serious_as_inverse_steve.jpg" style="width:490px;height:490px;"/></a></p>
+
+<p class="byline">photo by <a href="http://www.johannieuwenhuize.nl/">Johan Nieuwenhuize</a></p>
+
+<p>It is really easy to add your own commands to Unix. Even a small script you write can be used in the same way as other unix commands. (Which is actually the reason Unix is a mess sometimes, because everybody went in and added their own commands.)</p>
+
+<p>The reason it is so straightforward to create Unix programs is that you do not have to program or design a graphic user interface: everything runs from the terminal. This is part of programmer culture: <a href="/and/absolute-beginners-unix-for-art-students-part-1">like glit argues</a>, if you want to stay up to date with new exciting developments, you need to know how to run things from the terminal, because programmers are usually not going to take the time to create a graphical user interface for their latest experiments. Instead, they, will distribute it as a unix script.</p>
+
+<h3>The interface</h3>
+
+<p>Instead of letting the user manipulate buttons and text boxes, a unix program accepts arguments and options on the command line. Unix programs can also specify what to do with the text passed in by other programs via pipelines (standard input). And what almost every program does: they can output text to the terminal (standard output).</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>The Thinking Body</title>
@@ -44,6 +167,8 @@
         <name>baseline</name>
         
     </author>
+    
+        <category term="Absolute Beginners: Unix for Art Students" scheme="http://www.sixapart.com/ns/types#category" />
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
@@ -263,6 +388,8 @@ brew install poster</pre>
         
     </author>
     
+        <category term="Absolute Beginners: Unix for Art Students" scheme="http://www.sixapart.com/ns/types#category" />
+    
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[<p><a href="/and/assets/called/absolute_beginners_figlet.png"><img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_figlet.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, showing an ascii art that reads: “Absolute beginners”." title="" style="width:830px;height:518px;" /></a></p>
@@ -361,6 +488,8 @@ Type, by example:</p>
         
     </author>
     
+        <category term="Absolute Beginners: Unix for Art Students" scheme="http://www.sixapart.com/ns/types#category" />
+    
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[<p><a href="/and/assets/called/absolute_beginners_homebrew.png"><img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_homebrew.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, showing the output of installing software through the homebrew package manager." title="" style="width:830px;height:518px;" /></a></p>
@@ -408,6 +537,8 @@ For 10.6 can you download Xcode 3.2.6</p>
         
     </author>
     
+        <category term="Absolute Beginners: Unix for Art Students" scheme="http://www.sixapart.com/ns/types#category" />
+    
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[<p><a href="/and/assets/called/absolute_beginners_terminal.png"><img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_terminal.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, that reads: “Last login: Sat Oct 9 04:23:06 on console; computer-van-eric-schrijver:~ eric$”" title="" style="width:830px;height:518px;"/></a></p>
@@ -448,6 +579,8 @@ For 10.6 can you download Xcode 3.2.6</p>
         <name>bnf</name>
         
     </author>
+    
+        <category term="Scripts" scheme="http://www.sixapart.com/ns/types#category" />
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
@@ -656,118 +789,6 @@ Everything is Ok</pre>
 
 <p>This article was written for <a href="http://libregraphicsmag.com/" title="Libre Graphics Magazine">Libre Graphics Magazine</a>. A magazine dedicated to showcasing graphic design done with free and open source tools. <a href="http://libregraphicsmag.com/buy.html" title="Libre Graphics Magazine: now.">Buy</a>, <a href="http://libregraphicsmag.com/download.html" title="Libre Graphics Magazine">download</a>!</p>
 </div>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Physical Hyperlinks that Glitter</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/physical-hyperlinks-that-glitter" />
-    <id>tag:i.liketightpants.net,2011:/and//1.29</id>
-
-    <published>2011-09-22T14:11:40Z</published>
-    <updated>2011-09-22T17:24:08Z</updated>
-
-    <summary>I cut out 424 squares in sparkly adhesive and create the QR-code for the hyperlink to this very blog.</summary>
-    <author>
-        <name>baseline</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<style>
-#content .grid_1 {
-  color: #999;
-}
-
-#content .grid_1 a {
-  color: #bbb;
-}
-
-#content .grid_1 h4.author {
-  color: #000;
-}
-
-
-</style>
-
-<p><img src="/and/assets/scaled/to/830/wide/and/called/physical_hyperlinks_that_glitter.jpg" alt="You see a white wall on which is constructed a QR-code. The squares that constitute the code are pink and glittery, made from some thick adhesive pasted to the wall." title="" style="width:830px;height:551px;"/></p>
-
-<p class="byline">Photo by <a href="http://www.jhoeko.com/">Jhoeko</a></p>
-
-<p>For the shared exhibition of our <a href="http://www.dedcr.nl">studio complex</a> I want to show current work. But most of what I do is for the screen now. So I make a physical hyperlink to the blogosphere. I cut out 424 squares in sparkly adhesive and create the QR-code for the hyperlink to this very blog. Not every phone manages to scan it correctly—I’m not sure if it’s because the grid is slightly crooked, or because the glitter is confusing.</p>
-
-<p><img src="/and/assets/scaled/to/490/wide/and/called/try_glitter_link.jpg" style="width:490px;height:370px;" alt="You see a group of people in front of the glitter code, trying it out with their telephone"/></p>
-
-<p class="byline">Floris Schönfeld gives a guided tour, visitors try to visit the glitterlink. Photo Eelco van der Lingen</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Learning how to program</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/learning-how-to-program" />
-    <id>tag:i.liketightpants.net,2011:/and//1.28</id>
-
-    <published>2011-08-11T09:04:34Z</published>
-    <updated>2011-08-11T09:08:59Z</updated>
-
-    <summary>I get the big blue book, and I start watching the screencasts. Parts of me get stimulated that I had forgotten I have. Like some kind of abstraction gland. It’s pretty nice.</summary>
-    <author>
-        <name>tellyou</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<img src="/and/assets/scaled/to/490/wide/and/called/cs61a.png" alt="You see a lecture hall from above. Computer code is projected above the blackboards that contain formulas. The professor stands behind his desk. Many students have computers. To the left one large student wears no shirt." title="" />
-
-<p class="byline"><a href="http://rbmntjs.tumblr.com/post/56407340/check-out-this-douchebag" title="Rob’s brain">Rob notes a shirtless man in CS61A</a></p>
-
-<p>I want to learn how to program. Why, that is for another post. But then where to begin. You can’t just learn programming, it seems, you have to pick one among many of programming languages to learn. And each programming language has a corresponding community. And these communities behave like football supporters for their own language. While they would be better pressed to support programming in general ’cause that’s a cause for which many new converts can still be made, and these converts don’t care for the particularities of your language—yet. Anyway, this turns me off.</p>
-
-<p>So this sounds just right:</p>
-
-<blockquote>In CS 61A, we are interested in teaching you about programming, not about any particular programming language. We consider a series of techniques for controlling program complexity, such as functional programming, data abstraction, object-oriented programming, and query systems. To get past generalities you must have programming practice in some particular language, and in this course we use Scheme, a dialect of Lisp. This language is particularly well-suited to the organizing ideas we want to teach. Our hope, however, is that once you have learned the essence of programming, you will find that picking up a new programming language is but a few days’ work.</blockquote>
-
-<p class="byline"><a href="http://inst.eecs.berkeley.edu/~cs61a/sp11/0.pdf" title="">source</a></p>
-
-<p>I get the <a href="http://mitpress.mit.edu/sicp/full-text/book/book.html" title="Structure and Interpretation 
-of Computer Programs">big blue book</a>, and I start watching the <a href="http://webcast.berkeley.edu/search?cx=005415252586317091923%3Anp2thtbsmyq&amp;cof=FORID%3A10&amp;ie=UTF-8&amp;q=61a&amp;sa=Search&amp;siteurl=webcast.berkeley.edu%2F" title="UC Berkeley Webcasts | Video and Podcasts: Search Courses and Events">screencasts</a>. Parts of me get stimulated that I had forgotten I have. Like some kind of abstraction gland. It’s pretty nice.</p>
-
-<img src="/and/assets/called/sicp_cover.jpg" style="width:400px;height:579px" alt="You see a blue book cover. The title reads, in white: Structure and Interpretation of Computer Programs. Over a read background, in black and white, a woodcut of two people engaged in alchemistic practice. Below, the authors read as Harold Abelson and Gerald Jay Sussman, with Julie Sussman" title="" />
-
-<p>But it’s also way too difficult. The way in which Abelson &amp; Sussman explain computation is by consistently comparing it to math. Math is probably a way of thinking in which Science majors are already comfortable. Yet I don’t do math on a regular basis. So it’s like teaching me a language I don’t know by comparing it to another language I don’t really speak either.</p>
-
-<p>A different strategy is needed. I need to work with what I know: words, images. <a href="http://norvig.com/21-days.html" title="Teach Yourself Programming in Ten Years">Peter Norvig says</a> to use whatever your friends are using: “The advantage you get from learning from your friends will offset any intrinsic difference between OS, or between programming languages.” I’m gonna ask my friends to help me get started.</p>
-
-<p>To be continued.</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Pattern Recognition</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/pattern-recognition" />
-    <id>tag:i.liketightpants.net,2011:/and//1.27</id>
-
-    <published>2011-08-11T00:24:44Z</published>
-    <updated>2011-08-11T00:39:16Z</updated>
-
-    <summary>You see the same man twice: In his forties, curly hair, broad, probably Irish descent. The left hand picture sees him en profil, facing right, with his head turned back towards the camera. The other picture is formal, and in black and white. His head turned slightly to the right, the man looks reserved but seemingly content.</summary>
-    <author>
-        <name>jenseits</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<img src="/and/assets/that/are/screenshots/numbered/0101.png" alt="You see the same man twice: In his forties, curly hair, broad, probably Irish descent. The left hand picture sees him en profil, facing right, with his head turned back towards the camera. He wears a jacket (corduroy?) and a patterned shirt: judging by the colours this photograph is from the 1970ies. The right hand picture is black and white, and looks like it has been taken in the nineteenth century, in a formal sitting. Our subject has turned his head slightly to the right and gazes in the distance, his look reserved but seemingly content." title="" usemap="2john" class="margin-bottom" />
-<map name="2john"
-<area shape="rect" coords="0,0,340,380" href="http://www.imdb.com/media/rm169246720/nm0000604" title="Pictures & Photos of John C. Reilly - IMDb" />
-<area shape="rect" coords="348,0,688,382" href="http://www.loc.gov/pictures/item/2006686882/" title="George Henry Boker, 1823-1890, bust, facing left]" />
-</map>]]>
         
     </content>
 </entry>
