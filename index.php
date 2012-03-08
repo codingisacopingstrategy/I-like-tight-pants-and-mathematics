@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/daniela-likes-fosdem');
+header('Location: /and/my-favourite-wikipedia-user-user-rama');
 ?>
