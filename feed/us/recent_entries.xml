@@ -4,9 +4,124 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2012-02-24T17:13:38Z</updated>
+    <updated>2012-04-30T22:48:18Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
+
+<entry>
+    <title>Drawing logo’s</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/drawing-logos" />
+    <id>tag:i.liketightpants.net,2012:/and//1.49</id>
+
+    <published>2012-04-24T15:06:26Z</published>
+    <updated>2012-04-30T22:48:18Z</updated>
+
+    <summary>You see a frog with a crown, constructed of two yellow vertexes.</summary>
+    <author>
+        <name>baseline</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<script src="/and/scripts/being/processing-1.3.6.min.js"></script>
+<canvas data-processing-sources="/and/scripts/being/osp-frog.pde">With canvas enabled you would see a frog with a crown, constructed of two yellow vertexes.</canvas>
+
+<p>In London, after <a href="http://www.sebastiensanfilippo.be/" title="Sebastien Sanfilippo's Portfolio">Seb</a> has explained <a href="http://i.liketightpants.net/and/seb-explaining-love-and-bezier-curves" title="I like tight pants and seb explaining love and bezier curves">love and bezier curves</a> to jenseits, <a href="http://www.oep-h.com/" title="OEP-H">Pierre</a> sets up a way to communicate with our <a href="http://www.scribus.net/canvas/Scribus" title="Scribus.net">DTP-software</a> via IRC chat. Seb starts to scribble coordinates, sends through a number of commands, and up on the beamer appears a stark re-imagining of the <a href="http://ospublish.constantvzw.org/" title="OSP &#8212; Open Source Publishing &#8211; Design Tools For Designers">OSP</a> logo.</p>
+
+<p>Seb has made direct use of one of the basic principles in computer graphics: giving instructions to draw to a virtual canvas. As a graphic designer you are always using programs like Illustrator or <a href="http://inkscape.org/" title="Inkscape. Draw Freely.">Inkscape</a> to create these kind of instructions so it is refreshing to do so yourself.</p>
+
+<p>This is the code used, adapted to <a href="http://processingjs.org/" title="Processing.js">Processing.js</a>:</p>
+
+
+<pre>size(600,600);
+background(255);
+strokeWeight(6);
+stroke(255, 255, 0);
+noFill();
+
+beginShape();
+vertex(451, 29);
+vertex(401, 130);
+vertex(355, 29);
+vertex(334, 128);
+vertex(291, 26);
+vertex(291, 169);
+vertex(445, 169);
+endShape(CLOSE);
+
+beginShape();
+vertex(517, 273);
+vertex(366, 127);
+vertex(37, 423);
+vertex(250, 543);
+vertex(252, 447);
+vertex(483, 531);
+vertex(371, 419);
+endShape(CLOSE);</pre>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Seb Explaining Love and Bezier Curves</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/seb-explaining-love-and-bezier-curves" />
+    <id>tag:i.liketightpants.net,2012:/and//1.48</id>
+
+    <published>2012-04-16T22:06:08Z</published>
+    <updated>2012-04-16T22:18:47Z</updated>
+
+    <summary>You see a large sheet of paper upon which a constructed drawing of a heart, showing also the mathematical construction of the curves.</summary>
+    <author>
+        <name>jenseits</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p><a href="/and/assets/called/love_and_bezier_curves.jpg"><img src="/and/assets/scaled/to/830/wide/and/called/love_and_bezier_curves.jpg" alt="You see a large sheet of paper upon which a constructed drawing of a heart, showing also the mathematical construction of the curves." title="" style="width:622px;height:830px;" /></a></p>
+
+<p class="byline">From an <a href="http://ospublish.constantvzw.org/images/snapshots/rca-workshop">OSP Workshop</a> at Royal College of Art, London</p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>My favourite logo ever is for GNU Pascal</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/my-favourite-logo-ever-is-for-gnu-pascal" />
+    <id>tag:i.liketightpants.net,2012:/and//1.47</id>
+
+    <published>2012-04-07T23:53:37Z</published>
+    <updated>2012-04-10T22:51:46Z</updated>
+
+    <summary>This is easily my favourite logo in the world. It is for a computer program called GNU Pascal. To the left, we see a gnu. To the right, Blaise Pascal. </summary>
+    <author>
+        <name>baseline</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p>
+  <a href="http://www.gnu-pascal.de/gpc/h-resources.html#Drawing">
+    <object type="image/svg+xml" style="width:830px;height:657px;" data="/and/assets/called/GnuPascal.svg">
+      <img src="/and/assets/called/GnuPascal.png" style="width:830px;height:657px;" alt="A digital pen drawing of a gnu and of Blaise Pascal, side by side, from the shoulders up." />
+    </object>
+  </a>
+</p>
+
+<p>This is easily my favourite logo in the world. It is for a computer program called <a href="http://www.gnu-pascal.de/gpc/h-index.html" title="GNU Pascal">GNU Pascal</a> (a programming language in fact). To the left, we see a gnu. To the right, Blaise Pascal. Rather than trying to convey brand values through metaphor, the name is depicted in the most literal way imaginable.</p>
+
+<p>It’s not just the literalness that is unusual. The use of this kind of figurative illustration in logos is rare. The only niche that springs to mind is <a href="/and/assets/called/HansTextiel.gif" title="">1970ies retail chains</a>.</p>
+
+<p>Visual abstraction has becomes the norm in corporate branding since the post WWII period. In America, designers like <a href="http://www.paul-rand.com/foundation/identity/" title="Paul-Rand.com :: American Modernist :: 1914-1996">Paul Rand</a> and Saul Bass started to produce logos in flat colours and simple shapes that aimed to convey what the companies are about. It is this language that has stuck with us for logos ever since.</p>
+
+<p>Even though it might be useful to convey a brand message that is clear and straightforward, there is an obvious limit to the benefits of abstraction. As the brand values a logo is supposed to express get exceedingly open ended (‘innovation’, ‘integrity’), it becomes more difficult to visually evocate them. That is how we end up with logos built around isometric cubes and moebius strips, and with <a href="http://www.salon.com/1999/11/30/naming/" title="The name game -   Advertising - Salon.com">company names</a> like Agilent and Avilant.</p>
+
+<p>It is here that the literalness of GNU Pascal provides the counterbalance I look for. I heart the complete absence of symbolism. And the departure from traditional corporate marketing is all the more exciting because it rhymes with the product itself. GNU Pascal is open source software: it is changeable and redistributable at will. As such it is built more on the values of the academic world than on the traditional corporate ethos. And while visual identities for open source software tend to be pale imitations of corporate aesthetics, GNU Pascal is one clue of how such software could find a style of its own.</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>My Favourite Wikipedia User User:Rama</title>
@@ -48,12 +163,12 @@
 </entry>
 
 <entry>
-    <title>Daniela likes Fosdem</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/daniela-likes-fosdem" />
+    <title>Daniela Likes Open Source Programming Conferences Like Fosdem</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/daniela-likes-open-source-programming-conferences-like-fosdem" />
     <id>tag:i.liketightpants.net,2012:/and//1.45</id>
 
     <published>2012-02-17T21:55:41Z</published>
-    <updated>2012-02-16T23:36:07Z</updated>
+    <updated>2012-05-02T09:56:00Z</updated>
 
     <summary>Daniela likes tight pants. And she is ready to engage with the world of computer programmers. When a large group of open source software developers pass by our city, we grab our chance. </summary>
     <author>
@@ -236,7 +351,7 @@ if __name__ == "__main__":
     <id>tag:i.liketightpants.net,2012:/and//1.40</id>
 
     <published>2012-01-15T23:46:09Z</published>
-    <updated>2012-01-20T01:19:25Z</updated>
+    <updated>2012-04-16T12:49:45Z</updated>
 
     <summary>Using a set of unix commands to lay out Jenny Holzer tweets.</summary>
     <author>
@@ -315,7 +430,9 @@ if __name__ == "__main__":
 
 <p>Now we have Jenny Holzer ascii art!</p>
 
-<p>We are going to go a bit further with this. What we want to do is layout this plain text in such a way that we could display it or print it. For this we are going to use a program called pango-view.</p>
+<p>We are going to go a bit further with this. What we want to do is layout this plain text in such a way that we could display it or print it. For this we are going to use a program called pango-view. It comes as part of pango, which we will have to install:</p>
+
+<pre>brew install pango</pre>
 
 <p>In fact, pango-view, spoils the fun somewhat, because it doesn’t let you use it as part of a pipeline. We’ll have to store the Jenny tweet into a text file:</p>
 
@@ -325,7 +442,7 @@ if __name__ == "__main__":
 
 <p>Pango-view lets us lay-out the text and output it as a picture:</p>
 
-<pre>pango-view -q -o jennytweet.png jennytweet.txt</pre>
+<pre>pango-view jennytweet.txt -q -o jennytweet.png</pre>
 
 <p><img src="/and/assets/called/jennytweet-plain.png" style="width:353;height:39;" alt="‘SEX DIFFERENCES ARE HERE TO STAY’ set in pango-view’s default font" title="" /></p>
 
@@ -333,7 +450,7 @@ if __name__ == "__main__":
 
 <p>In the man page, we read that we can use <code>--font</code> to specify a font. It does not tell you the format to do so, which is the name followed by the size:</p>
 
-<pre>pango-view -q -o jennytweet.png --font "Futura 36" jennytweet.txt</pre>
+<pre>pango-view jennytweet.txt -q -o jennytweet.png --font "Futura 36"</pre>
 
 <p><img src="/and/assets/called/jennytweet-banner.png" style="width:882;height:83;" alt="‘SEX DIFFERENCES ARE HERE TO STAY’ set in Futura" title="" /></p>
 
@@ -341,13 +458,13 @@ if __name__ == "__main__":
 
 <p>If we want to produce the look of a laid-out piece of text, we will have to specify a width:</p>
 
-<pre>pango-view -q -o jennytweet-laidout.png --font "Futura 36" -w 400 jennytweet.txt</pre>
+<pre>pango-view jennytweet.txt -q -o jennytweet-laidout.png --font "Futura 36" -w 400</pre>
 
 <p><img src="/and/assets/called/jennytweet-laidout.png" style="width:553;height:146;" alt="‘SEX DIFFERENCES ARE HERE TO STAY’ set in Futura, laid out to a maximum width" title="" /></p>
 
 <p>The cool thing about pango-view is that it can also generate vector files: pdf, but also svg and postscript. You just change the filename, and it does it automatically.</p>
 
-<pre>pango-view -q -o jennytweet-laidout.ps --font "Futura 36" -w 400 jennytweet.txt</pre>
+<pre>pango-view jennytweet.txt -q -o jennytweet-laidout.ps --font "Futura 36" -w 400</pre>
 
 <p>(Check out the resulting file in preview with <code>open jennytweet-laidout.ps</code>.)</p>
 
@@ -595,189 +712,6 @@ For 10.6 can you download Xcode 3.2.6</p>
 <pre>brew install git</pre>
 
 <p>Git is needed to keep your homebrew installation up to date. And now you are all set!</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Absolute Beginners: Unix for Art Students – part 1</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-1" />
-    <id>tag:i.liketightpants.net,2011:/and//1.34</id>
-
-    <published>2011-11-28T22:30:57Z</published>
-    <updated>2011-12-08T15:16:11Z</updated>
-
-    <summary>You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, that reads: “Last login: Sat Oct 9 04:23:06 on console; computer-van-eric-schrijver:~ eric$</summary>
-    <author>
-        <name>glit</name>
-        
-    </author>
-    
-        <category term="Absolute Beginners: Unix for Art Students" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><a href="/and/assets/called/absolute_beginners_terminal.png"><img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_terminal.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, that reads: “Last login: Sat Oct 9 04:23:06 on console; computer-van-eric-schrijver:~ eric$”" title="" style="width:830px;height:518px;"/></a></p>
-
-<p>Glit here. So maybe you read bnf’s latest article, and you can not make chocolate out of it. The <a href="http://i.liketightpants.net/and/vector-pixels" title="I like tight pants and vector pixels">little program</a> he writes, is a script that runs on the <a href="/and/the-voice-of-the-shell" title="I like tight pants and the voice of the shell">command line
-</a>. You may have never used the command line before. You might not even want to. But I’m here to tell you it’s a smart move.</p>
-
-<p>Imagine you’re an art student. And you just bought an expensive aluminium computer, because that’s part of the deal of being an art student today. What programs are you planning to run on it? Photoshop, Safari… Illustrator and inDesign maybe?</p>
-
-<p>That’s so boring! There’s ways to be vastly more intimate and experimental with your computer, and since you have endeavored to study art and you want to be experimental and intimate with your materials, you better get at it with your computer too!</p>
-
-<p>You couldn’t tell by the glossy graphics, but your Mac runs actually quite an old fashioned system, called Unix. Unix has been around since like forever. Or at least the 1970ies. Unix used to run on big computers in universities and enterprises, but in Mac Os X it has now found it’s way to personal computers.</p>
-
-<p>Because Unix used to be the system that computer scientists and system administrators would run, almost all of the nifty programming tools have been developed for Unix. Your mac comes preinstalled with all the major programming languages: Python, Ruby, Perl, PHP. It comes with the webserver that runs many of the websites on the internet: Apache. And because it is a Unix system, you can easily expand with all the open source software that is being written today.</p>
-
-<p>So here’s a sweet deal: your shiny expensive computer comes with a lot of programs for free, and you didn’t even know about it. Plus, you can tap into all the open source development that is being done right now. So whenever someone writes a new creative, clever or useful open source software tool, you can get that for free too! A whole new world to take in.</p>
-
-<p>Now here’s the catch. Computer programmers and system administrators have a culture all of their own. One of the defining characteristics is, within this culture, graphical user interfaces like your Mac’s windows and buttons are not seen as the easiest way to deal with a program. Rather, you are expected to deal with your program through a <em>Terminal</em>. This is a window in which you type commands. Just like in DOS, for those of you who have used a computer before 1995.</p>
-
-<p>So to benefit from the culture of open source and programming, you have to learn how to use the terminal to run your programs. Other than that, you have to learn to use a program called a ‘package manager’ to easily install new programs. My colleagues are going to learn you both of these things. And to achieve the latter, we’re also going to install a compiler—having a compiler around is an integral part of this lifestyle.</p>
-
-<p>I’ll hand it back to bnf to <a href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-2" title="I like tight pants and absolute beginners: unix for art students – part 2">introduce you to the terminal!</a>. Subsequently, tellyou tackles installing new unix software in <a href="/and/installing-compilers">I like tight pants and installing compilers</a>.</p>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Vector pixels</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/vector-pixels" />
-    <id>tag:i.liketightpants.net,2011:/and//1.33</id>
-
-    <published>2011-11-25T16:14:10Z</published>
-    <updated>2011-11-25T17:48:41Z</updated>
-
-    <summary>Creating a vector image from a raster image usually consists of imagining some kind of curve, responsible for the pixels. But this is guess work at best. Why don’t we work with what’s actually there—points?</summary>
-    <author>
-        <name>bnf</name>
-        
-    </author>
-    
-        <category term="Scripts" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p>
-<img src="/and/assets/called/vector_pixel_city_pixels.png" style="width:16px;height:16px;" alt="A stylised image of a skyscraper, in 16 by 16 pixels." title="" />
-<object type="image/svg+xml" style="width:384px;height:384px;" data="/and/assets/called/vector_pixel_city.svg">
-    <img src="/and/assets/called/vector_pixel_city.png" style="width:384px;height:384px;" alt="A stylised image of a skyscraper. The building is made out of square shapes on a 16 by 16 grid. The squares have rounded corners." />
- </object>
-</p>
-
-<pre>#!/usr/bin/env python
-"""  Turns an image into a two-colored grid of vectorpixels: squares,
-circles, or squares with rounded corners.
-
-Creating a vector image from a raster image usually consists of
-imagining some kind of curve, responsible for the pixels. But this
-is guess work at best. Why don’t we work with what’s actually
-there—points?
-
-This script turns an image into a grid of vector squares, circles,
-or squares with rounded corners.
-
-usage (command line):
-
-python vectorpixel.py inputimage.png > outputimage.svg
-
- TODO: allow multi-colour pictures, implement vertical and horiontal scanlines """
-
-import Image
-import sys
-
-class vectorpixel:
-    def __init__(self, image):
-        self.i = Image.open(image)
-        self.i.convert("1")
-        self.px = self.i.load()
-        self.constructed = False
-
-    def construct(self, grid=24, line=1, rounded=4, test=(lambda x: x != 0)):
-        self.grid = grid
-        self.line = line
-        self.rounded = rounded
-        self.width = self.height = self.grid - 2 * self.line
-        self.test = test
-        self.fill = '#000000'
-        self.constructed = True
-
-    def _yieldlocations(self):
-        for x in range(self.i.size[0]):
-            for y in range(self.i.size[1]):
-                if self.test(self.px[x,y]):
-                    yield (x,y)
-
-    def _mkelements(self):
-        for l in self._yieldlocations():
-            yield "&lt;rect x='%s' y='%s' width='%s' height='%s' rx='%s' fill='%s'/&gt;" % (
-    self.grid * l[0] + self.line, self.grid * l[1] + self.line, self.width, self.height, self.rounded, self.fill)
-
-    def _format(self):
-        output = '&lt;svg xmlns="http://www.w3.org/2000/svg" width="%s" height="%s"&gt;\n' % (self.i.size[0] * self.grid, self.i.size[1] * self.grid)
-        for e in self._mkelements():
-            output += e
-            output += '\n'
-        output += '&lt;/svg&gt;'
-        return output
-
-    def generate(self):
-        if not self.constructed:
-            self.construct()
-        return self._format()
-
-    
-if __name__ == "__main__":
-    v = vectorpixel(sys.argv[1])
-    v.construct()
-    print v.count_elements()</pre>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>We like tight pants and mathematics</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/we-like-tight-pants-and-mathematics" />
-    <id>tag:i.liketightpants.net,2011:/and//1.32</id>
-
-    <published>2011-11-23T09:27:27Z</published>
-    <updated>2011-11-24T15:02:20Z</updated>
-
-    <summary>To give programming a productive place in your arts and design practice, you need to get to know programming culture, and, ideally, take part in (re)shaping it. To feel comfortable with being a programmer, you might want to change what a programmer is.</summary>
-    <author>
-        <name>tellyou</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><img src="/and/assets/scaled/to/830/wide/and/called/workshop_effective.jpg" title="" alt="" style="width:830;height:553;" /></p>
-<p class="byline">The students in Rotterdam take up my cues.</p>
-
-<p>I have given a workshop at the Master <a href="http://pzwart.wdka.nl/networked-media/" title="Networked Media">Networked Media
-</a> at the Piet Zwart institute, Rotterdam. One of the few master courses <a href="http://river-valley.tv/how-to-run-an-art-school-on-free-and-open-source-software/" title="How to Run an Art School on Free and Open Source Software | River Valley TV">that runs on free and open source software
-</a>, and the surrounding culture of sharing and hacking. The workshop is called:</p>
-
-<p><em>I like tight pants and mathematics.<br/>
-Queering up programming culture.</em></p>
-
-<blockquote>To give programming a productive place in your arts and design practice, you need to get to know programming culture, and, ideally, take part in (re)shaping it. To feel comfortable with being a programmer, you might want to change what a programmer is. With queering up I am not referring to homosexuality, but rather to an approach that undermines existing masculine, heteronormative ideals.  An historical example would be Glam rock’s appropriation of the traditional ‘earnest’ masculine rock musician into the polysexual identity mirror palace created by musicians as David Bowie and Freddy Mercury.</blockquote>
-
-<p>I am planning a longer write up, but for now you might be interested in <a href="http://titanpad.com/2z2De9BZ20" title="TitanPad: 2z2De9BZ20">the lecture notes
-</a>.</p>
-
-
-<p><img src="/and/assets/scaled/to/490/wide/and/called/workshop_i_present_in_the_beamer.jpg" title="" alt="" style="width:490;height:735;" /></p>
-<p class="byline">Presenting in the light of the beamer</p>
-
-<p><img src="/and/assets/scaled/to/490/wide/and/called/workshop_and_serious_discussion_ensued.jpg" title="" alt="" style="width:490;height:326;" /></p>
-<p class="byline">And serious discussion ensues</p>
-
-<p><img src="/and/assets/scaled/to/490/wide/and/called/workshop_on_both_sides_of_the_table.jpg" title="" alt="" style="width:490;height:326;" /></p>
-<p class="byline">On both sides of the table</p>]]>
         
     </content>
 </entry>
