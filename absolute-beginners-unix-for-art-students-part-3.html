@@ -54,7 +54,7 @@
   <ul>
     
     
-    <li><a href="/and/my-favourite-wikipedia-user-user-rama">latest</a></li>
+    <li><a href="/and/drawing-logos">latest</a></li>
     
     <li><a href="/and/about">about</a></li>
     <li><a href="/and/archives">index</a></li>
@@ -78,6 +78,12 @@
   <h4>Articles</h4>
   <dl>
   
+  
+  <dt><a href="/and/drawing-logos">Drawing logo’s</a></dt>
+  <dd>April 24, 2012  5:06 PM</dd>
+  
+  <dt><a href="/and/my-favourite-logo-ever-is-for-gnu-pascal">My favourite logo ever is for GNU Pascal</a></dt>
+  <dd>April  8, 2012  1:53 AM</dd>
   
   <dt><a href="/and/why-would-europes-largest-open-source-convention-identify-itself-with-a-large-shrivelled-brain">Why Would Europe’s Largest Open Source Convention Identify Itself With a Large Shrivelled Brain?</a></dt>
   <dd>February  3, 2012  7:55 PM</dd>
@@ -137,6 +143,14 @@
   
     <dt>baseline on <a href ="/and/absolute-beginners-unix-for-art-students-part-3#comment-116">Absolute Beginners: Unix for Art Students – part 3</a></dt>
     <dd>January 20, 2012  1:01 AM</dd>
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -253,7 +267,9 @@
 
 <p>Now we have Jenny Holzer ascii art!</p>
 
-<p>We are going to go a bit further with this. What we want to do is layout this plain text in such a way that we could display it or print it. For this we are going to use a program called pango-view.</p>
+<p>We are going to go a bit further with this. What we want to do is layout this plain text in such a way that we could display it or print it. For this we are going to use a program called pango-view. It comes as part of pango, which we will have to install:</p>
+
+<pre>brew install pango</pre>
 
 <p>In fact, pango-view, spoils the fun somewhat, because it doesn’t let you use it as part of a pipeline. We’ll have to store the Jenny tweet into a text file:</p>
 
@@ -263,7 +279,7 @@
 
 <p>Pango-view lets us lay-out the text and output it as a picture:</p>
 
-<pre>pango-view -q -o jennytweet.png jennytweet.txt</pre>
+<pre>pango-view jennytweet.txt -q -o jennytweet.png</pre>
 
 <p><img src="/and/assets/called/jennytweet-plain.png" style="width:353;height:39;" alt="‘SEX DIFFERENCES ARE HERE TO STAY’ set in pango-view’s default font" title="" /></p>
 
@@ -271,7 +287,7 @@
 
 <p>In the man page, we read that we can use <code>--font</code> to specify a font. It does not tell you the format to do so, which is the name followed by the size:</p>
 
-<pre>pango-view -q -o jennytweet.png --font "Futura 36" jennytweet.txt</pre>
+<pre>pango-view jennytweet.txt -q -o jennytweet.png --font "Futura 36"</pre>
 
 <p><img src="/and/assets/called/jennytweet-banner.png" style="width:882;height:83;" alt="‘SEX DIFFERENCES ARE HERE TO STAY’ set in Futura" title="" /></p>
 
@@ -279,13 +295,13 @@
 
 <p>If we want to produce the look of a laid-out piece of text, we will have to specify a width:</p>
 
-<pre>pango-view -q -o jennytweet-laidout.png --font "Futura 36" -w 400 jennytweet.txt</pre>
+<pre>pango-view jennytweet.txt -q -o jennytweet-laidout.png --font "Futura 36" -w 400</pre>
 
 <p><img src="/and/assets/called/jennytweet-laidout.png" style="width:553;height:146;" alt="‘SEX DIFFERENCES ARE HERE TO STAY’ set in Futura, laid out to a maximum width" title="" /></p>
 
 <p>The cool thing about pango-view is that it can also generate vector files: pdf, but also svg and postscript. You just change the filename, and it does it automatically.</p>
 
-<pre>pango-view -q -o jennytweet-laidout.ps --font "Futura 36" -w 400 jennytweet.txt</pre>
+<pre>pango-view jennytweet.txt -q -o jennytweet-laidout.ps --font "Futura 36" -w 400</pre>
 
 <p>(Check out the resulting file in preview with <code>open jennytweet-laidout.ps</code>.)</p>
 
@@ -314,7 +330,7 @@ brew install poster</pre>
 
 
     
-<h4 class="comments-header">8 Comments</h4>
+<h4 class="comments-header">10 Comments</h4>
 <div class="comments-content">
     
      <!-- If comment doesn't have a top-level-parent -->
@@ -458,6 +474,45 @@ brew install poster</pre>
         
     
     
+
+    
+     <!-- If comment doesn't have a top-level-parent -->
+            
+    <div id="comment-152" class="comment">
+    <p>Ah you can also pipe your output to the <code>say</code> program then it will use the Mac’s built in text to speech to read it out to you. Jenny is talking to you!</p>
+
+<pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\(.*\)"}]/\1/g' | say</pre>
+    <p class="byline">
+            <img src="http://mt.schr.fr/lib/support/assets_c/2011/10/bowie-thumb-18x18-8.jpg" width="18" height="18"  />
+          by tellyou - <a href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-3.html#comment-152"><abbr class="published" title="2012-04-03T11:59:33+01:00">April  3, 2012 11:59 AM</abbr></a><br />
+    <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(152, 'tellyou')">Reply</a></p>
+    </div>
+
+         <!-- Loop through the reply comments -->
+            
+            <div style="margin-left: 20px;">
+            
+            
+    <div id="comment-162" class="comment comment-reply">
+    <p>So what we also tried with the students is the overlay multiple pdf’s on top of each other. You need to <code>brew install podofo</code>, create a file that lists all the pdf‘s, and in the same folder download a recipe for the imposition: See <a href="http://stdin.fr/Bazar/PoDoFo" rel="nofollow">stdin’s bazaar</a>.</p>
+    <p class="byline">
+            <img src="http://mt.schr.fr/lib/support/assets_c/2011/10/bowie-thumb-18x18-8.jpg" width="18" height="18"  />
+          by tellyou - <a href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-3.html#comment-162"><abbr class="published" title="2012-04-21T15:44:13+01:00">April 21, 2012  3:44 PM</abbr></a><br />
+    <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(162, 'tellyou')">Reply</a></p>
+    </div>
+
+             <!-- For each reply comment, recursively display any reply comments -->    
+            
+            </div>
+            
+        
+    
+    
+
+    
+     <!-- If comment has a parent comment. We ignore this, as we just want the top-level-parent comments -->
+        
+    
 </div>
     
 
@@ -509,7 +564,7 @@ brew install poster</pre>
                 </div>
                 <div id="comments-open-captcha"></div>
                 <div id="comments-open-footer">
-                    <input type="submit" accesskey="v" name="preview_button" id="comment-preview" value="Preview" onclick="this.form.preview.value='1';" />
+                   <!-- <input type="submit" accesskey="v" name="preview_button" id="comment-preview" value="Preview" onclick="this.form.preview.value='1';" /> -->
                     <input type="submit" accesskey="s" name="post" id="comment-submit" value="Submit" />
                 </div>
             </form>
@@ -548,6 +603,15 @@ brew install poster</pre>
   <h4>Latest articles</h4>
   <dl>
   
+  <dt><a href="/and/drawing-logos">Drawing logo’s</a></dt>
+  <dd>April 24, 2012  5:06 PM</dd>
+  
+  <dt><a href="/and/seb-explaining-love-and-bezier-curves">Seb Explaining Love and Bezier Curves</a></dt>
+  <dd>April 17, 2012 12:06 AM</dd>
+  
+  <dt><a href="/and/my-favourite-logo-ever-is-for-gnu-pascal">My favourite logo ever is for GNU Pascal</a></dt>
+  <dd>April  8, 2012  1:53 AM</dd>
+  
   <dt><a href="/and/my-favourite-wikipedia-user-user-rama">My Favourite Wikipedia User User:Rama</a></dt>
   <dd>February 23, 2012 11:43 PM</dd>
   
@@ -569,20 +633,19 @@ brew install poster</pre>
   <dt><a href="/and/absolute-beginners-unix-for-art-students-part-3">Absolute Beginners: Unix for Art Students – part 3</a></dt>
   <dd>January 16, 2012 12:46 AM</dd>
   
-  <dt><a href="/and/i-like-ziggy-over-zarathustra">Ziggy over Zarathustra</a></dt>
-  <dd>January  8, 2012  4:43 PM</dd>
-  
-  <dt><a href="/and/designer-drugs">Designer drugs</a></dt>
-  <dd>December 29, 2011 10:44 PM</dd>
-  
-  <dt><a href="/and/i-have-relocated-to-brussels">I have relocated to Brussels</a></dt>
-  <dd>December 17, 2011  4:17 AM</dd>
-  
   </dl>
 
   <h4>Latest Comments</h4>
         <ul>
         
+            <li><strong>tellyou:</strong> So what we also tried with the students is the <a href="/and/absolute-beginners-unix-for-art-students-part-3#comment-162" title="full comment on: Absolute Beginners: Unix for Art Students – part 3">read more</a></li>
+        
+    
+    
+            <li><strong>tellyou:</strong> Ah you can also pipe your output to the say <a href="/and/absolute-beginners-unix-for-art-students-part-3#comment-152" title="full comment on: Absolute Beginners: Unix for Art Students – part 3">read more</a></li>
+        
+    
+    
             <li><strong>luluganeta:</strong> jenny holzer is fine, but her mom is better (srsly) <a href="/and/absolute-beginners-unix-for-art-students-part-3#comment-139" title="full comment on: Absolute Beginners: Unix for Art Students – part 3">read more</a></li>
         
     
