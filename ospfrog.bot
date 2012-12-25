@@ -1,0 +1,33 @@
+size(600, 600)
+
+nofill()
+strokewidth(6)
+stroke(255, 255, 0)
+
+beginpath(517, 273)
+lineto(366, 127)
+lineto(37, 423)
+lineto(250, 543)
+lineto(252, 447)
+lineto(483, 531)
+lineto(371, 419)
+endpath()
+
+"""beginpath(451, 571)
+lineto(401, 470)
+lineto(355, 571)
+lineto(334, 472)
+lineto(291, 574)
+lineto(291, 431)
+lineto(445, 413)
+endpath()"""
+
+beginpath(451, 29)
+lineto(401, 130)
+lineto(355, 29)
+lineto(334, 128)
+lineto(291, 26)
+lineto(291, 169)
+lineto(445, 169)
+endpath()
+

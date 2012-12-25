@@ -4,9 +4,373 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2012-04-30T22:48:18Z</updated>
+    <updated>2012-10-12T08:49:14Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
+
+<entry>
+    <title>Parties in Paris</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/parties-in-paris" />
+    <id>tag:i.liketightpants.net,2012:/and//1.53</id>
+
+    <published>2012-09-07T13:24:25Z</published>
+    <updated>2012-10-12T08:49:14Z</updated>
+
+    <summary>There is never much programming at the parties I go to. Seb says people like drugs and music and sex and that’s what brings them to parties.</summary>
+    <author>
+        <name>glit</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p><a href="http://i.liketightpants.net/and/assets/called/parties_in_paris.jpg"><img src="http://i.liketightpants.net/and/assets/scaled/to/830/wide/and/called/parties_in_paris.jpg" style="width:553px;830px;" title="" alt="You see a young man perched against a dresser, sitting on a medicine ball. He looks away. He is wearing a slate blazer, over a yellow shirt, screenprinted with a drawing of his guts and his chestcage. He wears gold colored leggings. His hair is combed over to the left." /></a></p>
+
+<p class="byline">Photo Laura Barbare</p>
+
+<p>Or parties in Brussels, for that matter. But the alliteration is nice.</p>
+
+<p>Though there is never much programming at the parties I go to. Even if <a href="http://yaxu.org/" title="http://yaxu.org/">Alex McLean</a> professes to be <a href="http://www.perl.com/pub/2004/08/31/livecode.html" title="Hacking Perl in Nightclubs - Perl.com">hacking Perl in night clubs</a>, I have yet to run into him at night.</p>
+
+<p>I am wondering at what point it will become part of contemporary party culture and we’ll have live coding sessions at <a href="http://www.flashcocotte.com/" title="Flash Cocotte">Flash Cocotte</a>? Seb tells me that it’s not likely to happen. That people like <a href="/and/designer-drugs">drugs</a> and music and sex and that’s what brings them to parties. And that programming is too abstract and intellectual to appeal to people in a similar way.</p>
+
+<p>What do you think?</p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>How it Has Come About That Code Hosting Site Github Offers Visualisations of Typeface Development</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/how-it-has-come-about-that-code-hosting-site-github-offers-visualisations-of-typeface-development" />
+    <id>tag:i.liketightpants.net,2012:/and//1.52</id>
+
+    <published>2012-08-04T18:28:42Z</published>
+    <updated>2012-11-20T11:27:02Z</updated>
+
+    <summary>That&apos;s really cool that you guys are pushing for open source collaborative development of typefaces. I thought it was so cool that I stayed up late last night and hacked together some very simple UFO support on GitHub.</summary>
+    <author>
+        <name>tellyou</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<style>
+@font-face {
+    font-family: 'Chunkfive';
+    src: url('/and/assets/called/Chunkfive-webfont.eot#') format('eot'),
+         url('/and/assets/called/Chunkfive-webfont.woff') format('woff'),
+         url('/and/assets/called/Chunkfive-webfont.ttf') format('truetype'),
+         url('/and/assets/called/Chunkfive-webfont.svg#webfontM8M0EYs2') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+.notwork {
+    font-family: 'Chunkfive';
+    color: #FF00AE;
+    font-weight: bold;
+    margin: 0;
+}
+h2.notwork {
+    margin-top: 18px;
+    font-size: 32px;
+    line-height: 32px;
+}
+h3.notwork {
+    font-size: 16px;
+    line-height: 16px;
+}
+</style>
+
+<h2 class="notwork">It doesn’t work!</h2>
+<h3 class="notwork">Github appears to have recently pulled this feature.</h3>
+
+<a href="https://github.com/klepas/open-baskerville/commit/559794180adbdd65327558886d3f4e4169539284" title="Fixed some youthful mistakes, tweaked a few curves. ·  5597941 · klepas/open-baskerville"><img src="/and/assets/scaled/to/830/wide/and/called/github_ufo_visual_diff.png" alt="You see two versions of a ¢ character: to the left, labelled ‘old’, a version with an upright bar, to the right, labelled ‘new’, a version with a slanted bar." title="" style="width:830px;height:329px;"></a>
+
+<blockquote>That's really cool that you guys are pushing for open source collaborative development of typefaces. I thought it was so cool that I stayed up late last night and hacked together some very simple UFO support on GitHub.</blockquote>
+
+<p class="byline">Tom Werner</p>
+
+<p>With habitus waxing lyrically about the potential of reuse and collaboration in open source type design, I figure it is a good moment to zoom in on the details of a specific font collaboration project. Because it is not self evident how to go about working together on a font.</p>
+
+<p>Together with <a href="http://klepas.org/" title="Simon Pascal Klein&thinsp;&mdash;&thinsp;Graphic &amp; web design professional">, I lead the open source font project Open Baskerville.</p>
+
+<p>When setting up the project, Pascal has made some clever choices. Firstly, he provides an attractive looking <a href="http://klepas.org/openbaskerville/" title="Open Baskerville">website</a> that explains the project, and links to the source files. Then, he has put the <a href="https://github.com/klepas/open-baskerville/">source files on GitHub</a>, a code sharing site usually used for the development of software code. GitHub offers tools and practices for versioning files and sharing changes, that can be leveraged for this project. Another good move by Pascal: he does not put the Fontlab file online. Instead, he converts the font to an open file format called <a href="http://unifiedfontobject.org/" title="Unified Font Object">UFO</a>. A ufo file is actually a folder, that represents the typeface as a whole lot of plain text files, exactly the kind of file that is easily shared and processed through tools like GitHub, and readable by both the popular proprietary font editors and the open source font editor FontForge</p>
+
+<p>When I come across the project, I ask my friend <a href="http://robmientjes.nl/" title="Hand-crafted pixels and top-shelf touch interfaces by Rob Mientjes">Rob</a> to explain to me what GitHub is. It is a code hosting site that focuses on facilitating the collaboration between developers.</p>
+
+<p>Rob also explains to me that GitHub is built upon <a href="http://git-scm.com/">Git</a>. At the time one of the few human beings with the overlapping skill sets of knowing how to use Git and how to design type, Rob teaches me the basics of git in the cafeteria of the art school. Git is built upon an amazing premise: while traditional development is based on centralised repositories, Git’s development model is distributed. Every clone of a repository becomes a bona fide repository in itself. Whichever repository is the main one is but a social convention. Git turns the traditional model on his head, and makes the development of software much more akin to the development of culture: a distributed, abundant process.</p>
+
+<p>Ever since I have been working on Open Baskerville, trying not just to make a good font, but to come up with workflows that can be re-used for other open font projects. On the level of workflow, we still have a long way to go before typographic collaboration is easily accessible. The git system used to track the changes on Open Baskerville is developed for programming code and is therefore not always easy to use for designers. But the underlying foundation is very solid, and it plays together well with the UFO format. Because Git and UFO are open, it is well imaginable that a plugin can be written for a font-editor that interfaces with git, so that you can track your changes in the font editor, end send them back to the repository that you pulled the font from.</p>
+
+<p>One feature that I figure to be fundamental to be able to convince other designers of the potential of a git-based workflow is a visualisation of the typeface and the changes being made to it. I have reached out to GitHub. I get in touch with Tom Werner, and the following morning there is a mail in my mailbox.</p>
+
+<p>Github’s intervention is important in showing the potential of Git and Github for other kinds of projects than just software development. It also shows the power of the UFO format: it is much easier to write this kind of visualisation when you are dealing with an open, hackable format like UFO. We are only just beginning to explore the potential of these new models of collaboration.</p>
+
+<p>Micah Rich <a href="http://www.netmagazine.com/features/top-10-open-source-web-fonts" title="The top 10 open source web fonts | Feature | .net magazine">calls</a> Open Baskerville a major inspiration for the <a href="http://www.theleagueofmoveabletype.com/" title="The League of Moveable Type">League of Movable Type</a> (they are <a href="https://github.com/theleagueof">on GitHub too</a>); OSP are working on their own code hosting called Visual Culture that is going to power new releases for their <a href="http://osp.constantvzw.org/foundry/" title="OSP-foundry">foundry</a>.</p>
+
+<a href="https://github.com/klepas/open-baskerville/tree/master/OpenBaskerville.ufo" title=""><img src="/and/assets/scaled/to/490/wide/and/called/github_ufo_preview.png" alt="You see a screenshot from the GitHub interface. It consists of a file listing of the contents of a UFO folder called OpenBaskerville.ufo. Below extends a preview of all the glyphs contained within this UFO." title="" style="width:490px;height:1175px;"></a>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Figuring Out Fontforge-Python’s Representation of Postscript Curves</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/figuring-out-fontforge-pythons-representation-of-postscript-curves" />
+    <id>tag:i.liketightpants.net,2012:/and//1.51</id>
+
+    <published>2012-06-03T15:06:30Z</published>
+    <updated>2012-06-03T18:07:20Z</updated>
+
+    <summary>A young man poses to the right of a whiteboard on which is constructed a path of curves and lines.</summary>
+    <author>
+        <name>tellyou</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p><a href="/and/assets/called/i_like_tightpants_and_figuring_out_fontforge_pythons_representation_of_postscript_curves_2.jpg">
+  <img src="/and/assets/scaled/to/830/wide/and/called/i_like_tightpants_and_figuring_out_fontforge_pythons_representation_of_postscript_curves_2.jpg" style="width:830;height:555;" alt="You see a young man posing to the right of a whiteboard, looking into the camera. He holds a marker in his right hand as if he is writing, his right foot is planted on the whiteboards horizontal support. He wears black leggings and a salmon pink sleeveless t-shirt. On the whiteboard is constructed a path of curves and lines, showing also the bézier control points. All the points are marked either offCurve or onCurve." title="" />
+</a></p>
+
+<p class="byline">At the OSP workshop <a href="http://osp.schr.fr/workshop/write-me-a-shadow/raw/latest/specimen/index.html" title="Write me a shadow. OSP @ ESAD Valence">Write me a shadow</a>, ESAD Valence (FR)</p>
+
+<p>When <a href="http://www.ludi.be/" title="ludi">Ludi</a> and me prepare for a workshop on Open Source typography in Valence, we put together a batch of Python scripts for Fontforge. Among which a port of <a href="http://i.liketightpants.net/and/programmatically-manipulating-typefaces#comment-168" title="I like tight pants and programmatically manipulating typefaces">the script</a> that John and me made in Robofab for a previous workshop, that straightens curves by removing the bézier handles.</p>
+
+<p>Internally, many typefaces are constructed with PostScript, which can be seen as a set of drawing instructions to an imaginary pen.</p>
+
+<p>Postscript has three basic drawing instructions:<br/>
+<em>moveto(x, y)</em>: move the pen to this point to start drawing a path<br/>
+<em>lineto(x,y)</em>: draw a line from the previous point to the point x,y<br/>
+<em>curveto(x1,y1,x2,y2,x3,y3)</em>: draw a curve from the previous point to the point x3,y3, using x1,y1 and x2,y2 as bézier handles, off curve points that control the shape of the curve.</p>
+
+<p>It turns out that Fontforge-Python represents PostScript contours as a set of points. Fair enough. The points have a type property, which can be either onCurve or offCurve. So like in the Robofab script, we first try to remove all the offCurve points.</p>
+
+<p>This turns out to be too radical: a lot more points are removed then seems necessary. Prince Charmant <a href="http://www.oep-h.com/" title="OEP-H">Pierre Marchand</a> to the rescue. It turns out that points that are normally created as part of a lineto, are also called offCurve by FontForge, even if they are strictly speaking neither on or off a curve.</p>
+
+<p>So, how to keep the points called offCurve that are actually part of the contours, and throw away the others? We know that if a point is onCurve, it will always be followed y two control points (offCurve). So instead of checking for offCurves, we simply skip the next two points every time we encounter an onCurve.</p>
+
+<p>Like this:</p>
+
+
+<pre>font = fontforge.activeFont()
+
+for glyph in font.glyphs():
+   new_contours = []
+   for contour in glyph.layers[1]:
+       new_contour = []
+       i = 0
+       while i &lt; len(contour):
+           p = contour[i]
+           if p.on_curve:
+               i += 2
+           new_contour.append((p.x, p.y))
+           i += 1
+       new_contours.append(new_contour)
+   pen = glyph.glyphPen()
+   for to_draw in new_contours:
+       pen.moveTo(to_draw[0])
+       for i in to_draw[1:]:
+           pen.lineTo(i)
+       pen.closePath()</pre>
+
+<p>This won’t work, by the way, if you are dealing with TrueType curves. But that’s a different story altogether.</p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Programmatically manipulating typefaces</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/programmatically-manipulating-typefaces" />
+    <id>tag:i.liketightpants.net,2012:/and//1.50</id>
+
+    <published>2012-05-02T10:43:36Z</published>
+    <updated>2012-06-01T08:15:41Z</updated>
+
+    <summary>The structure of a typeface is predictable enough to make it fun to manipulate it with computer scripts.</summary>
+    <author>
+        <name>bnf</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<style>
+@font-face {
+    font-family: 'LeagueGothicRomanRomanRotated';
+    src: url('/and/assets/called/leaguegothic-rotated-webfont.eot');
+    src: url('/and/assets/called/leaguegothic-rotated-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/and/assets/called/leaguegothic-rotated-webfont.woff') format('woff'),
+         url('/and/assets/called/leaguegothic-rotated-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.rotate_example {
+  font-family: 'LeagueGothicRomanRomanRotated';
+  font-size: 36px;
+  line-height: 36px;
+}
+
+@font-face {
+    font-family: 'URWPalladioLBoldRegular';
+    src: url('/and/assets/called/urwpalladiol-bold-webfont.eot');
+    src: url('/and/assets/called/urwpalladiol-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/and/assets/called/urwpalladiol-bold-webfont.woff') format('woff'),
+         url('/and/assets/called/urwpalladiol-bold-webfont.ttf') format('truetype'),
+         url('/and/assets/called/urwpalladiol-bold-webfont.svg#URWPalladioLBoldRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'URWPalladioLStraightCurvesBRg';
+    src: url('/and/assets/called/urwpalladiol-straightcurves-bold-webfont.eot');
+    src: url('/and/assets/called/urwpalladiol-straightcurves-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/and/assets/called/urwpalladiol-straightcurves-bold-webfont.woff') format('woff'),
+         url('/and/assets/called/urwpalladiol-straightcurves-bold-webfont.ttf') format('truetype'),
+         url('/and/assets/called/urwpalladiol-straightcurves-bold-webfont.svg#URWPalladioLStraightCurvesBRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.palladio { font-family: 'URWPalladioLBoldRegular'; font-size: 36px; line-height: 48px; }
+.palladio-straight { font-family: 'URWPalladioLStraightCurvesBRg'; font-size: 36px; line-height: 48px; }
+
+@font-face {
+  font-family: 'jaja-v';
+  font-weight: normal;
+  src: url('/and/assets/called/jaja-v.otf');
+}
+
+@font-face {
+  font-family: 'jaja-h';
+  font-weight: normal;
+  src: url('/and/assets/called/jaja-h.otf');
+}
+
+</style>
+
+<pre class="rotate_example">#!/usr/bin/env python
+
+# usage: $ python rotate-font-fontforge.py "League Gothic.ufo" League-Gothic-tranformed.ufo
+
+import fontforge
+import psMat
+import math
+import sys
+
+matrix = psMat.rotate(math.radians(45))
+
+font = fontforge.open(sys.argv[1])
+
+for glyph in font.glyphs():
+    glyph.transform(matrix)
+
+font.generate(sys.argv[2])</pre>
+
+<p>If you like programming, chances are you like typefaces. <a href="http://chneukirchen.org/trivium/" title="Trivium">My favourite tumblelog</a>, by developer Christian Neukirchen, often links to type design projects. As does <a href="http://news.ycombinator.com/" title="Hacker News">Hacker News</a>. And programming demigod <a href="http://www-cs-faculty.stanford.edu/~uno/" title="Don Knuth's Home Page">Donald Knuth</a> took time off from his epos The Art of Computer Programming to develop his own <a href="http://en.wikipedia.org/wiki/Computer_Modern" title="Computer Modern - Wikipedia, the free encyclopedia">parametric typeface</a>. And the <a href="http://en.wikipedia.org/wiki/METAFONT" title="Metafont - Wikipedia, the free encyclopedia">language that describes</a> it. And an accompanying <a href="http://en.wikipedia.org/wiki/TeX" title="TeX - Wikipedia, the free encyclopedia">lay out engine</a>.</p>
+
+<p>Typefaces are wonderful hybrids between design and tool. More so than any other type of design they are made to be reused. And more so than any other type of design they have a predictable structure (a font made out of glyphs made out of contours made out of points), that makes them especially suitable to be manipulated through computer programs of your own devising.</p>
+
+<p>Yet if you haven’t worked within the confines of the type design world, chances are you have not yet experienced exactly how straightforward it is to work with typefaces programmatically, nowadays.</p>
+
+<p>Yes, your typical binary font file is quite messy to open up and to play around with. That is why it is nice if you can use a programming library to access them. But in addition we now have the <a href="http://unifiedfontobject.org/" title="Unified Font Object">UFO file format</a>, which is meant as an open, hackable file format for fonts. And there exist two libraries that really make it really easy to deal with font objects in a high level fashion: <a href="http://robofab.org/" title="RoboFab">Robofab</a> and <a href="http://fontforge.sourceforge.net/python.html" title="Writing python scripts to change fonts in FontForge">FontForge-python</a>. They allow you to iterate over all the glyphs, contours and points in your font in order to change them around.</p>
+
+<p>Both libraries are written in the Python language. There is a historical reason for this. The typographers <a href="http://www.letterror.com/" title="LettError Type: Fonts and Typography">Just van Rossum and Erik van Blokland</a> are pioneers in scripting for type design. Their choice to go with Python has contributed to making it the go to scripting language in the type design world.</p>
+
+<p>I can imagine that reasons for choosing Python include that it is straightforward and high level—and in being white space sensitive it is arguably one of the few languages which is opiniated typographically! I imagine it also played a role that Just van Rossum is the brother of Guido van Rossum, who wrote the Python language.</p>
+
+<p>If you already know Python, you are in luck. If you know programming, but do not know Python, it is pretty easy to pick up. And if you do not write programs yet, Python is a great language to get started as it is quite straightforward and consistent.</p>
+
+<p>RoboFab is made by the aforementioned Dutch duo, joined by <a href="http://talleming.com/" title="Tal Leming">Tal Leming</a>. It started its life as a scripting language for Fontlab, one of the more popular commercial font editors (and for quite some time the only one). But since the inception of the UFO file format, you can use the RoboFab library in your stand alone python scripts.</p>
+
+<p>A downside to RoboFab is that it will only work with UFO fonts. In this sense the Python extension to FontForge is more flexible. It makes a lot of the functionality of <a href="http://fontforge.sourceforge.net/" title="FontForge">FontForge</a> available to Python: FontForge is the main open source font editor. With python-fontforge you can open and save in a slew of different font formats. It is also easy to export individual glyphs to images, or to import vector shapes into your font.</p>
+
+<p>A downside to python-fontforge is that it might be tricky to install. On Linux it is usually quite easy (Debian/ubuntu: <code>sudo apt-get install fontforge python-fontforge</code>). On the Mac it used to be more hard: installing the Python extension through Homebrew is <a href="https://github.com/mxcl/homebrew/issues/4689">not working out yet</a>. Luckily, developer Jeff Escelante recently reached out to me over this issue. He is now providing a <a href="https://github.com/jenius/Fontforge-Installer">Fontforge installer</a> for Mac OSX that provides the python extension. But on Windows, I am not sure how feasible it is to get python-fontforge working? If someone could re-package the whole thing is an easy_installable package that would be wonderful.</p>
+
+<p>In implementation the two libraries are quite similar. Imagine we have downloaded the open source League Gothic in UFO format (<a href="https://github.com/theleagueof/league-gothic/zipball/master">link!</a> The ufo is in the source folder) and you put the UFO in the same folder as your python script.</p>
+
+<p>Here is how you load in a font and print the names of the glyphs:</p>
+
+<p>Fontforge</p>
+
+<pre>#!/usr/bin/env python
+
+# usage: $ python print-glyphs-fontforge.py "League-Gothic.ufo"
+
+import fontforge
+import sys
+
+font = fontforge.open(sys.argv[1])
+
+for glyph in font.glyphs():
+    print glyph
+</pre>
+
+<p>Robofab</p>
+
+<pre>#!/usr/bin/env python
+
+# usage: $ python print-glyphs-robofab.py "League Gothic.ufo"
+
+from robofab.world import RFont
+import sys
+
+font = RFont(sys.argv[1])
+
+for glyph in font:
+    print glyph.name
+</pre>
+
+<p>And this is to rotate each glyph 45 degrees and save to a new font.</p>
+
+<p>Fontforge:</p>
+
+<pre>#!/usr/bin/env python
+
+# usage: $ python rotate-font-fontforge.py "League Gothic.ufo" League-Gothic-tranformed.ufo
+
+import fontforge
+import psMat
+import math
+import sys
+
+matrix = psMat.rotate(math.radians(45))
+
+font = fontforge.open(sys.argv[1])
+
+for glyph in font.glyphs():
+    glyph.transform(matrix)
+
+font.generate(sys.argv[2])
+</pre>
+
+<p>Robofab:</p>
+
+<pre>#!/usr/bin/env python
+
+# usage: $ python rotate-font.py "League Gothic.ufo" League-Gothic-tranformed.ufo
+
+from robofab.world import RFont
+from fontTools.misc.transform import Identity
+import math
+import sys
+
+matrix = Identity
+matrix = matrix.rotate(math.radians(45))
+
+font = RFont(sys.argv[1])
+
+for glyph in font:
+    glyph.transform(matrix)
+
+font.save(sys.argv[2])
+</pre>
+
+<div id="aside"><p>This article started out as a presentation for <a href="http://montrealpython.org/">Montreal Python</a>. It got finished on the occasion of the OSP workshops <a href="http://osp.schr.fr/workshop/morphologic/" title="OSP :: Workshop :: OSP Morphologic @ Merz Akademie, Stuttgart">Morphologic</a> at the Merz Akademie, Stuttgart and <a href="http://osp.schr.fr/workshop/write-me-a-shadow/raw/latest/specimen/index.html" title="Write me a shadow. OSP @ ESAD Valence">Write me a shadow</a>, at the ESAD Valence.</p></div>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Drawing logo’s</title>
@@ -351,7 +715,7 @@ if __name__ == "__main__":
     <id>tag:i.liketightpants.net,2012:/and//1.40</id>
 
     <published>2012-01-15T23:46:09Z</published>
-    <updated>2012-04-16T12:49:45Z</updated>
+    <updated>2012-05-06T22:08:54Z</updated>
 
     <summary>Using a set of unix commands to lay out Jenny Holzer tweets.</summary>
     <author>
@@ -391,7 +755,7 @@ if __name__ == "__main__":
 
 <p>Try:</p>
 
-<pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\(.*\)"}]/\1/g'</pre>
+<pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\([^"]*\)".*}]/\1/g'</pre>
 
 <p>The output is:</p>
 
@@ -401,7 +765,7 @@ if __name__ == "__main__":
 
 <p>Now we have the plain text as output, which we could use as input for another program. For example:</p>
 
-<pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\(.*\)"}]/\1/g' | figlet</pre>
+<pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\([^"]*\)".*}]/\1/g' | figlet</pre>
 
 <pre> ____  _______  __
 / ___|| ____\ \/ /
@@ -436,7 +800,7 @@ if __name__ == "__main__":
 
 <p>In fact, pango-view, spoils the fun somewhat, because it doesn’t let you use it as part of a pipeline. We’ll have to store the Jenny tweet into a text file:</p>
 
-<pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\(.*\)"}]/\1/g' > jennytweet.txt</pre>
+<pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\([^"]*\)".*}]/\1/g' > jennytweet.txt</pre>
 
 <p>The <code>></code> lets you store text output into a file. So we are storing the output of are pipeline, the plain text tweet, into the file <code>jennytweet.txt</code>.</p>
 
@@ -511,207 +875,6 @@ brew install poster</pre>
 <li>is at the nexus of private introspection and public dissemination</li>
 <li>readily explores all available technology in order to do so.</li>
 </ul><p id="jennyholzer">Two more examples come to mind: Jenny Holzer, whose truisms always precipitate on the edge between worn clichés and individual confessions, and who claims public space through all media for these inward looking statements.</p><p>And Prince. Prince, when recording the vocals for the Sign o’ the times album, would do so in the control room of the studio, sending away all engineers after they prepared the session, leaving him alone with the microphone to sing. I am struck by the contrast between this highly inward looking ritual, and its imprint as an artifact that is reproduced literally millions of times.</p><h2>1: Why are Bowie and Nietzsche similar?</h2><p>In the early 1970ies David Bowie starts to refer to Friedrich Nietzsche in his lyrics, on both his albums ‘the Man Who Sold the World’ and ‘Hunky Dory’. In the song Quicksand he sings: I’m not a prophet or a stone age man, just a mortal with potential of a superman’. And: ‘Should I kiss the viper’s fang, and herald loud the death of man?’</p><p>The direct successor to these records, the 1972 ‘the Rise and Fall of Ziggy Stardust and the Spiders from Mars’ seems to forego Nietzsche references for images of rock stardom. </p><p>In a way, though, this album is much more Nietzschean than its predecessors. </p><p>The narrative of a rockstar from space making it on earth before his eventual fall, can be seen as a more catchy instance of the supermen of the previous records. Moreover, the work can be directly compared to Nietzsche’s ‘Also sprach Zarathustra’ in which a prophet comes down from his cave to do his teachings to the public.</p><p>Both works can be read as thinly veiled autobiographies, where the choice of an unusual medium verse (Nietzsche) and rock (Bowie) allows the author to put in a lot of his ideas and fears and aspirations, that might otherwise have come across as megalomania or sacrilege. The process of mystification through the invention of the characters of Ziggy and Zarathustra allows the authors to take the freedom to reinvent themselves. Bowie later said: ‘it was like rewriting myself, really’. </p><h2>2: Why are Bowie and Nietzsche different?</h2><p>When looking back on the Ziggy project Bowie stresses the aspect of embracing the present:</p><p>“Writers like George Steiner had nailed the sexy term post-culture and it seemed a jolly good idea to join up the dots for rock. The main platform would be, other than shoes, ‘we are the future, now’ and the one way of celebrating that was to create it by the only means at our disposal. With, of course, a rock ‘n’ roll band.”</p><p>For Bowie the future was now. Whereas for Nietzsche the future was still clearly in the future. After writing Zarathustra he had conceded that his philosophy would not be read and appreciated in his own time. His subsequent book ‘Jenseits von gut und böse’ has as its subtitle: prelude to a philosophy of the future. He also thinks it will not be him that is going to fulfill philosophy’s potential. He sketches the need for ‘new philosophers’: ‘in forerunners, in men of the future, who in the present shall fix the constraints and fasten the knots which will compel millenniums to take NEW paths’.</p><p>Man of the future, acting in the present. An apt description of Ziggy.</p><p>The difference in self-image mirrors the difference in reception by their contemporaries. Bowie managed to find a massive crowd, Nietzsche never did during his lifetime. And although both men went through difficulties following the release of their seminal works, Bowie ended up on top. Nietzsche went insane.</p><h2>3: Why could Bowie do what Nietzsche could not?</h2><p>That Nietzsche had to leave for the future, what Bowie could achieve in his own time, can be attributed to several factors.</p><p>In the first place, Nietzsche was alone. And nobody can do anything alone.</p><p>We have already touched on the enabling role of modern mass media. This for me is exemplified by by the contrast between the highly inward looking ritual of the recording session, and its imprint as an artifact (the record) that is meant to be reproduced literally millions of times. Prince, when recording the vocals for the Sign o’ the times album, would do so in the control room of the studio, sending away all engineers after they prepared the session, leaving him alone with the microphone to sing. </p><p>Yet there is another important aspect: the rise of interdisciplinary practice.</p><p>Both men possessed (and in Bowie’s case still possess) a range of skills.</p><p>Bowie was skilled both with words and with music, and had experience as an actor. With the Ziggy project he added his own talents to these of a host of others in a decidedly transdisciplinary endeavour. Bowie contributed songs, words, voice and looks. The musicians, the producer and the engineer contributed further to the sound. The photographic look was crafted by Mick Rock, the suits were designed by a Japanese fashion designer, and even Bowie’s hair style was conceived especially for him by his hairdresser. The early shows were inspired by the ‘Exploding plastic inevitable’ multi media shows Warhol made with The Velvet Underground. The shows featured elaborate set designs, projections and a mime group.</p><p>Nietzsche apparently had a broad range of talents and interests as well. He was quite musical and wrote Lieder. Next to that, ‘Also Sprach Zarathustra’ is full of references to dance. In her book: ‘Nietzsche’s Dancers: Isadora Duncan, Martha Graham, and the Revaluation of Christian Values’ Kimerer L. LaMothe argues that these references should not be seen as metaphors: dance was important to Nietzsche in its own right.</p><p>In his work, however, there was no way yet for these different media to fruition. It is just language that has to pull it off.</p><p>The world just wasn’t transdisciplinary yet in the 19th century. It would take the 20th century avant-garde to change that.</p><p>A question I would like to ask is if language alone could ever suffice for the kind of questions Bowie and Nietzsche were asking. There is a maniacal element to their thinking which I suspect can only really be sublimated in a performative setting. I know for my self, at least, that I talk better when I perform.</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Designer drugs</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/designer-drugs" />
-    <id>tag:i.liketightpants.net,2011:/and//1.38</id>
-
-    <published>2011-12-29T21:44:17Z</published>
-    <updated>2012-01-08T16:15:14Z</updated>
-
-    <summary>You see different kinds of purple glitter emerge from little tube shaped containers spread out over herringbone parquet. The picture is lit by a flash.</summary>
-    <author>
-        <name>glit</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><a href="/and/assets/called/designer_drugs.jpg"><img src="/and/assets/scaled/to/830/wide/and/called/designer_drugs.jpg" alt="You see different kinds of purple glitter emerge from little tube shaped containers spread out over herringbone parquet. The picture is lit by a flash" title="" style="width:830px;height:553px;" /></a></p>
-
-<p>We wish you a happy new year from Paris!</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>I have relocated to Brussels</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/i-have-relocated-to-brussels" />
-    <id>tag:i.liketightpants.net,2011:/and//1.37</id>
-
-    <published>2011-12-17T03:17:53Z</published>
-    <updated>2011-12-17T04:14:01Z</updated>
-
-    <summary>Fabien is making his way through part 2 of Absolute Beginners: Unix for Art Students. The architecture here is great. And on sundays we debate who cleans the marble.</summary>
-    <author>
-        <name>glit</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><a href="/and/assets/called/fabien_in_brussels.jpg"><img src="/and/assets/scaled/to/830/wide/and/called/fabien_in_brussels.jpg" alt="You see a young man sitting at the bottom of a staircase. The staircase ends in a marble piece and the floor is marble as well. The young man looks into the screen of his laptop." title="" /></a></p>
-
-<p>This is Fabien. He is making his way through <a href="/and/absolute-beginners-unix-for-art-students-part-2" title="I like tight pants and absolute beginners: unix for art students – part 2">part 2</a> of <a href="/and/absolute-beginners-unix-for-art-students-part-1" title="I like tight pants and absolute beginners: unix for art students – part 1">Absolute Beginners: Unix for Art Students</a>. Fabien is an art student, in graphic design, at <a href="http://www.lacambre.be/" title=".: LA CAMBRE / ECOLE NATIONALE SUPERIEURE DES ARTS VISUELS :.">La Cambre</a>, the French speaking art academy in Brussels.</p>
-
-<p>The architecture here is great. Unlike, for example, Paris, where most buildings are larger apartment complexes, Brussels consists of “maisons de maitre”, large houses that were built by the bourgeoisie to house a family and their servants.</p>
-
-<p>I live in such a house with a group of housemates. We are our own servants, so we use the food elevator to bring the meal we cook up from the kitchen to the salon. And on Sundays we debate who cleans the marble.</p>
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Absolute Beginners: Unix for Art Students – Part 2</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-2" />
-    <id>tag:i.liketightpants.net,2011:/and//1.35</id>
-
-    <published>2011-12-02T01:16:05Z</published>
-    <updated>2011-12-08T14:46:36Z</updated>
-
-    <summary>This is how you use the terminal.</summary>
-    <author>
-        <name>bnf</name>
-        
-    </author>
-    
-        <category term="Absolute Beginners: Unix for Art Students" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><a href="/and/assets/called/absolute_beginners_figlet.png"><img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_figlet.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, showing an ascii art that reads: “Absolute beginners”." title="" style="width:830px;height:518px;" /></a></p>
-
-<p>If I type</p>
-
-<pre>$ figlet absolute beginners</pre>
-
-<p>into my terminal, this is what I get:</p>
-
-<pre>       _               _       _       
-  __ _| |__  ___  ___ | |_   _| |_ ___ 
- / _` | '_ \/ __|/ _ \| | | | | __/ _ \
-| (_| | |_) \__ \ (_) | | |_| | ||  __/
- \__,_|_.__/|___/\___/|_|\__,_|\__\___|
-                                       
- _                _                           
-| |__   ___  __ _(_)_ __  _ __   ___ _ __ ___ 
-| '_ \ / _ \/ _` | | '_ \| '_ \ / _ \ '__/ __|
-| |_) |  __/ (_| | | | | | | | |  __/ |  \__ \
-|_.__/ \___|\__, |_|_| |_|_| |_|\___|_|  |___/
-            |___/                             
-</pre>
-
-<p>Figlet has proved to be a gateway drug for extended terminal usage. Figlet is not on your computer by default though. Even though your mac comes with a lot of unix software already, not a lot of it is graphics software. To install new software you need to install what is called a package manager, as explained in <a href="/and/installing-compilers">I like tight pants and installing compilers</a>. This article will continue with an introduction that tells you how to use the terminal!</p>
-
-<p>In your Applications folder, choose Accessories, and open Terminal. Now you can talk with your computer. He can tell you who you are. Type:</p>
-
-<pre>$ whoami</pre>
-
-<p>(without the $ and the space, that’s just a convention to denote text that you enter into the terminal). And press enter. The computer outputs your username! The computer also knows where you are, at least where you are on the hard disk. Enter:</p>
-
-<pre>$ pwd</pre>
-
-<p>And the computer will repond with <code>/Users/yourusername</code>. It would make sense if you could say <code>whereami</code> but consistency is not Unix greatest strength. You are now in what is called your home folder.<br />
-You can always return to your home folder by typing:</p>
-
-<pre>$ cd</pre>
-
-<p><code>cd</code> is also the commando to use to go to another folder. You can use the tab button to make this go quicker.<br/>
-Type, by example:</p>
-
-<pre>$ cd Do(tab)</pre>
-
-<p>You will see</p>
-
-<pre>Documents/ Downloads/</pre>
-
-<p>Complete further to</p>
-
-<pre>$ cd Doc(tab)</pre>
-
-<p>And your line will be extended to form:</p>
-
-<pre>$ cd Documents/</pre>
-
-<p>When you push enter, you will arrive into the folder Documents. You can check this by again typing</p>
-
-<pre>$ pwd</pre>
-
-<p>To see what files are part of the folder you are in:</p>
-
-<pre>$ ls</pre>
-
-<p>You can also check this in the finder, if you want. You can use the terminal and the finder at the same time. This can make it easier to learn what is going on. You can launch the finder from the terminal.</p>
-
-<pre>$ open .</pre>
-
-<p><code>.</code> refers to the current folder. <code>open .</code> will open the current folder with the associated program, which is the finder.</p>
-
-<p>To make a new empty file:</p>
-
-<pre>$ touch my_text_file.txt</pre>
-
-<p>If you still have the Finder open, you will see it appear! To open with the text editor:</p>
-
-<pre>$ open mijn_tekst_bestand.txt</pre>
-
-<p>These are the basics of navigating around the terminal.</p>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Installing compilers</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/installing-compilers" />
-    <id>tag:i.liketightpants.net,2011:/and//1.36</id>
-
-    <published>2011-12-01T14:13:57Z</published>
-    <updated>2011-12-08T14:45:01Z</updated>
-
-    <summary>To easily install new unix graphics software, you need a package manager. Homebrew is the best option for the Mac. For Homebrew you need to install a compiler, that&apos;s part of the lifestyle.</summary>
-    <author>
-        <name>tellyou</name>
-        
-    </author>
-    
-        <category term="Absolute Beginners: Unix for Art Students" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><a href="/and/assets/called/absolute_beginners_homebrew.png"><img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_homebrew.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, showing the output of installing software through the homebrew package manager." title="" style="width:830px;height:518px;" /></a></p>
-
-<p>We will install <a href="http://mxcl.github.com/homebrew/" title="Homebrew — MacPorts driving you to drink? Try Homebrew!">homebrew</a> to make it easy to install software. One of the upsides to installing homebrew is that you are also forced to install a compiler. A compiler is, <a href="/and/absolute-beginners-unix-for-art-students-part-1">like glit says</a>, part of this lifestyle: there are many other ways to install software than through homebrew, but most of them require a working compiler setup.</p>
-
-<p>At the <a href="http://www.kabk.nl/" title="Royal Academy of Art, The Hague (NL) | KABK">KABK</a> we installed Homebrow on a variety of Macs. The instructions differ slightly from version to version.</p>
-
-<p>For homebrew, you need an Intel Mac with OS X 10.5 (Leopard) or newer. To install, we do as instructed on the website: there is a command</p>
-
-<pre>/usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"</pre>
-
-<p>Copy and paste it into a terminal window and press enter.</p>
-
-<p>When the command has run, homebrew tells you to install XCode and Xquartz.</p>
-
-<p>To download XCode for 10.5 or 10.6, you need to become a <a href="http://developer.apple.com/" title="Apple Developer">registered Apple Developer</a>. The site makes it look like you need to pay, but you can register for free.<br/>
-For 10.5 you can download Xcode 3.1.4<br/>
-For 10.6 can you download Xcode 3.2.6</p>
-
-<p>For 10.7 you can download XCode 4.2 from the App store. This will put a program in your Applications folder that will install XCode. Run this too. Since this version of XCode doesn’t come with the time tested GCC compiler, and some software (such as ffmpeg) will refuse to compile on the newer compiler. That’s why you also need to install GCC, <a href="https://github.com/kennethreitz/osx-gcc-installer#readme">available here</a> (“Pre-built binary”).</p>
-
-<p>With <a href="http://xquartz.macosforge.org/trac/wiki/Releases" title="Releases – XQuartz">XQuartz</a> you install a compatibility layer for Unix software that requires a graphical user interface. Follow the instructions on their website.</p>
-
-<p>With all this installed, you can install your first unix software package: git</p>
-
-<pre>brew install git</pre>
-
-<p>Git is needed to keep your homebrew installation up to date. And now you are all set!</p>]]>
         
     </content>
 </entry>
