@@ -15,6 +15,7 @@
 <script type="text/javascript" src="/and/mt.js"></script>
 
 
+    <title>I like tight pants and making unix programs</title>
     <link rel="stylesheet" href="/and/style/in/tellyou.css" type="text/css" />
     <link rel="prev bookmark" href="/and/the-thinking-body" title="I like tight pants and the thinking body" />
     <link rel="next bookmark" href="/and/downloading-funghi" title="I like tight pants and downloading funghi, from wikimedia commons" />
@@ -34,7 +35,6 @@
 </rdf:RDF>
 -->
 
-    <title>I like tight pants and making unix programs</title>
     <meta property="og:title" content="I like tight pants and making unix programs"/>
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="http://i.liketightpants.net/and/making-unix-programs"/>
@@ -151,15 +151,6 @@
   
   
 
-<!--
-  <h4>Shouts</h4>
-  <dl>
-    <dt>Article name could be very llong indeed</dt>
-    <dd>23 days ago - 23 likes</dd>
-    <dt>Article name could be very llong indeed</dt>
-    <dd>23 days ago - 23 likes</dd>
-  </dl>
--->  
   <hr />
   
   <h4>Other writers</h4>
@@ -233,7 +224,9 @@
      <!-- If comment doesn't have a top-level-parent -->
             
     <div id="comment-118" class="comment">
-    <p>Because of the modular nature and straightforward interface, it is easy to add commands to Unix with even the most basic of programming tools. This is Unix strength and it’s weakness. Unix has been able to grow organically, with different people adding different commands over time. This has made it versatile and comprehensive. Simultaneously, Unix is hugely inconsistent in naming commands, and commands often behave differently from each other in hard to predict ways. Also, newcomers are faced with the ballast of history: the name of the <code>less</code> program, that lets you page through the contents of a file, only makes sense if you know that its predecessor was called <code>more</code>.</p>
+    <p><br />
+<p>Because of the modular nature and straightforward interface, it is easy to add commands to Unix with even the most basic of programming tools. This is Unix strength and it’s weakness. Unix has been able to grow organically, with different people adding different commands over time. This has made it versatile and comprehensive. Simultaneously, Unix is hugely inconsistent in naming commands, and commands often behave differently from each other in hard to predict ways. Also, newcomers are faced with the ballast of history: the name of the <code>less</code> program, that lets you page through the contents of a file, only makes sense if you know that its predecessor was called <code>more</code>.</p><br />
+</p>
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/10/bowie-thumb-18x18-8.jpg" width="18" height="18"  />
           by tellyou - <a href="http://i.liketightpants.net/and/making-unix-programs.html#comment-118"><abbr class="published" title="2012-02-02T13:45:52+01:00">February  2, 2012  1:45 PM</abbr></a><br />
@@ -248,21 +241,22 @@
      <!-- If comment doesn't have a top-level-parent -->
             
     <div id="comment-119" class="comment">
-    <p>But as a an example, to turn the series of commands from <a href="/and/absolute-beginners-unix-for-art-students-part-3" rel="nofollow">our previous post</a> first into a script and then into a unix command, this is what we do. First we make a file called jenny.sh with the following contents:</p>
+    <p><br />
+<p>But as a an example, to turn the series of commands from <a href="/and/absolute-beginners-unix-for-art-students-part-3" rel="nofollow">our previous post</a> first into a script and then into a unix command, this is what we do. First we make a file called jenny.sh with the following contents:</p></p>
 
 <pre>#!/usr/bin/bash
-curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\(.*\)"}]/\1/g' > jennytweet-tmp.txt
+curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\(.*\)"}]/\1/g' &gt; jennytweet-tmp.txt
 pango-view -q -o jennytweet-laidout-tmp.ps --font "Futura 36" -w 400 jennytweet.txt
 poster -s 4.4 jennytweet-laidout-tmp.ps
 # remove temporary files:
 rm jennytweet-tmp.txt jennytweet-laidout-tmp.ps
 </pre>
 
-<p>This will print out the postscript of the resulting poster to the output, and then remove the needed intermediate files (the <code>rm</code> command removes files—you should take care with this one!). We can run it with the shell program, that interprets shell commands:</p>
+<p>This will print out the postscript of the resulting poster to the output, and then remove the needed intermediate files (the <code>rm</code> command removes files<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small; line-height: 16px; background-color: rgb(255, 255, 255);">—</span>you should take care with this one!). We can run it with the shell program, that interprets shell commands:</p>
 
 <pre>sh jenny.sh</pre>
 
-<p>(Of course, in most cases you would want to redirect the output to a postscript file: <pre>sh jenny.sh > jennytodayposter.ps</pre>.)</p>
+<p>(Of course, in most cases you would want to redirect the output to a postscript file: </p><pre>sh jenny.sh &gt; jennytodayposter.ps</pre>.)<p></p>
 
 <p>We can also make script executable, that is we give it the rights to be a program</p>
 
@@ -285,7 +279,6 @@ rm jennytweet-tmp.txt jennytweet-laidout-tmp.ps
 <p>We can now run the script from anywhere simply as</p>
 
 <pre>jenny</pre>
-
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/programmatically-thumb-18x18-6.png" width="18" height="18"  />
           by bnf - <a href="http://i.liketightpants.net/and/making-unix-programs.html#comment-119"><abbr class="published" title="2012-02-02T13:50:06+01:00">February  2, 2012  1:50 PM</abbr></a><br />
@@ -315,10 +308,12 @@ rm jennytweet-tmp.txt jennytweet-laidout-tmp.ps
      <!-- If comment doesn't have a top-level-parent -->
             
     <div id="comment-121" class="comment">
-    <p>Alternatively you could just keep the script local and add it as a command by adding an alias statement to your .bashrc such as:<br />
-alias jenny /home/erik/tools/jenny.sh</p>
+    <p>
+Alternatively you could just keep the script local and add it as a command by adding an alias statement to your .bashrc such as:
+alias jenny /home/erik/tools/jenny.sh
 
-<p>This way you don't accidentally forget to backup your diy tools when you reinstall your system or even need brew to create user writable bin paths.</p>
+<p>This way you don't accidentally forget to backup your diy tools when you reinstall your system or even need brew to create user writable bin paths.<br />
+</p></p>
     <p class="byline"> by <a title="http://www.rolfvandam.nl" href="http://www.rolfvandam.nl" rel="nofollow">Rolf van Dam</a> - <a href="http://i.liketightpants.net/and/making-unix-programs.html#comment-121"><abbr class="published" title="2012-02-03T17:10:19+01:00">February  3, 2012  5:10 PM</abbr></a><br />
     <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(121, 'Rolf van Dam')">Reply</a></p>
     </div>
@@ -329,17 +324,19 @@ alias jenny /home/erik/tools/jenny.sh</p>
             
             
     <div id="comment-133" class="comment comment-reply">
-    <p>If you don’t want to add aliases for each script, you can also add your own folder to the <em>path</em>, the list of folders unix searches for executables. Instead of a file called .bashrc, I use a file called <code>.profile</code>. I put this in my home folder. I add to it the line:</p>
+    <p>
+If you don’t want to add aliases for each script, you can also add your own folder to the <em>path</em>, the list of folders unix searches for executables. Instead of a file called .bashrc, I use a file called <code>.profile</code>. I put this in my home folder. I add to it the line:
 
-<pre>export PATH=~/bin:$PATH</pre>
+</p><pre>export PATH=~/bin:$PATH</pre><p>
 
 <p>I make a folder called <code>bin</code> inside my home folder, and all the scripts I put in here are automatically recognised.</p>
 
 <p>The first time you do this, you may need to run:</p>
 
-<pre>source ~/.profile</pre>
+</p><pre>source ~/.profile</pre><p>
 
-<p>Afterwards, it will load automatically when you login.</p>
+<p>Afterwards, it will load automatically when you login.<br />
+</p></p>
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/programmatically-thumb-18x18-6.png" width="18" height="18"  />
           by bnf - <a href="http://i.liketightpants.net/and/making-unix-programs.html#comment-133"><abbr class="published" title="2012-02-08T22:21:28+01:00">February  8, 2012 10:21 PM</abbr></a><br />
@@ -432,16 +429,7 @@ alias jenny /home/erik/tools/jenny.sh</p>
     </div>
   </div>
   <hr />
-  
-  <!--<h4>Related articles</h4>
-  <dl>
-  <dt>Article name could be very llong indeed</dt>
-  <dd>23 days ago - 23 likes</dd>
-  <dt>Article name could be very llong indeed</dt>
-  <dd>23 days ago - 23 likes</dd>
-  <dt>Article name could be very llong indeed</dt>
-  <dd>23 days ago - 23 likes</dd>
-  </dl>-->
+
 </div>
 
 <div class="grid_1">
@@ -483,11 +471,11 @@ alias jenny /home/erik/tools/jenny.sh</p>
   <h4>Latest Comments</h4>
         <ul>
         
-            <li><strong>bnf:</strong> If you don’t want to add aliases for each script, <a href="/and/making-unix-programs#comment-133" title="full comment on: Making unix programs">read more</a></li>
+            <li><strong>bnf:</strong>  If you don’t want to add aliases for each <a href="/and/making-unix-programs#comment-133" title="full comment on: Making unix programs">read more</a></li>
         
     
     
-            <li><strong>Rolf van Dam:</strong> Alternatively you could just keep the script local and add <a href="/and/making-unix-programs#comment-121" title="full comment on: Making unix programs">read more</a></li>
+            <li><strong>Rolf van Dam:</strong>  Alternatively you could just keep the script local and <a href="/and/making-unix-programs#comment-121" title="full comment on: Making unix programs">read more</a></li>
         
     
     
@@ -495,11 +483,11 @@ alias jenny /home/erik/tools/jenny.sh</p>
         
     
     
-            <li><strong>bnf:</strong> But as a an example, to turn the series of <a href="/and/making-unix-programs#comment-119" title="full comment on: Making unix programs">read more</a></li>
+            <li><strong>bnf:</strong>  But as a an example, to turn the series <a href="/and/making-unix-programs#comment-119" title="full comment on: Making unix programs">read more</a></li>
         
     
     
-            <li><strong>tellyou:</strong> Because of the modular nature and straightforward interface, it is <a href="/and/making-unix-programs#comment-118" title="full comment on: Making unix programs">read more</a></li>
+            <li><strong>tellyou:</strong>  Because of the modular nature and straightforward interface, it <a href="/and/making-unix-programs#comment-118" title="full comment on: Making unix programs">read more</a></li>
         
     
     
@@ -510,17 +498,6 @@ alias jenny /home/erik/tools/jenny.sh</p>
     
 
 
-<!--
-  <h4>Last 10 shouts</h4>
-  <dl>
-  <dt>Article name could be very llong indeed</dt>
-  <dd>23 days ago - 23 likes</dd>
-  <dt>Article name could be very llong indeed</dt>
-  <dd>23 days ago - 23 likes</dd>
-  <dt>Article name could be very llong indeed</dt>
-  <dd>23 days ago - 23 likes</dd>
-  </dl>
--->
 </div>
 </div>
 <div id="bar">&nbsp;</div>

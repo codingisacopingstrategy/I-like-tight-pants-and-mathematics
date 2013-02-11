@@ -4,7 +4,7 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2012-10-12T08:49:14Z</updated>
+    <updated>2013-02-11T08:14:12Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
 
@@ -14,7 +14,7 @@
     <id>tag:i.liketightpants.net,2012:/and//1.53</id>
 
     <published>2012-09-07T13:24:25Z</published>
-    <updated>2012-10-12T08:49:14Z</updated>
+    <updated>2013-02-11T08:14:12Z</updated>
 
     <summary>There is never much programming at the parties I go to. Seb says people like drugs and music and sex and that’s what brings them to parties.</summary>
     <author>
@@ -24,7 +24,13 @@
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><a href="http://i.liketightpants.net/and/assets/called/parties_in_paris.jpg"><img src="http://i.liketightpants.net/and/assets/scaled/to/830/wide/and/called/parties_in_paris.jpg" style="width:553px;830px;" title="" alt="You see a young man perched against a dresser, sitting on a medicine ball. He looks away. He is wearing a slate blazer, over a yellow shirt, screenprinted with a drawing of his guts and his chestcage. He wears gold colored leggings. His hair is combed over to the left." /></a></p>
+        <![CDATA[
+    
+    
+    
+    
+    
+    <p><a href="http://i.liketightpants.net/and/assets/called/parties_in_paris.jpg"><img src="http://i.liketightpants.net/and/assets/scaled/to/830/wide/and/called/parties_in_paris.jpg" style="width:553px;830px;" title="" alt="You see a young man perched against a dresser, sitting on a medicine ball. He looks away. He is wearing a slate blazer, over a yellow shirt, screenprinted with a drawing of his guts and his chestcage. He wears gold colored leggings. His hair is combed over to the left."></a></p>
 
 <p class="byline">Photo Laura Barbare</p>
 
@@ -34,7 +40,19 @@
 
 <p>I am wondering at what point it will become part of contemporary party culture and we’ll have live coding sessions at <a href="http://www.flashcocotte.com/" title="Flash Cocotte">Flash Cocotte</a>? Seb tells me that it’s not likely to happen. That people like <a href="/and/designer-drugs">drugs</a> and music and sex and that’s what brings them to parties. And that programming is too abstract and intellectual to appeal to people in a similar way.</p>
 
-<p>What do you think?</p>]]>
+<p>What do you think?</p>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ]]>
         
     </content>
 </entry>
@@ -45,7 +63,7 @@
     <id>tag:i.liketightpants.net,2012:/and//1.52</id>
 
     <published>2012-08-04T18:28:42Z</published>
-    <updated>2012-11-20T11:27:02Z</updated>
+    <updated>2012-12-25T22:33:19Z</updated>
 
     <summary>That&apos;s really cool that you guys are pushing for open source collaborative development of typefaces. I thought it was so cool that I stayed up late last night and hacked together some very simple UFO support on GitHub.</summary>
     <author>
@@ -85,7 +103,7 @@ h3.notwork {
 <h2 class="notwork">It doesn’t work!</h2>
 <h3 class="notwork">Github appears to have recently pulled this feature.</h3>
 
-<a href="https://github.com/klepas/open-baskerville/commit/559794180adbdd65327558886d3f4e4169539284" title="Fixed some youthful mistakes, tweaked a few curves. ·  5597941 · klepas/open-baskerville"><img src="/and/assets/scaled/to/830/wide/and/called/github_ufo_visual_diff.png" alt="You see two versions of a ¢ character: to the left, labelled ‘old’, a version with an upright bar, to the right, labelled ‘new’, a version with a slanted bar." title="" style="width:830px;height:329px;"></a>
+<a href="https://github.com/klepas/open-baskerville/commit/559794180adbdd65327558886d3f4e4169539284" title="Fixed some youthful mistakes, tweaked a few curves. ÃÂ·  5597941 ÃÂ· klepas/open-baskerville"><img src="/and/assets/scaled/to/830/wide/and/called/github_ufo_visual_diff.png" alt="You see two versions of a ¢ character: to the left, labelled ‘old’, a version with an upright bar, to the right, labelled ‘new’, a version with a slanted bar." title="" style="width:830px;height:329px;"></a>
 
 <blockquote>That's really cool that you guys are pushing for open source collaborative development of typefaces. I thought it was so cool that I stayed up late last night and hacked together some very simple UFO support on GitHub.</blockquote>
 
@@ -120,7 +138,7 @@ h3.notwork {
     <id>tag:i.liketightpants.net,2012:/and//1.51</id>
 
     <published>2012-06-03T15:06:30Z</published>
-    <updated>2012-06-03T18:07:20Z</updated>
+    <updated>2012-12-25T22:55:28Z</updated>
 
     <summary>A young man poses to the right of a whiteboard on which is constructed a path of curves and lines.</summary>
     <author>
@@ -186,7 +204,7 @@ for glyph in font.glyphs():
     <id>tag:i.liketightpants.net,2012:/and//1.50</id>
 
     <published>2012-05-02T10:43:36Z</published>
-    <updated>2012-06-01T08:15:41Z</updated>
+    <updated>2013-02-09T22:04:13Z</updated>
 
     <summary>The structure of a typeface is predictable enough to make it fun to manipulate it with computer scripts.</summary>
     <author>
@@ -196,7 +214,8 @@ for glyph in font.glyphs():
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<style>
+        <![CDATA[
+    <style>
 @font-face {
     font-family: 'LeagueGothicRomanRomanRotated';
     src: url('/and/assets/called/leaguegothic-rotated-webfont.eot');
@@ -278,7 +297,7 @@ font.generate(sys.argv[2])</pre>
 
 <p>Both libraries are written in the Python language. There is a historical reason for this. The typographers <a href="http://www.letterror.com/" title="LettError Type: Fonts and Typography">Just van Rossum and Erik van Blokland</a> are pioneers in scripting for type design. Their choice to go with Python has contributed to making it the go to scripting language in the type design world.</p>
 
-<p>I can imagine that reasons for choosing Python include that it is straightforward and high level—and in being white space sensitive it is arguably one of the few languages which is opiniated typographically! I imagine it also played a role that Just van Rossum is the brother of Guido van Rossum, who wrote the Python language.</p>
+<p>I can imagine that reasons for choosing Python include that it is straightforward and high level<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small; line-height: 16px; background-color: rgb(255, 255, 255);">—</span>and in being white space sensitive it is arguably one of the few languages which is opiniated typographically! I imagine it also played a role that Just van Rossum is the brother of Guido van Rossum, who wrote the Python language.</p>
 
 <p>If you already know Python, you are in luck. If you know programming, but do not know Python, it is pretty easy to pick up. And if you do not write programs yet, Python is a great language to get started as it is quite straightforward and consistent.</p>
 
@@ -367,7 +386,8 @@ for glyph in font:
 font.save(sys.argv[2])
 </pre>
 
-<div id="aside"><p>This article started out as a presentation for <a href="http://montrealpython.org/">Montreal Python</a>. It got finished on the occasion of the OSP workshops <a href="http://osp.schr.fr/workshop/morphologic/" title="OSP :: Workshop :: OSP Morphologic @ Merz Akademie, Stuttgart">Morphologic</a> at the Merz Akademie, Stuttgart and <a href="http://osp.schr.fr/workshop/write-me-a-shadow/raw/latest/specimen/index.html" title="Write me a shadow. OSP @ ESAD Valence">Write me a shadow</a>, at the ESAD Valence.</p></div>]]>
+
+    ]]>
         
     </content>
 </entry>
@@ -378,7 +398,7 @@ font.save(sys.argv[2])
     <id>tag:i.liketightpants.net,2012:/and//1.49</id>
 
     <published>2012-04-24T15:06:26Z</published>
-    <updated>2012-04-30T22:48:18Z</updated>
+    <updated>2012-12-25T22:57:57Z</updated>
 
     <summary>You see a frog with a crown, constructed of two yellow vertexes.</summary>
     <author>
@@ -480,7 +500,7 @@ endShape(CLOSE);</pre>]]>
 
 <p>Visual abstraction has becomes the norm in corporate branding since the post WWII period. In America, designers like <a href="http://www.paul-rand.com/foundation/identity/" title="Paul-Rand.com :: American Modernist :: 1914-1996">Paul Rand</a> and Saul Bass started to produce logos in flat colours and simple shapes that aimed to convey what the companies are about. It is this language that has stuck with us for logos ever since.</p>
 
-<p>Even though it might be useful to convey a brand message that is clear and straightforward, there is an obvious limit to the benefits of abstraction. As the brand values a logo is supposed to express get exceedingly open ended (‘innovation’, ‘integrity’), it becomes more difficult to visually evocate them. That is how we end up with logos built around isometric cubes and moebius strips, and with <a href="http://www.salon.com/1999/11/30/naming/" title="The name game -   Advertising - Salon.com">company names</a> like Agilent and Avilant.</p>
+<p>Even though it might be useful to convey a brand message that is clear and straightforward, there is an obvious limit to the benefits of abstraction. As the brand values a logo is supposed to express get exceedingly open ended (‘innovation’, ‘integrity’), it becomes more difficult to visually evocate them. That is how we end up with logos built around isometric cubes and moebius strips, and with <a href="http://www.salon.com/1999/11/30/naming/" title="The name game -   Advertising - Salon.com">company names</a> like Agilent and Avilant.</p>
 
 <p>It is here that the literalness of GNU Pascal provides the counterbalance I look for. I heart the complete absence of symbolism. And the departure from traditional corporate marketing is all the more exciting because it rhymes with the product itself. GNU Pascal is open source software: it is changeable and redistributable at will. As such it is built more on the values of the academic world than on the traditional corporate ethos. And while visual identities for open source software tend to be pale imitations of corporate aesthetics, GNU Pascal is one clue of how such software could find a style of its own.</p>]]>
         
@@ -544,20 +564,20 @@ endShape(CLOSE);</pre>]]>
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[<p><a href="/and/assets/called/daniela_likes_fosdem.jpg"><img src="/and/assets/scaled/to/830/wide/and/called/daniela_likes_fosdem.jpg" style="width:830;height:553;" alt="" title="" /></a></p>
 
-<p>Daniela likes tight pants. I guess that makes it easy for her to relate to our blog. As an art student, she is ready to <a href="/and/absolute-beginners-unix-for-art-students-part-1" title="I like tight pants and absolute beginners: unix for art students – part 1">learn about unix</a>.</p>
+<p>Daniela likes tight pants. I guess that makes it easy for her to relate to our blog. As an art student, she is ready to <a href="/and/absolute-beginners-unix-for-art-students-part-1" title="I like tight pants and absolute beginners: unix for art students Ã¢â¬â part 1">learn about unix</a>.</p>
 
 <p>I tell Daniela that we are in luck, because this weekend, there is the largest gathering of open source computer programmers in Europe, <a href="/and/why-would-europes-largest-open-source-convention-identify-itself-with-a-large-shrivelled-brain" title="I like tight pants and why would europe’s largest open source convention identify itself with a large shrivelled brain?">Fosdem</a>. We go. I’m always scared to blend in too much at computer conferences like this so I put on a Lady Gaga t-shirt.</p>
 
 <p>We plan to visit the final keynote speech because like this you experience a lot of people together. Plus, the topic tends to be of interest to a broader public. This year it is the Freedom box, a kind of mini server for your private data, the idea being that if everyone has such a box they can hook up together to create a more secure and more private social networking experience.</p>
 
-<p>Tellyou is there too and he does some translating for us (‘what is Debian?’). We can relate to the topic even though the speaker does not seem to be to joyous. Daniela notices he mentions ‘community’ a lot. I think this is because in cyberspace, the community is less bound by place and more volatile so you have to stress it is actually there. The organising commitee comes on stage to provide both a song and a fosdem dance.</p>
+<p>Tellyou is there too and he does some translating for us (‘what is Debian?’). We can relate to the topic even though the speaker does not seem to be to joyous. Daniela notices he mentions ‘community’ a lot. I think this is because in cyberspace, the community is less bound by place and more volatile so you have to stress it is actually there. The organising commitee comes on stage to provide both a song and a fosdem dance.</p>
 
 <p>As we leave, Daniela asks me if I think they will succeed with the Freedom box. I think they will, up to a degree, and then the technology will be re appropriated and made popular by more business minded people.</p>
 
 <p><a href="/and/assets/called/daniela_likes_tight_pants.jpg"><img src="/and/assets/scaled/to/490/wide/and/called/daniela_likes_tight_pants.jpg" style="width:490;height:326;" alt="You see a group of young people on a coach, among which a man with glasses and a colourful tracker jacket, and a girl holding a telephone, wearing a pinstriped legging and a blazer." title="" /></a></p>
 
 <div id="aside">
-  <img src="/and/assets/called/a_long_pink_arrow.png" style="width:99px;height:618px;margin-top:554px;" alt="Arrow that goes right and then down ↴" title="" />
+  <img src="/and/assets/called/a_long_pink_arrow.png" style="width:99px;height:618px;margin-top:554px;" alt="Arrow that goes right and then down Ã¢â Â´" title="" />
 </div>]]>
         
     </content>
@@ -569,7 +589,7 @@ endShape(CLOSE);</pre>]]>
     <id>tag:i.liketightpants.net,2012:/and//1.44</id>
 
     <published>2012-02-03T18:55:34Z</published>
-    <updated>2012-02-08T10:55:27Z</updated>
+    <updated>2013-02-02T23:22:01Z</updated>
 
     <summary>From the perspective of visual communication, I wonder. What is it they are trying to communicate? A kind of crude parody of Cartesian dualism perhaps?</summary>
     <author>
@@ -579,14 +599,16 @@ endShape(CLOSE);</pre>]]>
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><a href="http://www.flickr.com/photos/comzeradd/4767178153/" title="fosdem launch by comzeradd, on Flickr"><img src="http://i.liketightpants.net/and/assets/scaled/to/830/wide/and/called/fosdem.jpg" width="830" height="555" alt="fosdem launch"></a></p>
+        <![CDATA[
+    <p><a href="http://www.flickr.com/photos/comzeradd/4767178153/" title="fosdem launch by comzeradd, on Flickr"><img src="http://i.liketightpants.net/and/assets/scaled/to/830/wide/and/called/fosdem.jpg" width="830" height="555" alt="fosdem launch"></a></p>
 
 <p class="byline">Launch of <a href="http://fosdem.org/2012/">Fosdem</a> conference, <a href="http://www.flickr.com/photos/comzeradd/4767178153">photo by comzeradd</a></p>
 
-<p><img src="http://i.liketightpants.net/and/assets/called/FOSDEM11_date2.jpg" style="width:300px;height:338px;" /></p>
+<p><img src="http://i.liketightpants.net/and/assets/called/FOSDEM11_date2.jpg" style="width:300px;height:338px;"></p>
 
 <p>Coming from the perspective of visual communication, I wonder. What is it they are trying to communicate? A kind of crude parody of <a href="http://en.wikipedia.org/wiki/Dualism_%28philosophy_of_mind%29">Cartesian dualism</a> perhaps? </p>
-]]>
+
+    ]]>
         
     </content>
 </entry>
@@ -710,12 +732,12 @@ if __name__ == "__main__":
 </entry>
 
 <entry>
-    <title>Absolute Beginners: Unix for Art Students – part 3</title>
+    <title>Absolute Beginners: Unix for Art Students – part 3</title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-3" />
     <id>tag:i.liketightpants.net,2012:/and//1.40</id>
 
     <published>2012-01-15T23:46:09Z</published>
-    <updated>2012-05-06T22:08:54Z</updated>
+    <updated>2013-02-02T23:23:56Z</updated>
 
     <summary>Using a set of unix commands to lay out Jenny Holzer tweets.</summary>
     <author>
@@ -727,13 +749,14 @@ if __name__ == "__main__":
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><a href="/and/assets/called/sex_differences_are_here_to_stay.jpg"><img src="/and/assets/scaled/to/830/wide/and/called/sex_differences_are_here_to_stay.jpg" alt="In what is probably an office space or design studio (you can make out a laser printer, the back of a flatscreen monitor) a text is tacked to the wall constructed of a number of A4 sheets collated together: SEX DIFFERENCES ARE HERE TO STAY" style="width:830px;height:553px;" title="" /></a></p>
+        <![CDATA[
+    <p><a href="/and/assets/called/sex_differences_are_here_to_stay.jpg"><img src="/and/assets/scaled/to/830/wide/and/called/sex_differences_are_here_to_stay.jpg" alt="In what is probably an office space or design studio (you can make out a laser printer, the back of a flatscreen monitor) a text is tacked to the wall constructed of a number of A4 sheets collated together: SEX DIFFERENCES ARE HERE TO STAY" style="width:830px;height:553px;" title=""></a></p>
 
-<p>After working through the <a href="/and/absolute-beginners-unix-for-art-students-part-1" title="I like tight pants and absolute beginners: unix for art students – part 1">first</a> <a href="/and/absolute-beginners-unix-for-art-students-part-2" title="I like tight pants and absolute beginners: unix for art students – part 2">two</a> <a href="/and/installing-compilers" title="I like tight pants and installing compilers">parts</a> of Absolute Beginners: Unix for Art Students <a href="/and/i-have-relocated-to-brussels" title="I like tight pants and i have relocated to brussels">Fabien</a> asked me how you can than actually use the terminal to make something. That is a good question. In <a href="/and/absolute-beginners-unix-for-art-students-part-1" title="I like tight pants and absolute beginners: unix for art students – part 1">part 1</a> gilt writes that it is commendable to find a more intimate way of dealing with your computer, but that does not enter the question <em>what</em> you could be doing with your terminal. Taking cues from a <a href="http://schr.fr/hypermap" title="HYPERMAP | schr.fr">design installation</a> we developed for the Performance Studies International festival, I would like to show an example of using the command line to create graphic images, and the kind of design processes that it can accommodate.</p>
+<p>After working through the <a href="/and/absolute-beginners-unix-for-art-students-part-1" title="I like tight pants and absolute beginners: unix for art students Ã¢â¬â part 1">first</a> <a href="/and/absolute-beginners-unix-for-art-students-part-2" title="I like tight pants and absolute beginners: unix for art students Ã¢â¬â part 2">two</a> <a href="/and/installing-compilers" title="I like tight pants and installing compilers">parts</a> of Absolute Beginners: Unix for Art Students <a href="/and/i-have-relocated-to-brussels" title="I like tight pants and i have relocated to brussels">Fabien</a> asked me how you can than actually use the terminal to make something. That is a good question. In <a href="/and/absolute-beginners-unix-for-art-students-part-1" title="I like tight pants and absolute beginners: unix for art students Ã¢â¬â part 1">part 1</a> gilt writes that it is commendable to find a more intimate way of dealing with your computer, but that does not enter the question <em>what</em> you could be doing with your terminal. Taking cues from a <a href="http://schr.fr/hypermap" title="HYPERMAP | schr.fr">design installation</a> we developed for the Performance Studies International festival, I would like to show an example of using the command line to create graphic images, and the kind of design processes that it can accommodate.</p>
 
 <h3>Building pipelines</h3>
 
-<p>The unix command line is built around passing around text. Programs generate text, and other programs can take this as their input. You can start to create whole ‘pipelines’ of programs all connected together.</p>
+<p>The unix command line is built around passing around text. Programs generate text, and other programs can take this as their input. You can start to create whole ‘pipelines’ of programs all connected together.</p>
 
 <p>As our input today we take the <a href="http://twitter.com/jennyholzer" title="Twitter | Jenny Holzer">tweets of Jenny Holzer</a>. I do not know if you’ve heard of her, but Jenny Holzer is an artist who’s work prefigures contemporary social media: long before the advent of Facebook and twitter she has been claiming public space with her written truisms that, <a href="http://i.liketightpants.net/and/i-like-ziggy-over-zarathustra#jennyholzer" title="I like tight pants and ziggy over zarathustra">like habitus says</a>, always precipitate on the edge between worn clichés and individual confessions (<em>with you inside me comes the knowledge of my own death</em>).</p>
 
@@ -745,7 +768,7 @@ if __name__ == "__main__":
 
 <p>The output will be something like:</p>
 
-<pre>[{"coordinates":null,"truncated":false,"place":null,"geo":null,"in_reply_to_user_id":null,"retweet_count":36,"favorited":false,"in_reply_to_status_id_str":null,"user":{"listed_count":1572,"contributors_enabled":false,"lang":"en","profile_text_color":"000000","protected":false,"location":"","statuses_count":359,"profile_background_image_url":"http:\/\/a0.twimg.com\/images\/themes\/theme1\/bg.png","name":"Jenny Holzer","default_profile":false,"profile_link_color":"D73030","url":"http:\/\/en.wikipedia.org\/wiki\/Jenny_Holzer","utc_offset":-18000,"description":"Abuse of power comes as no surprise.","friends_count":0,"profile_background_color":"D73030","following":true,"profile_background_tile":false,"followers_count":37419,"profile_image_url":"http:\/\/a2.twimg.com\/profile_images\/25643062\/jenny_holzer_normal.jpg","default_profile_image":false,"geo_enabled":false,"created_at":"Wed May 30 19:07:47 +0000 2007","profile_sidebar_fill_color":"F0F0F0","profile_background_image_url_https":"https:\/\/si0.twimg.com\/images\/themes\/theme1\/bg.png","favourites_count":0,"is_translator":false,"show_all_inline_media":false,"follow_request_sent":false,"notifications":false,"profile_sidebar_border_color":"000000","profile_image_url_https":"https:\/\/si0.twimg.com\/profile_images\/25643062\/jenny_holzer_normal.jpg","screen_name":"jennyholzer","id_str":"6451032","verified":false,"id":6451032,"profile_use_background_image":false,"time_zone":"Eastern Time (US & Canada)"},"in_reply_to_screen_name":null,"created_at":"Fri Jan 13 15:34:55 +0000 2012","in_reply_to_user_id_str":null,"retweeted":false,"source":"\u003Ca href=\"http:\/\/twitter.com\/#!\/download\/iphone\" rel=\"nofollow\"\u003ETwitter for iPhone\u003C\/a\u003E","id_str":"157848105683922945","in_reply_to_status_id":null,"id":157848105683922945,"contributors":null,"text":"SEX DIFFERENCES ARE HERE TO STAY"}]</pre>
+<pre>[{"coordinates":null,"truncated":false,"place":null,"geo":null,"in_reply_to_user_id":null,"retweet_count":36,"favorited":false,"in_reply_to_status_id_str":null,"user":{"listed_count":1572,"contributors_enabled":false,"lang":"en","profile_text_color":"000000","protected":false,"location":"","statuses_count":359,"profile_background_image_url":"http:\/\/a0.twimg.com\/images\/themes\/theme1\/bg.png","name":"Jenny Holzer","default_profile":false,"profile_link_color":"D73030","url":"http:\/\/en.wikipedia.org\/wiki\/Jenny_Holzer","utc_offset":-18000,"description":"Abuse of power comes as no surprise.","friends_count":0,"profile_background_color":"D73030","following":true,"profile_background_tile":false,"followers_count":37419,"profile_image_url":"http:\/\/a2.twimg.com\/profile_images\/25643062\/jenny_holzer_normal.jpg","default_profile_image":false,"geo_enabled":false,"created_at":"Wed May 30 19:07:47 +0000 2007","profile_sidebar_fill_color":"F0F0F0","profile_background_image_url_https":"https:\/\/si0.twimg.com\/images\/themes\/theme1\/bg.png","favourites_count":0,"is_translator":false,"show_all_inline_media":false,"follow_request_sent":false,"notifications":false,"profile_sidebar_border_color":"000000","profile_image_url_https":"https:\/\/si0.twimg.com\/profile_images\/25643062\/jenny_holzer_normal.jpg","screen_name":"jennyholzer","id_str":"6451032","verified":false,"id":6451032,"profile_use_background_image":false,"time_zone":"Eastern Time (US &amp; Canada)"},"in_reply_to_screen_name":null,"created_at":"Fri Jan 13 15:34:55 +0000 2012","in_reply_to_user_id_str":null,"retweeted":false,"source":"\u003Ca href=\"http:\/\/twitter.com\/#!\/download\/iphone\" rel=\"nofollow\"\u003ETwitter for iPhone\u003C\/a\u003E","id_str":"157848105683922945","in_reply_to_status_id":null,"id":157848105683922945,"contributors":null,"text":"SEX DIFFERENCES ARE HERE TO STAY"}]</pre>
 
 <p>Curl is a program that gets the contents of a document on the web, and prints it out to the terminal.</p>
 
@@ -800,15 +823,15 @@ if __name__ == "__main__":
 
 <p>In fact, pango-view, spoils the fun somewhat, because it doesn’t let you use it as part of a pipeline. We’ll have to store the Jenny tweet into a text file:</p>
 
-<pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\([^"]*\)".*}]/\1/g' > jennytweet.txt</pre>
+<pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\([^"]*\)".*}]/\1/g' &gt; jennytweet.txt</pre>
 
-<p>The <code>></code> lets you store text output into a file. So we are storing the output of are pipeline, the plain text tweet, into the file <code>jennytweet.txt</code>.</p>
+<p>The <code>&gt;</code> lets you store text output into a file. So we are storing the output of are pipeline, the plain text tweet, into the file <code>jennytweet.txt</code>.</p>
 
 <p>Pango-view lets us lay-out the text and output it as a picture:</p>
 
 <pre>pango-view jennytweet.txt -q -o jennytweet.png</pre>
 
-<p><img src="/and/assets/called/jennytweet-plain.png" style="width:353;height:39;" alt="‘SEX DIFFERENCES ARE HERE TO STAY’ set in pango-view’s default font" title="" /></p>
+<p><img src="/and/assets/called/jennytweet-plain.png" style="width:353;height:39;" alt="‘SEX DIFFERENCES ARE HERE TO STAY’ set in pango-view’s default font" title=""></p>
 
 <p>If you type <code>man pango-view</code> you get an overview of the different options you have. <code>-q</code>, for example suppresses the default behavior to also display the result in a window.  <code>-o</code> specifies the output file, in this case jennytweet.png. Next to these two options, we also specify an <em>argument</em>, which is the inputfile to use. The program knows it is an argument instead of option, because it is not preceded by a dash and an option name.</p>
 
@@ -816,7 +839,7 @@ if __name__ == "__main__":
 
 <pre>pango-view jennytweet.txt -q -o jennytweet.png --font "Futura 36"</pre>
 
-<p><img src="/and/assets/called/jennytweet-banner.png" style="width:882;height:83;" alt="‘SEX DIFFERENCES ARE HERE TO STAY’ set in Futura" title="" /></p>
+<p><img src="/and/assets/called/jennytweet-banner.png" style="width:882;height:83;" alt="‘SEX DIFFERENCES ARE HERE TO STAY’ set in Futura" title=""></p>
 
 <p>By default, pango-view thinks in pixels. So the Futura will have an x-height of 36 pixels. If we don’t specify any measurement for the width, the text will by laid out on one line like a long banner, the width determined by the width of the text.</p>
 
@@ -824,7 +847,7 @@ if __name__ == "__main__":
 
 <pre>pango-view jennytweet.txt -q -o jennytweet-laidout.png --font "Futura 36" -w 400</pre>
 
-<p><img src="/and/assets/called/jennytweet-laidout.png" style="width:553;height:146;" alt="‘SEX DIFFERENCES ARE HERE TO STAY’ set in Futura, laid out to a maximum width" title="" /></p>
+<p><img src="/and/assets/called/jennytweet-laidout.png" style="width:553;height:146;" alt="‘SEX DIFFERENCES ARE HERE TO STAY’ set in Futura, laid out to a maximum width" title=""></p>
 
 <p>The cool thing about pango-view is that it can also generate vector files: pdf, but also svg and postscript. You just change the filename, and it does it automatically.</p>
 
@@ -839,17 +862,18 @@ brew install poster</pre>
 
 <p>(You do no have the brew command? See tellyou’s post about homebrew). To generate a poster, you can do:</p>
 
-<pre>poster -s 4.4 jennytweet-laidout.ps > jennyposter.ps</pre>
+<pre>poster -s 4.4 jennytweet-laidout.ps &gt; jennyposter.ps</pre>
 
 <p>The -s 4.4 scales our original image 4.4 times. The original image has no real size declared in cm, so I did not know beforehand how big the result was going to be. I just came up with this 4.4 value by trail and error.</p>
 
-<p><a href="/and/assets/called/jennytweet-pages.png"><img src="/and/assets/scaled/to/490/wide/and/called/jennytweet-pages.png" style="width:421px;height:490px" /></a></p>
+<p><a href="/and/assets/called/jennytweet-pages.png"><img src="/and/assets/scaled/to/490/wide/and/called/jennytweet-pages.png" style="width:421px;height:490px"></a></p>
 
-<p>Voilà. One can open this in preview and print it. Heck, one can even print it from the command line:</p>
+<p>VoilÃÂ&nbsp;. One can open this in preview and print it. Heck, one can even print it from the command line:</p>
 
 <pre>lpr jennyposter.ps</pre>
 
-<p>Let’s hang it on the wall.</p>]]>
+<p>Let’s hang it on the wall.</p>
+    ]]>
         
     </content>
 </entry>
@@ -870,11 +894,11 @@ brew install poster</pre>
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p>My hypothesis is that David Bowie succeeded where Friedrich Nietzsche failed.</p><p>20th century musicians like Bowie and Prince can be seen as to exemplify Nietzsche’s ideal of the ‘new philosopher’. They combine intellectual and spiritual lyrics with unprecedented style and music. Through means of mass communication and mechanical reproduction, their work has been able to resonate with an audience on a large scale. and take part in defining the cultural landscape.</p><p>In visual arts, Andy Warhol can be seen as such a new philosopher who shares recognition among artists, scholars, and the general cultural public. Indeed, Arthur C. Danto points to Warhol as the moment where art turns into philosophy.</p><p>In the present day, the means of reproduction and dissemination have shifted again because of the digital revolution.</p><p>Learning from Bowie, one could figure out what it was that made him so successful in articulating his sensibilities, and how his methodologies would translate to contemporary modes of production.</p><p>The goal is an art/design practice which:</p><ul>
+        <![CDATA[<p>My hypothesis is that David Bowie succeeded where Friedrich Nietzsche failed.</p><p>20th century musicians like Bowie and Prince can be seen as to exemplify Nietzsche’s ideal of the ‘new philosopher’. They combine intellectual and spiritual lyrics with unprecedented style and music. Through means of mass communication and mechanical reproduction, their work has been able to resonate with an audience on a large scale. and take part in defining the cultural landscape.</p><p>In visual arts, Andy Warhol can be seen as such a new philosopher who shares recognition among artists, scholars, and the general cultural public. Indeed, Arthur C. Danto points to Warhol as the moment where art turns into philosophy.</p><p>In the present day, the means of reproduction and dissemination have shifted again because of the digital revolution.</p><p>Learning from Bowie, one could figure out what it was that made him so successful in articulating his sensibilities, and how his methodologies would translate to contemporary modes of production.</p><p>The goal is an art/design practice which:</p><ul>
 <li>takes place on the nexus of pop culture and institutionalised art</li>
 <li>is at the nexus of private introspection and public dissemination</li>
 <li>readily explores all available technology in order to do so.</li>
-</ul><p id="jennyholzer">Two more examples come to mind: Jenny Holzer, whose truisms always precipitate on the edge between worn clichés and individual confessions, and who claims public space through all media for these inward looking statements.</p><p>And Prince. Prince, when recording the vocals for the Sign o’ the times album, would do so in the control room of the studio, sending away all engineers after they prepared the session, leaving him alone with the microphone to sing. I am struck by the contrast between this highly inward looking ritual, and its imprint as an artifact that is reproduced literally millions of times.</p><h2>1: Why are Bowie and Nietzsche similar?</h2><p>In the early 1970ies David Bowie starts to refer to Friedrich Nietzsche in his lyrics, on both his albums ‘the Man Who Sold the World’ and ‘Hunky Dory’. In the song Quicksand he sings: I’m not a prophet or a stone age man, just a mortal with potential of a superman’. And: ‘Should I kiss the viper’s fang, and herald loud the death of man?’</p><p>The direct successor to these records, the 1972 ‘the Rise and Fall of Ziggy Stardust and the Spiders from Mars’ seems to forego Nietzsche references for images of rock stardom. </p><p>In a way, though, this album is much more Nietzschean than its predecessors. </p><p>The narrative of a rockstar from space making it on earth before his eventual fall, can be seen as a more catchy instance of the supermen of the previous records. Moreover, the work can be directly compared to Nietzsche’s ‘Also sprach Zarathustra’ in which a prophet comes down from his cave to do his teachings to the public.</p><p>Both works can be read as thinly veiled autobiographies, where the choice of an unusual medium verse (Nietzsche) and rock (Bowie) allows the author to put in a lot of his ideas and fears and aspirations, that might otherwise have come across as megalomania or sacrilege. The process of mystification through the invention of the characters of Ziggy and Zarathustra allows the authors to take the freedom to reinvent themselves. Bowie later said: ‘it was like rewriting myself, really’. </p><h2>2: Why are Bowie and Nietzsche different?</h2><p>When looking back on the Ziggy project Bowie stresses the aspect of embracing the present:</p><p>“Writers like George Steiner had nailed the sexy term post-culture and it seemed a jolly good idea to join up the dots for rock. The main platform would be, other than shoes, ‘we are the future, now’ and the one way of celebrating that was to create it by the only means at our disposal. With, of course, a rock ‘n’ roll band.”</p><p>For Bowie the future was now. Whereas for Nietzsche the future was still clearly in the future. After writing Zarathustra he had conceded that his philosophy would not be read and appreciated in his own time. His subsequent book ‘Jenseits von gut und böse’ has as its subtitle: prelude to a philosophy of the future. He also thinks it will not be him that is going to fulfill philosophy’s potential. He sketches the need for ‘new philosophers’: ‘in forerunners, in men of the future, who in the present shall fix the constraints and fasten the knots which will compel millenniums to take NEW paths’.</p><p>Man of the future, acting in the present. An apt description of Ziggy.</p><p>The difference in self-image mirrors the difference in reception by their contemporaries. Bowie managed to find a massive crowd, Nietzsche never did during his lifetime. And although both men went through difficulties following the release of their seminal works, Bowie ended up on top. Nietzsche went insane.</p><h2>3: Why could Bowie do what Nietzsche could not?</h2><p>That Nietzsche had to leave for the future, what Bowie could achieve in his own time, can be attributed to several factors.</p><p>In the first place, Nietzsche was alone. And nobody can do anything alone.</p><p>We have already touched on the enabling role of modern mass media. This for me is exemplified by by the contrast between the highly inward looking ritual of the recording session, and its imprint as an artifact (the record) that is meant to be reproduced literally millions of times. Prince, when recording the vocals for the Sign o’ the times album, would do so in the control room of the studio, sending away all engineers after they prepared the session, leaving him alone with the microphone to sing. </p><p>Yet there is another important aspect: the rise of interdisciplinary practice.</p><p>Both men possessed (and in Bowie’s case still possess) a range of skills.</p><p>Bowie was skilled both with words and with music, and had experience as an actor. With the Ziggy project he added his own talents to these of a host of others in a decidedly transdisciplinary endeavour. Bowie contributed songs, words, voice and looks. The musicians, the producer and the engineer contributed further to the sound. The photographic look was crafted by Mick Rock, the suits were designed by a Japanese fashion designer, and even Bowie’s hair style was conceived especially for him by his hairdresser. The early shows were inspired by the ‘Exploding plastic inevitable’ multi media shows Warhol made with The Velvet Underground. The shows featured elaborate set designs, projections and a mime group.</p><p>Nietzsche apparently had a broad range of talents and interests as well. He was quite musical and wrote Lieder. Next to that, ‘Also Sprach Zarathustra’ is full of references to dance. In her book: ‘Nietzsche’s Dancers: Isadora Duncan, Martha Graham, and the Revaluation of Christian Values’ Kimerer L. LaMothe argues that these references should not be seen as metaphors: dance was important to Nietzsche in its own right.</p><p>In his work, however, there was no way yet for these different media to fruition. It is just language that has to pull it off.</p><p>The world just wasn’t transdisciplinary yet in the 19th century. It would take the 20th century avant-garde to change that.</p><p>A question I would like to ask is if language alone could ever suffice for the kind of questions Bowie and Nietzsche were asking. There is a maniacal element to their thinking which I suspect can only really be sublimated in a performative setting. I know for my self, at least, that I talk better when I perform.</p>]]>
+</ul><p id="jennyholzer">Two more examples come to mind: Jenny Holzer, whose truisms always precipitate on the edge between worn clichés and individual confessions, and who claims public space through all media for these inward looking statements.</p><p>And Prince. Prince, when recording the vocals for the Sign o’ the times album, would do so in the control room of the studio, sending away all engineers after they prepared the session, leaving him alone with the microphone to sing. I am struck by the contrast between this highly inward looking ritual, and its imprint as an artifact that is reproduced literally millions of times.</p><h2>1: Why are Bowie and Nietzsche similar?</h2><p>In the early 1970ies David Bowie starts to refer to Friedrich Nietzsche in his lyrics, on both his albums ‘the Man Who Sold the World’ and ‘Hunky Dory’. In the song Quicksand he sings: I’m not a prophet or a stone age man, just a mortal with potential of a superman’. And: ‘Should I kiss the viper’s fang, and herald loud the death of man?’</p><p>The direct successor to these records, the 1972 ‘the Rise and Fall of Ziggy Stardust and the Spiders from Mars’ seems to forego Nietzsche references for images of rock stardom. </p><p>In a way, though, this album is much more Nietzschean than its predecessors. </p><p>The narrative of a rockstar from space making it on earth before his eventual fall, can be seen as a more catchy instance of the supermen of the previous records. Moreover, the work can be directly compared to Nietzsche’s ‘Also sprach Zarathustra’ in which a prophet comes down from his cave to do his teachings to the public.</p><p>Both works can be read as thinly veiled autobiographies, where the choice of an unusual medium verse (Nietzsche) and rock (Bowie) allows the author to put in a lot of his ideas and fears and aspirations, that might otherwise have come across as megalomania or sacrilege. The process of mystification through the invention of the characters of Ziggy and Zarathustra allows the authors to take the freedom to reinvent themselves. Bowie later said: ‘it was like rewriting myself, really’. </p><h2>2: Why are Bowie and Nietzsche different?</h2><p>When looking back on the Ziggy project Bowie stresses the aspect of embracing the present:</p><p>Ã¢â¬ÅWriters like George Steiner had nailed the sexy term post-culture and it seemed a jolly good idea to join up the dots for rock. The main platform would be, other than shoes, ‘we are the future, now’ and the one way of celebrating that was to create it by the only means at our disposal. With, of course, a rock ‘n’ roll band.Ã¢â¬Â</p><p>For Bowie the future was now. Whereas for Nietzsche the future was still clearly in the future. After writing Zarathustra he had conceded that his philosophy would not be read and appreciated in his own time. His subsequent book ‘Jenseits von gut und bÃÂ¶se’ has as its subtitle: prelude to a philosophy of the future. He also thinks it will not be him that is going to fulfill philosophy’s potential. He sketches the need for ‘new philosophers’: ‘in forerunners, in men of the future, who in the present shall fix the constraints and fasten the knots which will compel millenniums to take NEW paths’.</p><p>Man of the future, acting in the present. An apt description of Ziggy.</p><p>The difference in self-image mirrors the difference in reception by their contemporaries. Bowie managed to find a massive crowd, Nietzsche never did during his lifetime. And although both men went through difficulties following the release of their seminal works, Bowie ended up on top. Nietzsche went insane.</p><h2>3: Why could Bowie do what Nietzsche could not?</h2><p>That Nietzsche had to leave for the future, what Bowie could achieve in his own time, can be attributed to several factors.</p><p>In the first place, Nietzsche was alone. And nobody can do anything alone.</p><p>We have already touched on the enabling role of modern mass media. This for me is exemplified by by the contrast between the highly inward looking ritual of the recording session, and its imprint as an artifact (the record) that is meant to be reproduced literally millions of times. Prince, when recording the vocals for the Sign o’ the times album, would do so in the control room of the studio, sending away all engineers after they prepared the session, leaving him alone with the microphone to sing. </p><p>Yet there is another important aspect: the rise of interdisciplinary practice.</p><p>Both men possessed (and in Bowie’s case still possess) a range of skills.</p><p>Bowie was skilled both with words and with music, and had experience as an actor. With the Ziggy project he added his own talents to these of a host of others in a decidedly transdisciplinary endeavour. Bowie contributed songs, words, voice and looks. The musicians, the producer and the engineer contributed further to the sound. The photographic look was crafted by Mick Rock, the suits were designed by a Japanese fashion designer, and even Bowie’s hair style was conceived especially for him by his hairdresser. The early shows were inspired by the ‘Exploding plastic inevitable’ multi media shows Warhol made with The Velvet Underground. The shows featured elaborate set designs, projections and a mime group.</p><p>Nietzsche apparently had a broad range of talents and interests as well. He was quite musical and wrote Lieder. Next to that, ‘Also Sprach Zarathustra’ is full of references to dance. In her book: ‘Nietzsche’s Dancers: Isadora Duncan, Martha Graham, and the Revaluation of Christian Values’ Kimerer L. LaMothe argues that these references should not be seen as metaphors: dance was important to Nietzsche in its own right.</p><p>In his work, however, there was no way yet for these different media to fruition. It is just language that has to pull it off.</p><p>The world just wasn’t transdisciplinary yet in the 19th century. It would take the 20th century avant-garde to change that.</p><p>A question I would like to ask is if language alone could ever suffice for the kind of questions Bowie and Nietzsche were asking. There is a maniacal element to their thinking which I suspect can only really be sublimated in a performative setting. I know for my self, at least, that I talk better when I perform.</p>]]>
         
     </content>
 </entry>

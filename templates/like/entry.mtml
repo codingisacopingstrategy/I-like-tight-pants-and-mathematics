@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
     <$mt:Include module="HTML Head"$>
+    <title>I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$></title>
     <link rel="stylesheet" href="/and/style/in/<$mt:EntryAuthorUsername$>.css" type="text/css" />
     <mt:EntryPrevious><link rel="prev bookmark" href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>" title="I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$>" /></mt:EntryPrevious>
-    <mt:EntryNext><link rel="next bookmark" href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>" title="I like tight pants and <$mt:EntryTitle encode_html="1"$ lower_case="1">" /></mt:EntryNext>
+    <mt:EntryNext><link rel="next bookmark" href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>" title="I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$>" /></mt:EntryNext>
     <$mt:EntryTrackbackData$>
-    <title>I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$></title>
     <meta property="og:title" content="I like tight pants and <$mt:EntryTitle encode_html="1" lower_case="1"$>"/>
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="<$mt:EntryPermalink replace=".html","" encode_xml="1"$>"/>
@@ -54,15 +54,6 @@
   </mt:CommentsFooter>
   </mt:Comments>
 
-<!--
-  <h4>Shouts</h4>
-  <dl>
-    <dt>Article name could be very llong indeed</dt>
-    <dd>23 days ago - 23 likes</dd>
-    <dt>Article name could be very llong indeed</dt>
-    <dd>23 days ago - 23 likes</dd>
-  </dl>
--->  
   <hr />
   
   <h4>Other writers</h4>
@@ -88,16 +79,7 @@
     </div>
   </div>
   <hr />
-  
-  <!--<h4>Related articles</h4>
-  <dl>
-  <dt>Article name could be very llong indeed</dt>
-  <dd>23 days ago - 23 likes</dd>
-  <dt>Article name could be very llong indeed</dt>
-  <dd>23 days ago - 23 likes</dd>
-  <dt>Article name could be very llong indeed</dt>
-  <dd>23 days ago - 23 likes</dd>
-  </dl>-->
+
 </div>
 
 <div class="grid_1">
@@ -111,17 +93,6 @@
 
   <$mt:Include widget="Recent Comments"$>
 
-<!--
-  <h4>Last 10 shouts</h4>
-  <dl>
-  <dt>Article name could be very llong indeed</dt>
-  <dd>23 days ago - 23 likes</dd>
-  <dt>Article name could be very llong indeed</dt>
-  <dd>23 days ago - 23 likes</dd>
-  <dt>Article name could be very llong indeed</dt>
-  <dd>23 days ago - 23 likes</dd>
-  </dl>
--->
 </div>
 </div>
 <div id="bar">&nbsp;</div>

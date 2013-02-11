@@ -15,6 +15,7 @@
 <script type="text/javascript" src="/and/mt.js"></script>
 
 
+    <title>I like tight pants and programmatically manipulating typefaces</title>
     <link rel="stylesheet" href="/and/style/in/bnf.css" type="text/css" />
     <link rel="prev bookmark" href="/and/drawing-logos" title="I like tight pants and drawing logo’s" />
     <link rel="next bookmark" href="/and/figuring-out-fontforge-pythons-representation-of-postscript-curves" title="I like tight pants and figuring out fontforge-python’s representation of postscript curves" />
@@ -34,7 +35,6 @@
 </rdf:RDF>
 -->
 
-    <title>I like tight pants and programmatically manipulating typefaces</title>
     <meta property="og:title" content="I like tight pants and programmatically manipulating typefaces"/>
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="http://i.liketightpants.net/and/programmatically-manipulating-typefaces"/>
@@ -85,7 +85,7 @@
   <dt><a href="/and/downloading-funghi">Downloading funghi, from Wikimedia Commons</a></dt>
   <dd>February  3, 2012  6:36 PM</dd>
   
-  <dt><a href="/and/absolute-beginners-unix-for-art-students-part-2">Absolute Beginners: Unix for Art Students – Part 2</a></dt>
+  <dt><a href="/and/absolute-beginners-unix-for-art-students-part-2">Absolute Beginners: Unix for Art Students – Part 2</a></dt>
   <dd>December  2, 2011  2:16 AM</dd>
   
   <dt><a href="/and/vector-pixels">Vector pixels</a></dt>
@@ -139,15 +139,6 @@
   
   
 
-<!--
-  <h4>Shouts</h4>
-  <dl>
-    <dt>Article name could be very llong indeed</dt>
-    <dd>23 days ago - 23 likes</dd>
-    <dt>Article name could be very llong indeed</dt>
-    <dd>23 days ago - 23 likes</dd>
-  </dl>
--->  
   <hr />
   
   <h4>Other writers</h4>
@@ -178,6 +169,7 @@
   <div>
     <div class="article grid_3 alpha omega suffix_2">
     <h4>Programmatically manipulating typefaces</h4>
+    
     <style>
 @font-face {
     font-family: 'LeagueGothicRomanRomanRotated';
@@ -260,7 +252,7 @@ font.generate(sys.argv[2])</pre>
 
 <p>Both libraries are written in the Python language. There is a historical reason for this. The typographers <a href="http://www.letterror.com/" title="LettError Type: Fonts and Typography">Just van Rossum and Erik van Blokland</a> are pioneers in scripting for type design. Their choice to go with Python has contributed to making it the go to scripting language in the type design world.</p>
 
-<p>I can imagine that reasons for choosing Python include that it is straightforward and high level—and in being white space sensitive it is arguably one of the few languages which is opiniated typographically! I imagine it also played a role that Just van Rossum is the brother of Guido van Rossum, who wrote the Python language.</p>
+<p>I can imagine that reasons for choosing Python include that it is straightforward and high level<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small; line-height: 16px; background-color: rgb(255, 255, 255);">—</span>and in being white space sensitive it is arguably one of the few languages which is opiniated typographically! I imagine it also played a role that Just van Rossum is the brother of Guido van Rossum, who wrote the Python language.</p>
 
 <p>If you already know Python, you are in luck. If you know programming, but do not know Python, it is pretty easy to pick up. And if you do not write programs yet, Python is a great language to get started as it is quite straightforward and consistent.</p>
 
@@ -349,7 +341,8 @@ for glyph in font:
 font.save(sys.argv[2])
 </pre>
 
-<div id="aside"><p>This article started out as a presentation for <a href="http://montrealpython.org/">Montreal Python</a>. It got finished on the occasion of the OSP workshops <a href="http://osp.schr.fr/workshop/morphologic/" title="OSP :: Workshop :: OSP Morphologic @ Merz Akademie, Stuttgart">Morphologic</a> at the Merz Akademie, Stuttgart and <a href="http://osp.schr.fr/workshop/write-me-a-shadow/raw/latest/specimen/index.html" title="Write me a shadow. OSP @ ESAD Valence">Write me a shadow</a>, at the ESAD Valence.</p></div>
+
+    
     <div id="comments" class="comments">
 
 
@@ -363,7 +356,9 @@ font.save(sys.argv[2])
      <!-- If comment doesn't have a top-level-parent -->
             
     <div id="comment-164" class="comment">
-    <p>There's also cool stuff you can do if you save the font as an SVG font. You can then just manipulate all of the nodes</p>
+    <p>
+There's also cool stuff you can do if you save the font as an SVG font. You can then just manipulate all of the nodes
+</p>
     <p class="byline"> by <a title="http://www.hellocatfood.com" href="http://www.hellocatfood.com" rel="nofollow">Antonio Roberts</a> - <a href="http://i.liketightpants.net/and/programmatically-manipulating-typefaces.html#comment-164"><abbr class="published" title="2012-05-03T16:07:38+01:00">May  3, 2012  4:07 PM</abbr></a><br />
     <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(164, 'Antonio Roberts')">Reply</a></p>
     </div>
@@ -376,22 +371,19 @@ font.save(sys.argv[2])
      <!-- If comment doesn't have a top-level-parent -->
             
     <div id="comment-165" class="comment">
-    <p>With the rotation script, you might want to add something that changes the font name, otherwise you will get conflicts when installing both the original and the converted version.</p>
+    <p></p>
 
-<p>There is three names to change. The Family name is the name shared by all the weights / variations of the font, i.e. ‘League Gothic’. The Full name includes the specific variation ‘League Gothic Bold’. The PostScript Font name is the same but without spaces. The latter is still being used by Mac OSX to identify typeface conflicts.</p>
+<p style="">With the rotation script, you might want to add something that changes the font name, otherwise you will get conflicts when installing both the original and the converted version.</p><p></p>
 
-<p>FontForge:</p>
+<p></p><p>There is three names to change. The Family name is the name shared by all the weights / variations of the font, i.e. ‘League Gothic’. The Full name includes the specific variation ‘League Gothic Bold’. The PostScript Font name is the same but without spaces. The latter is still being used by Mac OSX to identify typeface conflicts.</p><p></p>
 
-<pre>font.familyname += " Rotated"
-font.fullname += " Rotated"
-font.fontname += "-Rotated"</pre>
+<p></p><p>FontForge:</p><p></p>
 
-<p>Robofab:</p>
+<p></p><p></p><pre>font.familyname += " Rotated"<br>font.fullname += " Rotated"<br>font.fontname += "-Rotated"</br></br></pre><p></p><p></p>
 
-<pre>font.info.familyName += " Rotated"
-font.info.fullName += " Rotated"
-font.info.postscriptFontName += "-Rotated"</pre>
+<p></p><p>Robofab:</p><p></p>
 
+<p></p><p></p><pre>font.info.familyName += " Rotated"<br>font.info.fullName += " Rotated"<br>font.info.postscriptFontName += "-Rotated"</br></br></pre><p></p>
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/graphically-thumb-18x18-4.png" width="18" height="18"  />
           by baseline - <a href="http://i.liketightpants.net/and/programmatically-manipulating-typefaces.html#comment-165"><abbr class="published" title="2012-05-28T14:12:30+01:00">May 28, 2012  2:12 PM</abbr></a><br />
@@ -406,7 +398,9 @@ font.info.postscriptFontName += "-Rotated"</pre>
      <!-- If comment doesn't have a top-level-parent -->
             
     <div id="comment-167" class="comment">
-    <p>This is quite appropriate! I’m writing my thesis on the subject of conceptual manipulations of typefaces. <a href="http://www.merz-akademie.de/hochschule/personen#details-134" rel="nofollow">Joost</a> said I should follow your workshop. So a program can constitute a specific manipulation… for example, how would you go about to remove the curves from a typeface–to make all curves straight?</p>
+    <p></p>
+
+<p style="">This is quite appropriate! I’m writing my thesis on the subject of conceptual manipulations of typefaces. <a href="http://www.merz-akademie.de/hochschule/personen#details-134" rel="nofollow">Joost</a> said I should follow your workshop. So a program can constitute a specific manipulation<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small; line-height: 16px; background-color: rgb(255, 255, 255);">—</span>for example, how would you go about to remove the curves from a typeface, to make all curves straight?</p><p></p>
     <p class="byline"> by Alina Kadlubsky - <a href="http://i.liketightpants.net/and/programmatically-manipulating-typefaces.html#comment-167"><abbr class="published" title="2012-05-31T22:37:02+01:00">May 31, 2012 10:37 PM</abbr></a><br />
     <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(167, 'Alina Kadlubsky')">Reply</a></p>
     </div>
@@ -417,40 +411,27 @@ font.info.postscriptFontName += "-Rotated"</pre>
             
             
     <div id="comment-168" class="comment comment-reply">
-    <p><span class="palladio-straight" style="font-size: 137px">Sure!</span></p>
+    <p></p>
 
-<pre>from robofab.world import CurrentFont</pre>
+<p><br></br></p><p></p><p><span class="palladio-straight" style="font-size: 137px">Sure!</span></p><p></p><p></p>
 
-<pre>font = CurrentFont()</pre>
+<p></p><p></p><pre>from robofab.world import CurrentFont</pre><p></p><p></p>
 
-<pre>for g in [glyph.name for glyph in font]:
-    old = font[g]
-    print len(old)
-    new = font.newGlyph("dummytmp", clear=True)</pre>
-    
-<pre>    pen = new.getPointPen()
-    for contour in old:
-        pen.beginPath()
-        for point in contour.points:
-            if point.type != "offCurve":
-                pen.addPoint((point.x,point.y),"line")
-        pen.endPath()</pre>
-    
-<pre>    font.newGlyph(g, clear=True)
-    old.appendGlyph(new)</pre>
+<p></p><p></p><pre>font = CurrentFont()</pre><p></p><p></p>
 
-<pre>font.removeGlyph("dummytmp")
-font.update()</pre>
+<p></p><p></p><pre>for g in [glyph.name for glyph in font]:<br>    old = font[g]<br>    print len(old)<br>    new = font.newGlyph("dummytmp", clear=True)</br></br></br></pre><br>    <br><pre>    pen = new.getPointPen()<br>    for contour in old:<br>        pen.beginPath()<br>        for point in contour.points:<br>            if point.type != "offCurve":<br>                pen.addPoint((point.x,point.y),"line")<br>        pen.endPath()</br></br></br></br></br></br></pre><br>    <br><pre>    font.newGlyph(g, clear=True)<br>    old.appendGlyph(new)</br></pre><p></p><p></p>
 
-<p>Yes so John Haltiwanger and me spent some time figuring this out for the workshop in <a href="http://osp.schr.fr/workshop/morphologic/" rel="nofollow">Stuttgart</a>. Basically we’re reconstructing the contours in the glyph point by point, but we skip off curve points—these are the control handles to the <a href="/and/seb-explaining-love-and-bezier-curves" rel="nofollow">béziers</a>. Without the control handles the curves become straight lines.</p>
+<p></p><p></p><pre>font.removeGlyph("dummytmp")<br>font.update()</br></pre><p></p><p></p>
 
-<p><span class="palladio">URW Palladio L Bold</span></p>
+<p></p><p>Yes so John Haltiwanger and me spent some time figuring this out for the workshop in <a href="http://osp.schr.fr/workshop/morphologic/" rel="nofollow">Stuttgart</a>. Basically we’re reconstructing the contours in the glyph point by point, but we skip off curve points<span style="font-size: 13px; background-color: rgb(255, 255, 255); color: rgb(34, 34, 34); font-family: arial, sans-serif; line-height: 16px;">—</span><span style="font-size: 14px;">these are the control handles to the </span><a href="/and/seb-explaining-love-and-bezier-curves" rel="nofollow">béziers</a><span style="font-size: 14px;">. Without the control handles the curves become straight lines.</span></p><p></p>
 
-<p>becomes</p>
+<p></p><p><span class="palladio">URW Palladio L Bold</span></p><p></p>
 
-<p><span class="palladio-straight">URW Palladio L Bold</span></p>
+<p></p><p>becomes</p><p></p>
 
-<p>The new contours are first written to a temporary glyph, then they replace they old contours.</p>
+<p></p><p><span class="palladio-straight">URW Palladio L Bold</span></p><p></p>
+
+<p></p><p>The new contours are first written to a temporary glyph, then they replace they old contours.</p><p></p></br></br></br></br>
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/10/bowie-thumb-18x18-8.jpg" width="18" height="18"  />
           by tellyou - <a href="http://i.liketightpants.net/and/programmatically-manipulating-typefaces.html#comment-168"><abbr class="published" title="2012-05-31T22:52:41+01:00">May 31, 2012 10:52 PM</abbr></a><br />
@@ -463,9 +444,11 @@ font.update()</pre>
             
             
     <div id="comment-170" class="comment comment-reply">
-    <p style="position: relative;"><span class="palladio-straight" style="color: #fd3d8a;">Oh my god!</span><span class="palladio" style="color: #379aff; position: absolute; top:0px; left:0px; right:0px;">Oh my god!</span></p>
+    <p><br />
+<p></p><p style="position: relative;"><span class="palladio-straight" style="color: #fd3d8a;">Oh my god!</span><span class="palladio" style="color: #379aff; position: absolute; top:0px; left:0px; right:0px;">Oh my god!</span></p><p></p></p>
 
-<p>I wonder why the metrics changed…</p>
+<p>I wonder why the metrics changed<b>…</b></p>
+
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/graphically-thumb-18x18-4.png" width="18" height="18"  />
           by baseline - <a href="http://i.liketightpants.net/and/programmatically-manipulating-typefaces.html#comment-170"><abbr class="published" title="2012-05-31T23:32:14+01:00">May 31, 2012 11:32 PM</abbr></a><br />
@@ -478,9 +461,10 @@ font.update()</pre>
             
             
     <div id="comment-172" class="comment comment-reply">
-    <p style="position: relative; line-height: 148px;">&nbsp;<span style="position: absolute; top:0px; left:0px; right:0px; font-family:jaja-h; color:rgba(255,0,0,1); font-size: 148px; line-height: 148px;">Jaja</span><span style="position: absolute; top:0px; left:0px; right:0px; font-family:jaja-v; color:rgba(0,0,255,0.5); font-size: 148px; line-height: 148px;">Jaja</span></p>
-
-<p>Colorfonts! Combining superpositions with libre typefaces processed by scripts, that is what we did with at another workshop, <a href="http://osp.schr.fr/workshop/write-me-a-shadow/raw/latest/specimen/index.html" rel="nofollow">Write me a shadow</a>, in Valence.</p>
+    <p><br />
+<p style="position: relative; line-height: 148px;">&nbsp;<span style="position: absolute; top:0px; left:0px; right:0px; font-family:jaja-h; color:rgba(255,0,0,1); font-size: 148px; line-height: 148px;">Jaja</span><span style="position: absolute; top:0px; left:0px; right:0px; font-family:jaja-v; color:rgba(0,0,255,0.5); font-size: 148px; line-height: 148px;">Jaja</span></p><p><br />
+Colorfonts! Combining superpositions with libre typefaces processed by scripts, that is what we did with at another workshop, <a href="http://osp.schr.fr/workshop/write-me-a-shadow/raw/latest/specimen/index.html" rel="nofollow">Write me a shadow</a>, in Valence.<br />
+</p></p>
     <p class="byline"> by <a title="http://www.ludi.be/" href="http://www.ludi.be/" rel="nofollow">Ludi</a> - <a href="http://i.liketightpants.net/and/programmatically-manipulating-typefaces.html#comment-172"><abbr class="published" title="2012-06-01T00:33:06+01:00">June  1, 2012 12:33 AM</abbr></a><br />
     <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(172, 'Ludi')">Reply</a></p>
     </div>
@@ -491,7 +475,9 @@ font.update()</pre>
             
             
     <div id="comment-173" class="comment comment-reply">
-    <p>Hey, know they are aligned again… weird.</p>
+    <p><br />
+<p>Hey, now they are aligned again<b>…</b>&nbsp;weird.</p><br />
+</p>
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/graphically-thumb-18x18-4.png" width="18" height="18"  />
           by baseline - <a href="http://i.liketightpants.net/and/programmatically-manipulating-typefaces.html#comment-173"><abbr class="published" title="2012-06-01T00:43:46+01:00">June  1, 2012 12:43 AM</abbr></a><br />
@@ -508,11 +494,13 @@ font.update()</pre>
             
             
     <div id="comment-169" class="comment comment-reply">
-    <p>Note that your Make Curves Straight script is written to be used from within the font editor… In this scenario <code>CurrentFont()</code> returns the currently selected font. </p>
+    <p></p>
 
-<p>RoboFab is implemented in <a href="http://doc.robofont.com/" rel="nofollow">RoboFont</a> and can be installed for <a href="http://glyphsapp.com/" rel="nofollow">Glyphs</a> and <a href="http://www.fontlab.com/" rel="nofollow">Fontlab</a>, so you can run scripts from the interface.</p>
+<p style="">Note that your Make Curves Straight script is written to be used from within the font editor<b>…</b>&nbsp;In this scenario <code>CurrentFont()</code> returns the currently selected font. </p><p></p>
 
-<p>To make the script into a command line script just substitute the <code>CurrentFont</code> with the <code>RFont</code> object and the <code>argv</code> syntaxis like in the blog post.</p>
+<p></p><p>RoboFab is implemented in <a href="http://doc.robofont.com/" rel="nofollow">RoboFont</a> and can be installed for <a href="http://glyphsapp.com/" rel="nofollow">Glyphs</a> and <a href="http://www.fontlab.com/" rel="nofollow">Fontlab</a>, so you can run scripts from the interface.</p><p></p>
+
+<p></p><p>To make the script into a command line script just substitute the <code>CurrentFont</code> with the <code>RFont</code> object and the <code>argv</code> syntaxis like in the blog post.</p><p></p>
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/programmatically-thumb-18x18-6.png" width="18" height="18"  />
           by bnf - <a href="http://i.liketightpants.net/and/programmatically-manipulating-typefaces.html#comment-169"><abbr class="published" title="2012-05-31T23:56:01+01:00">May 31, 2012 11:56 PM</abbr></a><br />
@@ -550,7 +538,9 @@ font.update()</pre>
      <!-- If comment doesn't have a top-level-parent -->
             
     <div id="comment-171" class="comment">
-    <p>Obviously these kind of manipulations only make sense with open source fonts… The End User License Agreements of most typefaces expressly forbid manipulation, let only the redistribution of the manipulated versions…</p>
+    <p><br />
+<p style="">Obviously these kind of manipulations only make sense with open source fonts<b>…</b>&nbsp;The End User License Agreements of most typefaces expressly forbid manipulation, let only the redistribution of the manipulated versions<b>…</b></p><p></p><br />
+</p>
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/critically-thumb-18x18-2.jpg" width="18" height="18"  />
           by habitus - <a href="http://i.liketightpants.net/and/programmatically-manipulating-typefaces.html#comment-171"><abbr class="published" title="2012-05-31T23:59:12+01:00">May 31, 2012 11:59 PM</abbr></a><br />
@@ -644,16 +634,7 @@ font.update()</pre>
     </div>
   </div>
   <hr />
-  
-  <!--<h4>Related articles</h4>
-  <dl>
-  <dt>Article name could be very llong indeed</dt>
-  <dd>23 days ago - 23 likes</dd>
-  <dt>Article name could be very llong indeed</dt>
-  <dd>23 days ago - 23 likes</dd>
-  <dt>Article name could be very llong indeed</dt>
-  <dd>23 days ago - 23 likes</dd>
-  </dl>-->
+
 </div>
 
 <div class="grid_1">
@@ -695,56 +676,45 @@ font.update()</pre>
   <h4>Latest Comments</h4>
         <ul>
         
-            <li><strong>baseline:</strong> Hey, know they are aligned again… weird. <a href="/and/programmatically-manipulating-typefaces#comment-173" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
+            <li><strong>baseline:</strong>  Hey, now they are aligned again…&nbsp;weird. <a href="/and/programmatically-manipulating-typefaces#comment-173" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
         
     
     
-            <li><strong>Ludi:</strong> &nbsp;JajaJaja Colorfonts! Combining superpositions with libre typefaces processed by scripts, <a href="/and/programmatically-manipulating-typefaces#comment-172" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
+            <li><strong>Ludi:</strong>  &nbsp;JajaJaja Colorfonts! Combining superpositions with libre typefaces processed by <a href="/and/programmatically-manipulating-typefaces#comment-172" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
         
     
     
-            <li><strong>habitus:</strong> Obviously these kind of manipulations only make sense with open <a href="/and/programmatically-manipulating-typefaces#comment-171" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
+            <li><strong>habitus:</strong>  Obviously these kind of manipulations only make sense with <a href="/and/programmatically-manipulating-typefaces#comment-171" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
         
     
     
-            <li><strong>bnf:</strong> Note that your Make Curves Straight script is written to <a href="/and/programmatically-manipulating-typefaces#comment-169" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
+            <li><strong>bnf:</strong>  Note that your Make Curves Straight script is written <a href="/and/programmatically-manipulating-typefaces#comment-169" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
         
     
     
-            <li><strong>baseline:</strong> Oh my god!Oh my god! I wonder why the metrics <a href="/and/programmatically-manipulating-typefaces#comment-170" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
+            <li><strong>baseline:</strong>  Oh my god!Oh my god! I wonder why the <a href="/and/programmatically-manipulating-typefaces#comment-170" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
         
     
     
-            <li><strong>tellyou:</strong> Sure! from robofab.world import CurrentFont font = CurrentFont() for g <a href="/and/programmatically-manipulating-typefaces#comment-168" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
+            <li><strong>tellyou:</strong>  Sure! from robofab.world import CurrentFont font = CurrentFont() for <a href="/and/programmatically-manipulating-typefaces#comment-168" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
         
     
     
-            <li><strong>Alina Kadlubsky:</strong> This is quite appropriate! I’m writing my thesis on the <a href="/and/programmatically-manipulating-typefaces#comment-167" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
+            <li><strong>Alina Kadlubsky:</strong>  This is quite appropriate! I’m writing my thesis on <a href="/and/programmatically-manipulating-typefaces#comment-167" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
         
     
     
-            <li><strong>baseline:</strong> With the rotation script, you might want to add something <a href="/and/programmatically-manipulating-typefaces#comment-165" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
+            <li><strong>baseline:</strong>  With the rotation script, you might want to add <a href="/and/programmatically-manipulating-typefaces#comment-165" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
         
     
     
-            <li><strong>Antonio Roberts:</strong> There's also cool stuff you can do if you save <a href="/and/programmatically-manipulating-typefaces#comment-164" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
+            <li><strong>Antonio Roberts:</strong>  There's also cool stuff you can do if you <a href="/and/programmatically-manipulating-typefaces#comment-164" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
         
         </ul>
         
     
 
 
-<!--
-  <h4>Last 10 shouts</h4>
-  <dl>
-  <dt>Article name could be very llong indeed</dt>
-  <dd>23 days ago - 23 likes</dd>
-  <dt>Article name could be very llong indeed</dt>
-  <dd>23 days ago - 23 likes</dd>
-  <dt>Article name could be very llong indeed</dt>
-  <dd>23 days ago - 23 likes</dd>
-  </dl>
--->
 </div>
 </div>
 <div id="bar">&nbsp;</div>
