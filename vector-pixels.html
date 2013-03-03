@@ -135,13 +135,13 @@
     <div class="article grid_3 alpha omega suffix_2">
     <h4>Vector pixels</h4>
     <p>
-<img src="/and/assets/called/vector_pixel_city_pixels.png" style="width:16px;height:16px;" alt="A stylised image of a skyscraper, in 16 by 16 pixels." title="" />
+<img src="/and/assets/called/vector_pixel_city_pixels.png" style="width:16px;height:16px;" alt="A stylised image of a skyscraper, in 16 by 16 pixels." title="">
 <object type="image/svg+xml" style="width:384px;height:384px;" data="/and/assets/called/vector_pixel_city.svg">
-    <img src="/and/assets/called/vector_pixel_city.png" style="width:384px;height:384px;" alt="A stylised image of a skyscraper. The building is made out of square shapes on a 16 by 16 grid. The squares have rounded corners." />
+    <img src="/and/assets/called/vector_pixel_city.png" style="width:384px;height:384px;" alt="A stylised image of a skyscraper. The building is made out of square shapes on a 16 by 16 grid. The squares have rounded corners.">
  </object>
 </p>
 
-<pre>#!/usr/bin/env python
+<pre style="">#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 """  Turns an image into a two-colored grid of vectorpixels: squares,
@@ -150,21 +150,21 @@ circles, or squares with rounded corners.
 Creating a vector image from a raster image usually consists of
 imagining some kind of curve, responsible for the pixels. But this
 is guess work at best. Why don’t we work with what’s actually
-thereÃ¢â¬âpoints?
+there—points?
 
 This script turns an image into a grid of vector squares, circles,
 or squares with rounded corners.
 
 usage (command line):
 
-python vectorpixel.py inputimage.png > outputimage.svg
+python vectorpixel.py inputimage.png &gt; outputimage.svg
 
  TODO: allow multi-colour pictures, implement vertical and horiontal scanlines """
 
 import Image
 import sys
 
-class vectorpixel:
+class Vectorpixel:
     def __init__(self, image):
         self.i = Image.open(image).convert("1")
         self.px = self.i.load()
@@ -187,15 +187,15 @@ class vectorpixel:
 
     def _mkelements(self):
         for l in self._yieldlocations():
-            yield "<rect x='%s' y='%s' width='%s' height='%s' rx='%s' fill='%s'/>" % (
+            yield "&lt;rect x='%s' y='%s' width='%s' height='%s' rx='%s' fill='%s'/&gt;" % (
     self.grid * l[0] + self.line, self.grid * l[1] + self.line, self.width, self.height, self.rounded, self.fill)
 
     def _format(self):
-        output = '<svg xmlns="http://www.w3.org/2000/svg" width="%s" height="%s">\n' % (self.i.size[0] * self.grid, self.i.size[1] * self.grid)
+        output = '&lt;svg xmlns="http://www.w3.org/2000/svg" width="%s" height="%s"&gt;\n' % (self.i.size[0] * self.grid, self.i.size[1] * self.grid)
         for e in self._mkelements():
             output += e
             output += '\n'
-        output += '</svg>'
+        output += '&lt;/svg&gt;'
         return output
 
     def generate(self):
@@ -206,11 +206,11 @@ class vectorpixel:
     
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        sys.exit("usage (command line):\npython vectorpixel.py inputimage.png > outputimage.svg")
-    v = vectorpixel(sys.argv[1])
+        sys.exit("usage (command line):\npython vectorpixel.py inputimage.png &gt; outputimage.svg")
+    v = Vectorpixel(sys.argv[1])
     v.construct()
-    print v.generate()</pre>
-
+    print v.generate()<br><br style=""></pre>
+<p>Download <a href="/assets/called/vectorpixels.py">vectorpixels.py</a></p>
     <div id="comments" class="comments">
 
 
