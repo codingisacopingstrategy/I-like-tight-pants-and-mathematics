@@ -12,7 +12,7 @@ from random import randint
 
 posts = {}
 
-for i in ['parties-in-paris']: #iglob('*.html'):
+for i in iglob('*.html'):
     if i not in ['index.html','archives.html']: 
         i = i.replace('.html','')
         posts[i] = 'http://i.liketightpants.net/and/' + i
