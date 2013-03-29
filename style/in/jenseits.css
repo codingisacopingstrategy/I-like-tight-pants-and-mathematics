@@ -5,7 +5,7 @@
   font-weight: normal;
   font-style: normal; }
 
-body {
+body, input {
   font-family: Arial;
   font-size: 11px;
   line-height: 14px;
@@ -39,9 +39,11 @@ div#header {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   font-family: 'JottFLFBold', Arial; }
-
-#header ul li {
-  display: inline; }
+  div#header p, div#header p.byline {
+    margin: 0;
+    line-height: 24px; }
+  div#header ul li {
+    display: inline; }
 
 h2, h3, h4, h5, h6, .shout_number {
   font-family: Verdana;
@@ -92,6 +94,9 @@ div#bar {
   z-index: -1;
   width: 100%; }
 
+div.sidebar {
+  z-index: 111; }
+
 img.lrg_profile {
   width: 150px;
   height: 110px; }
@@ -101,6 +106,5 @@ pre {
   white-space: pre-wrap;
   margin-bottom: 18px; }
 
-div#header p, div#header p.byline {
-  margin: 0;
-  line-height: 24px; }
+input {
+  border: none; }
