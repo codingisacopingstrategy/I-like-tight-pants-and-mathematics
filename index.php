@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/parties-in-paris');
+header('Location: /and/belgian-newspapers');
 ?>

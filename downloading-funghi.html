@@ -58,7 +58,7 @@
   <ul>
     
     
-    <li><a href="/and/parties-in-paris">latest</a></li>
+    <li><a href="/and/belgian-newspapers">latest</a></li>
     
     <li><a href="/and/about">about</a></li>
     <li><a href="/and/archives">index</a></li>
@@ -70,7 +70,7 @@
 </div>
 
 <div id="content" class="container_7">
-<div class="grid_1">
+<div class="sidebar grid_1">
   
   <img src="http://mt.schr.fr/lib/support/assets_c/userpics/userpic-8-100x100.png?6" width="100" height="100" alt="" />
   
@@ -136,7 +136,7 @@
   </ul>
     
 </div>
-<div class="grid_5 post">
+<div class="post grid_5">
   <p class="byline">
   <a href="/and/making-unix-programs">Previous</a> 
   
@@ -217,8 +217,8 @@ We used a variation on this script while creating a <a href="http://schr.fr/radi
     <p>
 This is an example of a simple script composed in the Python programming language. <code>print</code> outputs lines to the terminal. there is one command line argument, which is the name of the category the script will retrieve the image files for. If you would just run the python script <code>python get_commons.py Illustrations_of_Mushrooms</code> you would get a line of urls printed to the terminal.
 
-<p>The script was designed to be used in a pipeline with the wget program (which, if you’ve <a href="/and/installing-compilers" rel="nofollow">installed Homebrew</a>, you can install by typing <code>brew install wget</code>). In the wget program, we specify <code>-i -</code> which means take input from the standard input.<br />
-</p></p>
+The script was designed to be used in a pipeline with the wget program (which, if you’ve <a href="/and/installing-compilers" rel="nofollow">installed Homebrew</a>, you can install by typing <code>brew install wget</code>). In the wget program, we specify <code>-i -</code> which means take input from the standard input.
+</p>
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/10/bowie-thumb-18x18-8.jpg" width="18" height="18"  />
           by tellyou - <a href="http://i.liketightpants.net/and/downloading-funghi.html#comment-123"><abbr class="published" title="2012-02-03T18:57:20+01:00">February  3, 2012  6:57 PM</abbr></a><br />
@@ -236,12 +236,12 @@ This is an example of a simple script composed in the Python programming languag
     <p>
 The script requests a url that returns list of images, and their properties, in a json format (just like the <a href="/and/absolute-beginners-unix-for-art-students-part-3" rel="nofollow">twitter api</a> provides). 
 
-<p>The script contains a function that calls a url from the wikipedia api, then extracts the image locations available in the response. If there are more images available then can be displayed at once, wikipedia’s api also returns a new url to query that will provide the next set of images and so on. To handle this, the function that queries wikipedia, checks if such a ‘continue-url’ is present, and if so, calls itself with this url as an argument. </p>
+The script contains a function that calls a url from the wikipedia api, then extracts the image locations available in the response. If there are more images available then can be displayed at once, wikipedia’s api also returns a new url to query that will provide the next set of images and so on. To handle this, the function that queries wikipedia, checks if such a ‘continue-url’ is present, and if so, calls itself with this url as an argument. 
 
-<p>The fact that a programming function can call itself is rather baffling at first. This is what programmers call recursion.</p>
+The fact that a programming function can call itself is rather baffling at first. This is what programmers call recursion.
 
-<p>Python is not optimized for recursion, but there are styles of programming that are built around this concept. Recursion is an appealing analytical trick. I imagine there is some kind of abstraction gland stimulated by paradoxes and self-referential logic tricks<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small; line-height: 16px; background-color: rgb(255, 255, 255);">—</span>a kind of weird sister to sexual excitement. Like the symbols preferred by medieaval alchemists. Jenseits likes circles, spirals and <a href="/and/uroboroses" rel="nofollow">Oroburouses</a>. <br />
-</p></p>
+Python is not optimized for recursion, but there are styles of programming that are built around this concept. Recursion is an appealing analytical trick. I imagine there is some kind of abstraction gland stimulated by paradoxes and self-referential logic tricks<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small; line-height: 16px; background-color: rgb(255, 255, 255);">—</span>a kind of weird sister to sexual excitement. Like the symbols preferred by medieaval alchemists. Jenseits likes circles, spirals and <a href="/and/uroboroses" rel="nofollow">Oroburouses</a>. 
+</p>
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/critically-thumb-18x18-2.jpg" width="18" height="18"  />
           by habitus - <a href="http://i.liketightpants.net/and/downloading-funghi.html#comment-124"><abbr class="published" title="2012-02-03T19:01:03+01:00">February  3, 2012  7:01 PM</abbr></a><br />
@@ -328,9 +328,12 @@ The script requests a url that returns list of images, and their properties, in 
 
 </div>
 
-<div class="grid_1">
+<div class="sidebar grid_1">
   <h4>Latest articles</h4>
   <dl>
+  
+  <dt><a href="/and/belgian-newspapers">Belgian Newspapers</a></dt>
+  <dd>March 29, 2013 10:17 PM</dd>
   
   <dt><a href="/and/parties-in-paris">Parties in Paris</a></dt>
   <dd>September  7, 2012  3:24 PM</dd>
@@ -358,9 +361,6 @@ The script requests a url that returns list of images, and their properties, in 
   
   <dt><a href="/and/daniela-likes-open-source-programming-conferences-like-fosdem">Daniela Likes Open Source Programming Conferences Like Fosdem</a></dt>
   <dd>February 17, 2012 10:55 PM</dd>
-  
-  <dt><a href="/and/why-would-europes-largest-open-source-convention-identify-itself-with-a-large-shrivelled-brain">Why Would Europe’s Largest Open Source Convention Identify Itself With a Large Shrivelled Brain?</a></dt>
-  <dd>February  3, 2012  7:55 PM</dd>
   
   </dl>
 

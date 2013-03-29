@@ -54,7 +54,7 @@
   <ul>
     
     
-    <li><a href="/and/parties-in-paris">latest</a></li>
+    <li><a href="/and/belgian-newspapers">latest</a></li>
     
     <li><a href="/and/about">about</a></li>
     <li><a href="/and/archives">index</a></li>
@@ -66,7 +66,7 @@
 </div>
 
 <div id="content" class="container_7">
-<div class="grid_1">
+<div class="sidebar grid_1">
   
   <img src="http://mt.schr.fr/lib/support/assets_c/userpics/userpic-6-100x100.png?8" width="100" height="100" alt="" />
   
@@ -171,7 +171,7 @@
   </ul>
     
 </div>
-<div class="grid_5 post">
+<div class="post grid_5">
   <p class="byline">
   <a href="/and/the-thinking-body">Previous</a> 
   
@@ -224,9 +224,9 @@
      <!-- If comment doesn't have a top-level-parent -->
             
     <div id="comment-118" class="comment">
-    <p><br />
-<p>Because of the modular nature and straightforward interface, it is easy to add commands to Unix with even the most basic of programming tools. This is Unix strength and it’s weakness. Unix has been able to grow organically, with different people adding different commands over time. This has made it versatile and comprehensive. Simultaneously, Unix is hugely inconsistent in naming commands, and commands often behave differently from each other in hard to predict ways. Also, newcomers are faced with the ballast of history: the name of the <code>less</code> program, that lets you page through the contents of a file, only makes sense if you know that its predecessor was called <code>more</code>.</p><br />
-</p>
+    
+<p>Because of the modular nature and straightforward interface, it is easy to add commands to Unix with even the most basic of programming tools. This is Unix strength and it’s weakness. Unix has been able to grow organically, with different people adding different commands over time. This has made it versatile and comprehensive. Simultaneously, Unix is hugely inconsistent in naming commands, and commands often behave differently from each other in hard to predict ways. Also, newcomers are faced with the ballast of history: the name of the <code>less</code> program, that lets you page through the contents of a file, only makes sense if you know that its predecessor was called <code>more</code>.</p>
+
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/10/bowie-thumb-18x18-8.jpg" width="18" height="18"  />
           by tellyou - <a href="http://i.liketightpants.net/and/making-unix-programs.html#comment-118"><abbr class="published" title="2012-02-02T13:45:52+01:00">February  2, 2012  1:45 PM</abbr></a><br />
@@ -241,8 +241,8 @@
      <!-- If comment doesn't have a top-level-parent -->
             
     <div id="comment-119" class="comment">
-    <p><br />
-<p>But as a an example, to turn the series of commands from <a href="/and/absolute-beginners-unix-for-art-students-part-3" rel="nofollow">our previous post</a> first into a script and then into a unix command, this is what we do. First we make a file called jenny.sh with the following contents:</p></p>
+    
+<p>But as a an example, to turn the series of commands from <a href="/and/absolute-beginners-unix-for-art-students-part-3" rel="nofollow">our previous post</a> first into a script and then into a unix command, this is what we do. First we make a file called jenny.sh with the following contents:</p>
 
 <pre>#!/usr/bin/bash
 curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\(.*\)"}]/\1/g' &gt; jennytweet-tmp.txt
@@ -279,6 +279,8 @@ rm jennytweet-tmp.txt jennytweet-laidout-tmp.ps
 <p>We can now run the script from anywhere simply as</p>
 
 <pre>jenny</pre>
+
+
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/programmatically-thumb-18x18-6.png" width="18" height="18"  />
           by bnf - <a href="http://i.liketightpants.net/and/making-unix-programs.html#comment-119"><abbr class="published" title="2012-02-02T13:50:06+01:00">February  2, 2012  1:50 PM</abbr></a><br />
@@ -312,8 +314,8 @@ rm jennytweet-tmp.txt jennytweet-laidout-tmp.ps
 Alternatively you could just keep the script local and add it as a command by adding an alias statement to your .bashrc such as:
 alias jenny /home/erik/tools/jenny.sh
 
-<p>This way you don't accidentally forget to backup your diy tools when you reinstall your system or even need brew to create user writable bin paths.<br />
-</p></p>
+This way you don't accidentally forget to backup your diy tools when you reinstall your system or even need brew to create user writable bin paths.
+</p>
     <p class="byline"> by <a title="http://www.rolfvandam.nl" href="http://www.rolfvandam.nl" rel="nofollow">Rolf van Dam</a> - <a href="http://i.liketightpants.net/and/making-unix-programs.html#comment-121"><abbr class="published" title="2012-02-03T17:10:19+01:00">February  3, 2012  5:10 PM</abbr></a><br />
     <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(121, 'Rolf van Dam')">Reply</a></p>
     </div>
@@ -329,14 +331,14 @@ If you don’t want to add aliases for each script, you can also add your own fo
 
 </p><pre>export PATH=~/bin:$PATH</pre><p>
 
-<p>I make a folder called <code>bin</code> inside my home folder, and all the scripts I put in here are automatically recognised.</p>
+I make a folder called <code>bin</code> inside my home folder, and all the scripts I put in here are automatically recognised.
 
-<p>The first time you do this, you may need to run:</p>
+The first time you do this, you may need to run:
 
 </p><pre>source ~/.profile</pre><p>
 
-<p>Afterwards, it will load automatically when you login.<br />
-</p></p>
+Afterwards, it will load automatically when you login.
+</p>
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/programmatically-thumb-18x18-6.png" width="18" height="18"  />
           by bnf - <a href="http://i.liketightpants.net/and/making-unix-programs.html#comment-133"><abbr class="published" title="2012-02-08T22:21:28+01:00">February  8, 2012 10:21 PM</abbr></a><br />
@@ -432,9 +434,12 @@ If you don’t want to add aliases for each script, you can also add your own fo
 
 </div>
 
-<div class="grid_1">
+<div class="sidebar grid_1">
   <h4>Latest articles</h4>
   <dl>
+  
+  <dt><a href="/and/belgian-newspapers">Belgian Newspapers</a></dt>
+  <dd>March 29, 2013 10:17 PM</dd>
   
   <dt><a href="/and/parties-in-paris">Parties in Paris</a></dt>
   <dd>September  7, 2012  3:24 PM</dd>
@@ -462,9 +467,6 @@ If you don’t want to add aliases for each script, you can also add your own fo
   
   <dt><a href="/and/daniela-likes-open-source-programming-conferences-like-fosdem">Daniela Likes Open Source Programming Conferences Like Fosdem</a></dt>
   <dd>February 17, 2012 10:55 PM</dd>
-  
-  <dt><a href="/and/why-would-europes-largest-open-source-convention-identify-itself-with-a-large-shrivelled-brain">Why Would Europe’s Largest Open Source Convention Identify Itself With a Large Shrivelled Brain?</a></dt>
-  <dd>February  3, 2012  7:55 PM</dd>
   
   </dl>
 
