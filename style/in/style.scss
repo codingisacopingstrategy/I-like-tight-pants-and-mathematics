@@ -132,6 +132,10 @@ div#bar {
     width: 100%;
 }
 
+div.sidebar {
+    z-index: 111;
+}
+
 img.lrg_profile {
     width: 150px;
     height: 110px;
