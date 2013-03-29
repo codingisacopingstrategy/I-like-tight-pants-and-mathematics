@@ -21,7 +21,7 @@ $accent: #ff0000 !default;
 
 }
 
-body {
+body, input {
     font-family: Arial;
     font-size: 11px;
     line-height: 14px;
@@ -59,12 +59,16 @@ h1, #header ul li {
 div#header {
     @include bar;
     font-family: 'JottFLFBold', Arial;
-}
 
-#header ul li {
-    display: inline;
-}
+    p, p.byline {
+        margin: 0;
+        line-height: 24px;
+    } 
 
+    ul li {
+        display: inline;
+    }
+}
 
 h2, h3, h4, h5, h6, .shout_number {
     font-family: Verdana;
@@ -112,12 +116,12 @@ div#content {
     margin-top: 39px;
     
     ul, dl, div.article, iframe, blockquote, img {
-    margin-bottom: $lineheight;
- }
+        margin-bottom: $lineheight;
+    }
  
-   .margin-bottom {
-    margin-bottom: $lineheight;
-   }
+    .margin-bottom {
+        margin-bottom: $lineheight;
+    }
 }
 
 div#bar {
@@ -139,9 +143,6 @@ pre {
     margin-bottom: 18px;
 }
 
-div#header {
-    p, p.byline {
-        margin: 0;
-        line-height: 24px;
-    } 
+input {
+    border: none;
 }
