@@ -7,15 +7,22 @@ Create screenshots for the archive page
 
 import os
 import subprocess
+from sys import argv
 from glob import iglob
 from random import randint
 
 posts = {}
 
-for i in iglob('*.html'):
-    if i not in ['index.html','archives.html']: 
-        i = i.replace('.html','')
+if len(argv) > 1:
+    # Take post slugs from command line
+    for i in argv[1:]:
         posts[i] = 'http://i.liketightpants.net/and/' + i
+else:
+    # Otherwise, all posts
+    for i in iglob('*.html'):
+        if i not in ['index.html','archives.html']: 
+            i = i.replace('.html','')
+            posts[i] = 'http://i.liketightpants.net/and/' + i
 
 for post, url in posts.iteritems():
     print "taking a screenshot of post", post, url
@@ -29,3 +36,4 @@ for post, url in posts.iteritems():
     pipe.wait()
     # remove post-full.png
     os.remove(fullfile)
+
