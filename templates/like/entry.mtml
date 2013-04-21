@@ -31,18 +31,22 @@
   
   <hr />
   
-  <h4>Articles</h4>
+  <h4>Other articles by <$mt:EntryAuthorDisplayName$></h4>
   <dl>
   <$mt:EntryAuthorUsername setvar="entry_author_username"$>
-  <mt:Entries author="$entry_author_username">
+  <$mt:EntryID setvar="entry_id"$>
+  <mt:Entries unique="1" author="$entry_author_username">
+  <mt:SetVarBlock name="written_entry_id"><$mt:EntryID$></mt:SetVarBlock>
+  <mt:Unless name="written_entry_id" eq="$entry_id">
   <dt><a href="<$mt:EntryPermalink regex_replace="/^http://i\.liketightpants\.net(.*)\.html/","$1"$>"><$mt:EntryTitle$></a></dt>
   <dd><$mt:EntryDate $></dd>
+  </mt:Unless>
   </mt:Entries>
   </dl>
 
   <mt:Comments lastn="10">
   <mt:CommentsHeader>
-  <h4>Comments</h4>
+  <h4><$mt:EntryAuthorDisplayName$>’s Comments</h4>
   <dl>
   </mt:CommentsHeader>
   <MTIfCommenterIsEntryAuthor>
