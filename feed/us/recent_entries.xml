@@ -4,9 +4,109 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2013-03-29T22:44:06Z</updated>
+    <updated>2013-04-30T18:10:13Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
+
+<entry>
+    <title>It Might Be a Unix Sin But I Would Like You to Add .txt As the Extension of Your README file</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/it-might-be-a-unix-sin-but-i-would-like-you-to-add-dot-t-x-t-as-the-extension-of-your-readme-file" />
+    <id>tag:i.liketightpants.net,2013:/and//1.65</id>
+
+    <published>2013-04-30T19:51:20Z</published>
+    <updated>2013-04-30T18:10:13Z</updated>
+
+    <summary>Who are these people in Boston? Why do they ask me to write them letters in the day and age where I download their software from the internet? And why didn’t they add .txt to the end of their filenames?</summary>
+    <author>
+        <name>bnf</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[<p><a href="https://github.com/klepas/open-baskerville/commit/8aaf5c54eb0c88cdbdfe2411e5f7396a88d0ab89"><img src="/and/assets/called/this_is_probably_a_unix_sin.png" style="width:660px;height:401px" alt="" title=""></a></p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Etherpad Or The Textarea Is A Lonely Place</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/etherpad-or-the-textarea-is-a-lonely-place" />
+    <id>tag:i.liketightpants.net,2013:/and//1.75</id>
+
+    <published>2013-04-22T19:59:54Z</published>
+    <updated>2013-04-27T12:00:02Z</updated>
+
+    <summary>It is a lonely place. The other I like tight pants contributors are nowhere in sight, it is just me typing away in the browser.</summary>
+    <author>
+        <name>tellyou</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[
+    
+    
+    
+    
+    
+    
+    
+        <p><a href="/and/assets/called/the_lonely_form_field.png"><img src="/and/assets/scaled/to/830/wide/and/called/the_lonely_form_field
+.png" alt="" title=""></a></p><p></p><p>This is where I type my entries. It is a lonely place. The other I like tight pants contributors are nowhere in sight, it is just me typing away in the browser. Only when I hit a submit button the information is sent to the server.</p><p>Were my colleagues to try and edit this article at the same time, the system would not allow it. Content management systems put in place editing locks, allowing only one user to edit at a time. This is because the text form I write in can not be updated while I am editing it. So if other users were allowed to update the entry inbetween the time that I open the text field and the moment I press the submit button, their changes would effectively be overwritten. Wikipedia employs a sophisticated merging tool to merge various edits together.</p><p>Baseline, who works with OSP, has introduced me to <a href="http://etherpad.org/" class="" target="_self" style="" title="Etherpad lite">Etherpad</a>. Etherpad presents you with an online document allowing you to start typing. As you do, you might see others connected to the pad start typing as well. There is no submit button. Everything is saved while you type so that it can be shown to your collaborators at the same time. You are no longer solitary with your text box:</p><p><a href="/and/assets/called/osp_using_etherpad.png"><img src="/and/assets/scaled/to/830/wide/and/called/osp_using_etherpad.png" alt="" title="" style="width:830px;height:623px;"></a></p><p>Once you have used Etherpad to write, it becomes difficult to imagine writing collaboratively without it. In a book sprint in Rotterdam, we used <a href="http://www.booki.cc/" class="" target="_self" style="" title="Booktype">Booki</a>, which allows for sophisticated pdf and ebook creation. Yet like many content editing tools it imposes a single-user content lock on each chapter. At the end of the session it turned out everyone had used Etherpad to write their chapters together, before copy and pasting it into the Booki platform.</p><p>If you have not used etherpad, changes are you have used the technology through Google Docs. It is Google who in 2009 bought Etherpad. At the time of the acquisition the source code gets released under a permissive license. So if the code is out there, why are we not seeing more Etherpad-style collaboration online?</p><p></p>
+
+
+        
+    
+    
+    
+    
+    
+    
+    ]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>The Most Barebones Online Font Editor Possible</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-most-barebones-online-font-editor-possible" />
+    <id>tag:i.liketightpants.net,2013:/and//1.74</id>
+
+    <published>2013-04-18T19:59:36Z</published>
+    <updated>2013-04-18T10:08:42Z</updated>
+
+    <summary><![CDATA[ Built by OSP as part of a workshop where students of the Piet Zwart Institute get up close and personal with vector graphics. You edit the raw XML strings that make up the glif.&nbsp;An online font-editor would be a...]]></summary>
+    <author>
+        <name>baseline</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[
+    
+    
+    
+    
+    
+    
+    
+    
+        <p><a href="/and/assets/called/edit_glif.png"><img src="/and/assets/scaled/to/830/wide/and/called/edit_glif.png" alt="You see a fairly minimalistic user interface featuring a list of what appears to be glyph names, a large letter A, and a textarea with xml data describing two contours—the contours that make up the A. The elements lack the usual gloss of post OS-X user interfaces: a thin grey 1px border is the only visual separator between elements." title=""></a></p><p>Built by OSP as part of a <a href="http://osp.constantvzw.org/workshop/pzi/" target="_self" style="" title="OSP (Open Source Publishing) → you&amp;#39;re traveling toward in pzi">workshop</a> where students of the Piet Zwart Institute get up close and personal with vector graphics. You edit the raw XML strings that make up the <a href="http://unifiedfontobject.org/versions/ufo2/glif.html" target="_self" style="" title="Unified Font Object - Version 2 - GLIF format">glif</a>.&nbsp;</p><p>An online font-editor would be a great way to make it more easy to do <a href="/and/how-it-has-come-about-that-code-hosting-site-github-offers-visualisations-of-typeface-development" style="" target="_self" title="I like tight pants and how it has come about that code hosting site github offers visualisations of typeface development">collaborative type design</a>. Speaking with <a href="https://www.google.com/search?q=dave+crossland" target="_self" style="" title="Dave Crossland">Dave</a> at this years Libre Graphics Meeting, we figured that a good place to get started would be to have a library that makes it more easy to deal with typefaces in web-apps—a JavaScript port of <a href="http://www.robofab.org/" target="_self" style="" title="I like tight pants and programmatically manipulating typefaces">RoboFab</a> perhaps?</p>
+        
+    
+    
+    
+    
+    
+    
+    
+    ]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Belgian Newspapers</title>
@@ -702,209 +802,6 @@ if __name__ == "__main__":
 <p><a href="/and/get_commons.py">Download</a></p>
 
 <p><img src="/and/assets/called/funghi.png" style="width:603px;height:390px;" /></p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Making unix programs</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/making-unix-programs" />
-    <id>tag:i.liketightpants.net,2012:/and//1.42</id>
-
-    <published>2012-02-02T12:33:26Z</published>
-    <updated>2012-02-03T15:42:26Z</updated>
-
-    <summary>It is really easy to add your own commands to Unix. Which is actually the reason it is a mess sometimes.</summary>
-    <author>
-        <name>tellyou</name>
-        
-    </author>
-    
-        <category term="Absolute Beginners: Unix for Art Students" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><a href="http://i.liketightpants.net/and/assets/called/serious_as_inverse_steve.jpg" /><img src="http://i.liketightpants.net/and/assets/scaled/to/490/wide/and/called/serious_as_inverse_steve.jpg" style="width:490px;height:490px;"/></a></p>
-
-<p class="byline">photo by <a href="http://www.johannieuwenhuize.nl/">Johan Nieuwenhuize</a></p>
-
-<p>It is really easy to add your own commands to Unix. Even a small script you write can be used in the same way as other unix commands. (Which is actually the reason Unix is a mess sometimes, because everybody went in and added their own commands.)</p>
-
-<p>The reason it is so straightforward to create Unix programs is that you do not have to program or design a graphic user interface: everything runs from the terminal. This is part of programmer culture: <a href="/and/absolute-beginners-unix-for-art-students-part-1">like glit argues</a>, if you want to stay up to date with new exciting developments, you need to know how to run things from the terminal, because programmers are usually not going to take the time to create a graphical user interface for their latest experiments. Instead, they, will distribute it as a unix script.</p>
-
-<h3>The interface</h3>
-
-<p>Instead of letting the user manipulate buttons and text boxes, a unix program accepts arguments and options on the command line. Unix programs can also specify what to do with the text passed in by other programs via pipelines (standard input). And what almost every program does: they can output text to the terminal (standard output).</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>The Thinking Body</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-thinking-body" />
-    <id>tag:i.liketightpants.net,2012:/and//1.41</id>
-
-    <published>2012-01-25T11:59:10Z</published>
-    <updated>2012-01-25T12:19:14Z</updated>
-
-    <summary>You see a black laptop posited on a hardboard floor, upon the laptop is written in chalk: BODY</summary>
-    <author>
-        <name>jenseits</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><a href="/and/assets/called/the_thinking_body.jpg"><img src="/and/assets/scaled/to/830/wide/and/called/the_thinking_body.jpg" style="width:830;height:622;" alt="You see a black laptop posited on a hardboard floor, upon the laptop is written in chalk: BODY." title="" /></a></p>
-
-<p class="byline">by <a href="http://www.google.be/search?q=bruno+listopad&amp;ie=UTF-8&amp;oe=UTF-8" title="bruno listopad - Google zoeken">Bruno</a>, <a href="http://www.danslab.nl/projects/season-2008-2009/2ndresearch0/bruno/" title="Bruno Listopad">researching</a> at <a href="http://www.danslab.nl/" title="News">danslab</a></p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Absolute Beginners: Unix for Art Students – part 3</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-3" />
-    <id>tag:i.liketightpants.net,2012:/and//1.40</id>
-
-    <published>2012-01-15T23:46:09Z</published>
-    <updated>2013-02-02T23:23:56Z</updated>
-
-    <summary>Using a set of unix commands to lay out Jenny Holzer tweets.</summary>
-    <author>
-        <name>baseline</name>
-        
-    </author>
-    
-        <category term="Absolute Beginners: Unix for Art Students" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[
-    <p><a href="/and/assets/called/sex_differences_are_here_to_stay.jpg"><img src="/and/assets/scaled/to/830/wide/and/called/sex_differences_are_here_to_stay.jpg" alt="In what is probably an office space or design studio (you can make out a laser printer, the back of a flatscreen monitor) a text is tacked to the wall constructed of a number of A4 sheets collated together: SEX DIFFERENCES ARE HERE TO STAY" style="width:830px;height:553px;" title=""></a></p>
-
-<p>After working through the <a href="/and/absolute-beginners-unix-for-art-students-part-1" title="I like tight pants and absolute beginners: unix for art students Ã¢â¬â part 1">first</a> <a href="/and/absolute-beginners-unix-for-art-students-part-2" title="I like tight pants and absolute beginners: unix for art students Ã¢â¬â part 2">two</a> <a href="/and/installing-compilers" title="I like tight pants and installing compilers">parts</a> of Absolute Beginners: Unix for Art Students <a href="/and/i-have-relocated-to-brussels" title="I like tight pants and i have relocated to brussels">Fabien</a> asked me how you can than actually use the terminal to make something. That is a good question. In <a href="/and/absolute-beginners-unix-for-art-students-part-1" title="I like tight pants and absolute beginners: unix for art students Ã¢â¬â part 1">part 1</a> gilt writes that it is commendable to find a more intimate way of dealing with your computer, but that does not enter the question <em>what</em> you could be doing with your terminal. Taking cues from a <a href="http://schr.fr/hypermap" title="HYPERMAP | schr.fr">design installation</a> we developed for the Performance Studies International festival, I would like to show an example of using the command line to create graphic images, and the kind of design processes that it can accommodate.</p>
-
-<h3>Building pipelines</h3>
-
-<p>The unix command line is built around passing around text. Programs generate text, and other programs can take this as their input. You can start to create whole ‘pipelines’ of programs all connected together.</p>
-
-<p>As our input today we take the <a href="http://twitter.com/jennyholzer" title="Twitter | Jenny Holzer">tweets of Jenny Holzer</a>. I do not know if you’ve heard of her, but Jenny Holzer is an artist who’s work prefigures contemporary social media: long before the advent of Facebook and twitter she has been claiming public space with her written truisms that, <a href="http://i.liketightpants.net/and/i-like-ziggy-over-zarathustra#jennyholzer" title="I like tight pants and ziggy over zarathustra">like habitus says</a>, always precipitate on the edge between worn clichés and individual confessions (<em>with you inside me comes the knowledge of my own death</em>).</p>
-
-<p>Seeing how Holzer has built her oeuvre and her career around the logic of the status update since well before it existed, it was a small step for her to take her work to twitter.</p>
-
-<p>Today we are not going to visit the twitter website, we are going to access it via the terminal. To get the latest tweet from Jenny Holzer we use the command:</p>
-
-<pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1"</pre>
-
-<p>The output will be something like:</p>
-
-<pre>[{"coordinates":null,"truncated":false,"place":null,"geo":null,"in_reply_to_user_id":null,"retweet_count":36,"favorited":false,"in_reply_to_status_id_str":null,"user":{"listed_count":1572,"contributors_enabled":false,"lang":"en","profile_text_color":"000000","protected":false,"location":"","statuses_count":359,"profile_background_image_url":"http:\/\/a0.twimg.com\/images\/themes\/theme1\/bg.png","name":"Jenny Holzer","default_profile":false,"profile_link_color":"D73030","url":"http:\/\/en.wikipedia.org\/wiki\/Jenny_Holzer","utc_offset":-18000,"description":"Abuse of power comes as no surprise.","friends_count":0,"profile_background_color":"D73030","following":true,"profile_background_tile":false,"followers_count":37419,"profile_image_url":"http:\/\/a2.twimg.com\/profile_images\/25643062\/jenny_holzer_normal.jpg","default_profile_image":false,"geo_enabled":false,"created_at":"Wed May 30 19:07:47 +0000 2007","profile_sidebar_fill_color":"F0F0F0","profile_background_image_url_https":"https:\/\/si0.twimg.com\/images\/themes\/theme1\/bg.png","favourites_count":0,"is_translator":false,"show_all_inline_media":false,"follow_request_sent":false,"notifications":false,"profile_sidebar_border_color":"000000","profile_image_url_https":"https:\/\/si0.twimg.com\/profile_images\/25643062\/jenny_holzer_normal.jpg","screen_name":"jennyholzer","id_str":"6451032","verified":false,"id":6451032,"profile_use_background_image":false,"time_zone":"Eastern Time (US &amp; Canada)"},"in_reply_to_screen_name":null,"created_at":"Fri Jan 13 15:34:55 +0000 2012","in_reply_to_user_id_str":null,"retweeted":false,"source":"\u003Ca href=\"http:\/\/twitter.com\/#!\/download\/iphone\" rel=\"nofollow\"\u003ETwitter for iPhone\u003C\/a\u003E","id_str":"157848105683922945","in_reply_to_status_id":null,"id":157848105683922945,"contributors":null,"text":"SEX DIFFERENCES ARE HERE TO STAY"}]</pre>
-
-<p>Curl is a program that gets the contents of a document on the web, and prints it out to the terminal.</p>
-
-<p>We have requested the status from twitters API, which is a way for twitter to present the data in a format that is more easy for computer programs to consume. It uses JSON format, which is great and all, but it’s just a little bit to new-fashioned for our means: we want plain old fashioned text.</p>
-
-<p>To go from the JSON to the old fashioned text, we are constructing the first part of our timeline.</p>
-
-<p>Try:</p>
-
-<pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\([^"]*\)".*}]/\1/g'</pre>
-
-<p>The output is:</p>
-
-<pre>SEX DIFFERENCES ARE HERE TO STAY</pre>
-
-<p>The <code>|</code> symbol feeds the output from the curl command to the sed command. The exact arguments we are using for sed we will not go into today, because it is a bit daunting if you are just getting into this sort of thing, but it suffices to understand that sed manipulates it input so that everything but the little part inside text=" " is maintained.</p>
-
-<p>Now we have the plain text as output, which we could use as input for another program. For example:</p>
-
-<pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\([^"]*\)".*}]/\1/g' | figlet</pre>
-
-<pre> ____  _______  __
-/ ___|| ____\ \/ /
-\___ \|  _|  \  / 
- ___) | |___ /  \ 
-|____/|_____/_/\_\
-                  
- ____ ___ _____ _____ _____ ____  _____ _   _  ____ _____ ____  
-|  _ \_ _|  ___|  ___| ____|  _ \| ____| \ | |/ ___| ____/ ___| 
-| | | | || |_  | |_  |  _| | |_) |  _| |  \| | |   |  _| \___ \ 
-| |_| | ||  _| |  _| | |___|  _ &lt;| |___| |\  | |___| |___ ___) |
-|____/___|_|   |_|   |_____|_| \_\_____|_| \_|\____|_____|____/ 
-                                                                
-    _    ____  _____   _   _ _____ ____  _____   _____ ___  
-   / \  |  _ \| ____| | | | | ____|  _ \| ____| |_   _/ _ \ 
-  / _ \ | |_) |  _|   | |_| |  _| | |_) |  _|     | || | | |
- / ___ \|  _ &lt;| |___  |  _  | |___|  _ &lt;| |___    | || |_| |
-/_/   \_\_| \_\_____| |_| |_|_____|_| \_\_____|   |_| \___/ 
-                                                            
- ____ _____  _ __   __
-/ ___|_   _|/ \\ \ / /
-\___ \ | | / _ \\ V / 
- ___) || |/ ___ \| |  
-|____/ |_/_/   \_\_|  
-</pre>
-
-<p>Now we have Jenny Holzer ascii art!</p>
-
-<p>We are going to go a bit further with this. What we want to do is layout this plain text in such a way that we could display it or print it. For this we are going to use a program called pango-view. It comes as part of pango, which we will have to install:</p>
-
-<pre>brew install pango</pre>
-
-<p>In fact, pango-view, spoils the fun somewhat, because it doesn’t let you use it as part of a pipeline. We’ll have to store the Jenny tweet into a text file:</p>
-
-<pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\([^"]*\)".*}]/\1/g' &gt; jennytweet.txt</pre>
-
-<p>The <code>&gt;</code> lets you store text output into a file. So we are storing the output of are pipeline, the plain text tweet, into the file <code>jennytweet.txt</code>.</p>
-
-<p>Pango-view lets us lay-out the text and output it as a picture:</p>
-
-<pre>pango-view jennytweet.txt -q -o jennytweet.png</pre>
-
-<p><img src="/and/assets/called/jennytweet-plain.png" style="width:353;height:39;" alt="‘SEX DIFFERENCES ARE HERE TO STAY’ set in pango-view’s default font" title=""></p>
-
-<p>If you type <code>man pango-view</code> you get an overview of the different options you have. <code>-q</code>, for example suppresses the default behavior to also display the result in a window.  <code>-o</code> specifies the output file, in this case jennytweet.png. Next to these two options, we also specify an <em>argument</em>, which is the inputfile to use. The program knows it is an argument instead of option, because it is not preceded by a dash and an option name.</p>
-
-<p>In the man page, we read that we can use <code>--font</code> to specify a font. It does not tell you the format to do so, which is the name followed by the size:</p>
-
-<pre>pango-view jennytweet.txt -q -o jennytweet.png --font "Futura 36"</pre>
-
-<p><img src="/and/assets/called/jennytweet-banner.png" style="width:882;height:83;" alt="‘SEX DIFFERENCES ARE HERE TO STAY’ set in Futura" title=""></p>
-
-<p>By default, pango-view thinks in pixels. So the Futura will have an x-height of 36 pixels. If we don’t specify any measurement for the width, the text will by laid out on one line like a long banner, the width determined by the width of the text.</p>
-
-<p>If we want to produce the look of a laid-out piece of text, we will have to specify a width:</p>
-
-<pre>pango-view jennytweet.txt -q -o jennytweet-laidout.png --font "Futura 36" -w 400</pre>
-
-<p><img src="/and/assets/called/jennytweet-laidout.png" style="width:553;height:146;" alt="‘SEX DIFFERENCES ARE HERE TO STAY’ set in Futura, laid out to a maximum width" title=""></p>
-
-<p>The cool thing about pango-view is that it can also generate vector files: pdf, but also svg and postscript. You just change the filename, and it does it automatically.</p>
-
-<pre>pango-view jennytweet.txt -q -o jennytweet-laidout.ps --font "Futura 36" -w 400</pre>
-
-<p>(Check out the resulting file in preview with <code>open jennytweet-laidout.ps</code>.)</p>
-
-<p>Why postscript? Well, we have this really cool old-school postscript utility called poster. And we are going to use this to create a tiling version of the image we just created, that spans many sheets of paper. First install poster:</p>
-
-<pre>brew update
-brew install poster</pre>
-
-<p>(You do no have the brew command? See tellyou’s post about homebrew). To generate a poster, you can do:</p>
-
-<pre>poster -s 4.4 jennytweet-laidout.ps &gt; jennyposter.ps</pre>
-
-<p>The -s 4.4 scales our original image 4.4 times. The original image has no real size declared in cm, so I did not know beforehand how big the result was going to be. I just came up with this 4.4 value by trail and error.</p>
-
-<p><a href="/and/assets/called/jennytweet-pages.png"><img src="/and/assets/scaled/to/490/wide/and/called/jennytweet-pages.png" style="width:421px;height:490px"></a></p>
-
-<p>VoilÃÂ&nbsp;. One can open this in preview and print it. Heck, one can even print it from the command line:</p>
-
-<pre>lpr jennyposter.ps</pre>
-
-<p>Let’s hang it on the wall.</p>
-    ]]>
         
     </content>
 </entry>
