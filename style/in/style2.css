@@ -29,10 +29,10 @@ a img {
 a,
 a:active,
 a:visited {
-  color: #7c26ff;
+  color: #ff0000;
 }
 a:hover {
-  color: #d8bfff;
+  color: #ff9999;
 }
 li {
   list-style: none;
@@ -87,7 +87,7 @@ p.byline {
   margin-top: 11px;
 }
 blockquote {
-  border-left: 9px solid #d8bfff;
+  border-left: 9px solid #ff9999;
   padding-left: 3px;
   font-size: 14px;
   line-height: 18px;

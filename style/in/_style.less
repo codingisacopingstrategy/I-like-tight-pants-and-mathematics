@@ -1,7 +1,6 @@
-$lineheight: 14px;
-$accent: #ff0000 !default;
+@lineheight: 14px;
 
-@mixin bar {
+.bar() {
     height: 26px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -41,11 +40,11 @@ a img {
 }
 
 a, a:active, a:visited {
-    color: $accent;
+    color: @accent;
 }
 
 a:hover {
-    color: lighten($accent, 30%);
+    color: lighten(@accent, 30%);
 }
 
 li {
@@ -57,7 +56,7 @@ h1, #header ul li {
 }
 
 div#header {
-    @include bar;
+    .bar;
     font-family: 'JottFLFBold', Arial;
 
     p, p.byline {
@@ -101,7 +100,7 @@ p.byline {
 }
 
 blockquote {
-    border-left: 9px solid lighten($accent, 30%);
+    border-left: 9px solid lighten(@accent, 30%);
     padding-left: 3px;
     font-size: 14px;
     line-height: 18px;
@@ -116,16 +115,16 @@ div#content {
     margin-top: 39px;
     
     ul, dl, div.article, iframe, blockquote, img {
-        margin-bottom: $lineheight;
+        margin-bottom: @lineheight;
     }
  
     .margin-bottom {
-        margin-bottom: $lineheight;
+        margin-bottom: @lineheight;
     }
 }
 
 div#bar {
-    @include bar;
+    .bar;
     position: absolute;
     top: 0;
     z-index: -1;
