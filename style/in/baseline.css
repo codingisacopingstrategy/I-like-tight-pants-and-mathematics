@@ -12,6 +12,11 @@ input {
   line-height: 14px;
   background-color: white;
 }
+code {
+  font-family: "andale mono", "lucida console", monospace;
+  font-size: 13px;
+  line-height: 14px;
+}
 h1,
 h2,
 h3,
@@ -109,6 +114,10 @@ div#content img {
 }
 div#content .margin-bottom {
   margin-bottom: 14px;
+}
+div.article ol li {
+  list-style-type: decimal;
+  list-style-position: inside;
 }
 div#bar {
   height: 26px;
