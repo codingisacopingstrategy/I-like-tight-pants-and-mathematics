@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong');
+header('Location: /and/i-need-my-generic-font-medicine');
 ?>
