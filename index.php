@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/release-early-release-often-version-numbers-for-typefaces');
+header('Location: /and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong');
 ?>
