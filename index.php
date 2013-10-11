@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/i-need-my-generic-font-medicine');
+header('Location: /and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork');
 ?>
