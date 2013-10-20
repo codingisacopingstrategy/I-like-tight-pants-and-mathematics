@@ -10,7 +10,6 @@
 <link rel="start" href="/and/" title="Home" />
 <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/and/feed/us/recent_entries.xml" />
 <script type="text/javascript" src="/and/scripts/being/jquery-1.8.0.min.js"></script>
-<script type="text/javascript" src="/and/scripts/being/jquery.syntaxhighlighter.min.js"></script>
 <script type="text/javascript" src="/and/scripts/being/scripts.js"></script>
 <script type="text/javascript" src="/and/mt.js"></script>
 
@@ -200,30 +199,30 @@
   <div>
     <div class="article grid_3 alpha omega suffix_2">
     <h4>Absolute Beginners: Unix for Art Students – part 1</h4>
-    
-    <p><a href="/and/assets/called/absolute_beginners_terminal.png"><img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_terminal.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, that reads: “Last login: Sat Oct 9 04:23:06 on console; computer-van-eric-schrijver:~ eric”" title="" style="width:830px;height:518px;"></a></p>
+      <p>
+        <a href="/and/assets/called/absolute_beginners_terminal.png">
+          <img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_terminal.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, that reads: “Last login: Sat Oct 9 04:23:06 on console; computer-van-eric-schrijver:~ eric”" title="" style="width:830px;height:518px;" />
+        </a>
+      </p>
+      <p>Glit here. So maybe you read bnf’s latest article, and you can not make chocolate out of it. The         <a href="http://i.liketightpants.net/and/vector-pixels" title="I like tight pants and vector pixels">little program</a>
+ he writes, is a script that runs on the         <a href="/and/the-voice-of-the-shell" title="I like tight pants and the voice of the shell">command line
+</a>
+. You may have never used the command line before. You might not even want to. But I’m here to tell you it’s a smart move.</p>
+      <p>Imagine you’re an art student. And you just bought an expensive aluminium computer, because that’s part of the deal of being an art student today. What programs are you planning to run on it? Photoshop, Safari        <span style="font-family: sans-serif; font-size: 13px; line-height: 19.200000762939453px; background-color: rgb(255, 255, 255);">—</span>
+Illustrator and inDesign maybe?</p>
+      <p>That’s so boring! There’s ways to be vastly more intimate and experimental with your computer, and since you have endeavored to study art and you want to be experimental and intimate with your materials, you better get at it with your computer too!</p>
+      <p>You couldn’t tell by the glossy graphics, but your Mac runs actually quite an old fashioned system, called Unix. Unix has been around since like forever. Or at least the 1970ies. Unix used to run on big computers in universities and enterprises, but in Mac Os X it has now found it’s way to personal computers.</p>
+      <p>Because Unix used to be the system that computer scientists and system administrators would run, almost all of the nifty programming tools have been developed for Unix. Your mac comes preinstalled with all the major programming languages: Python, Ruby, Perl, PHP. It comes with the webserver that runs many of the websites on the internet: Apache. And because it is a Unix system, you can easily expand with all the open source software that is being written today.</p>
+      <p>So here’s a sweet deal: your shiny expensive computer comes with a lot of programs for free, and you didn’t even know about it. Plus, you can tap into all the open source development that is being done right now. So whenever someone writes a new creative, clever or useful open source software tool, you can get that for free too! A whole new world to take in.</p>
+      <p>Now here’s the catch. Computer programmers and system administrators have a culture all of their own. One of the defining characteristics is, within this culture, graphical user interfaces like your Mac’s windows and buttons are not seen as the easiest way to deal with a program. Rather, you are expected to deal with your program through a         <em>Terminal</em>
+. This is a window in which you type commands. Just like in DOS, for those of you who have used a computer before 1995.</p>
+      <p>So to benefit from the culture of open source and programming, you have to learn how to use the terminal to run your programs. Other than that, you have to learn to use a program called a ‘package manager’ to easily install new programs. My colleagues are going to learn you both of these things. And to achieve the latter, we’re also going to install a compiler        <span style="font-family: sans-serif; font-size: 13px; line-height: 19.200000762939453px; background-color: rgb(255, 255, 255);">—</span>
+having a compiler around is an integral part of this lifestyle.</p>
+      <p>I’ll hand it back to bnf to         <a href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-2" title="I like tight pants and absolute beginners: unix for art students – part 2">introduce you to the terminal!</a>
+. Subsequently, tellyou tackles installing new unix software in         <a href="/and/installing-compilers">I like tight pants and installing compilers</a>
+.</p>
 
-<p>Glit here. So maybe you read bnf’s latest article, and you can not make chocolate out of it. The <a href="http://i.liketightpants.net/and/vector-pixels" title="I like tight pants and vector pixels">little program</a> he writes, is a script that runs on the <a href="/and/the-voice-of-the-shell" title="I like tight pants and the voice of the shell">command line
-</a>. You may have never used the command line before. You might not even want to. But I’m here to tell you it’s a smart move.</p>
-
-<p>Imagine you’re an art student. And you just bought an expensive aluminium computer, because that’s part of the deal of being an art student today. What programs are you planning to run on it? Photoshop, Safari<span style="font-family: sans-serif; font-size: 13px; line-height: 19.200000762939453px; background-color: rgb(255, 255, 255);">—</span>Illustrator and inDesign maybe?</p>
-
-<p>That’s so boring! There’s ways to be vastly more intimate and experimental with your computer, and since you have endeavored to study art and you want to be experimental and intimate with your materials, you better get at it with your computer too!</p>
-
-<p>You couldn’t tell by the glossy graphics, but your Mac runs actually quite an old fashioned system, called Unix. Unix has been around since like forever. Or at least the 1970ies. Unix used to run on big computers in universities and enterprises, but in Mac Os X it has now found it’s way to personal computers.</p>
-
-<p>Because Unix used to be the system that computer scientists and system administrators would run, almost all of the nifty programming tools have been developed for Unix. Your mac comes preinstalled with all the major programming languages: Python, Ruby, Perl, PHP. It comes with the webserver that runs many of the websites on the internet: Apache. And because it is a Unix system, you can easily expand with all the open source software that is being written today.</p>
-
-<p>So here’s a sweet deal: your shiny expensive computer comes with a lot of programs for free, and you didn’t even know about it. Plus, you can tap into all the open source development that is being done right now. So whenever someone writes a new creative, clever or useful open source software tool, you can get that for free too! A whole new world to take in.</p>
-
-<p>Now here’s the catch. Computer programmers and system administrators have a culture all of their own. One of the defining characteristics is, within this culture, graphical user interfaces like your Mac’s windows and buttons are not seen as the easiest way to deal with a program. Rather, you are expected to deal with your program through a <em>Terminal</em>. This is a window in which you type commands. Just like in DOS, for those of you who have used a computer before 1995.</p>
-
-<p>So to benefit from the culture of open source and programming, you have to learn how to use the terminal to run your programs. Other than that, you have to learn to use a program called a ‘package manager’ to easily install new programs. My colleagues are going to learn you both of these things. And to achieve the latter, we’re also going to install a compiler<span style="font-family: sans-serif; font-size: 13px; line-height: 19.200000762939453px; background-color: rgb(255, 255, 255);">—</span>having a compiler around is an integral part of this lifestyle.</p>
-
-<p>I’ll hand it back to bnf to <a href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-2" title="I like tight pants and absolute beginners: unix for art students – part 2">introduce you to the terminal!</a>. Subsequently, tellyou tackles installing new unix software in <a href="/and/installing-compilers">I like tight pants and installing compilers</a>.</p>
-
-    
-    <div id="comments" class="comments">
+<div id="comments" class="comments">
 
 
 

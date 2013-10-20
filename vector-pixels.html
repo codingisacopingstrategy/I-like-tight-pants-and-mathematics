@@ -10,7 +10,6 @@
 <link rel="start" href="/and/" title="Home" />
 <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/and/feed/us/recent_entries.xml" />
 <script type="text/javascript" src="/and/scripts/being/jquery-1.8.0.min.js"></script>
-<script type="text/javascript" src="/and/scripts/being/jquery.syntaxhighlighter.min.js"></script>
 <script type="text/javascript" src="/and/scripts/being/scripts.js"></script>
 <script type="text/javascript" src="/and/mt.js"></script>
 
@@ -149,14 +148,13 @@
   <div>
     <div class="article grid_3 alpha omega suffix_2">
     <h4>Vector pixels</h4>
-    <p>
-<img src="/and/assets/called/vector_pixel_city_pixels.png" style="width:16px;height:16px;" alt="A stylised image of a skyscraper, in 16 by 16 pixels." title="">
-<object type="image/svg+xml" style="width:384px;height:384px;" data="/and/assets/called/vector_pixel_city.svg">
-    <img src="/and/assets/called/vector_pixel_city.png" style="width:384px;height:384px;" alt="A stylised image of a skyscraper. The building is made out of square shapes on a 16 by 16 grid. The squares have rounded corners.">
- </object>
+      <p>
+        <img src="/and/assets/called/vector_pixel_city_pixels.png" style="width:16px;height:16px;" alt="A stylised image of a skyscraper, in 16 by 16 pixels." title="" />
+        <object type="image/svg+xml" style="width:384px;height:384px;" data="/and/assets/called/vector_pixel_city.svg">
+          <img src="/and/assets/called/vector_pixel_city.png" style="width:384px;height:384px;" alt="A stylised image of a skyscraper. The building is made out of square shapes on a 16 by 16 grid. The squares have rounded corners." />
+</object>
 </p>
-
-<pre style="">#!/usr/bin/env python
+      <pre style="">#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 """  Turns an image into a two-colored grid of vectorpixels: squares,
@@ -224,9 +222,13 @@ if __name__ == "__main__":
         sys.exit("usage (command line):\npython vectorpixel.py inputimage.png &gt; outputimage.svg")
     v = Vectorpixel(sys.argv[1])
     v.construct()
-    print v.generate()<br><br style=""></pre>
-<p>Download <a href="/assets/called/vectorpixels.py">vectorpixels.py</a></p>
-    <div id="comments" class="comments">
+    print v.generate()        <br />
+        <br style="" />
+      </pre>
+      <p>Download         <a href="/assets/called/vectorpixels.py">vectorpixels.py</a>
+      </p>
+    
+<div id="comments" class="comments">
 
 
 

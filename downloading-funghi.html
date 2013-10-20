@@ -10,7 +10,6 @@
 <link rel="start" href="/and/" title="Home" />
 <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/and/feed/us/recent_entries.xml" />
 <script type="text/javascript" src="/and/scripts/being/jquery-1.8.0.min.js"></script>
-<script type="text/javascript" src="/and/scripts/being/jquery.syntaxhighlighter.min.js"></script>
 <script type="text/javascript" src="/and/scripts/being/scripts.js"></script>
 <script type="text/javascript" src="/and/mt.js"></script>
 
@@ -161,7 +160,7 @@
   <div>
     <div class="article grid_3 alpha omega suffix_2">
     <h4>Downloading funghi, from Wikimedia Commons</h4>
-    <pre>#!/usr/bin/env python
+      <pre>#!/usr/bin/env python
 # print the urls of all the images in a category of Wikimedia Commons
 # example:
 # $ python get_commons.py "Category:Illustrations_of_fungi"
@@ -176,8 +175,8 @@ from urllib import quote
 
 def make_api_query(category, q_continue=""):
     if q_continue:
-        q_continue = '&gcmcontinue=' + q_continue
-    url = 'http://commons.wikimedia.org/w/api.php?action=query&generator=categorymembers&gcmtitle=' + category + q_continue + '&gcmlimit=500&prop=imageinfo&iiprop=url&format=json'
+        q_continue = '&amp;gcmcontinue=' + q_continue
+    url = 'http://commons.wikimedia.org/w/api.php?action=query&amp;generator=categorymembers&amp;gcmtitle=' + category + q_continue + '&amp;gcmlimit=500&amp;prop=imageinfo&amp;iiprop=url&amp;format=json'
     request = json.loads(urllib2.urlopen(url).read())
     if 'error' in request:
         sys.exit(request['error']['info'])
@@ -195,11 +194,14 @@ if __name__ == "__main__":
     if len(sys.argv) != 2:
         sys.exit("usage: python get_commons.py [category]")
     make_api_query(sys.argv[1])</pre>
-
-<p><a href="/and/get_commons.py">Download</a></p>
-
-<p><img src="/and/assets/called/funghi.png" style="width:603px;height:390px;" /></p>
-    <div id="comments" class="comments">
+      <p>
+        <a href="/and/get_commons.py">Download</a>
+      </p>
+      <p>
+        <img src="/and/assets/called/funghi.png" style="width:603px;height:390px;" />
+      </p>
+    
+<div id="comments" class="comments">
 
 
 
