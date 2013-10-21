@@ -109,11 +109,13 @@ div#content dl,
 div#content div.article,
 div#content iframe,
 div#content blockquote,
-div#content img {
-  margin-bottom: 14px;
+div#content img,
+div#content ol,
+div#content ul {
+  margin-bottom: 18px;
 }
 div#content .margin-bottom {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 div.article ol li {
   list-style-type: decimal;
