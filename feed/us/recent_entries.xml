@@ -24,7 +24,8 @@
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<style>
+        <![CDATA[
+    <style>
 h2 {
     text-rendering: optimizeLegibility;
     font-size: 72px;
@@ -78,37 +79,42 @@ font-style: normal;
         line-height: 72px;
     }
 </style>
-<p></p>
-<p>
-    <a href="http://www.joelswanson.net/avsh/" title="joelswanson.net / Akzidenz vs. Helvetica"><img style="height: 629px; width: 713px; position: relative; margin: 0px; resize: none; zoom: 1; display: inline-block; top: 0px; left: 0px;" src="/and/assets/called/avsh.gif" title="" class=""></a>
-    <br>
-</p>
-<p class="byline"><a href="http://www.joelswanson.net/">Joel Swanson</a>: <a href="http://www.joelswanson.net/avsh/">Akzidens vs. Helvetica (2006)</a>
-    <br>Vinyl wall installation / 3d glasses&nbsp;dimensionals variable&nbsp;</p>
-<p style="">The metaphors we live by are different in each era, and tell you about the social movements shaping this moment. In the time of Snowden and Zuckerberg, we get our metaphors from Silicon Valley. The ‘fork’ is one such concept, originating in this case from the world of open source software development. Initially considered a negative occurrence, a fork is when someone creates a new version of an existing project that takes a different direction than the original maintainer imagined. &nbsp;A new style of open source collaboration, embodied in the popular code sharing platform&nbsp;<span style="font-size: 14px;"><a href="/and/how-it-has-come-about-that-code-hosting-site-github-offers-visualisations-of-typeface-development" class="" target="_self" style="" title="I like tight pants and how it has come about that code hosting site github offers visualisation of typeface development">Github</a>, encourages forking. In Github, collaboration starts by creating a fork of a project, and adding changes to this fork. Then one either contributes these changes back to the original depot (if they accept it), or one goes ones own way—a fork proper in the traditional sense.</span>
-</p>
-<p style="">There is a lot to be said about this <a href="http://www.catb.org/esr/writings/homesteading/" target="_self" style="" title="The Cathedral and the Bazaar">‘bazaar’ style development model</a>, and how a pragmatic view on originality and authorship and an embracing of redundancy can make for a culturally rich ecosystem. These ideas are inspiring enough to see how they could also work outside the realm of software development. But when it comes to type design, one need not look to software development. To see how building upon existing&nbsp;creations makes typographic sense, one can look at type design history itself<span style="font-size: 14px;">.</span></p><h4>Eric’s fork</h4><p style=""><span style="font-size: 14px;"> </span><span style="font-size: 14px;">Two seminal typefaces of post-war graphic design are described by their own creators as improvements upon existing fonts.</span></p>
-<p style="" class="railway">NOT THE PENGUIN YOU KNOW</p>
-<p class="byline">Justin Howes’ digitisation of Edward Johnston’s Underground typeface (<a href="http://typotech.blogspot.co.uk/2012/08/johnstons-railway-sans-edward-johnstons.html" title="Johnston’s ‘Railway’ Sans">Railway Sans</a>), the point of departure for Eric Gill’s Gill Sans</p>
-<p style=""><span style="font-size: 14px;">Gill Sans is considered Britain’s national sans serif, as seen on Penguin books and in the BBC logo. The typeface is designed by Eric Gill, who describes it as an attempt to improve Edward Johnston’s typeface made for the Tube:&nbsp;</span>
-</p>
-<blockquote>The first notable attempt to work out the norm for plain letters was made by Mr Edward Johnston when he designed the sans-serif letter for the London Underground Railways. Some of the letters are not entirely satisfactory, especially when it is remembered that, for such a purpose, an alphabet should be as near as possible ‘fool-proof’ (…)—nothing should be left to the imagination of the signwriter or the enamel-plate maker. In this quality of ‘fool-proofness’ the Monotype sans-serif face [Gill Sans] (…) is perhaps an improvement.&nbsp;</blockquote>
-<p>On Typotheque, <a href="https://www.typotheque.com/articles/re-evaluation_of_gill_sans/" style="" target="_self" title="Typotheque: Eric Gill got it wrong; a re-evaluation of Gill Sans by Ben Archer">Ben Archer reviews</a> the way in which Eric Gill takes Johnston’s typeface as its base, and then tries to achieve more ‘fool-proofness’. For example, in letters like the b, d, p and q, which consist of stick and a belly, so to say, Gill connects the stick directly to to the belly (‘flattening of the bowl’). At the same time, Gill is not entirely consistent in this effort as he adds additional curves (cusps) to some letters (the a) while removing them in others (the i). In Archers’s opinion, this means Gill did a bad job in re-adapting the design. One can argue with his reasoning—consistency is not necessarily what makes a great typeface, and having a set of consistent letter shapes are by no means a guarantee that these letters will work well together as a typeface.</p><p>Yet it is the idea that Gill Sans represents a proposition of improvement over an existing typeface, that interests me. And we can now all try and do a better job than Gill, because Greg Fleming released the source files for Justin Howes’ digitisation of Johnston’s typeface under an open source license as <a href="http://typotech.blogspot.co.uk/2012/08/johnstons-railway-sans-edward-johnstons.html" class="" style="" target="_self" title="Johnston’s Railway Sans">Railway Sans</a>.</p>
-<h4>The Swiss fork a German work horse</h4><p>‘In 1956, Edouard Hoffmann, of the Haas Type Foundry in Switzerland, decided that the more natural typeface, Akzidenz Grotesk, needed to be reworked for a new century.’ (<a href="http://cis1.westerntc.edu/halee/type/face_history.html" target="_self" style="" title="max miedinger, history of helvetica">source</a>) The new typeface comes at the exact right moment to be adopted by the burgeoning Swiss International Style, and another famous 20th century typeface, is born, Helvetica.</p>
-<p>The changes are subtle, as you can see in Joe Swanson’s installation that is shown in the masthead of this article<a href="http://www.joelswanson.net/avsh/" style="" target="_self" title="joelswanson.net / Akzidenz vs. Helvetica"></a>. Whereas Helvetica has its share of adoration, like in the case of Gill, the lesser well known predecessor has its fans too. Martin Majoor is a Dutch type designer who is known for his font families that contain both sans serif and serif variations of the same skeleton, and in which the sans serifs are accorded features that are normally reserved for serif designs, like true italics (not slanted). Majoor <a href="http://www.eyemagazine.com/feature/article/inclined-to-be-dull" class="" target="_self" style="" title="Eye Magazine | Feature | Inclined to be dull">sounds off in Eye Magazine</a> about &nbsp;the dull eyesore that is Helvetica, and contrasts it with the more likeable Akzidenz. Ironically, whereas Archer accuses Gill of being inconsistent, Majoor accuses Miedinger of being too consistent in his adaptation of Akzidenz:&nbsp;</p>
-<blockquote style="">Compared to Akzidenz Grotesk, Helvetica has hardly any new features. Though claimed to be an improvement on Akzidenz Grotesk, it lacks all the character and charming clumsiness of Akzidenz Grotesk. Helvetica is blunt and colourless (…)
-    <br style="">
-</blockquote>
-<h4>Forking in the digital era</h4>
-<p style="">If forking defined 20th century type, one would imagine that in the digital era the promiscuous forking of typeface designs would take an ever higher flight: typefaces are distributed in a form that is extremely easy to manipulate and the tools to do so are readily available.</p>
-<p style="">Yet looking through <a href="http://typographica.org/features/our-favorite-typefaces-of-2012/" target="_self" style="" title="Our Favorite Typefaces of 2012 | Typeface Reviews | Typographica">Typographica’s favourite typefaces of 2012</a>, there is only one typeface that is explicitly based on another popular digitally available typeface: <a href="http://typographica.org/typeface-reviews/stanley/" class="" target="_self" style="">Stanley</a>, based on Times New Roman. Apparently, type designers prefer to take their inspiration from the pre-digital era: they work from <a href="http://typographica.org/typeface-reviews/henriette/" class="" target="_self" style="">Vienesse street signs</a>,<a href="http://typographica.org/typeface-reviews/trio-grotesk/" target="_self" style=""> a 1909 plain Dutch typeface in which a Piet Zwart pamphlet was set</a>, <a href="http://typographica.org/typeface-reviews/bery-roman-script-tuscan/" target="_self" style="">the work of an 18th century Parisian stencil maker who had sold all his copper plates to Benjamin Franklin</a>, &nbsp;and ‘<a href="http://typographica.org/typeface-reviews/stan/" target="_self" style="">a very little known typeface issued in 1913 by the Dresden foundry Schriftguß AG Brüder Butter</a>’.</p>
-<p style="">Why is it then that all these designers base themselves on pre-digital sources. Why don’t they work from existing digital font sources? Or, at least, do not do so openly—it might be the case that they already do so, as there is really no way to know if a designer started of with an existing digital font.</p><p style="">One of the reasons the fork has flourished in type design is because copyright protection is very weak on typefaces. Like baseline describes in I like tight pants and I want my generic font medicine, it is not the design itself, but only the final digital font file that can be copyrighted. This is one of the reasons why type designers choose to work on pre-digital revivals: the practical consequence that they do not have to care about any copyrights in the original.</p><p style="">Another element is that in working from pre-digital sources, typographers underline the need for their skill set, and stress the labour involved in the process. <a href="http://ospublish.constantvzw.org/blog/typo/appropriation-and-type-before-and-today" target="_self" style="" title="Appropriation and Type – before and today">Ricardo Lafuente is onto something when he borrows Fred Smeijers’ terminology, to describe type designers efforts to separate type designers into “true” type designers and mere font tweakers</a>. At least, with a digitisation, it is clear that a mere ‘tweak’ cannot suffice. Everyone who has ever digitised a font knows that it is a lengthy and laborious process to interpret the blurry analogue impression of ink on paper into the squeaky clean logic of PostScript points.</p><p style="">Traditionally type design has been a discipline tightly coupled to the printing industry. To get a job as a type designer, one needed to work in the industry, because they paid for the production costs. Nowadays, the means of production for type design are practically free. Type design then, like graphic design, visual art and music, becomes a field with a very low barrier to entry. And because creative professions are fun, and are deemed to be full off rewards, many flock to these fields, leaving a situation where the offer highly outnumbers the demand (Hans Abbing wrote a great book on this: <a href="http://dare.uva.nl/aup/en/record/172819" style="" target="_self">Why are artists poor?</a>).</p><p style=""><span style="font-size: 14px;">When one has invested in such a discipline, for example by following an education at the KABK in Type&amp;Media or at the University of Reading, or by joining an organisation like the ATypI, one has all the interest in defending the virtue of ‘professional art’ versus the amateurs. One way to do so is to distinguish oneself from&nbsp;</span><span style="font-size: 14px;">enthousiastic amateurs who distribute their work for free on sites like dafont, and who are not always clear about the progeny of their work.&nbsp;</span>Starting from existing digital typefaces, then, would seem uncomfortably close to a ‘font-tweaker’ approach, blurring the lines between the professionals that know the craft, and the rest of the human population that knows how to open up a font-editor.&nbsp;</p><h4><span style="font-family: Verdana; font-size: 11px; font-weight: 700; line-height: 14px;"></span>
+    <p></p>
+    <p><a href="http://www.joelswanson.net/avsh/" title="joelswanson.net / Akzidenz vs. Helvetica">
+        <img style="height: 629px; width: 713px; position: relative; margin: 0px; resize: none; zoom: 1; display: inline-block; top: 0px; left: 0px;" src="/and/assets/called/avsh.gif" title="" class="" />
+      </a><br /></p>
+    <p class="byline"><a href="http://www.joelswanson.net/">Joel Swanson</a>: <a href="http://www.joelswanson.net/avsh/">Akzidens vs. Helvetica (2006)</a><br />Vinyl wall installation / 3d glasses&nbsp;dimensionals variable&nbsp;</p>
+    <p style="">The metaphors we live by are different in each era, and tell you about the social movements shaping this moment. In the time of Snowden and Zuckerberg, we get our metaphors from Silicon Valley. The ‘fork’ is one such concept, originating in this case from the world of open source software development. Initially considered a negative occurrence, a fork is when someone creates a new version of an existing project that takes a different direction than the original maintainer imagined. &nbsp;A new style of open source collaboration, embodied in the popular code sharing platform&nbsp;<span style="font-size: 14px;"><a href="/and/how-it-has-come-about-that-code-hosting-site-github-offers-visualisations-of-typeface-development" class="" target="_self" style="" title="I like tight pants and how it has come about that code hosting site github offers visualisation of typeface development">Github</a>, encourages forking. In Github, collaboration starts by creating a fork of a project, and adding changes to this fork. Then one either contributes these changes back to the original depot (if they accept it), or one goes ones own way—a fork proper in the traditional sense.</span></p>
+    <p style="">There is a lot to be said about this <a href="http://www.catb.org/esr/writings/homesteading/" target="_self" style="" title="The Cathedral and the Bazaar">‘bazaar’ style development model</a>, and how a pragmatic view on originality and authorship and an embracing of redundancy can make for a culturally rich ecosystem. These ideas are inspiring enough to see how they could also work outside the realm of software development. But when it comes to type design, one need not look to software development. To see how building upon existing&nbsp;creations makes typographic sense, one can look at type design history itself<span style="font-size: 14px;">.</span></p>
+    <h4>Eric’s fork</h4>
+    <p style=""><span style="font-size: 14px;"></span><span style="font-size: 14px;">Two seminal typefaces of post-war graphic design are described by their own creators as improvements upon existing fonts.</span></p>
+    <p style="" class="railway">NOT THE PENGUIN YOU KNOW</p>
+    <p class="byline">Justin Howes’ digitisation of Edward Johnston’s Underground typeface (<a href="http://typotech.blogspot.co.uk/2012/08/johnstons-railway-sans-edward-johnstons.html" title="Johnston’s ‘Railway’ Sans">Railway Sans</a>), the point of departure for Eric Gill’s Gill Sans</p>
+    <p style=""><span style="font-size: 14px;">Gill Sans is considered Britain’s national sans serif, as seen on Penguin books and in the BBC logo. The typeface is designed by Eric Gill, who describes it as an attempt to improve Edward Johnston’s typeface made for the Tube:&nbsp;</span></p>
+    <blockquote>The first notable attempt to work out the norm for plain letters was made by Mr Edward Johnston when he designed the sans-serif letter for the London Underground Railways. Some of the letters are not entirely satisfactory, especially when it is remembered that, for such a purpose, an alphabet should be as near as possible ‘fool-proof’ (…)—nothing should be left to the imagination of the signwriter or the enamel-plate maker. In this quality of ‘fool-proofness’ the Monotype sans-serif face [Gill Sans] (…) is perhaps an improvement.&nbsp;</blockquote>
+    <p>On Typotheque, <a href="https://www.typotheque.com/articles/re-evaluation_of_gill_sans/" style="" target="_self" title="Typotheque: Eric Gill got it wrong; a re-evaluation of Gill Sans by Ben Archer">Ben Archer reviews</a> the way in which Eric Gill takes Johnston’s typeface as its base, and then tries to achieve more ‘fool-proofness’. For example, in letters like the b, d, p and q, which consist of stick and a belly, so to say, Gill connects the stick directly to to the belly (‘flattening of the bowl’). At the same time, Gill is not entirely consistent in this effort as he adds additional curves (cusps) to some letters (the a) while removing them in others (the i). In Archers’s opinion, this means Gill did a bad job in re-adapting the design. One can argue with his reasoning—consistency is not necessarily what makes a great typeface, and having a set of consistent letter shapes are by no means a guarantee that these letters will work well together as a typeface.</p>
+    <p>Yet it is the idea that Gill Sans represents a proposition of improvement over an existing typeface, that interests me. And we can now all try and do a better job than Gill, because Greg Fleming released the source files for Justin Howes’ digitisation of Johnston’s typeface under an open source license as <a href="http://typotech.blogspot.co.uk/2012/08/johnstons-railway-sans-edward-johnstons.html" class="" style="" target="_self" title="Johnston’s Railway Sans">Railway Sans</a>.</p>
+    <h4>The Swiss fork a German work horse</h4>
+    <p>‘In 1956, Edouard Hoffmann, of the Haas Type Foundry in Switzerland, decided that the more natural typeface, Akzidenz Grotesk, needed to be reworked for a new century.’ (<a href="http://cis1.westerntc.edu/halee/type/face_history.html" target="_self" style="" title="max miedinger, history of helvetica">source</a>) The new typeface comes at the exact right moment to be adopted by the burgeoning Swiss International Style, and another famous 20th century typeface, is born, Helvetica.</p>
+    <p>The changes are subtle, as you can see in Joe Swanson’s installation that is shown in the masthead of this article<a href="http://www.joelswanson.net/avsh/" style="" target="_self" title="joelswanson.net / Akzidenz vs. Helvetica"></a>. Whereas Helvetica has its share of adoration, like in the case of Gill, the lesser well known predecessor has its fans too. Martin Majoor is a Dutch type designer who is known for his font families that contain both sans serif and serif variations of the same skeleton, and in which the sans serifs are accorded features that are normally reserved for serif designs, like true italics (not slanted). Majoor <a href="http://www.eyemagazine.com/feature/article/inclined-to-be-dull" class="" target="_self" style="" title="Eye Magazine | Feature | Inclined to be dull">sounds off in Eye Magazine</a> about &nbsp;the dull eyesore that is Helvetica, and contrasts it with the more likeable Akzidenz. Ironically, whereas Archer accuses Gill of being inconsistent, Majoor accuses Miedinger of being too consistent in his adaptation of Akzidenz:&nbsp;</p>
+    <blockquote style="">Compared to Akzidenz Grotesk, Helvetica has hardly any new features. Though claimed to be an improvement on Akzidenz Grotesk, it lacks all the character and charming clumsiness of Akzidenz Grotesk. Helvetica is blunt and colourless (…)
+    <br style="" /></blockquote>
+    <h4>Forking in the digital era</h4>
+    <p style="">If forking defined 20th century type, one would imagine that in the digital era the promiscuous forking of typeface designs would take an ever higher flight: typefaces are distributed in a form that is extremely easy to manipulate and the tools to do so are readily available.</p>
+    <p style="">Yet looking through <a href="http://typographica.org/features/our-favorite-typefaces-of-2012/" target="_self" style="" title="Our Favorite Typefaces of 2012 | Typeface Reviews | Typographica">Typographica’s favourite typefaces of 2012</a>, there is only one typeface that is explicitly based on another popular digitally available typeface: <a href="http://typographica.org/typeface-reviews/stanley/" class="" target="_self" style="">Stanley</a>, based on Times New Roman. Apparently, type designers prefer to take their inspiration from the pre-digital era: they work from <a href="http://typographica.org/typeface-reviews/henriette/" class="" target="_self" style="">Vienesse street signs</a>,<a href="http://typographica.org/typeface-reviews/trio-grotesk/" target="_self" style=""> a 1909 plain Dutch typeface in which a Piet Zwart pamphlet was set</a>, <a href="http://typographica.org/typeface-reviews/bery-roman-script-tuscan/" target="_self" style="">the work of an 18th century Parisian stencil maker who had sold all his copper plates to Benjamin Franklin</a>, &nbsp;and ‘<a href="http://typographica.org/typeface-reviews/stan/" target="_self" style="">a very little known typeface issued in 1913 by the Dresden foundry Schriftguß AG Brüder Butter</a>’.</p>
+    <p style="">Why is it then that all these designers base themselves on pre-digital sources. Why don’t they work from existing digital font sources? Or, at least, do not do so openly—it might be the case that they already do so, as there is really no way to know if a designer started of with an existing digital font.</p>
+    <p style="">One of the reasons the fork has flourished in type design is because copyright protection is very weak on typefaces. Like baseline describes in I like tight pants and I want my generic font medicine, it is not the design itself, but only the final digital font file that can be copyrighted. This is one of the reasons why type designers choose to work on pre-digital revivals: the practical consequence that they do not have to care about any copyrights in the original.</p>
+    <p style="">Another element is that in working from pre-digital sources, typographers underline the need for their skill set, and stress the labour involved in the process. <a href="http://ospublish.constantvzw.org/blog/typo/appropriation-and-type-before-and-today" target="_self" style="" title="Appropriation and Type – before and today">Ricardo Lafuente is onto something when he borrows Fred Smeijers’ terminology, to describe type designers efforts to separate type designers into “true” type designers and mere font tweakers</a>. At least, with a digitisation, it is clear that a mere ‘tweak’ cannot suffice. Everyone who has ever digitised a font knows that it is a lengthy and laborious process to interpret the blurry analogue impression of ink on paper into the squeaky clean logic of PostScript points.</p>
+    <p style="">Traditionally type design has been a discipline tightly coupled to the printing industry. To get a job as a type designer, one needed to work in the industry, because they paid for the production costs. Nowadays, the means of production for type design are practically free. Type design then, like graphic design, visual art and music, becomes a field with a very low barrier to entry. And because creative professions are fun, and are deemed to be full off rewards, many flock to these fields, leaving a situation where the offer highly outnumbers the demand (Hans Abbing wrote a great book on this: <a href="http://dare.uva.nl/aup/en/record/172819" style="" target="_self">Why are artists poor?</a>).</p>
+    <p style=""><span style="font-size: 14px;">When one has invested in such a discipline, for example by following an education at the KABK in Type&amp;Media or at the University of Reading, or by joining an organisation like the ATypI, one has all the interest in defending the virtue of ‘professional art’ versus the amateurs. One way to do so is to distinguish oneself from&nbsp;</span><span style="font-size: 14px;">enthousiastic amateurs who distribute their work for free on sites like dafont, and who are not always clear about the progeny of their work.&nbsp;</span>Starting from existing digital typefaces, then, would seem uncomfortably close to a ‘font-tweaker’ approach, blurring the lines between the professionals that know the craft, and the rest of the human population that knows how to open up a font-editor.&nbsp;</p>
+    <h4><span style="font-family: Verdana; font-size: 11px; font-weight: 700; line-height: 14px;"></span>
 Why forking works for typefaces</h4>
-<p style=""><span style="font-size: 14px;">In software, it can be confusing to have many forks of one project existing, because it is probably practical to use just one version of the package. Cultural artefacts like typefaces, however, can more easily exist in an abundance of similar guises, because they coexist. B</span>oth the inspiration (Akzidenz) and the inspired (Helvetica) can be used by a contemporary designer. Or one might prefer to use a sibling like Univers, that shares the Akzidenz inspiration but takes it somewhere else.</p>
-<p style="">There are several versions of Johnston’s typeface available that one could use instead of Gill Sans, and, according to Archer: ‘FB Agenda (1993 by Greg Thompson), Bliss (1996 by Jeremy Tankard) and Fedra Sans (2001 by Peter Bilak), are some of the recently-produced typographical riches that all owe some part of their provenance to Edward Johnston’s sans serif lettering for the London Underground in 1916’.</p><p style=""><span style="font-size: 14px;">As more and more typefaces are becoming available under various open source licenses (like the aforementioned Railway Sans, or the Ghostscript fonts baseline treats in </span><a href="/and/i-need-my-generic-font-medicine" target="_self" title="I like tight pants and I want my generic font medicine" style="font-size: 14px;">I like tight pants and I want my generic font medicine</a><span style="font-size: 14px;">), a type design culture of the digital fork becomes more and more feasible. Yet for this to happen, type designers might first need to let themselves, in Lafuente’s words, be ‘contaminated by the creeping tweaker threat’. And we are a long way from there. Even Dave Crossland, who is one of the most visible figures in the world of open source type design, and who one would suspect to embrace a culture of appropriation and re-use, has the following <a href="http://typophile.com/node/104929" target="_self" style="" title="Copyright queston | Typophile">advice</a> to an aspiring type designer:</span></p><blockquote>the educational value of doing outline drawing over the top of an existing typeface design is rather low. If you want to post work for review, you'd be better off making your own typeface design from scratch :)<br></blockquote>
-<p></p>
-
-<script>
+    <p style=""><span style="font-size: 14px;">In software, it can be confusing to have many forks of one project existing, because it is probably practical to use just one version of the package. Cultural artefacts like typefaces, however, can more easily exist in an abundance of similar guises, because they coexist. B</span>oth the inspiration (Akzidenz) and the inspired (Helvetica) can be used by a contemporary designer. Or one might prefer to use a sibling like Univers, that shares the Akzidenz inspiration but takes it somewhere else.</p>
+    <p style="">There are several versions of Johnston’s typeface available that one could use instead of Gill Sans, and, according to Archer: ‘FB Agenda (1993 by Greg Thompson), Bliss (1996 by Jeremy Tankard) and Fedra Sans (2001 by Peter Bilak), are some of the recently-produced typographical riches that all owe some part of their provenance to Edward Johnston’s sans serif lettering for the London Underground in 1916’.</p>
+    <p style=""><span style="font-size: 14px;">As more and more typefaces are becoming available under various open source licenses (like the aforementioned Railway Sans, or the Ghostscript fonts baseline treats in </span><a href="/and/i-need-my-generic-font-medicine" target="_self" title="I like tight pants and I want my generic font medicine" style="font-size: 14px;">I like tight pants and I want my generic font medicine</a><span style="font-size: 14px;">), a type design culture of the digital fork becomes more and more feasible. Yet for this to happen, type designers might first need to let themselves, in Lafuente’s words, be ‘contaminated by the creeping tweaker threat’. And we are a long way from there. Even Dave Crossland, who is one of the most visible figures in the world of open source type design, and who one would suspect to embrace a culture of appropriation and re-use, has the following <a href="http://typophile.com/node/104929" target="_self" style="" title="Copyright queston | Typophile">advice</a> to an aspiring type designer:</span></p>
+    <blockquote>the educational value of doing outline drawing over the top of an existing typeface design is rather low. If you want to post work for review, you'd be better off making your own typeface design from scratch :)<br /></blockquote>
+    <p></p>
+    <script>
 $(window).load(function () {
     $("h2").on({
         mouseenter: function () {
@@ -125,7 +131,9 @@ $(window).load(function () {
         }
     });
 });
-</script>]]>
+</script>
+
+]]>
         
     </content>
 </entry>
@@ -146,10 +154,7 @@ $(window).load(function () {
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[    
-    
-    
-        
+        <![CDATA[
     <style>
 h2 {
     text-rendering: optimizeLegibility;
@@ -442,32 +447,28 @@ h2 {
 
 
 </style>
-
-<h2 style="font-family: 'Nimbus Roman No9 L';" title="Nimbus Roman No9 L">Times</h2>
-<h2 style="font-family: 'Nimbus Sans L';" title="Nimbus Sans L">Helvetica</h2>
-<h2 style="font-family: 'URW Palladio L';" title="Palladio L">Palatino</h2>
-<h2 style="font-family: 'URW Bookman L';" title="Bookman">Bookman L</h2>
-<h2 style="font-family: 'URW Gothic L';" title="Gothic L">Avant Garde</h2>
-<h2 style="font-family: 'URW Chancery L';" title="Chancery L">Zapf Chancery</h2>
-<h2 style="font-family: 'Century Schoolbook L';" title="Century Schoolbook L">New Century Schoolbook</h2>
-<h2 style="font-family: 'Nimbus Mono L';" title="Nimbus Mono L">Courier</h2>
-
-<p>In short: We present a release of UFO source files for the Ghostscript fonts, a set of typefaces created to replace (and mimic) the proprietary typefaces present in the specification of Adobe PostScript. Download them as a zip, together with installable fonts, or <a href="https://github.com/fonts/ghostscript-fonts" style="" target="_self" title="fonts/ghostscript-fonts">fork them on GitHub</a>. Let me explain.</p>
-
-<h4>I want my generic medication</h4>
-<p>Like medication for which the patents have expired, popular typefaces sprout generic sisters and brothers. For Helvetica: Swiss 721, CG Triumvirate, Pragmatica, Nimbus Sans.</p>
-
-<p>All of this is possible because copyright protection on fonts is not very strong, especially in the United States. The thing that is copyrightable, though, is the series of points contained in an actual font file, i.e. the digital artefact that constitutes the typeface. That is why, in any End User License Agreement, the <a href="http://specimen.meteor.com/about#software" title="SPECIMEN :: A BLOG ON OPEN SOURCE FONTS">legal language refers always to the font as a program</a>: a program, as a series of written instructions, is copyrightable.</p>
-
-<h4>The DNA of the 1990ies</h4>
-<p>Desktop Publishing is what happened when personal computers got powerful enough to create layouts for print publications. If you want to find one document that represents the DNA of Desktop publishing, the <a href="http://partners.adobe.com/public/developer/ps/index_specs.html" target="_self" style="" title="Developer Resources: Adobe PostScript language specifications">Adobe Postscript specification</a> would be a good candidate. PostScript, as a language that describes page layouts, and the vector drawings and typefaces used in these layouts. In the late 1980ies, it is the glue that binds together layout programs such as Aldus Pagemaker, Adobe Illustrator and printers such as the Apple Laserwriter.</p><p>In the 1990ies, virtually all graphic designers find themselves moving to the desktop computer. Yet even if its production has moved to the screen, the image of Graphic Design in the 1990ies is still tightly coupled to print. David Carson’s ‘Print is Dead’ is a book, not a website or a tv show. Designers make their name with magazines and record covers. And even if Truetype, a format developed by Apple &amp; Microsoft, makes a lot of progress in adapting vector typefaces for the screen, it is Emigre’s and Fontshop’s typefaces, designed for print and executed in PostScript, that seem to capture the design aesthetic of the era.</p><p style="">It is also in this time that we see a number of auto-reflexive typefaces, that deal with the nature of the vector curve in general and PostScript in particular. Neville Brody’s <a href="https://www.fontfont.com/fonts/autotrace" target="_self" style="" title="FF Autotrace fonts from the FontFont Library">FF Autotrace</a> is a reflection of the passage from the analog to the digital, and more precisely, from raster to vector. Simulating the effect of a rushed automatic ‘vectorisation’ script on a bitmap of a Helvetica like grotesk, it is a meditation on the kind of transformations that are performed over and over again in the process of Desktop Publishing.<br style="">An analogue drawing might first be scanned to get it into the computer, which produces a raster image, then transformed into vectors to be able to scale it in dimensions. To make the image visible though, it will need to be rasterised again, first on the screen of the designer, and finally by the printing device.</p><p>Letterror dives into the very fabric of PostScript when creating <a href="http://letterror.com/fontcatalog/fontfont-beowolf/" target="_self" style="" title="FontFont Beowolf | LettError">FF Beowolf</a>, what they call a RandomFont. Just van Rossum and Erik van Blokland have added an extra command to the PostScript language: freakto. Instead of the more predictable curveto and moveto commands of regular PostScript, the points are slightly random. Letteror says ‘Beowolf demonstrated that digital fonts are data and code, and therefore instructions that can modify themselves.’. Pierre H. tells me, it used to get you banned from printshops (the PostScript execution taking place in the printer, printing a document in Beowolf takes significantly more time and computing resources then printing a regular document).</p><p>It is only today, when every design agency also produces websites and mobile applications, PostScript has lost its position of the central language. When designing for the screen, a ‘page description language’ is not flexible enough. The defining language of today is probably the markup language HTML, which trades in the (typo)graphic precision of PostScript for the kind of flexibility screen based media require. The main standard for eBooks, ePUB, is based upon it.</p>
-
-<h4>The ghost in the shell</h4>
-<p>Every language needs interpreters. Early laser printers had their own PostScript interpreter, translating the vector image into a rasterisation. You also need an interpreter when you want to rasterise a PostScript document to the screen. A PostScript interpreter that is Free and Open Source (and who’s history also goes back to the 1980ies) is <a href="http://www.ghostscript.com/" style="" target="_self" title="Ghostscript: Ghostscript">Ghostscript</a>.</p>
-
-<p>As part of the specification for PostScript, Adobe specifies a set of 35 fonts each PostScript capable device should be able to handle. Because these typefaces are not available under an open source license, GhostScript has a problem creating a Linux version. The solution: the company developing GhostScript convinces the Hamburg based font design company URW to license a set of their generic typefaces under the GPL license:</p>
-
-<blockquote>The copyright holder of these fonts, URW++ Design and Development
+    <h2 style="font-family: 'Nimbus Roman No9 L';" title="Nimbus Roman No9 L">Times</h2>
+    <h2 style="font-family: 'Nimbus Sans L';" title="Nimbus Sans L">Helvetica</h2>
+    <h2 style="font-family: 'URW Palladio L';" title="Palladio L">Palatino</h2>
+    <h2 style="font-family: 'URW Bookman L';" title="Bookman">Bookman L</h2>
+    <h2 style="font-family: 'URW Gothic L';" title="Gothic L">Avant Garde</h2>
+    <h2 style="font-family: 'URW Chancery L';" title="Chancery L">Zapf Chancery</h2>
+    <h2 style="font-family: 'Century Schoolbook L';" title="Century Schoolbook L">New Century Schoolbook</h2>
+    <h2 style="font-family: 'Nimbus Mono L';" title="Nimbus Mono L">Courier</h2>
+    <p>In short: We present a release of UFO source files for the Ghostscript fonts, a set of typefaces created to replace (and mimic) the proprietary typefaces present in the specification of Adobe PostScript. Download them as a zip, together with installable fonts, or <a href="https://github.com/fonts/ghostscript-fonts" style="" target="_self" title="fonts/ghostscript-fonts">fork them on GitHub</a>. Let me explain.</p>
+    <h4>I want my generic medication</h4>
+    <p>Like medication for which the patents have expired, popular typefaces sprout generic sisters and brothers. For Helvetica: Swiss 721, CG Triumvirate, Pragmatica, Nimbus Sans.</p>
+    <p>All of this is possible because copyright protection on fonts is not very strong, especially in the United States. The thing that is copyrightable, though, is the series of points contained in an actual font file, i.e. the digital artefact that constitutes the typeface. That is why, in any End User License Agreement, the <a href="http://specimen.meteor.com/about#software" title="SPECIMEN :: A BLOG ON OPEN SOURCE FONTS">legal language refers always to the font as a program</a>: a program, as a series of written instructions, is copyrightable.</p>
+    <h4>The DNA of the 1990ies</h4>
+    <p>Desktop Publishing is what happened when personal computers got powerful enough to create layouts for print publications. If you want to find one document that represents the DNA of Desktop publishing, the <a href="http://partners.adobe.com/public/developer/ps/index_specs.html" target="_self" style="" title="Developer Resources: Adobe PostScript language specifications">Adobe Postscript specification</a> would be a good candidate. PostScript, as a language that describes page layouts, and the vector drawings and typefaces used in these layouts. In the late 1980ies, it is the glue that binds together layout programs such as Aldus Pagemaker, Adobe Illustrator and printers such as the Apple Laserwriter.</p>
+    <p>In the 1990ies, virtually all graphic designers find themselves moving to the desktop computer. Yet even if its production has moved to the screen, the image of Graphic Design in the 1990ies is still tightly coupled to print. David Carson’s ‘Print is Dead’ is a book, not a website or a tv show. Designers make their name with magazines and record covers. And even if Truetype, a format developed by Apple &amp; Microsoft, makes a lot of progress in adapting vector typefaces for the screen, it is Emigre’s and Fontshop’s typefaces, designed for print and executed in PostScript, that seem to capture the design aesthetic of the era.</p>
+    <p style="">It is also in this time that we see a number of auto-reflexive typefaces, that deal with the nature of the vector curve in general and PostScript in particular. Neville Brody’s <a href="https://www.fontfont.com/fonts/autotrace" target="_self" style="" title="FF Autotrace fonts from the FontFont Library">FF Autotrace</a> is a reflection of the passage from the analog to the digital, and more precisely, from raster to vector. Simulating the effect of a rushed automatic ‘vectorisation’ script on a bitmap of a Helvetica like grotesk, it is a meditation on the kind of transformations that are performed over and over again in the process of Desktop Publishing.<br style="" />An analogue drawing might first be scanned to get it into the computer, which produces a raster image, then transformed into vectors to be able to scale it in dimensions. To make the image visible though, it will need to be rasterised again, first on the screen of the designer, and finally by the printing device.</p>
+    <p>Letterror dives into the very fabric of PostScript when creating <a href="http://letterror.com/fontcatalog/fontfont-beowolf/" target="_self" style="" title="FontFont Beowolf | LettError">FF Beowolf</a>, what they call a RandomFont. Just van Rossum and Erik van Blokland have added an extra command to the PostScript language: freakto. Instead of the more predictable curveto and moveto commands of regular PostScript, the points are slightly random. Letteror says ‘Beowolf demonstrated that digital fonts are data and code, and therefore instructions that can modify themselves.’. Pierre H. tells me, it used to get you banned from printshops (the PostScript execution taking place in the printer, printing a document in Beowolf takes significantly more time and computing resources then printing a regular document).</p>
+    <p>It is only today, when every design agency also produces websites and mobile applications, PostScript has lost its position of the central language. When designing for the screen, a ‘page description language’ is not flexible enough. The defining language of today is probably the markup language HTML, which trades in the (typo)graphic precision of PostScript for the kind of flexibility screen based media require. The main standard for eBooks, ePUB, is based upon it.</p>
+    <h4>The ghost in the shell</h4>
+    <p>Every language needs interpreters. Early laser printers had their own PostScript interpreter, translating the vector image into a rasterisation. You also need an interpreter when you want to rasterise a PostScript document to the screen. A PostScript interpreter that is Free and Open Source (and who’s history also goes back to the 1980ies) is <a href="http://www.ghostscript.com/" style="" target="_self" title="Ghostscript: Ghostscript">Ghostscript</a>.</p>
+    <p>As part of the specification for PostScript, Adobe specifies a set of 35 fonts each PostScript capable device should be able to handle. Because these typefaces are not available under an open source license, GhostScript has a problem creating a Linux version. The solution: the company developing GhostScript convinces the Hamburg based font design company URW to license a set of their generic typefaces under the GPL license:</p>
+    <blockquote>The copyright holder of these fonts, URW++ Design and Development
 Incorporated (the successor to the former well-known URW company), was
 willing to release the fonts with the GPL and the AGFPL because they judged
 (correctly in my opinion) that these particular fonts have become such a
@@ -475,14 +476,11 @@ commodity item, with such low profit margins, that the value to URW++ of
 having URW++`s name widely visible and appreciated on the net is now greater
 than the loss of profit from those future sales that the free licenses will
 cause not to occur.</blockquote>
-
-<p class="byline">e-mail announcing the release of the Ghostscript fonts (<a href="http://web.archive.org/web/20021023155414/http://www.geocrawler.com/archives/3/378/1996/5/0/2064811/" target="_self" style="" title="Geocrawler.com - bug-ghostscript - Finally! Good-quality free (GPL) basic-35 PostScript Type 1 fonts.">via the Wayback machine</a>)</p><p>If PostScript is the DNA of Desktop Publishing, these 35 fonts represent its typographic genes. Thus, while none of the fonts are extremely interesting in their own right, they form a great backdrop for showing procedural transformations on typefaces. Examples are OSP’s <a href="http://ospublish.constantvzw.org/foundry/notcouriersans/" style="" target="_self" title="OSP Foundry :: NotCourierSans">NotCourierSans</a> (chopping the serifs of the Nimbus Mono), <a href="http://ospublish.constantvzw.org/foundry/le-patin-helvete/" style="" target="_self" title="OSP Foundry :: Le Patin Helvète">Patin Helvète</a> (adding serifs to the Nimbus Sans) and <a href="http://ospublish.constantvzw.org/foundry/limousine/" style="" target="_self" title="OSP-foundry :: Limousine">Limousine</a> (attempting to maximally change the character of Nimbus Sans through minimal modifications). And it is because of the free and open source license of the GhostScript fonts, that these alterations and their redistributions are allowed.</p>
-
-<h4>What’s the fuss</h4>
-<p>You can get the original release of the <a href="http://sourceforge.net/projects/gs-fonts/" style="" target="_self" title="Ghostscript fonts | Free Graphics software downloads at SourceForge.net">Ghostscript Fonts on Sourceforge</a>. These are PostScript Type 1 fonts. If you want to continue building on them, the UFO font format is more suitable. That is why we prepared a release of all these font files in this format (an added convenience: less cryptic filenames). We see these fonts as finished, but there are some technical implementation details that could still be improved: you can find more info in the README.txt. More importantly, you might find ways to abuse them for your own ends—if you were formed in the 1990ies, PostScript is in your blood: and these are the fonts you will feel all Oedipal about.</p>
-
-
-<script>
+    <p class="byline">e-mail announcing the release of the Ghostscript fonts (<a href="http://web.archive.org/web/20021023155414/http://www.geocrawler.com/archives/3/378/1996/5/0/2064811/" target="_self" style="" title="Geocrawler.com - bug-ghostscript - Finally! Good-quality free (GPL) basic-35 PostScript Type 1 fonts.">via the Wayback machine</a>)</p>
+    <p>If PostScript is the DNA of Desktop Publishing, these 35 fonts represent its typographic genes. Thus, while none of the fonts are extremely interesting in their own right, they form a great backdrop for showing procedural transformations on typefaces. Examples are OSP’s <a href="http://ospublish.constantvzw.org/foundry/notcouriersans/" style="" target="_self" title="OSP Foundry :: NotCourierSans">NotCourierSans</a> (chopping the serifs of the Nimbus Mono), <a href="http://ospublish.constantvzw.org/foundry/le-patin-helvete/" style="" target="_self" title="OSP Foundry :: Le Patin Helvète">Patin Helvète</a> (adding serifs to the Nimbus Sans) and <a href="http://ospublish.constantvzw.org/foundry/limousine/" style="" target="_self" title="OSP-foundry :: Limousine">Limousine</a> (attempting to maximally change the character of Nimbus Sans through minimal modifications). And it is because of the free and open source license of the GhostScript fonts, that these alterations and their redistributions are allowed.</p>
+    <h4>What’s the fuss</h4>
+    <p>You can get the original release of the <a href="http://sourceforge.net/projects/gs-fonts/" style="" target="_self" title="Ghostscript fonts | Free Graphics software downloads at SourceForge.net">Ghostscript Fonts on Sourceforge</a>. These are PostScript Type 1 fonts. If you want to continue building on them, the UFO font format is more suitable. That is why we prepared a release of all these font files in this format (an added convenience: less cryptic filenames). We see these fonts as finished, but there are some technical implementation details that could still be improved: you can find more info in the README.txt. More importantly, you might find ways to abuse them for your own ends—if you were formed in the 1990ies, PostScript is in your blood: and these are the fonts you will feel all Oedipal about.</p>
+    <script>
 $("h2").hover(
     function() {
         var urw = $(this).attr('title');
@@ -496,7 +494,9 @@ $("h2").hover(
         $(this).text(adobe);
         $(this).attr('title', urw);    }
 )
-</script> ]]>
+</script>
+
+]]>
         
     </content>
 </entry>
@@ -517,12 +517,14 @@ $("h2").hover(
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[    
-    
-    
-    <p><iframe src="http://player.vimeo.com/video/65545530?color=000&amp;title=0&amp;byline=0&amp;portrait=0" width="830" height="466" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe> 
+        <![CDATA[
+    <p>
+      <iframe src="http://player.vimeo.com/video/65545530?color=000&amp;title=0&amp;byline=0&amp;portrait=0" width="830" height="466" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<!-- <video src="http://i.liketightpants.net/and/assets/called/live_coding_the_osp_website_1280x720.mp4" id="live-website-video" width="830" height="466" style="background: white;" preload controls>--><br /></p>
+    <p>A video of the redesign of the <a href="http://osp.constantvzw.org/" target="_self" style="" title="OSP (Open Source Publishing) →">OSP homepage</a>, from a traditional blog based site to a site that is used to communicate our design process in a ‘<a href="/and/release-early-release-often-version-numbers-for-typefaces" style="" target="_self" title="I like tight pants and release early release often version numbers for typefaces">release early, release often</a>’ manner: every time we add a file to our shared repository it shows up on our site.</p>
+    <p style="">The screenshots above are from a period of 48 hours where we work on the site together. To write CSS, we keep a shared <a href="/and/etherpad-or-the-textarea-is-a-lonely-place" style="" target="_self" title="I like tight pants and etherpad or the textarea is a lonely place">Etherpad</a>. One person is in charge of the gong: when she rings, she copies the contents of the pad into the site’s CSS file, and uploads it—after which everyone can refresh their browser and see the updated styles.</p>
 
-<!-- <video src="http://i.liketightpants.net/and/assets/called/live_coding_the_osp_website_1280x720.mp4" id="live-website-video" width="830" height="466" style="background: white;" preload controls>--><br></p><p>A video of the redesign of the <a href="http://osp.constantvzw.org/" target="_self" style="" title="OSP (Open Source Publishing) →">OSP homepage</a>, from a traditional blog based site to a site that is used to communicate our design process in a ‘<a href="/and/release-early-release-often-version-numbers-for-typefaces" style="" target="_self" title="I like tight pants and release early release often version numbers for typefaces">release early, release often</a>’ manner: every time we add a file to our shared repository it shows up on our site.</p><p style="">The screenshots above are from a period of 48 hours where we work on the site together. To write CSS, we keep a shared <a href="/and/etherpad-or-the-textarea-is-a-lonely-place" style="" target="_self" title="I like tight pants and etherpad or the textarea is a lonely place">Etherpad</a>. One person is in charge of the gong: when she rings, she copies the contents of the pad into the site’s CSS file, and uploads it—after which everyone can refresh their browser and see the updated styles.</p>]]>
+]]>
         
     </content>
 </entry>
@@ -543,32 +545,58 @@ $("h2").hover(
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[ <p>I love the way version numbers are used in Open Source. Version 1.0 is not the first version released. Projects are well underway before they reach 1.00—if they even reach it. An open source maxim (by Linus Torvalds of Linux fame) is ‘release early, release often’. Get your code out there before it is perfect, because it can benefit from collaboration from the community. That is why we see version numbers like 0.15.2</p>
+        <![CDATA[
+    <p>I love the way version numbers are used in Open Source. Version 1.0 is not the first version released. Projects are well underway before they reach 1.00—if they even reach it. An open source maxim (by Linus Torvalds of Linux fame) is ‘release early, release often’. Get your code out there before it is perfect, because it can benefit from collaboration from the community. That is why we see version numbers like 0.15.2</p>
+    <p>Version 1.0 is reserved for the first version that sees the design intentions crystallised, the functionality in place, and all the first bugs accounted for. It’s what you would have wanted your first release to be like, except that it took all the releases in-between to get there:</p>
+    <blockquote>We are very pleased to announce the release of IPython 1.0, nearly twelve years after the first release of IPython 0.0.1.</blockquote>
+    <p>With the Open Baskerville project, we try to use this logic on a typeface. This is a screen shot showing the metadata of our most recently released font:</p>
+    <p>
+      <img style="height: 365px; width: 750px; position: relative; margin: 0px; resize: none; zoom: 1; display: inline-block; top: 0px; left: 0px;" src="/and/assets/called/openbaskerville_metadata.png" title="" class="" />
+    </p>
+    <p class="byline">Version information for the latest Open Baskerville Release (generated from UFO by a script calling FontForge).</p>
+    <p style="">As you can see, we put the version number right in the font name. This has a practical reason: if there are going to be multiple versions, better make sure the user can tell them apart. But there is also a philosophical reason—we want to make it clear up front that our typeface is developed in an iterative way.</p>
+    <h4>Iterations in the industry</h4>
+    <p style="">Typefaces are not usually developed through release early, release often. When a designer or a foundry releases a typeface, it is usually considered finished: sometimes new technological developments warrant a new release, like when fonts first got released as OpenType, or now with the release of webfonts. The constant stream of updates as we know it from software teams is absent from type face development, even though most <a href="http://specimen.meteor.com/about#software" target="_self" style="" title="SPECIMEN">foundries refer to their work as software</a>.</p>
+    <p style="">There are cultural reasons for this. One is that the industry of type design has until now not really embraced the malleability of digital typography. <a href="http://ospublish.constantvzw.org/blog/typo/appropriation-and-type-before-and-today" style="" target="_self" title="Appropriation and Type – before and today">Ricardo Lafuente asks</a>: why are people who make and sell typefaces still referring to themselves as foundries, as if they are still producing shapes cast in lead?<br />There are also practical reasons: once one has made a layout with a typeface, one does not usually want it to change—especially in the width of the letters and their spacing—as it would change the layout in unpredictable ways.</p>
+    <p style="">But the ideas in the Free Software and open source movements have found their way into the larger field of culture. Libre fonts—typefaces released as open source—have been a large success in recent years, thanks in no small part to web typography, where for a long time most traditional fonts could not be used because of licensing restrictions. But in the way in which they have are made, the fonts offered on sites such as the Open Font Library and Google Web Fonts do not really offer any innovation over the existing foundry model. They are mostly released by individual authors as a finished package. Projects that think about setting up a framework for collaboration and iterative development are rare—what is telling is that it is often not clear how to contribute back a change to the font.</p>
+    <p style="">This means libre typography is in a hairy spot. Even if conventional type foundries celebrate a personality focused idea of type design, the actual production takes place in tightly coordinated teams: the type designer can count on other designers to help him flesh out the alphabet, and foundries often reach out to specialists when it comes to specific areas of type design such as kerning and hinting. Individual designers working with free licenses will not be able to match these teams on production quality if they work by themselves.&nbsp;</p>
+    <p style="">To me it is clear that if libre typography wants to distinguish itself from its traditional counterpart, it needs to embrace alternative conceptions of type design. This can be by focusing on the possibilities of appropriation, remixing and forking of existing typefaces.&nbsp;<a href="http://ospublish.constantvzw.org/workshop/write-me-a-shadow/" style="" target="_self" title="Write me a shadow. OSP @ ESAD Valence">Manipulating existing typefaces</a>, either manually or through <a href="/and/programmatically-manipulating-typefaces" style="" target="_self" title="I like tight pants and programmatically manipulating typefaces">scripts</a>, is only allowed only with libre fonts: the End User License Agreements of most typefaces explicitly forbid modification. Or it can be by embracing new collaboration methods and iterative processes, like we try to do with Open Baskerville.</p>
+    <h4>How we collaborate on Open Baskerville</h4>
+    <p style="">It is clear that the right tools for typographic collaboration <a href="/and/the-most-barebones-online-font-editor-possible" style="" target="_self" title="I like tight pants and the most barebones online font editor possible">still need to be built</a>. But like I explain in <a href="/and/how-it-has-come-about-that-code-hosting-site-github-offers-visualisations-of-typeface-development" style="" target="_self" title="I like tight pants and how it has come about that code hosting site github offers visualisations of typeface development">I like tight pants and how it has come about that code hosting site github offers visualisations of typeface development</a>,&nbsp;some elements of the underlying system are already showing up. The open&nbsp;<span style="font-size: 14px;">font format UFO and the versioning process Git are a solid basis to built on.</span></p>
+    <p style=""><span style="font-size: 14px;"></span>A collaborator on Open Baskerville needs to have an account on Github and the software <a href="http://git-scm.com/" style="" target="_self" title="Git">Git</a> installed on ones computer. She first ‘forks’ <a href="https://github.com/klepas/open-baskerville/" target="_self" style="" title="klepas/openbaskerville">our repository</a> to her Github account: she now has her own version of the revision history. This fork she ‘clones’ to her own computer, using git.</p>
+    <p style="">The clone consists of all the files of the project, plus the version history. She now goes and makes changes in the files. When she is happy with the changes, she ‘commits’ them, and ‘pushes’ them back up to her Github repository. She opens a ‘pull request’ where she asks for the changes to be merged into our repository.</p>
+    <p style="">This is a rather involved process. Outside of software developers, not many people have experience with Git.&nbsp;<span style="font-size: 14px;">The existing interfaces to Git are not intuitive to use, being geared to programmers directly editing source files rather than designers using a graphical tool. I think the complexity of this process is one of the barriers to contribution on our project.</span></p>
+    <p style=""><span style="font-size: 14px;">It will be much more easy to contribute to Open Baskerville once there exist more easy ways to handle the version control. Whether in the form of plugins for font-editors, or a new editor built around collaboration.</span></p>
+    <p style=""><span style="font-size: 14px;">What will stay the same in the future is the access we have to the revision history, as tracked in Git. In Open Baskerville, we use a set of scripts to be able to quickly generate a font package for each revision: <a href="https://github.com/fonts/skeleton" style="" target="_self" title="fonts/skeleton">we packaged them for other projects to use</a>.</span></p>
+    <h4>Formalising version numbers</h4>
+    <p>In computer software the&nbsp;<a href="http://semver.org/" target="_self" title="Semantic Versioning 2.0.0" style="font-size: 14px;">Semantic Versioning</a>&nbsp;standard is an attempt to formalise generally accepted practices for attributing version numbers.</p>
+    <p>It distinguishes between MAJOR, MINOR and PATCH versions, corresponding to three period separated numbers: MAJOR.MINOR.PATCH (i.e. version 1.5.4) What is the difference between these categories? From Semantic Versioning’s specification, the guideline as to when to augment the MAJOR, MINOR and PATCH versions:</p>
+    <blockquote>
+      <ol>
+        <li style="font-size: 14px;">MAJOR version when you make incompatible API changes,</li>
+        <li style="font-size: 14px;">MINOR version when you add functionality in a backwards-compatible manner, and</li>
+        <li style="">PATCH version when you make backwards-compatible bug fixes.<br style="" /></li>
+      </ol>
+    </blockquote>
+    <p>This makes the distinction between how a program is used and how it works on the inside. Changes to the code implementation that don’t change how the program appears to the user, merit only a change in the PATCH version. Adding functionality that appears to the user, without changing existing functionality, merits a MINOR version. Finally, changing the way in which you as a user have to use the program, means updating the MAJOR version.</p>
+    <p>However, this model does not seem really applicable to type design. This is because every change in the code, influences the visual product with which the designer works. My poster design might break more spectacularly if the fonts metrics change, by messing with my line breaks: but if the axis by which the bar of the e is slanted changes, that does ‘break’, in a more subtle way, my design as well.</p>
+    <p></p>
+    <p>This means that for fonts, unlike in software, every version is functionally different.&nbsp;<span style="font-size: 14px;">Another reason why we chose to feature the version number prominently in the name of the typeface.</span></p>
+    <h4>What the version means</h4>
+    <p>Resuming the role of version numbers in Open Source, we have seen both the&nbsp;<span style="font-size: 14px;">way in which a version number talks about the mindsets and the aims of a project, and</span><span style="font-size: 14px;"> the more formalistic definition of Semantic Versioning.</span></p>
+    <p>It is the metaphor of the long road to the first version that I find the most easily applicable to design projects. Every project start with a set of goals, aspirations, challenges. In the context of design, I would then rephrase the different types of version numbers as such:</p>
+    <ol style="font-size:14px;line-height:18px;">
+      <li>MAJOR version constitutes a coherent set of design goals,</li>
+      <li>MINOR version constitutes a discrete goal obtained in pursuing these design goals and</li>
+      <li>PATCH version constitutes incremental progress toward design goals.</li>
+    </ol>
+    <p style="">For example, in Open Baskerville, the major design goal is to recreate Fry’s Baskerville in a way that is usable on the modern web (Version 1.0). As a sub-goal, we are first working to recreate a width faithful to Fry’s surviving specimen (version 0.1), with a system in place to create releases. We logged 83 incremental improvements towards this goal, but we are not there yet (thus, at version 0.0.83).</p>
+    <p style="">If we ever reach 1.0, what then? Can we think of a new major design goal for the project, or rephrase its design goal? We might want to re-inspire ourselves on other Baskerville variants, for example, and adjust are goals accordingly.<br style="" />Where does it end? What is the final number? Is continuing working on one design project for years and years a desirable scenario, in a way that Windows now is at version 8 and Illustrator at version 16?</p>
+    <p style="">There are arguments against creating too many versions of a design. A design is a product of hopes, aspirations, goals and constraints that exist at a given point. The recent phenomenon of film directors revisiting their older movies and adding contemporary computer effects (not available at the time) has not at all been well received by fans. It shows that the constraints placed upon an artistic project shape it and create its character, and that authors might want to be reticent in revisiting their works.</p>
+    <p style="">Similar phenomenons exist in software too. People who use many subsequent versions of &nbsp;a software often feel like something gets lost along the way. The initial sense of purpose embodied in a program can give way to what is called ‘bloat’, by adding feature upon feature until it tries . In programmer’s circles, this is known as Zawinski’s law: &nbsp;‘Every program attempts to expand until it can read e-mail.’ At the same time, using old versions of software is not very practical. They might contain security holes; they might even no longer run on your current operating system.</p>
+    <p style="">With typefaces we are in luck that they will in most occasions be usable for a longer time. As long as a description of its points exists somewhere—and mankind does not forget <a href="/and/seb-explaining-love-and-bezier-curves" style="" target="_self" title="I like tight pants and seb explaining love and bezier curves">the mathematics of Bézier curves</a>. So I think I will want for the 1.0 version to be the last. Anyone who has another vision on the design, is free to fork.</p>
 
-<p>Version 1.0 is reserved for the first version that sees the design intentions crystallised, the functionality in place, and all the first bugs accounted for. It’s what you would have wanted your first release to be like, except that it took all the releases in-between to get there:</p>
-
-<blockquote>We are very pleased to announce the release of IPython 1.0, nearly twelve years after the first release of IPython 0.0.1.</blockquote>
-
-<p>With the Open Baskerville project, we try to use this logic on a typeface. This is a screen shot showing the metadata of our most recently released font:</p>
-    
-<p><img style="height: 365px; width: 750px; position: relative; margin: 0px; resize: none; zoom: 1; display: inline-block; top: 0px; left: 0px;" src="/and/assets/called/openbaskerville_metadata.png" title="" class=""></p><p class="byline">Version information for the latest Open Baskerville Release (generated from UFO by a script calling FontForge).</p><p style="">As you can see, we put the version number right in the font name. This has a practical reason: if there are going to be multiple versions, better make sure the user can tell them apart. But there is also a philosophical reason—we want to make it clear up front that our typeface is developed in an iterative way.</p>
-
-<h4>Iterations in the industry</h4>
-<p style="">Typefaces are not usually developed through release early, release often. When a designer or a foundry releases a typeface, it is usually considered finished: sometimes new technological developments warrant a new release, like when fonts first got released as OpenType, or now with the release of webfonts. The constant stream of updates as we know it from software teams is absent from type face development, even though most <a href="http://specimen.meteor.com/about#software" target="_self" style="" title="SPECIMEN">foundries refer to their work as software</a>.</p>
-
-<p style="">There are cultural reasons for this. One is that the industry of type design has until now not really embraced the malleability of digital typography. <a href="http://ospublish.constantvzw.org/blog/typo/appropriation-and-type-before-and-today" style="" target="_self" title="Appropriation and Type – before and today">Ricardo Lafuente asks</a>: why are people who make and sell typefaces still referring to themselves as foundries, as if they are still producing shapes cast in lead?<br>There are also practical reasons: once one has made a layout with a typeface, one does not usually want it to change—especially in the width of the letters and their spacing—as it would change the layout in unpredictable ways.</p>
-
-<p style="">But the ideas in the Free Software and open source movements have found their way into the larger field of culture. Libre fonts—typefaces released as open source—have been a large success in recent years, thanks in no small part to web typography, where for a long time most traditional fonts could not be used because of licensing restrictions. But in the way in which they have are made, the fonts offered on sites such as the Open Font Library and Google Web Fonts do not really offer any innovation over the existing foundry model. They are mostly released by individual authors as a finished package. Projects that think about setting up a framework for collaboration and iterative development are rare—what is telling is that it is often not clear how to contribute back a change to the font.</span></p>
-
-<p style="">This means libre typography is in a hairy spot. Even if conventional type foundries celebrate a personality focused idea of type design, the actual production takes place in tightly coordinated teams: the type designer can count on other designers to help him flesh out the alphabet, and foundries often reach out to specialists when it comes to specific areas of type design such as kerning and hinting. Individual designers working with free licenses will not be able to match these teams on production quality if they work by themselves.&nbsp;</p><p style="">To me it is clear that if libre typography wants to distinguish itself from its traditional counterpart, it needs to embrace alternative conceptions of type design. This can be by focusing on the possibilities of appropriation, remixing and forking of existing typefaces.&nbsp;<a href="http://ospublish.constantvzw.org/workshop/write-me-a-shadow/" style="" target="_self" title="Write me a shadow. OSP @ ESAD Valence">Manipulating existing typefaces</a>, either manually or through <a href="/and/programmatically-manipulating-typefaces" style="" target="_self" title="I like tight pants and programmatically manipulating typefaces">scripts</a>, is only allowed only with libre fonts: the End User License Agreements of most typefaces explicitly forbid modification. Or it can be by embracing new collaboration methods and iterative processes, like we try to do with Open Baskerville.</p><h4>How we collaborate on Open Baskerville</h4><p style="">It is clear that the right tools for typographic collaboration <a href="/and/the-most-barebones-online-font-editor-possible" style="" target="_self" title="I like tight pants and the most barebones online font editor possible">still need to be built</a>. But like I explain in <a href="/and/how-it-has-come-about-that-code-hosting-site-github-offers-visualisations-of-typeface-development" style="" target="_self" title="I like tight pants and how it has come about that code hosting site github offers visualisations of typeface development">I like tight pants and how it has come about that code hosting site github offers visualisations of typeface development</a>,&nbsp;some elements of the underlying system are already showing up. The open&nbsp;<span style="font-size: 14px;">font format UFO and the versioning process Git are a solid basis to built on.</span></p><p style=""><span style="font-size: 14px;"></span>A collaborator on Open Baskerville needs to have an account on Github and the software <a href="http://git-scm.com/" style="" target="_self" title="Git">Git</a> installed on ones computer. She first ‘forks’ <a href="https://github.com/klepas/open-baskerville/" target="_self" style="" title="klepas/openbaskerville">our repository</a> to her Github account: she now has her own version of the revision history. This fork she ‘clones’ to her own computer, using git.</p><p style="">The clone consists of all the files of the project, plus the version history. She now goes and makes changes in the files. When she is happy with the changes, she ‘commits’ them, and ‘pushes’ them back up to her Github repository. She opens a ‘pull request’ where she asks for the changes to be merged into our repository.</p><p style="">This is a rather involved process. Outside of software developers, not many people have experience with Git.&nbsp;<span style="font-size: 14px;">The existing interfaces to Git are not intuitive to use, being geared to programmers directly editing source files rather than designers using a graphical tool. I think the complexity of this process is one of the barriers to contribution on our project.</span></p><p style=""><span style="font-size: 14px;">It will be much more easy to contribute to Open Baskerville once there exist more easy ways to handle the version control. Whether in the form of plugins for font-editors, or a new editor built around collaboration.</span></p><p style=""><span style="font-size: 14px;">What will stay the same in the future is the access we have to the revision history, as tracked in Git. In Open Baskerville, we use a set of scripts to be able to quickly generate a font package for each revision: <a href="https://github.com/fonts/skeleton" style="" target="_self" title="fonts/skeleton">we packaged them for other projects to use</a>.</span></p>
-
-<h4>Formalising version numbers</h4><p>In computer software the&nbsp;<a href="http://semver.org/" target="_self" title="Semantic Versioning 2.0.0" style="font-size: 14px;">Semantic Versioning</a>&nbsp;standard is an attempt to formalise generally accepted practices for attributing version numbers.</p><p>It distinguishes between MAJOR, MINOR and PATCH versions, corresponding to three period separated numbers: MAJOR.MINOR.PATCH (i.e. version 1.5.4) What is the difference between these categories? From Semantic Versioning’s specification, the guideline as to when to augment the MAJOR, MINOR and PATCH versions:</p><blockquote><ol><li style="font-size: 14px;">MAJOR version when you make incompatible API changes,</li><li style="font-size: 14px;">MINOR version when you add functionality in a backwards-compatible manner, and</li><li style="">PATCH version when you make backwards-compatible bug fixes.<br style=""></li></ol></blockquote><p>This makes the distinction between how a program is used and how it works on the inside. Changes to the code implementation that don’t change how the program appears to the user, merit only a change in the PATCH version. Adding functionality that appears to the user, without changing existing functionality, merits a MINOR version. Finally, changing the way in which you as a user have to use the program, means updating the MAJOR version.</p><p>However, this model does not seem really applicable to type design. This is because every change in the code, influences the visual product with which the designer works. My poster design might break more spectacularly if the fonts metrics change, by messing with my line breaks: but if the axis by which the bar of the e is slanted changes, that does ‘break’, in a more subtle way, my design as well.</p><p></p><p>This means that for fonts, unlike in software, every version is functionally different.&nbsp;<span style="font-size: 14px;">Another reason why we chose to feature the version number prominently in the name of the typeface.</span></p><h4>What the version means</h4><p>Resuming the role of version numbers in Open Source, we have seen both the&nbsp;<span style="font-size: 14px;">way in which a version number talks about the mindsets and the aims of a project, and</span><span style="font-size: 14px;"> the more formalistic definition of Semantic Versioning.</span></p><p>It is the metaphor of the long road to the first version that I find the most easily applicable to design projects. Every project start with a set of goals, aspirations, challenges. In the context of design, I would then rephrase the different types of version numbers as such:</p><ol style="font-size:14px;line-height:18px;"><li>MAJOR version constitutes a coherent set of design goals,</li><li>MINOR version constitutes a discrete goal obtained in pursuing these design goals and</li><li>PATCH version constitutes incremental progress toward design goals.</li></ol><p style="">For example, in Open Baskerville, the major design goal is to recreate Fry’s Baskerville in a way that is usable on the modern web (Version 1.0). As a sub-goal, we are first working to recreate a width faithful to Fry’s surviving specimen (version 0.1), with a system in place to create releases. We logged 83 incremental improvements towards this goal, but we are not there yet (thus, at version 0.0.83).</p><p style="">If we ever reach 1.0, what then? Can we think of a new major design goal for the project, or rephrase its design goal? We might want to re-inspire ourselves on other Baskerville variants, for example, and adjust are goals accordingly.<br style="">Where does it end? What is the final number? Is continuing working on one design project for years and years a desirable scenario, in a way that Windows now is at version 8 and Illustrator at version 16?</p><p style="">There are arguments against creating too many versions of a design. A design is a product of hopes, aspirations, goals and constraints that exist at a given point. The recent phenomenon of film directors revisiting their older movies and adding contemporary computer effects (not available at the time) has not at all been well received by fans. It shows that the constraints placed upon an artistic project shape it and create its character, and that authors might want to be reticent in revisiting their works.</p><p style="">Similar phenomenons exist in software too. People who use many subsequent versions of &nbsp;a software often feel like something gets lost along the way. The initial sense of purpose embodied in a program can give way to what is called ‘bloat’, by adding feature upon feature until it tries . In programmer’s circles, this is known as Zawinski’s law: &nbsp;‘Every program attempts to expand until it can read e-mail.’ At the same time, using old versions of software is not very practical. They might contain security holes; they might even no longer run on your current operating system.</p><p style="">With typefaces we are in luck that they will in most occasions be usable for a longer time. As long as a description of its points exists somewhere—and mankind does not forget <a href="/and/seb-explaining-love-and-bezier-curves" style="" target="_self" title="I like tight pants and seb explaining love and bezier curves">the mathematics of Bézier curves</a>. So I think I will want for the 1.0 version to be the last. Anyone who has another vision on the design, is free to fork.</p>
-    
-    
-    
-    
-    
-    ]]>
+]]>
         
     </content>
 </entry>
@@ -590,14 +618,20 @@ $("h2").hover(
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-    
-    <p><a href="/and/assets/called/the_telephone.jpg" target="_self"><img src="/and/assets/scaled/to/830/wide/and/called/the_telephone.jpg" style="height:830px;width:830px;" alt="In the upper part of the screen you see a smartphone. A landscape format screen with a keyboard slid out underneath. The screen is scratched and there are stains of white paint all over the device. The phone appears to be floating." title=""></a></p>
+    <p><a href="/and/assets/called/the_telephone.jpg" target="_self">
+        <img src="/and/assets/scaled/to/830/wide/and/called/the_telephone.jpg" style="height:830px;width:830px;" alt="In the upper part of the screen you see a smartphone. A landscape format screen with a keyboard slid out underneath. The screen is scratched and there are stains of white paint all over the device. The phone appears to be floating." title="" />
+      </a></p>
+    <p class="byline">A Nokia N900</p>
+    <p>In the wake of <a href="http://www.microsoft.com/en-us/news/press/2013/sep13/09-02AnnouncementPR.aspx" style="" target="_self" title="Microsoft to acquire Nokia’s devices &amp; services business, license Nokia’s patents and mapping services">Microsoft’s acquisition of Nokia</a>, here is a tale of a telephone an a 1000 programmer’s hearts breaking. It starts when I am on the lookout for a new phone. A phone that is a little computer that can run all kinds of applications I can install myself—a smart phone. Since I like my new found ways of writing scripts and <a href="/and/absolute-beginners-unix-for-art-students-part-1" target="_self" style="" title="I like tight pants and absolute beginners: unix for art students – part 1">getting intimate with the terminal</a>, I am looking for a telephone that resembles the UNIX systems I know.</p>
+    <p>I have also learned to write Python. I know how to use it to make web applications, and it seems to be <a href="http://arstechnica.com/information-technology/2009/07/how-to-build-a-desktop-wysiwyg-editor-with-webkit-and-html-5/" style="" target="_self" title="How to build a desktop WYSIWYG editor with WebKit and HTML 5 | Ars Technica">reasonably easy</a> to create desktop applications. But when creating applications for smartphones, the two most popular phone operating systems have their own way of doing things, using different languages: Objective C on the iPhone, Java on the Android. Big companies like Apple and Google prefer to create their own way of doing things, and call it a platform—which, in the words of Eben Moglen means: <a href="http://www.softwarefreedom.org/events/2010/isoc-ny/FreedomInTheCloud-transcript.html" style="" target="_self" title="Freedom In the Cloud - Software Freedom Law Center">places you can’t leave</a>.&nbsp;</p>
+    <p style="">The Nokia N900 then seems to offer an alternative. It runs the <a href="http://en.wikipedia.org/wiki/Maemo" target="_self" style="" title="Maemo - Wikipedia, the free encyclopedia">Maemo</a> operating system, that shares with Android its Linux core, but reuses much more of Linux’s graphical model. It should allow me to reuse my new found knowledge of the Unix platform and its programming languages—like the Python one I have just been learning:</p>
+    <blockquote class="">&nbsp;27 minutes to get a basic app running; an afternoon (most of it spent doing other stuff while stuff downloaded) to get the full development environment (with emulator) up and running. Simply excellent. The N900 really is a very good platform for development work, especially with Python.<br /></blockquote>
+    <p class="byline"><a href="http://web.archive.org/web/20130615004412/http://www.stochasticgeometry.ie/2010/04/29/python-on-the-nokia-n900/" target="_self" style="">Source</a></p>
+    <p style="">In a similar vein, whereas most telephones are locked down by default, requiring some kind of ‘jailbreak’ procedure to allow to install any software, the Nokia has no such restrictions—it even comes with a Terminal program by default.<br />As I scour the internet figuring out how it works to jailbreak the latest generation of iPhone, I come across seedy forums with adolescents shouting homophobic abuse at each other, and I figure I would rather be part of a more positive ecosystem—I order the Nokia.</p>
+    <p style="">It works out quite nicely. I like using the phone; the full QWERTY keyboard makes for great note taking and texting. Though I never get to any programming beyond installing the <a href="http://ipython.org/" style="" target="_self">IPython</a> shell, there is an actual pleasure in the feeling that I could, whenever I would want to. Finally, I profit from a great build quality, which sees my phone survive falling into a bucket of paint.<br />The great downside to the phone, are caused by the simple fact of it being not very popular. As it does not represent a sizable number of All the new applications that appear are for iPhone and Android. Apparently, having a phone that you can easily fiddle with yourself, is not what gets users flocking to the device. I feel a little lonely using this operating system.<br />Yet at <a href="http://" target="_self" style="" title="I like tight pants and daniela likes open source programming conferences like fosdem">Fosdem 2011</a>, a yearly event for Open Source software developers, it turns out everybody has this phone. I speak with the community manager for the largest Maemo website, who speaks with great enthousiasm about this community. I remember that <a href="http://drippingdigital.com/blog/" style="" target="_self" title="Dripping Digital">John</a> has this phone, and <a href="http://adaptstudio.ca/" style="" target="_self" title="ad.apt is ginger coons">Ginger</a> too. For a moment it feels like the people needed for the platform to have a future, are there.</p>
+    <p><span style="font-size: 14px;">Yet companies only work with open source as long as they can make open source work for them. ‘The most open’, by itself, is not easily translatable into market share.&nbsp;</span>Two days later, as I get home, I read that <a href="http://conversations.nokia.com/2011/02/11/open-letter-from-ceo-stephen-elop-nokia-and-ceo-steve-ballmer-microsoft/" target="_self" style="" title="Open Letter from CEO Stephen Elop, Nokia and CEO Steve Ballmer, Microsoft – Nokia Conversations : the official Nokia blog">Nokia has signed a deal to continue with Microsoft Windows as the operating system for its smartphone</a>. It is like I hear a thousands programmers’ hearts collectively break.</p>
 
-<p class="byline">A Nokia N900</p>
-
-<p>In the wake of <a href="http://www.microsoft.com/en-us/news/press/2013/sep13/09-02AnnouncementPR.aspx" style="" target="_self" title="Microsoft to acquire Nokia’s devices &amp; services business, license Nokia’s patents and mapping services">Microsoft’s acquisition of Nokia</a>, here is a tale of a telephone an a 1000 programmer’s hearts breaking. It starts when I am on the lookout for a new phone. A phone that is a little computer that can run all kinds of applications I can install myself—a smart phone. Since I like my new found ways of writing scripts and <a href="/and/absolute-beginners-unix-for-art-students-part-1" target="_self" style="" title="I like tight pants and absolute beginners: unix for art students – part 1">getting intimate with the terminal</a>, I am looking for a telephone that resembles the UNIX systems I know.</p><p>I have also learned to write Python. I know how to use it to make web applications, and it seems to be <a href="http://arstechnica.com/information-technology/2009/07/how-to-build-a-desktop-wysiwyg-editor-with-webkit-and-html-5/" style="" target="_self" title="How to build a desktop WYSIWYG editor with WebKit and HTML 5 | Ars Technica">reasonably easy</a> to create desktop applications. But when creating applications for smartphones, the two most popular phone operating systems have their own way of doing things, using different languages: Objective C on the iPhone, Java on the Android. Big companies like Apple and Google prefer to create their own way of doing things, and call it a platform—which, in the words of Eben Moglen means: <a href="http://www.softwarefreedom.org/events/2010/isoc-ny/FreedomInTheCloud-transcript.html" style="" target="_self" title="Freedom In the Cloud - Software Freedom Law Center">places you can’t leave</a>.&nbsp;</p><p style="">The Nokia N900 then seems to offer an alternative. It runs the <a href="http://en.wikipedia.org/wiki/Maemo" target="_self" style="" title="Maemo - Wikipedia, the free encyclopedia">Maemo</a> operating system, that shares with Android its Linux core, but reuses much more of Linux’s graphical model. It should allow me to reuse my new found knowledge of the Unix platform and its programming languages—like the Python one I have just been learning:</p><blockquote class="">&nbsp;27 minutes to get a basic app running; an afternoon (most of it spent doing other stuff while stuff downloaded) to get the full development environment (with emulator) up and running. Simply excellent. The N900 really is a very good platform for development work, especially with Python.<br></blockquote><p class="byline"><a href="http://web.archive.org/web/20130615004412/http://www.stochasticgeometry.ie/2010/04/29/python-on-the-nokia-n900/" target="_self" style="">Source</a></p><p style="">In a similar vein, whereas most telephones are locked down by default, requiring some kind of ‘jailbreak’ procedure to allow to install any software, the Nokia has no such restrictions—it even comes with a Terminal program by default.<br>As I scour the internet figuring out how it works to jailbreak the latest generation of iPhone, I come across seedy forums with adolescents shouting homophobic abuse at each other, and I figure I would rather be part of a more positive ecosystem—I order the Nokia.</p><p style="">It works out quite nicely. I like using the phone; the full QWERTY keyboard makes for great note taking and texting. Though I never get to any programming beyond installing the <a href="http://ipython.org/" style="" target="_self">IPython</a> shell, there is an actual pleasure in the feeling that I could, whenever I would want to. Finally, I profit from a great build quality, which sees my phone survive falling into a bucket of paint.<br>The great downside to the phone, are caused by the simple fact of it being not very popular. As it does not represent a sizable number of All the new applications that appear are for iPhone and Android. Apparently, having a phone that you can easily fiddle with yourself, is not what gets users flocking to the device. I feel a little lonely using this operating system.<br>Yet at <a href="http://" target="_self" style="" title="I like tight pants and daniela likes open source programming conferences like fosdem">Fosdem 2011</a>, a yearly event for Open Source software developers, it turns out everybody has this phone. I speak with the community manager for the largest Maemo website, who speaks with great enthousiasm about this community. I remember that <a href="http://drippingdigital.com/blog/" style="" target="_self" title="Dripping Digital">John</a> has this phone, and <a href="http://adaptstudio.ca/" style="" target="_self" title="ad.apt is ginger coons">Ginger</a> too. For a moment it feels like the people needed for the platform to have a future, are there.</p><p><span style="font-size: 14px;">Yet companies only work with open source as long as they can make open source work for them. ‘The most open’, by itself, is not easily translatable into market share.&nbsp;</span>Two days later, as I get home, I read that <a href="http://conversations.nokia.com/2011/02/11/open-letter-from-ceo-stephen-elop-nokia-and-ceo-steve-ballmer-microsoft/" target="_self" style="" title="Open Letter from CEO Stephen Elop, Nokia and CEO Steve Ballmer, Microsoft – Nokia Conversations : the official Nokia blog">Nokia has signed a deal to continue with Microsoft Windows as the operating system for its smartphone</a>. It is like I hear a thousands programmers’ hearts collectively break.</p>
-    
-    ]]>
+]]>
         
     </content>
 </entry>
@@ -618,7 +652,12 @@ $("h2").hover(
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><a href="https://github.com/klepas/open-baskerville/commit/8aaf5c54eb0c88cdbdfe2411e5f7396a88d0ab89"><img src="/and/assets/called/this_is_probably_a_unix_sin.png" style="width:660px;height:401px" alt="" title=""></a></p>]]>
+        <![CDATA[
+    <p><a href="https://github.com/klepas/open-baskerville/commit/8aaf5c54eb0c88cdbdfe2411e5f7396a88d0ab89">
+        <img src="/and/assets/called/this_is_probably_a_unix_sin.png" style="width:660px;height:401px" alt="" title="" />
+      </a></p>
+
+]]>
         
     </content>
 </entry>
@@ -640,25 +679,22 @@ $("h2").hover(
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-    
-    
-    
-    
-    
-    
-    
-        <p><a href="/and/assets/called/the_lonely_form_field.png"><img src="/and/assets/scaled/to/830/wide/and/called/the_lonely_form_field
-.png" alt="" title=""></a></p><p></p><p>This is where I type my entries. It is a lonely place. The other I like tight pants contributors are nowhere in sight, it is just me typing away in the browser. Only when I hit a submit button the information is sent to the server.</p><p>Were my colleagues to try and edit this article at the same time, the system would not allow it. Content management systems put in place editing locks, allowing only one user to edit at a time. This is because the text form I write in can not be updated while I am editing it. So if other users were allowed to update the entry inbetween the time that I open the text field and the moment I press the submit button, their changes would effectively be overwritten. Wikipedia employs a sophisticated merging tool to merge various edits together.</p><p>Baseline, who works with OSP, has introduced me to <a href="http://etherpad.org/" class="" target="_self" style="" title="Etherpad lite">Etherpad</a>. Etherpad presents you with an online document allowing you to start typing. As you do, you might see others connected to the pad start typing as well. There is no submit button. Everything is saved while you type so that it can be shown to your collaborators at the same time. You are no longer solitary with your text box:</p><p><a href="/and/assets/called/osp_using_etherpad.png"><img src="/and/assets/scaled/to/830/wide/and/called/osp_using_etherpad.png" alt="" title="" style="width:830px;height:623px;"></a></p><p>Once you have used Etherpad to write, it becomes difficult to imagine writing collaboratively without it. In a book sprint in Rotterdam, we used <a href="http://www.booki.cc/" class="" target="_self" style="" title="Booktype">Booki</a>, which allows for sophisticated pdf and ebook creation. Yet like many content editing tools it imposes a single-user content lock on each chapter. At the end of the session it turned out everyone had used Etherpad to write their chapters together, before copy and pasting it into the Booki platform.</p><p>If you have not used etherpad, changes are you have used the technology through Google Docs. It is Google who in 2009 bought Etherpad. At the time of the acquisition the source code gets released under a permissive license. So if the code is out there, why are we not seeing more Etherpad-style collaboration online?</p><p></p>
+    <p><a href="/and/assets/called/the_lonely_form_field.png">
+        <img src="/and/assets/scaled/to/830/wide/and/called/the_lonely_form_field
+.png" alt="" title="" />
+      </a></p>
+    <p></p>
+    <p>This is where I type my entries. It is a lonely place. The other I like tight pants contributors are nowhere in sight, it is just me typing away in the browser. Only when I hit a submit button the information is sent to the server.</p>
+    <p>Were my colleagues to try and edit this article at the same time, the system would not allow it. Content management systems put in place editing locks, allowing only one user to edit at a time. This is because the text form I write in can not be updated while I am editing it. So if other users were allowed to update the entry inbetween the time that I open the text field and the moment I press the submit button, their changes would effectively be overwritten. Wikipedia employs a sophisticated merging tool to merge various edits together.</p>
+    <p>Baseline, who works with OSP, has introduced me to <a href="http://etherpad.org/" class="" target="_self" style="" title="Etherpad lite">Etherpad</a>. Etherpad presents you with an online document allowing you to start typing. As you do, you might see others connected to the pad start typing as well. There is no submit button. Everything is saved while you type so that it can be shown to your collaborators at the same time. You are no longer solitary with your text box:</p>
+    <p><a href="/and/assets/called/osp_using_etherpad.png">
+        <img src="/and/assets/scaled/to/830/wide/and/called/osp_using_etherpad.png" alt="" title="" style="width:830px;height:623px;" />
+      </a></p>
+    <p>Once you have used Etherpad to write, it becomes difficult to imagine writing collaboratively without it. In a book sprint in Rotterdam, we used <a href="http://www.booki.cc/" class="" target="_self" style="" title="Booktype">Booki</a>, which allows for sophisticated pdf and ebook creation. Yet like many content editing tools it imposes a single-user content lock on each chapter. At the end of the session it turned out everyone had used Etherpad to write their chapters together, before copy and pasting it into the Booki platform.</p>
+    <p>If you have not used etherpad, changes are you have used the technology through Google Docs. It is Google who in 2009 bought Etherpad. At the time of the acquisition the source code gets released under a permissive license. So if the code is out there, why are we not seeing more Etherpad-style collaboration online?</p>
+    <p></p>
 
-
-        
-    
-    
-    
-    
-    
-    
-    ]]>
+]]>
         
     </content>
 </entry>
@@ -671,7 +707,7 @@ $("h2").hover(
     <published>2013-04-18T19:59:36Z</published>
     <updated>2013-04-18T10:08:42Z</updated>
 
-    <summary><![CDATA[ Built by OSP as part of a workshop where students of the Piet Zwart Institute get up close and personal with vector graphics. You edit the raw XML strings that make up the glif.&nbsp;An online font-editor would be a...]]></summary>
+    <summary><![CDATA[ Built by OSP as part of a workshop where students of the Piet Zwart Institute get up close and personal with vector graphics. You edit the raw XML strings that make up the glif.&nbsp; An online font-editor would be...]]></summary>
     <author>
         <name>baseline</name>
         
@@ -680,24 +716,13 @@ $("h2").hover(
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-    
-    
-    
-    
-    
-    
-    
-    
-        <p><a href="/and/assets/called/edit_glif.png"><img src="/and/assets/scaled/to/830/wide/and/called/edit_glif.png" alt="You see a fairly minimalistic user interface featuring a list of what appears to be glyph names, a large letter A, and a textarea with xml data describing two contours—the contours that make up the A. The elements lack the usual gloss of post OS-X user interfaces: a thin grey 1px border is the only visual separator between elements." title=""></a></p><p>Built by OSP as part of a <a href="http://osp.constantvzw.org/workshop/pzi/" target="_self" style="" title="OSP (Open Source Publishing) → you&amp;#39;re traveling toward in pzi">workshop</a> where students of the Piet Zwart Institute get up close and personal with vector graphics. You edit the raw XML strings that make up the <a href="http://unifiedfontobject.org/versions/ufo2/glif.html" target="_self" style="" title="Unified Font Object - Version 2 - GLIF format">glif</a>.&nbsp;</p><p>An online font-editor would be a great way to make it more easy to do <a href="/and/how-it-has-come-about-that-code-hosting-site-github-offers-visualisations-of-typeface-development" style="" target="_self" title="I like tight pants and how it has come about that code hosting site github offers visualisations of typeface development">collaborative type design</a>. Speaking with <a href="https://www.google.com/search?q=dave+crossland" target="_self" style="" title="Dave Crossland">Dave</a> at this years Libre Graphics Meeting, we figured that a good place to get started would be to have a library that makes it more easy to deal with typefaces in web-apps—a JavaScript port of <a href="http://www.robofab.org/" target="_self" style="" title="I like tight pants and programmatically manipulating typefaces">RoboFab</a> perhaps?</p>
-        
-    
-    
-    
-    
-    
-    
-    
-    ]]>
+    <p><a href="/and/assets/called/edit_glif.png">
+        <img src="/and/assets/scaled/to/830/wide/and/called/edit_glif.png" alt="You see a fairly minimalistic user interface featuring a list of what appears to be glyph names, a large letter A, and a textarea with xml data describing two contours—the contours that make up the A. The elements lack the usual gloss of post OS-X user interfaces: a thin grey 1px border is the only visual separator between elements." title="" />
+      </a></p>
+    <p>Built by OSP as part of a <a href="http://osp.constantvzw.org/workshop/pzi/" target="_self" style="" title="OSP (Open Source Publishing) → you&amp;#39;re traveling toward in pzi">workshop</a> where students of the Piet Zwart Institute get up close and personal with vector graphics. You edit the raw XML strings that make up the <a href="http://unifiedfontobject.org/versions/ufo2/glif.html" target="_self" style="" title="Unified Font Object - Version 2 - GLIF format">glif</a>.&nbsp;</p>
+    <p>An online font-editor would be a great way to make it more easy to do <a href="/and/how-it-has-come-about-that-code-hosting-site-github-offers-visualisations-of-typeface-development" style="" target="_self" title="I like tight pants and how it has come about that code hosting site github offers visualisations of typeface development">collaborative type design</a>. Speaking with <a href="https://www.google.com/search?q=dave+crossland" target="_self" style="" title="Dave Crossland">Dave</a> at this years Libre Graphics Meeting, we figured that a good place to get started would be to have a library that makes it more easy to deal with typefaces in web-apps—a JavaScript port of <a href="http://www.robofab.org/" target="_self" style="" title="I like tight pants and programmatically manipulating typefaces">RoboFab</a> perhaps?</p>
+
+]]>
         
     </content>
 </entry>
@@ -718,11 +743,19 @@ $("h2").hover(
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><img src="/and/assets/called/belgian_newspaper_le_drapeau_rouge.jpg" alt="You see a computer monitor, in portrait orientation, showing the front page of a newspaper (displayed as a PDF inside Internet Explorer): ‘Le drapeau rouge’, the Belgian daily communist newspaper. Headline: ‘Molotov propose la réduction générale des armements’. " title="" style="width:1029px;height:1457px;margin-left:-199px;z-index:-1111;"></p>
+        <![CDATA[
+    <p>
+      <img src="/and/assets/called/belgian_newspaper_le_drapeau_rouge.jpg" alt="You see a computer monitor, in portrait orientation, showing the front page of a newspaper (displayed as a PDF inside Internet Explorer): ‘Le drapeau rouge’, the Belgian daily communist newspaper. Headline: ‘Molotov propose la réduction générale des armements’. " title="" style="width:1029px;height:1457px;margin-left:-199px;z-index:-1111;" />
+    </p>
+    <div style="margin-left:50px;margin-top: -138px;">
+      <p>This computer is situated in Belgium’s Royal Library. It offers you access to an internal network of 300.000 pages of Belgian periodicals, produced between 1831 an 1945.&nbsp;<span style="font-size: 14px;">It has no access to internet, no usb ports, and no connection to a printer.</span></p>
+      <p><span style="font-size: 14px;">If the library allows any digital distribution of the materials outside of the library walls they risk claims of copyright holders.</span></p>
+      <p>During&nbsp;<a href="http://www.kbr.be/actualites/domaineDomein/domainePublic.html" title="Bibliothèque royale de Belgique : Fêtons le Domaine Public" style="">Public Domain Day</a> (<a href="http://www.kbr.be/actualites/domaineDomein/publiekDomein.html" title="Koninklijke Bibliotheek van België :Gelukkig Publiek Domein!">NL</a>) <span style="font-size: 14px;">Librarian Marc D'Hoore explains: determining the authorship of a newspaper is difficult. Much of the work is anonymous or pseudononymous. There are not always clear contracts between the publishers and the authors. You do not know who owns the copyright, and you do not know when it will pass into the public domain.</span></p>
+      <p>Because of its mission of preservation, the Library needed to scan these materials—the paper is of extremely poor quality and disintegrating. But the Library also has a mission to facilitate access to its materials in any way it can.</p>
+      <p>Digitalisation seems to offer a great potential to make the material from the collections more accessible. Once scanned, material can be indexed, and put online, and be available to everyone with an internet connection. In potential. In reality, the Royal Library can not do this, because it would open itself to all kinds of claims of damages by copyright holders.</p>
+</div>
 
-<div style="margin-left:50px;margin-top: -138px;">
-<p>This computer is situated in Belgium’s Royal Library. It offers you access to an internal network of 300.000 pages of Belgian periodicals, produced between 1831 an 1945.&nbsp;<span style="font-size: 14px;">It has no access to internet, no usb ports, and no connection to a printer.</span></p><p><span style="font-size: 14px;">If the library allows any digital distribution of the materials outside of the library walls they risk claims of copyright holders.</span></p><p>During&nbsp;<a href="http://www.kbr.be/actualites/domaineDomein/domainePublic.html" title="Bibliothèque royale de Belgique : Fêtons le Domaine Public" style="">Public Domain Day</a> (<a href="http://www.kbr.be/actualites/domaineDomein/publiekDomein.html" title="Koninklijke Bibliotheek van België :Gelukkig Publiek Domein!">NL</a>) <span style="font-size: 14px;">Librarian Marc D'Hoore explains: determining the authorship of a newspaper is difficult. Much of the work is anonymous or pseudononymous. There are not always clear contracts between the publishers and the authors. You do not know who owns the copyright, and you do not know when it will pass into the public domain.</span></p><p>Because of its mission of preservation, the Library needed to scan these materials—the paper is of extremely poor quality and disintegrating. But the Library also has a mission to facilitate access to its materials in any way it can.</p><p>Digitalisation seems to offer a great potential to make the material from the collections more accessible. Once scanned, material can be indexed, and put online, and be available to everyone with an internet connection. In potential. In reality, the Royal Library can not do this, because it would open itself to all kinds of claims of damages by copyright holders.</p>
-</div> ]]>
+]]>
         
     </content>
 </entry>
@@ -744,38 +777,16 @@ $("h2").hover(
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-    
-    
-    
-    
-    
-    
-    
-    <p><a href="http://i.liketightpants.net/and/assets/called/parties_in_paris.jpg"><img src="http://i.liketightpants.net/and/assets/scaled/to/830/wide/and/called/parties_in_paris.jpg" style="width:553px;830px;" title="" alt="You see a young man perched against a dresser, sitting on a medicine ball. He looks away. He is wearing a slate blazer, over a yellow shirt, screenprinted with a drawing of his guts and his chestcage. He wears gold colored leggings. His hair is combed over to the left."></a></p>
+    <p><a href="http://i.liketightpants.net/and/assets/called/parties_in_paris.jpg">
+        <img src="http://i.liketightpants.net/and/assets/scaled/to/830/wide/and/called/parties_in_paris.jpg" style="width:553px;830px;" title="" alt="You see a young man perched against a dresser, sitting on a medicine ball. He looks away. He is wearing a slate blazer, over a yellow shirt, screenprinted with a drawing of his guts and his chestcage. He wears gold colored leggings. His hair is combed over to the left." />
+      </a></p>
+    <p class="byline">Photo Laura Barbare</p>
+    <p>Or parties in Brussels, for that matter. But the alliteration is nice.</p>
+    <p>Though there is never much programming at the parties I go to. Even if <a href="http://yaxu.org/" title="http://yaxu.org/">Alex McLean</a> professes to be <a href="http://www.perl.com/pub/2004/08/31/livecode.html" title="Hacking Perl in Nightclubs - Perl.com">hacking Perl in night clubs</a>, I have yet to run into him at night.</p>
+    <p>I am wondering at what point it will become part of contemporary party culture and we’ll have live coding sessions at <a href="http://www.flashcocotte.com/" title="Flash Cocotte">Flash Cocotte</a>? Seb tells me that it’s not likely to happen. That people like <a href="/and/designer-drugs">drugs</a> and music and sex and that’s what brings them to parties. And that programming is too abstract and intellectual to appeal to people in a similar way.</p>
+    <p>What do you think?</p>
 
-<p class="byline">Photo Laura Barbare</p>
-
-<p>Or parties in Brussels, for that matter. But the alliteration is nice.</p>
-
-<p>Though there is never much programming at the parties I go to. Even if <a href="http://yaxu.org/" title="http://yaxu.org/">Alex McLean</a> professes to be <a href="http://www.perl.com/pub/2004/08/31/livecode.html" title="Hacking Perl in Nightclubs - Perl.com">hacking Perl in night clubs</a>, I have yet to run into him at night.</p>
-
-<p>I am wondering at what point it will become part of contemporary party culture and we’ll have live coding sessions at <a href="http://www.flashcocotte.com/" title="Flash Cocotte">Flash Cocotte</a>? Seb tells me that it’s not likely to happen. That people like <a href="/and/designer-drugs">drugs</a> and music and sex and that’s what brings them to parties. And that programming is too abstract and intellectual to appeal to people in a similar way.</p>
-
-<p>What do you think?</p>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    ]]>
+]]>
         
     </content>
 </entry>
@@ -796,7 +807,8 @@ $("h2").hover(
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<style>
+        <![CDATA[
+    <style>
 @font-face {
     font-family: 'Chunkfive';
     src: url('/and/assets/called/Chunkfive-webfont.eot#') format('eot'),
@@ -822,35 +834,25 @@ h3.notwork {
     line-height: 16px;
 }
 </style>
-
-<h2 class="notwork">It doesn’t work!</h2>
-<h3 class="notwork">Github appears to have recently pulled this feature.</h3>
-
-<a href="https://github.com/klepas/open-baskerville/commit/559794180adbdd65327558886d3f4e4169539284" title="Fixed some youthful mistakes, tweaked a few curves. ÃÂ·  5597941 ÃÂ· klepas/open-baskerville"><img src="/and/assets/scaled/to/830/wide/and/called/github_ufo_visual_diff.png" alt="You see two versions of a ¢ character: to the left, labelled ‘old’, a version with an upright bar, to the right, labelled ‘new’, a version with a slanted bar." title="" style="width:830px;height:329px;"></a>
-
-<blockquote>That's really cool that you guys are pushing for open source collaborative development of typefaces. I thought it was so cool that I stayed up late last night and hacked together some very simple UFO support on GitHub.</blockquote>
-
-<p class="byline">Tom Werner</p>
-
-<p>With habitus waxing lyrically about the potential of reuse and collaboration in open source type design, I figure it is a good moment to zoom in on the details of a specific font collaboration project. Because it is not self evident how to go about working together on a font.</p>
-
-<p>Together with <a href="http://klepas.org/" title="Simon Pascal Klein&thinsp;&mdash;&thinsp;Graphic &amp; web design professional">, I lead the open source font project Open Baskerville.</p>
-
-<p>When setting up the project, Pascal has made some clever choices. Firstly, he provides an attractive looking <a href="http://klepas.org/openbaskerville/" title="Open Baskerville">website</a> that explains the project, and links to the source files. Then, he has put the <a href="https://github.com/klepas/open-baskerville/">source files on GitHub</a>, a code sharing site usually used for the development of software code. GitHub offers tools and practices for versioning files and sharing changes, that can be leveraged for this project. Another good move by Pascal: he does not put the Fontlab file online. Instead, he converts the font to an open file format called <a href="http://unifiedfontobject.org/" title="Unified Font Object">UFO</a>. A ufo file is actually a folder, that represents the typeface as a whole lot of plain text files, exactly the kind of file that is easily shared and processed through tools like GitHub, and readable by both the popular proprietary font editors and the open source font editor FontForge</p>
-
-<p>When I come across the project, I ask my friend <a href="http://robmientjes.nl/" title="Hand-crafted pixels and top-shelf touch interfaces by Rob Mientjes">Rob</a> to explain to me what GitHub is. It is a code hosting site that focuses on facilitating the collaboration between developers.</p>
-
-<p>Rob also explains to me that GitHub is built upon <a href="http://git-scm.com/">Git</a>. At the time one of the few human beings with the overlapping skill sets of knowing how to use Git and how to design type, Rob teaches me the basics of git in the cafeteria of the art school. Git is built upon an amazing premise: while traditional development is based on centralised repositories, Git’s development model is distributed. Every clone of a repository becomes a bona fide repository in itself. Whichever repository is the main one is but a social convention. Git turns the traditional model on his head, and makes the development of software much more akin to the development of culture: a distributed, abundant process.</p>
-
-<p>Ever since I have been working on Open Baskerville, trying not just to make a good font, but to come up with workflows that can be re-used for other open font projects. On the level of workflow, we still have a long way to go before typographic collaboration is easily accessible. The git system used to track the changes on Open Baskerville is developed for programming code and is therefore not always easy to use for designers. But the underlying foundation is very solid, and it plays together well with the UFO format. Because Git and UFO are open, it is well imaginable that a plugin can be written for a font-editor that interfaces with git, so that you can track your changes in the font editor, end send them back to the repository that you pulled the font from.</p>
-
-<p>One feature that I figure to be fundamental to be able to convince other designers of the potential of a git-based workflow is a visualisation of the typeface and the changes being made to it. I have reached out to GitHub. I get in touch with Tom Werner, and the following morning there is a mail in my mailbox.</p>
-
-<p>Github’s intervention is important in showing the potential of Git and Github for other kinds of projects than just software development. It also shows the power of the UFO format: it is much easier to write this kind of visualisation when you are dealing with an open, hackable format like UFO. We are only just beginning to explore the potential of these new models of collaboration.</p>
-
-<p>Micah Rich <a href="http://www.netmagazine.com/features/top-10-open-source-web-fonts" title="The top 10 open source web fonts | Feature | .net magazine">calls</a> Open Baskerville a major inspiration for the <a href="http://www.theleagueofmoveabletype.com/" title="The League of Moveable Type">League of Movable Type</a> (they are <a href="https://github.com/theleagueof">on GitHub too</a>); OSP are working on their own code hosting called Visual Culture that is going to power new releases for their <a href="http://osp.constantvzw.org/foundry/" title="OSP-foundry">foundry</a>.</p>
-
-<a href="https://github.com/klepas/open-baskerville/tree/master/OpenBaskerville.ufo" title=""><img src="/and/assets/scaled/to/490/wide/and/called/github_ufo_preview.png" alt="You see a screenshot from the GitHub interface. It consists of a file listing of the contents of a UFO folder called OpenBaskerville.ufo. Below extends a preview of all the glyphs contained within this UFO." title="" style="width:490px;height:1175px;"></a>]]>
+    <h2 class="notwork">It doesn’t work!</h2>
+    <h3 class="notwork">Github appears to have recently pulled this feature.</h3>
+<a href="https://github.com/klepas/open-baskerville/commit/559794180adbdd65327558886d3f4e4169539284" title="Fixed some youthful mistakes, tweaked a few curves. ÃÂ·  5597941 ÃÂ· klepas/open-baskerville">
+      <img src="/and/assets/scaled/to/830/wide/and/called/github_ufo_visual_diff.png" alt="You see two versions of a ¢ character: to the left, labelled ‘old’, a version with an upright bar, to the right, labelled ‘new’, a version with a slanted bar." title="" style="width:830px;height:329px;" />
+    </a>    <blockquote>That's really cool that you guys are pushing for open source collaborative development of typefaces. I thought it was so cool that I stayed up late last night and hacked together some very simple UFO support on GitHub.</blockquote>
+    <p class="byline">Tom Werner</p>
+    <p>With habitus waxing lyrically about the potential of reuse and collaboration in open source type design, I figure it is a good moment to zoom in on the details of a specific font collaboration project. Because it is not self evident how to go about working together on a font.</p>
+    <p>Together with <a href="http://klepas.org/" title="Simon Pascal Klein — Graphic &amp; web design professional">, I lead the open source font project Open Baskerville.</a></p>
+    <p>When setting up the project, Pascal has made some clever choices. Firstly, he provides an attractive looking <a href="http://klepas.org/openbaskerville/" title="Open Baskerville">website</a> that explains the project, and links to the source files. Then, he has put the <a href="https://github.com/klepas/open-baskerville/">source files on GitHub</a>, a code sharing site usually used for the development of software code. GitHub offers tools and practices for versioning files and sharing changes, that can be leveraged for this project. Another good move by Pascal: he does not put the Fontlab file online. Instead, he converts the font to an open file format called <a href="http://unifiedfontobject.org/" title="Unified Font Object">UFO</a>. A ufo file is actually a folder, that represents the typeface as a whole lot of plain text files, exactly the kind of file that is easily shared and processed through tools like GitHub, and readable by both the popular proprietary font editors and the open source font editor FontForge</p>
+    <p>When I come across the project, I ask my friend <a href="http://robmientjes.nl/" title="Hand-crafted pixels and top-shelf touch interfaces by Rob Mientjes">Rob</a> to explain to me what GitHub is. It is a code hosting site that focuses on facilitating the collaboration between developers.</p>
+    <p>Rob also explains to me that GitHub is built upon <a href="http://git-scm.com/">Git</a>. At the time one of the few human beings with the overlapping skill sets of knowing how to use Git and how to design type, Rob teaches me the basics of git in the cafeteria of the art school. Git is built upon an amazing premise: while traditional development is based on centralised repositories, Git’s development model is distributed. Every clone of a repository becomes a bona fide repository in itself. Whichever repository is the main one is but a social convention. Git turns the traditional model on his head, and makes the development of software much more akin to the development of culture: a distributed, abundant process.</p>
+    <p>Ever since I have been working on Open Baskerville, trying not just to make a good font, but to come up with workflows that can be re-used for other open font projects. On the level of workflow, we still have a long way to go before typographic collaboration is easily accessible. The git system used to track the changes on Open Baskerville is developed for programming code and is therefore not always easy to use for designers. But the underlying foundation is very solid, and it plays together well with the UFO format. Because Git and UFO are open, it is well imaginable that a plugin can be written for a font-editor that interfaces with git, so that you can track your changes in the font editor, end send them back to the repository that you pulled the font from.</p>
+    <p>One feature that I figure to be fundamental to be able to convince other designers of the potential of a git-based workflow is a visualisation of the typeface and the changes being made to it. I have reached out to GitHub. I get in touch with Tom Werner, and the following morning there is a mail in my mailbox.</p>
+    <p>Github’s intervention is important in showing the potential of Git and Github for other kinds of projects than just software development. It also shows the power of the UFO format: it is much easier to write this kind of visualisation when you are dealing with an open, hackable format like UFO. We are only just beginning to explore the potential of these new models of collaboration.</p>
+    <p>Micah Rich <a href="http://www.netmagazine.com/features/top-10-open-source-web-fonts" title="The top 10 open source web fonts | Feature | .net magazine">calls</a> Open Baskerville a major inspiration for the <a href="http://www.theleagueofmoveabletype.com/" title="The League of Moveable Type">League of Movable Type</a> (they are <a href="https://github.com/theleagueof">on GitHub too</a>); OSP are working on their own code hosting called Visual Culture that is going to power new releases for their <a href="http://osp.constantvzw.org/foundry/" title="OSP-foundry">foundry</a>.</p>
+<a href="https://github.com/klepas/open-baskerville/tree/master/OpenBaskerville.ufo" title="">
+      <img src="/and/assets/scaled/to/490/wide/and/called/github_ufo_preview.png" alt="You see a screenshot from the GitHub interface. It consists of a file listing of the contents of a UFO folder called OpenBaskerville.ufo. Below extends a preview of all the glyphs contained within this UFO." title="" style="width:490px;height:1175px;" />
+    </a>
+]]>
         
     </content>
 </entry>
@@ -871,31 +873,19 @@ h3.notwork {
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><a href="/and/assets/called/i_like_tightpants_and_figuring_out_fontforge_pythons_representation_of_postscript_curves_2.jpg">
-  <img src="/and/assets/scaled/to/830/wide/and/called/i_like_tightpants_and_figuring_out_fontforge_pythons_representation_of_postscript_curves_2.jpg" style="width:830;height:555;" alt="You see a young man posing to the right of a whiteboard, looking into the camera. He holds a marker in his right hand as if he is writing, his right foot is planted on the whiteboards horizontal support. He wears black leggings and a salmon pink sleeveless t-shirt. On the whiteboard is constructed a path of curves and lines, showing also the bézier control points. All the points are marked either offCurve or onCurve." title="" />
+        <![CDATA[
+    <p><a href="/and/assets/called/i_like_tightpants_and_figuring_out_fontforge_pythons_representation_of_postscript_curves_2.jpg">
+        <img src="/and/assets/scaled/to/830/wide/and/called/i_like_tightpants_and_figuring_out_fontforge_pythons_representation_of_postscript_curves_2.jpg" style="width:830;height:555;" alt="You see a young man posing to the right of a whiteboard, looking into the camera. He holds a marker in his right hand as if he is writing, his right foot is planted on the whiteboards horizontal support. He wears black leggings and a salmon pink sleeveless t-shirt. On the whiteboard is constructed a path of curves and lines, showing also the bézier control points. All the points are marked either offCurve or onCurve." title="" />
 </a></p>
-
-<p class="byline">At the OSP workshop <a href="http://osp.schr.fr/workshop/write-me-a-shadow/raw/latest/specimen/index.html" title="Write me a shadow. OSP @ ESAD Valence">Write me a shadow</a>, ESAD Valence (FR)</p>
-
-<p>When <a href="http://www.ludi.be/" title="ludi">Ludi</a> and me prepare for a workshop on Open Source typography in Valence, we put together a batch of Python scripts for Fontforge. Among which a port of <a href="http://i.liketightpants.net/and/programmatically-manipulating-typefaces#comment-168" title="I like tight pants and programmatically manipulating typefaces">the script</a> that John and me made in Robofab for a previous workshop, that straightens curves by removing the bézier handles.</p>
-
-<p>Internally, many typefaces are constructed with PostScript, which can be seen as a set of drawing instructions to an imaginary pen.</p>
-
-<p>Postscript has three basic drawing instructions:<br/>
-<em>moveto(x, y)</em>: move the pen to this point to start drawing a path<br/>
-<em>lineto(x,y)</em>: draw a line from the previous point to the point x,y<br/>
-<em>curveto(x1,y1,x2,y2,x3,y3)</em>: draw a curve from the previous point to the point x3,y3, using x1,y1 and x2,y2 as bézier handles, off curve points that control the shape of the curve.</p>
-
-<p>It turns out that Fontforge-Python represents PostScript contours as a set of points. Fair enough. The points have a type property, which can be either onCurve or offCurve. So like in the Robofab script, we first try to remove all the offCurve points.</p>
-
-<p>This turns out to be too radical: a lot more points are removed then seems necessary. Prince Charmant <a href="http://www.oep-h.com/" title="OEP-H">Pierre Marchand</a> to the rescue. It turns out that points that are normally created as part of a lineto, are also called offCurve by FontForge, even if they are strictly speaking neither on or off a curve.</p>
-
-<p>So, how to keep the points called offCurve that are actually part of the contours, and throw away the others? We know that if a point is onCurve, it will always be followed y two control points (offCurve). So instead of checking for offCurves, we simply skip the next two points every time we encounter an onCurve.</p>
-
-<p>Like this:</p>
-
-
-<pre>font = fontforge.activeFont()
+    <p class="byline">At the OSP workshop <a href="http://osp.schr.fr/workshop/write-me-a-shadow/raw/latest/specimen/index.html" title="Write me a shadow. OSP @ ESAD Valence">Write me a shadow</a>, ESAD Valence (FR)</p>
+    <p>When <a href="http://www.ludi.be/" title="ludi">Ludi</a> and me prepare for a workshop on Open Source typography in Valence, we put together a batch of Python scripts for Fontforge. Among which a port of <a href="http://i.liketightpants.net/and/programmatically-manipulating-typefaces#comment-168" title="I like tight pants and programmatically manipulating typefaces">the script</a> that John and me made in Robofab for a previous workshop, that straightens curves by removing the bézier handles.</p>
+    <p>Internally, many typefaces are constructed with PostScript, which can be seen as a set of drawing instructions to an imaginary pen.</p>
+    <p>Postscript has three basic drawing instructions:<br /><em>moveto(x, y)</em>: move the pen to this point to start drawing a path<br /><em>lineto(x,y)</em>: draw a line from the previous point to the point x,y<br /><em>curveto(x1,y1,x2,y2,x3,y3)</em>: draw a curve from the previous point to the point x3,y3, using x1,y1 and x2,y2 as bézier handles, off curve points that control the shape of the curve.</p>
+    <p>It turns out that Fontforge-Python represents PostScript contours as a set of points. Fair enough. The points have a type property, which can be either onCurve or offCurve. So like in the Robofab script, we first try to remove all the offCurve points.</p>
+    <p>This turns out to be too radical: a lot more points are removed then seems necessary. Prince Charmant <a href="http://www.oep-h.com/" title="OEP-H">Pierre Marchand</a> to the rescue. It turns out that points that are normally created as part of a lineto, are also called offCurve by FontForge, even if they are strictly speaking neither on or off a curve.</p>
+    <p>So, how to keep the points called offCurve that are actually part of the contours, and throw away the others? We know that if a point is onCurve, it will always be followed y two control points (offCurve). So instead of checking for offCurves, we simply skip the next two points every time we encounter an onCurve.</p>
+    <p>Like this:</p>
+    <pre>font = fontforge.activeFont()
 
 for glyph in font.glyphs():
    new_contours = []
@@ -915,8 +905,9 @@ for glyph in font.glyphs():
        for i in to_draw[1:]:
            pen.lineTo(i)
        pen.closePath()</pre>
+    <p>This won’t work, by the way, if you are dealing with TrueType curves. But that’s a different story altogether.</p>
 
-<p>This won’t work, by the way, if you are dealing with TrueType curves. But that’s a different story altogether.</p>]]>
+]]>
         
     </content>
 </entry>
@@ -991,8 +982,7 @@ for glyph in font.glyphs():
 }
 
 </style>
-
-<pre class="rotate_example">#!/usr/bin/env python
+    <pre class="rotate_example">#!/usr/bin/env python
 
 # usage: $ python rotate-font-fontforge.py "League Gothic.ufo" League-Gothic-tranformed.ufo
 
@@ -1009,34 +999,20 @@ for glyph in font.glyphs():
     glyph.transform(matrix)
 
 font.generate(sys.argv[2])</pre>
-
-<p>If you like programming, chances are you like typefaces. <a href="http://chneukirchen.org/trivium/" title="Trivium">My favourite tumblelog</a>, by developer Christian Neukirchen, often links to type design projects. As does <a href="http://news.ycombinator.com/" title="Hacker News">Hacker News</a>. And programming demigod <a href="http://www-cs-faculty.stanford.edu/~uno/" title="Don Knuth's Home Page">Donald Knuth</a> took time off from his epos The Art of Computer Programming to develop his own <a href="http://en.wikipedia.org/wiki/Computer_Modern" title="Computer Modern - Wikipedia, the free encyclopedia">parametric typeface</a>. And the <a href="http://en.wikipedia.org/wiki/METAFONT" title="Metafont - Wikipedia, the free encyclopedia">language that describes</a> it. And an accompanying <a href="http://en.wikipedia.org/wiki/TeX" title="TeX - Wikipedia, the free encyclopedia">lay out engine</a>.</p>
-
-<p>Typefaces are wonderful hybrids between design and tool. More so than any other type of design they are made to be reused. And more so than any other type of design they have a predictable structure (a font made out of glyphs made out of contours made out of points), that makes them especially suitable to be manipulated through computer programs of your own devising.</p>
-
-<p>Yet if you haven’t worked within the confines of the type design world, chances are you have not yet experienced exactly how straightforward it is to work with typefaces programmatically, nowadays.</p>
-
-<p>Yes, your typical binary font file is quite messy to open up and to play around with. That is why it is nice if you can use a programming library to access them. But in addition we now have the <a href="http://unifiedfontobject.org/" title="Unified Font Object">UFO file format</a>, which is meant as an open, hackable file format for fonts. And there exist two libraries that really make it really easy to deal with font objects in a high level fashion: <a href="http://robofab.org/" title="RoboFab">Robofab</a> and <a href="http://fontforge.sourceforge.net/python.html" title="Writing python scripts to change fonts in FontForge">FontForge-python</a>. They allow you to iterate over all the glyphs, contours and points in your font in order to change them around.</p>
-
-<p>Both libraries are written in the Python language. There is a historical reason for this. The typographers <a href="http://www.letterror.com/" title="LettError Type: Fonts and Typography">Just van Rossum and Erik van Blokland</a> are pioneers in scripting for type design. Their choice to go with Python has contributed to making it the go to scripting language in the type design world.</p>
-
-<p>I can imagine that reasons for choosing Python include that it is straightforward and high level<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small; line-height: 16px; background-color: rgb(255, 255, 255);">—</span>and in being white space sensitive it is arguably one of the few languages which is opiniated typographically! I imagine it also played a role that Just van Rossum is the brother of Guido van Rossum, who wrote the Python language.</p>
-
-<p>If you already know Python, you are in luck. If you know programming, but do not know Python, it is pretty easy to pick up. And if you do not write programs yet, Python is a great language to get started as it is quite straightforward and consistent.</p>
-
-<p>RoboFab is made by the aforementioned Dutch duo, joined by <a href="http://talleming.com/" title="Tal Leming">Tal Leming</a>. It started its life as a scripting language for Fontlab, one of the more popular commercial font editors (and for quite some time the only one). But since the inception of the UFO file format, you can use the RoboFab library in your stand alone python scripts.</p>
-
-<p>A downside to RoboFab is that it will only work with UFO fonts. In this sense the Python extension to FontForge is more flexible. It makes a lot of the functionality of <a href="http://fontforge.sourceforge.net/" title="FontForge">FontForge</a> available to Python: FontForge is the main open source font editor. With python-fontforge you can open and save in a slew of different font formats. It is also easy to export individual glyphs to images, or to import vector shapes into your font.</p>
-
-<p>A downside to python-fontforge is that it might be tricky to install. On Linux it is usually quite easy (Debian/ubuntu: <code>sudo apt-get install fontforge python-fontforge</code>). On the Mac it used to be more hard: installing the Python extension through Homebrew is <a href="https://github.com/mxcl/homebrew/issues/4689">not working out yet</a>. Luckily, developer Jeff Escelante recently reached out to me over this issue. He is now providing a <a href="https://github.com/jenius/Fontforge-Installer">Fontforge installer</a> for Mac OSX that provides the python extension. But on Windows, I am not sure how feasible it is to get python-fontforge working? If someone could re-package the whole thing is an easy_installable package that would be wonderful.</p>
-
-<p>In implementation the two libraries are quite similar. Imagine we have downloaded the open source League Gothic in UFO format (<a href="https://github.com/theleagueof/league-gothic/zipball/master">link!</a> The ufo is in the source folder) and you put the UFO in the same folder as your python script.</p>
-
-<p>Here is how you load in a font and print the names of the glyphs:</p>
-
-<p>Fontforge</p>
-
-<pre>#!/usr/bin/env python
+    <p>If you like programming, chances are you like typefaces. <a href="http://chneukirchen.org/trivium/" title="Trivium">My favourite tumblelog</a>, by developer Christian Neukirchen, often links to type design projects. As does <a href="http://news.ycombinator.com/" title="Hacker News">Hacker News</a>. And programming demigod <a href="http://www-cs-faculty.stanford.edu/~uno/" title="Don Knuth's Home Page">Donald Knuth</a> took time off from his epos The Art of Computer Programming to develop his own <a href="http://en.wikipedia.org/wiki/Computer_Modern" title="Computer Modern - Wikipedia, the free encyclopedia">parametric typeface</a>. And the <a href="http://en.wikipedia.org/wiki/METAFONT" title="Metafont - Wikipedia, the free encyclopedia">language that describes</a> it. And an accompanying <a href="http://en.wikipedia.org/wiki/TeX" title="TeX - Wikipedia, the free encyclopedia">lay out engine</a>.</p>
+    <p>Typefaces are wonderful hybrids between design and tool. More so than any other type of design they are made to be reused. And more so than any other type of design they have a predictable structure (a font made out of glyphs made out of contours made out of points), that makes them especially suitable to be manipulated through computer programs of your own devising.</p>
+    <p>Yet if you haven’t worked within the confines of the type design world, chances are you have not yet experienced exactly how straightforward it is to work with typefaces programmatically, nowadays.</p>
+    <p>Yes, your typical binary font file is quite messy to open up and to play around with. That is why it is nice if you can use a programming library to access them. But in addition we now have the <a href="http://unifiedfontobject.org/" title="Unified Font Object">UFO file format</a>, which is meant as an open, hackable file format for fonts. And there exist two libraries that really make it really easy to deal with font objects in a high level fashion: <a href="http://robofab.org/" title="RoboFab">Robofab</a> and <a href="http://fontforge.sourceforge.net/python.html" title="Writing python scripts to change fonts in FontForge">FontForge-python</a>. They allow you to iterate over all the glyphs, contours and points in your font in order to change them around.</p>
+    <p>Both libraries are written in the Python language. There is a historical reason for this. The typographers <a href="http://www.letterror.com/" title="LettError Type: Fonts and Typography">Just van Rossum and Erik van Blokland</a> are pioneers in scripting for type design. Their choice to go with Python has contributed to making it the go to scripting language in the type design world.</p>
+    <p>I can imagine that reasons for choosing Python include that it is straightforward and high level<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small; line-height: 16px; background-color: rgb(255, 255, 255);">—</span>and in being white space sensitive it is arguably one of the few languages which is opiniated typographically! I imagine it also played a role that Just van Rossum is the brother of Guido van Rossum, who wrote the Python language.</p>
+    <p>If you already know Python, you are in luck. If you know programming, but do not know Python, it is pretty easy to pick up. And if you do not write programs yet, Python is a great language to get started as it is quite straightforward and consistent.</p>
+    <p>RoboFab is made by the aforementioned Dutch duo, joined by <a href="http://talleming.com/" title="Tal Leming">Tal Leming</a>. It started its life as a scripting language for Fontlab, one of the more popular commercial font editors (and for quite some time the only one). But since the inception of the UFO file format, you can use the RoboFab library in your stand alone python scripts.</p>
+    <p>A downside to RoboFab is that it will only work with UFO fonts. In this sense the Python extension to FontForge is more flexible. It makes a lot of the functionality of <a href="http://fontforge.sourceforge.net/" title="FontForge">FontForge</a> available to Python: FontForge is the main open source font editor. With python-fontforge you can open and save in a slew of different font formats. It is also easy to export individual glyphs to images, or to import vector shapes into your font.</p>
+    <p>A downside to python-fontforge is that it might be tricky to install. On Linux it is usually quite easy (Debian/ubuntu: <code>sudo apt-get install fontforge python-fontforge</code>). On the Mac it used to be more hard: installing the Python extension through Homebrew is <a href="https://github.com/mxcl/homebrew/issues/4689">not working out yet</a>. Luckily, developer Jeff Escelante recently reached out to me over this issue. He is now providing a <a href="https://github.com/jenius/Fontforge-Installer">Fontforge installer</a> for Mac OSX that provides the python extension. But on Windows, I am not sure how feasible it is to get python-fontforge working? If someone could re-package the whole thing is an easy_installable package that would be wonderful.</p>
+    <p>In implementation the two libraries are quite similar. Imagine we have downloaded the open source League Gothic in UFO format (<a href="https://github.com/theleagueof/league-gothic/zipball/master">link!</a> The ufo is in the source folder) and you put the UFO in the same folder as your python script.</p>
+    <p>Here is how you load in a font and print the names of the glyphs:</p>
+    <p>Fontforge</p>
+    <pre>#!/usr/bin/env python
 
 # usage: $ python print-glyphs-fontforge.py "League-Gothic.ufo"
 
@@ -1048,10 +1024,8 @@ font = fontforge.open(sys.argv[1])
 for glyph in font.glyphs():
     print glyph
 </pre>
-
-<p>Robofab</p>
-
-<pre>#!/usr/bin/env python
+    <p>Robofab</p>
+    <pre>#!/usr/bin/env python
 
 # usage: $ python print-glyphs-robofab.py "League Gothic.ufo"
 
@@ -1063,12 +1037,9 @@ font = RFont(sys.argv[1])
 for glyph in font:
     print glyph.name
 </pre>
-
-<p>And this is to rotate each glyph 45 degrees and save to a new font.</p>
-
-<p>Fontforge:</p>
-
-<pre>#!/usr/bin/env python
+    <p>And this is to rotate each glyph 45 degrees and save to a new font.</p>
+    <p>Fontforge:</p>
+    <pre>#!/usr/bin/env python
 
 # usage: $ python rotate-font-fontforge.py "League Gothic.ufo" League-Gothic-tranformed.ufo
 
@@ -1086,10 +1057,8 @@ for glyph in font.glyphs():
 
 font.generate(sys.argv[2])
 </pre>
-
-<p>Robofab:</p>
-
-<pre>#!/usr/bin/env python
+    <p>Robofab:</p>
+    <pre>#!/usr/bin/env python
 
 # usage: $ python rotate-font.py "League Gothic.ufo" League-Gothic-tranformed.ufo
 
@@ -1109,8 +1078,7 @@ for glyph in font:
 font.save(sys.argv[2])
 </pre>
 
-
-    ]]>
+]]>
         
     </content>
 </entry>
@@ -1131,17 +1099,13 @@ font.save(sys.argv[2])
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<script src="/and/scripts/being/processing-1.3.6.min.js"></script>
-<canvas data-processing-sources="/and/scripts/being/osp-frog.pde">With canvas enabled you would see a frog with a crown, constructed of two yellow vertexes.</canvas>
-
-<p>In London, after <a href="http://www.sebastiensanfilippo.be/" title="Sebastien Sanfilippo's Portfolio">Seb</a> has explained <a href="http://i.liketightpants.net/and/seb-explaining-love-and-bezier-curves" title="I like tight pants and seb explaining love and bezier curves">love and bezier curves</a> to jenseits, <a href="http://www.oep-h.com/" title="OEP-H">Pierre</a> sets up a way to communicate with our <a href="http://www.scribus.net/canvas/Scribus" title="Scribus.net">DTP-software</a> via IRC chat. Seb starts to scribble coordinates, sends through a number of commands, and up on the beamer appears a stark re-imagining of the <a href="http://ospublish.constantvzw.org/" title="OSP &#8212; Open Source Publishing &#8211; Design Tools For Designers">OSP</a> logo.</p>
-
-<p>Seb has made direct use of one of the basic principles in computer graphics: giving instructions to draw to a virtual canvas. As a graphic designer you are always using programs like Illustrator or <a href="http://inkscape.org/" title="Inkscape. Draw Freely.">Inkscape</a> to create these kind of instructions so it is refreshing to do so yourself.</p>
-
-<p>This is the code used, adapted to <a href="http://processingjs.org/" title="Processing.js">Processing.js</a>:</p>
-
-
-<pre>size(600,600);
+        <![CDATA[
+    <script src="/and/scripts/being/processing-1.3.6.min.js"></script>
+    <canvas data-processing-sources="/and/scripts/being/osp-frog.pde">With canvas enabled you would see a frog with a crown, constructed of two yellow vertexes.</canvas>
+    <p>In London, after <a href="http://www.sebastiensanfilippo.be/" title="Sebastien Sanfilippo's Portfolio">Seb</a> has explained <a href="http://i.liketightpants.net/and/seb-explaining-love-and-bezier-curves" title="I like tight pants and seb explaining love and bezier curves">love and bezier curves</a> to jenseits, <a href="http://www.oep-h.com/" title="OEP-H">Pierre</a> sets up a way to communicate with our <a href="http://www.scribus.net/canvas/Scribus" title="Scribus.net">DTP-software</a> via IRC chat. Seb starts to scribble coordinates, sends through a number of commands, and up on the beamer appears a stark re-imagining of the <a href="http://ospublish.constantvzw.org/" title="OSP — Open Source Publishing – Design Tools For Designers">OSP</a> logo.</p>
+    <p>Seb has made direct use of one of the basic principles in computer graphics: giving instructions to draw to a virtual canvas. As a graphic designer you are always using programs like Illustrator or <a href="http://inkscape.org/" title="Inkscape. Draw Freely.">Inkscape</a> to create these kind of instructions so it is refreshing to do so yourself.</p>
+    <p>This is the code used, adapted to <a href="http://processingjs.org/" title="Processing.js">Processing.js</a>:</p>
+    <pre>size(600,600);
 background(255);
 strokeWeight(6);
 stroke(255, 255, 0);
@@ -1165,7 +1129,9 @@ vertex(250, 543);
 vertex(252, 447);
 vertex(483, 531);
 vertex(371, 419);
-endShape(CLOSE);</pre>]]>
+endShape(CLOSE);</pre>
+
+]]>
         
     </content>
 </entry>
@@ -1186,9 +1152,13 @@ endShape(CLOSE);</pre>]]>
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[<p><a href="/and/assets/called/love_and_bezier_curves.jpg"><img src="/and/assets/scaled/to/830/wide/and/called/love_and_bezier_curves.jpg" alt="You see a large sheet of paper upon which a constructed drawing of a heart, showing also the mathematical construction of the curves." title="" style="width:622px;height:830px;" /></a></p>
+        <![CDATA[
+    <p><a href="/and/assets/called/love_and_bezier_curves.jpg">
+        <img src="/and/assets/scaled/to/830/wide/and/called/love_and_bezier_curves.jpg" alt="You see a large sheet of paper upon which a constructed drawing of a heart, showing also the mathematical construction of the curves." title="" style="width:622px;height:830px;" />
+      </a></p>
+    <p class="byline">From an <a href="http://ospublish.constantvzw.org/images/snapshots/rca-workshop">OSP Workshop</a> at Royal College of Art, London</p>
 
-<p class="byline">From an <a href="http://ospublish.constantvzw.org/images/snapshots/rca-workshop">OSP Workshop</a> at Royal College of Art, London</p>]]>
+]]>
         
     </content>
 </entry>

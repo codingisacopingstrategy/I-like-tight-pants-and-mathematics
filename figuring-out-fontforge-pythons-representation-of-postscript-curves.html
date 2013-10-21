@@ -10,7 +10,6 @@
 <link rel="start" href="/and/" title="Home" />
 <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/and/feed/us/recent_entries.xml" />
 <script type="text/javascript" src="/and/scripts/being/jquery-1.8.0.min.js"></script>
-<script type="text/javascript" src="/and/scripts/being/jquery.syntaxhighlighter.min.js"></script>
 <script type="text/javascript" src="/and/scripts/being/scripts.js"></script>
 <script type="text/javascript" src="/and/mt.js"></script>
 
@@ -195,30 +194,17 @@
     <div class="article grid_3 alpha omega suffix_2">
     <h4>Figuring Out Fontforge-Python’s Representation of Postscript Curves</h4>
     <p><a href="/and/assets/called/i_like_tightpants_and_figuring_out_fontforge_pythons_representation_of_postscript_curves_2.jpg">
-  <img src="/and/assets/scaled/to/830/wide/and/called/i_like_tightpants_and_figuring_out_fontforge_pythons_representation_of_postscript_curves_2.jpg" style="width:830;height:555;" alt="You see a young man posing to the right of a whiteboard, looking into the camera. He holds a marker in his right hand as if he is writing, his right foot is planted on the whiteboards horizontal support. He wears black leggings and a salmon pink sleeveless t-shirt. On the whiteboard is constructed a path of curves and lines, showing also the bézier control points. All the points are marked either offCurve or onCurve." title="" />
+        <img src="/and/assets/scaled/to/830/wide/and/called/i_like_tightpants_and_figuring_out_fontforge_pythons_representation_of_postscript_curves_2.jpg" style="width:830;height:555;" alt="You see a young man posing to the right of a whiteboard, looking into the camera. He holds a marker in his right hand as if he is writing, his right foot is planted on the whiteboards horizontal support. He wears black leggings and a salmon pink sleeveless t-shirt. On the whiteboard is constructed a path of curves and lines, showing also the bézier control points. All the points are marked either offCurve or onCurve." title="" />
 </a></p>
-
-<p class="byline">At the OSP workshop <a href="http://osp.schr.fr/workshop/write-me-a-shadow/raw/latest/specimen/index.html" title="Write me a shadow. OSP @ ESAD Valence">Write me a shadow</a>, ESAD Valence (FR)</p>
-
-<p>When <a href="http://www.ludi.be/" title="ludi">Ludi</a> and me prepare for a workshop on Open Source typography in Valence, we put together a batch of Python scripts for Fontforge. Among which a port of <a href="http://i.liketightpants.net/and/programmatically-manipulating-typefaces#comment-168" title="I like tight pants and programmatically manipulating typefaces">the script</a> that John and me made in Robofab for a previous workshop, that straightens curves by removing the bézier handles.</p>
-
-<p>Internally, many typefaces are constructed with PostScript, which can be seen as a set of drawing instructions to an imaginary pen.</p>
-
-<p>Postscript has three basic drawing instructions:<br/>
-<em>moveto(x, y)</em>: move the pen to this point to start drawing a path<br/>
-<em>lineto(x,y)</em>: draw a line from the previous point to the point x,y<br/>
-<em>curveto(x1,y1,x2,y2,x3,y3)</em>: draw a curve from the previous point to the point x3,y3, using x1,y1 and x2,y2 as bézier handles, off curve points that control the shape of the curve.</p>
-
-<p>It turns out that Fontforge-Python represents PostScript contours as a set of points. Fair enough. The points have a type property, which can be either onCurve or offCurve. So like in the Robofab script, we first try to remove all the offCurve points.</p>
-
-<p>This turns out to be too radical: a lot more points are removed then seems necessary. Prince Charmant <a href="http://www.oep-h.com/" title="OEP-H">Pierre Marchand</a> to the rescue. It turns out that points that are normally created as part of a lineto, are also called offCurve by FontForge, even if they are strictly speaking neither on or off a curve.</p>
-
-<p>So, how to keep the points called offCurve that are actually part of the contours, and throw away the others? We know that if a point is onCurve, it will always be followed y two control points (offCurve). So instead of checking for offCurves, we simply skip the next two points every time we encounter an onCurve.</p>
-
-<p>Like this:</p>
-
-
-<pre>font = fontforge.activeFont()
+    <p class="byline">At the OSP workshop <a href="http://osp.schr.fr/workshop/write-me-a-shadow/raw/latest/specimen/index.html" title="Write me a shadow. OSP @ ESAD Valence">Write me a shadow</a>, ESAD Valence (FR)</p>
+    <p>When <a href="http://www.ludi.be/" title="ludi">Ludi</a> and me prepare for a workshop on Open Source typography in Valence, we put together a batch of Python scripts for Fontforge. Among which a port of <a href="http://i.liketightpants.net/and/programmatically-manipulating-typefaces#comment-168" title="I like tight pants and programmatically manipulating typefaces">the script</a> that John and me made in Robofab for a previous workshop, that straightens curves by removing the bézier handles.</p>
+    <p>Internally, many typefaces are constructed with PostScript, which can be seen as a set of drawing instructions to an imaginary pen.</p>
+    <p>Postscript has three basic drawing instructions:<br /><em>moveto(x, y)</em>: move the pen to this point to start drawing a path<br /><em>lineto(x,y)</em>: draw a line from the previous point to the point x,y<br /><em>curveto(x1,y1,x2,y2,x3,y3)</em>: draw a curve from the previous point to the point x3,y3, using x1,y1 and x2,y2 as bézier handles, off curve points that control the shape of the curve.</p>
+    <p>It turns out that Fontforge-Python represents PostScript contours as a set of points. Fair enough. The points have a type property, which can be either onCurve or offCurve. So like in the Robofab script, we first try to remove all the offCurve points.</p>
+    <p>This turns out to be too radical: a lot more points are removed then seems necessary. Prince Charmant <a href="http://www.oep-h.com/" title="OEP-H">Pierre Marchand</a> to the rescue. It turns out that points that are normally created as part of a lineto, are also called offCurve by FontForge, even if they are strictly speaking neither on or off a curve.</p>
+    <p>So, how to keep the points called offCurve that are actually part of the contours, and throw away the others? We know that if a point is onCurve, it will always be followed y two control points (offCurve). So instead of checking for offCurves, we simply skip the next two points every time we encounter an onCurve.</p>
+    <p>Like this:</p>
+    <pre>font = fontforge.activeFont()
 
 for glyph in font.glyphs():
    new_contours = []
@@ -238,8 +224,9 @@ for glyph in font.glyphs():
        for i in to_draw[1:]:
            pen.lineTo(i)
        pen.closePath()</pre>
+    <p>This won’t work, by the way, if you are dealing with TrueType curves. But that’s a different story altogether.</p>
 
-<p>This won’t work, by the way, if you are dealing with TrueType curves. But that’s a different story altogether.</p>
+
     <div id="comments" class="comments">
 
 

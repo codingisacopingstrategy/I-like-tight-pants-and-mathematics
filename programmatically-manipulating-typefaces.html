@@ -10,7 +10,6 @@
 <link rel="start" href="/and/" title="Home" />
 <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/and/feed/us/recent_entries.xml" />
 <script type="text/javascript" src="/and/scripts/being/jquery-1.8.0.min.js"></script>
-<script type="text/javascript" src="/and/scripts/being/jquery.syntaxhighlighter.min.js"></script>
 <script type="text/javascript" src="/and/scripts/being/scripts.js"></script>
 <script type="text/javascript" src="/and/mt.js"></script>
 
@@ -184,7 +183,6 @@
   <div>
     <div class="article grid_3 alpha omega suffix_2">
     <h4>Programmatically manipulating typefaces</h4>
-    
     <style>
 @font-face {
     font-family: 'LeagueGothicRomanRomanRotated';
@@ -238,8 +236,7 @@
 }
 
 </style>
-
-<pre class="rotate_example">#!/usr/bin/env python
+    <pre class="rotate_example">#!/usr/bin/env python
 
 # usage: $ python rotate-font-fontforge.py "League Gothic.ufo" League-Gothic-tranformed.ufo
 
@@ -256,34 +253,20 @@ for glyph in font.glyphs():
     glyph.transform(matrix)
 
 font.generate(sys.argv[2])</pre>
-
-<p>If you like programming, chances are you like typefaces. <a href="http://chneukirchen.org/trivium/" title="Trivium">My favourite tumblelog</a>, by developer Christian Neukirchen, often links to type design projects. As does <a href="http://news.ycombinator.com/" title="Hacker News">Hacker News</a>. And programming demigod <a href="http://www-cs-faculty.stanford.edu/~uno/" title="Don Knuth's Home Page">Donald Knuth</a> took time off from his epos The Art of Computer Programming to develop his own <a href="http://en.wikipedia.org/wiki/Computer_Modern" title="Computer Modern - Wikipedia, the free encyclopedia">parametric typeface</a>. And the <a href="http://en.wikipedia.org/wiki/METAFONT" title="Metafont - Wikipedia, the free encyclopedia">language that describes</a> it. And an accompanying <a href="http://en.wikipedia.org/wiki/TeX" title="TeX - Wikipedia, the free encyclopedia">lay out engine</a>.</p>
-
-<p>Typefaces are wonderful hybrids between design and tool. More so than any other type of design they are made to be reused. And more so than any other type of design they have a predictable structure (a font made out of glyphs made out of contours made out of points), that makes them especially suitable to be manipulated through computer programs of your own devising.</p>
-
-<p>Yet if you haven’t worked within the confines of the type design world, chances are you have not yet experienced exactly how straightforward it is to work with typefaces programmatically, nowadays.</p>
-
-<p>Yes, your typical binary font file is quite messy to open up and to play around with. That is why it is nice if you can use a programming library to access them. But in addition we now have the <a href="http://unifiedfontobject.org/" title="Unified Font Object">UFO file format</a>, which is meant as an open, hackable file format for fonts. And there exist two libraries that really make it really easy to deal with font objects in a high level fashion: <a href="http://robofab.org/" title="RoboFab">Robofab</a> and <a href="http://fontforge.sourceforge.net/python.html" title="Writing python scripts to change fonts in FontForge">FontForge-python</a>. They allow you to iterate over all the glyphs, contours and points in your font in order to change them around.</p>
-
-<p>Both libraries are written in the Python language. There is a historical reason for this. The typographers <a href="http://www.letterror.com/" title="LettError Type: Fonts and Typography">Just van Rossum and Erik van Blokland</a> are pioneers in scripting for type design. Their choice to go with Python has contributed to making it the go to scripting language in the type design world.</p>
-
-<p>I can imagine that reasons for choosing Python include that it is straightforward and high level<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small; line-height: 16px; background-color: rgb(255, 255, 255);">—</span>and in being white space sensitive it is arguably one of the few languages which is opiniated typographically! I imagine it also played a role that Just van Rossum is the brother of Guido van Rossum, who wrote the Python language.</p>
-
-<p>If you already know Python, you are in luck. If you know programming, but do not know Python, it is pretty easy to pick up. And if you do not write programs yet, Python is a great language to get started as it is quite straightforward and consistent.</p>
-
-<p>RoboFab is made by the aforementioned Dutch duo, joined by <a href="http://talleming.com/" title="Tal Leming">Tal Leming</a>. It started its life as a scripting language for Fontlab, one of the more popular commercial font editors (and for quite some time the only one). But since the inception of the UFO file format, you can use the RoboFab library in your stand alone python scripts.</p>
-
-<p>A downside to RoboFab is that it will only work with UFO fonts. In this sense the Python extension to FontForge is more flexible. It makes a lot of the functionality of <a href="http://fontforge.sourceforge.net/" title="FontForge">FontForge</a> available to Python: FontForge is the main open source font editor. With python-fontforge you can open and save in a slew of different font formats. It is also easy to export individual glyphs to images, or to import vector shapes into your font.</p>
-
-<p>A downside to python-fontforge is that it might be tricky to install. On Linux it is usually quite easy (Debian/ubuntu: <code>sudo apt-get install fontforge python-fontforge</code>). On the Mac it used to be more hard: installing the Python extension through Homebrew is <a href="https://github.com/mxcl/homebrew/issues/4689">not working out yet</a>. Luckily, developer Jeff Escelante recently reached out to me over this issue. He is now providing a <a href="https://github.com/jenius/Fontforge-Installer">Fontforge installer</a> for Mac OSX that provides the python extension. But on Windows, I am not sure how feasible it is to get python-fontforge working? If someone could re-package the whole thing is an easy_installable package that would be wonderful.</p>
-
-<p>In implementation the two libraries are quite similar. Imagine we have downloaded the open source League Gothic in UFO format (<a href="https://github.com/theleagueof/league-gothic/zipball/master">link!</a> The ufo is in the source folder) and you put the UFO in the same folder as your python script.</p>
-
-<p>Here is how you load in a font and print the names of the glyphs:</p>
-
-<p>Fontforge</p>
-
-<pre>#!/usr/bin/env python
+    <p>If you like programming, chances are you like typefaces. <a href="http://chneukirchen.org/trivium/" title="Trivium">My favourite tumblelog</a>, by developer Christian Neukirchen, often links to type design projects. As does <a href="http://news.ycombinator.com/" title="Hacker News">Hacker News</a>. And programming demigod <a href="http://www-cs-faculty.stanford.edu/~uno/" title="Don Knuth's Home Page">Donald Knuth</a> took time off from his epos The Art of Computer Programming to develop his own <a href="http://en.wikipedia.org/wiki/Computer_Modern" title="Computer Modern - Wikipedia, the free encyclopedia">parametric typeface</a>. And the <a href="http://en.wikipedia.org/wiki/METAFONT" title="Metafont - Wikipedia, the free encyclopedia">language that describes</a> it. And an accompanying <a href="http://en.wikipedia.org/wiki/TeX" title="TeX - Wikipedia, the free encyclopedia">lay out engine</a>.</p>
+    <p>Typefaces are wonderful hybrids between design and tool. More so than any other type of design they are made to be reused. And more so than any other type of design they have a predictable structure (a font made out of glyphs made out of contours made out of points), that makes them especially suitable to be manipulated through computer programs of your own devising.</p>
+    <p>Yet if you haven’t worked within the confines of the type design world, chances are you have not yet experienced exactly how straightforward it is to work with typefaces programmatically, nowadays.</p>
+    <p>Yes, your typical binary font file is quite messy to open up and to play around with. That is why it is nice if you can use a programming library to access them. But in addition we now have the <a href="http://unifiedfontobject.org/" title="Unified Font Object">UFO file format</a>, which is meant as an open, hackable file format for fonts. And there exist two libraries that really make it really easy to deal with font objects in a high level fashion: <a href="http://robofab.org/" title="RoboFab">Robofab</a> and <a href="http://fontforge.sourceforge.net/python.html" title="Writing python scripts to change fonts in FontForge">FontForge-python</a>. They allow you to iterate over all the glyphs, contours and points in your font in order to change them around.</p>
+    <p>Both libraries are written in the Python language. There is a historical reason for this. The typographers <a href="http://www.letterror.com/" title="LettError Type: Fonts and Typography">Just van Rossum and Erik van Blokland</a> are pioneers in scripting for type design. Their choice to go with Python has contributed to making it the go to scripting language in the type design world.</p>
+    <p>I can imagine that reasons for choosing Python include that it is straightforward and high level<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small; line-height: 16px; background-color: rgb(255, 255, 255);">—</span>and in being white space sensitive it is arguably one of the few languages which is opiniated typographically! I imagine it also played a role that Just van Rossum is the brother of Guido van Rossum, who wrote the Python language.</p>
+    <p>If you already know Python, you are in luck. If you know programming, but do not know Python, it is pretty easy to pick up. And if you do not write programs yet, Python is a great language to get started as it is quite straightforward and consistent.</p>
+    <p>RoboFab is made by the aforementioned Dutch duo, joined by <a href="http://talleming.com/" title="Tal Leming">Tal Leming</a>. It started its life as a scripting language for Fontlab, one of the more popular commercial font editors (and for quite some time the only one). But since the inception of the UFO file format, you can use the RoboFab library in your stand alone python scripts.</p>
+    <p>A downside to RoboFab is that it will only work with UFO fonts. In this sense the Python extension to FontForge is more flexible. It makes a lot of the functionality of <a href="http://fontforge.sourceforge.net/" title="FontForge">FontForge</a> available to Python: FontForge is the main open source font editor. With python-fontforge you can open and save in a slew of different font formats. It is also easy to export individual glyphs to images, or to import vector shapes into your font.</p>
+    <p>A downside to python-fontforge is that it might be tricky to install. On Linux it is usually quite easy (Debian/ubuntu: <code>sudo apt-get install fontforge python-fontforge</code>). On the Mac it used to be more hard: installing the Python extension through Homebrew is <a href="https://github.com/mxcl/homebrew/issues/4689">not working out yet</a>. Luckily, developer Jeff Escelante recently reached out to me over this issue. He is now providing a <a href="https://github.com/jenius/Fontforge-Installer">Fontforge installer</a> for Mac OSX that provides the python extension. But on Windows, I am not sure how feasible it is to get python-fontforge working? If someone could re-package the whole thing is an easy_installable package that would be wonderful.</p>
+    <p>In implementation the two libraries are quite similar. Imagine we have downloaded the open source League Gothic in UFO format (<a href="https://github.com/theleagueof/league-gothic/zipball/master">link!</a> The ufo is in the source folder) and you put the UFO in the same folder as your python script.</p>
+    <p>Here is how you load in a font and print the names of the glyphs:</p>
+    <p>Fontforge</p>
+    <pre>#!/usr/bin/env python
 
 # usage: $ python print-glyphs-fontforge.py "League-Gothic.ufo"
 
@@ -295,10 +278,8 @@ font = fontforge.open(sys.argv[1])
 for glyph in font.glyphs():
     print glyph
 </pre>
-
-<p>Robofab</p>
-
-<pre>#!/usr/bin/env python
+    <p>Robofab</p>
+    <pre>#!/usr/bin/env python
 
 # usage: $ python print-glyphs-robofab.py "League Gothic.ufo"
 
@@ -310,12 +291,9 @@ font = RFont(sys.argv[1])
 for glyph in font:
     print glyph.name
 </pre>
-
-<p>And this is to rotate each glyph 45 degrees and save to a new font.</p>
-
-<p>Fontforge:</p>
-
-<pre>#!/usr/bin/env python
+    <p>And this is to rotate each glyph 45 degrees and save to a new font.</p>
+    <p>Fontforge:</p>
+    <pre>#!/usr/bin/env python
 
 # usage: $ python rotate-font-fontforge.py "League Gothic.ufo" League-Gothic-tranformed.ufo
 
@@ -333,10 +311,8 @@ for glyph in font.glyphs():
 
 font.generate(sys.argv[2])
 </pre>
-
-<p>Robofab:</p>
-
-<pre>#!/usr/bin/env python
+    <p>Robofab:</p>
+    <pre>#!/usr/bin/env python
 
 # usage: $ python rotate-font.py "League Gothic.ufo" League-Gothic-tranformed.ufo
 
@@ -357,7 +333,6 @@ font.save(sys.argv[2])
 </pre>
 
 
-    
     <div id="comments" class="comments">
 
 
