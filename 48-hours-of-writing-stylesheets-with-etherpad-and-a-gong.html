@@ -170,6 +170,22 @@
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   </dl>
   
   
@@ -206,10 +222,11 @@
     <h4>48 Hours of Writing Stylesheets with Etherpad and a Gong</h4>
     <p>
       <iframe src="http://player.vimeo.com/video/65545530?color=000&amp;title=0&amp;byline=0&amp;portrait=0" width="830" height="466" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-<!-- <video src="http://i.liketightpants.net/and/assets/called/live_coding_the_osp_website_1280x720.mp4" id="live-website-video" width="830" height="466" style="background: white;" preload controls>--><br /></p>
-    <p>A video of the redesign of the <a href="http://osp.constantvzw.org/" target="_self" style="" title="OSP (Open Source Publishing) →">OSP homepage</a>, from a traditional blog based site to a site that is used to communicate our design process in a ‘<a href="/and/release-early-release-often-version-numbers-for-typefaces" style="" target="_self" title="I like tight pants and release early release often version numbers for typefaces">release early, release often</a>’ manner: every time we add a file to our shared repository it shows up on our site.</p>
-    <p style="">The screenshots above are from a period of 48 hours where we work on the site together. To write CSS, we keep a shared <a href="/and/etherpad-or-the-textarea-is-a-lonely-place" style="" target="_self" title="I like tight pants and etherpad or the textarea is a lonely place">Etherpad</a>. One person is in charge of the gong: when she rings, she copies the contents of the pad into the site’s CSS file, and uploads it—after which everyone can refresh their browser and see the updated styles.</p>
-
+<!-- <video src="http://i.liketightpants.net/and/assets/called/live_coding_the_osp_website_1280x720.mp4" id="live-website-video" width="830" height="466" style="background: white;" preload controls>--><br></p>
+    <p>A video of the redesign of the <a href="http://osp.constantvzw.org/" target="_self" style="" title="OSP (Open Source Publishing) →" class="aloha-link-text">OSP homepage</a>, from a traditional blog based site to a site that is used to communicate our design process in a ‘<a href="/and/release-early-release-often-version-numbers-for-typefaces" style="" target="_self" title="I like tight pants and release early release often version numbers for typefaces" class="aloha-link-text">release early, release often</a>’ manner: every time we add a file to our shared repository it shows up on our site.</p>
+    <p style="">The screenshots above are from a period of 48 hours where we work on the site together. To write CSS, we keep a shared <a href="/and/etherpad-or-the-textarea-is-a-lonely-place" style="" target="_self" title="I like tight pants and etherpad or the textarea is a lonely place" class="aloha-link-text">Etherpad</a>. One person is in charge of the gong: when she rings, she copies the contents of the pad into the site’s CSS file, and uploads it—after which everyone can refresh their browser and see the updated styles.</p>
+    <h4>Update 2013-11-10:</h4>
+    <p style="">If you run a recent version of Etherpad, you can install&nbsp;<a href="https://github.com/codingisacopingstrategy/ep_export_less_and_css" class="" style="background-color: rgb(128, 181, 242);" target="_self" title="codingisacopingstrategy/ep_export_less_and_css">ep_export_less_and_css</a>, a plugin bnf created that enables CSS export directly from Etherpad.</p>
 
     <div id="comments" class="comments">
 
@@ -218,7 +235,7 @@
 
 
     
-<h4 class="comments-header">6 Comments</h4>
+<h4 class="comments-header">13 Comments</h4>
 <div class="comments-content">
     
      <!-- If comment doesn't have a top-level-parent -->
@@ -268,13 +285,17 @@
 
 
 
+
+
 <p>One would figure, because the Titanpad we are using here does allow to export a <a href="http://osp.titanpad.com/ep/pad/export/160/latest?format=txt" rel="nofollow">plain text version of the pad</a>. The problem is, this old version of Etherpad needs a ‘cookie’ before it allows a download. In the newest Etherpad that is not at a problem.&nbsp;<span style="font-size: 14px;">So we can try to link it directly:</span></p><pre>&lt;link rel="stylesheet" href="http://etherpad.fr/p/osp-css/export/txt" type="text/css" /&gt;</pre><p>It still does not work. Examing the metadata from the request (the ‘headers’) from the command line tells us why:</p><pre>curl -i <a href="http://etherpad.fr/p/osp-css/export/txt" rel="nofollow">http://etherpad.fr/p/osp-css/export/txt</a><br>HTTP/1.1 200 OK<br>X-Powered-By: Express<br>Server: Etherpad-Lite f478f99 (http://etherpad.org)<br>Access-Control-Allow-Origin: *<br>Content-Type: text/plain<br>Content-Disposition: attachment; filename="osp-css.txt"<br>Content-Length: 5980ETag: "-661067728"<br>Set-Cookie: express_sid=s%3AUqYrsj8ZbMvBr6HRmRTqIo1v.19jQ%2F8NhfN2SZTTJUCMl3qXsDRnQBZfHTKeUICIFRMg; Path=/; HttpOnly<br>Date: Thu, 09 May 2013 21:04:46 GMT<br>Connection: keep-alive</br></br></br></br></br></br></br></br></br></br></pre><p>Every HTTP response contains information about what kind of data is being sent. The stylesheet is transmitted with the mime-type <code>text/plain</code>;. Browsers will only accept stylesheets transferred with the mime-type <code>text/css</code>. You need to set up a little proxy, that gets the stylesheet, and sends it out again with the changed mimetype.</p><p>Here is a little Ruby script that does just that:</p><pre>require 'sinatra'
-require 'net/http'<br><br>get '/danslab.css' do
+require 'net/http'<br><br>get '/osp-live.css' do
   css = Net::HTTP.get_response(URI.parse("http://etherpad.fr/p/osp-css/export/txt")).body
   content_type 'text/css'
   css
 end
 </br></br></pre><p></p>
+
+
 
 
 
@@ -285,7 +306,149 @@ end
     <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(223, 'bnf')">Reply</a></p>
     </div>
 
+             <!-- Loop through the reply comments -->
+            
+            <div style="margin-left: 20px;">
+            
+            
+    <div id="comment-262" class="comment comment-reply">
+    <p>What do you do with that script? Where does it go? Should I upload it to a server?</p>
+    <p class="byline">
+            <img src="http://mt.schr.fr/lib/support/assets_c/2011/10/bowie-thumb-18x18-8.jpg" width="18" height="18"  />
+          by tellyou - <a href="http://i.liketightpants.net/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong.html#comment-262"><abbr class="published" title="2013-11-07T09:24:18+01:00">November  7, 2013  9:24 AM</abbr></a><br />
+    <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(262, 'tellyou')">Reply</a></p>
+    </div>
+
+             <!-- Loop through the reply comments -->
+            
+            <div style="margin-left: 20px;">
+            
+            
+    <div id="comment-263" class="comment comment-reply">
+    
+
+<p>With PHP, there still exists some link between the urls of the web application and the files on the server. You put the PHP files in the same place where you put the HTML files and they can be accessed in much the same way: in/some/folder/lives/a-php-script.php. In Ruby and Python apps, you usually have the&nbsp;web server&nbsp;forward all the requests to a separate web-application. The Python or Ruby files that make up this web-application can live anywhere, and have no real link to the urls of the web page.</p><p><span style="font-size: 14px;">The application above is a ruby file, and could be called app.rb, or however you want. In the application it is written that any request for the url /osp-live.css will receive the designated response. The script uses the library Sinatra, that popularised this style of writing web apps, where you specify: for this url, send back this contents.</span></p><p>The question then is just how to do you tell the webserver to use this file as a web-application… With PHP, because you can put them in the same place as the HTML files, it ‘just works’. Configuring a Python or Ruby application is different for each hosting environment: and most cheap hosts don’t actually offer support for these languages.</p>
+
+
+    <p class="byline">
+            <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/programmatically-thumb-18x18-6.png" width="18" height="18"  />
+          by bnf - <a href="http://i.liketightpants.net/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong.html#comment-263"><abbr class="published" title="2013-11-07T09:25:59+01:00">November  7, 2013  9:25 AM</abbr></a><br />
+    <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(263, 'bnf')">Reply</a></p>
+    </div>
+
+             <!-- Loop through the reply comments -->
+            
+            <div style="margin-left: 20px;">
+            
+            
+    <div id="comment-265" class="comment comment-reply">
+    <p>
+
+        There is weird paradox here: When learning programming with Python, I have found it much more easy and accessible than PHP. Ruby is more fun and straightforward as well. But getting these languages running on the web is much more difficult.
+    
+</p>
+    <p class="byline">
+            <img src="http://mt.schr.fr/lib/support/assets_c/2011/10/bowie-thumb-18x18-8.jpg" width="18" height="18"  />
+          by tellyou - <a href="http://i.liketightpants.net/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong.html#comment-265"><abbr class="published" title="2013-11-10T17:47:07+01:00">November 10, 2013  5:47 PM</abbr></a><br />
+    <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(265, 'tellyou')">Reply</a></p>
+    </div>
+
+             <!-- Loop through the reply comments -->
+            
+            <div style="margin-left: 20px;">
+            
+            
+    <div id="comment-266" class="comment comment-reply">
+    <p>This also has implications for sharing tools, which for me is an important part of Open Source / Free Culture. Tools like Wordpress and Wikimedia have been wildly succesful because they have used this PHP platform which makes for extremely easy redistribution of the software.</p><p>With designers and developers moving on to other development platforms, there is a vital need to make these platforms accessible to amateurs and enthousiasts, not just to developers who can afford to set up a specialised working environment.</p><p>I have witnessed this first hand when trying to work with content creation tools created in Django (a Python web framework): getting someone elses Django project to set up is extremely daunting, and this is really detrimental to the dissemination of Open Source projects that use it.</p>
+    <p class="byline">
+            <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/critically-thumb-18x18-2.jpg" width="18" height="18"  />
+          by habitus - <a href="http://i.liketightpants.net/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong.html#comment-266"><abbr class="published" title="2013-11-10T17:47:46+01:00">November 10, 2013  5:47 PM</abbr></a><br />
+    <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(266, 'habitus')">Reply</a></p>
+    </div>
+
              <!-- For each reply comment, recursively display any reply comments -->    
+            
+            </div>
+            
+         <!-- For each reply comment, recursively display any reply comments -->    
+            
+         <!-- Loop through the reply comments -->
+            
+            
+    <div id="comment-267" class="comment comment-reply">
+    
+<p>
+
+        In PHP, it would be something like this:</p><pre>&lt;?php
+header("Content-type: text/css");
+
+curl_setopt_array(
+    $ch, array( 
+    CURLOPT_URL =&gt; "http://etherpad.fr/p/osp-css/export/txt",
+    CURLOPT_RETURNTRANSFER =&gt; true
+));
+ 
+$output = curl_exec($ch);
+echo $output;
+</pre><p>Put it in a file called <code>osp-live-css.php</code>, or something, upload it on your webserver and link to it in the CSS declaration in your HTML.</p>
+
+    <p class="byline">
+            <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/programmatically-thumb-18x18-6.png" width="18" height="18"  />
+          by bnf - <a href="http://i.liketightpants.net/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong.html#comment-267"><abbr class="published" title="2013-11-10T17:57:06+01:00">November 10, 2013  5:57 PM</abbr></a><br />
+    <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(267, 'bnf')">Reply</a></p>
+    </div>
+
+             <!-- Loop through the reply comments -->
+            
+            <div style="margin-left: 20px;">
+            
+            
+    <div id="comment-268" class="comment comment-reply">
+    
+<p>
+
+        Never mind, I have found a solution more easy still. I made a ‘plugin’ for the etherpad software, that allows export as CSS:</p><p style=""><a href="" rel="nofollow"></a><img style="height: 366px; width: 676px; position: relative; margin: 0px; resize: none; zoom: 1; display: inline-block; top: 0px; left: 0px;" src="/and/assets/called/ep_export_less_and_css_screenshot_676x355.png" class=""></img></p><p style="">You can install it from Etherpad’s plugin admin panel, as <code>ep_export_less_and_css</code>. The source code is on <a href="https://github.com/codingisacopingstrategy/ep_export_less_and_css" rel="nofollow">Github</a>.</p>
+
+    <p class="byline">
+            <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/programmatically-thumb-18x18-6.png" width="18" height="18"  />
+          by bnf - <a href="http://i.liketightpants.net/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong.html#comment-268"><abbr class="published" title="2013-11-10T17:59:06+01:00">November 10, 2013  5:59 PM</abbr></a><br />
+    <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(268, 'bnf')">Reply</a></p>
+    </div>
+
+             <!-- For each reply comment, recursively display any reply comments -->    
+            
+            </div>
+            
+         <!-- For each reply comment, recursively display any reply comments -->    
+            
+            </div>
+            
+         <!-- For each reply comment, recursively display any reply comments -->    
+            
+         <!-- Loop through the reply comments -->
+            
+            
+    <div id="comment-264" class="comment comment-reply">
+    
+<p>
+
+        There is weird paradox here: When learning programming with Python, I have found it much more easy and accessible than PHP. Ruby is more fun and straightforward as well. But getting these languages running on the web is much more difficult.</p>
+
+    <p class="byline">
+            <img src="http://mt.schr.fr/lib/support/assets_c/2011/10/bowie-thumb-18x18-8.jpg" width="18" height="18"  />
+          by tellyou - <a href="http://i.liketightpants.net/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong.html#comment-264"><abbr class="published" title="2013-11-10T17:20:46+01:00">November 10, 2013  5:20 PM</abbr></a><br />
+    <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(264, 'tellyou')">Reply</a></p>
+    </div>
+
+             <!-- For each reply comment, recursively display any reply comments -->    
+            
+            </div>
+            
+         <!-- For each reply comment, recursively display any reply comments -->    
+            
+            </div>
+            
+         <!-- For each reply comment, recursively display any reply comments -->    
             
             </div>
             
@@ -363,6 +526,41 @@ end
 
         
     
+    
+
+    
+     <!-- If comment has a parent comment. We ignore this, as we just want the top-level-parent comments -->
+        
+    
+
+    
+     <!-- If comment has a parent comment. We ignore this, as we just want the top-level-parent comments -->
+        
+    
+
+    
+     <!-- If comment has a parent comment. We ignore this, as we just want the top-level-parent comments -->
+        
+    
+
+    
+     <!-- If comment has a parent comment. We ignore this, as we just want the top-level-parent comments -->
+        
+    
+
+    
+     <!-- If comment has a parent comment. We ignore this, as we just want the top-level-parent comments -->
+        
+    
+
+    
+     <!-- If comment has a parent comment. We ignore this, as we just want the top-level-parent comments -->
+        
+    
+
+    
+     <!-- If comment has a parent comment. We ignore this, as we just want the top-level-parent comments -->
+        
     
 
     
@@ -485,6 +683,34 @@ end
   <h4>Latest Comments</h4>
         <ul>
         
+            <li><strong>bnf:</strong>  Never mind, I have found a solution more easy <a href="/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong#comment-268" title="full comment on: 48 Hours of Writing Stylesheets with Etherpad and a Gong">read more</a></li>
+        
+    
+    
+            <li><strong>bnf:</strong>  In PHP, it would be something like this:&lt;?php header("Content-type: <a href="/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong#comment-267" title="full comment on: 48 Hours of Writing Stylesheets with Etherpad and a Gong">read more</a></li>
+        
+    
+    
+            <li><strong>habitus:</strong> This also has implications for sharing tools, which for me <a href="/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong#comment-266" title="full comment on: 48 Hours of Writing Stylesheets with Etherpad and a Gong">read more</a></li>
+        
+    
+    
+            <li><strong>tellyou:</strong>  There is weird paradox here: When learning programming with <a href="/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong#comment-265" title="full comment on: 48 Hours of Writing Stylesheets with Etherpad and a Gong">read more</a></li>
+        
+    
+    
+            <li><strong>tellyou:</strong>  There is weird paradox here: When learning programming with <a href="/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong#comment-264" title="full comment on: 48 Hours of Writing Stylesheets with Etherpad and a Gong">read more</a></li>
+        
+    
+    
+            <li><strong>bnf:</strong>  With PHP, there still exists some link between the <a href="/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong#comment-263" title="full comment on: 48 Hours of Writing Stylesheets with Etherpad and a Gong">read more</a></li>
+        
+    
+    
+            <li><strong>tellyou:</strong> What do you do with that script? Where does it <a href="/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong#comment-262" title="full comment on: 48 Hours of Writing Stylesheets with Etherpad and a Gong">read more</a></li>
+        
+    
+    
             <li><strong>bnf:</strong>  You need to leave a computer one that will <a href="/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong#comment-228" title="full comment on: 48 Hours of Writing Stylesheets with Etherpad and a Gong">read more</a></li>
         
     
@@ -494,18 +720,6 @@ end
     
     
             <li><strong>tellyou:</strong>  And how did you make the video? <a href="/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong#comment-224" title="full comment on: 48 Hours of Writing Stylesheets with Etherpad and a Gong">read more</a></li>
-        
-    
-    
-            <li><strong>bnf:</strong>  One would figure, because the Titanpad we are using <a href="/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong#comment-223" title="full comment on: 48 Hours of Writing Stylesheets with Etherpad and a Gong">read more</a></li>
-        
-    
-    
-            <li><strong>tellyou:</strong>  So if you were all writing these styles on <a href="/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong#comment-222" title="full comment on: 48 Hours of Writing Stylesheets with Etherpad and a Gong">read more</a></li>
-        
-    
-    
-            <li><strong>glit:</strong>  <a href="/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong#comment-243" title="full comment on: 48 Hours of Writing Stylesheets with Etherpad and a Gong">read more</a></li>
         
         </ul>
         
