@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork');
+header('Location: /and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo');
 ?>

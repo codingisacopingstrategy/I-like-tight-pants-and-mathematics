@@ -52,7 +52,7 @@
   <ul>
     
     
-    <li><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">latest</a></li>
+    <li><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">latest</a></li>
     
     <li><a href="/and/about">about</a></li>
     <li><a href="/and/archives">index</a></li>
@@ -207,13 +207,13 @@
     <blockquote>We are very pleased to announce the release of IPython 1.0, nearly twelve years after the first release of IPython 0.0.1.</blockquote>
     <p>With the Open Baskerville project, we try to use this logic on a typeface. This is a screen shot showing the metadata of our most recently released font:</p>
     <p>
-      <img style="height: 365px; width: 750px; position: relative; margin: 0px; resize: none; zoom: 1; display: inline-block; top: 0px; left: 0px;" src="/and/assets/called/openbaskerville_metadata.png" title="" class="" />
-    </p>
+      <img style="height: 365px; width: 750px; position: relative; margin: 0px; resize: none; zoom: 1; display: inline-block; top: 0px; left: 0px;" src="/and/assets/called/openbaskerville_metadata.png" title="" class="">
+</p>
     <p class="byline">Version information for the latest Open Baskerville Release (generated from UFO by a script calling FontForge).</p>
     <p style="">As you can see, we put the version number right in the font name. This has a practical reason: if there are going to be multiple versions, better make sure the user can tell them apart. But there is also a philosophical reason—we want to make it clear up front that our typeface is developed in an iterative way.</p>
     <h4>Iterations in the industry</h4>
     <p style="">Typefaces are not usually developed through release early, release often. When a designer or a foundry releases a typeface, it is usually considered finished: sometimes new technological developments warrant a new release, like when fonts first got released as OpenType, or now with the release of webfonts. The constant stream of updates as we know it from software teams is absent from type face development, even though most <a href="http://specimen.meteor.com/about#software" target="_self" style="" title="SPECIMEN">foundries refer to their work as software</a>.</p>
-    <p style="">There are cultural reasons for this. One is that the industry of type design has until now not really embraced the malleability of digital typography. <a href="http://ospublish.constantvzw.org/blog/typo/appropriation-and-type-before-and-today" style="" target="_self" title="Appropriation and Type – before and today">Ricardo Lafuente asks</a>: why are people who make and sell typefaces still referring to themselves as foundries, as if they are still producing shapes cast in lead?<br />There are also practical reasons: once one has made a layout with a typeface, one does not usually want it to change—especially in the width of the letters and their spacing—as it would change the layout in unpredictable ways.</p>
+    <p style="">There are cultural reasons for this. One is that the industry of type design has until now not really embraced the malleability of digital typography. <a href="http://ospublish.constantvzw.org/blog/typo/appropriation-and-type-before-and-today" style="" target="_self" title="Appropriation and Type – before and today">Ricardo Lafuente asks</a>: why are people who make and sell typefaces still referring to themselves as foundries, as if they are still producing shapes cast in lead?<br>There are also practical reasons: once one has made a layout with a typeface, one does not usually want it to change—especially in the width of the letters and their spacing—as it would change the layout in unpredictable ways.</p>
     <p style="">But the ideas in the Free Software and open source movements have found their way into the larger field of culture. Libre fonts—typefaces released as open source—have been a large success in recent years, thanks in no small part to web typography, where for a long time most traditional fonts could not be used because of licensing restrictions. But in the way in which they have are made, the fonts offered on sites such as the Open Font Library and Google Web Fonts do not really offer any innovation over the existing foundry model. They are mostly released by individual authors as a finished package. Projects that think about setting up a framework for collaboration and iterative development are rare—what is telling is that it is often not clear how to contribute back a change to the font.</p>
     <p style="">This means libre typography is in a hairy spot. Even if conventional type foundries celebrate a personality focused idea of type design, the actual production takes place in tightly coordinated teams: the type designer can count on other designers to help him flesh out the alphabet, and foundries often reach out to specialists when it comes to specific areas of type design such as kerning and hinting. Individual designers working with free licenses will not be able to match these teams on production quality if they work by themselves.&nbsp;</p>
     <p style="">To me it is clear that if libre typography wants to distinguish itself from its traditional counterpart, it needs to embrace alternative conceptions of type design. This can be by focusing on the possibilities of appropriation, remixing and forking of existing typefaces.&nbsp;<a href="http://ospublish.constantvzw.org/workshop/write-me-a-shadow/" style="" target="_self" title="Write me a shadow. OSP @ ESAD Valence">Manipulating existing typefaces</a>, either manually or through <a href="/and/programmatically-manipulating-typefaces" style="" target="_self" title="I like tight pants and programmatically manipulating typefaces">scripts</a>, is only allowed only with libre fonts: the End User License Agreements of most typefaces explicitly forbid modification. Or it can be by embracing new collaboration methods and iterative processes, like we try to do with Open Baskerville.</p>
@@ -231,9 +231,9 @@
       <ol>
         <li style="font-size: 14px;">MAJOR version when you make incompatible API changes,</li>
         <li style="font-size: 14px;">MINOR version when you add functionality in a backwards-compatible manner, and</li>
-        <li style="">PATCH version when you make backwards-compatible bug fixes.<br style="" /></li>
-      </ol>
-    </blockquote>
+        <li style="">PATCH version when you make backwards-compatible bug fixes.<br style=""></li>
+</ol>
+</blockquote>
     <p>This makes the distinction between how a program is used and how it works on the inside. Changes to the code implementation that don’t change how the program appears to the user, merit only a change in the PATCH version. Adding functionality that appears to the user, without changing existing functionality, merits a MINOR version. Finally, changing the way in which you as a user have to use the program, means updating the MAJOR version.</p>
     <p>However, this model does not seem really applicable to type design. This is because every change in the code, influences the visual product with which the designer works. My poster design might break more spectacularly if the fonts metrics change, by messing with my line breaks: but if the axis by which the bar of the e is slanted changes, that does ‘break’, in a more subtle way, my design as well.</p>
     <p></p>
@@ -245,13 +245,12 @@
       <li>MAJOR version constitutes a coherent set of design goals,</li>
       <li>MINOR version constitutes a discrete goal obtained in pursuing these design goals and</li>
       <li>PATCH version constitutes incremental progress toward design goals.</li>
-    </ol>
+</ol>
     <p style="">For example, in Open Baskerville, the major design goal is to recreate Fry’s Baskerville in a way that is usable on the modern web (Version 1.0). As a sub-goal, we are first working to recreate a width faithful to Fry’s surviving specimen (version 0.1), with a system in place to create releases. We logged 83 incremental improvements towards this goal, but we are not there yet (thus, at version 0.0.83).</p>
-    <p style="">If we ever reach 1.0, what then? Can we think of a new major design goal for the project, or rephrase its design goal? We might want to re-inspire ourselves on other Baskerville variants, for example, and adjust are goals accordingly.<br style="" />Where does it end? What is the final number? Is continuing working on one design project for years and years a desirable scenario, in a way that Windows now is at version 8 and Illustrator at version 16?</p>
+    <p style="">If we ever reach 1.0, what then? Can we think of a new major design goal for the project, or rephrase its design goal? We might want to re-inspire ourselves on other Baskerville variants, for example, and adjust are goals accordingly.<br style="">Where does it end? What is the final number? Is continuing working on one design project for years and years a desirable scenario, in a way that Windows now is at version 8 and Illustrator at version 16?</p>
     <p style="">There are arguments against creating too many versions of a design. A design is a product of hopes, aspirations, goals and constraints that exist at a given point. The recent phenomenon of film directors revisiting their older movies and adding contemporary computer effects (not available at the time) has not at all been well received by fans. It shows that the constraints placed upon an artistic project shape it and create its character, and that authors might want to be reticent in revisiting their works.</p>
     <p style="">Similar phenomenons exist in software too. People who use many subsequent versions of &nbsp;a software often feel like something gets lost along the way. The initial sense of purpose embodied in a program can give way to what is called ‘bloat’, by adding feature upon feature until it tries . In programmer’s circles, this is known as Zawinski’s law: &nbsp;‘Every program attempts to expand until it can read e-mail.’ At the same time, using old versions of software is not very practical. They might contain security holes; they might even no longer run on your current operating system.</p>
-    <p style="">With typefaces we are in luck that they will in most occasions be usable for a longer time. As long as a description of its points exists somewhere—and mankind does not forget <a href="/and/seb-explaining-love-and-bezier-curves" style="" target="_self" title="I like tight pants and seb explaining love and bezier curves">the mathematics of Bézier curves</a>. So I think I will want for the 1.0 version to be the last. Anyone who has another vision on the design, is free to fork.</p>
-
+    <p style="">With typefaces we are in luck that they will in most occasions be usable for a longer time. As long as a description of its points exists somewhere—and mankind does not forget <a href="/and/seb-explaining-love-and-bezier-curves" style="" target="_self" title="I like tight pants and seb explaining love and bezier curves" class="aloha-link-text">the mathematics of Bézier curves</a>. So I think I will want for the 1.0 version to be the last. Anyone who has another vision on the design, is <a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork" class="" style="" target="_self" title="I like tight pants and no-one starts from scratch: type design and the logic of the fork">free to fork</a>.</p>
 
     <div id="comments" class="comments">
 
@@ -367,6 +366,9 @@
   <h4>Latest articles</h4>
   <dl>
   
+  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTF’s, Webfonts and CSS From UFO’s</a></dt>
+  <dd>November  5, 2013  9:57 PM</dd>
+  
   <dt><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">No-one Starts From Scratch: Type Design and the Logic of the Fork</a></dt>
   <dd>October  9, 2013 10:00 PM</dd>
   
@@ -393,9 +395,6 @@
   
   <dt><a href="/and/belgian-newspapers">Belgian Newspapers</a></dt>
   <dd>March 29, 2013 10:17 PM</dd>
-  
-  <dt><a href="/and/parties-in-paris">Parties in Paris</a></dt>
-  <dd>September  7, 2012  3:24 PM</dd>
   
   </dl>
 

@@ -52,7 +52,7 @@
   <ul>
     
     
-    <li><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">latest</a></li>
+    <li><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">latest</a></li>
     
     <li><a href="/and/about">about</a></li>
     <li><a href="/and/archives">index</a></li>
@@ -327,7 +327,9 @@ end
     <div id="comment-263" class="comment comment-reply">
     
 
-<p>With PHP, there still exists some link between the urls of the web application and the files on the server. You put the PHP files in the same place where you put the HTML files and they can be accessed in much the same way: in/some/folder/lives/a-php-script.php. In Ruby and Python apps, you usually have the&nbsp;web server&nbsp;forward all the requests to a separate web-application. The Python or Ruby files that make up this web-application can live anywhere, and have no real link to the urls of the web page.</p><p><span style="font-size: 14px;">The application above is a ruby file, and could be called app.rb, or however you want. In the application it is written that any request for the url /osp-live.css will receive the designated response. The script uses the library Sinatra, that popularised this style of writing web apps, where you specify: for this url, send back this contents.</span></p><p>The question then is just how to do you tell the webserver to use this file as a web-application… With PHP, because you can put them in the same place as the HTML files, it ‘just works’. Configuring a Python or Ruby application is different for each hosting environment: and most cheap hosts don’t actually offer support for these languages.</p>
+
+<p>With PHP, there still exists some link between the urls of the web application and the files on the server. You put the PHP files in the same place where you put the HTML files and they can be accessed in much the same way: <code>in/some/folder/lives/a-php-script.php</code>. In Ruby and Python apps, you usually have the&nbsp;web server&nbsp;forward all the requests to a separate web-application. The Python or Ruby files that make up this web-application can live anywhere, and have no real link to the urls of the web page.</p><p>The application above is a ruby file, and could be called app.rb, or however you want. In the application it is written that any request for the url <code>/osp-live.css</code> will receive the designated response. The script uses the library Sinatra, that popularised this style of writing web apps, where you specify: for this url, send back this contents.</p><p>The question then is just how to do you tell the webserver to use this file as a web-application… With PHP, because you can put them in the same place as the HTML files, it ‘just works’. Configuring a Python or Ruby application is different for each hosting environment: and most cheap hosts don’t actually offer support for these languages.</p>
+
 
 
     <p class="byline">
@@ -648,6 +650,9 @@ echo $output;
   <h4>Latest articles</h4>
   <dl>
   
+  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTF’s, Webfonts and CSS From UFO’s</a></dt>
+  <dd>November  5, 2013  9:57 PM</dd>
+  
   <dt><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">No-one Starts From Scratch: Type Design and the Logic of the Fork</a></dt>
   <dd>October  9, 2013 10:00 PM</dd>
   
@@ -674,9 +679,6 @@ echo $output;
   
   <dt><a href="/and/belgian-newspapers">Belgian Newspapers</a></dt>
   <dd>March 29, 2013 10:17 PM</dd>
-  
-  <dt><a href="/and/parties-in-paris">Parties in Paris</a></dt>
-  <dd>September  7, 2012  3:24 PM</dd>
   
   </dl>
 
