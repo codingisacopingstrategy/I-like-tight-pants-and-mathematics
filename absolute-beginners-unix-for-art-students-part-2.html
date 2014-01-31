@@ -10,7 +10,6 @@
 <link rel="start" href="/and/" title="Home" />
 <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/and/feed/us/recent_entries.xml" />
 <script type="text/javascript" src="/and/scripts/being/jquery-1.8.0.min.js"></script>
-<script type="text/javascript" src="/and/scripts/being/jquery.syntaxhighlighter.min.js"></script>
 <script type="text/javascript" src="/and/scripts/being/scripts.js"></script>
 <script type="text/javascript" src="/and/mt.js"></script>
 
@@ -53,7 +52,7 @@
   <ul>
     
     
-    <li><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">latest</a></li>
+    <li><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">latest</a></li>
     
     <li><a href="/and/about">about</a></li>
     <li><a href="/and/archives">index</a></li>
@@ -153,16 +152,13 @@
   <div>
     <div class="article grid_3 alpha omega suffix_2">
     <h4>Absolute Beginners: Unix for Art Students – Part 2</h4>
-    
-    <p><a href="/and/assets/called/absolute_beginners_figlet.png"><img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_figlet.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, showing an ascii art that reads: Ã¢â¬ÅAbsolute beginnersÃ¢â¬Â." title="" style="width:830px;height:518px;"></a></p>
-
-<p>If I type</p>
-
-<pre>$ figlet absolute beginners</pre>
-
-<p>into my terminal, this is what I get:</p>
-
-<pre>       _               _       _       
+    <p><a href="/and/assets/called/absolute_beginners_figlet.png">
+        <img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_figlet.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, showing an ascii art that reads: Ã¢â¬ÅAbsolute beginnersÃ¢â¬Â." title="" style="width:830px;height:518px;" />
+      </a></p>
+    <p>If I type</p>
+    <pre>$ figlet absolute beginners</pre>
+    <p>into my terminal, this is what I get:</p>
+    <pre>       _               _       _       
   __ _| |__  ___  ___ | |_   _| |_ ___ 
  / _` | '_ \/ __|/ _ \| | | | | __/ _ \
 | (_| | |_) \__ \ (_) | | |_| | ||  __/
@@ -175,64 +171,37 @@
 |_.__/ \___|\__, |_|_| |_|_| |_|\___|_|  |___/
             |___/                             
 </pre>
-
-<p>Figlet has proved to be a gateway drug for extended terminal usage. Figlet is not on your computer by default though. Even though your mac comes with a lot of unix software already, not a lot of it is graphics software. To install new software you need to install what is called a package manager, as explained in <a href="/and/installing-compilers">I like tight pants and installing compilers</a>. This article will continue with an introduction that tells you how to use the terminal!</p>
-
-<p>In your Applications folder, choose Accessories, and open Terminal. Now you can talk with your computer. He can tell you who you are. Type:</p>
-
-<pre>$ whoami</pre>
-
-<p>(without the $ and the space, that’s just a convention to denote text that you enter into the terminal). And press enter. The computer outputs your username! The computer also knows where you are, at least where you are on the hard disk. Enter:</p>
-
-<pre>$ pwd</pre>
-
-<p>And the computer will repond with <code>/Users/yourusername</code>. It would make sense if you could say <code>whereami</code> but consistency is not Unix greatest strength. You are now in what is called your home folder.<br>
+    <p>Figlet has proved to be a gateway drug for extended terminal usage. Figlet is not on your computer by default though. Even though your mac comes with a lot of unix software already, not a lot of it is graphics software. To install new software you need to install what is called a package manager, as explained in <a href="/and/installing-compilers">I like tight pants and installing compilers</a>. This article will continue with an introduction that tells you how to use the terminal!</p>
+    <p>In your Applications folder, choose Accessories, and open Terminal. Now you can talk with your computer. He can tell you who you are. Type:</p>
+    <pre>$ whoami</pre>
+    <p>(without the $ and the space, that’s just a convention to denote text that you enter into the terminal). And press enter. The computer outputs your username! The computer also knows where you are, at least where you are on the hard disk. Enter:</p>
+    <pre>$ pwd</pre>
+    <p>And the computer will repond with <code>/Users/yourusername</code>. It would make sense if you could say <code>whereami</code> but consistency is not Unix greatest strength. You are now in what is called your home folder.<br />
 You can always return to your home folder by typing:</p>
-
-<pre>$ cd</pre>
-
-<p><code>cd</code> is also the commando to use to go to another folder. You can use the tab button to make this go quicker.<br>
+    <pre>$ cd</pre>
+    <p><code>cd</code> is also the commando to use to go to another folder. You can use the tab button to make this go quicker.<br />
 Type, by example:</p>
+    <pre>$ cd Do(tab)</pre>
+    <p>You will see</p>
+    <pre>Documents/ Downloads/</pre>
+    <p>Complete further to</p>
+    <pre>$ cd Doc(tab)</pre>
+    <p>And your line will be extended to form:</p>
+    <pre>$ cd Documents/</pre>
+    <p>When you push enter, you will arrive into the folder Documents. You can check this by again typing</p>
+    <pre>$ pwd</pre>
+    <p>To see what files are part of the folder you are in:</p>
+    <pre>$ ls</pre>
+    <p>You can also check this in the finder, if you want. You can use the terminal and the finder at the same time. This can make it easier to learn what is going on. You can launch the finder from the terminal.</p>
+    <pre>$ open .</pre>
+    <p><code>.</code> refers to the current folder. <code>open .</code> will open the current folder with the associated program, which is the finder.</p>
+    <p>To make a new empty file:</p>
+    <pre>$ touch my_text_file.txt</pre>
+    <p>If you still have the Finder open, you will see it appear! To open with the text editor:</p>
+    <pre>$ open my_text_file.txt</pre>
+    <p>These are the basics of navigating around the terminal.</p>
 
-<pre>$ cd Do(tab)</pre>
 
-<p>You will see</p>
-
-<pre>Documents/ Downloads/</pre>
-
-<p>Complete further to</p>
-
-<pre>$ cd Doc(tab)</pre>
-
-<p>And your line will be extended to form:</p>
-
-<pre>$ cd Documents/</pre>
-
-<p>When you push enter, you will arrive into the folder Documents. You can check this by again typing</p>
-
-<pre>$ pwd</pre>
-
-<p>To see what files are part of the folder you are in:</p>
-
-<pre>$ ls</pre>
-
-<p>You can also check this in the finder, if you want. You can use the terminal and the finder at the same time. This can make it easier to learn what is going on. You can launch the finder from the terminal.</p>
-
-<pre>$ open .</pre>
-
-<p><code>.</code> refers to the current folder. <code>open .</code> will open the current folder with the associated program, which is the finder.</p>
-
-<p>To make a new empty file:</p>
-
-<pre>$ touch my_text_file.txt</pre>
-
-<p>If you still have the Finder open, you will see it appear! To open with the text editor:</p>
-
-<pre>$ open my_text_file.txt</pre>
-
-<p>These are the basics of navigating around the terminal.</p>
-
-    
     <div id="comments" class="comments">
 
 
@@ -365,6 +334,9 @@ To install new software on Cygwin, you need to rerun the Cygwin <code>setup.exe<
   <h4>Latest articles</h4>
   <dl>
   
+  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTF’s, Webfonts and CSS From UFO’s</a></dt>
+  <dd>November  5, 2013  9:57 PM</dd>
+  
   <dt><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">No-one Starts From Scratch: Type Design and the Logic of the Fork</a></dt>
   <dd>October  9, 2013 10:00 PM</dd>
   
@@ -391,9 +363,6 @@ To install new software on Cygwin, you need to rerun the Cygwin <code>setup.exe<
   
   <dt><a href="/and/belgian-newspapers">Belgian Newspapers</a></dt>
   <dd>March 29, 2013 10:17 PM</dd>
-  
-  <dt><a href="/and/parties-in-paris">Parties in Paris</a></dt>
-  <dd>September  7, 2012  3:24 PM</dd>
   
   </dl>
 

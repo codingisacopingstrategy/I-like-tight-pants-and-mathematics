@@ -10,7 +10,6 @@
 <link rel="start" href="/and/" title="Home" />
 <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/and/feed/us/recent_entries.xml" />
 <script type="text/javascript" src="/and/scripts/being/jquery-1.8.0.min.js"></script>
-<script type="text/javascript" src="/and/scripts/being/jquery.syntaxhighlighter.min.js"></script>
 <script type="text/javascript" src="/and/scripts/being/scripts.js"></script>
 <script type="text/javascript" src="/and/mt.js"></script>
 
@@ -53,7 +52,7 @@
   <ul>
     
     
-    <li><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">latest</a></li>
+    <li><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">latest</a></li>
     
     <li><a href="/and/about">about</a></li>
     <li><a href="/and/archives">index</a></li>
@@ -223,10 +222,6 @@
   <div>
     <div class="article grid_3 alpha omega suffix_2">
     <h4>I Need My Generic Font Medicine</h4>
-        
-    
-    
-        
     <style>
 h2 {
     text-rendering: optimizeLegibility;
@@ -519,32 +514,28 @@ h2 {
 
 
 </style>
-
-<h2 style="font-family: 'Nimbus Roman No9 L';" title="Nimbus Roman No9 L">Times</h2>
-<h2 style="font-family: 'Nimbus Sans L';" title="Nimbus Sans L">Helvetica</h2>
-<h2 style="font-family: 'URW Palladio L';" title="Palladio L">Palatino</h2>
-<h2 style="font-family: 'URW Bookman L';" title="Bookman">Bookman L</h2>
-<h2 style="font-family: 'URW Gothic L';" title="Gothic L">Avant Garde</h2>
-<h2 style="font-family: 'URW Chancery L';" title="Chancery L">Zapf Chancery</h2>
-<h2 style="font-family: 'Century Schoolbook L';" title="Century Schoolbook L">New Century Schoolbook</h2>
-<h2 style="font-family: 'Nimbus Mono L';" title="Nimbus Mono L">Courier</h2>
-
-<p>In short: We present a release of UFO source files for the Ghostscript fonts, a set of typefaces created to replace (and mimic) the proprietary typefaces present in the specification of Adobe PostScript. Download them as a zip, together with installable fonts, or <a href="https://github.com/fonts/ghostscript-fonts" style="" target="_self" title="fonts/ghostscript-fonts">fork them on GitHub</a>. Let me explain.</p>
-
-<h4>I want my generic medication</h4>
-<p>Like medication for which the patents have expired, popular typefaces sprout generic sisters and brothers. For Helvetica: Swiss 721, CG Triumvirate, Pragmatica, Nimbus Sans.</p>
-
-<p>All of this is possible because copyright protection on fonts is not very strong, especially in the United States. The thing that is copyrightable, though, is the series of points contained in an actual font file, i.e. the digital artefact that constitutes the typeface. That is why, in any End User License Agreement, the <a href="http://specimen.meteor.com/about#software" title="SPECIMEN :: A BLOG ON OPEN SOURCE FONTS">legal language refers always to the font as a program</a>: a program, as a series of written instructions, is copyrightable.</p>
-
-<h4>The DNA of the 1990ies</h4>
-<p>Desktop Publishing is what happened when personal computers got powerful enough to create layouts for print publications. If you want to find one document that represents the DNA of Desktop publishing, the <a href="http://partners.adobe.com/public/developer/ps/index_specs.html" target="_self" style="" title="Developer Resources: Adobe PostScript language specifications">Adobe Postscript specification</a> would be a good candidate. PostScript, as a language that describes page layouts, and the vector drawings and typefaces used in these layouts. In the late 1980ies, it is the glue that binds together layout programs such as Aldus Pagemaker, Adobe Illustrator and printers such as the Apple Laserwriter.</p><p>In the 1990ies, virtually all graphic designers find themselves moving to the desktop computer. Yet even if its production has moved to the screen, the image of Graphic Design in the 1990ies is still tightly coupled to print. David Carson’s ‘Print is Dead’ is a book, not a website or a tv show. Designers make their name with magazines and record covers. And even if Truetype, a format developed by Apple &amp; Microsoft, makes a lot of progress in adapting vector typefaces for the screen, it is Emigre’s and Fontshop’s typefaces, designed for print and executed in PostScript, that seem to capture the design aesthetic of the era.</p><p style="">It is also in this time that we see a number of auto-reflexive typefaces, that deal with the nature of the vector curve in general and PostScript in particular. Neville Brody’s <a href="https://www.fontfont.com/fonts/autotrace" target="_self" style="" title="FF Autotrace fonts from the FontFont Library">FF Autotrace</a> is a reflection of the passage from the analog to the digital, and more precisely, from raster to vector. Simulating the effect of a rushed automatic ‘vectorisation’ script on a bitmap of a Helvetica like grotesk, it is a meditation on the kind of transformations that are performed over and over again in the process of Desktop Publishing.<br style="">An analogue drawing might first be scanned to get it into the computer, which produces a raster image, then transformed into vectors to be able to scale it in dimensions. To make the image visible though, it will need to be rasterised again, first on the screen of the designer, and finally by the printing device.</p><p>Letterror dives into the very fabric of PostScript when creating <a href="http://letterror.com/fontcatalog/fontfont-beowolf/" target="_self" style="" title="FontFont Beowolf | LettError">FF Beowolf</a>, what they call a RandomFont. Just van Rossum and Erik van Blokland have added an extra command to the PostScript language: freakto. Instead of the more predictable curveto and moveto commands of regular PostScript, the points are slightly random. Letteror says ‘Beowolf demonstrated that digital fonts are data and code, and therefore instructions that can modify themselves.’. Pierre H. tells me, it used to get you banned from printshops (the PostScript execution taking place in the printer, printing a document in Beowolf takes significantly more time and computing resources then printing a regular document).</p><p>It is only today, when every design agency also produces websites and mobile applications, PostScript has lost its position of the central language. When designing for the screen, a ‘page description language’ is not flexible enough. The defining language of today is probably the markup language HTML, which trades in the (typo)graphic precision of PostScript for the kind of flexibility screen based media require. The main standard for eBooks, ePUB, is based upon it.</p>
-
-<h4>The ghost in the shell</h4>
-<p>Every language needs interpreters. Early laser printers had their own PostScript interpreter, translating the vector image into a rasterisation. You also need an interpreter when you want to rasterise a PostScript document to the screen. A PostScript interpreter that is Free and Open Source (and who’s history also goes back to the 1980ies) is <a href="http://www.ghostscript.com/" style="" target="_self" title="Ghostscript: Ghostscript">Ghostscript</a>.</p>
-
-<p>As part of the specification for PostScript, Adobe specifies a set of 35 fonts each PostScript capable device should be able to handle. Because these typefaces are not available under an open source license, GhostScript has a problem creating a Linux version. The solution: the company developing GhostScript convinces the Hamburg based font design company URW to license a set of their generic typefaces under the GPL license:</p>
-
-<blockquote>The copyright holder of these fonts, URW++ Design and Development
+    <h2 style="font-family: 'Nimbus Roman No9 L';" title="Nimbus Roman No9 L">Times</h2>
+    <h2 style="font-family: 'Nimbus Sans L';" title="Nimbus Sans L">Helvetica</h2>
+    <h2 style="font-family: 'URW Palladio L';" title="Palladio L">Palatino</h2>
+    <h2 style="font-family: 'URW Bookman L';" title="Bookman">Bookman L</h2>
+    <h2 style="font-family: 'URW Gothic L';" title="Gothic L">Avant Garde</h2>
+    <h2 style="font-family: 'URW Chancery L';" title="Chancery L">Zapf Chancery</h2>
+    <h2 style="font-family: 'Century Schoolbook L';" title="Century Schoolbook L">New Century Schoolbook</h2>
+    <h2 style="font-family: 'Nimbus Mono L';" title="Nimbus Mono L">Courier</h2>
+    <p>In short: We present a release of UFO source files for the Ghostscript fonts, a set of typefaces created to replace (and mimic) the proprietary typefaces present in the specification of Adobe PostScript. Download them as a zip, together with installable fonts, or <a href="https://github.com/fonts/ghostscript-fonts" style="" target="_self" title="fonts/ghostscript-fonts">fork them on GitHub</a>. Let me explain.</p>
+    <h4>I want my generic medication</h4>
+    <p>Like medication for which the patents have expired, popular typefaces sprout generic sisters and brothers. For Helvetica: Swiss 721, CG Triumvirate, Pragmatica, Nimbus Sans.</p>
+    <p>All of this is possible because copyright protection on fonts is not very strong, especially in the United States. The thing that is copyrightable, though, is the series of points contained in an actual font file, i.e. the digital artefact that constitutes the typeface. That is why, in any End User License Agreement, the <a href="http://specimen.meteor.com/about#software" title="SPECIMEN :: A BLOG ON OPEN SOURCE FONTS">legal language refers always to the font as a program</a>: a program, as a series of written instructions, is copyrightable.</p>
+    <h4>The DNA of the 1990ies</h4>
+    <p>Desktop Publishing is what happened when personal computers got powerful enough to create layouts for print publications. If you want to find one document that represents the DNA of Desktop publishing, the <a href="http://partners.adobe.com/public/developer/ps/index_specs.html" target="_self" style="" title="Developer Resources: Adobe PostScript language specifications">Adobe Postscript specification</a> would be a good candidate. PostScript, as a language that describes page layouts, and the vector drawings and typefaces used in these layouts. In the late 1980ies, it is the glue that binds together layout programs such as Aldus Pagemaker, Adobe Illustrator and printers such as the Apple Laserwriter.</p>
+    <p>In the 1990ies, virtually all graphic designers find themselves moving to the desktop computer. Yet even if its production has moved to the screen, the image of Graphic Design in the 1990ies is still tightly coupled to print. David Carson’s ‘Print is Dead’ is a book, not a website or a tv show. Designers make their name with magazines and record covers. And even if Truetype, a format developed by Apple &amp; Microsoft, makes a lot of progress in adapting vector typefaces for the screen, it is Emigre’s and Fontshop’s typefaces, designed for print and executed in PostScript, that seem to capture the design aesthetic of the era.</p>
+    <p style="">It is also in this time that we see a number of auto-reflexive typefaces, that deal with the nature of the vector curve in general and PostScript in particular. Neville Brody’s <a href="https://www.fontfont.com/fonts/autotrace" target="_self" style="" title="FF Autotrace fonts from the FontFont Library">FF Autotrace</a> is a reflection of the passage from the analog to the digital, and more precisely, from raster to vector. Simulating the effect of a rushed automatic ‘vectorisation’ script on a bitmap of a Helvetica like grotesk, it is a meditation on the kind of transformations that are performed over and over again in the process of Desktop Publishing.<br style="" />An analogue drawing might first be scanned to get it into the computer, which produces a raster image, then transformed into vectors to be able to scale it in dimensions. To make the image visible though, it will need to be rasterised again, first on the screen of the designer, and finally by the printing device.</p>
+    <p>Letterror dives into the very fabric of PostScript when creating <a href="http://letterror.com/fontcatalog/fontfont-beowolf/" target="_self" style="" title="FontFont Beowolf | LettError">FF Beowolf</a>, what they call a RandomFont. Just van Rossum and Erik van Blokland have added an extra command to the PostScript language: freakto. Instead of the more predictable curveto and moveto commands of regular PostScript, the points are slightly random. Letteror says ‘Beowolf demonstrated that digital fonts are data and code, and therefore instructions that can modify themselves.’. Pierre H. tells me, it used to get you banned from printshops (the PostScript execution taking place in the printer, printing a document in Beowolf takes significantly more time and computing resources then printing a regular document).</p>
+    <p>It is only today, when every design agency also produces websites and mobile applications, PostScript has lost its position of the central language. When designing for the screen, a ‘page description language’ is not flexible enough. The defining language of today is probably the markup language HTML, which trades in the (typo)graphic precision of PostScript for the kind of flexibility screen based media require. The main standard for eBooks, ePUB, is based upon it.</p>
+    <h4>The ghost in the shell</h4>
+    <p>Every language needs interpreters. Early laser printers had their own PostScript interpreter, translating the vector image into a rasterisation. You also need an interpreter when you want to rasterise a PostScript document to the screen. A PostScript interpreter that is Free and Open Source (and who’s history also goes back to the 1980ies) is <a href="http://www.ghostscript.com/" style="" target="_self" title="Ghostscript: Ghostscript">Ghostscript</a>.</p>
+    <p>As part of the specification for PostScript, Adobe specifies a set of 35 fonts each PostScript capable device should be able to handle. Because these typefaces are not available under an open source license, GhostScript has a problem creating a Linux version. The solution: the company developing GhostScript convinces the Hamburg based font design company URW to license a set of their generic typefaces under the GPL license:</p>
+    <blockquote>The copyright holder of these fonts, URW++ Design and Development
 Incorporated (the successor to the former well-known URW company), was
 willing to release the fonts with the GPL and the AGFPL because they judged
 (correctly in my opinion) that these particular fonts have become such a
@@ -552,14 +543,11 @@ commodity item, with such low profit margins, that the value to URW++ of
 having URW++`s name widely visible and appreciated on the net is now greater
 than the loss of profit from those future sales that the free licenses will
 cause not to occur.</blockquote>
-
-<p class="byline">e-mail announcing the release of the Ghostscript fonts (<a href="http://web.archive.org/web/20021023155414/http://www.geocrawler.com/archives/3/378/1996/5/0/2064811/" target="_self" style="" title="Geocrawler.com - bug-ghostscript - Finally! Good-quality free (GPL) basic-35 PostScript Type 1 fonts.">via the Wayback machine</a>)</p><p>If PostScript is the DNA of Desktop Publishing, these 35 fonts represent its typographic genes. Thus, while none of the fonts are extremely interesting in their own right, they form a great backdrop for showing procedural transformations on typefaces. Examples are OSP’s <a href="http://ospublish.constantvzw.org/foundry/notcouriersans/" style="" target="_self" title="OSP Foundry :: NotCourierSans">NotCourierSans</a> (chopping the serifs of the Nimbus Mono), <a href="http://ospublish.constantvzw.org/foundry/le-patin-helvete/" style="" target="_self" title="OSP Foundry :: Le Patin Helvète">Patin Helvète</a> (adding serifs to the Nimbus Sans) and <a href="http://ospublish.constantvzw.org/foundry/limousine/" style="" target="_self" title="OSP-foundry :: Limousine">Limousine</a> (attempting to maximally change the character of Nimbus Sans through minimal modifications). And it is because of the free and open source license of the GhostScript fonts, that these alterations and their redistributions are allowed.</p>
-
-<h4>What’s the fuss</h4>
-<p>You can get the original release of the <a href="http://sourceforge.net/projects/gs-fonts/" style="" target="_self" title="Ghostscript fonts | Free Graphics software downloads at SourceForge.net">Ghostscript Fonts on Sourceforge</a>. These are PostScript Type 1 fonts. If you want to continue building on them, the UFO font format is more suitable. That is why we prepared a release of all these font files in this format (an added convenience: less cryptic filenames). We see these fonts as finished, but there are some technical implementation details that could still be improved: you can find more info in the README.txt. More importantly, you might find ways to abuse them for your own ends—if you were formed in the 1990ies, PostScript is in your blood: and these are the fonts you will feel all Oedipal about.</p>
-
-
-<script>
+    <p class="byline">e-mail announcing the release of the Ghostscript fonts (<a href="http://web.archive.org/web/20021023155414/http://www.geocrawler.com/archives/3/378/1996/5/0/2064811/" target="_self" style="" title="Geocrawler.com - bug-ghostscript - Finally! Good-quality free (GPL) basic-35 PostScript Type 1 fonts.">via the Wayback machine</a>)</p>
+    <p>If PostScript is the DNA of Desktop Publishing, these 35 fonts represent its typographic genes. Thus, while none of the fonts are extremely interesting in their own right, they form a great backdrop for showing procedural transformations on typefaces. Examples are OSP’s <a href="http://ospublish.constantvzw.org/foundry/notcouriersans/" style="" target="_self" title="OSP Foundry :: NotCourierSans">NotCourierSans</a> (chopping the serifs of the Nimbus Mono), <a href="http://ospublish.constantvzw.org/foundry/le-patin-helvete/" style="" target="_self" title="OSP Foundry :: Le Patin Helvète">Patin Helvète</a> (adding serifs to the Nimbus Sans) and <a href="http://ospublish.constantvzw.org/foundry/limousine/" style="" target="_self" title="OSP-foundry :: Limousine">Limousine</a> (attempting to maximally change the character of Nimbus Sans through minimal modifications). And it is because of the free and open source license of the GhostScript fonts, that these alterations and their redistributions are allowed.</p>
+    <h4>What’s the fuss</h4>
+    <p>You can get the original release of the <a href="http://sourceforge.net/projects/gs-fonts/" style="" target="_self" title="Ghostscript fonts | Free Graphics software downloads at SourceForge.net">Ghostscript Fonts on Sourceforge</a>. These are PostScript Type 1 fonts. If you want to continue building on them, the UFO font format is more suitable. That is why we prepared a release of all these font files in this format (an added convenience: less cryptic filenames). We see these fonts as finished, but there are some technical implementation details that could still be improved: you can find more info in the README.txt. More importantly, you might find ways to abuse them for your own ends—if you were formed in the 1990ies, PostScript is in your blood: and these are the fonts you will feel all Oedipal about.</p>
+    <script>
 $("h2").hover(
     function() {
         var urw = $(this).attr('title');
@@ -573,7 +561,9 @@ $("h2").hover(
         $(this).text(adobe);
         $(this).attr('title', urw);    }
 )
-</script> 
+</script>
+
+
     <div id="comments" class="comments">
 
 
@@ -876,6 +866,9 @@ $("h2").hover(
   <h4>Latest articles</h4>
   <dl>
   
+  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTF’s, Webfonts and CSS From UFO’s</a></dt>
+  <dd>November  5, 2013  9:57 PM</dd>
+  
   <dt><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">No-one Starts From Scratch: Type Design and the Logic of the Fork</a></dt>
   <dd>October  9, 2013 10:00 PM</dd>
   
@@ -902,9 +895,6 @@ $("h2").hover(
   
   <dt><a href="/and/belgian-newspapers">Belgian Newspapers</a></dt>
   <dd>March 29, 2013 10:17 PM</dd>
-  
-  <dt><a href="/and/parties-in-paris">Parties in Paris</a></dt>
-  <dd>September  7, 2012  3:24 PM</dd>
   
   </dl>
 

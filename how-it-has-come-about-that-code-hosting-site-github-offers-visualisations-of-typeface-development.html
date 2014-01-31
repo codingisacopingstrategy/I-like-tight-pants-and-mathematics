@@ -10,7 +10,6 @@
 <link rel="start" href="/and/" title="Home" />
 <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/and/feed/us/recent_entries.xml" />
 <script type="text/javascript" src="/and/scripts/being/jquery-1.8.0.min.js"></script>
-<script type="text/javascript" src="/and/scripts/being/jquery.syntaxhighlighter.min.js"></script>
 <script type="text/javascript" src="/and/scripts/being/scripts.js"></script>
 <script type="text/javascript" src="/and/mt.js"></script>
 
@@ -53,7 +52,7 @@
   <ul>
     
     
-    <li><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">latest</a></li>
+    <li><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">latest</a></li>
     
     <li><a href="/and/about">about</a></li>
     <li><a href="/and/archives">index</a></li>
@@ -220,35 +219,25 @@ h3.notwork {
     line-height: 16px;
 }
 </style>
+    <h2 class="notwork">It doesn’t work!</h2>
+    <h3 class="notwork">Github appears to have recently pulled this feature.</h3>
+<a href="https://github.com/klepas/open-baskerville/commit/559794180adbdd65327558886d3f4e4169539284" title="Fixed some youthful mistakes, tweaked a few curves. ÃÂ·  5597941 ÃÂ· klepas/open-baskerville">
+      <img src="/and/assets/scaled/to/830/wide/and/called/github_ufo_visual_diff.png" alt="You see two versions of a ¢ character: to the left, labelled ‘old’, a version with an upright bar, to the right, labelled ‘new’, a version with a slanted bar." title="" style="width:830px;height:329px;" />
+    </a>    <blockquote>That's really cool that you guys are pushing for open source collaborative development of typefaces. I thought it was so cool that I stayed up late last night and hacked together some very simple UFO support on GitHub.</blockquote>
+    <p class="byline">Tom Werner</p>
+    <p>With habitus waxing lyrically about the potential of reuse and collaboration in open source type design, I figure it is a good moment to zoom in on the details of a specific font collaboration project. Because it is not self evident how to go about working together on a font.</p>
+    <p>Together with <a href="http://klepas.org/" title="Simon Pascal Klein — Graphic &amp; web design professional">, I lead the open source font project Open Baskerville.</a></p>
+    <p>When setting up the project, Pascal has made some clever choices. Firstly, he provides an attractive looking <a href="http://klepas.org/openbaskerville/" title="Open Baskerville">website</a> that explains the project, and links to the source files. Then, he has put the <a href="https://github.com/klepas/open-baskerville/">source files on GitHub</a>, a code sharing site usually used for the development of software code. GitHub offers tools and practices for versioning files and sharing changes, that can be leveraged for this project. Another good move by Pascal: he does not put the Fontlab file online. Instead, he converts the font to an open file format called <a href="http://unifiedfontobject.org/" title="Unified Font Object">UFO</a>. A ufo file is actually a folder, that represents the typeface as a whole lot of plain text files, exactly the kind of file that is easily shared and processed through tools like GitHub, and readable by both the popular proprietary font editors and the open source font editor FontForge</p>
+    <p>When I come across the project, I ask my friend <a href="http://robmientjes.nl/" title="Hand-crafted pixels and top-shelf touch interfaces by Rob Mientjes">Rob</a> to explain to me what GitHub is. It is a code hosting site that focuses on facilitating the collaboration between developers.</p>
+    <p>Rob also explains to me that GitHub is built upon <a href="http://git-scm.com/">Git</a>. At the time one of the few human beings with the overlapping skill sets of knowing how to use Git and how to design type, Rob teaches me the basics of git in the cafeteria of the art school. Git is built upon an amazing premise: while traditional development is based on centralised repositories, Git’s development model is distributed. Every clone of a repository becomes a bona fide repository in itself. Whichever repository is the main one is but a social convention. Git turns the traditional model on his head, and makes the development of software much more akin to the development of culture: a distributed, abundant process.</p>
+    <p>Ever since I have been working on Open Baskerville, trying not just to make a good font, but to come up with workflows that can be re-used for other open font projects. On the level of workflow, we still have a long way to go before typographic collaboration is easily accessible. The git system used to track the changes on Open Baskerville is developed for programming code and is therefore not always easy to use for designers. But the underlying foundation is very solid, and it plays together well with the UFO format. Because Git and UFO are open, it is well imaginable that a plugin can be written for a font-editor that interfaces with git, so that you can track your changes in the font editor, end send them back to the repository that you pulled the font from.</p>
+    <p>One feature that I figure to be fundamental to be able to convince other designers of the potential of a git-based workflow is a visualisation of the typeface and the changes being made to it. I have reached out to GitHub. I get in touch with Tom Werner, and the following morning there is a mail in my mailbox.</p>
+    <p>Github’s intervention is important in showing the potential of Git and Github for other kinds of projects than just software development. It also shows the power of the UFO format: it is much easier to write this kind of visualisation when you are dealing with an open, hackable format like UFO. We are only just beginning to explore the potential of these new models of collaboration.</p>
+    <p>Micah Rich <a href="http://www.netmagazine.com/features/top-10-open-source-web-fonts" title="The top 10 open source web fonts | Feature | .net magazine">calls</a> Open Baskerville a major inspiration for the <a href="http://www.theleagueofmoveabletype.com/" title="The League of Moveable Type">League of Movable Type</a> (they are <a href="https://github.com/theleagueof">on GitHub too</a>); OSP are working on their own code hosting called Visual Culture that is going to power new releases for their <a href="http://osp.constantvzw.org/foundry/" title="OSP-foundry">foundry</a>.</p>
+<a href="https://github.com/klepas/open-baskerville/tree/master/OpenBaskerville.ufo" title="">
+      <img src="/and/assets/scaled/to/490/wide/and/called/github_ufo_preview.png" alt="You see a screenshot from the GitHub interface. It consists of a file listing of the contents of a UFO folder called OpenBaskerville.ufo. Below extends a preview of all the glyphs contained within this UFO." title="" style="width:490px;height:1175px;" />
+    </a>
 
-<h2 class="notwork">It doesn’t work!</h2>
-<h3 class="notwork">Github appears to have recently pulled this feature.</h3>
-
-<a href="https://github.com/klepas/open-baskerville/commit/559794180adbdd65327558886d3f4e4169539284" title="Fixed some youthful mistakes, tweaked a few curves. ÃÂ·  5597941 ÃÂ· klepas/open-baskerville"><img src="/and/assets/scaled/to/830/wide/and/called/github_ufo_visual_diff.png" alt="You see two versions of a ¢ character: to the left, labelled ‘old’, a version with an upright bar, to the right, labelled ‘new’, a version with a slanted bar." title="" style="width:830px;height:329px;"></a>
-
-<blockquote>That's really cool that you guys are pushing for open source collaborative development of typefaces. I thought it was so cool that I stayed up late last night and hacked together some very simple UFO support on GitHub.</blockquote>
-
-<p class="byline">Tom Werner</p>
-
-<p>With habitus waxing lyrically about the potential of reuse and collaboration in open source type design, I figure it is a good moment to zoom in on the details of a specific font collaboration project. Because it is not self evident how to go about working together on a font.</p>
-
-<p>Together with <a href="http://klepas.org/" title="Simon Pascal Klein&thinsp;&mdash;&thinsp;Graphic &amp; web design professional">, I lead the open source font project Open Baskerville.</p>
-
-<p>When setting up the project, Pascal has made some clever choices. Firstly, he provides an attractive looking <a href="http://klepas.org/openbaskerville/" title="Open Baskerville">website</a> that explains the project, and links to the source files. Then, he has put the <a href="https://github.com/klepas/open-baskerville/">source files on GitHub</a>, a code sharing site usually used for the development of software code. GitHub offers tools and practices for versioning files and sharing changes, that can be leveraged for this project. Another good move by Pascal: he does not put the Fontlab file online. Instead, he converts the font to an open file format called <a href="http://unifiedfontobject.org/" title="Unified Font Object">UFO</a>. A ufo file is actually a folder, that represents the typeface as a whole lot of plain text files, exactly the kind of file that is easily shared and processed through tools like GitHub, and readable by both the popular proprietary font editors and the open source font editor FontForge</p>
-
-<p>When I come across the project, I ask my friend <a href="http://robmientjes.nl/" title="Hand-crafted pixels and top-shelf touch interfaces by Rob Mientjes">Rob</a> to explain to me what GitHub is. It is a code hosting site that focuses on facilitating the collaboration between developers.</p>
-
-<p>Rob also explains to me that GitHub is built upon <a href="http://git-scm.com/">Git</a>. At the time one of the few human beings with the overlapping skill sets of knowing how to use Git and how to design type, Rob teaches me the basics of git in the cafeteria of the art school. Git is built upon an amazing premise: while traditional development is based on centralised repositories, Git’s development model is distributed. Every clone of a repository becomes a bona fide repository in itself. Whichever repository is the main one is but a social convention. Git turns the traditional model on his head, and makes the development of software much more akin to the development of culture: a distributed, abundant process.</p>
-
-<p>Ever since I have been working on Open Baskerville, trying not just to make a good font, but to come up with workflows that can be re-used for other open font projects. On the level of workflow, we still have a long way to go before typographic collaboration is easily accessible. The git system used to track the changes on Open Baskerville is developed for programming code and is therefore not always easy to use for designers. But the underlying foundation is very solid, and it plays together well with the UFO format. Because Git and UFO are open, it is well imaginable that a plugin can be written for a font-editor that interfaces with git, so that you can track your changes in the font editor, end send them back to the repository that you pulled the font from.</p>
-
-<p>One feature that I figure to be fundamental to be able to convince other designers of the potential of a git-based workflow is a visualisation of the typeface and the changes being made to it. I have reached out to GitHub. I get in touch with Tom Werner, and the following morning there is a mail in my mailbox.</p>
-
-<p>Github’s intervention is important in showing the potential of Git and Github for other kinds of projects than just software development. It also shows the power of the UFO format: it is much easier to write this kind of visualisation when you are dealing with an open, hackable format like UFO. We are only just beginning to explore the potential of these new models of collaboration.</p>
-
-<p>Micah Rich <a href="http://www.netmagazine.com/features/top-10-open-source-web-fonts" title="The top 10 open source web fonts | Feature | .net magazine">calls</a> Open Baskerville a major inspiration for the <a href="http://www.theleagueofmoveabletype.com/" title="The League of Moveable Type">League of Movable Type</a> (they are <a href="https://github.com/theleagueof">on GitHub too</a>); OSP are working on their own code hosting called Visual Culture that is going to power new releases for their <a href="http://osp.constantvzw.org/foundry/" title="OSP-foundry">foundry</a>.</p>
-
-<a href="https://github.com/klepas/open-baskerville/tree/master/OpenBaskerville.ufo" title=""><img src="/and/assets/scaled/to/490/wide/and/called/github_ufo_preview.png" alt="You see a screenshot from the GitHub interface. It consists of a file listing of the contents of a UFO folder called OpenBaskerville.ufo. Below extends a preview of all the glyphs contained within this UFO." title="" style="width:490px;height:1175px;"></a>
     <div id="comments" class="comments">
 
 
@@ -333,6 +322,9 @@ h3.notwork {
   <h4>Latest articles</h4>
   <dl>
   
+  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTF’s, Webfonts and CSS From UFO’s</a></dt>
+  <dd>November  5, 2013  9:57 PM</dd>
+  
   <dt><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">No-one Starts From Scratch: Type Design and the Logic of the Fork</a></dt>
   <dd>October  9, 2013 10:00 PM</dd>
   
@@ -359,9 +351,6 @@ h3.notwork {
   
   <dt><a href="/and/belgian-newspapers">Belgian Newspapers</a></dt>
   <dd>March 29, 2013 10:17 PM</dd>
-  
-  <dt><a href="/and/parties-in-paris">Parties in Paris</a></dt>
-  <dd>September  7, 2012  3:24 PM</dd>
   
   </dl>
 

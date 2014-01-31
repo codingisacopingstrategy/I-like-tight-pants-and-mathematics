@@ -10,7 +10,6 @@
 <link rel="start" href="/and/" title="Home" />
 <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/and/feed/us/recent_entries.xml" />
 <script type="text/javascript" src="/and/scripts/being/jquery-1.8.0.min.js"></script>
-<script type="text/javascript" src="/and/scripts/being/jquery.syntaxhighlighter.min.js"></script>
 <script type="text/javascript" src="/and/scripts/being/scripts.js"></script>
 <script type="text/javascript" src="/and/mt.js"></script>
 
@@ -57,7 +56,7 @@
   <ul>
     
     
-    <li><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">latest</a></li>
+    <li><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">latest</a></li>
     
     <li><a href="/and/about">about</a></li>
     <li><a href="/and/archives">index</a></li>
@@ -176,8 +175,8 @@ from urllib import quote
 
 def make_api_query(category, q_continue=""):
     if q_continue:
-        q_continue = '&gcmcontinue=' + q_continue
-    url = 'http://commons.wikimedia.org/w/api.php?action=query&generator=categorymembers&gcmtitle=' + category + q_continue + '&gcmlimit=500&prop=imageinfo&iiprop=url&format=json'
+        q_continue = '&amp;gcmcontinue=' + q_continue
+    url = 'http://commons.wikimedia.org/w/api.php?action=query&amp;generator=categorymembers&amp;gcmtitle=' + category + q_continue + '&amp;gcmlimit=500&amp;prop=imageinfo&amp;iiprop=url&amp;format=json'
     request = json.loads(urllib2.urlopen(url).read())
     if 'error' in request:
         sys.exit(request['error']['info'])
@@ -195,10 +194,12 @@ if __name__ == "__main__":
     if len(sys.argv) != 2:
         sys.exit("usage: python get_commons.py [category]")
     make_api_query(sys.argv[1])</pre>
+    <p><a href="/and/get_commons.py">Download</a></p>
+    <p>
+      <img src="/and/assets/called/funghi.png" style="width:603px;height:390px;" />
+    </p>
 
-<p><a href="/and/get_commons.py">Download</a></p>
 
-<p><img src="/and/assets/called/funghi.png" style="width:603px;height:390px;" /></p>
     <div id="comments" class="comments">
 
 
@@ -347,6 +348,9 @@ Python is not optimized for recursion, but there are styles of programming that 
   <h4>Latest articles</h4>
   <dl>
   
+  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTF’s, Webfonts and CSS From UFO’s</a></dt>
+  <dd>November  5, 2013  9:57 PM</dd>
+  
   <dt><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">No-one Starts From Scratch: Type Design and the Logic of the Fork</a></dt>
   <dd>October  9, 2013 10:00 PM</dd>
   
@@ -373,9 +377,6 @@ Python is not optimized for recursion, but there are styles of programming that 
   
   <dt><a href="/and/belgian-newspapers">Belgian Newspapers</a></dt>
   <dd>March 29, 2013 10:17 PM</dd>
-  
-  <dt><a href="/and/parties-in-paris">Parties in Paris</a></dt>
-  <dd>September  7, 2012  3:24 PM</dd>
   
   </dl>
 
