@@ -147,3 +147,31 @@ pre {
 .sidebar input {
   border: none;
 }
+@media screen and (max-width: 830px) {
+  img {
+    max-width: 100%;
+    height: auto !important;
+  }
+  #bar,
+  #header,
+  .sidebar {
+    display: none;
+  }
+  div#content {
+    margin-top: 0;
+  }
+  div.article {
+    margin-top: 100px;
+  }
+  .aloha-ui-toolbar {
+    top: 32px !important;
+  }
+  .aloha .aloha-ui-toolbar {
+    width: inherit !important;
+  }
+  .aloha-ui-toolbar .ui-widget-header {
+    background: #777 !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+    background-image: none !important;
+  }
+}
