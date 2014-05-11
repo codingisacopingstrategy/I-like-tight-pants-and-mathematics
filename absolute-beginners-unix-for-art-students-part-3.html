@@ -232,25 +232,28 @@
     <p><a href="/and/assets/called/sex_differences_are_here_to_stay.jpg">
         <img src="/and/assets/scaled/to/830/wide/and/called/sex_differences_are_here_to_stay.jpg" alt="In what is probably an office space or design studio (you can make out a laser printer, the back of a flatscreen monitor) a text is tacked to the wall constructed of a number of A4 sheets collated together: SEX DIFFERENCES ARE HERE TO STAY" style="width:830px;height:553px;" title="" />
       </a></p>
-    <p>After working through the <a href="/and/absolute-beginners-unix-for-art-students-part-1" title="I like tight pants and absolute beginners: unix for art students Ã¢â¬â part 1">first</a><a href="/and/absolute-beginners-unix-for-art-students-part-2" title="I like tight pants and absolute beginners: unix for art students Ã¢â¬â part 2">two</a><a href="/and/installing-compilers" title="I like tight pants and installing compilers">parts</a> of Absolute Beginners: Unix for Art Students <a href="/and/i-have-relocated-to-brussels" title="I like tight pants and i have relocated to brussels">Fabien</a> asked me how you can than actually use the terminal to make something. That is a good question. In <a href="/and/absolute-beginners-unix-for-art-students-part-1" title="I like tight pants and absolute beginners: unix for art students Ã¢â¬â part 1">part 1</a> gilt writes that it is commendable to find a more intimate way of dealing with your computer, but that does not enter the question <em>what</em> you could be doing with your terminal. Taking cues from a <a href="http://schr.fr/hypermap" title="HYPERMAP | schr.fr">design installation</a> we developed for the Performance Studies International festival, I would like to show an example of using the command line to create graphic images, and the kind of design processes that it can accommodate.</p>
+    <p>After working through the <a href="/and/absolute-beginners-unix-for-art-students-part-1" title="I like tight pants and absolute beginners: unix for art students Ã¢â¬â part 1">first</a><a href="/and/absolute-beginners-unix-for-art-students-part-2" title="I like tight pants and absolute beginners: unix for art students — part 2">two</a><a href="/and/installing-compilers" title="I like tight pants and installing compilers">parts</a> of Absolute Beginners: Unix for Art Students <a href="/and/i-have-relocated-to-brussels" title="I like tight pants and i have relocated to brussels">Fabien</a> asked me how you can than actually use the terminal to make something. That is a good question. In <a href="/and/absolute-beginners-unix-for-art-students-part-1" title="I like tight pants and absolute beginners: unix for art students — part 1">part 1</a> glit writes that it is commendable to find a more intimate way of dealing with your computer, but that does not enter the question <em>what</em> you could be doing with your terminal. Taking cues from a <a href="http://schr.fr/hypermap" title="HYPERMAP | schr.fr">design installation</a> we developed for the Performance Studies International festival, I would like to show an example of using the command line to create graphic images, and the kind of design processes that it can accommodate.</p>
     <h3>Building pipelines</h3>
     <p>The unix command line is built around passing around text. Programs generate text, and other programs can take this as their input. You can start to create whole ‘pipelines’ of programs all connected together.</p>
     <p>As our input today we take the <a href="http://twitter.com/jennyholzer" title="Twitter | Jenny Holzer">tweets of Jenny Holzer</a>. I do not know if you’ve heard of her, but Jenny Holzer is an artist who’s work prefigures contemporary social media: long before the advent of Facebook and twitter she has been claiming public space with her written truisms that, <a href="http://i.liketightpants.net/and/i-like-ziggy-over-zarathustra#jennyholzer" title="I like tight pants and ziggy over zarathustra">like habitus says</a>, always precipitate on the edge between worn clichés and individual confessions (<em>with you inside me comes the knowledge of my own death</em>).</p>
     <p>Seeing how Holzer has built her oeuvre and her career around the logic of the status update since well before it existed, it was a small step for her to take her work to twitter.</p>
     <p>Today we are not going to visit the twitter website, we are going to access it via the terminal. To get the latest tweet from Jenny Holzer we use the command:</p>
-    <pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1"</pre>
+    <pre><strike>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1"</strike>
+curl --silent https://twitter.com/jennyholzer</pre>
     <p>The output will be something like:</p>
     <pre>[{"coordinates":null,"truncated":false,"place":null,"geo":null,"in_reply_to_user_id":null,"retweet_count":36,"favorited":false,"in_reply_to_status_id_str":null,"user":{"listed_count":1572,"contributors_enabled":false,"lang":"en","profile_text_color":"000000","protected":false,"location":"","statuses_count":359,"profile_background_image_url":"http:\/\/a0.twimg.com\/images\/themes\/theme1\/bg.png","name":"Jenny Holzer","default_profile":false,"profile_link_color":"D73030","url":"http:\/\/en.wikipedia.org\/wiki\/Jenny_Holzer","utc_offset":-18000,"description":"Abuse of power comes as no surprise.","friends_count":0,"profile_background_color":"D73030","following":true,"profile_background_tile":false,"followers_count":37419,"profile_image_url":"http:\/\/a2.twimg.com\/profile_images\/25643062\/jenny_holzer_normal.jpg","default_profile_image":false,"geo_enabled":false,"created_at":"Wed May 30 19:07:47 +0000 2007","profile_sidebar_fill_color":"F0F0F0","profile_background_image_url_https":"https:\/\/si0.twimg.com\/images\/themes\/theme1\/bg.png","favourites_count":0,"is_translator":false,"show_all_inline_media":false,"follow_request_sent":false,"notifications":false,"profile_sidebar_border_color":"000000","profile_image_url_https":"https:\/\/si0.twimg.com\/profile_images\/25643062\/jenny_holzer_normal.jpg","screen_name":"jennyholzer","id_str":"6451032","verified":false,"id":6451032,"profile_use_background_image":false,"time_zone":"Eastern Time (US &amp; Canada)"},"in_reply_to_screen_name":null,"created_at":"Fri Jan 13 15:34:55 +0000 2012","in_reply_to_user_id_str":null,"retweeted":false,"source":"\u003Ca href=\"http:\/\/twitter.com\/#!\/download\/iphone\" rel=\"nofollow\"\u003ETwitter for iPhone\u003C\/a\u003E","id_str":"157848105683922945","in_reply_to_status_id":null,"id":157848105683922945,"contributors":null,"text":"SEX DIFFERENCES ARE HERE TO STAY"}]</pre>
     <p>Curl is a program that gets the contents of a document on the web, and prints it out to the terminal.</p>
     <p>We have requested the status from twitters API, which is a way for twitter to present the data in a format that is more easy for computer programs to consume. It uses JSON format, which is great and all, but it’s just a little bit to new-fashioned for our means: we want plain old fashioned text.</p>
     <p>To go from the JSON to the old fashioned text, we are constructing the first part of our timeline.</p>
     <p>Try:</p>
-    <pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\([^"]*\)".*}]/\1/g'</pre>
+    <pre><strike>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\([^"]*\)".*}]/\1/g'</strike>
+curl --silent https://twitter.com/jennyholzer | grep -m 1 "tweet-text" | sed 's/.*&gt;\([^&lt;]*\)&lt;.*/\1/g'</pre>
     <p>The output is:</p>
     <pre>SEX DIFFERENCES ARE HERE TO STAY</pre>
     <p>The <code>|</code> symbol feeds the output from the curl command to the sed command. The exact arguments we are using for sed we will not go into today, because it is a bit daunting if you are just getting into this sort of thing, but it suffices to understand that sed manipulates it input so that everything but the little part inside text=" " is maintained.</p>
     <p>Now we have the plain text as output, which we could use as input for another program. For example:</p>
-    <pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\([^"]*\)".*}]/\1/g' | figlet</pre>
+    <pre><strike>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\([^"]*\)".*}]/\1/g' | figlet</strike>
+curl --silent https://twitter.com/jennyholzer | grep -m 1 "tweet-text" | sed 's/.*&gt;\([^&lt;]*\)&lt;.*/\1/g' | figlet</pre>
     <pre> ____  _______  __
 / ___|| ____\ \/ /
 \___ \|  _|  \  / 
@@ -279,7 +282,8 @@
     <p>We are going to go a bit further with this. What we want to do is layout this plain text in such a way that we could display it or print it. For this we are going to use a program called pango-view. It comes as part of pango, which we will have to install:</p>
     <pre>brew install pango</pre>
     <p>In fact, pango-view, spoils the fun somewhat, because it doesn’t let you use it as part of a pipeline. We’ll have to store the Jenny tweet into a text file:</p>
-    <pre>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\([^"]*\)".*}]/\1/g' &gt; jennytweet.txt</pre>
+    <pre><strike>curl "http://twitter.com/statuses/user_timeline/jennyholzer.json?count=1" | sed 's/.*"text":"\([^"]*\)".*}]/\1/g' &gt; jennytweet.txt</strike>
+curl --silent https://twitter.com/jennyholzer | grep -m 1 "tweet-text" | sed 's/.*&gt;\([^&lt;]*\)&lt;.*/\1/g' &gt; jennytweet.txt</pre>
     <p>The <code>&gt;</code> lets you store text output into a file. So we are storing the output of are pipeline, the plain text tweet, into the file <code>jennytweet.txt</code>.</p>
     <p>Pango-view lets us lay-out the text and output it as a picture:</p>
     <pre>pango-view jennytweet.txt -q -o jennytweet.png</pre>
@@ -313,8 +317,6 @@ brew install poster</pre>
     <p>VoilÃÂ&nbsp;. One can open this in preview and print it. Heck, one can even print it from the command line:</p>
     <pre>lpr jennyposter.ps</pre>
     <p>Let’s hang it on the wall.</p>
-
-
     <div id="comments" class="comments">
 
 
