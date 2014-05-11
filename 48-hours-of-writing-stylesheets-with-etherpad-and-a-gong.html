@@ -287,7 +287,18 @@
 
 
 
-<p>One would figure, because the Titanpad we are using here does allow to export a <a href="http://osp.titanpad.com/ep/pad/export/160/latest?format=txt" rel="nofollow">plain text version of the pad</a>. The problem is, this old version of Etherpad needs a ‘cookie’ before it allows a download. In the newest Etherpad that is not at a problem.&nbsp;<span style="font-size: 14px;">So we can try to link it directly:</span></p><pre>&lt;link rel="stylesheet" href="http://etherpad.fr/p/osp-css/export/txt" type="text/css" /&gt;</pre><p>It still does not work. Examing the metadata from the request (the ‘headers’) from the command line tells us why:</p><pre>curl -i <a href="http://etherpad.fr/p/osp-css/export/txt" rel="nofollow">http://etherpad.fr/p/osp-css/export/txt</a><br>HTTP/1.1 200 OK<br>X-Powered-By: Express<br>Server: Etherpad-Lite f478f99 (http://etherpad.org)<br>Access-Control-Allow-Origin: *<br>Content-Type: text/plain<br>Content-Disposition: attachment; filename="osp-css.txt"<br>Content-Length: 5980ETag: "-661067728"<br>Set-Cookie: express_sid=s%3AUqYrsj8ZbMvBr6HRmRTqIo1v.19jQ%2F8NhfN2SZTTJUCMl3qXsDRnQBZfHTKeUICIFRMg; Path=/; HttpOnly<br>Date: Thu, 09 May 2013 21:04:46 GMT<br>Connection: keep-alive</br></br></br></br></br></br></br></br></br></br></pre><p>Every HTTP response contains information about what kind of data is being sent. The stylesheet is transmitted with the mime-type <code>text/plain</code>;. Browsers will only accept stylesheets transferred with the mime-type <code>text/css</code>. You need to set up a little proxy, that gets the stylesheet, and sends it out again with the changed mimetype.</p><p>Here is a little Ruby script that does just that:</p><pre>require 'sinatra'
+
+<p>One would figure, because the Titanpad we are using here does allow to export a <a href="http://osp.titanpad.com/ep/pad/export/160/latest?format=txt" rel="nofollow">plain text version of the pad</a>. The problem is, this old version of Etherpad needs a ‘cookie’ before it allows a download. In the newest Etherpad that is not at a problem.&nbsp;<span style="font-size: 14px;">So we can try to link it directly:</span></p><pre>&lt;link rel="stylesheet" href="http://etherpad.fr/p/osp-css/export/txt" type="text/css" /&gt;</pre><p>It still does not work. Examing the metadata from the request (the ‘headers’) from the command line tells us why:</p><pre>curl -i <a href="http://etherpad.fr/p/osp-css/export/txt" rel="nofollow">http://etherpad.fr/p/osp-css/export/txt</a>
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Server: Etherpad-Lite f478f99 (http://etherpad.org)
+Access-Control-Allow-Origin: *
+Content-Type: text/plain
+Content-Disposition: attachment; filename="osp-css.txt"
+Content-Length: 5980ETag: "-661067728"
+Set-Cookie: express_sid=s%3AUqYrsj8ZbMvBr6HRmRTqIo1v.19jQ%2F8NhfN2SZTTJUCMl3qXsDRnQBZfHTKeUICIFRMg; Path=/; HttpOnly
+Date: Thu, 09 May 2013 21:04:46 GMT
+Connection: keep-alive</pre><p>Every HTTP response contains information about what kind of data is being sent. The stylesheet is transmitted with the mime-type <code>text/plain</code>;. Browsers will only accept stylesheets transferred with the mime-type <code>text/css</code>. You need to set up a little proxy, that gets the stylesheet, and sends it out again with the changed mimetype.</p><p>Here is a little Ruby script that does just that:</p><pre>require 'sinatra'
 require 'net/http'<br><br>get '/osp-live.css' do
   css = Net::HTTP.get_response(URI.parse("http://etherpad.fr/p/osp-css/export/txt")).body
   content_type 'text/css'
@@ -300,9 +311,10 @@ end
 
 
 
+
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/programmatically-thumb-18x18-6.png" width="18" height="18"  />
-          by bnf - <a href="http://i.liketightpants.net/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong.html#comment-223"><abbr class="published" title="2013-05-07T11:11:24+01:00">May  7, 2013 11:11 AM</abbr></a><br />
+          by bnf - <a href="http://i.liketightpants.net/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong.html#comment-223"><abbr class="published" title="2013-05-07T12:11:24+01:00">May  7, 2013 12:11 PM</abbr></a><br />
     <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(223, 'bnf')">Reply</a></p>
     </div>
 
@@ -459,11 +471,6 @@ echo $output;
     
 
     
-     <!-- If comment has a parent comment. We ignore this, as we just want the top-level-parent comments -->
-        
-    
-
-    
      <!-- If comment doesn't have a top-level-parent -->
             
     <div id="comment-224" class="comment">
@@ -493,13 +500,77 @@ echo $output;
             
     <div id="comment-228" class="comment comment-reply">
     
+  <p>
+           You need to leave a computer one that will do the screenshots for you. If you’ve installed webkit2png
+               
+            1
+           
 
-<p>You need to leave a computer one that will do the screenshots for you. If you’ve installed webkit2png1, the following line in the terminal will have you take a screenshot each 5 minutes:</p>while true;                                                  \<br>do webkit2png -F -W 1280 -H 720 <a href="http://osp.constantvzw.org/;" rel="nofollow">http://osp.constantvzw.org/;</a> \<br>sleep 300;                                                   \<br>done<br><p></p><p>The images are all cropped to 1280x720 pixels, already a standard HD movie size. Now we want to convert all the images we captured into a movie file.</p><p>The open source FFMPEG package is great for this, except it can only deal with file names that contain&nbsp;continuously&nbsp;incrementing numbers. You can’t skip one. This command will change all your images into filenames like 00000.png, 00001.png, 00002.png etcetera3:</p><p></p><pre>c=0; for i in *.png; do mv "$i" "`printf %05d $c`.png"; c=$((c+1)); done</pre><p></p><p>And run the conversion:</p><p></p><pre>ffmpeg -r 3 -i %05d.png -f mov -vcodec qtrle -pix_fmt rgb24 osp.web.movie.mov</pre><p></p><p><span style="font-size: 14px;">The compression, or codec, is lossless in this case. Popular&nbsp;</span>video codecs like mp4 are optimised for camera footage like jpeg is optimised for photos—here we use the video equivalent of png, the Quicktime Animation codec4.</p><p><span style="font-size: 14px;">You set the framerate, the number of frames per second with the -r option, in this case 3 frames per second .</span></p><ol><li>Webkit2png is OS X only. PhantomJS runs on Linux (even on servers).</li><li>Adapted from:&nbsp;<a href="http://thp.io/2007/12/creating-stopmotion-movies-with-ffmpeg.html" rel="nofollow"><a href="http://thp.io/2007/12/creating-stopmotion-movies-with-ffmpeg.html" rel="nofollow">http://thp.io/2007/12/creating-stopmotion-movies-with-ffmpeg.html</a></a></li><li>Adapted from:&nbsp;<a href="http://superuser.com/questions/347433/how-to-create-an-uncompressed-avi-from-a-series-of-1000s-of-png-images-using-ff" rel="nofollow"><a href="http://superuser.com/questions/347433/how-to-create-an-uncompressed-avi-from-a-series-of-1000s-of-png-images-using-ff" rel="nofollow">http://superuser.com/questions/347433/how-to-create-an-uncompressed-avi-from-a-series-of-1000s-of-png-images-using-ff</a></a>&nbsp;in the end the video will probably be transcoded into a lossy format when you upload it onto Youtube/Vimeo… but this way you avoid doing the lossy encoding twice, and you have a full fidelity version to archive.</li></ol>
+           , the following line in the terminal will have you take a screenshot each 5 minutes:
+          </p>
 
+          while true;                                                  \
+          <br>
+          do webkit2png -F -W 1280 -H 720 <a href="http://osp.constantvzw.org/;" rel="nofollow">http://osp.constantvzw.org/;</a> \
+          <br>
+          sleep 300;                                                   \
+          <br>
+          done
+          <br>  <p></p>
+  <p>
+           The images are all cropped to 1280x720 pixels, already a standard HD movie size. Now we want to convert all the images we captured into a movie file.
+          </p>
+  <p>
+           The open source FFMPEG package is great for this, except it can only deal with file names that contain&nbsp;continuously&nbsp;incrementing numbers. You can’t skip one. This command will change all your images into filenames like 00000.png, 00001.png, 00002.png etcetera
+               
+            3
+           
+
+           :
+          </p>
+  <p></p>
+  <pre>c=0; for i in *.png; do mv "$i" "`printf %05d $c`.png"; c=$((c+1)); done</pre>
+  <p></p>
+  <p>
+           And run the conversion:
+          </p>
+  <p></p>
+  <pre>ffmpeg -r 3 -i %05d.png -f mov -vcodec qtrle -pix_fmt rgb24 osp.web.movie.mov</pre>
+  <p></p>
+  <p><span style="font-size: 14px;">
+            The compression, or codec, is lossless in this case. Popular
+           </span>
+           video codecs like mp4 are optimised for camera footage like jpeg is optimised for photos—here we use the video equivalent of png, the Quicktime Animation codec
+               
+            4
+           
+
+           .
+          </p>
+  <p><span style="font-size: 14px;">
+            You set the framerate, the number of frames per second with the -r option, in this case 3 frames per second .
+           </span></p>
+  <ol>
+    <li>
+            Webkit2png is OS X only. PhantomJS runs on Linux (even on servers).
+           </li>
+    <li>
+            Adapted from:
+            <a href="http://thp.io/2007/12/creating-stopmotion-movies-with-ffmpeg.html" rel="nofollow">
+             <a href="http://thp.io/2007/12/creating-stopmotion-movies-with-ffmpeg.html" rel="nofollow">http://thp.io/2007/12/creating-stopmotion-movies-with-ffmpeg.html</a>
+            </a></li>
+    <li>
+            Adapted from:
+            <a href="http://superuser.com/questions/347433/how-to-create-an-uncompressed-avi-from-a-series-of-1000s-of-png-images-using-ff" rel="nofollow">
+             <a href="http://superuser.com/questions/347433/how-to-create-an-uncompressed-avi-from-a-series-of-1000s-of-png-images-using-ff" rel="nofollow">http://superuser.com/questions/347433/how-to-create-an-uncompressed-avi-from-a-series-of-1000s-of-png-images-using-ff</a>
+            </a>
+            in the end the video will probably be transcoded into a lossy format when you upload it onto Youtube/Vimeo… but this way you avoid doing the lossy encoding twice, and you have a full fidelity version to archive.
+           </li>
+</ol>
 </br></br></br></br>
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/programmatically-thumb-18x18-6.png" width="18" height="18"  />
-          by bnf - <a href="http://i.liketightpants.net/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong.html#comment-228"><abbr class="published" title="2013-05-20T19:47:27+01:00">May 20, 2013  7:47 PM</abbr></a><br />
+          by bnf - <a href="http://i.liketightpants.net/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong.html#comment-228"><abbr class="published" title="2013-05-20T20:47:27+01:00">May 20, 2013  8:47 PM</abbr></a><br />
     <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(228, 'bnf')">Reply</a></p>
     </div>
 
@@ -509,6 +580,11 @@ echo $output;
             
         
     
+    
+
+    
+     <!-- If comment has a parent comment. We ignore this, as we just want the top-level-parent comments -->
+        
     
 
     
@@ -650,7 +726,7 @@ echo $output;
   <h4>Latest articles</h4>
   <dl>
   
-  <dt><a href="/and/graphic-design-is-a-nostalgic-field">Graphic Design Is A Nostalgic Field</a></dt>
+  <dt><a href="/and/graphic-design-is-a-nostalgic-field">      Graphic Design Is A Nostalgic Field     </a></dt>
   <dd>February 19, 2014  8:02 PM</dd>
   
   <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTF’s, Webfonts and CSS From UFO’s</a></dt>
@@ -721,7 +797,7 @@ echo $output;
         
     
     
-            <li><strong>tellyou:</strong>  And how did you make the video? <a href="/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong#comment-224" title="full comment on: 48 Hours of Writing Stylesheets with Etherpad and a Gong">read more</a></li>
+            <li><strong>bnf:</strong>  One would figure, because the Titanpad we are using <a href="/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong#comment-223" title="full comment on: 48 Hours of Writing Stylesheets with Etherpad and a Gong">read more</a></li>
         
         </ul>
         
