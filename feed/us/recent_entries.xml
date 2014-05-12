@@ -4,17 +4,17 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2014-02-20T12:41:29Z</updated>
+    <updated>2014-05-11T21:07:49Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
 
 <entry>
-    <title>Graphic Design Is A Nostalgic Field</title>
+    <title>      Graphic Design Is A Nostalgic Field     </title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/graphic-design-is-a-nostalgic-field" />
     <id>tag:i.liketightpants.net,2014:/and//1.91</id>
 
     <published>2014-02-19T19:02:50Z</published>
-    <updated>2014-02-20T12:41:29Z</updated>
+    <updated>2014-05-11T21:07:49Z</updated>
 
     <summary>Graphic design is a nostalgic field. Even in the art schools, the students want to make books and posters.</summary>
     <author>
@@ -25,22 +25,52 @@
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-    <iframe src="//player.vimeo.com/video/87130241?title=0&amp;byline=0&amp;portrait=0&amp;color=3e4f5f" width="830" height="468" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-    <p class="byline">Pierre Huyghebaert (r) and Eric Schrijver from <a href="http://osp.constantvzw.org/" class="aloha-link-text" target="_self" title="OSP (Open Source Publishing) →">OSP Open Source Publishing</a>, in an excerpt from <a href="https://vimeo.com/50827775" class="aloha-link-text" target="_self" title="Conférence Open Source Publishing - Pierre Huyghebaert &amp; Eric Schrijver on Vimeo">their presentation</a> at the ESA Pyrénées.&nbsp;</p>
-    <p>Graphic design is a nostalgic field. Even in the art schools, the students want to make books and posters. Designing for the web has little prestige. I could say that I want students to design for the screen, and to actively engage with their digital tools, but I first need to know what it is that makes it so attractive to design for the printing press.</p>
-    <p>Books and posters nowadays start their lives on a computer in proprietary software. Many of my colleagues see the software as a neutral tool, subservient to their creativity. Therefore, the software can be used as-is. For me, software is a piece of culture, an embodiment of a certain way of thinking. The software partakes in the creation. A truly rich visual culture can only come about if designers manipulate, appropriate and subvert the software technology they use.</p>
-    <p>Hacking analogue technology is a physical affair. Cracking open software requires a different sort of interaction, with programming interfaces and computer files. It requires a new set of skills that takes time and enthousiasm to attain. It is this enthousiasm that is often lacking. In fact, my students often seem scared of digital technology.</p>
-    <p>So what are today's nascent designers scared of? The comparison with their attitude to printing technology shows it is not necessarily technology in general that designers are frightened of, nor is it geekiness. Designers actually take pride in the geeky details of their craft when they are related to the printing process, knowing about things like spot colours, paper stocks and binding methods. Is it a matter of differing cultures? Even though design is applied mathematics, most design majors study the humanities in high school. Code seems to belong to this other world, the world of the kids who choose mathematics. The other geeks.</p>
-    <p>If the divide is social, then a gentle introduction to the other culture, the culture of programming, itself embedded in the culture of science and mathematics, should form part of a contemporary design curriculum.</p>
-    <p>Or another strategy, can we force the students to get their hands dirty? With code? No more mockups. That's an efficient way to introduce the nature of the digital. There is always the question of whether designers should learn to code. I think they should.</p>
-    <p>As a student, I came across a printing press that worked with movable type. I spent a day setting a simple poem. It's dirty, precise, frustrating work. At the end of the day I printed my poem, and only after I had cleaned the press, I spotted the spelling error.</p>
-    <p>As tedious as the process had been, this day taught me so much about the nature of printing technology. My understanding of my profession really deepened. I know why uppercase is called uppercase (uppercase letters are stored above the lowercase ones); why leading, the space between lines, is called leading (it is strips of lead). I have an understanding of how all of the classical book layout conventions are related to the process of setting a block of movable type.</p>
-    <p>Even though I never set anything in movable type again, I understand printing technology to a further extent. The same is true for code. Going through the tedious process of writing a computer program will change your understanding of the medium you work with all the time. Your dirty hands will forever influence any interaction you have with programmers.</p>
-
-<div id="aside" style="padding-top: 513px;">
-  An earlier version of this article was published in <a href="http://libregraphicsmag.com/">Libre Graphics Magazine</a> 1.4 under the title ‘Will these hands never get dirty’.
-</div>
-]]>
+    <iframe allowfullscreen="" frameborder="0" height="468" mozallowfullscreen="" src="//player.vimeo.com/video/87130241?title=0&amp;byline=0&amp;portrait=0&amp;color=3e4f5f" webkitallowfullscreen="" width="830"></iframe>
+    <p class="byline">
+       Pierre Huyghebaert (r) and Eric Schrijver from
+       <a class="aloha-link-text" href="http://osp.constantvzw.org/" target="_self" title="OSP (Open Source Publishing) →">
+        OSP Open Source Publishing
+       </a>
+       , in an excerpt from
+       <a class="aloha-link-text" href="https://vimeo.com/50827775" target="_self" title="Conférence Open Source Publishing - Pierre Huyghebaert &amp; Eric Schrijver on Vimeo">
+        their presentation
+       </a>
+       at the ESA Pyrénées.
+      </p>
+    <p>
+       Graphic design is a nostalgic field. Even in the art schools, the students want to make books and posters. Designing for the web has little prestige. I could say that I want students to design for the screen, and to actively engage with their digital tools, but I first need to know what it is that makes it so attractive to design for the printing press.
+      </p>
+    <p>
+       Books and posters nowadays start their lives on a computer in proprietary software. Many of my colleagues see the software as a neutral tool, subservient to their creativity. Therefore, the software can be used as-is. For me, software is a piece of culture, an embodiment of a certain way of thinking. The software partakes in the creation. A truly rich visual culture can only come about if designers manipulate, appropriate and subvert the software technology they use.
+      </p>
+    <p>
+       Hacking analogue technology is a physical affair. Cracking open software requires a different sort of interaction, with programming interfaces and computer files. It requires a new set of skills that takes time and enthousiasm to attain. It is this enthousiasm that is often lacking. In fact, my students often seem scared of digital technology.
+      </p>
+    <p>
+       So what are today's nascent designers scared of? The comparison with their attitude to printing technology shows it is not necessarily technology in general that designers are frightened of, nor is it geekiness. Designers actually take pride in the geeky details of their craft when they are related to the printing process, knowing about things like spot colours, paper stocks and binding methods. Is it a matter of differing cultures? Even though design is applied mathematics, most design majors study the humanities in high school. Code seems to belong to this other world, the world of the kids who choose mathematics. The other geeks.
+      </p>
+    <p>
+       If the divide is social, then a gentle introduction to the other culture, the culture of programming, itself embedded in the culture of science and mathematics, should form part of a contemporary design curriculum.
+      </p>
+    <p>
+       Or another strategy, can we force the students to get their hands dirty? With code? No more mockups. That's an efficient way to introduce the nature of the digital. There is always the question of whether designers should learn to code. I think they should.
+      </p>
+    <p>
+       As a student, I came across a printing press that worked with movable type. I spent a day setting a simple poem. It's dirty, precise, frustrating work. At the end of the day I printed my poem, and only after I had cleaned the press, I spotted the spelling error.
+      </p>
+    <p>
+       As tedious as the process had been, this day taught me so much about the nature of printing technology. My understanding of my profession really deepened. I know why uppercase is called uppercase (uppercase letters are stored above the lowercase ones); why leading, the space between lines, is called leading (it is strips of lead). I have an understanding of how all of the classical book layout conventions are related to the process of setting a block of movable type.
+      </p>
+    <p>
+       Even though I never set anything in movable type again, I understand printing technology to a further extent. The same is true for code. Going through the tedious process of writing a computer program will change your understanding of the medium you work with all the time. Your dirty hands will forever influence any interaction you have with programmers.
+      </p>
+<div class="" id="aside" style="padding-top: 513px;">
+       An earlier version of this article was published in
+       <a href="http://libregraphicsmag.com/">
+        Libre Graphics Magazine
+       </a>
+       1.4 under the title ‘Will these hands never get dirty’.
+      </div>]]>
         
     </content>
 </entry>
@@ -929,39 +959,6 @@ $("h2").hover(
 </entry>
 
 <entry>
-    <title>Belgian Newspapers</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/belgian-newspapers" />
-    <id>tag:i.liketightpants.net,2013:/and//1.67</id>
-
-    <published>2013-03-29T21:17:00Z</published>
-    <updated>2013-03-29T22:44:06Z</updated>
-
-    <summary>This computer, inside the Belgian Royal Library, has no access to internet, no usb ports, and no connection to a printer. It shows you a digital version of a Belgian newspaper, Le Drapeau Rouge.</summary>
-    <author>
-        <name>habitus</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[
-    <p>
-      <img src="/and/assets/called/belgian_newspaper_le_drapeau_rouge.jpg" alt="You see a computer monitor, in portrait orientation, showing the front page of a newspaper (displayed as a PDF inside Internet Explorer): ‘Le drapeau rouge’, the Belgian daily communist newspaper. Headline: ‘Molotov propose la réduction générale des armements’. " title="" style="width:1029px;height:1457px;margin-left:-199px;z-index:-1111;" />
-    </p>
-    <div style="margin-left:50px;margin-top: -138px;">
-      <p>This computer is situated in Belgium’s Royal Library. It offers you access to an internal network of 300.000 pages of Belgian periodicals, produced between 1831 an 1945.&nbsp;<span style="font-size: 14px;">It has no access to internet, no usb ports, and no connection to a printer.</span></p>
-      <p><span style="font-size: 14px;">If the library allows any digital distribution of the materials outside of the library walls they risk claims of copyright holders.</span></p>
-      <p>During&nbsp;<a href="http://www.kbr.be/actualites/domaineDomein/domainePublic.html" title="Bibliothèque royale de Belgique : Fêtons le Domaine Public" style="">Public Domain Day</a> (<a href="http://www.kbr.be/actualites/domaineDomein/publiekDomein.html" title="Koninklijke Bibliotheek van België :Gelukkig Publiek Domein!">NL</a>) <span style="font-size: 14px;">Librarian Marc D'Hoore explains: determining the authorship of a newspaper is difficult. Much of the work is anonymous or pseudononymous. There are not always clear contracts between the publishers and the authors. You do not know who owns the copyright, and you do not know when it will pass into the public domain.</span></p>
-      <p>Because of its mission of preservation, the Library needed to scan these materials—the paper is of extremely poor quality and disintegrating. But the Library also has a mission to facilitate access to its materials in any way it can.</p>
-      <p>Digitalisation seems to offer a great potential to make the material from the collections more accessible. Once scanned, material can be indexed, and put online, and be available to everyone with an internet connection. In potential. In reality, the Royal Library can not do this, because it would open itself to all kinds of claims of damages by copyright holders.</p>
-</div>
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
     <title>Parties in Paris</title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/parties-in-paris" />
     <id>tag:i.liketightpants.net,2012:/and//1.53</id>
@@ -1114,170 +1111,79 @@ for glyph in font.glyphs():
 </entry>
 
 <entry>
-    <title>Programmatically manipulating typefaces</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/programmatically-manipulating-typefaces" />
-    <id>tag:i.liketightpants.net,2012:/and//1.50</id>
+    <title>Drawing logo’s</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/drawing-logos" />
+    <id>tag:i.liketightpants.net,2012:/and//1.49</id>
 
-    <published>2012-05-02T10:43:36Z</published>
-    <updated>2013-02-09T22:04:13Z</updated>
+    <published>2012-04-24T15:06:26Z</published>
+    <updated>2012-12-25T22:57:57Z</updated>
 
-    <summary>The structure of a typeface is predictable enough to make it fun to manipulate it with computer scripts.</summary>
+    <summary>You see a frog with a crown, constructed of two yellow vertexes.</summary>
     <author>
-        <name>bnf</name>
+        <name>baseline</name>
         
     </author>
     
     
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-    <style>
-@font-face {
-    font-family: 'LeagueGothicRomanRomanRotated';
-    src: url('/and/assets/called/leaguegothic-rotated-webfont.eot');
-    src: url('/and/assets/called/leaguegothic-rotated-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/and/assets/called/leaguegothic-rotated-webfont.woff') format('woff'),
-         url('/and/assets/called/leaguegothic-rotated-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+    <script src="/and/scripts/being/processing-1.3.6.min.js"></script>
+    <canvas data-processing-sources="/and/scripts/being/osp-frog.pde">With canvas enabled you would see a frog with a crown, constructed of two yellow vertexes.</canvas>
+    <p>In London, after <a href="http://www.sebastiensanfilippo.be/" title="Sebastien Sanfilippo's Portfolio">Seb</a> has explained <a href="http://i.liketightpants.net/and/seb-explaining-love-and-bezier-curves" title="I like tight pants and seb explaining love and bezier curves">love and bezier curves</a> to jenseits, <a href="http://www.oep-h.com/" title="OEP-H">Pierre</a> sets up a way to communicate with our <a href="http://www.scribus.net/canvas/Scribus" title="Scribus.net">DTP-software</a> via IRC chat. Seb starts to scribble coordinates, sends through a number of commands, and up on the beamer appears a stark re-imagining of the <a href="http://ospublish.constantvzw.org/" title="OSP — Open Source Publishing – Design Tools For Designers">OSP</a> logo.</p>
+    <p>Seb has made direct use of one of the basic principles in computer graphics: giving instructions to draw to a virtual canvas. As a graphic designer you are always using programs like Illustrator or <a href="http://inkscape.org/" title="Inkscape. Draw Freely.">Inkscape</a> to create these kind of instructions so it is refreshing to do so yourself.</p>
+    <p>This is the code used, adapted to <a href="http://processingjs.org/" title="Processing.js">Processing.js</a>:</p>
+    <pre>size(600,600);
+background(255);
+strokeWeight(6);
+stroke(255, 255, 0);
+noFill();
 
-.rotate_example {
-  font-family: 'LeagueGothicRomanRomanRotated';
-  font-size: 36px;
-  line-height: 36px;
-}
+beginShape();
+vertex(451, 29);
+vertex(401, 130);
+vertex(355, 29);
+vertex(334, 128);
+vertex(291, 26);
+vertex(291, 169);
+vertex(445, 169);
+endShape(CLOSE);
 
-@font-face {
-    font-family: 'URWPalladioLBoldRegular';
-    src: url('/and/assets/called/urwpalladiol-bold-webfont.eot');
-    src: url('/and/assets/called/urwpalladiol-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/and/assets/called/urwpalladiol-bold-webfont.woff') format('woff'),
-         url('/and/assets/called/urwpalladiol-bold-webfont.ttf') format('truetype'),
-         url('/and/assets/called/urwpalladiol-bold-webfont.svg#URWPalladioLBoldRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'URWPalladioLStraightCurvesBRg';
-    src: url('/and/assets/called/urwpalladiol-straightcurves-bold-webfont.eot');
-    src: url('/and/assets/called/urwpalladiol-straightcurves-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/and/assets/called/urwpalladiol-straightcurves-bold-webfont.woff') format('woff'),
-         url('/and/assets/called/urwpalladiol-straightcurves-bold-webfont.ttf') format('truetype'),
-         url('/and/assets/called/urwpalladiol-straightcurves-bold-webfont.svg#URWPalladioLStraightCurvesBRg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-.palladio { font-family: 'URWPalladioLBoldRegular'; font-size: 36px; line-height: 48px; }
-.palladio-straight { font-family: 'URWPalladioLStraightCurvesBRg'; font-size: 36px; line-height: 48px; }
+beginShape();
+vertex(517, 273);
+vertex(366, 127);
+vertex(37, 423);
+vertex(250, 543);
+vertex(252, 447);
+vertex(483, 531);
+vertex(371, 419);
+endShape(CLOSE);</pre>
 
-@font-face {
-  font-family: 'jaja-v';
-  font-weight: normal;
-  src: url('/and/assets/called/jaja-v.otf');
-}
+]]>
+        
+    </content>
+</entry>
 
-@font-face {
-  font-family: 'jaja-h';
-  font-weight: normal;
-  src: url('/and/assets/called/jaja-h.otf');
-}
+<entry>
+    <title>Seb Explaining Love and Bezier Curves</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/seb-explaining-love-and-bezier-curves" />
+    <id>tag:i.liketightpants.net,2012:/and//1.48</id>
 
-</style>
-    <pre class="rotate_example">#!/usr/bin/env python
+    <published>2012-04-16T22:06:08Z</published>
+    <updated>2012-04-16T22:18:47Z</updated>
 
-# usage: $ python rotate-font-fontforge.py "League Gothic.ufo" League-Gothic-tranformed.ufo
-
-import fontforge
-import psMat
-import math
-import sys
-
-matrix = psMat.rotate(math.radians(45))
-
-font = fontforge.open(sys.argv[1])
-
-for glyph in font.glyphs():
-    glyph.transform(matrix)
-
-font.generate(sys.argv[2])</pre>
-    <p>If you like programming, chances are you like typefaces. <a href="http://chneukirchen.org/trivium/" title="Trivium">My favourite tumblelog</a>, by developer Christian Neukirchen, often links to type design projects. As does <a href="http://news.ycombinator.com/" title="Hacker News">Hacker News</a>. And programming demigod <a href="http://www-cs-faculty.stanford.edu/~uno/" title="Don Knuth's Home Page">Donald Knuth</a> took time off from his epos The Art of Computer Programming to develop his own <a href="http://en.wikipedia.org/wiki/Computer_Modern" title="Computer Modern - Wikipedia, the free encyclopedia">parametric typeface</a>. And the <a href="http://en.wikipedia.org/wiki/METAFONT" title="Metafont - Wikipedia, the free encyclopedia">language that describes</a> it. And an accompanying <a href="http://en.wikipedia.org/wiki/TeX" title="TeX - Wikipedia, the free encyclopedia">lay out engine</a>.</p>
-    <p>Typefaces are wonderful hybrids between design and tool. More so than any other type of design they are made to be reused. And more so than any other type of design they have a predictable structure (a font made out of glyphs made out of contours made out of points), that makes them especially suitable to be manipulated through computer programs of your own devising.</p>
-    <p>Yet if you haven’t worked within the confines of the type design world, chances are you have not yet experienced exactly how straightforward it is to work with typefaces programmatically, nowadays.</p>
-    <p>Yes, your typical binary font file is quite messy to open up and to play around with. That is why it is nice if you can use a programming library to access them. But in addition we now have the <a href="http://unifiedfontobject.org/" title="Unified Font Object">UFO file format</a>, which is meant as an open, hackable file format for fonts. And there exist two libraries that really make it really easy to deal with font objects in a high level fashion: <a href="http://robofab.org/" title="RoboFab">Robofab</a> and <a href="http://fontforge.sourceforge.net/python.html" title="Writing python scripts to change fonts in FontForge">FontForge-python</a>. They allow you to iterate over all the glyphs, contours and points in your font in order to change them around.</p>
-    <p>Both libraries are written in the Python language. There is a historical reason for this. The typographers <a href="http://www.letterror.com/" title="LettError Type: Fonts and Typography">Just van Rossum and Erik van Blokland</a> are pioneers in scripting for type design. Their choice to go with Python has contributed to making it the go to scripting language in the type design world.</p>
-    <p>I can imagine that reasons for choosing Python include that it is straightforward and high level<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small; line-height: 16px; background-color: rgb(255, 255, 255);">—</span>and in being white space sensitive it is arguably one of the few languages which is opiniated typographically! I imagine it also played a role that Just van Rossum is the brother of Guido van Rossum, who wrote the Python language.</p>
-    <p>If you already know Python, you are in luck. If you know programming, but do not know Python, it is pretty easy to pick up. And if you do not write programs yet, Python is a great language to get started as it is quite straightforward and consistent.</p>
-    <p>RoboFab is made by the aforementioned Dutch duo, joined by <a href="http://talleming.com/" title="Tal Leming">Tal Leming</a>. It started its life as a scripting language for Fontlab, one of the more popular commercial font editors (and for quite some time the only one). But since the inception of the UFO file format, you can use the RoboFab library in your stand alone python scripts.</p>
-    <p>A downside to RoboFab is that it will only work with UFO fonts. In this sense the Python extension to FontForge is more flexible. It makes a lot of the functionality of <a href="http://fontforge.sourceforge.net/" title="FontForge">FontForge</a> available to Python: FontForge is the main open source font editor. With python-fontforge you can open and save in a slew of different font formats. It is also easy to export individual glyphs to images, or to import vector shapes into your font.</p>
-    <p>A downside to python-fontforge is that it might be tricky to install. On Linux it is usually quite easy (Debian/ubuntu: <code>sudo apt-get install fontforge python-fontforge</code>). On the Mac it used to be more hard: installing the Python extension through Homebrew is <a href="https://github.com/mxcl/homebrew/issues/4689">not working out yet</a>. Luckily, developer Jeff Escelante recently reached out to me over this issue. He is now providing a <a href="https://github.com/jenius/Fontforge-Installer">Fontforge installer</a> for Mac OSX that provides the python extension. But on Windows, I am not sure how feasible it is to get python-fontforge working? If someone could re-package the whole thing is an easy_installable package that would be wonderful.</p>
-    <p>In implementation the two libraries are quite similar. Imagine we have downloaded the open source League Gothic in UFO format (<a href="https://github.com/theleagueof/league-gothic/zipball/master">link!</a> The ufo is in the source folder) and you put the UFO in the same folder as your python script.</p>
-    <p>Here is how you load in a font and print the names of the glyphs:</p>
-    <p>Fontforge</p>
-    <pre>#!/usr/bin/env python
-
-# usage: $ python print-glyphs-fontforge.py "League-Gothic.ufo"
-
-import fontforge
-import sys
-
-font = fontforge.open(sys.argv[1])
-
-for glyph in font.glyphs():
-    print glyph
-</pre>
-    <p>Robofab</p>
-    <pre>#!/usr/bin/env python
-
-# usage: $ python print-glyphs-robofab.py "League Gothic.ufo"
-
-from robofab.world import RFont
-import sys
-
-font = RFont(sys.argv[1])
-
-for glyph in font:
-    print glyph.name
-</pre>
-    <p>And this is to rotate each glyph 45 degrees and save to a new font.</p>
-    <p>Fontforge:</p>
-    <pre>#!/usr/bin/env python
-
-# usage: $ python rotate-font-fontforge.py "League Gothic.ufo" League-Gothic-tranformed.ufo
-
-import fontforge
-import psMat
-import math
-import sys
-
-matrix = psMat.rotate(math.radians(45))
-
-font = fontforge.open(sys.argv[1])
-
-for glyph in font.glyphs():
-    glyph.transform(matrix)
-
-font.generate(sys.argv[2])
-</pre>
-    <p>Robofab:</p>
-    <pre>#!/usr/bin/env python
-
-# usage: $ python rotate-font.py "League Gothic.ufo" League-Gothic-tranformed.ufo
-
-from robofab.world import RFont
-from fontTools.misc.transform import Identity
-import math
-import sys
-
-matrix = Identity
-matrix = matrix.rotate(math.radians(45))
-
-font = RFont(sys.argv[1])
-
-for glyph in font:
-    glyph.transform(matrix)
-
-font.save(sys.argv[2])
-</pre>
+    <summary>You see a large sheet of paper upon which a constructed drawing of a heart, showing also the mathematical construction of the curves.</summary>
+    <author>
+        <name>jenseits</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[
+    <p><a href="/and/assets/called/love_and_bezier_curves.jpg">
+        <img src="/and/assets/scaled/to/830/wide/and/called/love_and_bezier_curves.jpg" alt="You see a large sheet of paper upon which a constructed drawing of a heart, showing also the mathematical construction of the curves." title="" style="width:622px;height:830px;" />
+      </a></p>
+    <p class="byline">From an <a href="http://ospublish.constantvzw.org/images/snapshots/rca-workshop">OSP Workshop</a> at Royal College of Art, London</p>
 
 ]]>
         
