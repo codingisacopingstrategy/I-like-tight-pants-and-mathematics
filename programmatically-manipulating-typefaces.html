@@ -29,7 +29,7 @@
     dc:subject=""
     dc:description="The structure of a typeface is predictable enough to make it fun to manipulate it with computer scripts."
     dc:creator="bnf"
-    dc:date="2012-05-02T12:43:36+01:00" />
+    dc:date="2012-05-02T13:43:36+01:00" />
 </rdf:RDF>
 -->
 
@@ -52,7 +52,7 @@
   <ul>
     
     
-    <li><a href="/and/graphic-design-is-a-nostalgic-field">latest</a></li>
+    <li><a href="/and/the-underwater-screen-or-lessons-from-wordperfect">latest</a></li>
     
     <li><a href="/and/about">about</a></li>
     <li><a href="/and/archives">index</a></li>
@@ -259,7 +259,7 @@ for glyph in font.glyphs():
     glyph.transform(matrix)
 
 font.generate(sys.argv[2])</pre>
-    <p>If you like programming, chances are you like typefaces. <a href="http://chneukirchen.org/trivium/" title="Trivium">My favourite tumblelog</a>, by developer Christian Neukirchen, often links to type design projects. As does <a href="http://news.ycombinator.com/" title="Hacker News">Hacker News</a>. And programming demigod <a href="http://www-cs-faculty.stanford.edu/~uno/" title="Don Knuth's Home Page">Donald Knuth</a> took time off from his epos The Art of Computer Programming to develop his own <a href="http://en.wikipedia.org/wiki/Computer_Modern" title="Computer Modern - Wikipedia, the free encyclopedia">parametric typeface</a>. And the <a href="http://en.wikipedia.org/wiki/METAFONT" title="Metafont - Wikipedia, the free encyclopedia">language that describes</a> it. And an accompanying <a href="http://en.wikipedia.org/wiki/TeX" title="TeX - Wikipedia, the free encyclopedia">lay out engine</a>.</p>
+    <p>If you like programming, chances are you like typefaces. <a href="http://chneukirchen.org/trivium/" title="Trivium">My favourite tumblelog</a>, by developer Christian Neukirchen, often links to type design projects. As does <a href="http://news.ycombinator.com/" title="Hacker News">Hacker News</a>. And programming demigod <a href="http://www-cs-faculty.stanford.edu/~uno/" title="Don Knuth's Home Page">Donald Knuth</a> took time off from his epos The Art of Computer Programming to develop his own <a href="http://en.wikipedia.org/wiki/Computer_Modern" title="Computer Modern - Wikipedia, the free encyclopedia">parametric typeface</a>. And the <a href="http://en.wikipedia.org/wiki/METAFONT" title="Metafont - Wikipedia, the free encyclopedia" class="aloha-link-text">language that describes</a> it. And an accompanying <a href="http://en.wikipedia.org/wiki/TeX" title="TeX - Wikipedia, the free encyclopedia">lay out engine</a>.</p>
     <p>Typefaces are wonderful hybrids between design and tool. More so than any other type of design they are made to be reused. And more so than any other type of design they have a predictable structure (a font made out of glyphs made out of contours made out of points), that makes them especially suitable to be manipulated through computer programs of your own devising.</p>
     <p>Yet if you haven’t worked within the confines of the type design world, chances are you have not yet experienced exactly how straightforward it is to work with typefaces programmatically, nowadays.</p>
     <p>Yes, your typical binary font file is quite messy to open up and to play around with. That is why it is nice if you can use a programming library to access them. But in addition we now have the <a href="http://unifiedfontobject.org/" title="Unified Font Object">UFO file format</a>, which is meant as an open, hackable file format for fonts. And there exist two libraries that really make it really easy to deal with font objects in a high level fashion: <a href="http://robofab.org/" title="RoboFab">Robofab</a> and <a href="http://fontforge.sourceforge.net/python.html" title="Writing python scripts to change fonts in FontForge">FontForge-python</a>. They allow you to iterate over all the glyphs, contours and points in your font in order to change them around.</p>
@@ -337,7 +337,9 @@ for glyph in font:
 
 font.save(sys.argv[2])
 </pre>
-
+    <div id="aside">
+      <p>This article started out as a presentation for <a href="http://montrealpython.org/">Montreal Python</a>. It got finished on the occasion of the OSP workshops <a href="http://osp.schr.fr/workshop/morphologic/" title="OSP :: Workshop :: OSP Morphologic @ Merz Akademie, Stuttgart">Morphologic</a> at the Merz Akademie, Stuttgart and <a href="http://osp.schr.fr/workshop/write-me-a-shadow/raw/latest/specimen/index.html" title="Write me a shadow. OSP @ ESAD Valence">Write me a shadow</a>, at the ESAD Valence.</p>
+</div>
 
     <div id="comments" class="comments">
 
@@ -413,30 +415,47 @@ There's also cool stuff you can do if you save the font as an SVG font. You can 
     <div id="comment-168" class="comment comment-reply">
     
 
-<p><br></br></p><p></p><p><span class="palladio-straight" style="font-size: 137px">Sure!</span></p><p></p><p></p>
 
-<p></p><p></p><pre>from robofab.world import CurrentFont</pre><p></p><p></p>
+<p><span class="palladio-straight" style="font-size: 137px">Sure!</span></p>
 
-<p></p><p></p><pre>font = CurrentFont()</pre><p></p><p></p>
+<pre>from robofab.world import CurrentFont
+font = CurrentFont()
+for g in [glyph.name for glyph in font]:
+    old = font[g]
+    print len(old)
+    new = font.newGlyph("dummytmp", clear=True)
 
-<p></p><p></p><pre>for g in [glyph.name for glyph in font]:<br>    old = font[g]<br>    print len(old)<br>    new = font.newGlyph("dummytmp", clear=True)</br></br></br></pre><br>    <br><pre>    pen = new.getPointPen()<br>    for contour in old:<br>        pen.beginPath()<br>        for point in contour.points:<br>            if point.type != "offCurve":<br>                pen.addPoint((point.x,point.y),"line")<br>        pen.endPath()</br></br></br></br></br></br></pre><br>    <br><pre>    font.newGlyph(g, clear=True)<br>    old.appendGlyph(new)</br></pre><p></p><p></p>
 
-<p></p><p></p><pre>font.removeGlyph("dummytmp")<br>font.update()</br></pre><p></p><p></p>
+    pen = new.getPointPen()
+    for contour in old:
+        pen.beginPath()
+        for point in contour.points:
+            if point.type != "offCurve":
+                pen.addPoint((point.x,point.y),"line")
+        pen.endPath()
 
-<p></p><p>Yes so John Haltiwanger and me spent some time figuring this out for the workshop in <a href="http://osp.schr.fr/workshop/morphologic/" rel="nofollow">Stuttgart</a>. Basically we’re reconstructing the contours in the glyph point by point, but we skip off curve points<span style="font-size: 13px; background-color: rgb(255, 255, 255); color: rgb(34, 34, 34); font-family: arial, sans-serif; line-height: 16px;">—</span><span style="font-size: 14px;">these are the control handles to the </span><a href="/and/seb-explaining-love-and-bezier-curves" rel="nofollow">béziers</a><span style="font-size: 14px;">. Without the control handles the curves become straight lines.</span></p><p></p>
 
-<p></p><p><span class="palladio">URW Palladio L Bold</span></p><p></p>
+    font.newGlyph(g, clear=True)
+    old.appendGlyph(new)
+font.removeGlyph("dummytmp")
+font.update()
+</pre>
 
-<p></p><p>becomes</p><p></p>
+<p>Yes so John Haltiwanger and me spent some time figuring this out for the workshop in <a href="http://osp.schr.fr/workshop/morphologic/" rel="nofollow">Stuttgart</a>. Basically we’re reconstructing the contours in the glyph point by point, but we skip off curve points<span style="font-size: 13px; background-color: rgb(255, 255, 255); color: rgb(34, 34, 34); font-family: arial, sans-serif; line-height: 16px;">—</span><span style="font-size: 14px;">these are the control handles to the </span><a href="/and/seb-explaining-love-and-bezier-curves" rel="nofollow">béziers</a><span style="font-size: 14px;">. Without the control handles the curves become straight lines.</span></p>
 
-<p></p><p><span class="palladio-straight">URW Palladio L Bold</span></p><p></p>
+<p><span class="palladio">URW Palladio L Bold</span></p><p></p>
 
-<p></p><p>The new contours are first written to a temporary glyph, then they replace they old contours.</p><p></p>
+<p>becomes</p>
 
-</br></br></br></br>
+<p><span class="palladio-straight">URW Palladio L Bold</span></p>
+
+<p>The new contours are first written to a temporary glyph, then they replace they old contours.</p>
+
+
+
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/10/bowie-thumb-18x18-8.jpg" width="18" height="18"  />
-          by tellyou - <a href="http://i.liketightpants.net/and/programmatically-manipulating-typefaces.html#comment-168"><abbr class="published" title="2012-05-31T22:52:41+01:00">May 31, 2012 10:52 PM</abbr></a><br />
+          by tellyou - <a href="http://i.liketightpants.net/and/programmatically-manipulating-typefaces.html#comment-168"><abbr class="published" title="2012-05-31T23:52:41+01:00">May 31, 2012 11:52 PM</abbr></a><br />
     <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(168, 'tellyou')">Reply</a></p>
     </div>
 
@@ -613,6 +632,7 @@ Colorfonts! Combining superpositions with libre typefaces processed by scripts, 
                     (You may use HTML tags for style)</label><br />
                     <textarea id="comment-text" name="text" rows="15" style="width:100%;" onfocus="mtCommentFormOnFocus()"></textarea>
                 </div>
+                <p class="byline" id="comments-open-license">By submitting your comment, you agree to license it under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike license</a>, the same license used for the text of the blog.</p>
                 <div id="comments-open-captcha"></div>
                 <div id="comments-open-footer">
                    <!-- <input type="submit" accesskey="v" name="preview_button" id="comment-preview" value="Preview" onclick="this.form.preview.value='1';" /> -->
@@ -645,7 +665,13 @@ Colorfonts! Combining superpositions with libre typefaces processed by scripts, 
   <h4>Latest articles</h4>
   <dl>
   
-  <dt><a href="/and/graphic-design-is-a-nostalgic-field">Graphic Design Is A Nostalgic Field</a></dt>
+  <dt><a href="/and/the-underwater-screen-or-lessons-from-wordperfect">The Underwater Screen Or Lessons From Wordperfect      </a></dt>
+  <dd>June 10, 2014  8:21 PM</dd>
+  
+  <dt><a href="/and/hackers-culture-and-the-fear-of-wysiwyg">Hacker Culture and the Fear of WYSIWYG</a></dt>
+  <dd>May 22, 2014 10:40 PM</dd>
+  
+  <dt><a href="/and/graphic-design-is-a-nostalgic-field">      Graphic Design Is A Nostalgic Field     </a></dt>
   <dd>February 19, 2014  8:02 PM</dd>
   
   <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTF’s, Webfonts and CSS From UFO’s</a></dt>
@@ -669,12 +695,6 @@ Colorfonts! Combining superpositions with libre typefaces processed by scripts, 
   <dt><a href="/and/it-might-be-a-unix-sin-but-i-would-like-you-to-add-dot-t-x-t-as-the-extension-of-your-readme-file">It Might Be a Unix Sin But I Would Like You to Add .txt As the Extension of Your README file</a></dt>
   <dd>April 30, 2013  9:51 PM</dd>
   
-  <dt><a href="/and/etherpad-or-the-textarea-is-a-lonely-place">Etherpad Or The Textarea Is A Lonely Place</a></dt>
-  <dd>April 22, 2013  9:59 PM</dd>
-  
-  <dt><a href="/and/the-most-barebones-online-font-editor-possible">The Most Barebones Online Font Editor Possible</a></dt>
-  <dd>April 18, 2013  9:59 PM</dd>
-  
   </dl>
 
   <h4>Latest Comments</h4>
@@ -696,11 +716,11 @@ Colorfonts! Combining superpositions with libre typefaces processed by scripts, 
         
     
     
-            <li><strong>baseline:</strong>  Oh my god!Oh my god! I wonder why the <a href="/and/programmatically-manipulating-typefaces#comment-170" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
+            <li><strong>tellyou:</strong>  Sure! from robofab.world import CurrentFont font = CurrentFont() for <a href="/and/programmatically-manipulating-typefaces#comment-168" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
         
     
     
-            <li><strong>tellyou:</strong>  Sure! from robofab.world import CurrentFont font = CurrentFont() for <a href="/and/programmatically-manipulating-typefaces#comment-168" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
+            <li><strong>baseline:</strong>  Oh my god!Oh my god! I wonder why the <a href="/and/programmatically-manipulating-typefaces#comment-170" title="full comment on: Programmatically manipulating typefaces">read more</a></li>
         
     
     
