@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/graphic-design-is-a-nostalgic-field');
+header('Location: /and/the-underwater-screen-or-lessons-from-wordperfect');
 ?>
