@@ -14,24 +14,9 @@
 
     <title>I like tight pants and we like tight pants and mathematics</title>
     <link rel="stylesheet" href="/and/style/in/tellyou.css" type="text/css" />
-    <link rel="prev bookmark" href="/and/albert-camus-his-algorithm" title="I like tight pants and albert camus’ algorithm" />
+    <link rel="prev bookmark" href="/and/albert-camus-his-algorithm" title="I like tight pants and albert camusâ algorithm" />
     <link rel="next bookmark" href="/and/vector-pixels" title="I like tight pants and vector pixels" />
-    <!--
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
-         xmlns:dc="http://purl.org/dc/elements/1.1/">
-<rdf:Description
-    rdf:about="http://i.liketightpants.net/and/we-like-tight-pants-and-mathematics.html"
-    trackback:ping="http://mt.schr.fr/tb.cgi/31"
-    dc:title="We like tight pants and mathematics"
-    dc:identifier="http://i.liketightpants.net/and/we-like-tight-pants-and-mathematics.html"
-    dc:subject=""
-    dc:description="To give programming a productive place in your arts and design practice, you need to get to know programming culture, and, ideally, take part in (re)shaping it. To feel comfortable with being a programmer, you might want to change what a programmer is."
-    dc:creator="tellyou"
-    dc:date="2011-11-23T10:27:27+01:00" />
-</rdf:RDF>
--->
-
+    
     <meta property="og:title" content="I like tight pants and we like tight pants and mathematics"/>
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="http://i.liketightpants.net/and/we-like-tight-pants-and-mathematics"/>
@@ -43,6 +28,158 @@
     <meta property="fb:admins" content="1488294875"/>
 </head>
 <body>
+<style>
+@font-face { font-family: BebasNeueRegular; src: url(http://i.liketightpants.net/BebasNeue-webfont.eot?#iefix) format(eot), url(http://i.liketightpants.net/BebasNeue-webfont.woff) format(woff), url(http://i.liketightpants.net/BebasNeue-webfont.ttf) format(truetype), url(http://i.liketightpants.net/BebasNeue-webfont.svg#webfontX0YNjQNl) format(svg); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: Pictos; src: url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web.eot?#iefix) format(eot), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-e4dc212e5f2737d6c98390f0d068cef2.woff) format(woff), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-87f332a73dadfa3a1daf93910c5b3649.ttf) format(truetype), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-5a6e6518658ad50c63328b250562dd20.svg) format(svg); }
+
+div#bar {
+    top: 40px;
+}
+
+div#bar, div#header {
+    padding-top: 11px;
+    padding-bottom: 4px;
+    line-height: 18px;
+}
+
+#recent_entries {
+    line-height: 20px !important;
+}
+
+#bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    z-index: -11111;
+}
+#fund {
+    height: 40px;
+}
+
+.widget {
+    font-size: 14px;
+/*    border-color: rgb(217, 217, 217);
+    border-radius: 3px 3px;
+    border-style: solid;
+    border-width: 1px;*/
+    box-sizing: border-box;
+    float: left;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    padding: 10px 10px 10px 10px;
+    width: 1190px;
+}
+
+.widget a {
+    word-wrap: break-word;
+    color: #ff00ae;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.widget > div {
+    display: inline-block;
+}
+
+.bankers {
+    background-image: url(https://d3v4jsc54141g1.cloudfront.net/assets/widget-bankers-77e9f587c6512ac1faa586a8a127cc83.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 23px;
+}
+
+.percentage {
+    background-image: -webkit-linear-gradient(top, rgb(229, 80, 82) 0%, rgb(236, 27, 32) 28%, rgb(215, 35, 41) 100%);
+    border-color: rgb(196, 16, 21);
+    border-style: solid;
+    /*border-width: 1px;*/
+    clear: none;
+    color: rgb(255, 255, 255);
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    height: 10px;
+    margin: 2px 0px 6px 0px;
+    max-width: 156px;
+    min-width: 2%;
+    padding: 0px 2px 0px 0px;
+    text-align: right;
+}
+
+.percentage-wrapper {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.117188) 0px 0px 1px, rgba(0, 0, 0, 0.199219) 0px 1px 1px inset;
+    background-color: rgba(0, 0, 0, 0.046875);
+    box-shadow: rgba(0, 0, 0, 0.117188) 0px 0px 1px, rgba(0, 0, 0, 0.199219) 0px 1px 1px inset;
+    clear: none;
+    float: left;
+    height: 12px;
+    margin: 2px 5px 2px 5px;
+    width: 160px;
+}
+
+.widget strong, .widget strong a {
+    animation-name: cycle;
+    animation-duration: 3s; 
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: steps(1, end); /* This makes it blink instead of fade */
+    animation-iteration-count: infinite;
+    -webkit-animation-name: cycle;
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: steps(1, end); /* This makes it blink instead of fade */
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes cycle 
+{
+    0% {
+        color: #ff00ae;
+    } 
+    50% {
+        color: #0000ff;
+    } 
+}
+@-webkit-keyframes cycle 
+{
+    0% {
+        color: #ff00ae;
+    } 
+    50% {
+        color: #0000ff;
+    } 
+}
+
+</style>
+<div id="bg">&nbsp;</div>
+<div class="container_7" id="fund">
+    <div class='widget'>
+        With
+        <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">57</a></strong> days left
+        <strong>
+        <a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">Visual Culture a Tool for Design Collaboration</a>
+        </strong>
+        by <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank">osp</a></strong>
+        is at
+        <div class='amount'>
+            <strong>
+            <a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">1%</a>
+            </strong>
+            <div class='percentage-wrapper small'>
+                <div class='percentage small' style='width:1%;'></div>
+            </div>
+        </div>
+        of its crowdfunding,
+        with contributions by 
+        <strong class='bankers'><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">3</a></strong> bankers:
+        <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">125 €</a></strong>
+         of a <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">12,500 €</a></strong> goal
+    </div>
+</div>
 <div id="header" class="container_7">
   <div class="grid_2">
   <h1><a href="/and/">i . like tight pants . net</a></h1>
@@ -109,7 +246,7 @@
   
   
   
-  <dt><a href="/and/figuring-out-fontforge-pythons-representation-of-postscript-curves">Figuring Out Fontforge-Python’s Representation of Postscript Curves</a></dt>
+  <dt><a href="/and/figuring-out-fontforge-pythons-representation-of-postscript-curves">Figuring Out Fontforge-Pythonâs Representation of Postscript Curves</a></dt>
   <dd>June  3, 2012  5:06 PM</dd>
   
   
@@ -168,7 +305,7 @@
 
   
   
-  <h4>tellyou’s Comments</h4>
+  <h4>tellyouâs Comments</h4>
   <dl>
   
   
@@ -250,7 +387,7 @@
 </a>, and the surrounding culture of sharing and hacking. The workshop is called:</p>
     <p><em>I like tight pants and mathematics.<br />
 Queering up programming culture.</em></p>
-    <blockquote>To give programming a productive place in your arts and design practice, you need to get to know programming culture, and, ideally, take part in (re)shaping it. To feel comfortable with being a programmer, you might want to change what a programmer is. With queering up I am not referring to homosexuality, but rather to an approach that undermines existing masculine, heteronormative ideals.  An historical example would be Glam rock’s appropriation of the traditional ‘earnest’ masculine rock musician into the polysexual identity mirror palace created by musicians as David Bowie and Freddy Mercury.</blockquote>
+    <blockquote>To give programming a productive place in your arts and design practice, you need to get to know programming culture, and, ideally, take part in (re)shaping it. To feel comfortable with being a programmer, you might want to change what a programmer is. With queering up I am not referring to homosexuality, but rather to an approach that undermines existing masculine, heteronormative ideals.  An historical example would be Glam rockâs appropriation of the traditional âÂearnestâ masculine rock musician into the polysexual identity mirror palace created by musicians as David Bowie and Freddy Mercury.</blockquote>
     <p>I am planning a longer write up, but for now you might be interested in <a href="http://titanpad.com/2z2De9BZ20" title="TitanPad: 2z2De9BZ20">the lecture notes
 </a>.</p>
     <p>
@@ -330,7 +467,7 @@ Queering up programming culture.</em></p>
             
     <div id="comment-81" class="comment comment-reply">
     <p>
-          These stereotypes about programming (or development) as an introverted, male, ‘geeky’ endeavor are by themselves o.k. and being male and introverted is no problem either, but if they’re the only stereotypes held by either the outside world or within the programming world themselves, software development will keep self-selecting for introverted males and not attract the diverse group of practitioners it deserves!
+          These stereotypes about programming (or development) as an introverted, male, âÂgeekyâ endeavor are by themselves o.k. and being male and introverted is no problem either, but if theyâre the only stereotypes held by either the outside world or within the programming world themselves, software development will keep self-selecting for introverted males and not attract the diverse group of practitioners it deserves!
          </p>
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/10/bowie-thumb-18x18-8.jpg" width="18" height="18"  />
@@ -375,7 +512,7 @@ Queering up programming culture.</em></p>
             
     <div id="comment-84" class="comment comment-reply">
     <p>
-            Rolf, thanks for your points this is the kind of discussion I am hoping for! 1) There is no reason to be essentialistic about the autistic nature of programming—since there is no one essence of programming.The kind of activity that is denoted by programming varies hugely: writing a statically typed program is already quite different from writing a program in a dynamic programming language… as new languages and methods evolve what programming is changes also 2) the status of the boys from big bang theory and mark z. has certainly been raised. Cool for them. But in this case we’re still excluding girls and ‘non-geeky’ types from programming! And I want to open up programming for them (me) too!
+            Rolf, thanks for your points this is the kind of discussion I am hoping for! 1) There is no reason to be essentialistic about the autistic nature of programmingâsince there is no one essence of programming.The kind of activity that is denoted by programming varies hugely: writing a statically typed program is already quite different from writing a program in a dynamic programming languageâ¦ as new languages and methods evolve what programming is changes also 2) the status of the boys from big bang theory and mark z. has certainly been raised. Cool for them. But in this case weâre still excluding girls and âÂnon-geekyâ types from programming! And I want to open up programming for them (me) too!
            </p>
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/10/bowie-thumb-18x18-8.jpg" width="18" height="18"  />
@@ -498,8 +635,8 @@ I think that things will change more and more as more opportunities open up to d
                     <label for="comment-reply" id="comment-reply-label"></label>
                 </div>
                 <div id="comments-open-text">
+                <p class="byline">For formatting your post, you can use html tags like &lt;p&gt; and &lt;br /&gt;. Whitespace for now is eaten up, like in HTML. we are sorryâwe will have a more friendly commenting option in place shortly!</p>
                     <label for="comment-text">Comments
-                    (You may use HTML tags for style)</label><br />
                     <textarea id="comment-text" name="text" rows="15" style="width:100%;" onfocus="mtCommentFormOnFocus()"></textarea>
                 </div>
                 <p class="byline" id="comments-open-license">By submitting your comment, you agree to license it under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike license</a>, the same license used for the text of the blog.</p>
@@ -547,7 +684,7 @@ I think that things will change more and more as more opportunities open up to d
   <dt><a href="/and/who-makes-standards">Who gets to write the web: the power struggles around the standards</a></dt>
   <dd>November 20, 2013 10:08 PM</dd>
   
-  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTF’s, Webfonts and CSS From UFO’s</a></dt>
+  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTFâs, Webfonts and CSS From UFOâs</a></dt>
   <dd>November  5, 2013  9:57 PM</dd>
   
   <dt><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">No-one Starts From Scratch: Type Design and the Logic of the Fork</a></dt>
@@ -621,7 +758,7 @@ I think that things will change more and more as more opportunities open up to d
 </div>
 <div id="bar">&nbsp;</div>
 <!-- Piwik, Open Source Analytics,
-let’s not give Google more data then necessary! Eric --> 
+letâs not give Google more data then necessary! Eric --> 
 <script type="text/javascript">
 var pkBaseURL = (("https:" == document.location.protocol) ? "https://var.schr.fr/piwik/" : "http://var.schr.fr/piwik/");
 document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));

@@ -16,22 +16,7 @@
     <link rel="stylesheet" href="/and/style/in/jenseits.css" type="text/css" />
     <link rel="prev bookmark" href="/and/the-problem-with-web-apps" title="I like tight pants and the problem with web apps" />
     <link rel="next bookmark" href="/and/honest-artist-statements" title="I like tight pants and honest artist statements" />
-    <!--
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
-         xmlns:dc="http://purl.org/dc/elements/1.1/">
-<rdf:Description
-    rdf:about="http://i.liketightpants.net/and/talking-of-content.html"
-    trackback:ping="http://mt.schr.fr/tb.cgi/10"
-    dc:title="Talking of content"
-    dc:identifier="http://i.liketightpants.net/and/talking-of-content.html"
-    dc:subject=""
-    dc:description="My strongest first impression was the sense of confrontation that was instigated, not in the content per se but as evident from the two questions (…). The stance is important, and even political. It reminds me of feminism. And I suppose its the direct reply to that “geeky” fear we have."
-    dc:creator="jenseits"
-    dc:date="2010-06-08T23:05:38+01:00" />
-</rdf:RDF>
--->
-
+    
     <meta property="og:title" content="I like tight pants and talking of content"/>
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="http://i.liketightpants.net/and/talking-of-content"/>
@@ -39,10 +24,162 @@
     <meta property="og:image" content="http://mt.schr.fr/lib/support/assets_c/userpics/userpic-4-100x100.png"/>
     <meta property="og:site_name" content="I like tight pants and mathematics"/>
     <meta property="og:description"
-          content="My strongest first impression was the sense of confrontation that was instigated, not in the content per se but as evident from the two questions (…). The stance is important, and even political. It reminds me of feminism. And I suppose its the direct reply to that “geeky” fear we have."/>
+          content="My strongest first impression was the sense of confrontation that was instigated, not in the content per se but as evident from the two questions (â¦). The stance is important, and even political. It reminds me of feminism. And I suppose its the direct reply to that âgeekyâÂ fear we have."/>
     <meta property="fb:admins" content="1488294875"/>
 </head>
 <body>
+<style>
+@font-face { font-family: BebasNeueRegular; src: url(http://i.liketightpants.net/BebasNeue-webfont.eot?#iefix) format(eot), url(http://i.liketightpants.net/BebasNeue-webfont.woff) format(woff), url(http://i.liketightpants.net/BebasNeue-webfont.ttf) format(truetype), url(http://i.liketightpants.net/BebasNeue-webfont.svg#webfontX0YNjQNl) format(svg); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: Pictos; src: url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web.eot?#iefix) format(eot), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-e4dc212e5f2737d6c98390f0d068cef2.woff) format(woff), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-87f332a73dadfa3a1daf93910c5b3649.ttf) format(truetype), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-5a6e6518658ad50c63328b250562dd20.svg) format(svg); }
+
+div#bar {
+    top: 40px;
+}
+
+div#bar, div#header {
+    padding-top: 11px;
+    padding-bottom: 4px;
+    line-height: 18px;
+}
+
+#recent_entries {
+    line-height: 20px !important;
+}
+
+#bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    z-index: -11111;
+}
+#fund {
+    height: 40px;
+}
+
+.widget {
+    font-size: 14px;
+/*    border-color: rgb(217, 217, 217);
+    border-radius: 3px 3px;
+    border-style: solid;
+    border-width: 1px;*/
+    box-sizing: border-box;
+    float: left;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    padding: 10px 10px 10px 10px;
+    width: 1190px;
+}
+
+.widget a {
+    word-wrap: break-word;
+    color: #ff00ae;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.widget > div {
+    display: inline-block;
+}
+
+.bankers {
+    background-image: url(https://d3v4jsc54141g1.cloudfront.net/assets/widget-bankers-77e9f587c6512ac1faa586a8a127cc83.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 23px;
+}
+
+.percentage {
+    background-image: -webkit-linear-gradient(top, rgb(229, 80, 82) 0%, rgb(236, 27, 32) 28%, rgb(215, 35, 41) 100%);
+    border-color: rgb(196, 16, 21);
+    border-style: solid;
+    /*border-width: 1px;*/
+    clear: none;
+    color: rgb(255, 255, 255);
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    height: 10px;
+    margin: 2px 0px 6px 0px;
+    max-width: 156px;
+    min-width: 2%;
+    padding: 0px 2px 0px 0px;
+    text-align: right;
+}
+
+.percentage-wrapper {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.117188) 0px 0px 1px, rgba(0, 0, 0, 0.199219) 0px 1px 1px inset;
+    background-color: rgba(0, 0, 0, 0.046875);
+    box-shadow: rgba(0, 0, 0, 0.117188) 0px 0px 1px, rgba(0, 0, 0, 0.199219) 0px 1px 1px inset;
+    clear: none;
+    float: left;
+    height: 12px;
+    margin: 2px 5px 2px 5px;
+    width: 160px;
+}
+
+.widget strong, .widget strong a {
+    animation-name: cycle;
+    animation-duration: 3s; 
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: steps(1, end); /* This makes it blink instead of fade */
+    animation-iteration-count: infinite;
+    -webkit-animation-name: cycle;
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: steps(1, end); /* This makes it blink instead of fade */
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes cycle 
+{
+    0% {
+        color: #ff00ae;
+    } 
+    50% {
+        color: #0000ff;
+    } 
+}
+@-webkit-keyframes cycle 
+{
+    0% {
+        color: #ff00ae;
+    } 
+    50% {
+        color: #0000ff;
+    } 
+}
+
+</style>
+<div id="bg">&nbsp;</div>
+<div class="container_7" id="fund">
+    <div class='widget'>
+        With
+        <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">57</a></strong> days left
+        <strong>
+        <a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">Visual Culture a Tool for Design Collaboration</a>
+        </strong>
+        by <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank">osp</a></strong>
+        is at
+        <div class='amount'>
+            <strong>
+            <a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">1%</a>
+            </strong>
+            <div class='percentage-wrapper small'>
+                <div class='percentage small' style='width:1%;'></div>
+            </div>
+        </div>
+        of its crowdfunding,
+        with contributions by 
+        <strong class='bankers'><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">3</a></strong> bankers:
+        <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">125 €</a></strong>
+         of a <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">12,500 €</a></strong> goal
+    </div>
+</div>
 <div id="header" class="container_7">
   <div class="grid_2">
   <h1><a href="/and/">i . like tight pants . net</a></h1>
@@ -91,7 +228,7 @@
   
   
   
-  <dt><a href="/and/albert-camus-his-algorithm">Albert Camus’ algorithm</a></dt>
+  <dt><a href="/and/albert-camus-his-algorithm">Albert Camusâ algorithm</a></dt>
   <dd>October 30, 2011 10:58 PM</dd>
   
   
@@ -126,7 +263,7 @@
 
   
   
-  <h4>jenseits’s Comments</h4>
+  <h4>jenseitsâs Comments</h4>
   <dl>
   
   
@@ -176,7 +313,7 @@
     <iframe src="http://player.vimeo.com/video/12366245?byline=0&amp;portrait=0&amp;color=7C26FF" width="830" height="436" frameborder="0"></iframe>
     <p class="byline"><a href="http://vimeo.com/12366245">Content centric architecture and distributed versioning</a> from <a href="http://vimeo.com/seeculture">See Culture</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
     <p>At the <a href="http://libregraphicsmeeting.org/2010/">Libre Graphics Meeting</a>, a four day event bringing together open source developers and graphic professionals.</p>
-    <p>Correction @ 4:52: the <a href="http://klepas.org/openbaskerville/" title="Open Baskerville">Open Baskerville</a> project has been initiated by <a href="http://klepas.org/" title="Simon Pascal Klein — Graphic &amp; web design professional">Simon Pascal Klein</a> from Australia (not Pascal Simon Klein from Germany). Apologies!</p>
+    <p>Correction @ 4:52: the <a href="http://klepas.org/openbaskerville/" title="Open Baskerville">Open Baskerville</a> project has been initiated by <a href="http://klepas.org/" title="Simon Pascal KleinâââGraphic &amp; web design professional">Simon Pascal Klein</a> from Australia (not Pascal Simon Klein from Germany). Apologies!</p>
     <p>Video originally on <a href="http://river-valley.tv/content-centric-architecture-and-distributed-versioning/">http://river-valley.tv/content-centric-architecture-and-distributed-versioning/</a></p>
 
 
@@ -194,19 +331,19 @@
             
     <div id="comment-4" class="comment">
     
-<p>I’ve watched this talk a couple of times now</p>
+<p>IâÂve watched this talk a couple of times now</p>
 
-<p>My strongest first impression was the sense of confrontation that was instigated, not in the content per se but as evident from the two questions: “Distributed versioning control has been around for a long time”; then, the perfunctory comment on Eric’s pants. Both times I think the response was very admirable. The stance is important, and even political. It reminds me of feminism. And I suppose its the direct reply to that ‘geeky’ fear we have.</p>
+<p>My strongest first impression was the sense of confrontation that was instigated, not in the content per se but as evident from the two questions: âÂDistributed versioning control has been around for a long timeâ; then, the perfunctory comment on Ericâs pants. Both times I think the response was very admirable. The stance is important, and even political. It reminds me of feminism. And I suppose its the direct reply to that âÂgeekyâ fear we have.</p>
 
 <p>Some other thoughts it brought up:</p>
 
-<p>I’m writing this on a Mac and before choosing to buy one of these a few years ago I read a review of a Partrick Wolf show in which he sang on stage just with his Mac as the backing band - the computer was described by the journalist as a ‘white knight’. This image stayed with me, and may have been a crucial factor in me, like lots of other people from an arts background, choosing Apple; I’m bringing it up since that transaction frames my approach to the talk / blog etc - technology as a commodified appliance rather than as a platform whose means of production are understood and truly exploited by the users. I don’t think this is a good thing, culturally.</p>
+<p>Iâm writing this on a Mac and before choosing to buy one of these a few years ago I read a review of a Partrick Wolf show in which he sang on stage just with his Mac as the backing band - the computer was described by the journalist as a âÂwhite knightâ. This image stayed with me, and may have been a crucial factor in me, like lots of other people from an arts background, choosing Apple; Iâm bringing it up since that transaction frames my approach to the talk / blog etc - technology as a commodified appliance rather than as a platform whose means of production are understood and truly exploited by the users. I donât think this is a good thing, culturally.</p>
 
-<p>I’m inclined to feel embittered that institutional biases and, for me, a lack of ‘humanity’ or empathy for non-enthusiasts in the communication of ideas (rough expression I know), as well as - and most decisively - self-disqualification, keeps those of a similar background to me from participating in the creation of technology (rather than creating via technology, which we do all the time via constant usage of web apps, if nothing else). The barrier is cultural as much as anything, as Eric points out.</p>
+<p>Iâm inclined to feel embittered that institutional biases and, for me, a lack of âÂhumanityâ or empathy for non-enthusiasts in the communication of ideas (rough expression I know), as well as - and most decisively - self-disqualification, keeps those of a similar background to me from participating in the creation of technology (rather than creating via technology, which we do all the time via constant usage of web apps, if nothing else). The barrier is cultural as much as anything, as Eric points out.</p>
 
-<p>In my daily work this divisive wall manifests itself in the great gulf between myself as a facilitator of technology with a customer service ethos (I’m training as a librarian, and that’s the likely future role of library employees)  and those who actually have a hand in the functioning of that technology (the IT department). The latter lack a customer service ethic and sometimes, in my personal interactions with them, a sense of social common ground or even a wish to establish this.</p> 
+<p>In my daily work this divisive wall manifests itself in the great gulf between myself as a facilitator of technology with a customer service ethos (Iâm training as a librarian, and thatâs the likely future role of library employees)  and those who actually have a hand in the functioning of that technology (the IT department). The latter lack a customer service ethic and sometimes, in my personal interactions with them, a sense of social common ground or even a wish to establish this.</p> 
 
-<p>Perhaps I’m too sensitive! - as well as too lazy to learn. That’s why I think the stance here has great relevance to people like me (and there must be millions if not billions of us!). . . . ?</p>
+<p>Perhaps Iâm too sensitive! - as well as too lazy to learn. Thatâs why I think the stance here has great relevance to people like me (and there must be millions if not billions of us!). . . . ?</p>
 
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/glittery-thumb-18x18-3.png" width="18" height="18"  />
@@ -229,7 +366,7 @@
 
 <p>This plays out at different levels: I am honestly concerned with the benefits of distributed network architecture, and the font project I show. At the same time, I suppose you also see me trying to remain true to what is dear to me, within a context that is foreign.</p>
 
-<p>Funny you mention feminism. My students had to make a social web application. We did a shared project at our faculty in which the students had to work with clichés, as they manifested themselves within their own personal world. This is where the borders between private and public become questionable, as the outside manifests itself on the inside. (I never read Foucault but if I understand correctly he maintains that we are not controlled from outside, but rather by an order we internalize and then afflict upon each other. Which I think is the case.) I figured it made sense to show them visual artists who had managed to work with the outward projection of inward clichés. I found that all the artists I would mention were women, except for Felix Gonzalez-Torres. The art activism of the <a href="http://www.guerrillagirls.com/" rel="nofollow">Guerilla Girls</a>, the appropriation of verbal and visual cliché by Barbara Kruger and the truisms of Jenny Holzer that always seem to precipate between worn cliches and individual confessions. (Jenny Holzer is also a good example because she will readily use any medium available for dissemination).</p>
+<p>Funny you mention feminism. My students had to make a social web application. We did a shared project at our faculty in which the students had to work with clichÃ©s, as they manifested themselves within their own personal world. This is where the borders between private and public become questionable, as the outside manifests itself on the inside. (I never read Foucault but if I understand correctly he maintains that we are not controlled from outside, but rather by an order we internalize and then afflict upon each other. Which I think is the case.) I figured it made sense to show them visual artists who had managed to work with the outward projection of inward clichÃ©s. I found that all the artists I would mention were women, except for Felix Gonzalez-Torres. The art activism of the <a href="http://www.guerrillagirls.com/" rel="nofollow">Guerilla Girls</a>, the appropriation of verbal and visual clichÃ© by Barbara Kruger and the truisms of Jenny Holzer that always seem to precipate between worn cliches and individual confessions. (Jenny Holzer is also a good example because she will readily use any medium available for dissemination).</p>
 
 <p>I started to see a relation to a principle that first has been articulated in feminist thought: <a href="http://www.carolhanisch.org/CHwritings/PIP.html" rel="nofollow">the personal is political</a>. Hanisch says what manifests itself as a political struggle in public life, manifests itself as private struggle in our private life as well. And the other way around.</p>
 
@@ -250,13 +387,13 @@
             
     <div id="comment-26" class="comment">
     
-<blockquote>I’m writing this on a Mac and before choosing to buy one of these a few years ago I read a review of a Partrick Wolf show in which he sang on stage just with his Mac as the backing band - the computer was described by the journalist as a ‘white knight’. This image stayed with me, and may have been a crucial factor in me, like lots of other people from an arts background, choosing Apple; I’m bringing it up since that transaction frames my approach to the talk / blog etc - technology as a commodified appliance rather than as a platform whose means of production are understood and truly exploited by the users. I don’t think this is a good thing, culturally.</blockquote>
+<blockquote>Iâm writing this on a Mac and before choosing to buy one of these a few years ago I read a review of a Partrick Wolf show in which he sang on stage just with his Mac as the backing band - the computer was described by the journalist as a âwhite knightâ. This image stayed with me, and may have been a crucial factor in me, like lots of other people from an arts background, choosing Apple; Iâm bringing it up since that transaction frames my approach to the talk / blog etc - technology as a commodified appliance rather than as a platform whose means of production are understood and truly exploited by the users. I donât think this is a good thing, culturally.</blockquote>
 
 <p>On appliances: I am not sure if I have anything against them, as long as you can crack them open. At least on the software level. On your Mac you can go to applications &gt; accesoires and launch the Terminal, type in <code>python</code> (return) then <code>print 'hello world'</code> (return) and you just programmed your own computer</p>
 
-<p>I do not think everyone needs to be a programmer all of the time, but I do believe everyone should always have the potential to interface with the computer in all the different roles this device can offer. You do not want a company to make these decisions for us: allowing one person to be a developer, while another can be a content producer, while another has to be a consumer. (This is more or less the reasoning of Cory Doctorow in <a href="http://www.boingboing.net/2010/04/02/why-i-wont-buy-an-ipad-and-think-you-shouldnt-either.html" rel="nofollow">Why I won't buy an iPad (and think you shouldn't, either)</a>)’.</p>
+<p>I do not think everyone needs to be a programmer all of the time, but I do believe everyone should always have the potential to interface with the computer in all the different roles this device can offer. You do not want a company to make these decisions for us: allowing one person to be a developer, while another can be a content producer, while another has to be a consumer. (This is more or less the reasoning of Cory Doctorow in <a href="http://www.boingboing.net/2010/04/02/why-i-wont-buy-an-ipad-and-think-you-shouldnt-either.html" rel="nofollow">ÂWhy I won't buy an iPad (and think you shouldn't, either)</a>)â.</p>
 
-<p>Apple has started to make appliances that are more problematic now. The iPad runs the operating system of the iPhone. You can only run apple approved software. That rules out software that is comparable to Apple’s software: Firefox would not be allowed, because it is like Safari. Also, you can not install software that is able to interpret software code itself. So you can not install a programming language, and you could never do the little python programming I described just now. This is really costing Apple credibility with programmers who <a href="http://linuxdevcenter.com/pub/a/mac/2002/05/14/oreilly_wwdc_keynote.html" rel="nofollow">flocked over to Mac in droves</a> in the last decennium.</p>
+<p>Apple has started to make appliances that are more problematic now. The iPad runs the operating system of the iPhone. You can only run apple approved software. That rules out software that is comparable to Appleâs software: Firefox would not be allowed, because it is like Safari. Also, you can not install software that is able to interpret software code itself. So you can not install a programming language, and you could never do the little python programming I described just now. This is really costing Apple credibility with programmers who <a href="http://linuxdevcenter.com/pub/a/mac/2002/05/14/oreilly_wwdc_keynote.html" rel="nofollow">flocked over to Mac in droves</a> in the last decennium.</p>
 
 <p><a href="http://www.python.org/doc/essays/cp4e.html" rel="nofollow">Computer literacy is important</a>. Like you say one of the biggest obstacles is that most of us with a background in humanities fear that we are not good at anything that has to do with computers and code.</p>
 
@@ -264,7 +401,7 @@
 
 <p>But do girls take less mathematics classes because they are worse at mathematics, or is it the cultural stigma that they are bad at it that makes them <em>think</em> they are bad at it? In the same way one can ask if people in the humanities forego coding because they are no good at it, or because there exists a cultural bias that they should not?</p>
 
-<p>A mathematically inclined predesposition for structure is an advantage for programming, but not a necessity. My experience when teaching is that students expect to be horrible with code, but find that it is not all bad when they get confronted with it… Getting over fear of geek is a challenge we can manage.</p>
+<p>A mathematically inclined predesposition for structure is an advantage for programming, but not a necessity. My experience when teaching is that students expect to be horrible with code, but find that it is not all bad when they get confronted with itâ¦ Getting over fear of geek is a challenge we can manage.</p>
 
 
     <p class="byline">
@@ -321,8 +458,8 @@
                     <label for="comment-reply" id="comment-reply-label"></label>
                 </div>
                 <div id="comments-open-text">
+                <p class="byline">For formatting your post, you can use html tags like &lt;p&gt; and &lt;br /&gt;. Whitespace for now is eaten up, like in HTML. we are sorryâwe will have a more friendly commenting option in place shortly!</p>
                     <label for="comment-text">Comments
-                    (You may use HTML tags for style)</label><br />
                     <textarea id="comment-text" name="text" rows="15" style="width:100%;" onfocus="mtCommentFormOnFocus()"></textarea>
                 </div>
                 <p class="byline" id="comments-open-license">By submitting your comment, you agree to license it under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike license</a>, the same license used for the text of the blog.</p>
@@ -370,7 +507,7 @@
   <dt><a href="/and/who-makes-standards">Who gets to write the web: the power struggles around the standards</a></dt>
   <dd>November 20, 2013 10:08 PM</dd>
   
-  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTF’s, Webfonts and CSS From UFO’s</a></dt>
+  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTFâs, Webfonts and CSS From UFOâs</a></dt>
   <dd>November  5, 2013  9:57 PM</dd>
   
   <dt><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">No-one Starts From Scratch: Type Design and the Logic of the Fork</a></dt>
@@ -393,7 +530,7 @@
   <h4>Latest Comments</h4>
         <ul>
         
-            <li><strong>glit:</strong>  I’m writing this on a Mac and before choosing <a href="/and/talking-of-content#comment-26" title="full comment on: Talking of content">read more</a></li>
+            <li><strong>glit:</strong>  Iâm writing this on a Mac and before choosing <a href="/and/talking-of-content#comment-26" title="full comment on: Talking of content">read more</a></li>
         
     
     
@@ -401,7 +538,7 @@
         
     
     
-            <li><strong>glit:</strong>  I’ve watched this talk a couple of times now <a href="/and/talking-of-content#comment-4" title="full comment on: Talking of content">read more</a></li>
+            <li><strong>glit:</strong>  IâÂve watched this talk a couple of times now <a href="/and/talking-of-content#comment-4" title="full comment on: Talking of content">read more</a></li>
         
         </ul>
         
@@ -412,7 +549,7 @@
 </div>
 <div id="bar">&nbsp;</div>
 <!-- Piwik, Open Source Analytics,
-let’s not give Google more data then necessary! Eric --> 
+letâs not give Google more data then necessary! Eric --> 
 <script type="text/javascript">
 var pkBaseURL = (("https:" == document.location.protocol) ? "https://var.schr.fr/piwik/" : "http://var.schr.fr/piwik/");
 document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));

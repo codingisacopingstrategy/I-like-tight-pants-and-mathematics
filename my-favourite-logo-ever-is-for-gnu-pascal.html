@@ -16,22 +16,7 @@
     <link rel="stylesheet" href="/and/style/in/baseline.css" type="text/css" />
     <link rel="prev bookmark" href="/and/my-favourite-wikipedia-user-user-rama" title="I like tight pants and my favourite wikipedia user user:rama" />
     <link rel="next bookmark" href="/and/seb-explaining-love-and-bezier-curves" title="I like tight pants and seb explaining love and bezier curves" />
-    <!--
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
-         xmlns:dc="http://purl.org/dc/elements/1.1/">
-<rdf:Description
-    rdf:about="http://i.liketightpants.net/and/my-favourite-logo-ever-is-for-gnu-pascal.html"
-    trackback:ping="http://mt.schr.fr/tb.cgi/46"
-    dc:title="My favourite logo ever is for GNU Pascal"
-    dc:identifier="http://i.liketightpants.net/and/my-favourite-logo-ever-is-for-gnu-pascal.html"
-    dc:subject=""
-    dc:description="This is easily my favourite logo in the world. It is for a computer program called GNU Pascal. To the left, we see a gnu. To the right, Blaise Pascal. "
-    dc:creator="baseline"
-    dc:date="2012-04-08T01:53:37+01:00" />
-</rdf:RDF>
--->
-
+    
     <meta property="og:title" content="I like tight pants and my favourite logo ever is for gnu pascal"/>
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="http://i.liketightpants.net/and/my-favourite-logo-ever-is-for-gnu-pascal"/>
@@ -43,6 +28,158 @@
     <meta property="fb:admins" content="1488294875"/>
 </head>
 <body>
+<style>
+@font-face { font-family: BebasNeueRegular; src: url(http://i.liketightpants.net/BebasNeue-webfont.eot?#iefix) format(eot), url(http://i.liketightpants.net/BebasNeue-webfont.woff) format(woff), url(http://i.liketightpants.net/BebasNeue-webfont.ttf) format(truetype), url(http://i.liketightpants.net/BebasNeue-webfont.svg#webfontX0YNjQNl) format(svg); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: Pictos; src: url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web.eot?#iefix) format(eot), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-e4dc212e5f2737d6c98390f0d068cef2.woff) format(woff), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-87f332a73dadfa3a1daf93910c5b3649.ttf) format(truetype), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-5a6e6518658ad50c63328b250562dd20.svg) format(svg); }
+
+div#bar {
+    top: 40px;
+}
+
+div#bar, div#header {
+    padding-top: 11px;
+    padding-bottom: 4px;
+    line-height: 18px;
+}
+
+#recent_entries {
+    line-height: 20px !important;
+}
+
+#bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    z-index: -11111;
+}
+#fund {
+    height: 40px;
+}
+
+.widget {
+    font-size: 14px;
+/*    border-color: rgb(217, 217, 217);
+    border-radius: 3px 3px;
+    border-style: solid;
+    border-width: 1px;*/
+    box-sizing: border-box;
+    float: left;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    padding: 10px 10px 10px 10px;
+    width: 1190px;
+}
+
+.widget a {
+    word-wrap: break-word;
+    color: #ff00ae;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.widget > div {
+    display: inline-block;
+}
+
+.bankers {
+    background-image: url(https://d3v4jsc54141g1.cloudfront.net/assets/widget-bankers-77e9f587c6512ac1faa586a8a127cc83.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 23px;
+}
+
+.percentage {
+    background-image: -webkit-linear-gradient(top, rgb(229, 80, 82) 0%, rgb(236, 27, 32) 28%, rgb(215, 35, 41) 100%);
+    border-color: rgb(196, 16, 21);
+    border-style: solid;
+    /*border-width: 1px;*/
+    clear: none;
+    color: rgb(255, 255, 255);
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    height: 10px;
+    margin: 2px 0px 6px 0px;
+    max-width: 156px;
+    min-width: 2%;
+    padding: 0px 2px 0px 0px;
+    text-align: right;
+}
+
+.percentage-wrapper {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.117188) 0px 0px 1px, rgba(0, 0, 0, 0.199219) 0px 1px 1px inset;
+    background-color: rgba(0, 0, 0, 0.046875);
+    box-shadow: rgba(0, 0, 0, 0.117188) 0px 0px 1px, rgba(0, 0, 0, 0.199219) 0px 1px 1px inset;
+    clear: none;
+    float: left;
+    height: 12px;
+    margin: 2px 5px 2px 5px;
+    width: 160px;
+}
+
+.widget strong, .widget strong a {
+    animation-name: cycle;
+    animation-duration: 3s; 
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: steps(1, end); /* This makes it blink instead of fade */
+    animation-iteration-count: infinite;
+    -webkit-animation-name: cycle;
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: steps(1, end); /* This makes it blink instead of fade */
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes cycle 
+{
+    0% {
+        color: #ff00ae;
+    } 
+    50% {
+        color: #0000ff;
+    } 
+}
+@-webkit-keyframes cycle 
+{
+    0% {
+        color: #ff00ae;
+    } 
+    50% {
+        color: #0000ff;
+    } 
+}
+
+</style>
+<div id="bg">&nbsp;</div>
+<div class="container_7" id="fund">
+    <div class='widget'>
+        With
+        <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">57</a></strong> days left
+        <strong>
+        <a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">Visual Culture a Tool for Design Collaboration</a>
+        </strong>
+        by <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank">osp</a></strong>
+        is at
+        <div class='amount'>
+            <strong>
+            <a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">1%</a>
+            </strong>
+            <div class='percentage-wrapper small'>
+                <div class='percentage small' style='width:1%;'></div>
+            </div>
+        </div>
+        of its crowdfunding,
+        with contributions by 
+        <strong class='bankers'><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">3</a></strong> bankers:
+        <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">125 €</a></strong>
+         of a <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">12,500 €</a></strong> goal
+    </div>
+</div>
 <div id="header" class="container_7">
   <div class="grid_2">
   <h1><a href="/and/">i . like tight pants . net</a></h1>
@@ -97,7 +234,7 @@
   
   
   
-  <dt><a href="/and/drawing-logos">Drawing logo’s</a></dt>
+  <dt><a href="/and/drawing-logos">Drawing logoâs</a></dt>
   <dd>April 24, 2012  5:06 PM</dd>
   
   
@@ -106,13 +243,13 @@
   
   
   
-  <dt><a href="/and/why-would-europes-largest-open-source-convention-identify-itself-with-a-large-shrivelled-brain">Why Would Europe’s Largest Open Source Convention Identify Itself With a Large Shrivelled Brain?</a></dt>
+  <dt><a href="/and/why-would-europes-largest-open-source-convention-identify-itself-with-a-large-shrivelled-brain">Why Would Europeâs Largest Open Source Convention Identify Itself With a Large Shrivelled Brain?</a></dt>
   <dd>February  3, 2012  7:55 PM</dd>
   
   
   
   
-  <dt><a href="/and/absolute-beginners-unix-for-art-students-part-3">Absolute Beginners: Unix for Art Students – part 3</a></dt>
+  <dt><a href="/and/absolute-beginners-unix-for-art-students-part-3">Absolute Beginners: Unix for Art StudentsÂ âÂ part 3</a></dt>
   <dd>January 16, 2012 12:46 AM</dd>
   
   
@@ -144,7 +281,7 @@
 
   
   
-  <h4>baseline’s Comments</h4>
+  <h4>baselineâs Comments</h4>
   <dl>
   
   
@@ -204,9 +341,9 @@
 </object>
 </a></p>
     <p>This is easily my favourite logo in the world. It is for a computer program called <a href="http://www.gnu-pascal.de/gpc/h-index.html" title="GNU Pascal">GNU Pascal</a> (a programming language in fact). To the left, we see a gnu. To the right, Blaise Pascal. Rather than trying to convey brand values through metaphor, the name is depicted in the most literal way imaginable.</p>
-    <p>It’s not just the literalness that is unusual. The use of this kind of figurative illustration in logos is rare. The only niche that springs to mind is <a href="/and/assets/called/HansTextiel.gif" title="">1970ies retail chains</a>.</p>
+    <p>Itâs not just the literalness that is unusual. The use of this kind of figurative illustration in logos is rare. The only niche that springs to mind is <a href="/and/assets/called/HansTextiel.gif" title="">1970ies retail chains</a>.</p>
     <p>Visual abstraction has becomes the norm in corporate branding since the post WWII period. In America, designers like <a href="http://www.paul-rand.com/foundation/identity/" title="Paul-Rand.com :: American Modernist :: 1914-1996">Paul Rand</a> and Saul Bass started to produce logos in flat colours and simple shapes that aimed to convey what the companies are about. It is this language that has stuck with us for logos ever since.</p>
-    <p>Even though it might be useful to convey a brand message that is clear and straightforward, there is an obvious limit to the benefits of abstraction. As the brand values a logo is supposed to express get exceedingly open ended (‘innovation’, ‘integrity’), it becomes more difficult to visually evocate them. That is how we end up with logos built around isometric cubes and moebius strips, and with <a href="http://www.salon.com/1999/11/30/naming/" title="The name game -   Advertising - Salon.com">company names</a> like Agilent and Avilant.</p>
+    <p>Even though it might be useful to convey a brand message that is clear and straightforward, there is an obvious limit to the benefits of abstraction. As the brand values a logo is supposed to express get exceedingly open ended (âÂinnovationâ, âÂintegrityâ), it becomes more difficult to visually evocate them. That is how we end up with logos built around isometric cubes and moebius strips, and with <a href="http://www.salon.com/1999/11/30/naming/" title="The name game -   Advertising - Salon.com">company names</a> like Agilent and Avilant.</p>
     <p>It is here that the literalness of GNU Pascal provides the counterbalance I look for. I heart the complete absence of symbolism. And the departure from traditional corporate marketing is all the more exciting because it rhymes with the product itself. GNU Pascal is open source software: it is changeable and redistributable at will. As such it is built more on the values of the academic world than on the traditional corporate ethos. And while visual identities for open source software tend to be pale imitations of corporate aesthetics, GNU Pascal is one clue of how such software could find a style of its own.</p>
 
 
@@ -278,7 +415,7 @@ Flat colours are not as popular as they were though: in redesigns these logos of
     <div id="comment-294" class="comment">
     <p>Grand post! However, I don't think "complete absence of symbolism" is totally right. Look at how the eyes of the gnu and the philosopher are identical, linked in a  bovine, mysterious, mutual Mona Lisa gaze. The juxtaposition of a human face with an animal's is rather striking, reminding me of Derrida's essay on animal encounters, "The Animal That Therefore I Am."</p>
 
-<blockquote>"I often ask myself, just to see, who I am—and who I am (following) at the moment when, caught naked, in silence, by the gaze of an animal, for example the eyes of a cat, I have trouble, yes, a bad time overcoming my embarrassment. Whence this malaise?"</blockquote>
+<blockquote>"I often ask myself, just to see, who I amâand who I am (following) at the moment when, caught naked, in silence, by the gaze of an animal, for example the eyes of a cat, I have trouble, yes, a bad time overcoming my embarrassment. Whence this malaise?"</blockquote>
 
 <p>Derrida mentions Nietzsche's encounter with a horse being whipped in Turin, and I found another piece of amateur art that strongly resembles the GNU Pascal logo: <a href="http://www.shardcore.org/shardpress/index.php/2011/07/20/nietzsche-and-the-horse-2011/" rel="nofollow"><a href="http://www.shardcore.org/shardpress/index.php/2011/07/20/nietzsche-and-the-horse-2011/" rel="nofollow">http://www.shardcore.org/shardpress/index.php/2011/07/20/nietzsche-and-the-horse-2011/</a></a></p>
 
@@ -343,8 +480,8 @@ Flat colours are not as popular as they were though: in redesigns these logos of
                     <label for="comment-reply" id="comment-reply-label"></label>
                 </div>
                 <div id="comments-open-text">
+                <p class="byline">For formatting your post, you can use html tags like &lt;p&gt; and &lt;br /&gt;. Whitespace for now is eaten up, like in HTML. we are sorryâwe will have a more friendly commenting option in place shortly!</p>
                     <label for="comment-text">Comments
-                    (You may use HTML tags for style)</label><br />
                     <textarea id="comment-text" name="text" rows="15" style="width:100%;" onfocus="mtCommentFormOnFocus()"></textarea>
                 </div>
                 <p class="byline" id="comments-open-license">By submitting your comment, you agree to license it under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike license</a>, the same license used for the text of the blog.</p>
@@ -392,7 +529,7 @@ Flat colours are not as popular as they were though: in redesigns these logos of
   <dt><a href="/and/who-makes-standards">Who gets to write the web: the power struggles around the standards</a></dt>
   <dd>November 20, 2013 10:08 PM</dd>
   
-  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTF’s, Webfonts and CSS From UFO’s</a></dt>
+  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTFâs, Webfonts and CSS From UFOâs</a></dt>
   <dd>November  5, 2013  9:57 PM</dd>
   
   <dt><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">No-one Starts From Scratch: Type Design and the Logic of the Fork</a></dt>
@@ -438,7 +575,7 @@ Flat colours are not as popular as they were though: in redesigns these logos of
 </div>
 <div id="bar">&nbsp;</div>
 <!-- Piwik, Open Source Analytics,
-let’s not give Google more data then necessary! Eric --> 
+letâs not give Google more data then necessary! Eric --> 
 <script type="text/javascript">
 var pkBaseURL = (("https:" == document.location.protocol) ? "https://var.schr.fr/piwik/" : "http://var.schr.fr/piwik/");
 document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));

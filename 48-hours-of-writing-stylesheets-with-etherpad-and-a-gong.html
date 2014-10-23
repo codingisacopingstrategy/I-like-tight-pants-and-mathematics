@@ -16,22 +16,7 @@
     <link rel="stylesheet" href="/and/style/in/baseline.css" type="text/css" />
     <link rel="prev bookmark" href="/and/release-early-release-often-version-numbers-for-typefaces" title="I like tight pants and release early release often version numbers for typefaces" />
     <link rel="next bookmark" href="/and/i-need-my-generic-font-medicine" title="I like tight pants and i need my generic font medicine" />
-    <!--
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
-         xmlns:dc="http://purl.org/dc/elements/1.1/">
-<rdf:Description
-    rdf:about="http://i.liketightpants.net/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong.html"
-    trackback:ping="http://mt.schr.fr/tb.cgi/59"
-    dc:title="48 Hours of Writing Stylesheets with Etherpad and a Gong"
-    dc:identifier="http://i.liketightpants.net/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong.html"
-    dc:subject=""
-    dc:description="The screenshots  are from a period of 48 hours where we work on the site together. To write CSS, we keep a shared Etherpad. One person is in charge of the gong: when she rings, she copies the contents of the pad into the site’s CSS file, and uploads it—after which everyone can refresh their browser and see the updated styles."
-    dc:creator="baseline"
-    dc:date="2013-10-08T22:06:03+01:00" />
-</rdf:RDF>
--->
-
+    
     <meta property="og:title" content="I like tight pants and 48 hours of writing stylesheets with etherpad and a gong"/>
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="http://i.liketightpants.net/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong"/>
@@ -39,10 +24,162 @@
     <meta property="og:image" content="http://ospublish.constantvzw.org/images/var/resizes/Color-Font-Workshop-With-Manufactura-Independente/IMG_7870.JPG?m=1330638719"/>
     <meta property="og:site_name" content="I like tight pants and mathematics"/>
     <meta property="og:description"
-          content="The screenshots  are from a period of 48 hours where we work on the site together. To write CSS, we keep a shared Etherpad. One person is in charge of the gong: when she rings, she copies the contents of the pad into the site’s CSS file, and uploads it—after which everyone can refresh their browser and see the updated styles."/>
+          content="The screenshots  are from a period of 48 hours where we work on the site together. To write CSS, we keep a shared Etherpad. One person is in charge of the gong: when she rings, she copies the contents of the pad into the siteâs CSS file, and uploads itâafter which everyone can refresh their browser and see the updated styles."/>
     <meta property="fb:admins" content="1488294875"/>
 </head>
 <body>
+<style>
+@font-face { font-family: BebasNeueRegular; src: url(http://i.liketightpants.net/BebasNeue-webfont.eot?#iefix) format(eot), url(http://i.liketightpants.net/BebasNeue-webfont.woff) format(woff), url(http://i.liketightpants.net/BebasNeue-webfont.ttf) format(truetype), url(http://i.liketightpants.net/BebasNeue-webfont.svg#webfontX0YNjQNl) format(svg); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: Pictos; src: url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web.eot?#iefix) format(eot), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-e4dc212e5f2737d6c98390f0d068cef2.woff) format(woff), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-87f332a73dadfa3a1daf93910c5b3649.ttf) format(truetype), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-5a6e6518658ad50c63328b250562dd20.svg) format(svg); }
+
+div#bar {
+    top: 40px;
+}
+
+div#bar, div#header {
+    padding-top: 11px;
+    padding-bottom: 4px;
+    line-height: 18px;
+}
+
+#recent_entries {
+    line-height: 20px !important;
+}
+
+#bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    z-index: -11111;
+}
+#fund {
+    height: 40px;
+}
+
+.widget {
+    font-size: 14px;
+/*    border-color: rgb(217, 217, 217);
+    border-radius: 3px 3px;
+    border-style: solid;
+    border-width: 1px;*/
+    box-sizing: border-box;
+    float: left;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    padding: 10px 10px 10px 10px;
+    width: 1190px;
+}
+
+.widget a {
+    word-wrap: break-word;
+    color: #ff00ae;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.widget > div {
+    display: inline-block;
+}
+
+.bankers {
+    background-image: url(https://d3v4jsc54141g1.cloudfront.net/assets/widget-bankers-77e9f587c6512ac1faa586a8a127cc83.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 23px;
+}
+
+.percentage {
+    background-image: -webkit-linear-gradient(top, rgb(229, 80, 82) 0%, rgb(236, 27, 32) 28%, rgb(215, 35, 41) 100%);
+    border-color: rgb(196, 16, 21);
+    border-style: solid;
+    /*border-width: 1px;*/
+    clear: none;
+    color: rgb(255, 255, 255);
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    height: 10px;
+    margin: 2px 0px 6px 0px;
+    max-width: 156px;
+    min-width: 2%;
+    padding: 0px 2px 0px 0px;
+    text-align: right;
+}
+
+.percentage-wrapper {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.117188) 0px 0px 1px, rgba(0, 0, 0, 0.199219) 0px 1px 1px inset;
+    background-color: rgba(0, 0, 0, 0.046875);
+    box-shadow: rgba(0, 0, 0, 0.117188) 0px 0px 1px, rgba(0, 0, 0, 0.199219) 0px 1px 1px inset;
+    clear: none;
+    float: left;
+    height: 12px;
+    margin: 2px 5px 2px 5px;
+    width: 160px;
+}
+
+.widget strong, .widget strong a {
+    animation-name: cycle;
+    animation-duration: 3s; 
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: steps(1, end); /* This makes it blink instead of fade */
+    animation-iteration-count: infinite;
+    -webkit-animation-name: cycle;
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: steps(1, end); /* This makes it blink instead of fade */
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes cycle 
+{
+    0% {
+        color: #ff00ae;
+    } 
+    50% {
+        color: #0000ff;
+    } 
+}
+@-webkit-keyframes cycle 
+{
+    0% {
+        color: #ff00ae;
+    } 
+    50% {
+        color: #0000ff;
+    } 
+}
+
+</style>
+<div id="bg">&nbsp;</div>
+<div class="container_7" id="fund">
+    <div class='widget'>
+        With
+        <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">57</a></strong> days left
+        <strong>
+        <a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">Visual Culture a Tool for Design Collaboration</a>
+        </strong>
+        by <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank">osp</a></strong>
+        is at
+        <div class='amount'>
+            <strong>
+            <a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">1%</a>
+            </strong>
+            <div class='percentage-wrapper small'>
+                <div class='percentage small' style='width:1%;'></div>
+            </div>
+        </div>
+        of its crowdfunding,
+        with contributions by 
+        <strong class='bankers'><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">3</a></strong> bankers:
+        <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">125 €</a></strong>
+         of a <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">12,500 €</a></strong> goal
+    </div>
+</div>
 <div id="header" class="container_7">
   <div class="grid_2">
   <h1><a href="/and/">i . like tight pants . net</a></h1>
@@ -94,7 +231,7 @@
   
   
   
-  <dt><a href="/and/drawing-logos">Drawing logo’s</a></dt>
+  <dt><a href="/and/drawing-logos">Drawing logoâs</a></dt>
   <dd>April 24, 2012  5:06 PM</dd>
   
   
@@ -106,13 +243,13 @@
   
   
   
-  <dt><a href="/and/why-would-europes-largest-open-source-convention-identify-itself-with-a-large-shrivelled-brain">Why Would Europe’s Largest Open Source Convention Identify Itself With a Large Shrivelled Brain?</a></dt>
+  <dt><a href="/and/why-would-europes-largest-open-source-convention-identify-itself-with-a-large-shrivelled-brain">Why Would Europeâs Largest Open Source Convention Identify Itself With a Large Shrivelled Brain?</a></dt>
   <dd>February  3, 2012  7:55 PM</dd>
   
   
   
   
-  <dt><a href="/and/absolute-beginners-unix-for-art-students-part-3">Absolute Beginners: Unix for Art Students – part 3</a></dt>
+  <dt><a href="/and/absolute-beginners-unix-for-art-students-part-3">Absolute Beginners: Unix for Art StudentsÂ âÂ part 3</a></dt>
   <dd>January 16, 2012 12:46 AM</dd>
   
   
@@ -144,7 +281,7 @@
 
   
   
-  <h4>baseline’s Comments</h4>
+  <h4>baselineâs Comments</h4>
   <dl>
   
   
@@ -222,8 +359,8 @@
     <p>
       <iframe src="http://player.vimeo.com/video/65545530?color=000&amp;title=0&amp;byline=0&amp;portrait=0" width="830" height="466" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 <!-- <video src="http://i.liketightpants.net/and/assets/called/live_coding_the_osp_website_1280x720.mp4" id="live-website-video" width="830" height="466" style="background: white;" preload controls>--><br></p>
-    <p>A video of the redesign of the <a href="http://osp.constantvzw.org/" target="_self" style="" title="OSP (Open Source Publishing) →" class="aloha-link-text">OSP homepage</a>, from a traditional blog based site to a site that is used to communicate our design process in a ‘<a href="/and/release-early-release-often-version-numbers-for-typefaces" style="" target="_self" title="I like tight pants and release early release often version numbers for typefaces" class="aloha-link-text">release early, release often</a>’ manner: every time we add a file to our shared repository it shows up on our site.</p>
-    <p style="">The screenshots above are from a period of 48 hours where we work on the site together. To write CSS, we keep a shared <a href="/and/etherpad-or-the-textarea-is-a-lonely-place" style="" target="_self" title="I like tight pants and etherpad or the textarea is a lonely place" class="aloha-link-text">Etherpad</a>. One person is in charge of the gong: when she rings, she copies the contents of the pad into the site’s CSS file, and uploads it—after which everyone can refresh their browser and see the updated styles.</p>
+    <p>A video of the redesign of the <a href="http://osp.constantvzw.org/" target="_self" style="" title="OSP (Open Source Publishing) â" class="aloha-link-text">OSP homepage</a>, from a traditional blog based site to a site that is used to communicate our design process in a â<a href="/and/release-early-release-often-version-numbers-for-typefaces" style="" target="_self" title="I like tight pants and release early release often version numbers for typefaces" class="aloha-link-text">release early, release often</a>â manner: every time we add a file to our shared repository it shows up on our site.</p>
+    <p style="">The screenshots above are from a period of 48 hours where we work on the site together. To write CSS, we keep a shared <a href="/and/etherpad-or-the-textarea-is-a-lonely-place" style="" target="_self" title="I like tight pants and etherpad or the textarea is a lonely place" class="aloha-link-text">Etherpad</a>. One person is in charge of the gong: when she rings, she copies the contents of the pad into the siteâs CSS file, and uploads itâafter which everyone can refresh their browser and see the updated styles.</p>
     <h4>Update 2013-11-10:</h4>
     <p style="">If you run a recent version of Etherpad, you can install&nbsp;<a href="https://github.com/codingisacopingstrategy/ep_export_less_and_css" class="" style="background-color: rgb(128, 181, 242);" target="_self" title="codingisacopingstrategy/ep_export_less_and_css">ep_export_less_and_css</a>, a plugin bnf created that enables CSS export directly from Etherpad.</p>
 
@@ -263,7 +400,7 @@
 
 
 
-<p style=""><span style="font-size: 11px;"></span>So if you were all writing these styles on an Etherpad together, is there no way to ‘hotlink’ to the pad directly, instead of copying it over all the time?</p><p></p>
+<p style=""><span style="font-size: 11px;"></span>So if you were all writing these styles on an Etherpad together, is there no way to âhotlinkâ to the pad directly, instead of copying it over all the time?</p><p></p>
 
 
 
@@ -287,7 +424,7 @@
 
 
 
-<p>One would figure, because the Titanpad we are using here does allow to export a <a href="http://osp.titanpad.com/ep/pad/export/160/latest?format=txt" rel="nofollow">plain text version of the pad</a>. The problem is, this old version of Etherpad needs a ‘cookie’ before it allows a download. In the newest Etherpad that is not at a problem.&nbsp;<span style="font-size: 14px;">So we can try to link it directly:</span></p><pre>&lt;link rel="stylesheet" href="http://etherpad.fr/p/osp-css/export/txt" type="text/css" /&gt;</pre><p>It still does not work. Examing the metadata from the request (the ‘headers’) from the command line tells us why:</p><pre>curl -i <a href="http://etherpad.fr/p/osp-css/export/txt" rel="nofollow">http://etherpad.fr/p/osp-css/export/txt</a>
+<p>One would figure, because the Titanpad we are using here does allow to export a <a href="http://osp.titanpad.com/ep/pad/export/160/latest?format=txt" rel="nofollow">plain text version of the pad</a>. The problem is, this old version of Etherpad needs a âcookieâ before it allows a download. In the newest Etherpad that is not at a problem.&nbsp;<span style="font-size: 14px;">So we can try to link it directly:</span></p><pre>&lt;link rel="stylesheet" href="http://etherpad.fr/p/osp-css/export/txt" type="text/css" /&gt;</pre><p>It still does not work. Examing the metadata from the request (the âheadersâ) from the command line tells us why:</p><pre>curl -i <a href="http://etherpad.fr/p/osp-css/export/txt" rel="nofollow">http://etherpad.fr/p/osp-css/export/txt</a>
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Server: Etherpad-Lite f478f99 (http://etherpad.org)
@@ -339,7 +476,7 @@ end
     
 
 
-<p>With PHP, there still exists some link between the urls of the web application and the files on the server. You put the PHP files in the same place where you put the HTML files and they can be accessed in much the same way: <code>in/some/folder/lives/a-php-script.php</code>. In Ruby and Python apps, you usually have the&nbsp;web server&nbsp;forward all the requests to a separate web-application. The Python or Ruby files that make up this web-application can live anywhere, and have no real link to the urls of the web page.</p><p>The application above is a ruby file, and could be called app.rb, or however you want. In the application it is written that any request for the url <code>/osp-live.css</code> will receive the designated response. The script uses the library Sinatra, that popularised this style of writing web apps, where you specify: for this url, send back this contents.</p><p>The question then is just how to do you tell the webserver to use this file as a web-application… With PHP, because you can put them in the same place as the HTML files, it ‘just works’. Configuring a Python or Ruby application is different for each hosting environment: and most cheap hosts don’t actually offer support for these languages.</p>
+<p>With PHP, there still exists some link between the urls of the web application and the files on the server. You put the PHP files in the same place where you put the HTML files and they can be accessed in much the same way: <code>in/some/folder/lives/a-php-script.php</code>. In Ruby and Python apps, you usually have the&nbsp;web server&nbsp;forward all the requests to a separate web-application. The Python or Ruby files that make up this web-application can live anywhere, and have no real link to the urls of the web page.</p><p>The application above is a ruby file, and could be called app.rb, or however you want. In the application it is written that any request for the url <code>/osp-live.css</code> will receive the designated response. The script uses the library Sinatra, that popularised this style of writing web apps, where you specify: for this url, send back this contents.</p><p>The question then is just how to do you tell the webserver to use this file as a web-applicationâ¦ With PHP, because you can put them in the same place as the HTML files, it âjust worksâ. Configuring a Python or Ruby application is different for each hosting environment: and most cheap hosts donât actually offer support for these languages.</p>
 
 
 
@@ -420,7 +557,7 @@ echo $output;
     
 <p>
 
-        Never mind, I have found a solution more easy still. I made a ‘plugin’ for the etherpad software, that allows export as CSS:</p><p style=""><a href="" rel="nofollow"></a><img style="height: 366px; width: 676px; position: relative; margin: 0px; resize: none; zoom: 1; display: inline-block; top: 0px; left: 0px;" src="/and/assets/called/ep_export_less_and_css_screenshot_676x355.png" class=""></img></p><p style="">You can install it from Etherpad’s plugin admin panel, as <code>ep_export_less_and_css</code>. The source code is on <a href="https://github.com/codingisacopingstrategy/ep_export_less_and_css" rel="nofollow">Github</a>.</p>
+        Never mind, I have found a solution more easy still. I made a âpluginâ for the etherpad software, that allows export as CSS:</p><p style=""><a href="" rel="nofollow"></a><img style="height: 366px; width: 676px; position: relative; margin: 0px; resize: none; zoom: 1; display: inline-block; top: 0px; left: 0px;" src="/and/assets/called/ep_export_less_and_css_screenshot_676x355.png" class=""></img></p><p style="">You can install it from Etherpadâs plugin admin panel, as <code>ep_export_less_and_css</code>. The source code is on <a href="https://github.com/codingisacopingstrategy/ep_export_less_and_css" rel="nofollow">Github</a>.</p>
 
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/programmatically-thumb-18x18-6.png" width="18" height="18"  />
@@ -500,7 +637,7 @@ echo $output;
     <div id="comment-228" class="comment comment-reply">
     
   <p>
-           You need to leave a computer one that will do the screenshots for you. If you’ve installed webkit2png
+           You need to leave a computer one that will do the screenshots for you. If youâve installed webkit2png
                
             1
            
@@ -520,7 +657,7 @@ echo $output;
            The images are all cropped to 1280x720 pixels, already a standard HD movie size. Now we want to convert all the images we captured into a movie file.
           </p>
   <p>
-           The open source FFMPEG package is great for this, except it can only deal with file names that contain&nbsp;continuously&nbsp;incrementing numbers. You can’t skip one. This command will change all your images into filenames like 00000.png, 00001.png, 00002.png etcetera
+           The open source FFMPEG package is great for this, except it can only deal with file names that contain&nbsp;continuously&nbsp;incrementing numbers. You canât skip one. This command will change all your images into filenames like 00000.png, 00001.png, 00002.png etcetera
                
             3
            
@@ -539,7 +676,7 @@ echo $output;
   <p><span style="font-size: 14px;">
             The compression, or codec, is lossless in this case. Popular
            </span>
-           video codecs like mp4 are optimised for camera footage like jpeg is optimised for photos—here we use the video equivalent of png, the Quicktime Animation codec
+           video codecs like mp4 are optimised for camera footage like jpeg is optimised for photosâhere we use the video equivalent of png, the Quicktime Animation codec
                
             4
            
@@ -563,7 +700,7 @@ echo $output;
             <a href="http://superuser.com/questions/347433/how-to-create-an-uncompressed-avi-from-a-series-of-1000s-of-png-images-using-ff" rel="nofollow">
              <a href="http://superuser.com/questions/347433/how-to-create-an-uncompressed-avi-from-a-series-of-1000s-of-png-images-using-ff" rel="nofollow">http://superuser.com/questions/347433/how-to-create-an-uncompressed-avi-from-a-series-of-1000s-of-png-images-using-ff</a>
             </a>
-            in the end the video will probably be transcoded into a lossy format when you upload it onto Youtube/Vimeo… but this way you avoid doing the lossy encoding twice, and you have a full fidelity version to archive.
+            in the end the video will probably be transcoded into a lossy format when you upload it onto Youtube/Vimeoâ¦ but this way you avoid doing the lossy encoding twice, and you have a full fidelity version to archive.
            </li>
 </ol>
 </br></br></br></br>
@@ -689,8 +826,8 @@ echo $output;
                     <label for="comment-reply" id="comment-reply-label"></label>
                 </div>
                 <div id="comments-open-text">
+                <p class="byline">For formatting your post, you can use html tags like &lt;p&gt; and &lt;br /&gt;. Whitespace for now is eaten up, like in HTML. we are sorryâwe will have a more friendly commenting option in place shortly!</p>
                     <label for="comment-text">Comments
-                    (You may use HTML tags for style)</label><br />
                     <textarea id="comment-text" name="text" rows="15" style="width:100%;" onfocus="mtCommentFormOnFocus()"></textarea>
                 </div>
                 <p class="byline" id="comments-open-license">By submitting your comment, you agree to license it under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike license</a>, the same license used for the text of the blog.</p>
@@ -738,7 +875,7 @@ echo $output;
   <dt><a href="/and/who-makes-standards">Who gets to write the web: the power struggles around the standards</a></dt>
   <dd>November 20, 2013 10:08 PM</dd>
   
-  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTF’s, Webfonts and CSS From UFO’s</a></dt>
+  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTFâs, Webfonts and CSS From UFOâs</a></dt>
   <dd>November  5, 2013  9:57 PM</dd>
   
   <dt><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">No-one Starts From Scratch: Type Design and the Logic of the Fork</a></dt>
@@ -808,7 +945,7 @@ echo $output;
 </div>
 <div id="bar">&nbsp;</div>
 <!-- Piwik, Open Source Analytics,
-let’s not give Google more data then necessary! Eric --> 
+letâs not give Google more data then necessary! Eric --> 
 <script type="text/javascript">
 var pkBaseURL = (("https:" == document.location.protocol) ? "https://var.schr.fr/piwik/" : "http://var.schr.fr/piwik/");
 document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));

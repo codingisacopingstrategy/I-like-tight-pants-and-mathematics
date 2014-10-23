@@ -16,22 +16,7 @@
     <link rel="stylesheet" href="/and/style/in/tellyou.css" type="text/css" />
     <link rel="prev bookmark" href="/and/pattern-recognition" title="I like tight pants and pattern recognition" />
     <link rel="next bookmark" href="/and/physical-hyperlinks-that-glitter" title="I like tight pants and physical hyperlinks that glitter" />
-    <!--
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
-         xmlns:dc="http://purl.org/dc/elements/1.1/">
-<rdf:Description
-    rdf:about="http://i.liketightpants.net/and/learning-how-to-program.html"
-    trackback:ping="http://mt.schr.fr/tb.cgi/27"
-    dc:title="Learning how to program"
-    dc:identifier="http://i.liketightpants.net/and/learning-how-to-program.html"
-    dc:subject=""
-    dc:description="I get the big blue book, and I start watching the screencasts. Parts of me get stimulated that I had forgotten I have. Like some kind of abstraction gland. It’s pretty nice."
-    dc:creator="tellyou"
-    dc:date="2011-08-11T11:04:34+01:00" />
-</rdf:RDF>
--->
-
+    
     <meta property="og:title" content="I like tight pants and learning how to program"/>
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="http://i.liketightpants.net/and/learning-how-to-program"/>
@@ -39,10 +24,162 @@
     <meta property="og:image" content="http://i.liketightpants.net/and/assets/called/cs61a.png"/>
     <meta property="og:site_name" content="I like tight pants and mathematics"/>
     <meta property="og:description"
-          content="I get the big blue book, and I start watching the screencasts. Parts of me get stimulated that I had forgotten I have. Like some kind of abstraction gland. It’s pretty nice."/>
+          content="I get the big blue book, and I start watching the screencasts. Parts of me get stimulated that I had forgotten I have. Like some kind of abstraction gland. Itâs pretty nice."/>
     <meta property="fb:admins" content="1488294875"/>
 </head>
 <body>
+<style>
+@font-face { font-family: BebasNeueRegular; src: url(http://i.liketightpants.net/BebasNeue-webfont.eot?#iefix) format(eot), url(http://i.liketightpants.net/BebasNeue-webfont.woff) format(woff), url(http://i.liketightpants.net/BebasNeue-webfont.ttf) format(truetype), url(http://i.liketightpants.net/BebasNeue-webfont.svg#webfontX0YNjQNl) format(svg); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: Pictos; src: url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web.eot?#iefix) format(eot), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-e4dc212e5f2737d6c98390f0d068cef2.woff) format(woff), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-87f332a73dadfa3a1daf93910c5b3649.ttf) format(truetype), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-5a6e6518658ad50c63328b250562dd20.svg) format(svg); }
+
+div#bar {
+    top: 40px;
+}
+
+div#bar, div#header {
+    padding-top: 11px;
+    padding-bottom: 4px;
+    line-height: 18px;
+}
+
+#recent_entries {
+    line-height: 20px !important;
+}
+
+#bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    z-index: -11111;
+}
+#fund {
+    height: 40px;
+}
+
+.widget {
+    font-size: 14px;
+/*    border-color: rgb(217, 217, 217);
+    border-radius: 3px 3px;
+    border-style: solid;
+    border-width: 1px;*/
+    box-sizing: border-box;
+    float: left;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    padding: 10px 10px 10px 10px;
+    width: 1190px;
+}
+
+.widget a {
+    word-wrap: break-word;
+    color: #ff00ae;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.widget > div {
+    display: inline-block;
+}
+
+.bankers {
+    background-image: url(https://d3v4jsc54141g1.cloudfront.net/assets/widget-bankers-77e9f587c6512ac1faa586a8a127cc83.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 23px;
+}
+
+.percentage {
+    background-image: -webkit-linear-gradient(top, rgb(229, 80, 82) 0%, rgb(236, 27, 32) 28%, rgb(215, 35, 41) 100%);
+    border-color: rgb(196, 16, 21);
+    border-style: solid;
+    /*border-width: 1px;*/
+    clear: none;
+    color: rgb(255, 255, 255);
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    height: 10px;
+    margin: 2px 0px 6px 0px;
+    max-width: 156px;
+    min-width: 2%;
+    padding: 0px 2px 0px 0px;
+    text-align: right;
+}
+
+.percentage-wrapper {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.117188) 0px 0px 1px, rgba(0, 0, 0, 0.199219) 0px 1px 1px inset;
+    background-color: rgba(0, 0, 0, 0.046875);
+    box-shadow: rgba(0, 0, 0, 0.117188) 0px 0px 1px, rgba(0, 0, 0, 0.199219) 0px 1px 1px inset;
+    clear: none;
+    float: left;
+    height: 12px;
+    margin: 2px 5px 2px 5px;
+    width: 160px;
+}
+
+.widget strong, .widget strong a {
+    animation-name: cycle;
+    animation-duration: 3s; 
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: steps(1, end); /* This makes it blink instead of fade */
+    animation-iteration-count: infinite;
+    -webkit-animation-name: cycle;
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: steps(1, end); /* This makes it blink instead of fade */
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes cycle 
+{
+    0% {
+        color: #ff00ae;
+    } 
+    50% {
+        color: #0000ff;
+    } 
+}
+@-webkit-keyframes cycle 
+{
+    0% {
+        color: #ff00ae;
+    } 
+    50% {
+        color: #0000ff;
+    } 
+}
+
+</style>
+<div id="bg">&nbsp;</div>
+<div class="container_7" id="fund">
+    <div class='widget'>
+        With
+        <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">57</a></strong> days left
+        <strong>
+        <a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">Visual Culture a Tool for Design Collaboration</a>
+        </strong>
+        by <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank">osp</a></strong>
+        is at
+        <div class='amount'>
+            <strong>
+            <a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">1%</a>
+            </strong>
+            <div class='percentage-wrapper small'>
+                <div class='percentage small' style='width:1%;'></div>
+            </div>
+        </div>
+        of its crowdfunding,
+        with contributions by 
+        <strong class='bankers'><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">3</a></strong> bankers:
+        <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">125 €</a></strong>
+         of a <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">12,500 €</a></strong> goal
+    </div>
+</div>
 <div id="header" class="container_7">
   <div class="grid_2">
   <h1><a href="/and/">i . like tight pants . net</a></h1>
@@ -109,7 +246,7 @@
   
   
   
-  <dt><a href="/and/figuring-out-fontforge-pythons-representation-of-postscript-curves">Figuring Out Fontforge-Python’s Representation of Postscript Curves</a></dt>
+  <dt><a href="/and/figuring-out-fontforge-pythons-representation-of-postscript-curves">Figuring Out Fontforge-Pythonâs Representation of Postscript Curves</a></dt>
   <dd>June  3, 2012  5:06 PM</dd>
   
   
@@ -168,7 +305,7 @@
 
   
   
-  <h4>tellyou’s Comments</h4>
+  <h4>tellyouâs Comments</h4>
   <dl>
   
   
@@ -216,16 +353,16 @@
     <div class="article grid_3 alpha omega suffix_2">
     <h4>Learning how to program</h4>
     <img src="/and/assets/scaled/to/490/wide/and/called/cs61a.png" alt="You see a lecture hall from above. Computer code is projected above the blackboards that contain formulas. The professor stands behind his desk. Many students have computers. To the left one large student wears no shirt." title="" />
-    <p class="byline"><a href="http://rbmntjs.tumblr.com/post/56407340/check-out-this-douchebag" title="Rob’s brain">Rob notes a shirtless man in CS61A</a></p>
-    <p>I want to learn how to program. Why, that is for another post. But then where to begin. You can’t just learn programming, it seems, you have to pick one among many of programming languages to learn. And each programming language has a corresponding community. And these communities behave like football supporters for their own language. While they would be better pressed to support programming in general ’cause that’s a cause for which many new converts can still be made, and these converts don’t care for the particularities of your language—yet. Anyway, this turns me off.</p>
+    <p class="byline"><a href="http://rbmntjs.tumblr.com/post/56407340/check-out-this-douchebag" title="Robâs brain">Rob notes a shirtless man in CS61A</a></p>
+    <p>I want to learn how to program. Why, that is for another post. But then where to begin. You canât just learn programming, it seems, you have to pick one among many of programming languages to learn. And each programming language has a corresponding community. And these communities behave like football supporters for their own language. While they would be better pressed to support programming in general âcause thatâs a cause for which many new converts can still be made, and these converts donât care for the particularities of your languageâÂÂyet. Anyway, this turns me off.</p>
     <p>So this sounds just right:</p>
-    <blockquote>In CS 61A, we are interested in teaching you about programming, not about any particular programming language. We consider a series of techniques for controlling program complexity, such as functional programming, data abstraction, object-oriented programming, and query systems. To get past generalities you must have programming practice in some particular language, and in this course we use Scheme, a dialect of Lisp. This language is particularly well-suited to the organizing ideas we want to teach. Our hope, however, is that once you have learned the essence of programming, you will find that picking up a new programming language is but a few days’ work.</blockquote>
+    <blockquote>In CS 61A, we are interested in teaching you about programming, not about any particular programming language. We consider a series of techniques for controlling program complexity, such as functional programming, data abstraction, object-oriented programming, and query systems. To get past generalities you must have programming practice in some particular language, and in this course we use Scheme, a dialect of Lisp. This language is particularly well-suited to the organizing ideas we want to teach. Our hope, however, is that once you have learned the essence of programming, you will find that picking up a new programming language is but a few daysâ work.</blockquote>
     <p class="byline"><a href="http://inst.eecs.berkeley.edu/~cs61a/sp11/0.pdf" title="">source</a></p>
     <p>I get the <a href="http://mitpress.mit.edu/sicp/full-text/book/book.html" title="Structure and Interpretation 
-of Computer Programs">big blue book</a>, and I start watching the <a href="http://webcast.berkeley.edu/search?cx=005415252586317091923%3Anp2thtbsmyq&amp;cof=FORID%3A10&amp;ie=UTF-8&amp;q=61a&amp;sa=Search&amp;siteurl=webcast.berkeley.edu%2F" title="UC Berkeley Webcasts | Video and Podcasts: Search Courses and Events">screencasts</a>. Parts of me get stimulated that I had forgotten I have. Like some kind of abstraction gland. It’s pretty nice.</p>
+of Computer Programs">big blue book</a>, and I start watching the <a href="http://webcast.berkeley.edu/search?cx=005415252586317091923%3Anp2thtbsmyq&amp;cof=FORID%3A10&amp;ie=UTF-8&amp;q=61a&amp;sa=Search&amp;siteurl=webcast.berkeley.edu%2F" title="UC Berkeley Webcasts | Video and Podcasts: Search Courses and Events">screencasts</a>. Parts of me get stimulated that I had forgotten I have. Like some kind of abstraction gland. Itâs pretty nice.</p>
     <img src="/and/assets/called/sicp_cover.jpg" style="width:400px;height:579px" alt="You see a blue book cover. The title reads, in white: Structure and Interpretation of Computer Programs. Over a read background, in black and white, a woodcut of two people engaged in alchemistic practice. Below, the authors read as Harold Abelson and Gerald Jay Sussman, with Julie Sussman" title="" />
-    <p>But it’s also way too difficult. The way in which Abelson &amp; Sussman explain computation is by consistently comparing it to math. Math is probably a way of thinking in which Science majors are already comfortable. Yet I don’t do math on a regular basis. So it’s like teaching me a language I don’t know by comparing it to another language I don’t really speak either.</p>
-    <p>A different strategy is needed. I need to work with what I know: words, images. <a href="http://norvig.com/21-days.html" title="Teach Yourself Programming in Ten Years">Peter Norvig says</a> to use whatever your friends are using: “The advantage you get from learning from your friends will offset any intrinsic difference between OS, or between programming languages.” I’m gonna ask my friends to help me get started.</p>
+    <p>But itâs also way too difficult. The way in which Abelson &amp; Sussman explain computation is by consistently comparing it to math. Math is probably a way of thinking in which Science majors are already comfortable. Yet I donât do math on a regular basis. So itâs like teaching me a language I donât know by comparing it to another language I donât really speak either.</p>
+    <p>A different strategy is needed. I need to work with what I know: words, images. <a href="http://norvig.com/21-days.html" title="Teach Yourself Programming in Ten Years">Peter Norvig says</a> to use whatever your friends are using: âThe advantage you get from learning from your friends will offset any intrinsic difference between OS, or between programming languages.âÂ Iâm gonna ask my friends to help me get started.</p>
     <p>To be continued.</p>
 
 
@@ -243,9 +380,9 @@ of Computer Programs">big blue book</a>, and I start watching the <a href="http:
             
     <div id="comment-72" class="comment">
     <p>
-Maybe you’re not trying hard enough :)
+Maybe youâre not trying hard enough :)
 
-</p><blockquote>Most Berkeley students found high school pretty easy, and for many of you, this course will be the first real intellectual challenge you’ve met. You may have come to believe that everything should be easy for you. On the contrary; if you find your courses easy, you’re taking the wrong courses!</blockquote>
+</p><blockquote>Most Berkeley students found high school pretty easy, and for many of you, this course will be the first real intellectual challenge youâve met. You may have come to believe that everything should be easy for you. On the contrary; if you find your courses easy, youâre taking the wrong courses!</blockquote>
 
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/critically-thumb-18x18-2.jpg" width="18" height="18"  />
@@ -262,9 +399,9 @@ Maybe you’re not trying hard enough :)
             
     <div id="comment-73" class="comment">
     <p>
-I loved the <a href="http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-7.html#%_chap_Temp_4" rel="nofollow">preface to SICP</a>. You don’t need to know math to understand it.
+I loved the <a href="http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-7.html#%_chap_Temp_4" rel="nofollow">preface to SICP</a>. You donât need to know math to understand it.
 
-</p><blockquote>Underlying our approach to this subject is our conviction that ‘computer science’ is not a science and that its significance has little to do with computers. The computer revolution is a revolution in the way we think and in the way we express what we think. The essence of this change is the emergence of what might best be called procedural epistemology -- the study of the structure of knowledge from an imperative point of view, as opposed to the more declarative point of view taken by classical mathematical subjects. Mathematics provides a framework for dealing precisely with notions of ‘what is.’ Computation provides a framework for dealing precisely with notions of ‘how to.’</blockquote>
+</p><blockquote>Underlying our approach to this subject is our conviction that âÂcomputer scienceâ is not a science and that its significance has little to do with computers. The computer revolution is a revolution in the way we think and in the way we express what we think. The essence of this change is the emergence of what might best be called procedural epistemology -- the study of the structure of knowledge from an imperative point of view, as opposed to the more declarative point of view taken by classical mathematical subjects. Mathematics provides a framework for dealing precisely with notions of âÂwhat is.âÂ Computation provides a framework for dealing precisely with notions of âÂhow to.âÂ</blockquote>
 
     <p class="byline">
             <img src="http://mt.schr.fr/lib/support/assets_c/2011/07/mystically-thumb-18x18-5.png" width="18" height="18"  />
@@ -342,8 +479,8 @@ His book inspired the development of Processing. It is easy to see why: <a href=
                     <label for="comment-reply" id="comment-reply-label"></label>
                 </div>
                 <div id="comments-open-text">
+                <p class="byline">For formatting your post, you can use html tags like &lt;p&gt; and &lt;br /&gt;. Whitespace for now is eaten up, like in HTML. we are sorryâwe will have a more friendly commenting option in place shortly!</p>
                     <label for="comment-text">Comments
-                    (You may use HTML tags for style)</label><br />
                     <textarea id="comment-text" name="text" rows="15" style="width:100%;" onfocus="mtCommentFormOnFocus()"></textarea>
                 </div>
                 <p class="byline" id="comments-open-license">By submitting your comment, you agree to license it under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike license</a>, the same license used for the text of the blog.</p>
@@ -391,7 +528,7 @@ His book inspired the development of Processing. It is easy to see why: <a href=
   <dt><a href="/and/who-makes-standards">Who gets to write the web: the power struggles around the standards</a></dt>
   <dd>November 20, 2013 10:08 PM</dd>
   
-  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTF’s, Webfonts and CSS From UFO’s</a></dt>
+  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTFâs, Webfonts and CSS From UFOâs</a></dt>
   <dd>November  5, 2013  9:57 PM</dd>
   
   <dt><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">No-one Starts From Scratch: Type Design and the Logic of the Fork</a></dt>
@@ -418,11 +555,11 @@ His book inspired the development of Processing. It is easy to see why: <a href=
         
     
     
-            <li><strong>jenseits:</strong>  I loved the preface to SICP. You don’t need <a href="/and/learning-how-to-program#comment-73" title="full comment on: Learning how to program">read more</a></li>
+            <li><strong>jenseits:</strong>  I loved the preface to SICP. You donât need <a href="/and/learning-how-to-program#comment-73" title="full comment on: Learning how to program">read more</a></li>
         
     
     
-            <li><strong>habitus:</strong>  Maybe you’re not trying hard enough :) Most Berkeley <a href="/and/learning-how-to-program#comment-72" title="full comment on: Learning how to program">read more</a></li>
+            <li><strong>habitus:</strong>  Maybe youâre not trying hard enough :) Most Berkeley <a href="/and/learning-how-to-program#comment-72" title="full comment on: Learning how to program">read more</a></li>
         
         </ul>
         
@@ -433,7 +570,7 @@ His book inspired the development of Processing. It is easy to see why: <a href=
 </div>
 <div id="bar">&nbsp;</div>
 <!-- Piwik, Open Source Analytics,
-let’s not give Google more data then necessary! Eric --> 
+letâs not give Google more data then necessary! Eric --> 
 <script type="text/javascript">
 var pkBaseURL = (("https:" == document.location.protocol) ? "https://var.schr.fr/piwik/" : "http://var.schr.fr/piwik/");
 document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));

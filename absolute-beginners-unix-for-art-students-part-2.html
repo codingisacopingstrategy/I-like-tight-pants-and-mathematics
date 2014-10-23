@@ -12,27 +12,12 @@
 <script type="text/javascript" src="/and/scripts/being/scripts.js"></script>
 <script type="text/javascript" src="/and/mt.js"></script>
 
-    <title>I like tight pants and absolute beginners: unix for art students – part 2</title>
+    <title>I like tight pants and absolute beginners: unix for art studentsÂ âÂ part 2</title>
     <link rel="stylesheet" href="/and/style/in/bnf.css" type="text/css" />
     <link rel="prev bookmark" href="/and/installing-compilers" title="I like tight pants and installing compilers" />
     <link rel="next bookmark" href="/and/i-have-relocated-to-brussels" title="I like tight pants and i have relocated to brussels" />
-    <!--
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
-         xmlns:dc="http://purl.org/dc/elements/1.1/">
-<rdf:Description
-    rdf:about="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-2.html"
-    trackback:ping="http://mt.schr.fr/tb.cgi/34"
-    dc:title="Absolute Beginners: Unix for Art Students – Part 2"
-    dc:identifier="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-2.html"
-    dc:subject="Absolute Beginners: Unix for Art Students"
-    dc:description="This is how you use the terminal."
-    dc:creator="bnf"
-    dc:date="2011-12-02T02:16:05+01:00" />
-</rdf:RDF>
--->
-
-    <meta property="og:title" content="I like tight pants and absolute beginners: unix for art students – part 2"/>
+    
+    <meta property="og:title" content="I like tight pants and absolute beginners: unix for art studentsÂ âÂ part 2"/>
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-2"/>
     
@@ -43,6 +28,158 @@
     <meta property="fb:admins" content="1488294875"/>
 </head>
 <body>
+<style>
+@font-face { font-family: BebasNeueRegular; src: url(http://i.liketightpants.net/BebasNeue-webfont.eot?#iefix) format(eot), url(http://i.liketightpants.net/BebasNeue-webfont.woff) format(woff), url(http://i.liketightpants.net/BebasNeue-webfont.ttf) format(truetype), url(http://i.liketightpants.net/BebasNeue-webfont.svg#webfontX0YNjQNl) format(svg); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: Pictos; src: url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web.eot?#iefix) format(eot), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-e4dc212e5f2737d6c98390f0d068cef2.woff) format(woff), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-87f332a73dadfa3a1daf93910c5b3649.ttf) format(truetype), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-5a6e6518658ad50c63328b250562dd20.svg) format(svg); }
+
+div#bar {
+    top: 40px;
+}
+
+div#bar, div#header {
+    padding-top: 11px;
+    padding-bottom: 4px;
+    line-height: 18px;
+}
+
+#recent_entries {
+    line-height: 20px !important;
+}
+
+#bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    z-index: -11111;
+}
+#fund {
+    height: 40px;
+}
+
+.widget {
+    font-size: 14px;
+/*    border-color: rgb(217, 217, 217);
+    border-radius: 3px 3px;
+    border-style: solid;
+    border-width: 1px;*/
+    box-sizing: border-box;
+    float: left;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    padding: 10px 10px 10px 10px;
+    width: 1190px;
+}
+
+.widget a {
+    word-wrap: break-word;
+    color: #ff00ae;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.widget > div {
+    display: inline-block;
+}
+
+.bankers {
+    background-image: url(https://d3v4jsc54141g1.cloudfront.net/assets/widget-bankers-77e9f587c6512ac1faa586a8a127cc83.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 23px;
+}
+
+.percentage {
+    background-image: -webkit-linear-gradient(top, rgb(229, 80, 82) 0%, rgb(236, 27, 32) 28%, rgb(215, 35, 41) 100%);
+    border-color: rgb(196, 16, 21);
+    border-style: solid;
+    /*border-width: 1px;*/
+    clear: none;
+    color: rgb(255, 255, 255);
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    height: 10px;
+    margin: 2px 0px 6px 0px;
+    max-width: 156px;
+    min-width: 2%;
+    padding: 0px 2px 0px 0px;
+    text-align: right;
+}
+
+.percentage-wrapper {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.117188) 0px 0px 1px, rgba(0, 0, 0, 0.199219) 0px 1px 1px inset;
+    background-color: rgba(0, 0, 0, 0.046875);
+    box-shadow: rgba(0, 0, 0, 0.117188) 0px 0px 1px, rgba(0, 0, 0, 0.199219) 0px 1px 1px inset;
+    clear: none;
+    float: left;
+    height: 12px;
+    margin: 2px 5px 2px 5px;
+    width: 160px;
+}
+
+.widget strong, .widget strong a {
+    animation-name: cycle;
+    animation-duration: 3s; 
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: steps(1, end); /* This makes it blink instead of fade */
+    animation-iteration-count: infinite;
+    -webkit-animation-name: cycle;
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: steps(1, end); /* This makes it blink instead of fade */
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes cycle 
+{
+    0% {
+        color: #ff00ae;
+    } 
+    50% {
+        color: #0000ff;
+    } 
+}
+@-webkit-keyframes cycle 
+{
+    0% {
+        color: #ff00ae;
+    } 
+    50% {
+        color: #0000ff;
+    } 
+}
+
+</style>
+<div id="bg">&nbsp;</div>
+<div class="container_7" id="fund">
+    <div class='widget'>
+        With
+        <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">57</a></strong> days left
+        <strong>
+        <a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">Visual Culture a Tool for Design Collaboration</a>
+        </strong>
+        by <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank">osp</a></strong>
+        is at
+        <div class='amount'>
+            <strong>
+            <a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">1%</a>
+            </strong>
+            <div class='percentage-wrapper small'>
+                <div class='percentage small' style='width:1%;'></div>
+            </div>
+        </div>
+        of its crowdfunding,
+        with contributions by 
+        <strong class='bankers'><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">3</a></strong> bankers:
+        <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">125 €</a></strong>
+         of a <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">12,500 €</a></strong> goal
+    </div>
+</div>
 <div id="header" class="container_7">
   <div class="grid_2">
   <h1><a href="/and/">i . like tight pants . net</a></h1>
@@ -79,7 +216,7 @@
   
   
   
-  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTF’s, Webfonts and CSS From UFO’s</a></dt>
+  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTFâs, Webfonts and CSS From UFOâs</a></dt>
   <dd>November  5, 2013  9:57 PM</dd>
   
   
@@ -114,7 +251,7 @@
 
   
   
-  <h4>bnf’s Comments</h4>
+  <h4>bnfâs Comments</h4>
   <dl>
   
   
@@ -156,9 +293,9 @@
   </p>
   <div>
     <div class="article grid_3 alpha omega suffix_2">
-    <h4>Absolute Beginners: Unix for Art Students – Part 2</h4>
+    <h4>Absolute Beginners: Unix for Art StudentsÂ âÂ Part 2</h4>
     <p><a href="/and/assets/called/absolute_beginners_figlet.png">
-        <img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_figlet.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, showing an ascii art that reads: Ã¢â¬ÅAbsolute beginnersÃ¢â¬Â." title="" style="width:830px;height:518px;" />
+        <img src="/and/assets/scaled/to/830/wide/and/called/absolute_beginners_figlet.png" alt="You see a Macintosh OS X 10.6 desktop with the standard background, purple spacescape, the sole program open is the terminal program, showing an ascii art that reads: ÃÂ¢Ã¢ÂÂ¬ÃÂAbsolute beginnersÃÂ¢Ã¢ÂÂ¬ÃÂ." title="" style="width:830px;height:518px;" />
       </a></p>
     <p>If I type</p>
     <pre>$ figlet absolute beginners</pre>
@@ -179,7 +316,7 @@
     <p>Figlet has proved to be a gateway drug for extended terminal usage. Figlet is not on your computer by default though. Even though your mac comes with a lot of unix software already, not a lot of it is graphics software. To install new software you need to install what is called a package manager, as explained in <a href="/and/installing-compilers">I like tight pants and installing compilers</a>. This article will continue with an introduction that tells you how to use the terminal!</p>
     <p>In your Applications folder, choose Accessories, and open Terminal. Now you can talk with your computer. He can tell you who you are. Type:</p>
     <pre>$ whoami</pre>
-    <p>(without the $ and the space, that’s just a convention to denote text that you enter into the terminal). And press enter. The computer outputs your username! The computer also knows where you are, at least where you are on the hard disk. Enter:</p>
+    <p>(without the $ and the space, thatâs just a convention to denote text that you enter into the terminal). And press enter. The computer outputs your username! The computer also knows where you are, at least where you are on the hard disk. Enter:</p>
     <pre>$ pwd</pre>
     <p>And the computer will repond with <code>/Users/yourusername</code>. It would make sense if you could say <code>whereami</code> but consistency is not Unix greatest strength. You are now in what is called your home folder.<br />
 You can always return to your home folder by typing:</p>
@@ -221,9 +358,9 @@ Type, by example:</p>
             
     <div id="comment-134" class="comment">
     
-To continue in this vain, starting from scratch, a really useful resource is <a href="http://cli.learncodethehardway.org/book/" rel="nofollow">The Command Line Crash Course — Controlling Your Computer From The Terminal</a> by Zed Shaw.
+To continue in this vain, starting from scratch, a really useful resource is <a href="http://cli.learncodethehardway.org/book/" rel="nofollow">The Command Line Crash Course â Controlling Your Computer From The Terminal</a> by Zed Shaw.
 
-From there, it’s just practice really. Baseline takes the terminal to a practical application in <a href="/and/absolute-beginners-unix-for-art-students-part-3" rel="nofollow">I like tight pants and absolute beginners: unix for art students Ã¢â¬â part 3</a>, and throughout this blog you will find scripts you can use from the terminal.
+From there, itâs just practice really. Baseline takes the terminal to a practical application in <a href="/and/absolute-beginners-unix-for-art-students-part-3" rel="nofollow">I like tight pants and absolute beginners: unix for art students ÃÂ¢Ã¢ÂÂ¬Ã¢ÂÂ part 3</a>, and throughout this blog you will find scripts you can use from the terminal.
 
 
     <p class="byline">
@@ -245,7 +382,7 @@ By the way, those students trying this out on Windows, through <a href="http://w
 
 There is nothing in your home folder initially. That is because Cygwin makes its own version of the unix file system on your hard disk, contained within the cygwin folder. So while in cygwin your home directery appears as <code>/home/tellyou/</code> for example, it is not the same home as your Windows home directory. The actual location of the cygwin home folder on your hard drive will then be <code>c:\cygwin\home\tellyou\</code>.
 
-So while you can do <code>ls</code> in you home folder, you will see nothing (as there are no files) and you won’t be able to <code>cd</code> anywhere. Also the <code>open</code> command is unique to Mac OS X and does not exist in other Unix flavours. The <code>touch</code> command does work as expected. So you can touch a new file, and then open through the explorer.
+So while you can do <code>ls</code> in you home folder, you will see nothing (as there are no files) and you wonât be able to <code>cd</code> anywhere. Also the <code>open</code> command is unique to Mac OS X and does not exist in other Unix flavours. The <code>touch</code> command does work as expected. So you can touch a new file, and then open through the explorer.
 
 To install new software on Cygwin, you need to rerun the Cygwin <code>setup.exe</code> you downloaded to install Cygwin initially. You can then select additional packages to install alongside. Use the searchbar to quickly find <code>figlet</code>, for example.
 </p>
@@ -303,8 +440,8 @@ To install new software on Cygwin, you need to rerun the Cygwin <code>setup.exe<
                     <label for="comment-reply" id="comment-reply-label"></label>
                 </div>
                 <div id="comments-open-text">
+                <p class="byline">For formatting your post, you can use html tags like &lt;p&gt; and &lt;br /&gt;. Whitespace for now is eaten up, like in HTML. we are sorryâwe will have a more friendly commenting option in place shortly!</p>
                     <label for="comment-text">Comments
-                    (You may use HTML tags for style)</label><br />
                     <textarea id="comment-text" name="text" rows="15" style="width:100%;" onfocus="mtCommentFormOnFocus()"></textarea>
                 </div>
                 <p class="byline" id="comments-open-license">By submitting your comment, you agree to license it under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike license</a>, the same license used for the text of the blog.</p>
@@ -352,7 +489,7 @@ To install new software on Cygwin, you need to rerun the Cygwin <code>setup.exe<
   <dt><a href="/and/who-makes-standards">Who gets to write the web: the power struggles around the standards</a></dt>
   <dd>November 20, 2013 10:08 PM</dd>
   
-  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTF’s, Webfonts and CSS From UFO’s</a></dt>
+  <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTFâs, Webfonts and CSS From UFOâs</a></dt>
   <dd>November  5, 2013  9:57 PM</dd>
   
   <dt><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">No-one Starts From Scratch: Type Design and the Logic of the Fork</a></dt>
@@ -375,11 +512,11 @@ To install new software on Cygwin, you need to rerun the Cygwin <code>setup.exe<
   <h4>Latest Comments</h4>
         <ul>
         
-            <li><strong>tellyou:</strong>  By the way, those students trying this out on <a href="/and/absolute-beginners-unix-for-art-students-part-2#comment-153" title="full comment on: Absolute Beginners: Unix for Art Students – Part 2">read more</a></li>
+            <li><strong>tellyou:</strong>  By the way, those students trying this out on <a href="/and/absolute-beginners-unix-for-art-students-part-2#comment-153" title="full comment on: Absolute Beginners: Unix for Art StudentsÂ âÂ Part 2">read more</a></li>
         
     
     
-            <li><strong>tellyou:</strong>  To continue in this vain, starting from scratch, a <a href="/and/absolute-beginners-unix-for-art-students-part-2#comment-134" title="full comment on: Absolute Beginners: Unix for Art Students – Part 2">read more</a></li>
+            <li><strong>tellyou:</strong>  To continue in this vain, starting from scratch, a <a href="/and/absolute-beginners-unix-for-art-students-part-2#comment-134" title="full comment on: Absolute Beginners: Unix for Art StudentsÂ âÂ Part 2">read more</a></li>
         
         </ul>
         
@@ -390,7 +527,7 @@ To install new software on Cygwin, you need to rerun the Cygwin <code>setup.exe<
 </div>
 <div id="bar">&nbsp;</div>
 <!-- Piwik, Open Source Analytics,
-let’s not give Google more data then necessary! Eric --> 
+letâs not give Google more data then necessary! Eric --> 
 <script type="text/javascript">
 var pkBaseURL = (("https:" == document.location.protocol) ? "https://var.schr.fr/piwik/" : "http://var.schr.fr/piwik/");
 document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));

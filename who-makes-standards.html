@@ -2,47 +2,193 @@
 <html>
 <head>
 <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=510">
 <link rel="stylesheet" href="/and/style/in/reset.css" type="text/css" />
 <link rel="stylesheet" href="/and/style/in/grid.css" type="text/css" />
-<link rel="stylesheet" href="/and/style/in/style.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/and/style/in/habitus.css" />
+
 <link rel="start" href="/and/" title="Home" />
 <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/and/feed/us/recent_entries.xml" />
-<script type="text/javascript" src="/and/scripts/being/jquery-1.8.0.min.js"></script>
+
+<script type="text/javascript" src="/and/scripts/being/jquery-1.11.0.min.js"></script>
+
+
 <script type="text/javascript" src="/and/scripts/being/scripts.js"></script>
 <script type="text/javascript" src="/and/mt.js"></script>
-
     <title>I like tight pants and who gets to write the web: the power struggles around the standards</title>
-    <link rel="stylesheet" href="/and/style/in/habitus.css" type="text/css" />
-    <link rel="prev bookmark" href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo" title="I like tight pants and ufo2otf makes otf’s, webfonts and css from ufo’s" />
-    <link rel="next bookmark" href="/and/graphic-design-is-a-nostalgic-field" title="I like tight pants and       graphic design is a nostalgic field     " />
-    <!--
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
-         xmlns:dc="http://purl.org/dc/elements/1.1/">
-<rdf:Description
-    rdf:about="http://i.liketightpants.net/and/who-makes-standards.html"
-    trackback:ping="http://mt.schr.fr/tb.cgi/68"
-    dc:title="Who gets to write the web: the power struggles around the standards"
-    dc:identifier="http://i.liketightpants.net/and/who-makes-standards.html"
-    dc:subject=""
-    dc:description="In this text we try to introduce in more detail what are some of the power struggles that underlie the continued development of HTML. We will look at HTML’s latest iteration, HTML5. We will see the way in which companies like Google try to further their own agenda’s, sometimes under the guise of following the bottom up inventions of web authors."
-    dc:creator="habitus"
-    dc:date="2013-11-20T22:08:09+01:00" />
-</rdf:RDF>
--->
 
-    <meta property="og:title" content="I like tight pants and who gets to write the web: the power struggles around the standards"/>
+
+    <meta property="og:title dc:title" content="I like tight pants and who gets to write the web: the power struggles around the standards"/>
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="http://i.liketightpants.net/and/who-makes-standards"/>
     
     <meta property="og:image" content="http://i.liketightpants.net/and/assets/called/OED-LEXX-Bungler.jpg"/>
     <meta property="og:site_name" content="I like tight pants and mathematics"/>
-    <meta property="og:description"
+    <meta property="og:description dc:description"
           content="In this text we try to introduce in more detail what are some of the power struggles that underlie the continued development of HTML. We will look at HTML’s latest iteration, HTML5. We will see the way in which companies like Google try to further their own agenda’s, sometimes under the guise of following the bottom up inventions of web authors."/>
     <meta property="fb:admins" content="1488294875"/>
+
+    <meta property="mt:entry_basename" content="who_makes_standards" />
+    <meta property="dc:modified" content="2014-10-21T17:28:11+01:00" />
+
+
 </head>
 <body>
+
+
+<style>
+@font-face { font-family: BebasNeueRegular; src: url(http://i.liketightpants.net/BebasNeue-webfont.eot?#iefix) format(eot), url(http://i.liketightpants.net/BebasNeue-webfont.woff) format(woff), url(http://i.liketightpants.net/BebasNeue-webfont.ttf) format(truetype), url(http://i.liketightpants.net/BebasNeue-webfont.svg#webfontX0YNjQNl) format(svg); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: Pictos; src: url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web.eot?#iefix) format(eot), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-e4dc212e5f2737d6c98390f0d068cef2.woff) format(woff), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-87f332a73dadfa3a1daf93910c5b3649.ttf) format(truetype), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-5a6e6518658ad50c63328b250562dd20.svg) format(svg); }
+
+div#bar {
+    top: 40px;
+}
+
+div#bar, div#header {
+//    border-top: 1px solid rgb(217, 217, 217);
+    padding-top: 11px;
+    padding-bottom: 4px;
+    line-height: 18px;
+}
+
+#recent_entries {
+    line-height: 20px !important;
+}
+
+#bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    z-index: -11111;
+}
+#fund {
+    height: 40px;
+}
+
+.widget {
+    font-size: 14px;
+/*    border-color: rgb(217, 217, 217);
+    border-radius: 3px 3px;
+    border-style: solid;
+    border-width: 1px;*/
+    box-sizing: border-box;
+    float: left;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    padding: 10px 10px 10px 10px;
+    width: 1190px;
+}
+
+.widget a {
+    word-wrap: break-word;
+    color: #ff00ae;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.widget > div {
+    display: inline-block;
+}
+
+.bankers {
+    background-image: url(https://d3v4jsc54141g1.cloudfront.net/assets/widget-bankers-77e9f587c6512ac1faa586a8a127cc83.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 23px;
+}
+
+.percentage {
+    background-image: -webkit-linear-gradient(top, rgb(229, 80, 82) 0%, rgb(236, 27, 32) 28%, rgb(215, 35, 41) 100%);
+    border-color: rgb(196, 16, 21);
+    border-style: solid;
+    /*border-width: 1px;*/
+    clear: none;
+    color: rgb(255, 255, 255);
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    height: 10px;
+    margin: 2px 0px 6px 0px;
+    max-width: 156px;
+    min-width: 2%;
+    padding: 0px 2px 0px 0px;
+    text-align: right;
+}
+
+.percentage-wrapper {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.117188) 0px 0px 1px, rgba(0, 0, 0, 0.199219) 0px 1px 1px inset;
+    background-color: rgba(0, 0, 0, 0.046875);
+    box-shadow: rgba(0, 0, 0, 0.117188) 0px 0px 1px, rgba(0, 0, 0, 0.199219) 0px 1px 1px inset;
+    clear: none;
+    float: left;
+    height: 12px;
+    margin: 2px 5px 2px 5px;
+    width: 160px;
+}
+
+.widget strong, .widget strong a {
+    animation-name: cycle;
+    animation-duration: 3s; 
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: steps(1, end); /* This makes it blink instead of fade */
+    animation-iteration-count: infinite;
+    -webkit-animation-name: cycle;
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: steps(1, end); /* This makes it blink instead of fade */
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes cycle 
+{
+    0% {
+        color: #ff00ae;
+    } 
+    50% {
+        color: #0000ff;
+    } 
+}
+@-webkit-keyframes cycle 
+{
+    0% {
+        color: #ff00ae;
+    } 
+    50% {
+        color: #0000ff;
+    } 
+}
+
+</style>
+<div id="bg">&nbsp;</div>
+<div class="container_7" id="fund">
+    <div class='widget'>
+        With
+        <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">57</a></strong> days left
+        <strong>
+        <a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">Visual Culture a Tool for Design Collaboration</a>
+        </strong>
+        by <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank">osp</a></strong>
+        is at
+        <div class='amount'>
+            <strong>
+            <a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">1%</a>
+            </strong>
+            <div class='percentage-wrapper small'>
+                <div class='percentage small' style='width:1%;'></div>
+            </div>
+        </div>
+        of its crowdfunding,
+        with contributions by 
+        <strong class='bankers'><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">3</a></strong> bankers:
+        <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">125 €</a></strong>
+         of a <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">12,500 €</a></strong> goal
+    </div>
+</div>
 <div id="header" class="container_7">
   <div class="grid_2">
   <h1><a href="/and/">i . like tight pants . net</a></h1>
@@ -50,24 +196,27 @@
   <div class="grid_3">
   <ul>
     
-    
-    <li><a href="/and/the-underwater-screen-or-lessons-from-wordperfect">latest</a></li>
-    
+    <li ><a href="/and/the-underwater-screen-or-lessons-from-wordperfect">latest</a></li>
     <li><a href="/and/about">about</a></li>
-    <li><a href="/and/archives">index</a></li>
+    <li ><a href="/and/archives">index</a></li>
   </ul>
   </div>
   <div class="grid_2">
-  <p class="byline">New entries published Monday and Thursday, 22:00 CET (<a href="/and/feed/us/recent_entries.xml">RSS</a>)</p><!-- <h4>search box</h4> -->
+  <p class="byline" id="recent_entries">New entries published Monday and Thursday, 22:00 CET (<a href="/and/feed/us/recent_entries.xml">RSS</a>)</p>
   </div>
 </div>
 
+
 <div id="content" class="container_7">
+
 <div class="sidebar grid_1">
   
-  <img src="http://mt.schr.fr/lib/support/assets_c/userpics/userpic-5-100x100.png?2" width="100" height="100" alt="" />
+  <img src="/and/assets/that/are/pictures/of/author/habitus.png" style="width:100px;height:100px;" alt="" />
   
-  <h4 class="author">habitus</h4>
+  <h4 class="author" property="dc:created" content="2013-11-20T22:08:09+01:00">November 20, 2013</h4>
+  <h4 class="author">by <span property="dc:creator">habitus</span></h4>
+
+  
   <p>&nbsp;</p>
   
   <hr />
@@ -75,45 +224,47 @@
   <h4>Other articles by habitus</h4>
   <dl>
   
-  
-  
-  
-  
   <dt><a href="/and/hackers-culture-and-the-fear-of-wysiwyg">Hacker Culture and the Fear of WYSIWYG</a></dt>
   <dd>May 23, 2014 12:40 AM</dd>
   
-  
-  
-  
-  
-  
-  
   <dt><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">No-one Starts From Scratch: Type Design and the Logic of the Fork</a></dt>
-  <dd>October  9, 2013 10:00 PM</dd>
-  
-  
-  
+  <dd>October 9, 2013 10 PM</dd>
   
   <dt><a href="/and/belgian-newspapers">Belgian Newspapers</a></dt>
   <dd>March 29, 2013 10:17 PM</dd>
   
-  
-  
-  
   <dt><a href="/and/i-like-ziggy-over-zarathustra">Ziggy over Zarathustra</a></dt>
-  <dd>January  8, 2012  4:43 PM</dd>
-  
-  
-  
+  <dd>January 8, 2012 4:43 PM</dd>
   
   <dt><a href="/and/judging-art">Judging art</a></dt>
-  <dd>June  7, 2011  5:35 PM</dd>
-  
+  <dd>June 7, 2011 5:35 PM</dd>
   
   </dl>
 
+  <h4>habitus’s comments</h4>
+  <ul>
   
-
+    <li>Dear Ian, thank you for taking the time to respond. ... <a href="/and/who-makes-standards" title="full comment on: Who gets to write the web: the power struggles around the standards">read more</a></li>
+  
+    <li>Thanks for your insight that it is not just programmers ... <a href="/and/hackers-culture-and-the-fear-of-wysiwyg" title="full comment on: Hacker Culture and the Fear of WYSIWYG">read more</a></li>
+  
+    <li>Thanks for the link, Martín. I agree that hybrid solutions ... <a href="/and/hackers-culture-and-the-fear-of-wysiwyg" title="full comment on: Hacker Culture and the Fear of WYSIWYG">read more</a></li>
+  
+    <li>I would prefer it to tell me Everything is OK <a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo" title="full comment on: ufo2otf Makes OTF’s, Webfonts and CSS From UFO’s">read more</a></li>
+  
+    <li>This also has implications for sharing tools, which for me ... <a href="/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong" title="full comment on: 48 Hours of Writing Stylesheets with Etherpad and a Gong">read more</a></li>
+  
+    <li>For a much more nuanced critique of Helvetica and similar ... <a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork" title="full comment on: No-one Starts From Scratch: Type Design and the Logic of the Fork">read more</a></li>
+  
+    <li>A strictly generative approach to typesetting is of course limiting ... <a href="/and/i-need-my-generic-font-medicine" title="full comment on: I Need My Generic Font Medicine">read more</a></li>
+  
+    <li>Well, at least you managed to download software that also ... <a href="/and/it-might-be-a-unix-sin-but-i-would-like-you-to-add-dot-t-x-t-as-the-extension-of-your-readme-file" title="full comment on: It Might Be a Unix Sin But I Would Like You to Add .txt As the Extension of Your README file">read more</a></li>
+  
+    <li>At the event in the Library, they mainly highlight the ... <a href="/and/belgian-newspapers" title="full comment on: Belgian Newspapers">read more</a></li>
+  
+    <li>The public domain day highlighted work of authors that have ... <a href="/and/belgian-newspapers" title="full comment on: Belgian Newspapers">read more</a></li>
+  
+  </ul>
   <hr />
   
   <h4>Other writers</h4>
@@ -136,14 +287,13 @@
 </div>
 <div class="post grid_5">
   <p class="byline">
-  <a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">Previous</a> 
-  
-  
-    / <a href="/and/graphic-design-is-a-nostalgic-field">Next</a>
+  <a href="/and/the-story-of-nokia-microsoft-and-a-1000-hearts-breaking">Previous</a>
+    / <a href="/and/the-underwater-screen-or-lessons-from-wordperfect">Next</a>
   </p>
-  <div>
-    <div class="article grid_3 alpha omega suffix_2">
-    <h4>Who gets to write the web: the power struggles around the standards</h4>
+  <div class="article grid_3 alpha omega suffix_2">
+    <h4 property="mt:entry_title">Who gets to write the web: the power struggles around the standards</h4>
+    <article  property="mt:entry_id" content="73" class="entry" id="entry-73">
+    
     <style>sup { vertical-align: top; font-size: 8px; font-weight: bold; }
     a, a:visited, a:active {
       color: #000;
@@ -163,7 +313,7 @@
     <p>The concept of a markup language has a number of great benefits. By leaving out page-setting instructions, the pages are quicker to download. With HTML, it is not the author, but the visitor’s browser which is finally responsible for the layout on the screen. Already in the 1990ies, before smartphones and ‘responsive design’, people access the web with different kinds of screens and devices: the browser makes it all fit on the screen.</p>
     <p>Another advantage of HTML is the fact that the language is ‘plain text’: The mark up of HTML is simple and uses normal keyboard characters. The first browsers already provide an option to ‘view source’, and see the underlying tag codes. These can easily be copied and adapted into an HTML creation of one’s own. This creates a language that is accessible for experimentation and self-learning, with a high potential for ‘bricolage’ by the budding homepage creators.</p>
     <p>The one feature of page description languages that is lacking in a markup language like HTML, though, is the possibility to easily store and transmit rich layout features. The scientific community, within which the web arose, is used to scarce layout of scientific papers (as are the other audiences in which SGML based solutions are popular). The first HTML versions provide headings, paragraphs, citation marks—but no columns, or even: images! In order to win over a larger public outside of academia, some of the visual sophistication of illustrated print media will have to find its way into the web, and thus, into HTML. This is the tension upon which some of the first battles over HTML are built.</p>
-    <p>In 1993 NCSA Mosaic is released, the first graphical web browser on the Windows platform. A research project at the time, the responsible researchers launch Netscape Navigator (1994) upon graduation. An obvious tension can be seen between the original scientific community and the entrepreneurs that see a future for the web as a mass medium. In a rush to make the web attractive for a larger public, they add a lot of graphical capabilities to HTML. ‘Academics and software engineers later would argue that many of these extensions were very much ad hoc and not properly designed.’ (<a href="#ragget-1998" class="" hreflang="">Ragget, 1998</a>)</p>
+    <p>In 1993 NCSA Mosaic is released, the first graphical web browser on the Windows platform. A research project at the time, the responsible researchers launch Netscape Navigator (1994) upon graduation. An obvious tension can be seen between the original scientific community and the entrepreneurs that see a future for the web as a mass medium. In a rush to make the web attractive for a larger public, they add a lot of graphical capabilities to HTML. ‘Academics and software engineers later would argue that many of these extensions were very much ad hoc and not properly designed.’ (<a href="#ragget-1998" class="aloha-link-text" hreflang="">Ragget, 1998</a>)</p>
     <p>Whatever the original community around the web might think of the changing nature of the language, the new companies are also responsible for opening up the academic invention to the public at large. In this process, the power to define what is HTML shifts away from the community in which it originated, to the new (commercial) browser developers:</p>
     <blockquote class="aloha-cite-wrapper aloha-cite-1383659333040" data-cite-id="1383659333040">Following a predictable path, Netscape began inventing its own HTML tags as it pleased without first openly discussing them with the Web community. Netscape rarely made an appearance at the big International WWW conferences, but it seemed to be driving the HTML standard. It was a curious situation, and one that the inner core of the HTML community felt they must redress.</blockquote>
     <p style=""><span style="font-size: 14px;"></span></p>
@@ -173,7 +323,7 @@
     <p class="byline" style=""><a href="#scanlon-2007" class="" hreflang="">Scanlon, 2007</a><br style=""></p>
     <h4>The years of web standards 1998-2007</h4>
     <p><span style="font-size: 14px;">At this point, an other group with vested interests joins the debate. The web designers who have to create web pages for their living, who are having a hard time to work in this fragmented landscape, often creating multiple versions of a site that cater to multiple browsers. The idea of browsers respecting the W3C standards becomes their rallying point, in what is known as the Web Standards Movement.&nbsp;</span>Businessweek runs a feature on Jeffrey Zeldman, an influential figure in this community, highlighting ‘his ability to talk about the dry and, let's face it, dull subject of standards in a way that made everyone see their importance.’ (<a href="#scanlon-2007" class="aloha-link-text" hreflang="">Scanlon, 2007</a>)</p>
-    <p>An aside, it would be interesting to look at this group of designers more precisely: it does not represent all designers, but rather a specific subset who have a hybrid design/development skill set. They operate contrasting themselves with communication agencies who have a design/development division of labour or who invest in more traditional designer-friendly tools such as Adobe Flash or Dreamweaver—in fact, the ‘Standards Aware’ designers can be seen to advocate against these kind of tools, advocating ‘hand written html’ over the ‘bloated WYSIWYG tools’.                                     <sup>1</sup>
+    <p>An aside, it would be interesting to look at this group of designers more precisely: it does not represent all designers, but rather a specific subset who have a hybrid design/development skill set. They operate contrasting themselves with communication agencies who have a design/development division of labour or who invest in more traditional designer-friendly tools such as Adobe Flash or Dreamweaver—in fact, the ‘Standards Aware’ designers can be seen to advocate against these kind of tools, advocating ‘hand written html’ over the ‘bloated WYSIWYG tools’.                                                       <sup>1</sup>
 </p>
     <p style="">At this point the W3C seems a natural ally to web developers. A standards body providing free standards—standards that became the stick to beat browser vendors with, and whose compliance becoming a mark of prestige for a new generation of web designer/developers. These makers group together as the Web Standards Project (1998).</p>
     <p style="">Another party to the burgeoning ‘standards movement’ are new browser developers. These browsers with a smaller market share have a hard time competing, because most web pages are built to the whims of the Netscape or Internet Explorer’s rendering engines. Web standards will make it more easy for new browsers to gain a competitive advantage. The backgrounds of the browser manufacturers are quite varied: there is the small Norwegian company Opera, there is Mozilla,&nbsp;<span style="font-size: 14px;">informed by ideals of an Open Web,</span><span style="font-size: 14px;">&nbsp;who have created the Open Source project Firefox, and there is Apple, who have created their own browser Safari so that they don’t have to rely on third parties for a smooth web experience on their operating system.</span></p>
@@ -184,16 +334,17 @@
     <h4>a new power struggle: 2007 to now</h4>
     <p style="">Standards are a work in progress, involving many actors. The confluence of browser vendors, web designers and the W3C working together has seen a great momentum, when the interests of all these parties aligned towards overcoming the power of the established browsers from Microsoft and Netscape. With the dust settled, afterwards, the way forward is less clear.</p>
     <p style="">Discontents with the W3C becomes prevalent as development of XHTML2 progresses, which more clearly outlines the vision of the W3C: towards standards that require a strict adherence (i.e., the document won’t display if not fully well-formed), in order to pave the way for a future vision of the web that will allow the content of web pages to be more easily reasoned about by software programs—a future known as the Semantic Web.</p>
-    <p>Convincing arguments against a naive vision of the Semantic Web are already voiced by (<a href="#doctorow-2001" class="aloha-link-pointer" hreflang="">Doctorow, 2001</a>): since software can not easily deal with natural language, web pages would need some kind of structured metadata in addition to their linguistic content. Besides the inherent impossibility of objective frameworks for metadata (‘ontologies’), the quality of such metadata will always be lacking due to human laziness on the one hand, and the human desire to game the system on the other.                  <sup>2</sup>
+    <p>Convincing arguments against a naive vision of the Semantic Web are already voiced by (<a href="#doctorow-2001" class="aloha-link-pointer" hreflang="">Doctorow, 2001</a>): since software can not easily deal with natural language, web pages would need some kind of structured metadata in addition to their linguistic content. Besides the inherent impossibility of objective frameworks for metadata (‘ontologies’), the quality of such metadata will always be lacking due to human laziness on the one hand, and the human desire to game the system on the other.                                    <sup>2</sup>
 </p>
-    <p><span style="font-size: 14px;">The other main argument against the new standard is has been uttered in many forms around the web, among others by (<a href="#martin-2008" class="" hreflang="">Martin, 2008</a>)</span><span style="font-size: 14px;">. This argument goes: the very fact that browsers are extremely forgiving in the way they interpret markup is the basis for the success of the internet: it has enabled copy-paste developing style that made the barrier to entry for creating web pages quite low.</span><br></p>
+    <p><span style="font-size: 14px;">The other main argument against the new standard has been uttered in many forms around the web, among others by (<a href="#martin-2008" class="aloha-link-text" hreflang="">Martin, 2008</a>)</span><span style="font-size: 14px;">. This argument goes: the very fact that browsers are extremely forgiving in the way they interpret markup is the basis for the success of the internet: it has enabled copy-paste developing style that made the barrier to entry for creating web pages quite low.</span><br></p>
     <p style="">The most consistent and influential counter reaction to the W3C’s direction comes from an association of browser vendors known as the WHATWG (2004). They stage a coup, proposing an alternative future standard: HTML5. The name itself suggests the promise of continuity and backwards compatibility, and the standard itself focuses on capturing existing practices, with a focus on web applications.</p>
     <p style="">This coup is wildly&nbsp;successful. &nbsp;In 2007, W3C even endorses the new standard. For a while work continues on both HTML5 and XHTML2 until, in 2009 the W3C announces the decision to drop XHTML2. Many parts of the HTML5 standard are then quickly implemented in browsers. This is because the browser vendors are onboard from the beginning, but also because the standard has been based on existing practices, and does not require authors to ‘clean up their act’. HTML5 even specifies how a web browser should deal with malformed HTML tags.&nbsp;</p>
     <h4>conflicting interests, a case study: RDF/A</h4>
     <p style="">The WHATWG’s more pragmatic approach to HTML standardisation has proved successful, up to the point where the notion of ‘web standards’ is now much less present in the world of web design and development than it used to be. The Web Standards Project dissolves itself in 2013, seeing its mission largely as accomplished. ‘Standards Compliant’ is no longer a unique selling point. Wordpress’ homepage, once proudly flaunting standards compliance and semantics in it tag-line, now simply states: “WordPress is web software you can use to create a beautiful website or blog.” (<a href="#wordpress-2014" class="" hreflang="">Wordpress, 2014</a>). Gone too is the fashion of noting adherence to standards in website footers. It is as if web designer/developers no longer believe the syntactical strictness of XHTML will deliver them from tag soup.</p>
     <p style="">As part of its pragmatism, the WHATWG favours a nimble decision making process. To understand more about who writes the web now, we have to examine who partakes in this process. As far as standards bodies go, the W3C is quite open: the cost of membership is given on a sliding scale, depending on the character of the organisation applying and the country in which it is located. That isn’t the case with the WHATWG, as written in&nbsp;the Charter (<a href="#whatwg-nd" class="" hreflang="">WHATWG, n.d.</a>), ‘Membership is by invitation only’. Membership is also available only to browser vendors. This than makes it opportune to look, who are these browser vendors, what are their interests, and how do they come into play in the nature of HTML5.</p>
+    <p style=""><i>Update 21-10-2014: Ian Hickson weighs in in the comment section to explain more on the process employed by the WHATWG and how it compares to the W3C. More feedback by those familiar with the process is very welcome!</i></p>
     <p style=""><span style="font-size: 14px;">As much as it advances the state of the web, HTML5 is definitely no longer focused on the ideology of the Semantic Web. To examine what this means in practice, let’s look at an element of Semantic Web technology called RDF/A: the W3C ’s intended mechanism to add extra metadata to your HTML pages. This metadata allows one to specify all kinds of relations that normally only are available when accessing the underlying data sources, paving the way to re-use and expose the information in new ways.</span></p>
-    <p style="">A foundational idea of XHTML is its extensibility: based on a more abstract standard, XML, other XML based formats can be mixed in. HTML5 doesn’t provide such a format for extension. The HTML5 working group hand-picked two XML formats that can be embedded in an HTML5 document: SVG drawings and MATHML mathematical formulas.&nbsp;<span style="font-size: 14px;">RDF/A is not among the extensions allowed in HTML5.&nbsp;</span><span style="font-size: 14px;">The specification’s editor, Thomas Hickson, writes&nbsp;</span>on the W3C mailing list<span style="font-size: 14px;">&nbsp;about the reasoning to omit RDF/A (<a href="#hickson-2009" class="" hreflang="">Hickson, 2009</a>). He fails to see the added value of RDF/A over ‘natural language processing’:</span></p>
+    <p style="">A foundational idea of XHTML is its extensibility: based on a more abstract standard, XML, other XML based formats can be mixed in. HTML5 doesn’t provide such a format for extension. The HTML5 working group hand-picked two XML formats that can be embedded in an HTML5 document: SVG drawings and MATHML mathematical formulas.&nbsp;<span style="font-size: 14px;">RDF/A is not among the extensions allowed in HTML5.&nbsp;</span><span style="font-size: 14px;">The specification’s editor, Ian Hickson, writes&nbsp;</span>on the W3C mailing list<span style="font-size: 14px;">&nbsp;about the reasoning to omit RDF/A (<a href="#hickson-2009" class="" hreflang="">Hickson, 2009</a>). He fails to see the added value of RDF/A over ‘natural language processing’:</span></p>
     <div data-cite-id="1383751941952">
       <blockquote>
       Do we have reason to believe that it is more likely that we will get&nbsp;authors to widely and reliably include such relations than it is that we&nbsp;will get high quality natural language processing? Why?
@@ -254,150 +405,280 @@
     Web Hypertext Application Technology Working Group Charter. (n.d.). Retrieved November 19, 2013, from <a href="http://www.whatwg.org/charter" class="aloha-link-text" hreflang="">http://www.whatwg.org/charter</a></p>
     <p>WordPress — Home. (2003, June 18). Retrieved November 19, 2013 from <a href="https://web.archive.org/web/20030618021947/http://wordpress.org/" class="aloha-link-text" hreflang="">https://web.archive.org/web/20030618021947/http://wordpress.org/</a>.</p>
     <p>WordPress — Home. (2014, September 28). Retrieved November 19, 2013 from <a href="https://web.archive.org/web/20140928052112/https://wordpress.org/" class="aloha-link-pointer" hreflang="">https://web.archive.org/web/20140928052112/https://wordpress.org/</a></p>
-<div id="aside" style="padding-top: 44px;" class=""><p>This article was commissioned for “<a href="">Considering your tools.
+<div id="aside" style="padding-top: 44px;" class=""><p>This article was commissioned for “<a href="http://reader.lgru.net/pages/index/">Considering your tools.
 a reader for designers and developers”</a> and is cross-posted here.</p>
     <p><em>Update October 4, 2014: Since this article’s original publication, RDF/A has been accepted as part of HTML5: <a href="http://www.w3.org/News/2013#entry-9919">http://www.w3.org/­News/­2013#entry-9919</a>.</em></p></div>
+    </article>
+    <h4 class="comments-header">3 Comments</h4>
+
+
+    
     <div id="comments" class="comments">
-
-
-
-
-
-
-
     
-    
-    <div class="comments-open" id="comments-open">
-        <h4 class="comments-open-header">Leave a comment</h4>
-        <div class="comments-open-content">
-
-        
-            <div id="comment-greeting"></div>
-
-            <form method="post" action="http://mt.schr.fr/comments.cgi" name="comments_form" id="comments-form" onsubmit="return mtCommentOnSubmit(this)">
-                <input type="hidden" name="static" value="1" />
-                <input type="hidden" name="entry_id" value="73" />
-                <input type="hidden" name="__lang" value="en" />
-                <input type="hidden" name="parent_id" value="" id="comment-parent-id" />
-                <input type="hidden" name="armor" value="1" />
-                <input type="hidden" name="preview" value="" />
-                <input type="hidden" name="sid" value="" />
-                <div id="comments-open-data">
-                    <div id="comment-form-name">
-                      <div class="alpha grid_1"><label for="comment-author" class="span-4">Name</label></div>
-                        <div class="omega grid_2"><input id="comment-author" name="author" size="30" value="" onfocus="mtCommentFormOnFocus()" /></div>
-                    </div>
-                    <div id="comment-form-email">
-                        <div class="alpha grid_1"><label for="comment-email" class="span-4">Email Address</label></div>
-                        <div class="omega grid_2"><input id="comment-email" name="email" size="30" value="" onfocus="mtCommentFormOnFocus()" /></div>
-                    </div>
-                    <div id="comment-form-url">
-                        <div class="alpha grid_1"><label for="comment-url" class="span-4">URL</label></div>
-                        <div class="omega grid_2"><input id="comment-url" name="url" size="30" value="" onfocus="mtCommentFormOnFocus()" /></div>
-                    </div>
-                    <div id="comment-form-remember-me">
-                        <input type="checkbox" id="comment-bake-cookie" name="bakecookie" onclick="mtRememberMeOnClick(this)" value="1" accesskey="r" />
-                        <label for="comment-bake-cookie">Remember personal info?</label>
-                    </div>
-                </div>
-                <div id="comment-form-reply" style="display:none">
-                    <input type="checkbox" id="comment-reply" name="comment_reply" value="" onclick="mtSetCommentParentID()" />
-                    <label for="comment-reply" id="comment-reply-label"></label>
-                </div>
-                <div id="comments-open-text">
-                    <label for="comment-text">Comments
-                    (You may use HTML tags for style)</label><br />
-                    <textarea id="comment-text" name="text" rows="15" style="width:100%;" onfocus="mtCommentFormOnFocus()"></textarea>
-                </div>
-                <p class="byline" id="comments-open-license">By submitting your comment, you agree to license it under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike license</a>, the same license used for the text of the blog.</p>
-                <div id="comments-open-captcha"></div>
-                <div id="comments-open-footer">
-                   <!-- <input type="submit" accesskey="v" name="preview_button" id="comment-preview" value="Preview" onclick="this.form.preview.value='1';" /> -->
-                    <input type="submit" accesskey="s" name="post" id="comment-submit" value="Submit" />
-                </div>
-            </form>
+        <div class="comments-content">
+          
+            
 
 
-        </div>
-    </div>
-    <script type="text/javascript">
-    <!--
-    mtAttachEvent("load", mtEntryOnLoad);
-    mtAttachEvent("unload", mtEntryOnUnload);
-    //-->
-    </script>
-    
 
+<div property="mt:comment_id" content="332" id="comment-332" resource="/and/who_makes_standards#comment-332" class="comment">
+<div class="comment-editor" property="mt:comment_text">
+
+  <p>
+The part about the WHATWG membership is wrong. The WHATWG "membership" is akin to the W3C "staff". Both are "by invitation only". In the case of the WHATWG, the "membership" (aka staff) do essentially no work, they're just an oversight committee whose responsibility it is to prevent the WHATWG from going into a misguided direction. All the work is done by contributors; there's no barrier to entry there other than (for unfortunate pragmatic reasons) speaking English.</p>
+  <p>
+The part about RDF/A is also a little wrong. While it's certainly true that Google has algorithms for NLP, it also has even better algorithms for structured data, and indeed at this point is probably the world's biggest processor of structured data. That doesn't change my arguments on the matter. Authors are <i>terrible</i> at marking up structured data. Also, it's not like it's easier for small companies to do structured data processing than NLP. It looks like it should be, but the real problems are things like spam fighting, contradiction disambiguation, query interpretation, etc, which are just as hard when the input data is structured as when it isn't.</p>
+  <p>
+Indeed, anyone who has spent enough time in the WHATWG community to see how I operate will tell you that if anything, I'm biased against Google, not astroturfing for them.
+</p>
 
 </div>
+<p class="byline" >
+   
+  by <a property="dc:creator" href="http://ln.hixie.ch/+">Ian Hickson</a> - <a href="/and/who-makes-standards#comment-332"><span property="dc:created" content="2014-10-21T18:05:18+01:00">October 21, 2014 6:05 PM</span></a><br />
+  <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(332, 'Ian Hickson')">Reply</a>
+</p>
+</div>
+  <div class="comments-parent-container" style="margin-left: 20px;">
+  
+  
+    
 
 
-    </div>
+
+
+
+<div property="mt:comment_id" content="333" id="comment-333" resource="/and/who_makes_standards#comment-333" class="comment comment-reply">
+<div class="comment-editor" property="mt:comment_text">
+
+  <p>Dear Ian, thank you for taking the time to respond.</p>
+  <p>The ‘Charter’ I linked to indeed has no detail on how non-members can get involved in the HTML specification, and I am sorry for not being more clear on the subject. This document details how one can get involved with the standards: <a href="https://wiki.whatwg.org/wiki/What_you_can_do" class="aloha-link-text" hreflang="">https://wiki.whatwg.org/wiki/What_you_can_do</a></p>
+  <p>Your characterisation of the membership as a simple facilitator doing ‘no work’ seems at odds, though, with the idea of the members as an oversight committee that has to make sure the WHATWG ‘doesn’t go in a misguided direction’. This means that the membership creates some idea of what is guided and what is misguided, and that it acts upon this idea.&nbsp;</p>
+  <p style="">I couldn’t find on the WHATWG who are the members now. The original members were all representing browser vendors, is this still the case? I also couldn’t find how the editor for a specification gets chosen; are they already part of the membership?</p>
+  <p style="">The staff member that surely has the most impact on the process is the editor:</p>
+  <blockquote class="aloha-cite-wrapper aloha-cite-1413905356568" data-cite-id="1413905356568">
+    <p>Each specification has a separate editor, who is responsible for dealing with feedback for that document. Those editors read all the feedback, and, taking it into account along with research, studies, and feedback from many other sources (blogs, forums, IRC, etc) make language design decisions intended to address everyone's needs as well as possible while keeping the languages and APIs consistent. (…)</p>
+    <p>This is not a consensus-based approach — there's no guarantee that everyone will be happy! There is also no voting. There is a small oversight committee (known historically as the "WHATWG members", from the name that the original charter used, though that terminology is misleading) who have the authority to override or replace editors if they start making bad decisions, but so far that has never happened in over ten years.&nbsp;</p>
+</blockquote>
+  <p class="byline"><a href="https://wiki.whatwg.org/wiki/FAQ#How_does_the_WHATWG_work.3F" class="aloha-link-text" hreflang="">https://wiki.whatwg.org/wiki/FAQ#How_does_the_WHATWG_work.3F<br></a></p>
+  <p>The role of the editor goes way beyond facilitating: it is them that have to weigh the pros and cons of solution and finally decide on them. The only safeguard in place is the aforementioned ‘membership’, and we don’t know whose interests they serve.</p>
+  <p>Unless the WHATWG took steps in recruiting members and editors from different background, the way the WHATWG is structured to me still suggests it is skewed towards the interests of browser vendors?</p>
+
+</div>
+<p class="byline" >
+  <img src="/and/assets/that/are/pictures/of/author/habitus.png" width="18" height="18" /> 
+  by <a property="dc:creator" href="http://i.liketightpants.net/authors#habitus">habitus</a> - <a href="/and/who-makes-standards#comment-333"><span property="dc:created" content="2014-10-21T20:13:21+01:00">October 21, 2014 8:13 PM</span></a><br />
+  <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(333, 'habitus')">Reply</a>
+</p>
+</div>
+  <div class="comments-parent-container" style="margin-left: 20px;">
+  
+  
+    
+
+
+
+
+
+
+
+<div property="mt:comment_id" content="334" id="comment-334" resource="/and/who_makes_standards#comment-334" class="comment comment-reply">
+<div class="comment-editor" property="mt:comment_text">
+
+  <p>
+The member list is the one on the charter (it's been updated as we added members — looking at the list, it looks like right now two of the members don't work for browser vendors, and one never has), but there hasn't been any real activity amongst the members for years. It's similar to how in Britain in theory ultimate power rests in the monarch, but in practice, the majority party in the House of Commons is where stuff happens. The members, or oversight committee, has never had to actually take action.</p>
+  <p>
+Anyway, the charter is wildly out of date now (see the paragraph at the top). The WHATWG FAQ describes the current processes (such as they are).</p>
+  <p>
+Editors are just volunteers, just like everything else at the WHATWG (e.g. the guy who maintains the wiki software is a volunteer who doesn't work for any of the browser vendors). I think of the people who currently edit WHATWG specs, only two are on the member list.
+</p>
+  <p>
+It's worth noting, though, that all of this misses the point. The WHATWG has no power. The W3C has no power. The editors have no power. All the power lies in the implementors, because if they don't agree with something, they don't implement it, and the spec ends up dead on arrival. That's why, for instance, XHTML2 went nowhere: the browser vendors didn't want to implement it. It doesn't matter whether you have a pay-to-play membership like the W3C, or a totally open mailing list like the WHATWG: either way, the people with the power are the implementors. This has nothing to do with the WHATWG oversight committee "members". It would be true whether the members were all browser vendors, or whether they were fairly elected from SXSW attendees, or whatever.
+</p>
+
+</div>
+<p class="byline" >
+   
+  by <a property="dc:creator" href="">Ian Hickson</a> - <a href="/and/who-makes-standards#comment-334"><span property="dc:created" content="2014-10-21T22:36:57+01:00">October 21, 2014 10:36 PM</span></a><br />
+  <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(334, 'Ian Hickson')">Reply</a>
+</p>
+</div>
+  <div class="comments-parent-container" style="margin-left: 20px;">
+  
+  
+    
+
+
+
+
+
+
+
+
+
+
+  
+  
   </div>
-  <hr />
 
-</div>
+
+
+
+  
+  
+  </div>
+
+
+
+
+
+
+  
+  
+  </div>
+
+
+
+
+
+
+
+
+          
+            <a title="Reply" href="#reply">Reply</a>
+        </div>
+        
+        <div class="comments-open" id="comments-open">
+            <h4 class="comments-open-header">Leave a comment</h4>
+            <div class="comments-open-content">
+                <div id="comment-greeting"></div>
+                
+                    <form method="post" action="http://mt.schr.fr/comments.cgi" name="comments_form" id="comments-form" onsubmit="return mtCommentOnSubmit(this)">
+                        <input type="hidden" name="static" value="1" />
+                        <input type="hidden" name="entry_id" value="73" />
+                        <input type="hidden" name="__lang" value="en" />
+                        <input type="hidden" name="parent_id" id="comment-parent-id" />
+                        <input type="hidden" name="armor" value="1" />
+                        <input type="hidden" name="preview" value="" />
+                        <input type="hidden" name="sid" value="" />
+                        <div id="comments-open-data">
+                            <div id="comment-form-name">
+                              <div class="alpha grid_1"><label for="comment-author" class="span-4">Name</label></div>
+                                <div class="omega grid_2"><input id="comment-author" name="author" size="30" value="" onfocus="mtCommentFormOnFocus()" /></div>
+                            </div>
+                            <div id="comment-form-email">
+                                <div class="alpha grid_1"><label for="comment-email" class="span-4">Email Address</label></div>
+                                <div class="omega grid_2"><input id="comment-email" name="email" size="30" value="" onfocus="mtCommentFormOnFocus()" /></div>
+                            </div>
+                            <div id="comment-form-url">
+                                <div class="alpha grid_1"><label for="comment-url" class="span-4">URL</label></div>
+                                <div class="omega grid_2"><input id="comment-url" name="url" size="30" value="" onfocus="mtCommentFormOnFocus()" /></div>
+                            </div>
+                            <div id="comment-form-remember-me">
+                                <input type="checkbox" id="comment-bake-cookie" name="bakecookie" onclick="mtRememberMeOnClick(this)" value="1" accesskey="r" />
+                                <label for="comment-bake-cookie">Remember personal info?</label>
+                            </div>
+                        </div>
+                        <div id="comment-form-reply" style="display:none">
+                            <input type="checkbox" id="comment-reply" name="comment_reply" value="" onclick="mtSetCommentParentID()" />
+                            <label for="comment-reply" id="comment-reply-label"></label>
+                        </div>
+                        <div id="comments-open-text">
+                            <label for="comment-text">Comments</label><br />
+                            <p class="byline">For formatting your post, you can use html tags like &lt;p&gt; and &lt;br /&gt;. Whitespace for now is eaten up, like in HTML. we are sorry—we will have a more friendly commenting option in place shortly!</p>
+                            <textarea id="comment-text" name="text" rows="15" style="width:100%;" onfocus="mtCommentFormOnFocus()"></textarea>
+                        </div>
+                        <p class="byline" id="comments-open-license">By submitting your comment, you agree to license it under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike license</a>, the same license used for the text of the blog.</p>
+                        <div id="comments-open-captcha"></div>
+                        <div id="comments-open-footer">
+                           <!-- <input type="submit" accesskey="v" name="preview_button" id="comment-preview" value="Preview" onclick="this.form.preview.value='1';" /> -->
+                            <input type="submit" accesskey="s" name="post" id="comment-submit" value="Submit" />
+                        </div>
+                    </form>
+
+                
+            </div>
+        </div>
+    
+        <script type="text/javascript">
+            mtAttachEvent("load", mtEntryOnLoad);
+            mtAttachEvent("unload", mtEntryOnUnload);
+        </script>
+        
+    
+    </div><!-- / comments -->
+  </div> <!-- / article grid_3 -->
+  <hr />
+</div> <!-- / post grid_5-->
 
 <div class="sidebar grid_1">
   <h4>Latest articles</h4>
   <dl>
   
   <dt><a href="/and/the-underwater-screen-or-lessons-from-wordperfect">The Underwater Screen Or Lessons From Wordperfect      </a></dt>
-  <dd>June 10, 2014  8:21 PM</dd>
+  <dd>June 10, 2014 8:21 PM</dd>
   
   <dt><a href="/and/hackers-culture-and-the-fear-of-wysiwyg">Hacker Culture and the Fear of WYSIWYG</a></dt>
   <dd>May 23, 2014 12:40 AM</dd>
   
   <dt><a href="/and/graphic-design-is-a-nostalgic-field">      Graphic Design Is A Nostalgic Field     </a></dt>
-  <dd>February 19, 2014  8:02 PM</dd>
+  <dd>February 19, 2014 8:02 PM</dd>
   
   <dt><a href="/and/who-makes-standards">Who gets to write the web: the power struggles around the standards</a></dt>
   <dd>November 20, 2013 10:08 PM</dd>
   
   <dt><a href="/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo">ufo2otf Makes OTF’s, Webfonts and CSS From UFO’s</a></dt>
-  <dd>November  5, 2013  9:57 PM</dd>
+  <dd>November 5, 2013 9:57 PM</dd>
   
   <dt><a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork">No-one Starts From Scratch: Type Design and the Logic of the Fork</a></dt>
-  <dd>October  9, 2013 10:00 PM</dd>
+  <dd>October 9, 2013 10 PM</dd>
   
   <dt><a href="/and/i-need-my-generic-font-medicine">I Need My Generic Font Medicine</a></dt>
-  <dd>October  9, 2013  9:55 PM</dd>
+  <dd>October 9, 2013 9:55 PM</dd>
   
   <dt><a href="/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong">48 Hours of Writing Stylesheets with Etherpad and a Gong</a></dt>
-  <dd>October  8, 2013 10:06 PM</dd>
+  <dd>October 8, 2013 10:06 PM</dd>
   
   <dt><a href="/and/release-early-release-often-version-numbers-for-typefaces">Release Early Release Often Version Numbers For Typefaces</a></dt>
-  <dd>September 25, 2013  9:53 PM</dd>
+  <dd>September 25, 2013 9:53 PM</dd>
   
   <dt><a href="/and/the-story-of-nokia-microsoft-and-a-1000-hearts-breaking">The Story of Nokia, Microsoft and a 1000 Hearts Breaking</a></dt>
-  <dd>September  4, 2013 10:02 PM</dd>
+  <dd>September 4, 2013 10:02 PM</dd>
   
   </dl>
 
+
+  <h4>Latest Comments</h4>
+  <ul>
   
+    <li><strong>Ian Hickson:</strong> The member list is the one on the charter (it&#39;s ... <a href="/and/who-makes-standards" title="full comment on: Who gets to write the web: the power struggles around the standards">read more</a></li>
+  
+    <li><strong>habitus:</strong> Dear Ian, thank you for taking the time to respond. ... <a href="/and/who-makes-standards" title="full comment on: Who gets to write the web: the power struggles around the standards">read more</a></li>
+  
+    <li><strong>Ian Hickson:</strong> The part about the WHATWG membership is wrong. The WHATWG ... <a href="/and/who-makes-standards" title="full comment on: Who gets to write the web: the power struggles around the standards">read more</a></li>
+  
+    <li><strong>Erik:</strong> Good points. Also: writing UI is hard. <a href="/and/the-underwater-screen-or-lessons-from-wordperfect" title="full comment on: The Underwater Screen Or Lessons From Wordperfect      ">read more</a></li>
+  
+    <li><strong>nike shox:</strong> do not want to be t basket vans femme pas ... <a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork" title="full comment on: No-one Starts From Scratch: Type Design and the Logic of the Fork">read more</a></li>
+  
+    <li><strong>Tolan Blundell:</strong> As someone who&#39;s written a moderately complex CMS from scratch ... <a href="/and/hackers-culture-and-the-fear-of-wysiwyg" title="full comment on: Hacker Culture and the Fear of WYSIWYG">read more</a></li>
+  
+    <li><strong>Mark Entingh:</strong>  <a href="/and/hackers-culture-and-the-fear-of-wysiwyg" title="full comment on: Hacker Culture and the Fear of WYSIWYG">read more</a></li>
+  
+    <li><strong>Mark Entingh:</strong> I am intrigued by this blog post as I am ... <a href="/and/hackers-culture-and-the-fear-of-wysiwyg" title="full comment on: Hacker Culture and the Fear of WYSIWYG">read more</a></li>
+  
+    <li><strong>habitus:</strong> Thanks for your insight that it is not just programmers ... <a href="/and/hackers-culture-and-the-fear-of-wysiwyg" title="full comment on: Hacker Culture and the Fear of WYSIWYG">read more</a></li>
+  
+    <li><strong>bnf:</strong> Dear Ned, thanks for your reaction, and the link to ... <a href="/and/hackers-culture-and-the-fear-of-wysiwyg" title="full comment on: Hacker Culture and the Fear of WYSIWYG">read more</a></li>
+  
+  </ul>
 
 </div>
+
 </div>
 <div id="bar">&nbsp;</div>
-<!-- Piwik, Open Source Analytics,
-let’s not give Google more data then necessary! Eric --> 
-<script type="text/javascript">
-var pkBaseURL = (("https:" == document.location.protocol) ? "https://var.schr.fr/piwik/" : "http://var.schr.fr/piwik/");
-document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-</script><script type="text/javascript">
-try {
-var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
-piwikTracker.trackPageView();
-piwikTracker.enableLinkTracking();
-} catch( err ) {}
-</script><noscript><p><img src="http://var.schr.fr/piwik/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
-<!-- End Piwik Tracking Code -->
 
-<!--[if !(lt IE 8)]><!-->
-   <script type="text/javascript">
-     (function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=document.location.protocol+"//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
-   </script>
-<!--<![endif]-->
 
 </body>
 </html>
+
