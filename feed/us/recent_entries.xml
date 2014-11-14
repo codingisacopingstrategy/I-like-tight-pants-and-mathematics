@@ -4,8 +4,8 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2014-06-10T08:29:05Z</updated>
-    
+    <updated>2014-06-10T10:29:05+01:00</updated>
+
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
 
 <entry>
@@ -13,18 +13,16 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-underwater-screen-or-lessons-from-wordperfect" />
     <id>tag:i.liketightpants.net,2014:/and//1.94</id>
 
-    <published>2014-06-10T18:21:57Z</published>
-    <updated>2014-06-10T08:29:05Z</updated>
+    <published>2014-06-10T20:21:57+01:00</published>
+    <updated>2014-06-10T10:29:05+01:00</updated>
 
     <summary>If you happen to share a studio, an office or a live with someone who used personal computers in the 1990ies, and you are at their side when this happens, there is a significant chance this person will express a desire for a certain feature of a previous generation of word processors: I am talking about WordPerfect, and its ‘reveal codes’ option.</summary>
     <author>
         <name>tellyou</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <p>
       <img style="height: 539px; width: 795px; position: relative; margin: 0px; resize: none; zoom: 1; display: inline-block; top: 0px; left: 0px;" src="/and/assets/called/underwaterscreen_wordperfect.png" title="" class="">
 <br></p>
@@ -81,8 +79,8 @@
     <p>
        Because these editors are built on HTML’s native functionality, we can use all of the debugging tools the browser already ships with. Aloha promises us that its output is so good, there is no need to dive into the codes. That is not really true. Just like with Microsoft Word, there are moments where one would like to correct the automatically applied formatting commands. It is at this point that we can use the browsers functionality: we right-click on the text and choose ‘inspect element’. Once we open up the element inspection, we see an underwater view: the Document Object Model the browser has constructed, with all the nodes from the HTML with their CSS styling applied. As we edit these nodes, the visual page will change. We can even copy in HTML codes from other sources.</p>
     <p><i><a href="http://www.aloha-editor.org/" title="Aloha Editor - HTML5 WYSIWYG Editor" class="aloha-link-text">Aloha Editor</a> is a JavaScript project that can be integrated into any website. Doing so does require some programming skills as the setup is slightly more involved than for most (jQuery) plugins. For several publishing platforms prepackaged plugins exist, such as <a href="http://wordpress.org/plugins/front-end-editor/" title="WordPress › Front-end Editor « WordPress Plugins">for Wordpress</a>.</i></p>
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
@@ -91,19 +89,16 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/hackers-culture-and-the-fear-of-wysiwyg" />
     <id>tag:i.liketightpants.net,2014:/and//1.97</id>
 
-    <published>2014-05-22T22:40:24Z</published>
-    <updated>2014-09-06T13:26:57Z</updated>
+    <published>2014-05-23T01:40:24+01:00</published>
+    <updated>2014-11-13T15:51:11+01:00</updated>
 
     <summary>Flash forward to 2014, and most Content Management Systems still offer us the same inhospitable form fields that look nothing like the page they will produce. The programmers are to blame, and here’s why.</summary>
     <author>
         <name>habitus</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-    <style>
+            <style>
   .article li {
       list-style: inherit !important;
   }
@@ -211,36 +206,38 @@ font-family: Georgia, Times, serif;
     <p>
       <img style="height: 469px; width: 625px; position: relative; margin: 0px; resize: none; zoom: 1; display: inline-block; top: 0px; left: 0px;" src="/and/assets/called/ratpoison.png" title="" class="">
 <br></p>
-    <p class="byline"><em>Arch Linux interface with the ratpoison window manager.</em> An alternative user interface paradigm is embodied in the culture of Unix-like systems. Linux users are free to choose there own window manager—the part of the operating system that keeps track where to draw what to the screen. In this case, the window manager is called ‘ratpoison’: a self-conscious reference to the fact that this interface can be controlled almost entirely by keyboard.<br><a href="http://retroyou.org/MMM/IM/CARGO/COMMAND_LINE/screenshot-20070305122500.png">source</a>, part of the <a href="http://retroyou.org/MMM/IM/CARGO/COMMAND_LINE/001.html" class="aloha-link-text">COMMAND LINE_ LONELY SEARCH SESSIONS</a> @ <a href="http://retroyou.org/" class="aloha-link-text">retroyou.org</a></p>
+    <p class="byline"><em>Arch Linux interface with the ratpoison window manager.</em> An alternative user interface paradigm is embodied in the culture of Unix-like systems. Linux users are free to choose their own window manager—the part of the operating system that keeps track where to draw what to the screen. In this case, the window manager is called ‘ratpoison’: a self-conscious reference to the fact that this interface can be controlled almost entirely by keyboard.<br><a href="http://retroyou.org/MMM/IM/CARGO/COMMAND_LINE/screenshot-20070305122500.png">source</a>, part of the <a href="http://retroyou.org/MMM/IM/CARGO/COMMAND_LINE/001.html" class="aloha-link-text">COMMAND LINE_ LONELY SEARCH SESSIONS</a> @ <a href="http://retroyou.org/" class="aloha-link-text">retroyou.org</a></p>
     <p>In 2004, there are more websites with an editing experience like Mediamatic: Flickr, for example makes it possible to change the title and metadata of a photo right on the photo page itself, if one is logged in. Yet flash forward to 2014, and most Content Management Systems still offer us the same inhospitable form fields that look nothing like the page they will produce.</p>
-    <p>If we look at the experience of writing on Wordpress, the most used blogging platform, the first thing one notes is the place where one edits the posts is quite distinct from the place that is visited by the reader: you are in the ‘back end’. There is some visual resemblance between the editing interface and the article: headings are bigger then body text, italics become italic. But the font does not necessarily correspond to the resulting posts, nor do the line-width, line-height and so forth. Some other elements are not visual at all: to embed youtube and the like one uses ‘<a href="http://en.support.wordpress.com/shortcodes/">shortcodes</a>’.</p>
+    <p>If we look at the experience of writing on Wordpress, the most used blogging platform, the first thing one notes is that the place where one edits the posts is quite distinct from the place that is visited by the reader: you are in the ‘back end’. There is some visual resemblance between the editing interface and the article: headings are bigger then body text, italics become italic. But the font does not necessarily correspond to the resulting posts, nor do the line-width, line-height and so forth. Some other elements are not visual at all: to embed youtube and the like one uses ‘<a href="http://en.support.wordpress.com/shortcodes/">shortcodes</a>’.</p>
     <p>Technologically, what was possible in 2004 should still be possible now—the web platform has since then only advanced, offering new functionality like contentEditable which allows one to easily make a part of a webpage editable, without much further scripting. So where are the content management systems that take advantage of these technologies? To answer this question, we will have to look at how web technologies come about.</p>
     <h3>The dominant computing paradigm and its counter-point</h3>
     <p>An editing interface that visually resembles it visual result is know as WYSIWYG, What You See Is What You Get. The term dates from the introduction of the graphical user interface. The Apple Macintosh offers the first mainstream WYSIWYG programs, and the Windows 3.1 and especially Windows 95 operating systems make this approach the dominant one.</p>
-    <p>A word processing program like Microsoft Word is a prototypical WYSIWYG interface: we edit in an interface that visually resembles as close as possible the result that comes out of the printer. Most graphic designers also work in WYSIWYG programs: the canvas based paradigm of programs like Illustrator, inDesign, Photoshop, Gimp, Scribus and Inkscape.</p>
+    <p>A word processing program like Microsoft Word is a prototypical WYSIWYG interface: we edit in an interface that visually resembles as close as possible the result that comes out of the printer. Most graphic designers also work in WYSIWYG programs: this is the canvas based paradigm of programs like Illustrator, inDesign, Photoshop, Gimp, Scribus and Inkscape.</p>
     <p>But being the dominant paradigm for user-interfaces, especially in document creation and graphic design, does not mean the WYSIWYG legacy is the only paradigm in use. Programmer and author Michael Lopp, also known as Rands, tries to convince us that ‘nerds’ use a computer in a different way. From his self-help guide for the nerd’s significant other,&nbsp;<a href="http://randsinrepose.com/archives/the-nerd-handbook/" class="aloha-link-text" target="_self">The Nerd Handbook</a>:</p>
     <blockquote class="aloha-cite-wrapper" data-cite-id="1409931623839">
       <p>Whereas everyone else is traipsing around picking dazzling fonts to describe their world, your nerd has carefully selected a monospace typeface, which he avidly uses to manipulate the world deftly via a command line interface while the rest fumble around with a mouse.</p>
 </blockquote>
-    <p>Rand’s hypothetical nerd uses a text based terminal interface to interface with his computer: the kind of interface introduced in&nbsp;<a href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-1" target="_self" class="aloha-link-text">I like tight pants and absolute beginners: Unix for Art students</a>. Yet ‘nerd’ is a terribly imprecise term: one can be a nerd at many things, and it is mainly a derogative term. So is who likes to &nbsp;manipulate their computer from the command line? Surely, these are people who are familiar with text interfaces or with code. People that are steeped in or attracted by, the practice of programming.</p>
+    <p>Rand introduces a hypothetical nerd that uses a text based terminal interface to interact with her computer. He mentions the ‘command line’, the kind of computer interface that sees one typing in commands and which is introduced in&nbsp;<a href="http://i.liketightpants.net/and/absolute-beginners-unix-for-art-students-part-1" target="_self" class="aloha-link-text">I like tight pants and absolute beginners: Unix for Art students</a>.</p>
+    <p>Yet who exactly is it who likes to use their computer in such as way? ‘Nerd’ is a terribly imprecise term: one can be a nerd at many things, and it is mainly a derogative term. But it seems safe to suggest that those using the command line have some familiarity with text as an interface, and with using programming codes. People that are steeped in or attracted by, the practice of programming.</p>
     <h3>Programmers as Gatekeepers</h3>
     <p>Since the 1990ies desktop publishing revolution Graphic Designers have been able to implement their own print designs without the intervention of engineers. In most cases this is not true for the web: the implementation of websites is ultimately done by programmers. These programmers often have an important say in the technology that is used to create a website. It is only normal that the programmers’ values and preferences are reflected in these choices.</p>
-    <p>This effect is reinforced because the programming community largely owns its own means of production. In contrast with print design, the programming technologies used in creating web sites (the programming languages, the libraries, the content management systems) are almost always Free and/or Open Source. Even commercial Content Management Systems are often built upon existing Open Source components. There are many ways in which this is both inspiring and practical. Yet if this engagement with a collectively owned and community-driven set of tools is commendable, it has one important downside: the values of the community directly impact the character of the tools available.</p>
+    <p>This effect is reinforced because the programming community largely owns its own means of production. In contrast with print design, the programming technologies used in creating web sites (the programming languages, the libraries, the content management systems) are almost always Free Software and/or Open Source. Even commercial Content Management Systems are often built upon existing Open Source components. There are many ways in which this is both inspiring and practical. Yet if this engagement with a collectively owned and community-driven set of tools is commendable, it has one important downside: the values of the community directly impact the character of the tools available.</p>
     <h3>Hacker Culture</h3>
     <p>Programming is not just an activity, it is embedded in a culture. All the meta-discourse surrounding programming attributes to this culture. A particularly influential strand of computing meta-discourse is what can be called ‘Hacker Culture’. If I were to characterise this culture, I would do so by sketching two highly visible programmers that are quite different in their practice, yet share a set of common cultural references in which the concept of a ‘hacker’ is important.</p>
-    <p>On the one hand we can look at Richard Stallman, a founder of the Free Software Movement, tireless activist for ‘Software Freedom’. Having coded essential elements of what was to become GNU/Linux, he is just as well known for his foundational texts such as the GPL license. The concept of a hacker is important to him, as evidenced in his article <a href="https://stallman.org/articles/on-hacking.html" class="aloha-link-pointer">‘On Hacking’</a>.<br>
+    <p>On the one hand we can look at Richard Stallman, a founder of the Free Software Movement, tireless activist for ‘Software Freedom’. Having coded essential elements of what was to become GNU/Linux, he is just as well known for his foundational texts such as the GPL license. The concept of a hacker is important to him, as evidenced in his article <a href="https://stallman.org/articles/on-hacking.html" class="aloha-link-text">‘On Hacking’</a>.<br>
 On the other hand there is someone like Paul Graham, a Silicon Valley millionaire and venture capitalist. Influential in ‘start-up’ culture, Graham has turned his own experience into something of a template for start-ups to follow: start with a small group of twenty-something programmers/entrepreneurs and create a company that tries to grow as quickly as possible, attract funding, and then either fail, be bought, or in extremely rare cases become a large publicly traded company. His vision of the start-up is both codified in writing and brought into practice at the ‘incubator’ Y Combinator.<br>
 As different as Graham’s trajectory might be from Stallman’s, he too has written an <a href="http://paulgraham.com/gba.html" class="aloha-link-text">article on what it means to be a hacker</a>. The popular discussion forum he has run is called Hacker News. In fact, Graham refers to the people that start start-ups as hackers.<br>
 The fact that Stallman and Graham share a certain culture is shown by the fact that their conceptions of what is a hacker is far removed from the everyday usage of the world. While to most people a hacker means someone who breaks into computer systems, Stallman and Graham agree that true sense of hacker is quite different.</p>
-    <p>Thus, contesting the mainstream concept of hacker is itself important in the subculture: Douglas Thomas already describes this mechanism in his thoroughly readable introduction on Hacker Culture (2002). A detailed anthropological analysis of a slice of Hacker Culture is performed in Gabriella Coleman’s <a href="http://codingfreedom.com/" class="aloha-link-pointer" hreflang="" target="_self">Coding Freedom: the Ethics and Aesthetics of Hacking</a> (2012), though it seems to focus on Free Software developers of the most idealistic persuasion and seems less interested in the major role Silicon Valley dollars play in fuelling Hacker Culture. For this tension too is at the heart of hacker culture: the&nbsp;</p>
+    <p>Thus, contesting the mainstream concept of hacker is itself important in the subculture: Douglas Thomas already describes this mechanism in his thoroughly readable introduction on Hacker Culture (2002). A detailed anthropological analysis of a slice of Hacker Culture is performed in Gabriella Coleman’s <a href="http://codingfreedom.com/" class="aloha-link-text" hreflang="" target="_self">Coding Freedom: the Ethics and Aesthetics of Hacking</a> (2012), though it seems to focus on Free Software developers of the most idealistic persuasion and seems less interested in the major role Silicon Valley dollars play in fuelling Hacker Culture. For this tension too is at the heart of hacker culture: even if Hacker Culture is a place to push new conceptions of technology, ownership and collaboration, the Hacker revolution is financed by working ‘for the man’. The Hacker Culture blossoming at universities in the 1960ies was only possible only through liberal funding through the department of Defense, today many <a href="http://www.pixelbeat.org/misc/google_stars.html" class="aloha-link-text" hreflang="" target="_self" title="Google’s Open Source Stars">leading Free and Open Software developers</a> work at Google.</p>
     <h3>Grown (Wo)men Afraid of Mice</h3>
     <p>If we want to know about Hacker’s Culture’s attitude towards user interfaces, we can start to look for anecdotal evidence. In an interview about his computing habits, arch-hacker Stallman actually seems to resemble quite closely that of the hypothetical GUI-eschewing ‘nerd’ from Rands’ article:</p>
-    <blockquote>
+    <blockquote class="aloha-cite-wrapper" data-cite-id="1415774591247">
       <p>I spend most of my time using Emacs [A text-editor]. I run it on a text console [A terminal], so that I don’t have to worry about accidentally touching the mouse-pad and moving the pointer, which would be a nuisance. I read and send mail  with Emacs (mail is what I do most of the time).<br>I switch to the X console [A graphical user interface] when I need to do something graphical, such as look at an image or a PDF file.</p>
 </blockquote>
-    <p>Richard Stallman does not even use a mouse. This might seem an outlier position, yet he is not the only hacker to take such a position. That there exists an audience interested in a mouse-less computing experience is indicated also by the existence of the open source window manager called ratpoison. This software allows one to control the computer without any use of the mouse, killing it metaphorically.</p>
-    <p>The mouse is invented in the early sixties by Douglas Engelbart. It is incorporated into the Xerox Star system that goes on to inspire the Macintosh computer. Steve Jobs commissions&nbsp;Dean Hovey to come up with a design that is cheap to produce, more simple and more reliable than Xerox’s version. After the mouse is introduced with the Macintosh computer in 1984 it quickly spreads to PC’s, and it becomes indispensable to every day users once the Windows OS becomes mainstream in the 1990ies.</p>
-    <p>The mouse is part of the same set of ideas that come up with the graphical user interface, just like the WYSIWYG interaction model. The ascendence of these interaction models is linked to (and has probably enabled) personal computers becoming ubiquitous in the 1990ies. &nbsp;It is not this tradition that Stallman and likeminded spirits inscribe themselves in. The roots of the Hacker paradigm of computing stretch back further: back when computers where not yet personal, and when they ran an operating system called ‘Unix’.</p>
+    <p class="byline"><a href="http://richard.stallman.usesthis.com/" class="aloha-link-text" target="_self" hreflang="" title="The Setup / Richard Stallman">The Setup / Richard Stallman</a></p>
+    <p>Richard Stallman does not even use a mouse. This might seem an outlier position, yet he is not the only hacker to take such a position. Otherwise, there would be no audience for the open source window manager called ‘ratpoison’. This software allows one to control the computer without any use of the mouse, killing it metaphorically.</p>
+    <p>The mouse is invented in the early sixties by Douglas Engelbart. It is incorporated into the Xerox Star system that goes on to inspire the Macintosh computer. <a href="http://www.newyorker.com/magazine/2011/05/16/creation-myth" class="aloha-link-text" target="_self" hreflang="" title="Creation Myth - The New Yorker">Steve Jobs commissions&nbsp;Dean Hovey to come up with a design that is cheap to produce, more simple and more reliable than Xerox’s version</a>. After the mouse is introduced with the Macintosh computer in 1984 it quickly spreads to PC’s, and it becomes indispensable to every day users once the Windows OS becomes mainstream in the 1990ies.</p>
+    <p>The mouse is part of the paradigm of these graphical user interfaces, just like the WYSIWYG interaction model. The ascendence of these interaction models is linked to (and has probably enabled) personal computers becoming ubiquitous in the 1990ies. &nbsp;It is not this tradition that Stallman and likeminded spirits inscribe themselves in. They prefer to refer to the roots of the Hacker paradigm of computing that stretch back further: back when computers where not yet personal, and when they ran an operating system called ‘Unix’.</p>
     <h3>Unix, Hacker Culture’s Gilgamesh epic</h3>
     <p>The Unix operating system plays a particular role in the system of cultural values that make up programming culture. Developed in the 1970ies at AT&amp;T, it becomes the dominant operating system of the mainframe era of computing. In this setup, one large computer runs the main software, and various users login into this central computer from their own terminal. This terminal is an interface that allows one to send commands and view the results—the actual computation being performed on the mainframe. Variants of Unix become widely used in the world of the enterprise and in academia.</p>
     <p>The very first interface to the mainframe computers is the teletype: an electronic typewriter that allowed one to type commands to the computer, and to subsequently print the response. As teletypes get replaced by computer terminals, with CRT displays and terminals, interfaces often stay decidedly minimal. It is much cheaper to use text characters to create interfaces than to have full blown graphical user interfaces, especially as the state of the interface has to be sent over the wire from the mainframe to the terminal. Everyone who has worked in a large organisation in the 1980ies or 1990ies will remember the keyboard driven user interfaces of the time.</p>
@@ -253,20 +250,20 @@ The fact that Stallman and Graham share a certain culture is shown by the fact t
     <p><em>p.51  Coleman, Coding Freedom - The Ethics and Aesthetics of Hacking. New Jersey, 2012.</em></p>
     <h3>The primacy of plain-text</h3>
     <p>If there is a lingua franca in Unix, it is ‘plain text’. Unix originated in the epoch that users would type in commands on a tele-type machine, and typing commands is still considered an essential part of using Unix-like systems today. Many of the core UNIX commands are launched with text commands, and their output is often in the form of text. This is as true for classic UNIX programs as for programs written today. Unix programs are constructed so that the output of one program can be fed into the input of another program: this ability to chain commands in ‘pipes’ depends on the fact that all these programs share the same format of out- and input, which is streams of text.</p>
-    <p>The most central program in the life of a practitioner of Hacker Culture is the text editor. Contrary to a program like Word, a text editor shows the raw text of a file including any formatting commands. This is still the main paradigm for how programmers work on project: as a bunch of text files organised in folders. This is not inherent to programming (there have been programming environments that store code in a database, or in binary files), but has proved the most lasting and popular way to do so. Unix’ tools are built around and suited for plain text files, so this approach also contributes to the ongoing popularity of Unix—and vice versa.</p>
-    <p>While programming, one has to learn how to create a mental model of the object programmed. As the programmer only sees the codes, she or he has to imagine the final result while editing—then compile and run the project to see if projection was correct. This feedback loop is much slower as the feedback loop as we know it from WYSIWYG programs. We can imagine this gives programmers more tolerance for abstract interfaces then those of us outside this culture.</p>
-    <p>This might change the trade-off. While WYSIWYG has a shorter feed-back loop, it also adds additional complexity. Anyone who has used Microsoft Word knows the scenario: after applying several layers of formatting, the document’s behaviour seems to become erratic: remove a carriage return, and the whole layout of a subsequent paragraph might break. This is because the underlying structure of the rich text document (on the web, this is HTML) remains opaque to the user. With increased ease-of-use, comes a number of edge cases and a loss of control over the underlying structure.</p>
+    <p>The most central program in the life of a practitioner of Hacker Culture is the text editor. Contrary to a program like Word, a text editor shows the raw text of a file including any formatting commands. This is still the main paradigm for how programmers work on a project: as a bunch of text files organised in folders. This is not inherent to programming (there have been programming environments that store code in a database, or in binary files), but has proved the most lasting and popular way to do so. Unix’ tools are built around and suited for plain text files, so this approach also contributes to the ongoing popularity of Unix—and vice versa.</p>
+    <p>While programming, one has to learn how to create a mental model of the object programmed. As the programmer only sees the codes, she or he has to imagine the final result while editing—then compile and run the project to see if projection was correct. This feedback loop is much slower than the feedback loop as we know it from WYSIWYG programs. Maybe it is the experience of slow feedback that gives programmers more tolerance for abstract interfaces then those of us outside this culture.</p>
+    <p>While WYSIWYG has a shorter feed-back loop, it also adds additional complexity. Anyone who has used Microsoft Word knows the scenario: after applying several layers of formatting, the document’s behaviour seems to become erratic: remove a carriage return, and the whole layout of a subsequent paragraph might break. This is because the underlying structure of the rich text document (on the web, this is HTML) remains opaque to the user. With increased ease-of-use, comes a number of edge cases and a loss of control over the underlying structure.</p>
     <p>This is a trade-off someone steeped in Hacker Culture might not be willing to make. She or he would rather have an understandable, formal system by which the HTML codes are produced—even if that means editing in an environment not resembling at all the final web page—because they already know how to work this way from their experience in programming.<br>
 This is shown by the popularity of a workflow and type of tool that is known as the ‘static site generator’. In this case, the workflow for creating a website is to have a series fo plain text files. Some of them represent templates, others content. After a change, the programmer runs the ‘static site generator’ and all the content is pushed through the templates to produce a series of HTML files. The content itself is often written in a code language like ‘Markdown’, that allows one to add some formatting information through type-writer like conventions: *stars* becomes <em>stars</em>.</p>
     <h3>Hacker Culture’s bias is holding back interface design</h3>
-    <p>The results of the bias in hacker culture become clear when we remember how the world of programming is responsible for its own tools, and how contemporary web-sites are built by programmers upon Open Source libraries developed by other programmers. Shaped by the culture of Unix and plain-text, and by the practice of programming, WYSIWYG interfaces are not interesting to most Open Source developers. Following the mantra to ‘scratch one’s own itch’, developers work on the interfaces that interest them. There are scores of the aforementioned ‘static site generators’:  <a href="http://staticsitegenerators.net/">242 of them</a>, on last count.</p>
-    <p>Comparatively, the offer of WYSIWYG libraries is meagre. Even if HTML5’s ContentEditable property has been around for ages, it is not used all that often; consequently there are still quite some implementation differences between the browsers. The lack of interest in WYSIWYG editors means the interfaces are going to be comparatively flakey, which in turn confirms programmers looking for an editing solution in their suspicions that WYSIWYG is not a viable solution. There are only two editor widgets based on ContentEditable that I know of: Aloha and hallo.js. Aloha is badly documented and not easy to wrap your head around as it is quite a lot of code. Hallo.js sets out to be more lightweight, but for now is a bit too light: it lacks basic features like inserting links and images. </p>
-    <p>The problem with the culture of plain-text is not plain-text as a format. It is plain text as an interface. Michael Murtaugh has written a thoughtful piece on this in the context of The Institute for Network Cultures’ Independent Publishing Toolkit: <a href="http://digitalpublishingtoolkit.org/2014/04/mark-me-up-mark-me-down/">Mark me up, mark me down!</a>.  Working with a static site generator, it becomes clear they are envisioned as a one way street: you change the source files, the final (visual) result changes. There is no way in which a change in the generated page, can be fed back into the source. Similarly, the <a href="http://daringfireball.net/projects/markdown/">Markdown</a> format is designed to input by a text-editor, and than programmatically turned into HTML. Whereas HTML allows for multiple kinds of interfaces (either more visual or more text oriented), a programmer-driven choice for Markdown forces the Unix love of editing plain text onto everybody.</p>
-    <p>If WYSIWYG would be less of a taboo in Hacker Culture, we could also see interesting solutions that cross the divide code/WYSIWYG. A great, basic example is the ‘reveal codes’ function of WordPerfect, the most popular word processor before the ascendency of Microsoft Word. When running into a formatting problem, using ‘reveal codes’ shows an alternative view of the document, highlighting the structure by which the formatting instructions have been applied—not unlike the ‘DOM inspector’ in today’s browsers. </p>
-    <p>More radical examples of interfaces that combine the immediacy of manipulating a canvas with the potential of code can be found in Desktop software. The 3D editing program Blender has a tight integration between a visual and a code interface. All the actions performed in the interface are logged in programming code, so that one can easily base scripts on actions performed in the GUI. Selecting an element will also show its position in the object model, for easy scripting access. </p>
-    <p>HTML is flexible enough so that one can edit it with a text editor, but one can also create a graphical editor that works with HTML. Through the JavaScript language, a web interface has complete dynamic access to the page’s HTML elements. This makes it possible to imagine all kinds of interfaces that go beyond the paradigms we know from Microsoft Word on the one hand and code editors on the other. This potential comes at the expense of succinctness: to be flexible enough to work under multiple circumstances, HTML has to be quite verbose. Even if the HTML5 standard has already added some modifications to make it more sparse, for adepts of Hacker Culture it is not succint enough: hence solutions like Markdown. To build a workflow around such a format, is to negate that different people might want to interact with the content in a different way. The interface that is appropriate to a writer, might not be the interface that is appropriate to an editor, or to a designer.</p>
+    <p>Because programmers are gatekeepers to web technology, and because programmers are influenced by Hacker Culture, the biases’ of Hacker Culture have an impact outside of this subculture. The world of programming is responsible for its own tools, and contemporary web-sites are built by programmers upon Open Source libraries developed by other programmers. Shaped by the culture of Unix and plain-text, and by the practice of programming, WYSIWYG interfaces are not interesting to most Open Source developers. Following the mantra to ‘scratch one’s own itch’, developers work on the interfaces that interest them. There are scores of the aforementioned ‘static site generators’:  <a href="http://staticsitegenerators.net/" class="aloha-link-text">242 of them</a>, on last count.</p>
+    <p>Comparatively, the offer of WYSIWYG libraries is meagre. Even if HTML5’s ContentEditable property has been around for ages, it is not used all that often; consequently there are still quite some implementation differences between the browsers. The lack of interest in WYSIWYG editors means the interfaces are going to be comparatively flakey, which in turn confirms programmers looking for an editing solution in their suspicions that WYSIWYG is not a viable solution. There are only two editor widgets based on ContentEditable that I know of: <a href="http://aloha-editor.org/" class="aloha-link-text" hreflang="">Aloha</a> and <a href="http://hallojs.org/" class="aloha-link-text" hreflang="" target="_self" title="Hallo.js - Distraction-free Rich Text Editor for the Web">hallo.js</a>. Aloha is badly documented and not easy to wrap your head around as it is quite a lot of code. Hallo.js sets out to be more lightweight, but for now is a bit too light: it lacks basic features like inserting links and images. </p>
+    <p>The problem with the culture of plain-text is not plain-text as a format. It is plain text as an interface. Michael Murtaugh has written a thoughtful piece on this in the context of The Institute for Network Cultures’ Independent Publishing Toolkit: <a href="http://digitalpublishingtoolkit.org/2014/04/mark-me-up-mark-me-down/" class="aloha-link-text">Mark me up, mark me down!</a>.  Working with a static site generator, it becomes clear they are envisioned as a one way street: you change the source files, the final (visual) result changes. There is no way in which a change in the generated page, can be fed back into the source. Similarly, the <a href="http://daringfireball.net/projects/markdown/" class="aloha-link-text">Markdown</a> format is designed to input by a text-editor, and than programmatically turned into HTML. Whereas HTML allows for multiple kinds of interfaces (either more visual or more text oriented), a programmer-driven choice for Markdown forces the Unix love of editing plain text onto everybody.</p>
+    <p>If WYSIWYG would be less of a taboo in Hacker Culture, we could also see interesting solutions that cross the divide code/WYSIWYG. <a href="http://i.liketightpants.net/and/the-underwater-screen-or-lessons-from-wordperfect" class="aloha-link-text" hreflang="" target="_self">A great, basic example is the ‘reveal codes’ function of WordPerfect</a>, the most popular word processor before the ascendency of Microsoft Word. When running into a formatting problem, using ‘reveal codes’ shows an alternative view of the document, highlighting the structure by which the formatting instructions have been applied—not unlike the ‘DOM inspector’ in today’s browsers. </p>
+    <p>More radical examples of interfaces that combine the immediacy of manipulating a canvas with the potential of code can be found in Desktop software. The 3D editing program Blender has a tight integration between a visual interface and a code interface. All the actions performed in the interface are logged in programming code, so that one can easily base scripts on actions performed in the GUI. Selecting an element will also show its position in the object model, for easy scripting access. </p>
+    <p>HTML is flexible enough so that one can edit it with a text editor, but one can also create a graphical editor that works with HTML. Through the JavaScript language, a web interface has complete dynamic access to the page’s HTML elements. This makes it possible to imagine all kinds of interfaces that go beyond the paradigms we know from Microsoft Word on the one hand and code editors on the other. This potential comes at the expense of succinctness: to be flexible enough to work under multiple circumstances, HTML has to be quite verbose. Even if the HTML5 standard has already added some modifications to make it more sparse, for adepts of Hacker Culture it is not succinct enough: hence solutions like Markdown. However, to build a workflow around such a sparse plain-text format, is to negate that different people might want to interact with the content in a different way. The interface that is appropriate to a writer, might not be the interface that is appropriate to an editor, or to a designer.</p>
     <h3>Conclusion</h3>
-    <p>As inelegant a program as it may be, Microsoft Word is what made people want to use personal computers. What you see is what you get is not going anywhere soon. Rather than posing a rejection, there is ample space to reinvent what WYSIWYG means, especially in the context of the web, and to find ways to combine it with the interface models that come from the traditions of Unix and Hacker Culture. Here’s to hoping that a new generation of developers will be able to go beyond the fetish for plain text, and help to invent exciting new ways of creating visual content.</p>
+    <p>The interfaces we use on the web are strongly influenced by the values of the programmers that make them, who reject the mainstream WYSIWYG paradigm. Yet What you see is what you get is not going anywhere soon. It is what made the Desktop computer possible, and for tasks such as document production, it is the computing reality for millions of users. Rather than posing a rejection, there is ample space to reinvent what WYSIWYG means, especially in the context of the web, and to find ways to combine it with the interface models that come from the traditions of Unix and Hacker Culture. Here’s to hoping that a new generation of developers will be able to go beyond the fetish for plain text, and help to invent exciting new ways of creating visual content.</p>
     <p><br></p>
     <p><br></p>
     <p></p>
@@ -281,8 +278,8 @@ The publication of the article coincides with the conference ‘<a href="http://
 
 The digital publishing toolkit is a project that tries to come up with tools and best practices for independent electronic publishing in the field of art. This means coming up with workflows that allow different professionals to add their value to the process: writers, editors, designers, developers (these categories may overlap).<br><br>
 
-As explained in this article, I like tight pants would advise the creators of the toolkit against interfaces too strongly biased towards programmer values but urge them to instead find solutions that allow multiple kinds of interfaces to the source—in short, using a plain text format like <a href="http://daringfireball.net/projects/markdown/" title="Daring Fireball: Markdown">Markdown</a> should not be forced upon all contributors.</div>]]>
-        
+As explained in this article, I like tight pants would advise the creators of the toolkit against interfaces too strongly biased towards programmer values but urge them to instead find solutions that allow multiple kinds of interfaces to the source—in short, using a plain text format like <a href="http://daringfireball.net/projects/markdown/" title="Daring Fireball: Markdown">Markdown</a> should not be forced upon all contributors.</div>
+        ]]>
     </content>
 </entry>
 
@@ -291,18 +288,16 @@ As explained in this article, I like tight pants would advise the creators of th
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/graphic-design-is-a-nostalgic-field" />
     <id>tag:i.liketightpants.net,2014:/and//1.91</id>
 
-    <published>2014-02-19T19:02:50Z</published>
-    <updated>2014-05-11T21:07:49Z</updated>
+    <published>2014-02-19T20:02:50+01:00</published>
+    <updated>2014-05-11T23:07:49+01:00</updated>
 
     <summary>Graphic design is a nostalgic field. Even in the art schools, the students want to make books and posters.</summary>
     <author>
         <name>tellyou</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <iframe allowfullscreen="" frameborder="0" height="468" mozallowfullscreen="" src="//player.vimeo.com/video/87130241?title=0&amp;byline=0&amp;portrait=0&amp;color=3e4f5f" webkitallowfullscreen="" width="830"></iframe>
     <p class="byline">
        Pierre Huyghebaert (r) and Eric Schrijver from
@@ -348,8 +343,8 @@ As explained in this article, I like tight pants would advise the creators of th
         Libre Graphics Magazine
        </a>
        1.4 under the title ‘Will these hands never get dirty’.
-      </div>]]>
-        
+      </div>
+        ]]>
     </content>
 </entry>
 
@@ -358,18 +353,16 @@ As explained in this article, I like tight pants would advise the creators of th
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/who-makes-standards" />
     <id>tag:i.liketightpants.net,2013:/and//1.73</id>
 
-    <published>2013-11-20T21:08:09Z</published>
-    <updated>2014-10-08T21:04:52Z</updated>
+    <published>2013-11-20T22:08:09+01:00</published>
+    <updated>2014-10-21T17:28:11+01:00</updated>
 
     <summary>In this text we try to introduce in more detail what are some of the power struggles that underlie the continued development of HTML. We will look at HTML’s latest iteration, HTML5. We will see the way in which companies like Google try to further their own agenda’s, sometimes under the guise of following the bottom up inventions of web authors.</summary>
     <author>
         <name>habitus</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <style>sup { vertical-align: top; font-size: 8px; font-weight: bold; }
     a, a:visited, a:active {
       color: #000;
@@ -389,7 +382,7 @@ As explained in this article, I like tight pants would advise the creators of th
     <p>The concept of a markup language has a number of great benefits. By leaving out page-setting instructions, the pages are quicker to download. With HTML, it is not the author, but the visitor’s browser which is finally responsible for the layout on the screen. Already in the 1990ies, before smartphones and ‘responsive design’, people access the web with different kinds of screens and devices: the browser makes it all fit on the screen.</p>
     <p>Another advantage of HTML is the fact that the language is ‘plain text’: The mark up of HTML is simple and uses normal keyboard characters. The first browsers already provide an option to ‘view source’, and see the underlying tag codes. These can easily be copied and adapted into an HTML creation of one’s own. This creates a language that is accessible for experimentation and self-learning, with a high potential for ‘bricolage’ by the budding homepage creators.</p>
     <p>The one feature of page description languages that is lacking in a markup language like HTML, though, is the possibility to easily store and transmit rich layout features. The scientific community, within which the web arose, is used to scarce layout of scientific papers (as are the other audiences in which SGML based solutions are popular). The first HTML versions provide headings, paragraphs, citation marks—but no columns, or even: images! In order to win over a larger public outside of academia, some of the visual sophistication of illustrated print media will have to find its way into the web, and thus, into HTML. This is the tension upon which some of the first battles over HTML are built.</p>
-    <p>In 1993 NCSA Mosaic is released, the first graphical web browser on the Windows platform. A research project at the time, the responsible researchers launch Netscape Navigator (1994) upon graduation. An obvious tension can be seen between the original scientific community and the entrepreneurs that see a future for the web as a mass medium. In a rush to make the web attractive for a larger public, they add a lot of graphical capabilities to HTML. ‘Academics and software engineers later would argue that many of these extensions were very much ad hoc and not properly designed.’ (<a href="#ragget-1998" class="" hreflang="">Ragget, 1998</a>)</p>
+    <p>In 1993 NCSA Mosaic is released, the first graphical web browser on the Windows platform. A research project at the time, the responsible researchers launch Netscape Navigator (1994) upon graduation. An obvious tension can be seen between the original scientific community and the entrepreneurs that see a future for the web as a mass medium. In a rush to make the web attractive for a larger public, they add a lot of graphical capabilities to HTML. ‘Academics and software engineers later would argue that many of these extensions were very much ad hoc and not properly designed.’ (<a href="#ragget-1998" class="aloha-link-text" hreflang="">Ragget, 1998</a>)</p>
     <p>Whatever the original community around the web might think of the changing nature of the language, the new companies are also responsible for opening up the academic invention to the public at large. In this process, the power to define what is HTML shifts away from the community in which it originated, to the new (commercial) browser developers:</p>
     <blockquote class="aloha-cite-wrapper aloha-cite-1383659333040" data-cite-id="1383659333040">Following a predictable path, Netscape began inventing its own HTML tags as it pleased without first openly discussing them with the Web community. Netscape rarely made an appearance at the big International WWW conferences, but it seemed to be driving the HTML standard. It was a curious situation, and one that the inner core of the HTML community felt they must redress.</blockquote>
     <p style=""><span style="font-size: 14px;"></span></p>
@@ -399,7 +392,7 @@ As explained in this article, I like tight pants would advise the creators of th
     <p class="byline" style=""><a href="#scanlon-2007" class="" hreflang="">Scanlon, 2007</a><br style=""></p>
     <h4>The years of web standards 1998-2007</h4>
     <p><span style="font-size: 14px;">At this point, an other group with vested interests joins the debate. The web designers who have to create web pages for their living, who are having a hard time to work in this fragmented landscape, often creating multiple versions of a site that cater to multiple browsers. The idea of browsers respecting the W3C standards becomes their rallying point, in what is known as the Web Standards Movement.&nbsp;</span>Businessweek runs a feature on Jeffrey Zeldman, an influential figure in this community, highlighting ‘his ability to talk about the dry and, let's face it, dull subject of standards in a way that made everyone see their importance.’ (<a href="#scanlon-2007" class="aloha-link-text" hreflang="">Scanlon, 2007</a>)</p>
-    <p>An aside, it would be interesting to look at this group of designers more precisely: it does not represent all designers, but rather a specific subset who have a hybrid design/development skill set. They operate contrasting themselves with communication agencies who have a design/development division of labour or who invest in more traditional designer-friendly tools such as Adobe Flash or Dreamweaver—in fact, the ‘Standards Aware’ designers can be seen to advocate against these kind of tools, advocating ‘hand written html’ over the ‘bloated WYSIWYG tools’.                                     <sup>1</sup>
+    <p>An aside, it would be interesting to look at this group of designers more precisely: it does not represent all designers, but rather a specific subset who have a hybrid design/development skill set. They operate contrasting themselves with communication agencies who have a design/development division of labour or who invest in more traditional designer-friendly tools such as Adobe Flash or Dreamweaver—in fact, the ‘Standards Aware’ designers can be seen to advocate against these kind of tools, advocating ‘hand written html’ over the ‘bloated WYSIWYG tools’.                                                       <sup>1</sup>
 </p>
     <p style="">At this point the W3C seems a natural ally to web developers. A standards body providing free standards—standards that became the stick to beat browser vendors with, and whose compliance becoming a mark of prestige for a new generation of web designer/developers. These makers group together as the Web Standards Project (1998).</p>
     <p style="">Another party to the burgeoning ‘standards movement’ are new browser developers. These browsers with a smaller market share have a hard time competing, because most web pages are built to the whims of the Netscape or Internet Explorer’s rendering engines. Web standards will make it more easy for new browsers to gain a competitive advantage. The backgrounds of the browser manufacturers are quite varied: there is the small Norwegian company Opera, there is Mozilla,&nbsp;<span style="font-size: 14px;">informed by ideals of an Open Web,</span><span style="font-size: 14px;">&nbsp;who have created the Open Source project Firefox, and there is Apple, who have created their own browser Safari so that they don’t have to rely on third parties for a smooth web experience on their operating system.</span></p>
@@ -410,16 +403,17 @@ As explained in this article, I like tight pants would advise the creators of th
     <h4>a new power struggle: 2007 to now</h4>
     <p style="">Standards are a work in progress, involving many actors. The confluence of browser vendors, web designers and the W3C working together has seen a great momentum, when the interests of all these parties aligned towards overcoming the power of the established browsers from Microsoft and Netscape. With the dust settled, afterwards, the way forward is less clear.</p>
     <p style="">Discontents with the W3C becomes prevalent as development of XHTML2 progresses, which more clearly outlines the vision of the W3C: towards standards that require a strict adherence (i.e., the document won’t display if not fully well-formed), in order to pave the way for a future vision of the web that will allow the content of web pages to be more easily reasoned about by software programs—a future known as the Semantic Web.</p>
-    <p>Convincing arguments against a naive vision of the Semantic Web are already voiced by (<a href="#doctorow-2001" class="aloha-link-pointer" hreflang="">Doctorow, 2001</a>): since software can not easily deal with natural language, web pages would need some kind of structured metadata in addition to their linguistic content. Besides the inherent impossibility of objective frameworks for metadata (‘ontologies’), the quality of such metadata will always be lacking due to human laziness on the one hand, and the human desire to game the system on the other.                  <sup>2</sup>
+    <p>Convincing arguments against a naive vision of the Semantic Web are already voiced by (<a href="#doctorow-2001" class="aloha-link-pointer" hreflang="">Doctorow, 2001</a>): since software can not easily deal with natural language, web pages would need some kind of structured metadata in addition to their linguistic content. Besides the inherent impossibility of objective frameworks for metadata (‘ontologies’), the quality of such metadata will always be lacking due to human laziness on the one hand, and the human desire to game the system on the other.                                    <sup>2</sup>
 </p>
-    <p><span style="font-size: 14px;">The other main argument against the new standard is has been uttered in many forms around the web, among others by (<a href="#martin-2008" class="" hreflang="">Martin, 2008</a>)</span><span style="font-size: 14px;">. This argument goes: the very fact that browsers are extremely forgiving in the way they interpret markup is the basis for the success of the internet: it has enabled copy-paste developing style that made the barrier to entry for creating web pages quite low.</span><br></p>
+    <p><span style="font-size: 14px;">The other main argument against the new standard has been uttered in many forms around the web, among others by (<a href="#martin-2008" class="aloha-link-text" hreflang="">Martin, 2008</a>)</span><span style="font-size: 14px;">. This argument goes: the very fact that browsers are extremely forgiving in the way they interpret markup is the basis for the success of the internet: it has enabled copy-paste developing style that made the barrier to entry for creating web pages quite low.</span><br></p>
     <p style="">The most consistent and influential counter reaction to the W3C’s direction comes from an association of browser vendors known as the WHATWG (2004). They stage a coup, proposing an alternative future standard: HTML5. The name itself suggests the promise of continuity and backwards compatibility, and the standard itself focuses on capturing existing practices, with a focus on web applications.</p>
     <p style="">This coup is wildly&nbsp;successful. &nbsp;In 2007, W3C even endorses the new standard. For a while work continues on both HTML5 and XHTML2 until, in 2009 the W3C announces the decision to drop XHTML2. Many parts of the HTML5 standard are then quickly implemented in browsers. This is because the browser vendors are onboard from the beginning, but also because the standard has been based on existing practices, and does not require authors to ‘clean up their act’. HTML5 even specifies how a web browser should deal with malformed HTML tags.&nbsp;</p>
     <h4>conflicting interests, a case study: RDF/A</h4>
     <p style="">The WHATWG’s more pragmatic approach to HTML standardisation has proved successful, up to the point where the notion of ‘web standards’ is now much less present in the world of web design and development than it used to be. The Web Standards Project dissolves itself in 2013, seeing its mission largely as accomplished. ‘Standards Compliant’ is no longer a unique selling point. Wordpress’ homepage, once proudly flaunting standards compliance and semantics in it tag-line, now simply states: “WordPress is web software you can use to create a beautiful website or blog.” (<a href="#wordpress-2014" class="" hreflang="">Wordpress, 2014</a>). Gone too is the fashion of noting adherence to standards in website footers. It is as if web designer/developers no longer believe the syntactical strictness of XHTML will deliver them from tag soup.</p>
     <p style="">As part of its pragmatism, the WHATWG favours a nimble decision making process. To understand more about who writes the web now, we have to examine who partakes in this process. As far as standards bodies go, the W3C is quite open: the cost of membership is given on a sliding scale, depending on the character of the organisation applying and the country in which it is located. That isn’t the case with the WHATWG, as written in&nbsp;the Charter (<a href="#whatwg-nd" class="" hreflang="">WHATWG, n.d.</a>), ‘Membership is by invitation only’. Membership is also available only to browser vendors. This than makes it opportune to look, who are these browser vendors, what are their interests, and how do they come into play in the nature of HTML5.</p>
+    <p style=""><i>Update 21-10-2014: Ian Hickson weighs in in the comment section to explain more on the process employed by the WHATWG and how it compares to the W3C. More feedback by those familiar with the process is very welcome!</i></p>
     <p style=""><span style="font-size: 14px;">As much as it advances the state of the web, HTML5 is definitely no longer focused on the ideology of the Semantic Web. To examine what this means in practice, let’s look at an element of Semantic Web technology called RDF/A: the W3C ’s intended mechanism to add extra metadata to your HTML pages. This metadata allows one to specify all kinds of relations that normally only are available when accessing the underlying data sources, paving the way to re-use and expose the information in new ways.</span></p>
-    <p style="">A foundational idea of XHTML is its extensibility: based on a more abstract standard, XML, other XML based formats can be mixed in. HTML5 doesn’t provide such a format for extension. The HTML5 working group hand-picked two XML formats that can be embedded in an HTML5 document: SVG drawings and MATHML mathematical formulas.&nbsp;<span style="font-size: 14px;">RDF/A is not among the extensions allowed in HTML5.&nbsp;</span><span style="font-size: 14px;">The specification’s editor, Thomas Hickson, writes&nbsp;</span>on the W3C mailing list<span style="font-size: 14px;">&nbsp;about the reasoning to omit RDF/A (<a href="#hickson-2009" class="" hreflang="">Hickson, 2009</a>). He fails to see the added value of RDF/A over ‘natural language processing’:</span></p>
+    <p style="">A foundational idea of XHTML is its extensibility: based on a more abstract standard, XML, other XML based formats can be mixed in. HTML5 doesn’t provide such a format for extension. The HTML5 working group hand-picked two XML formats that can be embedded in an HTML5 document: SVG drawings and MATHML mathematical formulas.&nbsp;<span style="font-size: 14px;">RDF/A is not among the extensions allowed in HTML5.&nbsp;</span><span style="font-size: 14px;">The specification’s editor, Ian Hickson, writes&nbsp;</span>on the W3C mailing list<span style="font-size: 14px;">&nbsp;about the reasoning to omit RDF/A (<a href="#hickson-2009" class="" hreflang="">Hickson, 2009</a>). He fails to see the added value of RDF/A over ‘natural language processing’:</span></p>
     <div data-cite-id="1383751941952">
       <blockquote>
       Do we have reason to believe that it is more likely that we will get&nbsp;authors to widely and reliably include such relations than it is that we&nbsp;will get high quality natural language processing? Why?
@@ -480,10 +474,10 @@ As explained in this article, I like tight pants would advise the creators of th
     Web Hypertext Application Technology Working Group Charter. (n.d.). Retrieved November 19, 2013, from <a href="http://www.whatwg.org/charter" class="aloha-link-text" hreflang="">http://www.whatwg.org/charter</a></p>
     <p>WordPress — Home. (2003, June 18). Retrieved November 19, 2013 from <a href="https://web.archive.org/web/20030618021947/http://wordpress.org/" class="aloha-link-text" hreflang="">https://web.archive.org/web/20030618021947/http://wordpress.org/</a>.</p>
     <p>WordPress — Home. (2014, September 28). Retrieved November 19, 2013 from <a href="https://web.archive.org/web/20140928052112/https://wordpress.org/" class="aloha-link-pointer" hreflang="">https://web.archive.org/web/20140928052112/https://wordpress.org/</a></p>
-<div id="aside" style="padding-top: 44px;" class=""><p>This article was commissioned for “<a href="">Considering your tools.
+<div id="aside" style="padding-top: 44px;" class=""><p>This article was commissioned for “<a href="http://reader.lgru.net/pages/index/">Considering your tools.
 a reader for designers and developers”</a> and is cross-posted here.</p>
-    <p><em>Update October 4, 2014: Since this article’s original publication, RDF/A has been accepted as part of HTML5: <a href="http://www.w3.org/News/2013#entry-9919">http://www.w3.org/­News/­2013#entry-9919</a>.</em></p></div>]]>
-        
+    <p><em>Update October 4, 2014: Since this article’s original publication, RDF/A has been accepted as part of HTML5: <a href="http://www.w3.org/News/2013#entry-9919">http://www.w3.org/­News/­2013#entry-9919</a>.</em></p></div>
+        ]]>
     </content>
 </entry>
 
@@ -492,18 +486,16 @@ a reader for designers and developers”</a> and is cross-posted here.</p>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo" />
     <id>tag:i.liketightpants.net,2013:/and//1.86</id>
 
-    <published>2013-11-05T20:57:07Z</published>
-    <updated>2013-11-17T13:21:12Z</updated>
+    <published>2013-11-05T21:57:07+01:00</published>
+    <updated>2013-11-17T14:21:12+01:00</updated>
 
     <summary>ufo2otf is a command line utility that takes UFO font sources and generates OTF’s and webfonts.</summary>
     <author>
         <name>bnf</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <p style="">
       <object type="image/svg+xml" style="width:830px;height:830px;" data="/and/assets/called/ufo2otf.svg">
         <img src="/and/assets/called/ufo2otf.png" style="width:830px;height:830px;" alt="A greyish starry night with a baby blue ufo shining its purple light downwards, projecting an uppercase A, slab serif.">
@@ -646,8 +638,8 @@ a reader for designers and developers”</a> and is cross-posted here.</p>
          url('NimbusSanL-BoldCond.ttf')  format('truetype');
 }</pre>
     <p>If you are curious how <code>ufo2otf</code> goes about its font detection, it is a simple Python based program and&nbsp;<a href="https://github.com/fonts/ufo2otf/blob/master/ufo2otf/compilers.py#L73" class="aloha-link-text" target="_self" style="" title="ufo2otf/ufo2otf/compilers.py at master · fonts/ufo2otf">it is in its source code that it tells the whole story</a>.</p>
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
@@ -656,18 +648,16 @@ a reader for designers and developers”</a> and is cross-posted here.</p>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork" />
     <id>tag:i.liketightpants.net,2013:/and//1.80</id>
 
-    <published>2013-10-09T20:00:57Z</published>
-    <updated>2013-10-10T16:07:47Z</updated>
+    <published>2013-10-09T22:00:57+01:00</published>
+    <updated>2013-10-10T18:07:47+01:00</updated>
 
     <summary>But when it comes to type design, one need not look to software development. To see how building upon existing creations makes typographic sense, one can look at type design history itself.</summary>
     <author>
         <name>habitus</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <style>
 h2 {
     text-rendering: optimizeLegibility;
@@ -776,8 +766,8 @@ $(window).load(function () {
 });
 </script>
 
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
@@ -786,18 +776,16 @@ $(window).load(function () {
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/i-need-my-generic-font-medicine" />
     <id>tag:i.liketightpants.net,2013:/and//1.85</id>
 
-    <published>2013-10-09T19:55:58Z</published>
-    <updated>2013-10-09T13:01:33Z</updated>
+    <published>2013-10-09T21:55:58+01:00</published>
+    <updated>2013-10-09T15:01:33+01:00</updated>
 
     <summary>If you were formed in the 1990ies, these are the fonts you will feel all Oedipal about. Like medication for which the patents have expired, popular typefaces sprout generic sisters and brothers. Find ways to abuse them for your own end.</summary>
     <author>
         <name>baseline</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <style>
 h2 {
     text-rendering: optimizeLegibility;
@@ -1139,8 +1127,8 @@ $("h2").hover(
 )
 </script>
 
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
@@ -1149,18 +1137,16 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong" />
     <id>tag:i.liketightpants.net,2013:/and//1.78</id>
 
-    <published>2013-10-08T20:06:03Z</published>
-    <updated>2013-11-10T17:17:13Z</updated>
+    <published>2013-10-08T22:06:03+01:00</published>
+    <updated>2013-11-10T18:17:13+01:00</updated>
 
     <summary>The screenshots  are from a period of 48 hours where we work on the site together. To write CSS, we keep a shared Etherpad. One person is in charge of the gong: when she rings, she copies the contents of the pad into the site’s CSS file, and uploads it—after which everyone can refresh their browser and see the updated styles.</summary>
     <author>
         <name>baseline</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <p>
       <iframe src="http://player.vimeo.com/video/65545530?color=000&amp;title=0&amp;byline=0&amp;portrait=0" width="830" height="466" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 <!-- <video src="http://i.liketightpants.net/and/assets/called/live_coding_the_osp_website_1280x720.mp4" id="live-website-video" width="830" height="466" style="background: white;" preload controls>--><br></p>
@@ -1168,8 +1154,8 @@ $("h2").hover(
     <p style="">The screenshots above are from a period of 48 hours where we work on the site together. To write CSS, we keep a shared <a href="/and/etherpad-or-the-textarea-is-a-lonely-place" style="" target="_self" title="I like tight pants and etherpad or the textarea is a lonely place" class="aloha-link-text">Etherpad</a>. One person is in charge of the gong: when she rings, she copies the contents of the pad into the site’s CSS file, and uploads it—after which everyone can refresh their browser and see the updated styles.</p>
     <h4>Update 2013-11-10:</h4>
     <p style="">If you run a recent version of Etherpad, you can install&nbsp;<a href="https://github.com/codingisacopingstrategy/ep_export_less_and_css" class="" style="background-color: rgb(128, 181, 242);" target="_self" title="codingisacopingstrategy/ep_export_less_and_css">ep_export_less_and_css</a>, a plugin bnf created that enables CSS export directly from Etherpad.</p>
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
@@ -1178,18 +1164,16 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/release-early-release-often-version-numbers-for-typefaces" />
     <id>tag:i.liketightpants.net,2013:/and//1.81</id>
 
-    <published>2013-09-25T19:53:36Z</published>
-    <updated>2013-11-11T12:13:43Z</updated>
+    <published>2013-09-25T21:53:36+01:00</published>
+    <updated>2013-11-11T13:13:43+01:00</updated>
 
     <summary>I love the way version numbers are used in Open Source. Version 1.0 is not the first version released. Projects are well underway before they reach 1.00—if they even reach it. An open source maxim (by Linus Torvalds of Linux fame) is ‘release early, release often’. Get your code out there before it is perfect, because it can benefit from collaboration from the community. That is why we see version numbers like 0.15.2</summary>
     <author>
         <name>tellyou</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <p>I love the way version numbers are used in Open Source. Version 1.0 is not the first version released. Projects are well underway before they reach 1.00—if they even reach it. An open source maxim (by Linus Torvalds of Linux fame) is ‘release early, release often’. Get your code out there before it is perfect, because it can benefit from collaboration from the community. That is why we see version numbers like 0.15.2</p>
     <p>Version 1.0 is reserved for the first version that sees the design intentions crystallised, the functionality in place, and all the first bugs accounted for. It’s what you would have wanted your first release to be like, except that it took all the releases in-between to get there:</p>
     <blockquote>We are very pleased to announce the release of IPython 1.0, nearly twelve years after the first release of IPython 0.0.1.</blockquote>
@@ -1239,8 +1223,8 @@ $("h2").hover(
     <p style="">There are arguments against creating too many versions of a design. A design is a product of hopes, aspirations, goals and constraints that exist at a given point. The recent phenomenon of film directors revisiting their older movies and adding contemporary computer effects (not available at the time) has not at all been well received by fans. It shows that the constraints placed upon an artistic project shape it and create its character, and that authors might want to be reticent in revisiting their works.</p>
     <p style="">Similar phenomenons exist in software too. People who use many subsequent versions of &nbsp;a software often feel like something gets lost along the way. The initial sense of purpose embodied in a program can give way to what is called ‘bloat’, by adding feature upon feature until it tries . In programmer’s circles, this is known as Zawinski’s law: &nbsp;‘Every program attempts to expand until it can read e-mail.’ At the same time, using old versions of software is not very practical. They might contain security holes; they might even no longer run on your current operating system.</p>
     <p style="">With typefaces we are in luck that they will in most occasions be usable for a longer time. As long as a description of its points exists somewhere—and mankind does not forget <a href="/and/seb-explaining-love-and-bezier-curves" style="" target="_self" title="I like tight pants and seb explaining love and bezier curves" class="aloha-link-text">the mathematics of Bézier curves</a>. So I think I will want for the 1.0 version to be the last. Anyone who has another vision on the design, is <a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork" class="" style="" target="_self" title="I like tight pants and no-one starts from scratch: type design and the logic of the fork">free to fork</a>.</p>
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
@@ -1249,18 +1233,16 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-story-of-nokia-microsoft-and-a-1000-hearts-breaking" />
     <id>tag:i.liketightpants.net,2013:/and//1.68</id>
 
-    <published>2013-09-04T20:02:55Z</published>
-    <updated>2013-09-04T17:09:15Z</updated>
+    <published>2013-09-04T22:02:55+01:00</published>
+    <updated>2013-09-04T19:09:15+01:00</updated>
 
     <summary>In the upper part of the screen you see a smartphone. A landscape format screen with a keyboard slid out underneath. The screen is scratched and there are stains of white paint all over the device. The phone appears to be floating. A tale of Nokia, Microsoft, and a 1000 hearts breaking.</summary>
     <author>
         <name>tellyou</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <p><a href="/and/assets/called/the_telephone.jpg" target="_self">
         <img src="/and/assets/scaled/to/830/wide/and/called/the_telephone.jpg" style="height:830px;width:830px;" alt="In the upper part of the screen you see a smartphone. A landscape format screen with a keyboard slid out underneath. The screen is scratched and there are stains of white paint all over the device. The phone appears to be floating." title="" />
       </a></p>
@@ -1274,8 +1256,8 @@ $("h2").hover(
     <p style="">It works out quite nicely. I like using the phone; the full QWERTY keyboard makes for great note taking and texting. Though I never get to any programming beyond installing the <a href="http://ipython.org/" style="" target="_self">IPython</a> shell, there is an actual pleasure in the feeling that I could, whenever I would want to. Finally, I profit from a great build quality, which sees my phone survive falling into a bucket of paint.<br />The great downside to the phone, are caused by the simple fact of it being not very popular. As it does not represent a sizable number of All the new applications that appear are for iPhone and Android. Apparently, having a phone that you can easily fiddle with yourself, is not what gets users flocking to the device. I feel a little lonely using this operating system.<br />Yet at <a href="http://" target="_self" style="" title="I like tight pants and daniela likes open source programming conferences like fosdem">Fosdem 2011</a>, a yearly event for Open Source software developers, it turns out everybody has this phone. I speak with the community manager for the largest Maemo website, who speaks with great enthousiasm about this community. I remember that <a href="http://drippingdigital.com/blog/" style="" target="_self" title="Dripping Digital">John</a> has this phone, and <a href="http://adaptstudio.ca/" style="" target="_self" title="ad.apt is ginger coons">Ginger</a> too. For a moment it feels like the people needed for the platform to have a future, are there.</p>
     <p><span style="font-size: 14px;">Yet companies only work with open source as long as they can make open source work for them. ‘The most open’, by itself, is not easily translatable into market share.&nbsp;</span>Two days later, as I get home, I read that <a href="http://conversations.nokia.com/2011/02/11/open-letter-from-ceo-stephen-elop-nokia-and-ceo-steve-ballmer-microsoft/" target="_self" style="" title="Open Letter from CEO Stephen Elop, Nokia and CEO Steve Ballmer, Microsoft – Nokia Conversations : the official Nokia blog">Nokia has signed a deal to continue with Microsoft Windows as the operating system for its smartphone</a>. It is like I hear a thousands programmers’ hearts collectively break.</p>
 
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
@@ -1284,24 +1266,22 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/it-might-be-a-unix-sin-but-i-would-like-you-to-add-dot-t-x-t-as-the-extension-of-your-readme-file" />
     <id>tag:i.liketightpants.net,2013:/and//1.65</id>
 
-    <published>2013-04-30T19:51:20Z</published>
-    <updated>2013-04-30T18:10:13Z</updated>
+    <published>2013-04-30T21:51:20+01:00</published>
+    <updated>2013-04-30T20:10:13+01:00</updated>
 
     <summary>Who are these people in Boston? Why do they ask me to write them letters in the day and age where I download their software from the internet? And why didn’t they add .txt to the end of their filenames?</summary>
     <author>
         <name>bnf</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <p><a href="https://github.com/klepas/open-baskerville/commit/8aaf5c54eb0c88cdbdfe2411e5f7396a88d0ab89">
         <img src="/and/assets/called/this_is_probably_a_unix_sin.png" style="width:660px;height:401px" alt="" title="" />
       </a></p>
 
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
@@ -1310,18 +1290,16 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/etherpad-or-the-textarea-is-a-lonely-place" />
     <id>tag:i.liketightpants.net,2013:/and//1.75</id>
 
-    <published>2013-04-22T19:59:54Z</published>
-    <updated>2013-04-27T12:00:02Z</updated>
+    <published>2013-04-22T21:59:54+01:00</published>
+    <updated>2013-04-27T14:00:02+01:00</updated>
 
     <summary>It is a lonely place. The other I like tight pants contributors are nowhere in sight, it is just me typing away in the browser.</summary>
     <author>
         <name>tellyou</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <p><a href="/and/assets/called/the_lonely_form_field.png">
         <img src="/and/assets/scaled/to/830/wide/and/called/the_lonely_form_field
 .png" alt="" title="" />
@@ -1337,8 +1315,8 @@ $("h2").hover(
     <p>If you have not used etherpad, changes are you have used the technology through Google Docs. It is Google who in 2009 bought Etherpad. At the time of the acquisition the source code gets released under a permissive license. So if the code is out there, why are we not seeing more Etherpad-style collaboration online?</p>
     <p></p>
 
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
@@ -1347,26 +1325,24 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-most-barebones-online-font-editor-possible" />
     <id>tag:i.liketightpants.net,2013:/and//1.74</id>
 
-    <published>2013-04-18T19:59:36Z</published>
-    <updated>2013-04-18T10:08:42Z</updated>
+    <published>2013-04-18T21:59:36+01:00</published>
+    <updated>2013-04-18T12:08:42+01:00</updated>
 
-    <summary><![CDATA[ Built by OSP as part of a workshop where students of the Piet Zwart Institute get up close and personal with vector graphics. You edit the raw XML strings that make up the glif.&nbsp; An online font-editor would be...]]></summary>
+    <summary></summary>
     <author>
         <name>baseline</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <p><a href="/and/assets/called/edit_glif.png">
         <img src="/and/assets/scaled/to/830/wide/and/called/edit_glif.png" alt="You see a fairly minimalistic user interface featuring a list of what appears to be glyph names, a large letter A, and a textarea with xml data describing two contours—the contours that make up the A. The elements lack the usual gloss of post OS-X user interfaces: a thin grey 1px border is the only visual separator between elements." title="" />
       </a></p>
     <p>Built by OSP as part of a <a href="http://osp.constantvzw.org/workshop/pzi/" target="_self" style="" title="OSP (Open Source Publishing) → you&amp;#39;re traveling toward in pzi">workshop</a> where students of the Piet Zwart Institute get up close and personal with vector graphics. You edit the raw XML strings that make up the <a href="http://unifiedfontobject.org/versions/ufo2/glif.html" target="_self" style="" title="Unified Font Object - Version 2 - GLIF format">glif</a>.&nbsp;</p>
     <p>An online font-editor would be a great way to make it more easy to do <a href="/and/how-it-has-come-about-that-code-hosting-site-github-offers-visualisations-of-typeface-development" style="" target="_self" title="I like tight pants and how it has come about that code hosting site github offers visualisations of typeface development">collaborative type design</a>. Speaking with <a href="https://www.google.com/search?q=dave+crossland" target="_self" style="" title="Dave Crossland">Dave</a> at this years Libre Graphics Meeting, we figured that a good place to get started would be to have a library that makes it more easy to deal with typefaces in web-apps—a JavaScript port of <a href="http://www.robofab.org/" target="_self" style="" title="I like tight pants and programmatically manipulating typefaces">RoboFab</a> perhaps?</p>
 
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
@@ -1375,18 +1351,16 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/belgian-newspapers" />
     <id>tag:i.liketightpants.net,2013:/and//1.67</id>
 
-    <published>2013-03-29T21:17:00Z</published>
-    <updated>2014-05-11T22:13:43Z</updated>
+    <published>2013-03-29T22:17:00+01:00</published>
+    <updated>2014-05-12T00:13:43+01:00</updated>
 
     <summary>This computer, inside the Belgian Royal Library, has no access to internet, no usb ports, and no connection to a printer. It shows you a digital version of a Belgian newspaper, Le Drapeau Rouge.</summary>
     <author>
         <name>habitus</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <p>
       <img src="/and/assets/called/belgian_newspaper_le_drapeau_rouge.jpg" alt="You see a computer monitor, in portrait orientation, showing the front page of a newspaper (displayed as a PDF inside Internet Explorer): ‘Le drapeau rouge’, the Belgian daily communist newspaper. Headline: ‘Molotov propose la réduction générale des armements’. " title="" style="width:1029px;height:1457px;margin-left:-199px;z-index:-1111;">
 </p>
@@ -1397,8 +1371,8 @@ $("h2").hover(
       <p>Because of its mission of preservation, the Library needed to scan these materials—the paper is of extremely poor quality and disintegrating. But the Library also has a mission to facilitate access to its materials in any way it can.</p>
       <p>Digitalisation seems to offer a great potential to make the material from the collections more accessible. Once scanned, material can be indexed, and put online, and be available to everyone with an internet connection. In potential. In reality, the Royal Library can not do this, because it would open itself to all kinds of claims of damages by copyright holders.</p>
 </div>
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
@@ -1407,18 +1381,16 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/parties-in-paris" />
     <id>tag:i.liketightpants.net,2012:/and//1.53</id>
 
-    <published>2012-09-07T13:24:25Z</published>
-    <updated>2013-03-03T23:29:48Z</updated>
+    <published>2012-09-07T15:24:25+01:00</published>
+    <updated>2013-03-04T00:29:48+01:00</updated>
 
     <summary>There is never much programming at the parties I go to. Seb says people like drugs and music and sex and that’s what brings them to parties.</summary>
     <author>
         <name>glit</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <p><a href="http://i.liketightpants.net/and/assets/called/parties_in_paris.jpg">
         <img src="http://i.liketightpants.net/and/assets/scaled/to/830/wide/and/called/parties_in_paris.jpg" style="width:553px;830px;" title="" alt="You see a young man perched against a dresser, sitting on a medicine ball. He looks away. He is wearing a slate blazer, over a yellow shirt, screenprinted with a drawing of his guts and his chestcage. He wears gold colored leggings. His hair is combed over to the left." />
       </a></p>
@@ -1428,10 +1400,9 @@ $("h2").hover(
     <p>I am wondering at what point it will become part of contemporary party culture and we’ll have live coding sessions at <a href="http://www.flashcocotte.com/" title="Flash Cocotte">Flash Cocotte</a>? Seb tells me that it’s not likely to happen. That people like <a href="/and/designer-drugs">drugs</a> and music and sex and that’s what brings them to parties. And that programming is too abstract and intellectual to appeal to people in a similar way.</p>
     <p>What do you think?</p>
 
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
 </feed>
-
