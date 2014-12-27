@@ -36,166 +36,13 @@
 <body>
 
 
-<style>
-@font-face { font-family: BebasNeueRegular; src: url(http://i.liketightpants.net/BebasNeue-webfont.eot?#iefix) format(eot), url(http://i.liketightpants.net/BebasNeue-webfont.woff) format(woff), url(http://i.liketightpants.net/BebasNeue-webfont.ttf) format(truetype), url(http://i.liketightpants.net/BebasNeue-webfont.svg#webfontX0YNjQNl) format(svg); font-weight: normal; font-style: normal; }
-
-@font-face { font-family: Pictos; src: url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web.eot?#iefix) format(eot), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-e4dc212e5f2737d6c98390f0d068cef2.woff) format(woff), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-87f332a73dadfa3a1daf93910c5b3649.ttf) format(truetype), url(https://d3v4jsc54141g1.cloudfront.net/assets/pictos-web-5a6e6518658ad50c63328b250562dd20.svg) format(svg); }
-
-div#bar {
-    top: 40px;
-}
-
-div#bar, div#header {
-//    border-top: 1px solid rgb(217, 217, 217);
-    padding-top: 11px;
-    padding-bottom: 4px;
-    line-height: 18px;
-}
-
-#recent_entries {
-    line-height: 20px !important;
-}
-
-#bg {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 40px;
-    z-index: -11111;
-}
-#fund {
-    height: 40px;
-}
-
-.widget {
-    font-size: 14px;
-/*    border-color: rgb(217, 217, 217);
-    border-radius: 3px 3px;
-    border-style: solid;
-    border-width: 1px;*/
-    box-sizing: border-box;
-    float: left;
-    font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-    font-weight: 300;
-    margin: 0px;
-    padding: 10px 10px 10px 10px;
-    width: 1190px;
-}
-
-.widget a {
-    word-wrap: break-word;
-    color: #ff00ae;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.widget > div {
-    display: inline-block;
-}
-
-.bankers {
-    background-image: url(https://d3v4jsc54141g1.cloudfront.net/assets/widget-bankers-77e9f587c6512ac1faa586a8a127cc83.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    padding-right: 23px;
-}
-
-.percentage {
-    background-image: -webkit-linear-gradient(top, rgb(229, 80, 82) 0%, rgb(236, 27, 32) 28%, rgb(215, 35, 41) 100%);
-    border-color: rgb(196, 16, 21);
-    border-style: solid;
-    /*border-width: 1px;*/
-    clear: none;
-    color: rgb(255, 255, 255);
-    float: left;
-    font-size: 10px;
-    font-weight: bold;
-    height: 10px;
-    margin: 2px 0px 6px 0px;
-    max-width: 156px;
-    min-width: 2%;
-    padding: 0px 2px 0px 0px;
-    text-align: right;
-}
-
-.percentage-wrapper {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.117188) 0px 0px 1px, rgba(0, 0, 0, 0.199219) 0px 1px 1px inset;
-    background-color: rgba(0, 0, 0, 0.046875);
-    box-shadow: rgba(0, 0, 0, 0.117188) 0px 0px 1px, rgba(0, 0, 0, 0.199219) 0px 1px 1px inset;
-    clear: none;
-    float: left;
-    height: 12px;
-    margin: 2px 5px 2px 5px;
-    width: 160px;
-}
-
-.widget strong, .widget strong a {
-    animation-name: cycle;
-    animation-duration: 3s; 
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    animation-timing-function: steps(1, end); /* This makes it blink instead of fade */
-    animation-iteration-count: infinite;
-    -webkit-animation-name: cycle;
-    -webkit-animation-duration: 1s; 
-    -webkit-animation-direction: normal;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-timing-function: steps(1, end); /* This makes it blink instead of fade */
-    -webkit-animation-iteration-count: infinite;
-}
-
-@keyframes cycle 
-{
-    0% {
-        color: #ff00ae;
-    } 
-    50% {
-        color: #0000ff;
-    } 
-}
-@-webkit-keyframes cycle 
-{
-    0% {
-        color: #ff00ae;
-    } 
-    50% {
-        color: #0000ff;
-    } 
-}
-
-</style>
-<div id="bg">&nbsp;</div>
-<div class="container_7" id="fund">
-    <div class='widget'>
-        With
-        <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">57</a></strong> days left
-        <strong>
-        <a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">Visual Culture a Tool for Design Collaboration</a>
-        </strong>
-        by <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank">osp</a></strong>
-        is at
-        <div class='amount'>
-            <strong>
-            <a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">1%</a>
-            </strong>
-            <div class='percentage-wrapper small'>
-                <div class='percentage small' style='width:1%;'></div>
-            </div>
-        </div>
-        of its crowdfunding,
-        with contributions by 
-        <strong class='bankers'><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">3</a></strong> bankers:
-        <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">125 €</a></strong>
-         of a <strong><a href="http://www.kisskissbankbank.com/visual-culture-a-tool-for-design-collaboration" target="_blank" title="Visual Culture a Tool for Design Collaboration">12,500 €</a></strong> goal
-    </div>
-</div>
 <div id="header" class="container_7">
   <div class="grid_2">
   <h1><a href="/and/">i . like tight pants . net</a></h1>
   </div>
   <div class="grid_3">
   <ul>
-    
+
     <li ><a href="/and/the-underwater-screen-or-lessons-from-wordperfect">latest</a></li>
     <li><a href="/and/about">about</a></li>
     <li ><a href="/and/archives">index</a></li>
@@ -703,6 +550,8 @@ The art world to me seems like the world of fashion, except with less money and 
   <h4>Latest Comments</h4>
   <ul>
   
+    <li><strong>michaël:</strong> The recent evolution of MediaWiki is worth mentioning. One of ... <a href="/and/hackers-culture-and-the-fear-of-wysiwyg" title="full comment on: Hacker Culture and the Fear of WYSIWYG">read more</a></li>
+  
     <li><strong>jaromil:</strong> Check the Linux Action Show on Tomb https://www.dyne.org/software/tomb there can ... <a href="/and/hackers-culture-and-the-fear-of-wysiwyg" title="full comment on: Hacker Culture and the Fear of WYSIWYG">read more</a></li>
   
     <li><strong>Ian Hickson:</strong> The member list is the one on the charter (it&#39;s ... <a href="/and/who-makes-standards" title="full comment on: Who gets to write the web: the power struggles around the standards">read more</a></li>
@@ -721,8 +570,6 @@ The art world to me seems like the world of fashion, except with less money and 
   
     <li><strong>Mark Entingh:</strong> I am intrigued by this blog post as I am ... <a href="/and/hackers-culture-and-the-fear-of-wysiwyg" title="full comment on: Hacker Culture and the Fear of WYSIWYG">read more</a></li>
   
-    <li><strong>habitus:</strong> Thanks for your insight that it is not just programmers ... <a href="/and/hackers-culture-and-the-fear-of-wysiwyg" title="full comment on: Hacker Culture and the Fear of WYSIWYG">read more</a></li>
-  
   </ul>
 
 </div>
@@ -732,7 +579,7 @@ The art world to me seems like the world of fashion, except with less money and 
 
 
 <!-- Piwik, Open Source Analytics,
-let’s not give Google more data then necessary! Eric --> 
+let’s not give Google more data then necessary! Eric -->
 <script type="text/javascript">
 var pkBaseURL = (("https:" == document.location.protocol) ? "https://var.schr.fr/piwik/" : "http://var.schr.fr/piwik/");
 document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
