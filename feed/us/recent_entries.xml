@@ -4,25 +4,85 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2014-06-10T10:29:05+01:00</updated>
-
+    <updated>2017-05-08T08:36:51Z</updated>
+    
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
+
+<entry>
+    <title>Finding Red Letterboxes In Belgium</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/finding-red-letterboxes-in-belgium" />
+    <id>tag:i.liketightpants.net,2017:/and//1.100</id>
+
+    <published>2017-05-06T20:45:11Z</published>
+    <updated>2017-05-08T08:36:51Z</updated>
+
+    <summary>Luc Rocher and Eric Schrijver hack Belgium and make it easier for Belgians to post letters.</summary>
+    <author>
+        <name>glit</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[
+    <p><a href="http://red-boxes.be" class="aloha-link-text">
+        <img src="http://i.liketightpants.net/and/assets/called/red-boxes-preview.png" style="width:830px">
+</a></p>
+    <p class="byline">Visit <a href="http://red-boxes.be/" class="aloha-link-text" hreflang="">red-boxes.be</a> if you want to find an open letterbox in Belgium.</p>
+    <p>In Belgium, we send letters. Every year though, the market for postal letters decreases by about 5%. Post offices close. Mail boxes disappear. So when we need to send a letter, we might not know exactly where to post it. Throughout Belgium, 13,049 red letter boxes in various designs stand in the streets; yet they are not that easy to spot, and their mail &nbsp;is collected at a different time of the day, anywhere from 8:00 to 19:00.</p>
+    <p>bpost, the Belgian mail company, has <a href="http://www.bpost.be/site/nl/rode-brievenbussen" class="aloha-link-text" hreflang="">a specific webpage</a> on their website for finding addresses of mail boxes. To use it, you need to know the exact address of your location or enter your postal code, which is slightly easier (Belgian postal codes cover a large area). But from a mobile phone, you can’t reach that part of the form because horizontal scrolling is disabled. Worse, once you’re in the app, it’s not exactly easy to navigate—you might find yourself in the Pacific Ocean when clicking amiss.<br></p>
+    <div><br></div>
+    <h4>Hack Belgium</h4>
+    <p>
+      <img src="http://i.liketightpants.net/and/assets/called/DSCF2411.JPG" style="width: 490px; height: 327px; position: relative; margin: 0px; resize: none; zoom: 1; display: inline-block; top: 0px; left: 0px;" class="">
+</p>
+    <p class="byline">Eric Schrijver (l) of I like tight pants and mathematics and Luc Rocher (r), Phd student at UCL, at Hack Belgium in Tour &amp; Taxis, Brussels.</p>
+    <p>For <a href="http://www.hackbelgium.be/" class="aloha-link-text" hreflang="">Hack Belgium</a>, me and my teammate <a href="https://rocher.lc/" class="aloha-link-text" hreflang="">Luc Rocher</a> decided to tackle this problem. Hack Belgium is the first countrywide hackathon in Belgium. I was happy to run into Luc, whom I first met at a guided tour of the Internet Archive in San Francisco a few months ago. If you look at the website of the hackathon, you’ll notice that the subjects tackled are rather huge. There is a smell of <a href="https://www.theguardian.com/technology/2013/mar/09/evgeny-morozov-technology-solutionism-interview" class="aloha-link-text" hreflang="">technical solutionism</a>—smart technologists and entrepreneurs will come up with tools that fix societal ills. As the days progressed, we also noticed it is more about coming up with plans, than with doing a hack. It’s fun to think about how to create a product and monetise it. But it’s even more fun to build something right now.</p>
+    <h4>Getting the data</h4>
+    <p>
+      <img src="http://i.liketightpants.net/and/assets/called/bpost-open-data-reactie.png" style="width:490px">
+</p>
+    <p>The first thing we need to make such an app is the information about the red boxes: where are they, and when are they open. Where do we get this data? The Open Knowledge Foundation has a <a href="https://index.okfn.org/dataset/postcodes/" class="aloha-link-pointer" hreflang="">page listing the availability</a> of these kinds data for a range of countries. In Belgium, various public organisations are involved in open data initiatives. But bpost, which is an ‘autonomous state-owned company’ is not necessarily involved in them.&nbsp;</p>
+    <p style="">On Twitter, you can find <a href="https://twitter.com/BartRosseau/status/263590963593748480" class="aloha-link-text" hreflang="">a request from 2012</a> by Bart Rousseau, asking if there were chances to open up this data. Even if bpost agreed this was their intention for the future, “we unfortunately can not offer this information on a short term”. It has been almost five years since—it’s clear that we need to try another approach to get access to this data set.</p>
+    <div><br></div>
+    <h4>Hacking bpost to help citizens</h4>
+    <p>
+      <img src="http://i.liketightpants.net/and/assets/called/bpost-network-traffic.png" style="width:490px">
+</p>
+    <p>If we navigate to the bpost webpage, and enter for example a postal code 1000, we can look at the page and it’s actually a wrapper for <a href="http://www.bpost2.be/redboxes/nl/map_zone_zip.php?q=1000&amp;zip=1000" class="aloha-link-text" hreflang="">another webpage</a>. If we use the browsers ‘network inspection’ function, we find out this page loads in data <a href="http://www.bpost2.be/redboxes/nl/get_zone_zip.php?zip=1000,1020,1120,1130&amp;nbr=413357" class="aloha-link-text" hreflang="">from a web service</a>. Here we get the actual information we need:</p>
+    <p></p>
+    <pre>&lt;marker address1_fr="GALERIES DU VINGT-CINQ AOÛT 8" address2_fr="1000 BRUXELLES" address1_nl="25 AUGUSTUS GALERIJEN 8" address2_nl="1000 BRUSSEL" id="10000043" lat="50.8427501" lng="4.3515499" status="In Service" week="19:00" sat="10:00" /&gt;</pre>
+    <p style="">By modifying the last URL by appending <a href="https://en.wikipedia.org/wiki/List_of_postal_codes_in_Belgium" class="aloha-link-text" hreflang="">every Belgian postal code</a>, we managed to download the location of every 13,049 mail boxes, along with their collection hours during weekdays and weekends.</p>
+    <p style="">We developed a simple application whose code is already <a href="https://github.com/cynddl/red-boxes" class="aloha-link-text" hreflang="">available on Github</a>, using the data set in combination with the Mapbox GL library. Everyone traveling across Belgium can now easily find not only the closest mail box, but also quickly which ones &nbsp;will still be fetched before the end of the day.</p>
+    <p style="">Want to you use the data yourself? For our app, we converted it to the GeoJSON standard that is easy to build upon.&nbsp;</p>
+    <div style="">
+      <h4>Is it legal?</h4>
+</div>
+    <p>Data like the position of a postbox and its collection hours are not protected by copyright as creative works. But a collection of such data holds database rights. By downloading all this data from bpost and redistributing it, we are probably infringing on their intellectual property. We hope that bpost will make good on their promise and release this data under an open license! By publishing this application, we want to show how every citizen can profit from the opening of public information.<br></p>
+    <h4>Try it out!</h4>
+    <p style="">Visit <a href="http://red-boxes.be" class="aloha-link-pointer" hreflang="">red-boxes.be</a>, and let us know what you think in the comment section! Want to thank us? Use our links to subscribe to <a href="https://mubi.com/tell-a-friend/global/51klF_iI" class="" hreflang="">MUBI</a> for an exquisite pick of independent streaming cinema, and <a href="https://www.efarmz.be/fr/?s=041701901" class="" hreflang="">eFarmz</a> for local Belgian food delivered to your door.</p>
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>The Underwater Screen Or Lessons From Wordperfect      </title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-underwater-screen-or-lessons-from-wordperfect" />
     <id>tag:i.liketightpants.net,2014:/and//1.94</id>
 
-    <published>2014-06-10T20:21:57+01:00</published>
-    <updated>2014-06-10T10:29:05+01:00</updated>
+    <published>2014-06-10T18:21:57Z</published>
+    <updated>2014-06-10T08:29:05Z</updated>
 
     <summary>If you happen to share a studio, an office or a live with someone who used personal computers in the 1990ies, and you are at their side when this happens, there is a significant chance this person will express a desire for a certain feature of a previous generation of word processors: I am talking about WordPerfect, and its ‘reveal codes’ option.</summary>
     <author>
         <name>tellyou</name>
+        
     </author>
+    
+    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-        
     <p>
       <img style="height: 539px; width: 795px; position: relative; margin: 0px; resize: none; zoom: 1; display: inline-block; top: 0px; left: 0px;" src="/and/assets/called/underwaterscreen_wordperfect.png" title="" class="">
 <br></p>
@@ -79,8 +139,8 @@
     <p>
        Because these editors are built on HTML’s native functionality, we can use all of the debugging tools the browser already ships with. Aloha promises us that its output is so good, there is no need to dive into the codes. That is not really true. Just like with Microsoft Word, there are moments where one would like to correct the automatically applied formatting commands. It is at this point that we can use the browsers functionality: we right-click on the text and choose ‘inspect element’. Once we open up the element inspection, we see an underwater view: the Document Object Model the browser has constructed, with all the nodes from the HTML with their CSS styling applied. As we edit these nodes, the visual page will change. We can even copy in HTML codes from other sources.</p>
     <p><i><a href="http://www.aloha-editor.org/" title="Aloha Editor - HTML5 WYSIWYG Editor" class="aloha-link-text">Aloha Editor</a> is a JavaScript project that can be integrated into any website. Doing so does require some programming skills as the setup is slightly more involved than for most (jQuery) plugins. For several publishing platforms prepackaged plugins exist, such as <a href="http://wordpress.org/plugins/front-end-editor/" title="WordPress › Front-end Editor « WordPress Plugins">for Wordpress</a>.</i></p>
-
-        ]]>
+]]>
+        
     </content>
 </entry>
 
@@ -89,16 +149,18 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/hackers-culture-and-the-fear-of-wysiwyg" />
     <id>tag:i.liketightpants.net,2014:/and//1.97</id>
 
-    <published>2014-05-23T01:40:24+01:00</published>
-    <updated>2014-11-13T15:51:11+01:00</updated>
+    <published>2014-05-22T23:40:24Z</published>
+    <updated>2014-11-13T14:51:11Z</updated>
 
     <summary>Flash forward to 2014, and most Content Management Systems still offer us the same inhospitable form fields that look nothing like the page they will produce. The programmers are to blame, and here’s why.</summary>
     <author>
         <name>habitus</name>
+        
     </author>
+    
+    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[
-            <style>
+        <![CDATA[    <style>
   .article li {
       list-style: inherit !important;
   }
@@ -278,8 +340,8 @@ The publication of the article coincides with the conference ‘<a href="http://
 
 The digital publishing toolkit is a project that tries to come up with tools and best practices for independent electronic publishing in the field of art. This means coming up with workflows that allow different professionals to add their value to the process: writers, editors, designers, developers (these categories may overlap).<br><br>
 
-As explained in this article, I like tight pants would advise the creators of the toolkit against interfaces too strongly biased towards programmer values but urge them to instead find solutions that allow multiple kinds of interfaces to the source—in short, using a plain text format like <a href="http://daringfireball.net/projects/markdown/" title="Daring Fireball: Markdown">Markdown</a> should not be forced upon all contributors.</div>
-        ]]>
+As explained in this article, I like tight pants would advise the creators of the toolkit against interfaces too strongly biased towards programmer values but urge them to instead find solutions that allow multiple kinds of interfaces to the source—in short, using a plain text format like <a href="http://daringfireball.net/projects/markdown/" title="Daring Fireball: Markdown">Markdown</a> should not be forced upon all contributors.</div>]]>
+        
     </content>
 </entry>
 
@@ -288,16 +350,18 @@ As explained in this article, I like tight pants would advise the creators of th
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/graphic-design-is-a-nostalgic-field" />
     <id>tag:i.liketightpants.net,2014:/and//1.91</id>
 
-    <published>2014-02-19T20:02:50+01:00</published>
-    <updated>2014-05-11T23:07:49+01:00</updated>
+    <published>2014-02-19T19:02:50Z</published>
+    <updated>2014-05-11T21:07:49Z</updated>
 
     <summary>Graphic design is a nostalgic field. Even in the art schools, the students want to make books and posters.</summary>
     <author>
         <name>tellyou</name>
+        
     </author>
+    
+    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-        
     <iframe allowfullscreen="" frameborder="0" height="468" mozallowfullscreen="" src="//player.vimeo.com/video/87130241?title=0&amp;byline=0&amp;portrait=0&amp;color=3e4f5f" webkitallowfullscreen="" width="830"></iframe>
     <p class="byline">
        Pierre Huyghebaert (r) and Eric Schrijver from
@@ -343,8 +407,8 @@ As explained in this article, I like tight pants would advise the creators of th
         Libre Graphics Magazine
        </a>
        1.4 under the title ‘Will these hands never get dirty’.
-      </div>
-        ]]>
+      </div>]]>
+        
     </content>
 </entry>
 
@@ -353,16 +417,18 @@ As explained in this article, I like tight pants would advise the creators of th
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/who-makes-standards" />
     <id>tag:i.liketightpants.net,2013:/and//1.73</id>
 
-    <published>2013-11-20T22:08:09+01:00</published>
-    <updated>2014-10-21T17:28:11+01:00</updated>
+    <published>2013-11-20T21:08:09Z</published>
+    <updated>2014-10-21T15:28:11Z</updated>
 
     <summary>In this text we try to introduce in more detail what are some of the power struggles that underlie the continued development of HTML. We will look at HTML’s latest iteration, HTML5. We will see the way in which companies like Google try to further their own agenda’s, sometimes under the guise of following the bottom up inventions of web authors.</summary>
     <author>
         <name>habitus</name>
+        
     </author>
+    
+    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-        
     <style>sup { vertical-align: top; font-size: 8px; font-weight: bold; }
     a, a:visited, a:active {
       color: #000;
@@ -476,8 +542,8 @@ As explained in this article, I like tight pants would advise the creators of th
     <p>WordPress — Home. (2014, September 28). Retrieved November 19, 2013 from <a href="https://web.archive.org/web/20140928052112/https://wordpress.org/" class="aloha-link-pointer" hreflang="">https://web.archive.org/web/20140928052112/https://wordpress.org/</a></p>
 <div id="aside" style="padding-top: 44px;" class=""><p>This article was commissioned for “<a href="http://reader.lgru.net/pages/index/">Considering your tools.
 a reader for designers and developers”</a> and is cross-posted here.</p>
-    <p><em>Update October 4, 2014: Since this article’s original publication, RDF/A has been accepted as part of HTML5: <a href="http://www.w3.org/News/2013#entry-9919">http://www.w3.org/­News/­2013#entry-9919</a>.</em></p></div>
-        ]]>
+    <p><em>Update October 4, 2014: Since this article’s original publication, RDF/A has been accepted as part of HTML5: <a href="http://www.w3.org/News/2013#entry-9919">http://www.w3.org/­News/­2013#entry-9919</a>.</em></p></div>]]>
+        
     </content>
 </entry>
 
@@ -486,16 +552,18 @@ a reader for designers and developers”</a> and is cross-posted here.</p>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo" />
     <id>tag:i.liketightpants.net,2013:/and//1.86</id>
 
-    <published>2013-11-05T21:57:07+01:00</published>
-    <updated>2013-11-17T14:21:12+01:00</updated>
+    <published>2013-11-05T20:57:07Z</published>
+    <updated>2013-11-17T13:21:12Z</updated>
 
     <summary>ufo2otf is a command line utility that takes UFO font sources and generates OTF’s and webfonts.</summary>
     <author>
         <name>bnf</name>
+        
     </author>
+    
+    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-        
     <p style="">
       <object type="image/svg+xml" style="width:830px;height:830px;" data="/and/assets/called/ufo2otf.svg">
         <img src="/and/assets/called/ufo2otf.png" style="width:830px;height:830px;" alt="A greyish starry night with a baby blue ufo shining its purple light downwards, projecting an uppercase A, slab serif.">
@@ -638,8 +706,8 @@ a reader for designers and developers”</a> and is cross-posted here.</p>
          url('NimbusSanL-BoldCond.ttf')  format('truetype');
 }</pre>
     <p>If you are curious how <code>ufo2otf</code> goes about its font detection, it is a simple Python based program and&nbsp;<a href="https://github.com/fonts/ufo2otf/blob/master/ufo2otf/compilers.py#L73" class="aloha-link-text" target="_self" style="" title="ufo2otf/ufo2otf/compilers.py at master · fonts/ufo2otf">it is in its source code that it tells the whole story</a>.</p>
-
-        ]]>
+]]>
+        
     </content>
 </entry>
 
@@ -648,16 +716,18 @@ a reader for designers and developers”</a> and is cross-posted here.</p>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork" />
     <id>tag:i.liketightpants.net,2013:/and//1.80</id>
 
-    <published>2013-10-09T22:00:57+01:00</published>
-    <updated>2013-10-10T18:07:47+01:00</updated>
+    <published>2013-10-09T20:00:57Z</published>
+    <updated>2013-10-10T16:07:47Z</updated>
 
     <summary>But when it comes to type design, one need not look to software development. To see how building upon existing creations makes typographic sense, one can look at type design history itself.</summary>
     <author>
         <name>habitus</name>
+        
     </author>
+    
+    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-        
     <style>
 h2 {
     text-rendering: optimizeLegibility;
@@ -766,8 +836,8 @@ $(window).load(function () {
 });
 </script>
 
-
-        ]]>
+]]>
+        
     </content>
 </entry>
 
@@ -776,16 +846,18 @@ $(window).load(function () {
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/i-need-my-generic-font-medicine" />
     <id>tag:i.liketightpants.net,2013:/and//1.85</id>
 
-    <published>2013-10-09T21:55:58+01:00</published>
-    <updated>2013-10-09T15:01:33+01:00</updated>
+    <published>2013-10-09T19:55:58Z</published>
+    <updated>2013-10-09T13:01:33Z</updated>
 
     <summary>If you were formed in the 1990ies, these are the fonts you will feel all Oedipal about. Like medication for which the patents have expired, popular typefaces sprout generic sisters and brothers. Find ways to abuse them for your own end.</summary>
     <author>
         <name>baseline</name>
+        
     </author>
+    
+    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-        
     <style>
 h2 {
     text-rendering: optimizeLegibility;
@@ -1127,8 +1199,8 @@ $("h2").hover(
 )
 </script>
 
-
-        ]]>
+]]>
+        
     </content>
 </entry>
 
@@ -1137,16 +1209,18 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong" />
     <id>tag:i.liketightpants.net,2013:/and//1.78</id>
 
-    <published>2013-10-08T22:06:03+01:00</published>
-    <updated>2013-11-10T18:17:13+01:00</updated>
+    <published>2013-10-08T20:06:03Z</published>
+    <updated>2013-11-10T17:17:13Z</updated>
 
     <summary>The screenshots  are from a period of 48 hours where we work on the site together. To write CSS, we keep a shared Etherpad. One person is in charge of the gong: when she rings, she copies the contents of the pad into the site’s CSS file, and uploads it—after which everyone can refresh their browser and see the updated styles.</summary>
     <author>
         <name>baseline</name>
+        
     </author>
+    
+    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-        
     <p>
       <iframe src="http://player.vimeo.com/video/65545530?color=000&amp;title=0&amp;byline=0&amp;portrait=0" width="830" height="466" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 <!-- <video src="http://i.liketightpants.net/and/assets/called/live_coding_the_osp_website_1280x720.mp4" id="live-website-video" width="830" height="466" style="background: white;" preload controls>--><br></p>
@@ -1154,8 +1228,8 @@ $("h2").hover(
     <p style="">The screenshots above are from a period of 48 hours where we work on the site together. To write CSS, we keep a shared <a href="/and/etherpad-or-the-textarea-is-a-lonely-place" style="" target="_self" title="I like tight pants and etherpad or the textarea is a lonely place" class="aloha-link-text">Etherpad</a>. One person is in charge of the gong: when she rings, she copies the contents of the pad into the site’s CSS file, and uploads it—after which everyone can refresh their browser and see the updated styles.</p>
     <h4>Update 2013-11-10:</h4>
     <p style="">If you run a recent version of Etherpad, you can install&nbsp;<a href="https://github.com/codingisacopingstrategy/ep_export_less_and_css" class="" style="background-color: rgb(128, 181, 242);" target="_self" title="codingisacopingstrategy/ep_export_less_and_css">ep_export_less_and_css</a>, a plugin bnf created that enables CSS export directly from Etherpad.</p>
-
-        ]]>
+]]>
+        
     </content>
 </entry>
 
@@ -1164,16 +1238,18 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/release-early-release-often-version-numbers-for-typefaces" />
     <id>tag:i.liketightpants.net,2013:/and//1.81</id>
 
-    <published>2013-09-25T21:53:36+01:00</published>
-    <updated>2013-11-11T13:13:43+01:00</updated>
+    <published>2013-09-25T19:53:36Z</published>
+    <updated>2013-11-11T12:13:43Z</updated>
 
     <summary>I love the way version numbers are used in Open Source. Version 1.0 is not the first version released. Projects are well underway before they reach 1.00—if they even reach it. An open source maxim (by Linus Torvalds of Linux fame) is ‘release early, release often’. Get your code out there before it is perfect, because it can benefit from collaboration from the community. That is why we see version numbers like 0.15.2</summary>
     <author>
         <name>tellyou</name>
+        
     </author>
+    
+    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-        
     <p>I love the way version numbers are used in Open Source. Version 1.0 is not the first version released. Projects are well underway before they reach 1.00—if they even reach it. An open source maxim (by Linus Torvalds of Linux fame) is ‘release early, release often’. Get your code out there before it is perfect, because it can benefit from collaboration from the community. That is why we see version numbers like 0.15.2</p>
     <p>Version 1.0 is reserved for the first version that sees the design intentions crystallised, the functionality in place, and all the first bugs accounted for. It’s what you would have wanted your first release to be like, except that it took all the releases in-between to get there:</p>
     <blockquote>We are very pleased to announce the release of IPython 1.0, nearly twelve years after the first release of IPython 0.0.1.</blockquote>
@@ -1223,8 +1299,8 @@ $("h2").hover(
     <p style="">There are arguments against creating too many versions of a design. A design is a product of hopes, aspirations, goals and constraints that exist at a given point. The recent phenomenon of film directors revisiting their older movies and adding contemporary computer effects (not available at the time) has not at all been well received by fans. It shows that the constraints placed upon an artistic project shape it and create its character, and that authors might want to be reticent in revisiting their works.</p>
     <p style="">Similar phenomenons exist in software too. People who use many subsequent versions of &nbsp;a software often feel like something gets lost along the way. The initial sense of purpose embodied in a program can give way to what is called ‘bloat’, by adding feature upon feature until it tries . In programmer’s circles, this is known as Zawinski’s law: &nbsp;‘Every program attempts to expand until it can read e-mail.’ At the same time, using old versions of software is not very practical. They might contain security holes; they might even no longer run on your current operating system.</p>
     <p style="">With typefaces we are in luck that they will in most occasions be usable for a longer time. As long as a description of its points exists somewhere—and mankind does not forget <a href="/and/seb-explaining-love-and-bezier-curves" style="" target="_self" title="I like tight pants and seb explaining love and bezier curves" class="aloha-link-text">the mathematics of Bézier curves</a>. So I think I will want for the 1.0 version to be the last. Anyone who has another vision on the design, is <a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork" class="" style="" target="_self" title="I like tight pants and no-one starts from scratch: type design and the logic of the fork">free to fork</a>.</p>
-
-        ]]>
+]]>
+        
     </content>
 </entry>
 
@@ -1233,16 +1309,18 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-story-of-nokia-microsoft-and-a-1000-hearts-breaking" />
     <id>tag:i.liketightpants.net,2013:/and//1.68</id>
 
-    <published>2013-09-04T22:02:55+01:00</published>
-    <updated>2013-09-04T19:09:15+01:00</updated>
+    <published>2013-09-04T20:02:55Z</published>
+    <updated>2013-09-04T17:09:15Z</updated>
 
     <summary>In the upper part of the screen you see a smartphone. A landscape format screen with a keyboard slid out underneath. The screen is scratched and there are stains of white paint all over the device. The phone appears to be floating. A tale of Nokia, Microsoft, and a 1000 hearts breaking.</summary>
     <author>
         <name>tellyou</name>
+        
     </author>
+    
+    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-        
     <p><a href="/and/assets/called/the_telephone.jpg" target="_self">
         <img src="/and/assets/scaled/to/830/wide/and/called/the_telephone.jpg" style="height:830px;width:830px;" alt="In the upper part of the screen you see a smartphone. A landscape format screen with a keyboard slid out underneath. The screen is scratched and there are stains of white paint all over the device. The phone appears to be floating." title="" />
       </a></p>
@@ -1256,8 +1334,8 @@ $("h2").hover(
     <p style="">It works out quite nicely. I like using the phone; the full QWERTY keyboard makes for great note taking and texting. Though I never get to any programming beyond installing the <a href="http://ipython.org/" style="" target="_self">IPython</a> shell, there is an actual pleasure in the feeling that I could, whenever I would want to. Finally, I profit from a great build quality, which sees my phone survive falling into a bucket of paint.<br />The great downside to the phone, are caused by the simple fact of it being not very popular. As it does not represent a sizable number of All the new applications that appear are for iPhone and Android. Apparently, having a phone that you can easily fiddle with yourself, is not what gets users flocking to the device. I feel a little lonely using this operating system.<br />Yet at <a href="http://" target="_self" style="" title="I like tight pants and daniela likes open source programming conferences like fosdem">Fosdem 2011</a>, a yearly event for Open Source software developers, it turns out everybody has this phone. I speak with the community manager for the largest Maemo website, who speaks with great enthousiasm about this community. I remember that <a href="http://drippingdigital.com/blog/" style="" target="_self" title="Dripping Digital">John</a> has this phone, and <a href="http://adaptstudio.ca/" style="" target="_self" title="ad.apt is ginger coons">Ginger</a> too. For a moment it feels like the people needed for the platform to have a future, are there.</p>
     <p><span style="font-size: 14px;">Yet companies only work with open source as long as they can make open source work for them. ‘The most open’, by itself, is not easily translatable into market share.&nbsp;</span>Two days later, as I get home, I read that <a href="http://conversations.nokia.com/2011/02/11/open-letter-from-ceo-stephen-elop-nokia-and-ceo-steve-ballmer-microsoft/" target="_self" style="" title="Open Letter from CEO Stephen Elop, Nokia and CEO Steve Ballmer, Microsoft – Nokia Conversations : the official Nokia blog">Nokia has signed a deal to continue with Microsoft Windows as the operating system for its smartphone</a>. It is like I hear a thousands programmers’ hearts collectively break.</p>
 
-
-        ]]>
+]]>
+        
     </content>
 </entry>
 
@@ -1266,22 +1344,24 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/it-might-be-a-unix-sin-but-i-would-like-you-to-add-dot-t-x-t-as-the-extension-of-your-readme-file" />
     <id>tag:i.liketightpants.net,2013:/and//1.65</id>
 
-    <published>2013-04-30T21:51:20+01:00</published>
-    <updated>2013-04-30T20:10:13+01:00</updated>
+    <published>2013-04-30T19:51:20Z</published>
+    <updated>2013-04-30T18:10:13Z</updated>
 
     <summary>Who are these people in Boston? Why do they ask me to write them letters in the day and age where I download their software from the internet? And why didn’t they add .txt to the end of their filenames?</summary>
     <author>
         <name>bnf</name>
+        
     </author>
+    
+    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-        
     <p><a href="https://github.com/klepas/open-baskerville/commit/8aaf5c54eb0c88cdbdfe2411e5f7396a88d0ab89">
         <img src="/and/assets/called/this_is_probably_a_unix_sin.png" style="width:660px;height:401px" alt="" title="" />
       </a></p>
 
-
-        ]]>
+]]>
+        
     </content>
 </entry>
 
@@ -1290,16 +1370,18 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/etherpad-or-the-textarea-is-a-lonely-place" />
     <id>tag:i.liketightpants.net,2013:/and//1.75</id>
 
-    <published>2013-04-22T21:59:54+01:00</published>
-    <updated>2013-04-27T14:00:02+01:00</updated>
+    <published>2013-04-22T19:59:54Z</published>
+    <updated>2013-04-27T12:00:02Z</updated>
 
     <summary>It is a lonely place. The other I like tight pants contributors are nowhere in sight, it is just me typing away in the browser.</summary>
     <author>
         <name>tellyou</name>
+        
     </author>
+    
+    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-        
     <p><a href="/and/assets/called/the_lonely_form_field.png">
         <img src="/and/assets/scaled/to/830/wide/and/called/the_lonely_form_field
 .png" alt="" title="" />
@@ -1315,8 +1397,8 @@ $("h2").hover(
     <p>If you have not used etherpad, changes are you have used the technology through Google Docs. It is Google who in 2009 bought Etherpad. At the time of the acquisition the source code gets released under a permissive license. So if the code is out there, why are we not seeing more Etherpad-style collaboration online?</p>
     <p></p>
 
-
-        ]]>
+]]>
+        
     </content>
 </entry>
 
@@ -1325,24 +1407,26 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-most-barebones-online-font-editor-possible" />
     <id>tag:i.liketightpants.net,2013:/and//1.74</id>
 
-    <published>2013-04-18T21:59:36+01:00</published>
-    <updated>2013-04-18T12:08:42+01:00</updated>
+    <published>2013-04-18T19:59:36Z</published>
+    <updated>2013-04-18T10:08:42Z</updated>
 
-    <summary></summary>
+    <summary><![CDATA[ Built by OSP as part of a workshop where students of the Piet Zwart Institute get up close and personal with vector graphics. You edit the raw XML strings that make up the glif.&nbsp; An online font-editor would be...]]></summary>
     <author>
         <name>baseline</name>
+        
     </author>
+    
+    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-        
     <p><a href="/and/assets/called/edit_glif.png">
         <img src="/and/assets/scaled/to/830/wide/and/called/edit_glif.png" alt="You see a fairly minimalistic user interface featuring a list of what appears to be glyph names, a large letter A, and a textarea with xml data describing two contours—the contours that make up the A. The elements lack the usual gloss of post OS-X user interfaces: a thin grey 1px border is the only visual separator between elements." title="" />
       </a></p>
     <p>Built by OSP as part of a <a href="http://osp.constantvzw.org/workshop/pzi/" target="_self" style="" title="OSP (Open Source Publishing) → you&amp;#39;re traveling toward in pzi">workshop</a> where students of the Piet Zwart Institute get up close and personal with vector graphics. You edit the raw XML strings that make up the <a href="http://unifiedfontobject.org/versions/ufo2/glif.html" target="_self" style="" title="Unified Font Object - Version 2 - GLIF format">glif</a>.&nbsp;</p>
     <p>An online font-editor would be a great way to make it more easy to do <a href="/and/how-it-has-come-about-that-code-hosting-site-github-offers-visualisations-of-typeface-development" style="" target="_self" title="I like tight pants and how it has come about that code hosting site github offers visualisations of typeface development">collaborative type design</a>. Speaking with <a href="https://www.google.com/search?q=dave+crossland" target="_self" style="" title="Dave Crossland">Dave</a> at this years Libre Graphics Meeting, we figured that a good place to get started would be to have a library that makes it more easy to deal with typefaces in web-apps—a JavaScript port of <a href="http://www.robofab.org/" target="_self" style="" title="I like tight pants and programmatically manipulating typefaces">RoboFab</a> perhaps?</p>
 
-
-        ]]>
+]]>
+        
     </content>
 </entry>
 
@@ -1351,16 +1435,18 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/belgian-newspapers" />
     <id>tag:i.liketightpants.net,2013:/and//1.67</id>
 
-    <published>2013-03-29T22:17:00+01:00</published>
-    <updated>2014-05-12T00:13:43+01:00</updated>
+    <published>2013-03-29T21:17:00Z</published>
+    <updated>2014-05-11T22:13:43Z</updated>
 
     <summary>This computer, inside the Belgian Royal Library, has no access to internet, no usb ports, and no connection to a printer. It shows you a digital version of a Belgian newspaper, Le Drapeau Rouge.</summary>
     <author>
         <name>habitus</name>
+        
     </author>
+    
+    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-        
     <p>
       <img src="/and/assets/called/belgian_newspaper_le_drapeau_rouge.jpg" alt="You see a computer monitor, in portrait orientation, showing the front page of a newspaper (displayed as a PDF inside Internet Explorer): ‘Le drapeau rouge’, the Belgian daily communist newspaper. Headline: ‘Molotov propose la réduction générale des armements’. " title="" style="width:1029px;height:1457px;margin-left:-199px;z-index:-1111;">
 </p>
@@ -1371,38 +1457,10 @@ $("h2").hover(
       <p>Because of its mission of preservation, the Library needed to scan these materials—the paper is of extremely poor quality and disintegrating. But the Library also has a mission to facilitate access to its materials in any way it can.</p>
       <p>Digitalisation seems to offer a great potential to make the material from the collections more accessible. Once scanned, material can be indexed, and put online, and be available to everyone with an internet connection. In potential. In reality, the Royal Library can not do this, because it would open itself to all kinds of claims of damages by copyright holders.</p>
 </div>
-
-        ]]>
-    </content>
-</entry>
-
-<entry>
-    <title>Parties in Paris</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/parties-in-paris" />
-    <id>tag:i.liketightpants.net,2012:/and//1.53</id>
-
-    <published>2012-09-07T15:24:25+01:00</published>
-    <updated>2013-03-04T00:29:48+01:00</updated>
-
-    <summary>There is never much programming at the parties I go to. Seb says people like drugs and music and sex and that’s what brings them to parties.</summary>
-    <author>
-        <name>glit</name>
-    </author>
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[
+]]>
         
-    <p><a href="http://i.liketightpants.net/and/assets/called/parties_in_paris.jpg">
-        <img src="http://i.liketightpants.net/and/assets/scaled/to/830/wide/and/called/parties_in_paris.jpg" style="width:553px;830px;" title="" alt="You see a young man perched against a dresser, sitting on a medicine ball. He looks away. He is wearing a slate blazer, over a yellow shirt, screenprinted with a drawing of his guts and his chestcage. He wears gold colored leggings. His hair is combed over to the left." />
-      </a></p>
-    <p class="byline">Photo Laura Barbare</p>
-    <p>Or parties in Brussels, for that matter. But the alliteration is nice.</p>
-    <p>Though there is never much programming at the parties I go to. Even if <a href="http://yaxu.org/" title="http://yaxu.org/">Alex McLean</a> professes to be <a href="http://www.perl.com/pub/2004/08/31/livecode.html" title="Hacking Perl in Nightclubs - Perl.com">hacking Perl in night clubs</a>, I have yet to run into him at night.</p>
-    <p>I am wondering at what point it will become part of contemporary party culture and we’ll have live coding sessions at <a href="http://www.flashcocotte.com/" title="Flash Cocotte">Flash Cocotte</a>? Seb tells me that it’s not likely to happen. That people like <a href="/and/designer-drugs">drugs</a> and music and sex and that’s what brings them to parties. And that programming is too abstract and intellectual to appeal to people in a similar way.</p>
-    <p>What do you think?</p>
-
-
-        ]]>
     </content>
 </entry>
 
 </feed>
+

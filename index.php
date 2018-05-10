@@ -1,3 +1,3 @@
 <?php
-header('Location: /and/the-underwater-screen-or-lessons-from-wordperfect');
+header('Location: /and/finding-red-letterboxes-in-belgium');
 ?>

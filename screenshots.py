@@ -25,7 +25,7 @@ else:
             posts[i] = 'http://i.liketightpants.net/and/' + i
 
 for post, url in posts.iteritems():
-    print "taking a screenshot of post", post, url
+    # print "taking a screenshot of post", post, url
     # append a random query string to the uri so webkit doesn’t use a cached result
     url = "%s?id=%s" % (url, randint(222222,777777))
     fullfile = "assets/as/screenshots/of/%s-full.png" % post
