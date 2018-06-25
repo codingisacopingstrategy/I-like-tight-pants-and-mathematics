@@ -109,7 +109,6 @@ div#content dl,
 div#content div.article,
 div#content iframe,
 div#content blockquote,
-div#content img,
 div#content ol,
 div#content ul {
   margin-bottom: 18px;
@@ -175,4 +174,11 @@ pre {
   .aloha-ui {
     display: none !important;
   }
+}
+/* These styles should not be visible */
+.errorlist {
+  color: red;
+  float: right;
+  padding: 0;
+  margin-bottom: 0 !important;
 }
