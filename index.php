@@ -1,3 +1,1 @@
-<?php
-header('Location: /and/finding-red-letterboxes-in-belgium');
-?>
+<?php header('Location: /and/hybrid-publishing-back-to-the-future-publishing-theses-at-the-kabk'); ?>
