@@ -4,27 +4,197 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2017-05-08T08:36:51Z</updated>
-    
+    <updated>2018-07-06T09:27:57.005583</updated>
+
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
+
+<entry>
+    <title>Hybrid Publishing Back To The Future Publishing Theses at the KABK</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/hybrid-publishing-back-to-the-future-publishing-theses-at-the-kabk" />
+    <id>tag:i.liketightpants.net,:/and//1.101</id>
+
+    <published>2018-05-10T10:07:17.489116</published>
+    <updated>2018-07-06T09:27:57.005583</updated>
+
+    <summary>Writing websites like it’s 1999, printing like it’s 2018.</summary>
+    <author>
+        <name>tellyou</name>
+    </author>
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[
+        
+    <style>
+    article p {
+    width: 660px;
+        line-height: 24px;
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+div.thesis-overview {
+  width: 840px;
+    margin-bottom: 18px;
+}
+div.thesis-overview a {
+  width: 400px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+div.thesis-overview a img {
+width: 100%;
+    margin: 0 !important;
+    padding: 0;
+    }
+
+@media screen and (max-width: 830px) {
+  div.thesis-overview {
+    width: 490px;
+  }
+}
+</style>
+    <div class="thesis-overview"><a href="https://kabk.github.io/go-theses-17-jordy-ringeling/" class="aloha-link-text">
+        <img src="/and/assets/called/2017-go-theses-17-jordy-ringeling.png">
+</a><a href="https://kabk.github.io/go-theses-17-Remco-Blom-Parallax/" class="aloha-link-text">
+        <img src="/and/assets/called/2017-go-theses-17-Remco-Blom-Parallax.png">
+</a><a href="https://kabk.github.io/go-theses-17-wies-van-der-wal/" class="aloha-link-text">
+        <img src="/and/assets/called/2017-go-theses-17-wies-van-der-wal.png" class="">
+</a><a href="https://kabk.github.io/go-theses-17-magda-skibinska/" class="aloha-link-text">
+        <img src="/and/assets/called/2017-go-theses-17-magda-skibinska.png">
+</a><a href="http://kabk.github.io/govt-theses-16-martijn-deheer/" class="aloha-link-text">
+        <img src="/and/assets/called/2016-govt-theses-16-martijn-deheer.png">
+</a><a href="http://kabk.github.io/govt-theses-16-elizaveta-pritychenko-believe-it-or-not/" class="aloha-link-text">
+        <img src="/and/assets/called/2016-govt-theses-16-elizaveta-pritychenko-believe-it-or-not.png">
+</a><a href="http://kabk.github.io/govt-theses-16-marlen-weise-data-visualization-as-a-vehicle-of-thought/" class="aloha-link-pointer">
+        <img src="/and/assets/called/2016-govt-theses-16-marlen-weise-data-visualization-as-a-vehicle-of-thought.png">
+</a><a href="http://kabk.github.io/govt-theses-16-rafael-henneberke/" class="aloha-link-text">
+        <img src="/and/assets/called/2016-govt-theses-16-rafael-henneberke.png">
+</a><a href="http://kabk.github.io/govt-theses-15-tereza-rullerova-action-to-surface/" class="aloha-link-text">
+        <img src="/and/assets/called/2015-govt-theses-15-tereza-rullerova-action-to-surface.png" class="">
+</a><a href="http://kabk.github.io/govt-theses-15-sara-risvag-graphic-design-criticism-norway-2014/" class="aloha-link-text">
+        <img src="/and/assets/called/2015-govt-theses-15-sara-risvag-graphic-design-criticism-norway-2014.png">
+</a><a href="http://kabk.github.io/govt-theses-15-nina-couvert-the-power-of-fascination/" class="aloha-link-text">
+        <img src="/and/assets/called/2015-govt-theses-15-nina-couvert-the-power-of-fascination.png" class="">
+</a><a href="http://kabk.github.io/govt-theses-15-eline-van-der-ploeg-designed-microbes/" class="aloha-link-text">
+        <img src="/and/assets/called/2015-govt-theses-15-eline-van-der-ploeg-designed-microbes.png">
+</a></div>
+    <p class="byline">Theses from 2014–2017 by the students in their final exam year at KABK. The 2018 <a href="https://www.kabk.nl/graduation-festival-2018/programme-graduation-festival-2018">graduation exhibition</a> will take place July 6–12. Thesis tutors: Nick Axel, Merel Bos, Matthias Kreutzer, Silvio Lorusso, Eric Schrijver, Dirk Vis.</p>
+    <p>Today the graduation exhibition opens at the Royal Academy of Art, The Hague. Every year, the graduates of the&nbsp;<a href="https://www.kabk.nl/en/programmes/bachelor/graphic-design" class="aloha-link-text" hreflang="">The Graphic Design department</a> present their self-initiated project with which they conclude the four year program. They also show their thesis, which has become an import part of the course: it allows the students to research into a specific area of interest and will provide a theoretical foundation for their final exam project.</p>
+    <p>In the bachelor program that used to be known for its focus on typography, heads of department (2013–) Roosje Klap and Niels Schrader have introduced an emphasis on social responsibilities and digital technologies. Over the last four years we’ve worked together with an amazing set of students and teachers&nbsp; to create a workflow for sharing and publishing the theses.</p>
+    <p>Students put a lot of work into these documents, and not only write but also design them. Earlier on, the work put into the thesis would not necessarily be reflected in the subsequent exposure and distribution: the theses would be printed in a small number of copies, that were shown at the end exam exhibition and archived in the school library. However, the exhibition is not an ideal context for reading a longer text and while the school’s library is great, it’s not easy to make visible the wealth of student publications that it hosts. That is why, to benefit from the possibility of sharing the research with a wider audience, the theses have started to be designed for the screen and published online as digital publications.</p>
+    <p>Students develop the design for screen simultaneously with a design for print. The results for <a href="http://kabk.github.io/govt-theses-15/" class="aloha-link-text" hreflang="">the class of 2015</a>, <a href="https://kabk.github.io/govt-theses-16/" class="aloha-link-text" hreflang="">the class of 2016</a>, <a href="https://kabk.github.io/go-theses-17/" class="aloha-link-text" hreflang="">the class of 2017</a>&nbsp;and <a href="https://kabk.github.io/go-theses-18/" class="aloha-link-text" hreflang="">the class of 2018</a> are all available online. You can consult them from the screen, or generate a print version with the print option in your browser. The students follow a process called ‘hybrid publishing’: creating a design that adapts itself to different media. To do so, they follow a workflow that leverages technology both old and new, and which allows them to design beyond the constrains of traditional, template-based content management systems.</p>
+    <h4>Life after the template</h4>
+    <p><a href="/and/who-makes-standards" class="aloha-link-text" hreflang="">The first texts to be shared online were academic papers, and the separation of form and content that is habitual in academic publishing has permeated every aspect of the online publishing eco-system</a>. The challenge has been to come up with a workflow for creating digital theses that gives the students the needed flexibility to express their ideas both in writing and design. A thesis is not the same thing in art education as it is in academia. Scientific publications often choose a pre-formatted form. Magazines will provide templates to follow for authors, that in most cases use Microsoft Word or the LaTex authoring system. In contrast, the students in The Hague are are expected to engage in the design of their thesis, creating a design that is specific to their topic. Form and content are decidedly mixed. Clearly, the last thing we want to do is give the students a template.</p>
+    <p>There are additional requirements. With a group of 50 students, we need to be able to follow the process of all students, be able to give feedback. Also, we are legally required to archive all theses. Finally, we want to publish the theses online in
+    an accessible and durable way.</p>
+    <h4>Writing websites like it’s 1999</h4>
+    <p>The landscape of web technology is varied and ever changing. Creating an advanced web project might include choosing a server side programming language (Python, PHP, Node.js) that talks to a database of choice, then creating the visual and interaction
+    design on top of a foundation of front-end ‘frameworks’ and ‘pre-processors’. The amount of choices to make is staggering, and the complexities of such systems high. For the project at the KABK we have foregone these technologies, for a more simple,
+    back to basic approach: writing HTML pages.</p>
+    <p>The first web-sites did not use databases or other complex systems: they were hand-crafted HTML. Many small sites were created as a series of HTML pages, with occasional updates (the person designing the site might then charge for each update!). Coding was not always necessary: <a href="/and/the-underwater-screen-or-lessons-from-wordperfect" class="aloha-link-pointer" hreflang="">tools like
+    Adobe Dreamweaver provided both a visual view and a code view</a>.</p>
+    <p>The democratisation of Content Management Systems like WordPress and Joomla have changed the equation. In these systems, a general design is encoded into a template, and the contents for individual pages are stored in a database that is easily editable
+    by the user. For clients this saves time and money. The downside is that a Content Management System requires shoehorning every page into templates: these early HTML pages offered much more freedom in this respect, as potentially every page could
+    be modified and changed to the designer’s whims. This is why we chose to make hybrid web publications the same way I made websites in the 1990ies: constructing both design and content by typing HTML tags into a code editor.</p>
+    <p>
+      <img alt="Alt Text" class="iimagesdigital_folklore_coverjpg" src="http://life-after-the-template.ericschrijver.nl/images/digital_folklore_cover.jpg" style="height: 580px; width: 425px; position: relative; margin: 0px; resize: none; zoom: 1; display: inline-block; top: 0px; left: 0px;">
+</p>
+    <p class="byline">The <a href="http://digitalfolklore.org/">DIGITAL FOLKLORE Reader</a>, edited by Olia Lialina &amp; Dragan Espenschied. Designed by Manuel Buerger. </p>
+    <p>The workflow proposed for the theses thus resembles the cultural moment lovingly captured by Ola Lialina and Dragan Espenschied in the publication <i>Digital Folklore</i>. The period in the 1990ies when large groups of enthousiasts learned and experimented
+    with the fabric of the web, creating their own websites on such digital platforms as Geocities and in the process shaping the visual codes of the medium.</p>
+    <p>There is a reason of course, that Content Management Systems have become popular: not only are they cheap to update, they are also easy to use for editors. They allow a separation of roles: design, editing, maintenance. They also create archives and
+    indexes automatically. They make it easy to collaborate with larger teams and they require less technical knowledge for a part of the contributors.</p>
+    <p>There is a counter-history to these systems. As soon as printing and design started to exist as industrial endeavours, and brought along a separation of concerns, individual writers and designers have tried to blur distinctions and to exert their influence outside their appointed area of expertise. Whether it’s William Morris setting up the whole chain of production when publishing his writings with his own Kelmscott press, or the feminist movements of the 1970ies that created women’s presses, these movements are as much about the potential of achieving a coherent creative expression through the mastery of the process, as they are about the political implications of creative workers being able to own the means of their own production.</p>
+    <p>For graphic designers now, to return to the foundational languages of the web, and use these to write, design and publish their texts, is an opportunity both educational and potentially empowering. Even if the KABK students had three years of both coding and interaction design courses before starting on the thesis, this project really allows them to appropriate these technologies more fully still, and make them a part of their narrative. Here are some examples from recent years:</p>
+    <h4>Designing for post-digital print</h4>
+    <p style="width:1000px"><a href="https://kabk.github.io/go-theses-18-rudi-van-delden-the-millenium-bug/" class="aloha-link-text">
+        <img src="/and/assets/called/rudi_van_delden_the_millenium_bug.png" style="width:490px">
+</a><a href="https://kabk.github.io/go-theses-18-rudi-van-delden-the-millenium-bug/" class="aloha-link-text">
+        <img src="/and/assets/called/rudi_van_delden_the_millenium_bug.jpg" style="width: 490px;" class="">
+</a></p>
+    <p style="width:1000px"><a href="https://kabk.github.io/go-theses-18-michiel-heemskerk-le-jardin-d-amour/" class="aloha-link-text">
+        <img src="/and/assets/called/michiel-heemskerk-le-jardin-d-amour.png" style="width:490px">
+</a><a href="https://kabk.github.io/go-theses-18-michiel-heemskerk-le-jardin-d-amour/" class="aloha-link-text">
+        <img src="/and/assets/called/michiel-heemskerk-le-jardin-d-amour.jpg" style="width:490px">
+</a></p>
+    <p class="byline">Theses from 2018 in web and print form</p>
+    <p>The screen is now our primary medium to access information. It has displaced the printed medium in this regard. Yet print is not quite dead. Rather, it is thriving in the form of art book fairs and small publishers popping up all over the world. To understand this, it is helpful to consider the screen and print not as as a dichotomy but rather as a symbiotic relationship. This is what Alessandro Ludovico does in his book ‘<a href="http://postdigitalprint.org/" class="aloha-link-text" hreflang="">Post-digital Print</a>’.</p>
+    <p>Our students are invested in print publishing. Not only does the printed book offer a great interface for reading, books also offers what seems like a stable reference points in the flux of digital channels. Additionally, printed publications provide a number of valuable rituals, from book launches to the aforementioned fairs, that have no real equivalent in the on-line world. That’s why we decided to embrace the double nature of publishing today and ask students to make both screen and print versions.</p>
+    <p>At the same time, we did not want to separate completely the production process between print and screen. We wanted to work in a way that would have the students invested in the base materials of today’s publishing channels. We wanted them to have the time to properly get their hands dirty in HTML and CSS, and to think how these technologies affect the way we design today. That is why we chose for a ‘<a href="https://hpg.io/" class="aloha-link-text" hreflang="">Hybrid Publishing</a>’ approach, in which the design is conceived with web technologies, in such a way that it can adapt both to different screen sizes and to a printed output. This is achieved by using the techniques that are the basis of ‘Responsive Design’: ‘Media Queries’ allow different styles to be applied for different media.</p>
+    <p>Responsive Design is best known for allowing a web-design to be implemented across devices: from phones to tablets to desktop computers. But the same technology can also be used to differentiate the design from screen to the printed output. Dedicated products like Prince XML allow to create PDF’s from HTML pages, but your web browser is capable of this as well: simply choose the option ‘Print’ from the browser’s menu.</p>
+    <p>Printing is not a core concern for browser vendors. That is why the concerned standards advance slowly, and are not supported fully. When creating printed pages from the browser, it is hard to gain the same kind of control that one would have in a DTP program like Scribus or inDesign. By using a commercial PDF generation program like Prince, we could gain back some of that control. But we chose to work with the browser. The browser has the unique advantage, that if we publish the webpage online, not only will people everywhere be able to read it on their screens, they will also be able to print it themselves. The design adapts automatically.</p>
+    <h4>Print parties</h4>
+    <p>With the collective <a href="http://osp.kitchen/" class="aloha-link-text" hreflang="">Open Source Publishing</a>, I’ve been involved in what we called&nbsp;<b></b>‘print parties’. The decision to work with hybrid publishing enabled us to create print parties with the KABK, at the open days and the final exam exhibition.</p>
+    <p>
+      <img src="http://i.liketightpants.net/and/assets/scaled/to/830/wide/and/called/IMG_4467.kabk.open.dag.edt.jpg" style="width:490px;">
+</p>
+    <p class="byline">Printed versions of the thesis at the 2017 Open Day of the KABK.</p>
+    <p>
+      <img src="http://i.liketightpants.net/and/assets/scaled/to/830/wide/and/called/IMG_4519.kabk.open.dag.edt.jpg" style="width: 490px;" title="">
+</p>
+    <p class="byline">Visitors are able to print &amp; bind the thesis from the website.</p>
+    <p>
+      <img src="http://i.liketightpants.net/and/assets/called/2018_openday.jpg" style="width: 490px; height: 326px; position: relative; margin: 0px; resize: none; zoom: 1; display: inline-block; top: 0px; left: 0px;" class="">
+</p>
+    <p class="byline">The 2018 setup</p>
+    <p>
+      <img src="http://i.liketightpants.net/and/assets/called/2018_openday_binding.jpg" class="" style="width: 490px;" title="">
+</p>
+    <p class="byline">A more sophisticated binding setup</p>
+    <p>
+      <img src="http://i.liketightpants.net/and/assets/called/2018_openday_pants.jpg" class="" style="width: 490px;" title="">
+</p>
+    <h2 id="working-with-github">Working with GitHub</h2>
+    <p>
+      <img alt="Working with Github" style="width: 490px; height: 291px; position: relative; margin: 0px; resize: none; zoom: 1; display: inline-block; top: 0px; left: 0px;" src="/and/assets/called/kabk_github.png" class="">
+</p>
+    <p class="byline">Collaboration is centralised through the <a href="https://github.com/kabk" class="aloha-link-text">KABK Github Organisation</a>.</p>
+    <p>GitHub is a code hosting site that focuses on facilitating the collaboration between developers. It is built on the Open Source software Git. Each contributor works on their own computer, on their own version of the files. They can then use Git to merge
+    their changes with those of others. GitHub also offers the possibility to publish files to the internet. This feature is usually used to publish the documentation for a code project, contained in a special branch. Our ‘hack’ was to only use this branch
+    for the theses. The result was a very nimble workflow: each file-change uploaded to Github was immediately published online.</p>
+    <p>Most students had no prior experience with Git—getting everybody set up and comfortable with the system did take time. Doing this in the class-room made sure students could help each other out, and minimised the frustration associated with trying unknown
+    technologies.
+  </p>
+    <p>The setup proved extremely practical for the tutors. Having the work in progress online, they can simply click through links instead of having to download code. This does mean in-progress texts are publicly accessible.
+    To mitigate this potential problem we have shown students how to hide from search engines.</p>
+    <h4>Turning the database inside out</h4>
+    <p>
+      <img alt="Alt Text" class="iimagesfacebook_previewpng" src="http://life-after-the-template.ericschrijver.nl/images/facebook_preview.png" title="" style="height: 359px; width: 486px; position: relative; margin: 0px; resize: none; zoom: 1; display: inline-block; top: 0px; left: 0px;">
+</p>
+    <p class="byline">The same meta-data that social networks use to create previews can be re-purposed to create new forms of navigation and indexing of these pages.</p>
+    <p>One major advantage of data-base driven Content Management Systems is that it is very easy to generate indexes. The same database from which a single page will be fetched, will just as happily generate a listing of pages, sorted and filtered as
+    the designer demands. Because most CMS’s are dynamic, these indexes will be kept up to date automatically: every time the page is rendered, the indexes will be re-generated. To create indexes from a collection of HTML files is more involved: since
+    there is no neat database model with fields like ‘title’, ‘author’, ‘publishing date’, one will need a way to discover these metadata from the HTML.</p>
+    <p>Creating indexes by hand is one option, but this is error-prone and tedious. It becomes even more involved when the indexes themselves are part of the pages, like in the submenu of a publication that show links to other pages. If a collaborator on another
+    page changes its title, or a new page gets added, this submenu should be updated in every page—again, tedious and error-prone. With the theses at the KABK we decided to tackle the first problem: create indexes from a series of initially unstructured
+    HTML files. Each thesis is contained in its own folder, and the theses are largely independent from another. We create an index page that lists all theses. We do not (yet) have any intra-thesis navigation within the theses themselves—a challenge to
+    tackle on a subsequent project. The way we do this, is indexing the pages in much the same as&nbsp;search engines like Google, and social networks like Facebook and Twitter do: we visit each page and read out provided metadata like title, author and preview image.</p>
+    <p></p>
+    <h4>Beyond the designer-writer-artisan</h4>
+    <p>The workflow we came up with combines a new hybrid approach with time-tested web publishing technologies, and is a good fit for a digital designer/writer/artisan. It allows for the necessary expressiveness: students are able to come up with the appropriate design for their text, unhindered by pre-existing templates. It is also remarkably practical for the tutors, since they can follow up
+    on student work easily. The school benefits by having the work automatically published and archived online.</p>
+    <p>The downside to our approach is that the interface of the code editor is not ideal for all parts of the process. Tasks such as writing and editing could be more easy to perform in a WYSIWYG
+    interface, also for those who know how to write code. In that sense, it should be noted that HTML has the potential to allow such interfaces. HTML is a rich format, that allows to build abstractions on top of it. <a href="/and/hackers-culture-and-the-fear-of-wysiwyg" class="aloha-link-text" hreflang="">This is more so the case than with oft-used alternatives
+    like Markdown, which force a text-based approach on all collaborators</a>. HTML allows us to imagine separate interfaces for writing, editing, coding and designing.</p>
+
+        ]]>
+    </content>
+</entry>
 
 <entry>
     <title>Finding Red Letterboxes In Belgium</title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/finding-red-letterboxes-in-belgium" />
-    <id>tag:i.liketightpants.net,2017:/and//1.100</id>
+    <id>tag:i.liketightpants.net,:/and//1.100</id>
 
-    <published>2017-05-06T20:45:11Z</published>
-    <updated>2017-05-08T08:36:51Z</updated>
+    <published>2018-05-10T10:05:56.341352</published>
+    <updated>2018-05-10T10:05:56.341405</updated>
 
     <summary>Luc Rocher and Eric Schrijver hack Belgium and make it easier for Belgians to post letters.</summary>
     <author>
         <name>glit</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <p><a href="http://red-boxes.be" class="aloha-link-text">
         <img src="http://i.liketightpants.net/and/assets/called/red-boxes-preview.png" style="width:830px">
 </a></p>
@@ -61,28 +231,26 @@
     <p>Data like the position of a postbox and its collection hours are not protected by copyright as creative works. But a collection of such data holds database rights. By downloading all this data from bpost and redistributing it, we are probably infringing on their intellectual property. We hope that bpost will make good on their promise and release this data under an open license! By publishing this application, we want to show how every citizen can profit from the opening of public information.<br></p>
     <h4>Try it out!</h4>
     <p style="">Visit <a href="http://red-boxes.be" class="aloha-link-pointer" hreflang="">red-boxes.be</a>, and let us know what you think in the comment section! Want to thank us? Use our links to subscribe to <a href="https://mubi.com/tell-a-friend/global/51klF_iI" class="" hreflang="">MUBI</a> for an exquisite pick of independent streaming cinema, and <a href="https://www.efarmz.be/fr/?s=041701901" class="" hreflang="">eFarmz</a> for local Belgian food delivered to your door.</p>
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
 <entry>
     <title>The Underwater Screen Or Lessons From Wordperfect      </title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-underwater-screen-or-lessons-from-wordperfect" />
-    <id>tag:i.liketightpants.net,2014:/and//1.94</id>
+    <id>tag:i.liketightpants.net,:/and//1.94</id>
 
-    <published>2014-06-10T18:21:57Z</published>
-    <updated>2014-06-10T08:29:05Z</updated>
+    <published>2014-06-10T18:21:57</published>
+    <updated>2014-06-10T08:29:05</updated>
 
     <summary>If you happen to share a studio, an office or a live with someone who used personal computers in the 1990ies, and you are at their side when this happens, there is a significant chance this person will express a desire for a certain feature of a previous generation of word processors: I am talking about WordPerfect, and its ‘reveal codes’ option.</summary>
     <author>
         <name>tellyou</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <p>
       <img style="height: 539px; width: 795px; position: relative; margin: 0px; resize: none; zoom: 1; display: inline-block; top: 0px; left: 0px;" src="/and/assets/called/underwaterscreen_wordperfect.png" title="" class="">
 <br></p>
@@ -139,28 +307,26 @@
     <p>
        Because these editors are built on HTML’s native functionality, we can use all of the debugging tools the browser already ships with. Aloha promises us that its output is so good, there is no need to dive into the codes. That is not really true. Just like with Microsoft Word, there are moments where one would like to correct the automatically applied formatting commands. It is at this point that we can use the browsers functionality: we right-click on the text and choose ‘inspect element’. Once we open up the element inspection, we see an underwater view: the Document Object Model the browser has constructed, with all the nodes from the HTML with their CSS styling applied. As we edit these nodes, the visual page will change. We can even copy in HTML codes from other sources.</p>
     <p><i><a href="http://www.aloha-editor.org/" title="Aloha Editor - HTML5 WYSIWYG Editor" class="aloha-link-text">Aloha Editor</a> is a JavaScript project that can be integrated into any website. Doing so does require some programming skills as the setup is slightly more involved than for most (jQuery) plugins. For several publishing platforms prepackaged plugins exist, such as <a href="http://wordpress.org/plugins/front-end-editor/" title="WordPress › Front-end Editor « WordPress Plugins">for Wordpress</a>.</i></p>
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
 <entry>
     <title>Hacker Culture and the Fear of WYSIWYG</title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/hackers-culture-and-the-fear-of-wysiwyg" />
-    <id>tag:i.liketightpants.net,2014:/and//1.97</id>
+    <id>tag:i.liketightpants.net,:/and//1.97</id>
 
-    <published>2014-05-22T23:40:24Z</published>
-    <updated>2014-11-13T14:51:11Z</updated>
+    <published>2014-05-22T23:40:24</published>
+    <updated>2014-11-13T14:51:11</updated>
 
     <summary>Flash forward to 2014, and most Content Management Systems still offer us the same inhospitable form fields that look nothing like the page they will produce. The programmers are to blame, and here’s why.</summary>
     <author>
         <name>habitus</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[    <style>
+        <![CDATA[
+            <style>
   .article li {
       list-style: inherit !important;
   }
@@ -340,28 +506,26 @@ The publication of the article coincides with the conference ‘<a href="http://
 
 The digital publishing toolkit is a project that tries to come up with tools and best practices for independent electronic publishing in the field of art. This means coming up with workflows that allow different professionals to add their value to the process: writers, editors, designers, developers (these categories may overlap).<br><br>
 
-As explained in this article, I like tight pants would advise the creators of the toolkit against interfaces too strongly biased towards programmer values but urge them to instead find solutions that allow multiple kinds of interfaces to the source—in short, using a plain text format like <a href="http://daringfireball.net/projects/markdown/" title="Daring Fireball: Markdown">Markdown</a> should not be forced upon all contributors.</div>]]>
-        
+As explained in this article, I like tight pants would advise the creators of the toolkit against interfaces too strongly biased towards programmer values but urge them to instead find solutions that allow multiple kinds of interfaces to the source—in short, using a plain text format like <a href="http://daringfireball.net/projects/markdown/" title="Daring Fireball: Markdown">Markdown</a> should not be forced upon all contributors.</div>
+        ]]>
     </content>
 </entry>
 
 <entry>
-    <title>      Graphic Design Is A Nostalgic Field     </title>
+    <title>Graphic Design Is A Nostalgic Field</title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/graphic-design-is-a-nostalgic-field" />
-    <id>tag:i.liketightpants.net,2014:/and//1.91</id>
+    <id>tag:i.liketightpants.net,:/and//1.91</id>
 
-    <published>2014-02-19T19:02:50Z</published>
-    <updated>2014-05-11T21:07:49Z</updated>
+    <published>2014-02-19T19:02:50</published>
+    <updated>2024-09-29T21:21:07.572543</updated>
 
     <summary>Graphic design is a nostalgic field. Even in the art schools, the students want to make books and posters.</summary>
     <author>
         <name>tellyou</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <iframe allowfullscreen="" frameborder="0" height="468" mozallowfullscreen="" src="//player.vimeo.com/video/87130241?title=0&amp;byline=0&amp;portrait=0&amp;color=3e4f5f" webkitallowfullscreen="" width="830"></iframe>
     <p class="byline">
        Pierre Huyghebaert (r) and Eric Schrijver from
@@ -407,28 +571,26 @@ As explained in this article, I like tight pants would advise the creators of th
         Libre Graphics Magazine
        </a>
        1.4 under the title ‘Will these hands never get dirty’.
-      </div>]]>
-        
+      </div>
+        ]]>
     </content>
 </entry>
 
 <entry>
     <title>Who gets to write the web: the power struggles around the standards</title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/who-makes-standards" />
-    <id>tag:i.liketightpants.net,2013:/and//1.73</id>
+    <id>tag:i.liketightpants.net,:/and//1.73</id>
 
-    <published>2013-11-20T21:08:09Z</published>
-    <updated>2014-10-21T15:28:11Z</updated>
+    <published>2013-11-20T21:08:09</published>
+    <updated>2014-10-21T15:28:11</updated>
 
     <summary>In this text we try to introduce in more detail what are some of the power struggles that underlie the continued development of HTML. We will look at HTML’s latest iteration, HTML5. We will see the way in which companies like Google try to further their own agenda’s, sometimes under the guise of following the bottom up inventions of web authors.</summary>
     <author>
         <name>habitus</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <style>sup { vertical-align: top; font-size: 8px; font-weight: bold; }
     a, a:visited, a:active {
       color: #000;
@@ -542,28 +704,26 @@ As explained in this article, I like tight pants would advise the creators of th
     <p>WordPress — Home. (2014, September 28). Retrieved November 19, 2013 from <a href="https://web.archive.org/web/20140928052112/https://wordpress.org/" class="aloha-link-pointer" hreflang="">https://web.archive.org/web/20140928052112/https://wordpress.org/</a></p>
 <div id="aside" style="padding-top: 44px;" class=""><p>This article was commissioned for “<a href="http://reader.lgru.net/pages/index/">Considering your tools.
 a reader for designers and developers”</a> and is cross-posted here.</p>
-    <p><em>Update October 4, 2014: Since this article’s original publication, RDF/A has been accepted as part of HTML5: <a href="http://www.w3.org/News/2013#entry-9919">http://www.w3.org/­News/­2013#entry-9919</a>.</em></p></div>]]>
-        
+    <p><em>Update October 4, 2014: Since this article’s original publication, RDF/A has been accepted as part of HTML5: <a href="http://www.w3.org/News/2013#entry-9919">http://www.w3.org/­News/­2013#entry-9919</a>.</em></p></div>
+        ]]>
     </content>
 </entry>
 
 <entry>
     <title>ufo2otf Makes OTF’s, Webfonts and CSS From UFO’s</title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo" />
-    <id>tag:i.liketightpants.net,2013:/and//1.86</id>
+    <id>tag:i.liketightpants.net,:/and//1.86</id>
 
-    <published>2013-11-05T20:57:07Z</published>
-    <updated>2013-11-17T13:21:12Z</updated>
+    <published>2013-11-05T20:57:07</published>
+    <updated>2013-11-17T13:21:12</updated>
 
     <summary>ufo2otf is a command line utility that takes UFO font sources and generates OTF’s and webfonts.</summary>
     <author>
         <name>bnf</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <p style="">
       <object type="image/svg+xml" style="width:830px;height:830px;" data="/and/assets/called/ufo2otf.svg">
         <img src="/and/assets/called/ufo2otf.png" style="width:830px;height:830px;" alt="A greyish starry night with a baby blue ufo shining its purple light downwards, projecting an uppercase A, slab serif.">
@@ -706,28 +866,26 @@ a reader for designers and developers”</a> and is cross-posted here.</p>
          url('NimbusSanL-BoldCond.ttf')  format('truetype');
 }</pre>
     <p>If you are curious how <code>ufo2otf</code> goes about its font detection, it is a simple Python based program and&nbsp;<a href="https://github.com/fonts/ufo2otf/blob/master/ufo2otf/compilers.py#L73" class="aloha-link-text" target="_self" style="" title="ufo2otf/ufo2otf/compilers.py at master · fonts/ufo2otf">it is in its source code that it tells the whole story</a>.</p>
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
 <entry>
     <title>No-one Starts From Scratch: Type Design and the Logic of the Fork</title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork" />
-    <id>tag:i.liketightpants.net,2013:/and//1.80</id>
+    <id>tag:i.liketightpants.net,:/and//1.80</id>
 
-    <published>2013-10-09T20:00:57Z</published>
-    <updated>2013-10-10T16:07:47Z</updated>
+    <published>2013-10-09T20:00:57</published>
+    <updated>2013-10-10T16:07:47</updated>
 
     <summary>But when it comes to type design, one need not look to software development. To see how building upon existing creations makes typographic sense, one can look at type design history itself.</summary>
     <author>
         <name>habitus</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <style>
 h2 {
     text-rendering: optimizeLegibility;
@@ -836,28 +994,26 @@ $(window).load(function () {
 });
 </script>
 
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
 <entry>
     <title>I Need My Generic Font Medicine</title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/i-need-my-generic-font-medicine" />
-    <id>tag:i.liketightpants.net,2013:/and//1.85</id>
+    <id>tag:i.liketightpants.net,:/and//1.85</id>
 
-    <published>2013-10-09T19:55:58Z</published>
-    <updated>2013-10-09T13:01:33Z</updated>
+    <published>2013-10-09T19:55:58</published>
+    <updated>2013-10-09T13:01:33</updated>
 
     <summary>If you were formed in the 1990ies, these are the fonts you will feel all Oedipal about. Like medication for which the patents have expired, popular typefaces sprout generic sisters and brothers. Find ways to abuse them for your own end.</summary>
     <author>
         <name>baseline</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <style>
 h2 {
     text-rendering: optimizeLegibility;
@@ -1199,28 +1355,26 @@ $("h2").hover(
 )
 </script>
 
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
 <entry>
     <title>48 Hours of Writing Stylesheets with Etherpad and a Gong</title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong" />
-    <id>tag:i.liketightpants.net,2013:/and//1.78</id>
+    <id>tag:i.liketightpants.net,:/and//1.78</id>
 
-    <published>2013-10-08T20:06:03Z</published>
-    <updated>2013-11-10T17:17:13Z</updated>
+    <published>2013-10-08T20:06:03</published>
+    <updated>2013-11-10T17:17:13</updated>
 
     <summary>The screenshots  are from a period of 48 hours where we work on the site together. To write CSS, we keep a shared Etherpad. One person is in charge of the gong: when she rings, she copies the contents of the pad into the site’s CSS file, and uploads it—after which everyone can refresh their browser and see the updated styles.</summary>
     <author>
         <name>baseline</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <p>
       <iframe src="http://player.vimeo.com/video/65545530?color=000&amp;title=0&amp;byline=0&amp;portrait=0" width="830" height="466" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 <!-- <video src="http://i.liketightpants.net/and/assets/called/live_coding_the_osp_website_1280x720.mp4" id="live-website-video" width="830" height="466" style="background: white;" preload controls>--><br></p>
@@ -1228,28 +1382,26 @@ $("h2").hover(
     <p style="">The screenshots above are from a period of 48 hours where we work on the site together. To write CSS, we keep a shared <a href="/and/etherpad-or-the-textarea-is-a-lonely-place" style="" target="_self" title="I like tight pants and etherpad or the textarea is a lonely place" class="aloha-link-text">Etherpad</a>. One person is in charge of the gong: when she rings, she copies the contents of the pad into the site’s CSS file, and uploads it—after which everyone can refresh their browser and see the updated styles.</p>
     <h4>Update 2013-11-10:</h4>
     <p style="">If you run a recent version of Etherpad, you can install&nbsp;<a href="https://github.com/codingisacopingstrategy/ep_export_less_and_css" class="" style="background-color: rgb(128, 181, 242);" target="_self" title="codingisacopingstrategy/ep_export_less_and_css">ep_export_less_and_css</a>, a plugin bnf created that enables CSS export directly from Etherpad.</p>
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
 <entry>
     <title>Release Early Release Often Version Numbers For Typefaces</title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/release-early-release-often-version-numbers-for-typefaces" />
-    <id>tag:i.liketightpants.net,2013:/and//1.81</id>
+    <id>tag:i.liketightpants.net,:/and//1.81</id>
 
-    <published>2013-09-25T19:53:36Z</published>
-    <updated>2013-11-11T12:13:43Z</updated>
+    <published>2013-09-25T19:53:36</published>
+    <updated>2013-11-11T12:13:43</updated>
 
     <summary>I love the way version numbers are used in Open Source. Version 1.0 is not the first version released. Projects are well underway before they reach 1.00—if they even reach it. An open source maxim (by Linus Torvalds of Linux fame) is ‘release early, release often’. Get your code out there before it is perfect, because it can benefit from collaboration from the community. That is why we see version numbers like 0.15.2</summary>
     <author>
         <name>tellyou</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <p>I love the way version numbers are used in Open Source. Version 1.0 is not the first version released. Projects are well underway before they reach 1.00—if they even reach it. An open source maxim (by Linus Torvalds of Linux fame) is ‘release early, release often’. Get your code out there before it is perfect, because it can benefit from collaboration from the community. That is why we see version numbers like 0.15.2</p>
     <p>Version 1.0 is reserved for the first version that sees the design intentions crystallised, the functionality in place, and all the first bugs accounted for. It’s what you would have wanted your first release to be like, except that it took all the releases in-between to get there:</p>
     <blockquote>We are very pleased to announce the release of IPython 1.0, nearly twelve years after the first release of IPython 0.0.1.</blockquote>
@@ -1299,28 +1451,26 @@ $("h2").hover(
     <p style="">There are arguments against creating too many versions of a design. A design is a product of hopes, aspirations, goals and constraints that exist at a given point. The recent phenomenon of film directors revisiting their older movies and adding contemporary computer effects (not available at the time) has not at all been well received by fans. It shows that the constraints placed upon an artistic project shape it and create its character, and that authors might want to be reticent in revisiting their works.</p>
     <p style="">Similar phenomenons exist in software too. People who use many subsequent versions of &nbsp;a software often feel like something gets lost along the way. The initial sense of purpose embodied in a program can give way to what is called ‘bloat’, by adding feature upon feature until it tries . In programmer’s circles, this is known as Zawinski’s law: &nbsp;‘Every program attempts to expand until it can read e-mail.’ At the same time, using old versions of software is not very practical. They might contain security holes; they might even no longer run on your current operating system.</p>
     <p style="">With typefaces we are in luck that they will in most occasions be usable for a longer time. As long as a description of its points exists somewhere—and mankind does not forget <a href="/and/seb-explaining-love-and-bezier-curves" style="" target="_self" title="I like tight pants and seb explaining love and bezier curves" class="aloha-link-text">the mathematics of Bézier curves</a>. So I think I will want for the 1.0 version to be the last. Anyone who has another vision on the design, is <a href="/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork" class="" style="" target="_self" title="I like tight pants and no-one starts from scratch: type design and the logic of the fork">free to fork</a>.</p>
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
 <entry>
     <title>The Story of Nokia, Microsoft and a 1000 Hearts Breaking</title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-story-of-nokia-microsoft-and-a-1000-hearts-breaking" />
-    <id>tag:i.liketightpants.net,2013:/and//1.68</id>
+    <id>tag:i.liketightpants.net,:/and//1.68</id>
 
-    <published>2013-09-04T20:02:55Z</published>
-    <updated>2013-09-04T17:09:15Z</updated>
+    <published>2013-09-04T20:02:55</published>
+    <updated>2013-09-04T17:09:15</updated>
 
     <summary>In the upper part of the screen you see a smartphone. A landscape format screen with a keyboard slid out underneath. The screen is scratched and there are stains of white paint all over the device. The phone appears to be floating. A tale of Nokia, Microsoft, and a 1000 hearts breaking.</summary>
     <author>
         <name>tellyou</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <p><a href="/and/assets/called/the_telephone.jpg" target="_self">
         <img src="/and/assets/scaled/to/830/wide/and/called/the_telephone.jpg" style="height:830px;width:830px;" alt="In the upper part of the screen you see a smartphone. A landscape format screen with a keyboard slid out underneath. The screen is scratched and there are stains of white paint all over the device. The phone appears to be floating." title="" />
       </a></p>
@@ -1334,133 +1484,93 @@ $("h2").hover(
     <p style="">It works out quite nicely. I like using the phone; the full QWERTY keyboard makes for great note taking and texting. Though I never get to any programming beyond installing the <a href="http://ipython.org/" style="" target="_self">IPython</a> shell, there is an actual pleasure in the feeling that I could, whenever I would want to. Finally, I profit from a great build quality, which sees my phone survive falling into a bucket of paint.<br />The great downside to the phone, are caused by the simple fact of it being not very popular. As it does not represent a sizable number of All the new applications that appear are for iPhone and Android. Apparently, having a phone that you can easily fiddle with yourself, is not what gets users flocking to the device. I feel a little lonely using this operating system.<br />Yet at <a href="http://" target="_self" style="" title="I like tight pants and daniela likes open source programming conferences like fosdem">Fosdem 2011</a>, a yearly event for Open Source software developers, it turns out everybody has this phone. I speak with the community manager for the largest Maemo website, who speaks with great enthousiasm about this community. I remember that <a href="http://drippingdigital.com/blog/" style="" target="_self" title="Dripping Digital">John</a> has this phone, and <a href="http://adaptstudio.ca/" style="" target="_self" title="ad.apt is ginger coons">Ginger</a> too. For a moment it feels like the people needed for the platform to have a future, are there.</p>
     <p><span style="font-size: 14px;">Yet companies only work with open source as long as they can make open source work for them. ‘The most open’, by itself, is not easily translatable into market share.&nbsp;</span>Two days later, as I get home, I read that <a href="http://conversations.nokia.com/2011/02/11/open-letter-from-ceo-stephen-elop-nokia-and-ceo-steve-ballmer-microsoft/" target="_self" style="" title="Open Letter from CEO Stephen Elop, Nokia and CEO Steve Ballmer, Microsoft – Nokia Conversations : the official Nokia blog">Nokia has signed a deal to continue with Microsoft Windows as the operating system for its smartphone</a>. It is like I hear a thousands programmers’ hearts collectively break.</p>
 
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
 <entry>
     <title>It Might Be a Unix Sin But I Would Like You to Add .txt As the Extension of Your README file</title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/it-might-be-a-unix-sin-but-i-would-like-you-to-add-dot-t-x-t-as-the-extension-of-your-readme-file" />
-    <id>tag:i.liketightpants.net,2013:/and//1.65</id>
+    <id>tag:i.liketightpants.net,:/and//1.65</id>
 
-    <published>2013-04-30T19:51:20Z</published>
-    <updated>2013-04-30T18:10:13Z</updated>
+    <published>2013-04-30T19:51:20</published>
+    <updated>2013-04-30T18:10:13</updated>
 
     <summary>Who are these people in Boston? Why do they ask me to write them letters in the day and age where I download their software from the internet? And why didn’t they add .txt to the end of their filenames?</summary>
     <author>
         <name>bnf</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <p><a href="https://github.com/klepas/open-baskerville/commit/8aaf5c54eb0c88cdbdfe2411e5f7396a88d0ab89">
         <img src="/and/assets/called/this_is_probably_a_unix_sin.png" style="width:660px;height:401px" alt="" title="" />
       </a></p>
 
-]]>
-        
+
+        ]]>
     </content>
 </entry>
 
 <entry>
     <title>Etherpad Or The Textarea Is A Lonely Place</title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/etherpad-or-the-textarea-is-a-lonely-place" />
-    <id>tag:i.liketightpants.net,2013:/and//1.75</id>
+    <id>tag:i.liketightpants.net,:/and//1.75</id>
 
-    <published>2013-04-22T19:59:54Z</published>
-    <updated>2013-04-27T12:00:02Z</updated>
+    <published>2013-04-22T19:59:54</published>
+    <updated>2024-09-29T12:14:12.582812</updated>
 
     <summary>It is a lonely place. The other I like tight pants contributors are nowhere in sight, it is just me typing away in the browser.</summary>
     <author>
         <name>tellyou</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
-    <p><a href="/and/assets/called/the_lonely_form_field.png">
+        
+    <p><a href="/and/assets/called/the_lonely_form_field.png" class="aloha-link-text">
         <img src="/and/assets/scaled/to/830/wide/and/called/the_lonely_form_field
-.png" alt="" title="" />
-      </a></p>
+.png" alt="" title="">
+</a></p>
     <p></p>
     <p>This is where I type my entries. It is a lonely place. The other I like tight pants contributors are nowhere in sight, it is just me typing away in the browser. Only when I hit a submit button the information is sent to the server.</p>
     <p>Were my colleagues to try and edit this article at the same time, the system would not allow it. Content management systems put in place editing locks, allowing only one user to edit at a time. This is because the text form I write in can not be updated while I am editing it. So if other users were allowed to update the entry inbetween the time that I open the text field and the moment I press the submit button, their changes would effectively be overwritten. Wikipedia employs a sophisticated merging tool to merge various edits together.</p>
     <p>Baseline, who works with OSP, has introduced me to <a href="http://etherpad.org/" class="" target="_self" style="" title="Etherpad lite">Etherpad</a>. Etherpad presents you with an online document allowing you to start typing. As you do, you might see others connected to the pad start typing as well. There is no submit button. Everything is saved while you type so that it can be shown to your collaborators at the same time. You are no longer solitary with your text box:</p>
-    <p><a href="/and/assets/called/osp_using_etherpad.png">
-        <img src="/and/assets/scaled/to/830/wide/and/called/osp_using_etherpad.png" alt="" title="" style="width:830px;height:623px;" />
-      </a></p>
+    <p><a href="/and/assets/called/osp_using_etherpad.png" class="aloha-link-text">
+        <img src="/and/assets/scaled/to/830/wide/and/called/osp_using_etherpad.png" alt="" title="" style="width:830px;height:623px;">
+</a></p>
     <p>Once you have used Etherpad to write, it becomes difficult to imagine writing collaboratively without it. In a book sprint in Rotterdam, we used <a href="http://www.booki.cc/" class="" target="_self" style="" title="Booktype">Booki</a>, which allows for sophisticated pdf and ebook creation. Yet like many content editing tools it imposes a single-user content lock on each chapter. At the end of the session it turned out everyone had used Etherpad to write their chapters together, before copy and pasting it into the Booki platform.</p>
     <p>If you have not used etherpad, changes are you have used the technology through Google Docs. It is Google who in 2009 bought Etherpad. At the time of the acquisition the source code gets released under a permissive license. So if the code is out there, why are we not seeing more Etherpad-style collaboration online?</p>
     <p></p>
 
-]]>
-        
+        ]]>
     </content>
 </entry>
 
 <entry>
     <title>The Most Barebones Online Font Editor Possible</title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-most-barebones-online-font-editor-possible" />
-    <id>tag:i.liketightpants.net,2013:/and//1.74</id>
+    <id>tag:i.liketightpants.net,:/and//1.74</id>
 
-    <published>2013-04-18T19:59:36Z</published>
-    <updated>2013-04-18T10:08:42Z</updated>
+    <published>2013-04-18T19:59:36</published>
+    <updated>2013-04-18T10:08:42</updated>
 
-    <summary><![CDATA[ Built by OSP as part of a workshop where students of the Piet Zwart Institute get up close and personal with vector graphics. You edit the raw XML strings that make up the glif.&nbsp; An online font-editor would be...]]></summary>
+    <summary></summary>
     <author>
         <name>baseline</name>
-        
     </author>
-    
-    
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
+        
     <p><a href="/and/assets/called/edit_glif.png">
         <img src="/and/assets/scaled/to/830/wide/and/called/edit_glif.png" alt="You see a fairly minimalistic user interface featuring a list of what appears to be glyph names, a large letter A, and a textarea with xml data describing two contours—the contours that make up the A. The elements lack the usual gloss of post OS-X user interfaces: a thin grey 1px border is the only visual separator between elements." title="" />
       </a></p>
     <p>Built by OSP as part of a <a href="http://osp.constantvzw.org/workshop/pzi/" target="_self" style="" title="OSP (Open Source Publishing) → you&amp;#39;re traveling toward in pzi">workshop</a> where students of the Piet Zwart Institute get up close and personal with vector graphics. You edit the raw XML strings that make up the <a href="http://unifiedfontobject.org/versions/ufo2/glif.html" target="_self" style="" title="Unified Font Object - Version 2 - GLIF format">glif</a>.&nbsp;</p>
     <p>An online font-editor would be a great way to make it more easy to do <a href="/and/how-it-has-come-about-that-code-hosting-site-github-offers-visualisations-of-typeface-development" style="" target="_self" title="I like tight pants and how it has come about that code hosting site github offers visualisations of typeface development">collaborative type design</a>. Speaking with <a href="https://www.google.com/search?q=dave+crossland" target="_self" style="" title="Dave Crossland">Dave</a> at this years Libre Graphics Meeting, we figured that a good place to get started would be to have a library that makes it more easy to deal with typefaces in web-apps—a JavaScript port of <a href="http://www.robofab.org/" target="_self" style="" title="I like tight pants and programmatically manipulating typefaces">RoboFab</a> perhaps?</p>
 
-]]>
-        
-    </content>
-</entry>
 
-<entry>
-    <title>Belgian Newspapers</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/belgian-newspapers" />
-    <id>tag:i.liketightpants.net,2013:/and//1.67</id>
-
-    <published>2013-03-29T21:17:00Z</published>
-    <updated>2014-05-11T22:13:43Z</updated>
-
-    <summary>This computer, inside the Belgian Royal Library, has no access to internet, no usb ports, and no connection to a printer. It shows you a digital version of a Belgian newspaper, Le Drapeau Rouge.</summary>
-    <author>
-        <name>habitus</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[
-    <p>
-      <img src="/and/assets/called/belgian_newspaper_le_drapeau_rouge.jpg" alt="You see a computer monitor, in portrait orientation, showing the front page of a newspaper (displayed as a PDF inside Internet Explorer): ‘Le drapeau rouge’, the Belgian daily communist newspaper. Headline: ‘Molotov propose la réduction générale des armements’. " title="" style="width:1029px;height:1457px;margin-left:-199px;z-index:-1111;">
-</p>
-    <div style="margin-left:50px;margin-top: -138px;">
-      <p>This computer is situated in Belgium’s Royal Library. It offers you access to an internal network of 300.000 pages of Belgian periodicals, produced between 1831 an 1945.&nbsp;<span style="font-size: 14px;">It has no access to internet, no usb ports, and no connection to a printer.</span></p>
-      <p><span style="font-size: 14px;">If the library allows any digital distribution of the materials outside of the library walls they risk claims of copyright holders.</span></p>
-      <p>During&nbsp;<a href="http://www.kbr.be/actualites/domaineDomein/domainePublic.html" title="Bibliothèque royale de Belgique : Fêtons le Domaine Public" style="">Public Domain Day</a> (<a href="http://www.kbr.be/actualites/domaineDomein/publiekDomein.html" title="Koninklijke Bibliotheek van België :Gelukkig Publiek Domein!">NL</a>) <span style="font-size: 14px;">Librarian Marc D'Hoore explains: determining the authorship of a newspaper is difficult. Much of the work is anonymous or pseudononymous. There are not always clear contracts between the publishers and the authors. You do not know who owns the copyright, and you do not know when it will pass into the public domain.</span></p>
-      <p>Because of its mission of preservation, the Library needed to scan these materials—the paper is of extremely poor quality and disintegrating. But the Library also has a mission to facilitate access to its materials in any way it can.</p>
-      <p>Digitalisation seems to offer a great potential to make the material from the collections more accessible. Once scanned, material can be indexed, and put online, and be available to everyone with an internet connection. In potential. In reality, the Royal Library can not do this, because it would open itself to all kinds of claims of damages by copyright holders.</p>
-</div>
-]]>
-        
+        ]]>
     </content>
 </entry>
 
 </feed>
-
