@@ -46,11 +46,11 @@ a img {
     border: none;
 }
 
-a, a:active, a:visited {
+a, a:active, a:visited, div#header button {
     color: @accent;
 }
 
-a:hover {
+a:hover, div#header button:hover {
     color: lighten(@accent, 30%);
 }
 
@@ -58,7 +58,7 @@ li {
     list-style: none;
 }
 
-h1, #header ul li {
+h1, #header ul li, #header button {
     font-size: 24px;
 }
 
@@ -69,10 +69,25 @@ div#header {
     p, p.byline {
         margin: 0;
         line-height: 24px;
-    } 
+    }
 
     ul li {
         display: inline;
+    }
+
+    form {
+        display: inline;
+    }
+
+    button {
+        font-family: 'JottFLFBold', Arial;
+        display: inline;
+        background: none;
+        border: none;
+        text-decoration: underline;
+    }
+    button:hover {
+        cursor: pointer;
     }
 }
 
@@ -95,7 +110,7 @@ p, textarea {
 p.byline, h4 span {
     font-family: Arial;
     font-size: 11px;
-    line-height: 14px;    
+    line-height: 14px;
 }
 
 p.byline {
@@ -115,16 +130,16 @@ blockquote {
 
 div#aside p {
     font-family: Arial;
-    padding-left: 12px;    
+    padding-left: 12px;
 }
 
 div#content {
     margin-top: 39px;
-    
+
     ul, dl, div.article, iframe, blockquote, ol, ul {
         margin-bottom: @extra-line-height;
     }
- 
+
     .margin-bottom {
         margin-bottom: @extra-line-height;
     }

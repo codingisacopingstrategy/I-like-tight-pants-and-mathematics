@@ -33,17 +33,20 @@ a img {
 }
 a,
 a:active,
-a:visited {
+a:visited,
+div#header button {
   color: #000000;
 }
-a:hover {
+a:hover,
+div#header button:hover {
   color: #4d4d4d;
 }
 li {
   list-style: none;
 }
 h1,
-#header ul li {
+#header ul li,
+#header button {
   font-size: 24px;
 }
 div#header {
@@ -61,6 +64,19 @@ div#header p.byline {
 }
 div#header ul li {
   display: inline;
+}
+div#header form {
+  display: inline;
+}
+div#header button {
+  font-family: 'JottFLFBold', Arial;
+  display: inline;
+  background: none;
+  border: none;
+  text-decoration: underline;
+}
+div#header button:hover {
+  cursor: pointer;
 }
 h2,
 h3,
