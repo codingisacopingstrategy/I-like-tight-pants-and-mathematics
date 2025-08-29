@@ -1,0 +1,61 @@
+# -------------------------------------------------------
+# OS-specific files
+# -------------------------------------------------------
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+__MACOSX/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.nfs*
+
+# -------------------------------------------------------
+# IDE / Editor specific
+# -------------------------------------------------------
+
+# VS Code
+.vscode/
+.history/
+*.code-workspace
+
+# JetBrains (WebStorm, PhpStorm, IntelliJ, etc.)
+.idea/
+*.iml
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Eclipse
+.project
+.settings/
+.classpath
+
+# Vim
+*.swp
+*.swo
+*.swn
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# -------------------------------------------------------
+# Miscellaneous
+# -------------------------------------------------------
+.env
+*.log
+*.tmp
