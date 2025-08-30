@@ -1,0 +1,372 @@
+@font-face {
+  font-family: 'titlefont';
+  src: url('./fonts/such/as/Artesanias_2011.ttf');
+}
+@font-face {
+  font-family: 'bodyfont';
+  src: url('./fonts/such/as/BBBBaskervvol-Regular.woff');
+}
+/*! Contains elements of HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+  color: #fff;
+  background-color: #fff;
+  font-size: 1em;
+  line-height: 1.4;
+  height: 100%;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face {
+  font-family: 'enby';
+  src: url('./fonts/such/as/Enby_roman_0.ttf');
+}
+body {
+  margin: 0;
+  font-family: bodyfont;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'titlefont';
+  text-align: right;
+}
+article p > span {
+  background-color: #0058ed;
+  padding: 0.25em 0 0.1em 0;
+}
+main {
+  background-color: #c6af00;
+  border-radius: 0 0 36px 36px;
+  padding: 0 23px;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: row;
+  /*  justify-content: space-between;*/
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+main article {
+  flex-grow: 2;
+  flex-basis: 70%;
+}
+main article img {
+  width: 100%;
+}
+nav#authors {
+  top: 30vh;
+  position: sticky;
+  flex-grow: 1;
+  align-self: flex-start;
+  flex-basis: 30%;
+  height: 70vh;
+}
+nav#authors img {
+  width: 100%;
+  height: 100%;
+}
+header#site {
+  color: #000;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 22px;
+  font-family: enby, serif;
+  font-size: 22px;
+  line-height: 22px;
+  border-style: solid;
+  border-width: 0 0 18px 0;
+  border-image: url('../../../assets/called/bubble-border.svg') 0 0 18 0 repeat stretch;
+}
+footer {
+  position: fixed;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 22px;
+  font-family: enby, serif;
+  font-size: 22px;
+  line-height: 22px;
+}
+header#author {
+  background-color: #c6af00;
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44vh;
+  border-radius: 36px 36px 0 0;
+}
+header#author img {
+  width: 100%;
+}
+article .entry_list {
+  font-family: 'titlefont', serif;
+  color: #ff0000;
+  font-size: 20pt;
+}
+a,
+a:active,
+a:visited {
+  color: #fff;
+  background-color: #c6af00;
+  text-decoration: none;
+}
+article .entry_list a,
+a:active,
+a:visited {
+  color: #ff0000;
+}
+p {
+  max-width: 200mm;
+  font-size: 12pt;
+  padding-left: 1cm;
+  text-indent: -1cm;
+  line-height: 1.2;
+}
+header#site {
+  display: flex;
+  justify-content: space-between;
+}
+header#site > div,
+header#site > img {
+  display: inline-block;
+}
+header#site > div.second-tightpants,
+header#site > img.second-tightpants,
+header#site > div.third-tightpants,
+header#site > img.third-tightpants,
+header#site > div.fourth-tightpants,
+header#site > img.fourth-tightpants {
+  display: none;
+}
+@media (max-width: 479px) {
+  /* We want to show the star right next to the name */
+  header#site {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
+@media (min-width: 480px) {
+  header#site > div.second-tightpants,
+  header#site > img.second-tightpants {
+    display: initial;
+  }
+}
+@media (min-width: 768px) {
+  header#site > div.third-tightpants,
+  header#site > img.third-tightpants {
+    display: initial;
+  }
+}
+@media (min-width: 1280px) {
+  header#site > div.fourth-tightpants,
+  header#site > img.fourth-tightpants {
+    display: initial;
+  }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+.hidden,
+[hidden] {
+  display: none !important;
+}
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+.invisible {
+  visibility: hidden;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+body {
+  margin: 0;
+}
