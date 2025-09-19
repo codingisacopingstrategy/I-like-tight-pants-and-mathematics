@@ -92,15 +92,15 @@ textarea {
 
 body {
   margin: 0;
-  font-family: bodyfont;
+  font-family: 'bodyfont', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'titlefont';
+  font-family: 'titlefont', serif;
   text-align: right;
 }
 article p > span {
   background-color: @body-highlight-colour;
-  padding: 0.25em 0 0.10em 0;
+  //padding: 0.25em 0 0.10em 0;
 }
 main {
   background-color: @body-background-colour;
@@ -180,8 +180,8 @@ article .entry_list {
 }
 
 a, a:active, a:visited {
-  color: @body-text-colour;
-  background-color: @body-background-colour;
+  color: @link-colour;
+  background-color: @link-highlight-colour;
   text-decoration: none;
 }
 

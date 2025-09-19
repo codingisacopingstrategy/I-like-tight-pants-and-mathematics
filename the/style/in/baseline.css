@@ -9,13 +9,9 @@
 article .entry_list {
   list-style-image: url('etoile-chaos.svg');
 }
+/** I like tight pants design by Roxanne Maillet with Eric Schrijver **/
 /*! Contains elements of HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -23,7 +19,7 @@ html {
   color: #fff;
   background-color: #fff;
   font-size: 1em;
-  line-height: 1.4;
+  line-height: 1.2;
   height: 100%;
 }
 /*
@@ -87,7 +83,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: bodyfont;
+  font-family: 'bodyfont', sans-serif;
 }
 h1,
 h2,
@@ -95,12 +91,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'titlefont';
+  font-family: 'titlefont', serif;
   text-align: right;
 }
 article p > span {
   background-color: #ff0087;
-  padding: 0.25em 0 0.1em 0;
 }
 main {
   background-color: #ff0000;
@@ -311,7 +306,7 @@ header#site > img.fourth-tightpants {
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+@media print(-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 /* ==========================================================================
