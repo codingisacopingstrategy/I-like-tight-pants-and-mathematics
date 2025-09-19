@@ -12,13 +12,6 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-html {
-  color: #ccc;
-  background-color: #fff;
-  font-size: 1em;
-  line-height: 1.2;
-  height: 100%;
-}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -71,9 +64,13 @@ fieldset {
 textarea {
   resize: vertical;
 }
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+html {
+  color: #ccc;
+  background-color: #fff;
+  font-size: 1em;
+  line-height: 1.2;
+  height: 100%;
+}
 @font-face {
   font-family: 'enby';
   src: url('./fonts/such/as/Enby_roman_0.ttf');
@@ -81,6 +78,13 @@ textarea {
 body {
   margin: 0;
   font-family: 'bodyfont', sans-serif;
+}
+a,
+a:active,
+a:visited {
+  color: #89fe67;
+  background-color: #ac8cff;
+  text-decoration: none;
 }
 h1,
 h2,
@@ -91,8 +95,16 @@ h6 {
   font-family: 'titlefont', serif;
   text-align: right;
 }
-article p > span {
-  background-color: #ff5b00;
+p {
+  max-width: 200mm;
+  font-size: 12pt;
+  padding-left: 1cm;
+  text-indent: -1cm;
+  line-height: 1.2;
+}
+pre {
+  font-family: "andale mono", "lucida console", monospace;
+  white-space: pre-wrap;
 }
 main {
   background-color: #ac8cff;
@@ -101,7 +113,6 @@ main {
   margin-bottom: 36px;
   display: flex;
   flex-direction: row;
-  /*  justify-content: space-between;*/
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
@@ -114,6 +125,19 @@ main article {
 }
 main article img {
   width: 100%;
+}
+main article p > span {
+  background-color: #ff5b00;
+}
+main article .entry_list {
+  font-family: 'titlefont', serif;
+  color: #89fe67;
+  font-size: 20pt;
+}
+main article .entry_list a,
+main article .entry_list a:active,
+main article .entry_list a:visited {
+  color: #89fe67;
 }
 nav#authors {
   top: 30vh;
@@ -128,6 +152,8 @@ nav#authors img {
   height: 100%;
 }
 header#site {
+  display: flex;
+  justify-content: space-between;
   color: #000;
   position: sticky;
   top: 0;
@@ -140,6 +166,10 @@ header#site {
   border-style: solid;
   border-width: 0 0 18px 0;
   border-image: url('../../../assets/called/bubble-border.svg') 0 0 18 0 repeat stretch;
+}
+header#site > div,
+header#site > img {
+  display: inline-block;
 }
 footer {
   position: fixed;
@@ -165,38 +195,8 @@ header#author {
 header#author img {
   width: 100%;
 }
-article .entry_list {
-  font-family: 'titlefont', serif;
-  color: #89fe67;
-  font-size: 20pt;
-}
-a,
-a:active,
-a:visited {
-  color: #89fe67;
-  background-color: #ac8cff;
-  text-decoration: none;
-}
-article .entry_list a,
-a:active,
-a:visited {
-  color: #89fe67;
-}
-p {
-  max-width: 200mm;
-  font-size: 12pt;
-  padding-left: 1cm;
-  text-indent: -1cm;
-  line-height: 1.2;
-}
-header#site {
-  display: flex;
-  justify-content: space-between;
-}
-header#site > div,
-header#site > img {
-  display: inline-block;
-}
+/* All this code serves to show the text ‘i . like tight pants’ a different number of times,
+   depending on the screen size */
 header#site > div.second-tightpants,
 header#site > img.second-tightpants,
 header#site > div.third-tightpants,
@@ -296,17 +296,6 @@ header#site > img.fourth-tightpants {
   clear: both;
 }
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-@media print(-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-/* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
@@ -361,7 +350,4 @@ header#site > img.fourth-tightpants {
   h3 {
     page-break-after: avoid;
   }
-}
-body {
-  margin: 0;
 }
