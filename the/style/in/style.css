@@ -1,0 +1,711 @@
+/** I like tight pants design by Roxanne Maillet with Eric Schrijver **/
+/*! Contains elements of HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+@font-face {
+  font-family: 'ChaumontScript';
+  src: url('fonts/such/as/ChaumontScript-Regular.woff2');
+}
+@font-face {
+  font-family: 'BBBSprat';
+  src: url('./fonts/such/as/BBBSprat-CondensedRegular.woff');
+}
+@font-face {
+  font-family: 'Croisant';
+  src: url('./fonts/such/as/croisant.ttf');
+}
+@font-face {
+  font-family: 'DINdong';
+  src: url('./fonts/such/as/DINdong.otf');
+}
+@font-face {
+  font-family: 'QTSchoolCentury';
+  src: url('./fonts/such/as/QTSchoolCentury-Times-New_Romance-BoldItalic.ttf');
+}
+@font-face {
+  font-family: 'Chemins';
+  src: url('./fonts/such/as/Chemins_Regular.ttf');
+}
+@font-face {
+  font-family: 'Artesanias';
+  src: url('./fonts/such/as/Artesanias_2011.ttf');
+}
+@font-face {
+  font-family: 'BBBBaskervvol';
+  src: url('./fonts/such/as/BBBBaskervvol-Regular.woff');
+}
+@font-face {
+  font-family: 'Foglihten';
+  src: url('./fonts/such/as/Foglihten-068.otf');
+}
+@font-face {
+  font-family: 'ParaRubber';
+  src: url('./fonts/such/as/ParaRubber-Medium.otf');
+}
+@font-face {
+  font-family: 'Movement';
+  src: url('./fonts/such/as/Movement-DirectThin.woff2');
+}
+@font-face {
+  font-family: 'BBBPoppinsTN';
+  src: url('./fonts/such/as/BBBPoppinsTN-TextRegular.woff');
+}
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+html {
+  background-color: #fff;
+  font-size: 1em;
+  line-height: 1.2;
+  height: 100%;
+}
+@font-face {
+  font-family: 'enby';
+  src: url('./fonts/such/as/Enby_roman_0.ttf');
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+pre {
+  font-family: "andale mono", "lucida console", monospace;
+  white-space: pre-wrap;
+}
+main {
+  border-radius: 36px;
+  padding: 0 23px;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  text-align: right;
+}
+main article {
+  flex-grow: 2;
+  flex-basis: 70%;
+}
+main article img {
+  width: 100%;
+}
+main article p {
+  max-width: 200mm;
+}
+main article a,
+main article a:active,
+main article a:visited {
+  text-decoration: none;
+}
+main article .entry_list {
+  font-size: 20pt;
+}
+main {
+  margin-top: 44vh;
+  font-family: BBBSprat, serif;
+  color: #fff;
+  background-color: #ff0000;
+}
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  font-family: ChaumontScript, serif;
+}
+main article p {
+  font-size: 12pt;
+  padding-left: 1cm;
+  text-indent: - 1cm;
+  line-height: 1.2;
+}
+main article p > span {
+  background-color: #ff0087;
+}
+main article a,
+main article a:active,
+main article a:visited {
+  color: #fff;
+  background-color: #ff0000;
+}
+main article .entry_list {
+  font-family: ChaumontScript, serif;
+  color: #0058ed;
+}
+main article .entry_list a,
+main article .entry_list a:active,
+main article .entry_list a:visited {
+  color: #0058ed;
+}
+main.baseline {
+  margin-top: 44vh;
+  font-family: BBBSprat, serif;
+  color: #fff;
+  background-color: #ff0000;
+}
+main.baseline h1,
+main.baseline h2,
+main.baseline h3,
+main.baseline h4,
+main.baseline h5,
+main.baseline h6 {
+  font-family: ChaumontScript, serif;
+}
+main.baseline article p {
+  font-size: 12pt;
+  padding-left: 1cm;
+  text-indent: - 1cm;
+  line-height: 1.2;
+}
+main.baseline article p > span {
+  background-color: #ff0087;
+}
+main.baseline article a,
+main.baseline article a:active,
+main.baseline article a:visited {
+  color: #fff;
+  background-color: #ff0000;
+}
+main.baseline article .entry_list {
+  font-family: ChaumontScript, serif;
+  color: #0058ed;
+}
+main.baseline article .entry_list a,
+main.baseline article .entry_list a:active,
+main.baseline article .entry_list a:visited {
+  color: #0058ed;
+}
+main.baseline article .entry_list {
+  list-style-image: url('etoile-chaos.svg');
+}
+main.bnf {
+  margin-top: 44vh;
+  font-family: DINdong, serif;
+  color: #fff;
+  background-color: #82babf;
+}
+main.bnf h1,
+main.bnf h2,
+main.bnf h3,
+main.bnf h4,
+main.bnf h5,
+main.bnf h6 {
+  font-family: Croisant, serif;
+}
+main.bnf article p {
+  font-size: 12pt;
+  padding-left: 1cm;
+  text-indent: - 1cm;
+  line-height: 1.2;
+}
+main.bnf article p > span {
+  background-color: #ff0087;
+}
+main.bnf article a,
+main.bnf article a:active,
+main.bnf article a:visited {
+  color: #fff;
+  background-color: #82babf;
+}
+main.bnf article .entry_list {
+  font-family: Croisant, serif;
+  color: #0058ed;
+}
+main.bnf article .entry_list a,
+main.bnf article .entry_list a:active,
+main.bnf article .entry_list a:visited {
+  color: #0058ed;
+}
+main.glit {
+  margin-top: 44vh;
+  font-family: Chemins, serif;
+  color: #fff;
+  background-color: #ff0087;
+}
+main.glit h1,
+main.glit h2,
+main.glit h3,
+main.glit h4,
+main.glit h5,
+main.glit h6 {
+  font-family: QTSchoolCentury, serif;
+}
+main.glit article p {
+  font-size: 12pt;
+  padding-left: 1cm;
+  text-indent: - 1cm;
+  line-height: 1.2;
+}
+main.glit article p > span {
+  background-color: #00aeef;
+}
+main.glit article a,
+main.glit article a:active,
+main.glit article a:visited {
+  color: #fff;
+  background-color: #00aeef;
+}
+main.glit article .entry_list {
+  font-family: QTSchoolCentury, serif;
+  color: #c6af00;
+}
+main.glit article .entry_list a,
+main.glit article .entry_list a:active,
+main.glit article .entry_list a:visited {
+  color: #c6af00;
+}
+main.habitus {
+  margin-top: 44vh;
+  font-family: BBBBaskervvol, serif;
+  color: #fff;
+  background-color: #c6af00;
+}
+main.habitus h1,
+main.habitus h2,
+main.habitus h3,
+main.habitus h4,
+main.habitus h5,
+main.habitus h6 {
+  font-family: Artesanias, serif;
+}
+main.habitus article p {
+  font-size: 12pt;
+  padding-left: 0;
+  text-indent: - 0;
+  line-height: 1.2;
+}
+main.habitus article p > span {
+  background-color: #0058ed;
+}
+main.habitus article a,
+main.habitus article a:active,
+main.habitus article a:visited {
+  color: #000;
+  background-color: #ff5b00;
+}
+main.habitus article .entry_list {
+  font-family: Artesanias, serif;
+  color: #ff0000;
+}
+main.habitus article .entry_list a,
+main.habitus article .entry_list a:active,
+main.habitus article .entry_list a:visited {
+  color: #ff0000;
+}
+main.jenseits {
+  margin-top: 44vh;
+  font-family: ParaRubber, serif;
+  color: #ccc;
+  background-color: #ac8cff;
+}
+main.jenseits h1,
+main.jenseits h2,
+main.jenseits h3,
+main.jenseits h4,
+main.jenseits h5,
+main.jenseits h6 {
+  font-family: Foglihten, serif;
+}
+main.jenseits article p {
+  font-size: 12pt;
+  padding-left: 1cm;
+  text-indent: - 1cm;
+  line-height: 1.2;
+}
+main.jenseits article p > span {
+  background-color: #ff5b00;
+}
+main.jenseits article a,
+main.jenseits article a:active,
+main.jenseits article a:visited {
+  color: #89fe67;
+  background-color: #ac8cff;
+}
+main.jenseits article .entry_list {
+  font-family: Foglihten, serif;
+  color: #89fe67;
+}
+main.jenseits article .entry_list a,
+main.jenseits article .entry_list a:active,
+main.jenseits article .entry_list a:visited {
+  color: #89fe67;
+}
+main.tellyou {
+  margin-top: 44vh;
+  font-family: BBBPoppinsTN, serif;
+  color: #000;
+  background-color: #009600;
+}
+main.tellyou h1,
+main.tellyou h2,
+main.tellyou h3,
+main.tellyou h4,
+main.tellyou h5,
+main.tellyou h6 {
+  font-family: Movement, serif;
+}
+main.tellyou article p {
+  font-size: 12pt;
+  padding-left: 1cm;
+  text-indent: - 1cm;
+  line-height: 1.2;
+}
+main.tellyou article p > span {
+  background-color: #ac8cff;
+}
+main.tellyou article a,
+main.tellyou article a:active,
+main.tellyou article a:visited {
+  color: #fff;
+  background-color: #ac8cff;
+}
+main.tellyou article .entry_list {
+  font-family: Movement, serif;
+  color: #ff5b00;
+}
+main.tellyou article .entry_list a,
+main.tellyou article .entry_list a:active,
+main.tellyou article .entry_list a:visited {
+  color: #ff5b00;
+}
+nav#authors {
+  top: 30vh;
+  position: sticky;
+  flex-grow: 1;
+  align-self: flex-start;
+  flex-basis: 30%;
+  height: 70vh;
+}
+nav#authors img {
+  width: 100%;
+  height: 100%;
+}
+header#site {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 22px;
+  font-family: enby, serif;
+  font-size: 22px;
+  line-height: 22px;
+  border-style: solid;
+  border-width: 0 0 18px 0;
+  border-image: url('../../../assets/called/bubble-border.svg') 0 0 18 0 repeat stretch;
+}
+header#site > div,
+header#site > img {
+  display: inline-block;
+}
+footer {
+  position: fixed;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 22px;
+  font-family: enby, serif;
+  font-size: 22px;
+  line-height: 22px;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  list-style: none;
+  margin: 0 !important;
+  padding: 0;
+}
+footer ul li:first-child {
+  margin-right: auto;
+}
+footer ul li + li::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url("etoile.svg") center / contain no-repeat;
+  margin-right: 5px;
+}
+footer ul form {
+  display: contents;
+}
+footer ul form #logout {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+header#author {
+  display: none;
+}
+a.selected-author {
+  display: block;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  height: 44vh;
+  border-radius: 36px 36px 0 0;
+}
+a.selected-author img {
+  width: 100%;
+}
+/*
+header#author {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44vh;
+  border-radius: 36px 36px 0 0;
+  img {
+    width: 100%;
+  }
+}*/
+.header {
+  background-color: #ff0000;
+}
+.header.baseline {
+  background-color: #ff0000;
+}
+.header.bnf {
+  background-color: #82babf;
+}
+.header.glit {
+  background-color: #ff0087;
+}
+.header.habitus {
+  background-color: #c6af00;
+}
+.header.jenseits {
+  background-color: #ac8cff;
+}
+.header.tellyou {
+  background-color: #009600;
+}
+/* All this code serves to show the text ‘i . like tight pants’ a different number of times,
+   depending on the screen size */
+header#site > div.second-tightpants,
+header#site > img.second-tightpants,
+header#site > div.third-tightpants,
+header#site > img.third-tightpants,
+header#site > div.fourth-tightpants,
+header#site > img.fourth-tightpants {
+  display: none;
+}
+@media (max-width: 479px) {
+  /* We want to show the star right next to the name */
+  header#site {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
+@media (min-width: 480px) {
+  header#site > div.second-tightpants,
+  header#site > img.second-tightpants {
+    display: initial;
+  }
+}
+@media (min-width: 768px) {
+  header#site > div.third-tightpants,
+  header#site > img.third-tightpants {
+    display: initial;
+  }
+}
+@media (min-width: 1280px) {
+  header#site > div.fourth-tightpants,
+  header#site > img.fourth-tightpants {
+    display: initial;
+  }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+.hidden,
+[hidden] {
+  display: none !important;
+}
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+.invisible {
+  visibility: hidden;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
