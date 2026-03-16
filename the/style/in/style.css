@@ -528,34 +528,18 @@ footer ul form #logout {
   color: inherit;
   cursor: pointer;
 }
-header#author {
-  display: none;
-}
-a.selected-author {
+.selected-author {
   display: block;
-  position: fixed;
   top: 40px;
-  left: 0;
-  right: 0;
-  height: 44vh;
-  border-radius: 36px 36px 0 0;
-}
-a.selected-author img {
+  height: 25vh;
   width: 100%;
 }
-/*
-header#author {
-  display: flex;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 44vh;
-  border-radius: 36px 36px 0 0;
-  img {
-    width: 100%;
-  }
-}*/
+.selected-author img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
 .header {
   background-color: #ff0000;
 }
