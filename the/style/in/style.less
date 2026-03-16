@@ -57,7 +57,7 @@ main {
   flex-direction: row;
   align-items: stretch;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 12px;
   border-style: solid;
   border-width: 0 0 18px 0;
   border-image: url('../../../assets/called/bubble-border.svg') 0 0 18 0 repeat stretch;
@@ -114,6 +114,89 @@ nav#authors {
   nav#authors {
     flex-basis: auto;
     width: 100%;
+  }
+}
+
+header#site {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 22px;
+  font-family: enby, serif;
+  font-size: 22px;
+  line-height: 22px;
+  border-style: solid;
+  border-color: #fff; // replaced by image
+  border-width: 0 0 18px 0;
+  border-image: url('../../../assets/called/bubble-border.svg') 0 0 18 0 repeat stretch;
+  z-index: 1111;
+  & > div, & > img {
+    display: inline-block;
+  }
+}
+
+header#author {
+  display: block;
+  top: 40px;
+  height: 25vh;
+  width: 100%;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+}
+
+footer {
+  position: fixed;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 22px;
+  font-family: enby, serif;
+  font-size: 22px;
+  line-height: 22px;
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+    margin: 0 !important;
+    padding: 0;
+    li:first-child {
+      margin-right: auto;
+    }
+    li + li::before {
+      content: "";
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: url("etoile.svg") center / contain no-repeat;
+      margin-right: 5px;
+    }
+    a, a:active, a:visited {
+      color: #000;
+    }
+    form {
+      display: contents;
+      #logout {
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        font: inherit;
+        color: inherit;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
   }
 }
 
@@ -208,7 +291,7 @@ nav#authors {
   @tellyou: 1cm;
 }
 
-.body(@author) {
+.background-canvas(@author) {
   background-color: #body-background-colour[@@author];
 }
 
@@ -249,13 +332,13 @@ nav#authors {
 }
 
 .background-canvas {
-  .body(baseline)
+  .background-canvas(baseline)
 }
 main {
   .main(baseline);
 }
 .background-canvas.baseline {
-  .body(baseline)
+  .background-canvas(baseline)
 }
 main.baseline {
   .main(baseline);
@@ -264,121 +347,34 @@ main.baseline {
   }
 }
 .background-canvas.bnf {
-  .body(bnf)
+  .background-canvas(bnf)
 }
 main.bnf {
   .main(bnf);
 }
 .background-canvas.glit {
-  .body(glit);
+  .background-canvas(glit);
 }
 main.glit {
   .main(glit);
 }
 .background-canvas.habitus {
-  .body(habitus);
+  .background-canvas(habitus);
 }
 main.habitus {
   .main(habitus);
 }
 .background-canvas.jenseits {
-  .body(jenseits);
+  .background-canvas(jenseits);
 }
 main.jenseits {
   .main(jenseits);
 }
 .background-canvas.tellyou {
-  .body(tellyou);
+  .background-canvas(tellyou);
 }
 main.tellyou {
   .main(tellyou);
-}
-
-
-header#site {
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  color: #000;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 22px;
-  font-family: enby, serif;
-  font-size: 22px;
-  line-height: 22px;
-  border-style: solid;
-  border-color: #fff; // replaced by image
-  border-width: 0 0 18px 0;
-  border-image: url('../../../assets/called/bubble-border.svg') 0 0 18 0 repeat stretch;
-  z-index: 1111;
-  & > div, & > img {
-    display: inline-block;
-  }
-}
-
-footer {
-  position: fixed;
-  background-color: #fff;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 22px;
-  font-family: enby, serif;
-  font-size: 22px;
-  line-height: 22px;
-  ul {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    list-style: none;
-    margin: 0 !important;
-    padding: 0;
-    li:first-child {
-      margin-right: auto;
-    }
-    li + li::before {
-      content: "";
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      background: url("etoile.svg") center / contain no-repeat;
-      margin-right: 5px;
-    }
-    a, a:active, a:visited {
-      color: #000;
-    }
-    form {
-      display: contents;
-      #logout {
-        background: none;
-        border: none;
-        padding: 0;
-        margin: 0;
-        font: inherit;
-        color: inherit;
-        cursor: pointer;
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
-header#author {
-}
-
-.selected-author {
-  display: block;
-  top: 40px;
-  height: 25vh;
-  width: 100%;
-  img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-  }
 }
 
 .header(@author) {

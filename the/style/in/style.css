@@ -168,7 +168,7 @@ main {
   flex-direction: row;
   align-items: stretch;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 12px;
   border-style: solid;
   border-width: 0 0 18px 0;
   border-image: url('../../../assets/called/bubble-border.svg') 0 0 18 0 repeat stretch;
@@ -231,6 +231,89 @@ nav#authors img {
     flex-basis: auto;
     width: 100%;
   }
+}
+header#site {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 22px;
+  font-family: enby, serif;
+  font-size: 22px;
+  line-height: 22px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 0 0 18px 0;
+  border-image: url('../../../assets/called/bubble-border.svg') 0 0 18 0 repeat stretch;
+  z-index: 1111;
+}
+header#site > div,
+header#site > img {
+  display: inline-block;
+}
+header#author {
+  display: block;
+  top: 40px;
+  height: 25vh;
+  width: 100%;
+}
+header#author img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+footer {
+  position: fixed;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 22px;
+  font-family: enby, serif;
+  font-size: 22px;
+  line-height: 22px;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  list-style: none;
+  margin: 0 !important;
+  padding: 0;
+}
+footer ul li:first-child {
+  margin-right: auto;
+}
+footer ul li + li::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url("etoile.svg") center / contain no-repeat;
+  margin-right: 5px;
+}
+footer ul a,
+footer ul a:active,
+footer ul a:visited {
+  color: #000;
+}
+footer ul form {
+  display: contents;
+}
+footer ul form #logout {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline;
 }
 .background-canvas {
   background-color: #ff0000;
@@ -563,89 +646,6 @@ main.tellyou article .entry_list a,
 main.tellyou article .entry_list a:active,
 main.tellyou article .entry_list a:visited {
   color: #ff5b00;
-}
-header#site {
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  color: #000;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 22px;
-  font-family: enby, serif;
-  font-size: 22px;
-  line-height: 22px;
-  border-style: solid;
-  border-color: #fff;
-  border-width: 0 0 18px 0;
-  border-image: url('../../../assets/called/bubble-border.svg') 0 0 18 0 repeat stretch;
-  z-index: 1111;
-}
-header#site > div,
-header#site > img {
-  display: inline-block;
-}
-footer {
-  position: fixed;
-  background-color: #fff;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 22px;
-  font-family: enby, serif;
-  font-size: 22px;
-  line-height: 22px;
-}
-footer ul {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  list-style: none;
-  margin: 0 !important;
-  padding: 0;
-}
-footer ul li:first-child {
-  margin-right: auto;
-}
-footer ul li + li::before {
-  content: "";
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background: url("etoile.svg") center / contain no-repeat;
-  margin-right: 5px;
-}
-footer ul a,
-footer ul a:active,
-footer ul a:visited {
-  color: #000;
-}
-footer ul form {
-  display: contents;
-}
-footer ul form #logout {
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  font: inherit;
-  color: inherit;
-  cursor: pointer;
-  text-decoration: underline;
-}
-.selected-author {
-  display: block;
-  top: 40px;
-  height: 25vh;
-  width: 100%;
-}
-.selected-author img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
 }
 .header {
   background-color: #ff0000;

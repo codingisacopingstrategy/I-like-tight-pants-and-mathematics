@@ -33,6 +33,9 @@ body {
 .wrapper {
   max-width: 90vw;
 }
+.wrapper.hidden {
+  opacity: 0;
+}
 
 #countdown {
   font-size: 128px;
@@ -58,16 +61,13 @@ body {
 
 <script>
 function updateCountdown() {
-
   const now = new Date();
-
   // Paris timezone target
   const target = new Date("2026-03-11T19:30:00+01:00");
-
   const diff = target - now;
 
   if (diff <= 0) {
-    document.getElementById("countdown").textContent = "0 hours and 0 minutes and 0 seconds";
+    document.getElementById("countdown").textContent = "waiting for the red button…";
     return;
   }
 
@@ -84,6 +84,42 @@ function updateCountdown() {
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
+navigator.requestMIDIAccess()
+        .then(onMIDISuccess, onMIDIFailure);
+
+function onMIDIFailure() {
+  console.log('Could not access your MIDI devices.');
+}
+
+function onMIDISuccess(midiAccess) {
+  console.log("succesfully requested MIDI access");
+  var inputs = midiAccess.inputs.values();
+  console.log(inputs);
+  for (var input = inputs.next(); input && !input.done; input = inputs.next()) {
+    input.value.onmidimessage = getMIDIMessage;
+  }
+}
+
+function getMIDIMessage(midiMessage) {
+  console.log(midiMessage);
+  var data = midiMessage.data;
+  // sanity check:
+  if (!data || data.length !== 3) {
+    return;
+  }
+  if (data[0] === 144) {
+    document.querySelector(".wrapper").classList.add("hidden");
+  }
+  if (data[0] === 128) {
+    // document.querySelector(".wrapper").classList.remove("hidden");
+    // window.location.href = "http://i.liketightpants.net/and/index.php";
+    window.location.href = "http://localhost:8000/is/we-meet-again";
+  }
+  document.path
+}
+
+
 </script>
 
 </body>
