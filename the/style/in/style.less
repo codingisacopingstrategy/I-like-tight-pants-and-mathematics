@@ -10,6 +10,14 @@
 @import "_typefaces";
 @import "_element_resets";
 
+.meta-font {
+  font-family: ComputerModern, serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 12pt;
+  color: #000;
+}
+
 html {
   background-color: #fff;
   font-size: 1em;
@@ -372,3 +380,27 @@ header#site > div.fourth-tightpants, header#site > img.fourth-tightpants {
 @import "_helpers";
 
 @import "_print";
+
+#comments-open {
+  margin-top: 10px;
+  textarea, input {
+    border: 2px solid #D8127E;
+    width: 100%;
+    margin-bottom: @paragraph-margin-bottom;
+  }
+  textarea {
+    border-radius: 1cm;
+    padding: 1cm;
+    box-sizing: border-box;
+    .meta-font();
+  }
+  input {
+    border-radius: 0.5cm;
+    padding: 0.5cm;
+    box-sizing: border-box;
+    .meta-font();
+  }
+  input[type=submit] {
+    cursor: pointer;
+  }
+}

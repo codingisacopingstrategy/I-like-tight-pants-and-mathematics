@@ -49,6 +49,30 @@
   font-family: 'BBBPoppinsTN';
   src: url('./fonts/such/as/BBBPoppinsTN-TextRegular.woff');
 }
+@font-face {
+  font-family: 'ComputerModern';
+  src: url('./fonts/such/as/cmunrm.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ComputerModern';
+  src: url('./fonts/such/as/cmunti.woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'ComputerModern';
+  src: url('./fonts/such/as/cmunbx.woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ComputerModern';
+  src: url('./fonts/such/as/cmunbi.woff');
+  font-weight: bold;
+  font-style: italic;
+}
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -708,4 +732,36 @@ header#site > img.fourth-tightpants {
   h3 {
     page-break-after: avoid;
   }
+}
+#comments-open {
+  margin-top: 10px;
+}
+#comments-open textarea,
+#comments-open input {
+  border: 2px solid #D8127E;
+  width: 100%;
+  margin-bottom: 14.4pt;
+}
+#comments-open textarea {
+  border-radius: 1cm;
+  padding: 1cm;
+  box-sizing: border-box;
+  font-family: ComputerModern, serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 12pt;
+  color: #000;
+}
+#comments-open input {
+  border-radius: 0.5cm;
+  padding: 0.5cm;
+  box-sizing: border-box;
+  font-family: ComputerModern, serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 12pt;
+  color: #000;
+}
+#comments-open input[type=submit] {
+  cursor: pointer;
 }
