@@ -1,1 +1,1 @@
-<?php header('Location: /and/hybrid-publishing-back-to-the-future-publishing-theses-at-the-kabk'); ?>
+<?php header('Location: /and/we-meet-again'); ?>

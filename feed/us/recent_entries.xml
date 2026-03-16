@@ -4,17 +4,36 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2018-07-06T09:27:57.005583</updated>
+    <updated>2026-03-16T22:11:43.602584+01:00</updated>
 
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
+
+<entry>
+    <title>We meet again</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/we-meet-again" />
+    <id>tag:i.liketightpants.net,:/and//1.102</id>
+
+    <published>2026-03-11T14:52:24.805381+01:00</published>
+    <updated>2026-03-16T22:11:43.602584+01:00</updated>
+
+    <summary></summary>
+    <author>
+        <name>jenseits</name>
+    </author>
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[
+        <p><span><span><span><span><span><span><span><img alt="" style="" src="/and/assets/scaled/to/2560/3R9A1319.jpg"></span></span></span></span></span></span></span><br></p><p>&nbsp;</p>
+        ]]>
+    </content>
+</entry>
 
 <entry>
     <title>Hybrid Publishing Back To The Future Publishing Theses at the KABK</title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/hybrid-publishing-back-to-the-future-publishing-theses-at-the-kabk" />
     <id>tag:i.liketightpants.net,:/and//1.101</id>
 
-    <published>2018-05-10T10:07:17.489116</published>
-    <updated>2018-07-06T09:27:57.005583</updated>
+    <published>2018-05-10T12:07:17.489116+02:00</published>
+    <updated>2018-07-06T11:27:57.005583+02:00</updated>
 
     <summary>Writing websites like it’s 1999, printing like it’s 2018.</summary>
     <author>
@@ -185,8 +204,8 @@ width: 100%;
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/finding-red-letterboxes-in-belgium" />
     <id>tag:i.liketightpants.net,:/and//1.100</id>
 
-    <published>2018-05-10T10:05:56.341352</published>
-    <updated>2018-05-10T10:05:56.341405</updated>
+    <published>2018-05-10T12:05:56.341352+02:00</published>
+    <updated>2018-05-10T12:05:56.341405+02:00</updated>
 
     <summary>Luc Rocher and Eric Schrijver hack Belgium and make it easier for Belgians to post letters.</summary>
     <author>
@@ -241,8 +260,8 @@ width: 100%;
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-underwater-screen-or-lessons-from-wordperfect" />
     <id>tag:i.liketightpants.net,:/and//1.94</id>
 
-    <published>2014-06-10T18:21:57</published>
-    <updated>2014-06-10T08:29:05</updated>
+    <published>2014-06-10T20:21:57+02:00</published>
+    <updated>2014-06-10T10:29:05+02:00</updated>
 
     <summary>If you happen to share a studio, an office or a live with someone who used personal computers in the 1990ies, and you are at their side when this happens, there is a significant chance this person will express a desire for a certain feature of a previous generation of word processors: I am talking about WordPerfect, and its ‘reveal codes’ option.</summary>
     <author>
@@ -317,8 +336,8 @@ width: 100%;
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/hackers-culture-and-the-fear-of-wysiwyg" />
     <id>tag:i.liketightpants.net,:/and//1.97</id>
 
-    <published>2014-05-22T23:40:24</published>
-    <updated>2014-11-13T14:51:11</updated>
+    <published>2014-05-23T01:40:24+02:00</published>
+    <updated>2014-11-13T15:51:11+01:00</updated>
 
     <summary>Flash forward to 2014, and most Content Management Systems still offer us the same inhospitable form fields that look nothing like the page they will produce. The programmers are to blame, and here’s why.</summary>
     <author>
@@ -512,12 +531,12 @@ As explained in this article, I like tight pants would advise the creators of th
 </entry>
 
 <entry>
-    <title>Graphic Design Is A Nostalgic Field</title>
+    <title>      Graphic Design Is A Nostalgic Field     </title>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/graphic-design-is-a-nostalgic-field" />
     <id>tag:i.liketightpants.net,:/and//1.91</id>
 
-    <published>2014-02-19T19:02:50</published>
-    <updated>2024-09-29T21:21:07.572543</updated>
+    <published>2014-02-19T20:02:50+01:00</published>
+    <updated>2014-05-11T23:07:49+02:00</updated>
 
     <summary>Graphic design is a nostalgic field. Even in the art schools, the students want to make books and posters.</summary>
     <author>
@@ -581,8 +600,8 @@ As explained in this article, I like tight pants would advise the creators of th
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/who-makes-standards" />
     <id>tag:i.liketightpants.net,:/and//1.73</id>
 
-    <published>2013-11-20T21:08:09</published>
-    <updated>2014-10-21T15:28:11</updated>
+    <published>2013-11-20T22:08:09+01:00</published>
+    <updated>2014-10-21T17:28:11+02:00</updated>
 
     <summary>In this text we try to introduce in more detail what are some of the power struggles that underlie the continued development of HTML. We will look at HTML’s latest iteration, HTML5. We will see the way in which companies like Google try to further their own agenda’s, sometimes under the guise of following the bottom up inventions of web authors.</summary>
     <author>
@@ -714,8 +733,8 @@ a reader for designers and developers”</a> and is cross-posted here.</p>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/ufo2otf-makes-otfs-webfonts-and-css-from-ufo" />
     <id>tag:i.liketightpants.net,:/and//1.86</id>
 
-    <published>2013-11-05T20:57:07</published>
-    <updated>2013-11-17T13:21:12</updated>
+    <published>2013-11-05T21:57:07+01:00</published>
+    <updated>2013-11-17T14:21:12+01:00</updated>
 
     <summary>ufo2otf is a command line utility that takes UFO font sources and generates OTF’s and webfonts.</summary>
     <author>
@@ -876,8 +895,8 @@ a reader for designers and developers”</a> and is cross-posted here.</p>
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork" />
     <id>tag:i.liketightpants.net,:/and//1.80</id>
 
-    <published>2013-10-09T20:00:57</published>
-    <updated>2013-10-10T16:07:47</updated>
+    <published>2013-10-09T22:00:57+02:00</published>
+    <updated>2013-10-10T18:07:47+02:00</updated>
 
     <summary>But when it comes to type design, one need not look to software development. To see how building upon existing creations makes typographic sense, one can look at type design history itself.</summary>
     <author>
@@ -1004,8 +1023,8 @@ $(window).load(function () {
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/i-need-my-generic-font-medicine" />
     <id>tag:i.liketightpants.net,:/and//1.85</id>
 
-    <published>2013-10-09T19:55:58</published>
-    <updated>2013-10-09T13:01:33</updated>
+    <published>2013-10-09T21:55:58+02:00</published>
+    <updated>2013-10-09T15:01:33+02:00</updated>
 
     <summary>If you were formed in the 1990ies, these are the fonts you will feel all Oedipal about. Like medication for which the patents have expired, popular typefaces sprout generic sisters and brothers. Find ways to abuse them for your own end.</summary>
     <author>
@@ -1365,8 +1384,8 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/48-hours-of-writing-stylesheets-with-etherpad-and-a-gong" />
     <id>tag:i.liketightpants.net,:/and//1.78</id>
 
-    <published>2013-10-08T20:06:03</published>
-    <updated>2013-11-10T17:17:13</updated>
+    <published>2013-10-08T22:06:03+02:00</published>
+    <updated>2013-11-10T18:17:13+01:00</updated>
 
     <summary>The screenshots  are from a period of 48 hours where we work on the site together. To write CSS, we keep a shared Etherpad. One person is in charge of the gong: when she rings, she copies the contents of the pad into the site’s CSS file, and uploads it—after which everyone can refresh their browser and see the updated styles.</summary>
     <author>
@@ -1392,8 +1411,8 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/release-early-release-often-version-numbers-for-typefaces" />
     <id>tag:i.liketightpants.net,:/and//1.81</id>
 
-    <published>2013-09-25T19:53:36</published>
-    <updated>2013-11-11T12:13:43</updated>
+    <published>2013-09-25T21:53:36+02:00</published>
+    <updated>2013-11-11T13:13:43+01:00</updated>
 
     <summary>I love the way version numbers are used in Open Source. Version 1.0 is not the first version released. Projects are well underway before they reach 1.00—if they even reach it. An open source maxim (by Linus Torvalds of Linux fame) is ‘release early, release often’. Get your code out there before it is perfect, because it can benefit from collaboration from the community. That is why we see version numbers like 0.15.2</summary>
     <author>
@@ -1461,8 +1480,8 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-story-of-nokia-microsoft-and-a-1000-hearts-breaking" />
     <id>tag:i.liketightpants.net,:/and//1.68</id>
 
-    <published>2013-09-04T20:02:55</published>
-    <updated>2013-09-04T17:09:15</updated>
+    <published>2013-09-04T22:02:55+02:00</published>
+    <updated>2013-09-04T19:09:15+02:00</updated>
 
     <summary>In the upper part of the screen you see a smartphone. A landscape format screen with a keyboard slid out underneath. The screen is scratched and there are stains of white paint all over the device. The phone appears to be floating. A tale of Nokia, Microsoft, and a 1000 hearts breaking.</summary>
     <author>
@@ -1494,8 +1513,8 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/it-might-be-a-unix-sin-but-i-would-like-you-to-add-dot-t-x-t-as-the-extension-of-your-readme-file" />
     <id>tag:i.liketightpants.net,:/and//1.65</id>
 
-    <published>2013-04-30T19:51:20</published>
-    <updated>2013-04-30T18:10:13</updated>
+    <published>2013-04-30T21:51:20+02:00</published>
+    <updated>2013-04-30T20:10:13+02:00</updated>
 
     <summary>Who are these people in Boston? Why do they ask me to write them letters in the day and age where I download their software from the internet? And why didn’t they add .txt to the end of their filenames?</summary>
     <author>
@@ -1518,8 +1537,8 @@ $("h2").hover(
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/etherpad-or-the-textarea-is-a-lonely-place" />
     <id>tag:i.liketightpants.net,:/and//1.75</id>
 
-    <published>2013-04-22T19:59:54</published>
-    <updated>2024-09-29T12:14:12.582812</updated>
+    <published>2013-04-22T21:59:54+02:00</published>
+    <updated>2013-04-27T14:00:02+02:00</updated>
 
     <summary>It is a lonely place. The other I like tight pants contributors are nowhere in sight, it is just me typing away in the browser.</summary>
     <author>
@@ -1528,45 +1547,20 @@ $("h2").hover(
     <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
         <![CDATA[
         
-    <p><a href="/and/assets/called/the_lonely_form_field.png" class="aloha-link-text">
+    <p><a href="/and/assets/called/the_lonely_form_field.png">
         <img src="/and/assets/scaled/to/830/wide/and/called/the_lonely_form_field
-.png" alt="" title="">
-</a></p>
+.png" alt="" title="" />
+      </a></p>
     <p></p>
     <p>This is where I type my entries. It is a lonely place. The other I like tight pants contributors are nowhere in sight, it is just me typing away in the browser. Only when I hit a submit button the information is sent to the server.</p>
     <p>Were my colleagues to try and edit this article at the same time, the system would not allow it. Content management systems put in place editing locks, allowing only one user to edit at a time. This is because the text form I write in can not be updated while I am editing it. So if other users were allowed to update the entry inbetween the time that I open the text field and the moment I press the submit button, their changes would effectively be overwritten. Wikipedia employs a sophisticated merging tool to merge various edits together.</p>
     <p>Baseline, who works with OSP, has introduced me to <a href="http://etherpad.org/" class="" target="_self" style="" title="Etherpad lite">Etherpad</a>. Etherpad presents you with an online document allowing you to start typing. As you do, you might see others connected to the pad start typing as well. There is no submit button. Everything is saved while you type so that it can be shown to your collaborators at the same time. You are no longer solitary with your text box:</p>
-    <p><a href="/and/assets/called/osp_using_etherpad.png" class="aloha-link-text">
-        <img src="/and/assets/scaled/to/830/wide/and/called/osp_using_etherpad.png" alt="" title="" style="width:830px;height:623px;">
-</a></p>
+    <p><a href="/and/assets/called/osp_using_etherpad.png">
+        <img src="/and/assets/scaled/to/830/wide/and/called/osp_using_etherpad.png" alt="" title="" style="width:830px;height:623px;" />
+      </a></p>
     <p>Once you have used Etherpad to write, it becomes difficult to imagine writing collaboratively without it. In a book sprint in Rotterdam, we used <a href="http://www.booki.cc/" class="" target="_self" style="" title="Booktype">Booki</a>, which allows for sophisticated pdf and ebook creation. Yet like many content editing tools it imposes a single-user content lock on each chapter. At the end of the session it turned out everyone had used Etherpad to write their chapters together, before copy and pasting it into the Booki platform.</p>
     <p>If you have not used etherpad, changes are you have used the technology through Google Docs. It is Google who in 2009 bought Etherpad. At the time of the acquisition the source code gets released under a permissive license. So if the code is out there, why are we not seeing more Etherpad-style collaboration online?</p>
     <p></p>
-
-        ]]>
-    </content>
-</entry>
-
-<entry>
-    <title>The Most Barebones Online Font Editor Possible</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/the-most-barebones-online-font-editor-possible" />
-    <id>tag:i.liketightpants.net,:/and//1.74</id>
-
-    <published>2013-04-18T19:59:36</published>
-    <updated>2013-04-18T10:08:42</updated>
-
-    <summary></summary>
-    <author>
-        <name>baseline</name>
-    </author>
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[
-        
-    <p><a href="/and/assets/called/edit_glif.png">
-        <img src="/and/assets/scaled/to/830/wide/and/called/edit_glif.png" alt="You see a fairly minimalistic user interface featuring a list of what appears to be glyph names, a large letter A, and a textarea with xml data describing two contours—the contours that make up the A. The elements lack the usual gloss of post OS-X user interfaces: a thin grey 1px border is the only visual separator between elements." title="" />
-      </a></p>
-    <p>Built by OSP as part of a <a href="http://osp.constantvzw.org/workshop/pzi/" target="_self" style="" title="OSP (Open Source Publishing) → you&amp;#39;re traveling toward in pzi">workshop</a> where students of the Piet Zwart Institute get up close and personal with vector graphics. You edit the raw XML strings that make up the <a href="http://unifiedfontobject.org/versions/ufo2/glif.html" target="_self" style="" title="Unified Font Object - Version 2 - GLIF format">glif</a>.&nbsp;</p>
-    <p>An online font-editor would be a great way to make it more easy to do <a href="/and/how-it-has-come-about-that-code-hosting-site-github-offers-visualisations-of-typeface-development" style="" target="_self" title="I like tight pants and how it has come about that code hosting site github offers visualisations of typeface development">collaborative type design</a>. Speaking with <a href="https://www.google.com/search?q=dave+crossland" target="_self" style="" title="Dave Crossland">Dave</a> at this years Libre Graphics Meeting, we figured that a good place to get started would be to have a library that makes it more easy to deal with typefaces in web-apps—a JavaScript port of <a href="http://www.robofab.org/" target="_self" style="" title="I like tight pants and programmatically manipulating typefaces">RoboFab</a> perhaps?</p>
 
 
         ]]>
