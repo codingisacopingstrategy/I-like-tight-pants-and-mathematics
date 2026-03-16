@@ -1,6 +1,7 @@
 @paragraph-indent: 1cm;
 @paragraph-text-size: 12pt;
 @paragraph-line-height: 1.2;
+@paragraph-margin-bottom: 14.4pt;
 
 /** I like tight pants design by Roxanne Maillet with Eric Schrijver **/
 
@@ -40,23 +41,33 @@ pre {
     white-space: pre-wrap;
 }
 
-main {
+.background-canvas {
+  position: fixed;
+  top: 40px;
+  bottom: 22px;
   border-radius: 36px;
-  padding: 0 23px;
-  margin-bottom: 36px;
+  width: 100%;
+  z-index: -999;
+}
+
+main {
+  padding: 0 23px 22px 23px;
+  margin-bottom: 18px;
   display: flex;
   flex-direction: row;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
   align-items: stretch;
   flex-wrap: wrap;
-  h1, h2, h3, h4, h5, h6 {
-    text-align: right;
-  }
+  gap: 20px;
+  border-style: solid;
+  border-width: 0 0 18px 0;
+  border-image: url('../../../assets/called/bubble-border.svg') 0 0 18 0 repeat stretch;
   article {
-    flex-grow: 2;
-    flex-basis: 70%;
+    flex: 2.33;
+    border-style: solid;
+    box-sizing: border-box;
+    border-width: 0 9px 0 0;
+    border-image: url('../../../assets/called/bubble-border-vertical.svg') 0 9 0 0 stretch repeat;
+    padding-right: 10px;
     img {
       width: 100%;
     }
@@ -69,15 +80,50 @@ main {
     .entry_list {
       font-size: 20pt;
     }
+    [property="dc:created"] {
+      .meta-font();
+    }
+    h2 {
+      display: flex;
+      align-items: baseline;
+    }
+    h2 span:last-child {
+      margin-left: auto;
+    }
   }
 }
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    article {
+      flex-basis: auto;
+      width: 100%;
+      border: none;
+    }
+  }
+}
+
+nav#authors {
+  flex: 1;
+  align-self: flex-start;
+  img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  nav#authors {
+    flex-basis: auto;
+    width: 100%;
+  }
+}
+
 
 #title-font() {
   @baseline: ChaumontScript;
   @bnf: Croisant;
   @glit: QTSchoolCentury;
   @habitus: Artesanias;
-  @jenseits: Foglihten;
+  @jenseits: Foglihten07;
   @tellyou: Movement;
 }
 
@@ -144,6 +190,15 @@ main {
   @tellyou: #ff5b00;
 }
 
+#header-text-size() {
+  @baseline: 20pt;
+  @bnf: 20pt;
+  @glit: 17pt;
+  @habitus: 20pt;
+  @jenseits: 20pt;
+  @tellyou: 20pt;
+}
+
 #paragraph-indent() {
   @baseline: 1cm;
   @bnf: 1cm;
@@ -153,22 +208,30 @@ main {
   @tellyou: 1cm;
 }
 
+.body(@author) {
+  background-color: #body-background-colour[@@author];
+}
+
 .main(@author) {
-  margin-top: 44vh;
   font-family: #body-font[@@author], serif;
   color: #body-text-colour[@@author];
-  background-color: #body-background-colour[@@author];
+  border-color: #body-background-colour[@@author]; // replaced by image
   h1, h2, h3, h4, h5, h6 {
     font-family: #title-font[@@author], serif;
+    color: #header-text-colour[@@author];
+  }
+  h2 {
+    font-size: #header-text-size[@@author];
   }
   article {
+    border-color: #body-background-colour[@@author];
     p {
       font-size: @paragraph-text-size;
       padding-left: #paragraph-indent[@@author];
       text-indent: -#paragraph-indent[@@author];
       line-height: @paragraph-line-height;
       & > span {
-        background-color: #body-highlight-colour[@@author];
+        background-color: #body-highlight-colour[@@author]; // replaced by image
       }
     }
     a, a:active, a:visited {
@@ -185,8 +248,14 @@ main {
   }
 }
 
+.background-canvas {
+  .body(baseline)
+}
 main {
   .main(baseline);
+}
+.background-canvas.baseline {
+  .body(baseline)
 }
 main.baseline {
   .main(baseline);
@@ -194,34 +263,37 @@ main.baseline {
     list-style-image: url('etoile-chaos.svg');
   }
 }
+.background-canvas.bnf {
+  .body(bnf)
+}
 main.bnf {
   .main(bnf);
+}
+.background-canvas.glit {
+  .body(glit);
 }
 main.glit {
   .main(glit);
 }
+.background-canvas.habitus {
+  .body(habitus);
+}
 main.habitus {
   .main(habitus);
 }
+.background-canvas.jenseits {
+  .body(jenseits);
+}
 main.jenseits {
   .main(jenseits);
+}
+.background-canvas.tellyou {
+  .body(tellyou);
 }
 main.tellyou {
   .main(tellyou);
 }
 
-nav#authors {
-  top: 30vh;
-  position: sticky;
-  flex-grow: 1;
-  align-self: flex-start;
-  flex-basis: 30%;
-  height: 70vh;
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
 
 header#site {
   background-color: #fff;
@@ -237,8 +309,10 @@ header#site {
   font-size: 22px;
   line-height: 22px;
   border-style: solid;
+  border-color: #fff; // replaced by image
   border-width: 0 0 18px 0;
   border-image: url('../../../assets/called/bubble-border.svg') 0 0 18 0 repeat stretch;
+  z-index: 1111;
   & > div, & > img {
     display: inline-block;
   }
@@ -272,6 +346,9 @@ footer {
       background: url("etoile.svg") center / contain no-repeat;
       margin-right: 5px;
     }
+    a, a:active, a:visited {
+      color: #000;
+    }
     form {
       display: contents;
       #logout {
@@ -282,6 +359,7 @@ footer {
         font: inherit;
         color: inherit;
         cursor: pointer;
+        text-decoration: underline;
       }
     }
   }

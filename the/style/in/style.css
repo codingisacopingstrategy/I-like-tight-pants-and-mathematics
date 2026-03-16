@@ -34,8 +34,8 @@
   src: url('./fonts/such/as/BBBBaskervvol-Regular.woff');
 }
 @font-face {
-  font-family: 'Foglihten';
-  src: url('./fonts/such/as/Foglihten-068.otf');
+  font-family: 'Foglihten07';
+  src: url('./fonts/such/as/FoglihtenNo07.otf');
 }
 @font-face {
   font-family: 'ParaRubber';
@@ -128,6 +128,13 @@ fieldset {
 textarea {
   resize: vertical;
 }
+.meta-font {
+  font-family: ComputerModern, serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 12pt;
+  color: #000;
+}
 html {
   background-color: #fff;
   font-size: 1em;
@@ -146,29 +153,33 @@ pre {
   font-family: "andale mono", "lucida console", monospace;
   white-space: pre-wrap;
 }
-main {
+.background-canvas {
+  position: fixed;
+  top: 40px;
+  bottom: 22px;
   border-radius: 36px;
-  padding: 0 23px;
-  margin-bottom: 36px;
+  width: 100%;
+  z-index: -999;
+}
+main {
+  padding: 0 23px 22px 23px;
+  margin-bottom: 18px;
   display: flex;
   flex-direction: row;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
   align-items: stretch;
   flex-wrap: wrap;
-}
-main h1,
-main h2,
-main h3,
-main h4,
-main h5,
-main h6 {
-  text-align: right;
+  gap: 20px;
+  border-style: solid;
+  border-width: 0 0 18px 0;
+  border-image: url('../../../assets/called/bubble-border.svg') 0 0 18 0 repeat stretch;
 }
 main article {
-  flex-grow: 2;
-  flex-basis: 70%;
+  flex: 2.33;
+  border-style: solid;
+  box-sizing: border-box;
+  border-width: 0 9px 0 0;
+  border-image: url('../../../assets/called/bubble-border-vertical.svg') 0 9 0 0 stretch repeat;
+  padding-right: 10px;
 }
 main article img {
   width: 100%;
@@ -184,11 +195,50 @@ main article a:visited {
 main article .entry_list {
   font-size: 20pt;
 }
+main article [property="dc:created"] {
+  font-family: ComputerModern, serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 12pt;
+  color: #000;
+}
+main article h2 {
+  display: flex;
+  align-items: baseline;
+}
+main article h2 span:last-child {
+  margin-left: auto;
+}
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  main article {
+    flex-basis: auto;
+    width: 100%;
+    border: none;
+  }
+}
+nav#authors {
+  flex: 1;
+  align-self: flex-start;
+}
+nav#authors img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  nav#authors {
+    flex-basis: auto;
+    width: 100%;
+  }
+}
+.background-canvas {
+  background-color: #ff0000;
+}
 main {
-  margin-top: 44vh;
   font-family: BBBSprat, serif;
   color: #fff;
-  background-color: #ff0000;
+  border-color: #ff0000;
 }
 main h1,
 main h2,
@@ -197,6 +247,13 @@ main h4,
 main h5,
 main h6 {
   font-family: ChaumontScript, serif;
+  color: #0058ed;
+}
+main h2 {
+  font-size: 20pt;
+}
+main article {
+  border-color: #ff0000;
 }
 main article p {
   font-size: 12pt;
@@ -222,11 +279,13 @@ main article .entry_list a:active,
 main article .entry_list a:visited {
   color: #0058ed;
 }
+.background-canvas.baseline {
+  background-color: #ff0000;
+}
 main.baseline {
-  margin-top: 44vh;
   font-family: BBBSprat, serif;
   color: #fff;
-  background-color: #ff0000;
+  border-color: #ff0000;
 }
 main.baseline h1,
 main.baseline h2,
@@ -235,6 +294,13 @@ main.baseline h4,
 main.baseline h5,
 main.baseline h6 {
   font-family: ChaumontScript, serif;
+  color: #0058ed;
+}
+main.baseline h2 {
+  font-size: 20pt;
+}
+main.baseline article {
+  border-color: #ff0000;
 }
 main.baseline article p {
   font-size: 12pt;
@@ -263,11 +329,13 @@ main.baseline article .entry_list a:visited {
 main.baseline article .entry_list {
   list-style-image: url('etoile-chaos.svg');
 }
+.background-canvas.bnf {
+  background-color: #82babf;
+}
 main.bnf {
-  margin-top: 44vh;
   font-family: DINdong, serif;
   color: #fff;
-  background-color: #82babf;
+  border-color: #82babf;
 }
 main.bnf h1,
 main.bnf h2,
@@ -276,6 +344,13 @@ main.bnf h4,
 main.bnf h5,
 main.bnf h6 {
   font-family: Croisant, serif;
+  color: #0058ed;
+}
+main.bnf h2 {
+  font-size: 20pt;
+}
+main.bnf article {
+  border-color: #82babf;
 }
 main.bnf article p {
   font-size: 12pt;
@@ -301,11 +376,13 @@ main.bnf article .entry_list a:active,
 main.bnf article .entry_list a:visited {
   color: #0058ed;
 }
+.background-canvas.glit {
+  background-color: #ff0087;
+}
 main.glit {
-  margin-top: 44vh;
   font-family: Chemins, serif;
   color: #fff;
-  background-color: #ff0087;
+  border-color: #ff0087;
 }
 main.glit h1,
 main.glit h2,
@@ -314,6 +391,13 @@ main.glit h4,
 main.glit h5,
 main.glit h6 {
   font-family: QTSchoolCentury, serif;
+  color: #c6af00;
+}
+main.glit h2 {
+  font-size: 17pt;
+}
+main.glit article {
+  border-color: #ff0087;
 }
 main.glit article p {
   font-size: 12pt;
@@ -339,11 +423,13 @@ main.glit article .entry_list a:active,
 main.glit article .entry_list a:visited {
   color: #c6af00;
 }
+.background-canvas.habitus {
+  background-color: #c6af00;
+}
 main.habitus {
-  margin-top: 44vh;
   font-family: BBBBaskervvol, serif;
   color: #fff;
-  background-color: #c6af00;
+  border-color: #c6af00;
 }
 main.habitus h1,
 main.habitus h2,
@@ -352,6 +438,13 @@ main.habitus h4,
 main.habitus h5,
 main.habitus h6 {
   font-family: Artesanias, serif;
+  color: #ff0000;
+}
+main.habitus h2 {
+  font-size: 20pt;
+}
+main.habitus article {
+  border-color: #c6af00;
 }
 main.habitus article p {
   font-size: 12pt;
@@ -377,11 +470,13 @@ main.habitus article .entry_list a:active,
 main.habitus article .entry_list a:visited {
   color: #ff0000;
 }
+.background-canvas.jenseits {
+  background-color: #ac8cff;
+}
 main.jenseits {
-  margin-top: 44vh;
   font-family: ParaRubber, serif;
   color: #ccc;
-  background-color: #ac8cff;
+  border-color: #ac8cff;
 }
 main.jenseits h1,
 main.jenseits h2,
@@ -389,7 +484,14 @@ main.jenseits h3,
 main.jenseits h4,
 main.jenseits h5,
 main.jenseits h6 {
-  font-family: Foglihten, serif;
+  font-family: Foglihten07, serif;
+  color: #89fe67;
+}
+main.jenseits h2 {
+  font-size: 20pt;
+}
+main.jenseits article {
+  border-color: #ac8cff;
 }
 main.jenseits article p {
   font-size: 12pt;
@@ -407,7 +509,7 @@ main.jenseits article a:visited {
   background-color: #ac8cff;
 }
 main.jenseits article .entry_list {
-  font-family: Foglihten, serif;
+  font-family: Foglihten07, serif;
   color: #89fe67;
 }
 main.jenseits article .entry_list a,
@@ -415,11 +517,13 @@ main.jenseits article .entry_list a:active,
 main.jenseits article .entry_list a:visited {
   color: #89fe67;
 }
+.background-canvas.tellyou {
+  background-color: #009600;
+}
 main.tellyou {
-  margin-top: 44vh;
   font-family: BBBPoppinsTN, serif;
   color: #000;
-  background-color: #009600;
+  border-color: #009600;
 }
 main.tellyou h1,
 main.tellyou h2,
@@ -428,6 +532,13 @@ main.tellyou h4,
 main.tellyou h5,
 main.tellyou h6 {
   font-family: Movement, serif;
+  color: #ff5b00;
+}
+main.tellyou h2 {
+  font-size: 20pt;
+}
+main.tellyou article {
+  border-color: #009600;
 }
 main.tellyou article p {
   font-size: 12pt;
@@ -453,18 +564,6 @@ main.tellyou article .entry_list a:active,
 main.tellyou article .entry_list a:visited {
   color: #ff5b00;
 }
-nav#authors {
-  top: 30vh;
-  position: sticky;
-  flex-grow: 1;
-  align-self: flex-start;
-  flex-basis: 30%;
-  height: 70vh;
-}
-nav#authors img {
-  width: 100%;
-  height: 100%;
-}
 header#site {
   background-color: #fff;
   display: flex;
@@ -479,8 +578,10 @@ header#site {
   font-size: 22px;
   line-height: 22px;
   border-style: solid;
+  border-color: #fff;
   border-width: 0 0 18px 0;
   border-image: url('../../../assets/called/bubble-border.svg') 0 0 18 0 repeat stretch;
+  z-index: 1111;
 }
 header#site > div,
 header#site > img {
@@ -516,6 +617,11 @@ footer ul li + li::before {
   background: url("etoile.svg") center / contain no-repeat;
   margin-right: 5px;
 }
+footer ul a,
+footer ul a:active,
+footer ul a:visited {
+  color: #000;
+}
 footer ul form {
   display: contents;
 }
@@ -527,6 +633,7 @@ footer ul form #logout {
   font: inherit;
   color: inherit;
   cursor: pointer;
+  text-decoration: underline;
 }
 .selected-author {
   display: block;
