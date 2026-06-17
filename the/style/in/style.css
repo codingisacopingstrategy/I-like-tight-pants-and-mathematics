@@ -73,6 +73,49 @@
   font-weight: bold;
   font-style: italic;
 }
+/* Author header fonts */
+@font-face {
+  font-family: BBBLove;
+  src: url('fonts/such/as/BBBLOVE.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: PurpleLove;
+  src: url('fonts/such/as/PURPLE_LOVE.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: SelfRegion;
+  src: url('fonts/such/as/Self_region.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: SelfRegion;
+  src: url('fonts/such/as/Self_region-Italic.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: Bizarrerie;
+  src: url('fonts/such/as/Bizarrerie.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Delius;
+  src: url('fonts/such/as/Delius-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ScottieAndJudy;
+  src: url('fonts/such/as/Scottie-and-Judy.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -225,6 +268,102 @@ nav#authors {
 }
 nav#authors img {
   width: 100%;
+}
+nav#authors ul.colourful-authors {
+  margin: 0;
+  padding: 0;
+  container-type: inline-size;
+}
+nav#authors ul.colourful-authors li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #ccc;
+  border-radius: 7% / 50%;
+  width: 100%;
+  aspect-ratio: 640 / 94;
+  overflow: visible;
+  color: #000;
+  box-sizing: border-box;
+  height: 14.7cqw;
+}
+nav#authors ul.colourful-authors li a,
+nav#authors ul.colourful-authors li a:active,
+nav#authors ul.colourful-authors li a:visited {
+  color: #000;
+}
+nav#authors ul.colourful-authors li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  transform-origin: left center;
+}
+nav#authors ul.colourful-authors li.glit {
+  padding: 0% 5.5%;
+  background-color: #ff0087;
+  font-size: 13cqw;
+  font-family: BBBLove;
+}
+nav#authors ul.colourful-authors li.glit a {
+  transform: scale(1.85, 1);
+}
+nav#authors ul.colourful-authors li.glit a > span {
+  color: #fff;
+  -webkit-text-stroke: 0.1cqw #000;
+  margin-left: 0.001rem;
+}
+nav#authors ul.colourful-authors li.jenseits {
+  padding: 0% 5%;
+  background-color: #ac8cff;
+  font-size: 16.9cqw;
+  font-family: SelfRegion;
+}
+nav#authors ul.colourful-authors li.jenseits a {
+  transform: scale(1.25, 1);
+}
+nav#authors ul.colourful-authors li.habitus {
+  padding: 0 5% 0 5%;
+  background-color: #c6af00;
+  font-size: 16.25cqw;
+  font-family: Delius;
+}
+nav#authors ul.colourful-authors li.habitus a {
+  transform: scale(1.32, 1);
+  translate: 0% -10%;
+}
+nav#authors ul.colourful-authors li.tellyou {
+  padding: 0% 7%;
+  background-color: #009600;
+  font-size: 13cqw;
+  font-family: PurpleLove;
+}
+nav#authors ul.colourful-authors li.tellyou a {
+  transform: scale(1.32, 1);
+}
+nav#authors ul.colourful-authors li.baseline {
+  padding: 0% 5.5%;
+  background-color: #ff0000;
+  font-size: 15.9cqw;
+  font-family: Bizarrerie;
+}
+nav#authors ul.colourful-authors li.baseline a {
+  transform: scale(1.09, 1);
+  translate: 0 -7%;
+}
+nav#authors ul.colourful-authors li.bnf {
+  padding: 0;
+  background-color: #82babf;
+  font-size: 21cqw;
+  font-family: ScottieAndJudy;
+}
+nav#authors ul.colourful-authors li.bnf a {
+  transform: scale(1.53, 1);
+  translate: 0 -24%;
+  text-transform: lowercase;
+}
+nav#authors ul.colourful-authors li.bnf a > span {
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 0.2cqw #000;
 }
 @media (max-width: 768px) {
   nav#authors {

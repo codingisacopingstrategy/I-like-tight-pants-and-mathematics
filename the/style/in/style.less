@@ -8,6 +8,7 @@
 /*! Contains elements of HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 
+@import "_author_vars";
 @import "_typefaces";
 @import "_element_resets";
 
@@ -109,6 +110,100 @@ nav#authors {
   img {
     width: 100%;
   }
+  ul.colourful-authors {
+    margin: 0;
+    padding: 0;
+    container-type: inline-size;
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background-color: #ccc;
+      border-radius: 7% / 50%;
+      width: 100%;
+      aspect-ratio: 640 / 94;
+      overflow: visible;
+      color: #000;
+      box-sizing: border-box;
+      height: 14.7cqw;
+      a, a:active, a:visited {
+        color: #000;
+      }
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        transform-origin: left center;
+      }
+      &.glit {
+        padding: 0% 5.5%;
+        background-color: #body-background-colour[@glit];
+        font-size: 13cqw;
+        font-family: #author-font[@glit];
+        a {
+          transform: scale(1.85, 1);
+          & > span {
+            color: #fff;
+            -webkit-text-stroke: .1cqw #000;
+            margin-left: 0.001rem;
+          }
+        }
+      }
+      &.jenseits {
+        padding: 0% 5%;
+        background-color: #body-background-colour[@jenseits];
+        font-size: 16.9cqw;
+        font-family: #author-font[@jenseits];
+        a {
+          transform: scale(1.25, 1);
+        }
+      }
+      &.habitus {
+        padding: 0 5% 0 5%;
+        background-color: #body-background-colour[@habitus];
+        font-size: 16.25cqw;
+        font-family: #author-font[@habitus];
+        a {
+          transform: scale(1.32, 1);
+          translate: 0% -10%;
+        }
+      }
+      &.tellyou {
+        padding: 0% 7%;
+        background-color: #body-background-colour[@tellyou];
+        font-size: 13cqw;
+        font-family: #author-font[@tellyou];
+        a {
+          transform: scale(1.32, 1);
+        }
+      }
+      &.baseline {
+        padding: 0% 5.5%;
+        background-color: #body-background-colour[@baseline];
+        font-size: 15.9cqw;
+        font-family: #author-font[@baseline];
+        a {
+          transform: scale(1.09, 1);
+          translate: 0 -7%;
+        }
+      }
+      &.bnf {
+        padding: 0;
+        background-color: #body-background-colour[@bnf];
+        font-size: 21cqw;
+        font-family: #author-font[@bnf];
+        a {
+          transform: scale(1.53, 1);
+          translate: 0 -24%;
+          text-transform: lowercase;
+          & > span {
+            color: rgba(255, 255, 255, 0);
+            -webkit-text-stroke: .2cqw #000;
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 768px) {
   nav#authors {
@@ -198,97 +293,6 @@ footer {
       }
     }
   }
-}
-
-
-#title-font() {
-  @baseline: ChaumontScript;
-  @bnf: Croisant;
-  @glit: QTSchoolCentury;
-  @habitus: Artesanias;
-  @jenseits: Foglihten07;
-  @tellyou: Movement;
-}
-
-#body-font() {
-  @baseline: BBBSprat;
-  @bnf: DINdong;
-  @glit: Chemins;
-  @habitus: BBBBaskervvol;
-  @jenseits: ParaRubber;
-  @tellyou: BBBPoppinsTN;
-}
-
-#body-text-colour() {
-  @baseline: #fff;
-  @bnf: #fff;
-  @glit: #fff;
-  @habitus: #fff;
-  @jenseits: #ccc;
-  @tellyou: #000;
-}
-
-#body-background-colour() {
-  @baseline: #ff0000;
-  @bnf: #82babf;
-  @glit: #ff0087;
-  @habitus: #c6af00;
-  @jenseits: #ac8cff;
-  @tellyou: #009600;
-}
-
-#body-highlight-colour() {
-  @baseline: #ff0087;
-  @bnf: #ff0087;
-  @glit: #00aeef;
-  @habitus: #0058ed;
-  @jenseits: #ff5b00;
-  @tellyou: #ac8cff;
-}
-
-#link-colour() {
-  @baseline: #fff;
-  @bnf: #fff;
-  @glit: #fff;
-  @habitus: #000;
-  @jenseits: #89fe67;
-  @tellyou: #fff;
-}
-
-#link-highlight-colour() {
-  @baseline: #ff0000;
-  @bnf: #82babf;
-  @glit: #00aeef;
-  @habitus: #ff5b00;
-  @jenseits: #ac8cff;
-  @tellyou: #ac8cff;
-}
-
-#header-text-colour() {
-  @baseline: #0058ed;
-  @bnf: #0058ed;
-  @glit: #c6af00;
-  @habitus: #ff0000;
-  @jenseits: #89fe67;
-  @tellyou: #ff5b00;
-}
-
-#header-text-size() {
-  @baseline: 20pt;
-  @bnf: 20pt;
-  @glit: 17pt;
-  @habitus: 20pt;
-  @jenseits: 20pt;
-  @tellyou: 20pt;
-}
-
-#paragraph-indent() {
-  @baseline: 1cm;
-  @bnf: 1cm;
-  @glit: 1cm;
-  @habitus: 0;
-  @jenseits: 1cm;
-  @tellyou: 1cm;
 }
 
 .background-canvas(@author) {
