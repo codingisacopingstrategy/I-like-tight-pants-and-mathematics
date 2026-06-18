@@ -481,7 +481,7 @@ main article {
 main article p {
   font-size: 12pt;
   padding-left: 1cm;
-  text-indent: - 1cm;
+  text-indent: -1cm;
   line-height: 1.2;
 }
 main article p > span {
@@ -528,7 +528,7 @@ main.baseline article {
 main.baseline article p {
   font-size: 12pt;
   padding-left: 1cm;
-  text-indent: - 1cm;
+  text-indent: -1cm;
   line-height: 1.2;
 }
 main.baseline article p > span {
@@ -578,7 +578,7 @@ main.bnf article {
 main.bnf article p {
   font-size: 12pt;
   padding-left: 1cm;
-  text-indent: - 1cm;
+  text-indent: -1cm;
   line-height: 1.2;
 }
 main.bnf article p > span {
@@ -625,7 +625,7 @@ main.glit article {
 main.glit article p {
   font-size: 12pt;
   padding-left: 1cm;
-  text-indent: - 1cm;
+  text-indent: -1cm;
   line-height: 1.2;
 }
 main.glit article p > span {
@@ -672,7 +672,7 @@ main.habitus article {
 main.habitus article p {
   font-size: 12pt;
   padding-left: 0;
-  text-indent: - 0;
+  text-indent: 0;
   line-height: 1.2;
 }
 main.habitus article p > span {
@@ -719,7 +719,7 @@ main.jenseits article {
 main.jenseits article p {
   font-size: 12pt;
   padding-left: 1cm;
-  text-indent: - 1cm;
+  text-indent: -1cm;
   line-height: 1.2;
 }
 main.jenseits article p > span {
@@ -766,7 +766,7 @@ main.tellyou article {
 main.tellyou article p {
   font-size: 12pt;
   padding-left: 1cm;
-  text-indent: - 1cm;
+  text-indent: -1cm;
   line-height: 1.2;
 }
 main.tellyou article p > span {

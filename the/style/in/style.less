@@ -315,7 +315,7 @@ footer {
     p {
       font-size: @paragraph-text-size;
       padding-left: #paragraph-indent[@@author];
-      text-indent: -#paragraph-indent[@@author];
+      text-indent: (0 - #paragraph-indent[@@author]);
       line-height: @paragraph-line-height;
       & > span {
         background-color: #body-highlight-colour[@@author]; // replaced by image
