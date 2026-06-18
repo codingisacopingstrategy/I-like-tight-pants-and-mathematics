@@ -69,9 +69,6 @@ main {
     border-width: 0 9px 0 0;
     border-image: url('../../../assets/called/bubble-border-vertical.svg') 0 9 0 0 stretch repeat;
     padding-right: 10px;
-    img {
-      width: 100%;
-    }
     p {
       max-width: 200mm;
     }
@@ -318,7 +315,25 @@ footer {
       text-indent: (0 - #paragraph-indent[@@author]);
       line-height: @paragraph-line-height;
       & > span {
-        background-color: #body-highlight-colour[@@author]; // replaced by image
+        background-color: #body-highlight-colour[@@author];
+      }
+    }
+    img {
+      width: #main-image-size[@@author];
+      margin-left: #main-image-margin-left[@@author];
+      margin-right: #main-image-margin-right[@@author];
+    }
+    figure {
+      position: relative;
+      display: inline-block;
+      & > figcaption {
+        position: absolute;
+        left: 0;
+        top: 20px;
+        max-width: 400px;
+       & > span {
+          background-color: #body-highlight-colour[@@author];
+        }
       }
     }
     a, a:active, a:visited {

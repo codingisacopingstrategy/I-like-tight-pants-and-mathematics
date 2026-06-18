@@ -224,9 +224,6 @@ main article {
   border-image: url('../../../assets/called/bubble-border-vertical.svg') 0 9 0 0 stretch repeat;
   padding-right: 10px;
 }
-main article img {
-  width: 100%;
-}
 main article p {
   max-width: 200mm;
 }
@@ -487,6 +484,24 @@ main article p {
 main article p > span {
   background-color: #ff0087;
 }
+main article img {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+main article figure {
+  position: relative;
+  display: inline-block;
+}
+main article figure > figcaption {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  max-width: 400px;
+}
+main article figure > figcaption > span {
+  background-color: #ff0087;
+}
 main article a,
 main article a:active,
 main article a:visited {
@@ -532,6 +547,24 @@ main.baseline article p {
   line-height: 1.2;
 }
 main.baseline article p > span {
+  background-color: #ff0087;
+}
+main.baseline article img {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+main.baseline article figure {
+  position: relative;
+  display: inline-block;
+}
+main.baseline article figure > figcaption {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  max-width: 400px;
+}
+main.baseline article figure > figcaption > span {
   background-color: #ff0087;
 }
 main.baseline article a,
@@ -584,6 +617,24 @@ main.bnf article p {
 main.bnf article p > span {
   background-color: #ff0087;
 }
+main.bnf article img {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+main.bnf article figure {
+  position: relative;
+  display: inline-block;
+}
+main.bnf article figure > figcaption {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  max-width: 400px;
+}
+main.bnf article figure > figcaption > span {
+  background-color: #ff0087;
+}
 main.bnf article a,
 main.bnf article a:active,
 main.bnf article a:visited {
@@ -629,6 +680,24 @@ main.glit article p {
   line-height: 1.2;
 }
 main.glit article p > span {
+  background-color: #00aeef;
+}
+main.glit article img {
+  width: 88%;
+  margin-left: 12%;
+  margin-right: 0;
+}
+main.glit article figure {
+  position: relative;
+  display: inline-block;
+}
+main.glit article figure > figcaption {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  max-width: 400px;
+}
+main.glit article figure > figcaption > span {
   background-color: #00aeef;
 }
 main.glit article a,
@@ -678,6 +747,24 @@ main.habitus article p {
 main.habitus article p > span {
   background-color: #0058ed;
 }
+main.habitus article img {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+main.habitus article figure {
+  position: relative;
+  display: inline-block;
+}
+main.habitus article figure > figcaption {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  max-width: 400px;
+}
+main.habitus article figure > figcaption > span {
+  background-color: #0058ed;
+}
 main.habitus article a,
 main.habitus article a:active,
 main.habitus article a:visited {
@@ -725,6 +812,24 @@ main.jenseits article p {
 main.jenseits article p > span {
   background-color: #ff5b00;
 }
+main.jenseits article img {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+main.jenseits article figure {
+  position: relative;
+  display: inline-block;
+}
+main.jenseits article figure > figcaption {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  max-width: 400px;
+}
+main.jenseits article figure > figcaption > span {
+  background-color: #ff5b00;
+}
 main.jenseits article a,
 main.jenseits article a:active,
 main.jenseits article a:visited {
@@ -770,6 +875,24 @@ main.tellyou article p {
   line-height: 1.2;
 }
 main.tellyou article p > span {
+  background-color: #ac8cff;
+}
+main.tellyou article img {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+main.tellyou article figure {
+  position: relative;
+  display: inline-block;
+}
+main.tellyou article figure > figcaption {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  max-width: 400px;
+}
+main.tellyou article figure > figcaption > span {
   background-color: #ac8cff;
 }
 main.tellyou article a,
