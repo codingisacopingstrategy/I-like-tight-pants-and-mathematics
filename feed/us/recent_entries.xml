@@ -4,9 +4,28 @@
     <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/" />
     <link rel="self" type="application/atom+xml" href="http://i.liketightpants.net/and/feed/us/recent_entries.xml" />
     <id>tag:i.liketightpants.net,2010-05-27:/and//1</id>
-    <updated>2026-03-18T12:10:45.775758+01:00</updated>
+    <updated>2026-06-18T10:21:25.300343+02:00</updated>
 
     <generator uri="http://www.sixapart.com/movabletype/">Melody 1.0.0</generator>
+
+<entry>
+    <title>Reverse Shoplifting</title>
+    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/reverse-shoplifting" />
+    <id>tag:i.liketightpants.net,:/and//1.104</id>
+
+    <published>2026-06-17T23:58:01.142014+02:00</published>
+    <updated>2026-06-18T10:21:25.300343+02:00</updated>
+
+    <summary> Now I’ve gotten to enjoy reverse shoplifting. I make sure no-one’s looking when I fish it out of my bag, and put it back on the shelf at exactly the right spot.</summary>
+    <author>
+        <name>glit</name>
+    </author>
+    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
+        <![CDATA[
+        <figure><div><img alt="" style="" src="/and/assets/scaled/to/2560/3R9A2066.JPG"><br></div><figcaption><span>The person who repaired my washing machine told me these trillingsdempers / amortisseurs are useless.</span></figcaption></figure><p><span>It used to frustrate me no end, plundering the earth’s precious resources for a new human made object, then finding out I don’t need, but having lost the receipt or simply being too late to return it.</span></p><p><span>Now I’ve gotten to enjoy reverse shoplifting. I make sure no-one’s looking when I fish it out of my bag, and put it back on the shelf at exactly the right spot.</span></p>
+        ]]>
+    </content>
+</entry>
 
 <entry>
     <title>We meet again</title>
@@ -1526,41 +1545,6 @@ $("h2").hover(
     <p><a href="https://github.com/klepas/open-baskerville/commit/8aaf5c54eb0c88cdbdfe2411e5f7396a88d0ab89">
         <img src="/and/assets/called/this_is_probably_a_unix_sin.png" style="width:660px;height:401px" alt="" title="" />
       </a></p>
-
-
-        ]]>
-    </content>
-</entry>
-
-<entry>
-    <title>Etherpad Or The Textarea Is A Lonely Place</title>
-    <link rel="alternate" type="text/html" href="http://i.liketightpants.net/and/etherpad-or-the-textarea-is-a-lonely-place" />
-    <id>tag:i.liketightpants.net,:/and//1.75</id>
-
-    <published>2013-04-22T21:59:54+02:00</published>
-    <updated>2013-04-27T14:00:02+02:00</updated>
-
-    <summary>It is a lonely place. The other I like tight pants contributors are nowhere in sight, it is just me typing away in the browser.</summary>
-    <author>
-        <name>tellyou</name>
-    </author>
-    <content type="html" xml:lang="en" xml:base="http://i.liketightpants.net/and/">
-        <![CDATA[
-        
-    <p><a href="/and/assets/called/the_lonely_form_field.png">
-        <img src="/and/assets/scaled/to/830/wide/and/called/the_lonely_form_field
-.png" alt="" title="" />
-      </a></p>
-    <p></p>
-    <p>This is where I type my entries. It is a lonely place. The other I like tight pants contributors are nowhere in sight, it is just me typing away in the browser. Only when I hit a submit button the information is sent to the server.</p>
-    <p>Were my colleagues to try and edit this article at the same time, the system would not allow it. Content management systems put in place editing locks, allowing only one user to edit at a time. This is because the text form I write in can not be updated while I am editing it. So if other users were allowed to update the entry inbetween the time that I open the text field and the moment I press the submit button, their changes would effectively be overwritten. Wikipedia employs a sophisticated merging tool to merge various edits together.</p>
-    <p>Baseline, who works with OSP, has introduced me to <a href="http://etherpad.org/" class="" target="_self" style="" title="Etherpad lite">Etherpad</a>. Etherpad presents you with an online document allowing you to start typing. As you do, you might see others connected to the pad start typing as well. There is no submit button. Everything is saved while you type so that it can be shown to your collaborators at the same time. You are no longer solitary with your text box:</p>
-    <p><a href="/and/assets/called/osp_using_etherpad.png">
-        <img src="/and/assets/scaled/to/830/wide/and/called/osp_using_etherpad.png" alt="" title="" style="width:830px;height:623px;" />
-      </a></p>
-    <p>Once you have used Etherpad to write, it becomes difficult to imagine writing collaboratively without it. In a book sprint in Rotterdam, we used <a href="http://www.booki.cc/" class="" target="_self" style="" title="Booktype">Booki</a>, which allows for sophisticated pdf and ebook creation. Yet like many content editing tools it imposes a single-user content lock on each chapter. At the end of the session it turned out everyone had used Etherpad to write their chapters together, before copy and pasting it into the Booki platform.</p>
-    <p>If you have not used etherpad, changes are you have used the technology through Google Docs. It is Google who in 2009 bought Etherpad. At the time of the acquisition the source code gets released under a permissive license. So if the code is out there, why are we not seeing more Etherpad-style collaboration online?</p>
-    <p></p>
 
 
         ]]>
