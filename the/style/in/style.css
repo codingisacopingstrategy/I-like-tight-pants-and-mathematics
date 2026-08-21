@@ -3,7 +3,7 @@
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 @font-face {
   font-family: 'ChaumontScript';
-  src: url('fonts/such/as/ChaumontScript-Regular.woff2');
+  src: url('./fonts/such/as/ChaumontScript-Regular.woff2');
 }
 @font-face {
   font-family: 'BBBSprat';
@@ -76,43 +76,43 @@
 /* Author header fonts */
 @font-face {
   font-family: BBBLove;
-  src: url('fonts/such/as/BBBLOVE.otf');
+  src: url('./fonts/such/as/BBBLOVE.otf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: PurpleLove;
-  src: url('fonts/such/as/PURPLE_LOVE.otf');
+  src: url('./fonts/such/as/PURPLE_LOVE.otf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: SelfRegion;
-  src: url('fonts/such/as/Self_region.otf');
+  src: url('./fonts/such/as/Self_Region.otf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: SelfRegion;
-  src: url('fonts/such/as/Self_region-Italic.otf');
+  src: url('./fonts/such/as/Self_Region-Italic.otf');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: Bizarrerie;
-  src: url('fonts/such/as/Bizarrerie.otf');
+  src: url('./fonts/such/as/Bizarrerie.otf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: Delius;
-  src: url('fonts/such/as/Delius-Regular.ttf');
+  src: url('./fonts/such/as/Delius-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: ScottieAndJudy;
-  src: url('fonts/such/as/Scottie-and-Judy.ttf');
+  src: url('./fonts/such/as/Scottie-and-Judy.ttf');
   font-weight: normal;
   font-style: normal;
 }
