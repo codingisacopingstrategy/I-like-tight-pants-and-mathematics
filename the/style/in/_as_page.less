@@ -1,0 +1,75 @@
+// Poster from scripts/as-page-html.py (smartphones-never-die).
+// 1 SVG unit = 100cqw / 1205. Height from padding-bottom so WebKit
+// does not need height:auto on an <svg> (it ignores that).
+// Rules live here, not in the post: Squire strips <style> in /or/.
+
+article {
+  p:has(> .as-page) {
+    max-width: none;
+    padding: 0;
+    text-indent: 0;
+  }
+  .as-page {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    height: 0;
+    padding-bottom: (1520 / 1205 * 100%);
+    container-type: inline-size;
+    overflow: visible;
+    margin: 0;
+    --u: calc(100cqw / 1205);
+  }
+  .as-g,
+  .as-t,
+  .as-shape {
+    position: absolute;
+    left: calc(var(--x, 0) * var(--u));
+    top: calc(var(--y, 0) * var(--u));
+  }
+  .as-g {
+    width: 0;
+    height: 0;
+    transform-origin: 0 0;
+  }
+  .as-t {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    max-width: none;
+    text-indent: 0;
+    white-space: nowrap;
+    line-height: 1;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0;
+    color: rgb(0, 88, 237);
+    font-size: calc(var(--fs) * var(--u));
+    transform: translateY(-0.8em);
+    transform-origin: 0 0;
+    user-select: text;
+    pointer-events: auto;
+  }
+  .as-t-din {
+    font-family: DINdong, sans-serif;
+  }
+  .as-t-cro {
+    font-family: Croisant, Croissant, sans-serif;
+    paint-order: stroke fill;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: calc(var(--sw, 0) * var(--u));
+  }
+  .as-t-hel {
+    font-family: Helvetica, Arial, sans-serif;
+    paint-order: stroke fill;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: calc(var(--sw, 0) * var(--u));
+  }
+  .as-shape {
+    display: block;
+    overflow: visible;
+    pointer-events: none;
+    width: calc(var(--w) * var(--u));
+    height: calc(var(--h) * var(--u));
+  }
+}
