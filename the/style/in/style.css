@@ -188,8 +188,7 @@ article .as-page {
   --u: calc(100cqw / 1205);
 }
 article .as-g,
-article .as-t,
-article .as-shape {
+article .as-t {
   position: absolute;
   left: calc(var(--x, 0) * var(--u));
   top: calc(var(--y, 0) * var(--u));
@@ -233,6 +232,9 @@ article .as-t-hel {
   -webkit-text-stroke-width: calc(var(--sw, 0) * var(--u));
 }
 article .as-shape {
+  position: absolute;
+  left: 0;
+  top: 0;
   display: block;
   overflow: visible;
   pointer-events: none;
