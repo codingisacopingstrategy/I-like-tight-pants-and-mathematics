@@ -463,26 +463,4 @@ header#site > div.fourth-tightpants, header#site > img.fourth-tightpants {
 
 @import "_print";
 
-#comments-open {
-  margin-top: 10px;
-  textarea, input {
-    border: 2px solid #D8127E;
-    width: 100%;
-    margin-bottom: @paragraph-margin-bottom;
-  }
-  textarea {
-    border-radius: 1cm;
-    padding: 1cm;
-    box-sizing: border-box;
-    .meta-font();
-  }
-  input {
-    border-radius: 0.5cm;
-    padding: 0.5cm;
-    box-sizing: border-box;
-    .meta-font();
-  }
-  input[type=submit] {
-    cursor: pointer;
-  }
-}
+@import "_forms";
