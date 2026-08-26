@@ -1128,6 +1128,9 @@ button:disabled {
   opacity: 0.35;
   cursor: default;
 }
+.comments button {
+  padding: 0.2cm;
+}
 input[type=submit] {
   cursor: pointer;
 }
