@@ -1174,3 +1174,40 @@ input[type=submit] {
   align-items: center;
   gap: 6px;
 }
+/* Thread depth is 5 on the live site. Leftover width is split into
+   five spacers; comments stay between (container - 40px) and 200mm
+   (same readable measure as article paragraphs). */
+#comments {
+  container-type: inline-size;
+}
+.comment {
+  box-sizing: border-box;
+  width: calc(100cqi - 40px);
+  max-width: 150mm;
+}
+.comments-parent-container {
+  box-sizing: border-box;
+  padding-left: calc((100cqi - min(150mm, 100cqi - 40px)) / 5 - 2px);
+  border-left: 2px solid;
+}
+main .comments-parent-container {
+  border-left-color: #ff0087;
+}
+main.baseline .comments-parent-container {
+  border-left-color: #ff0087;
+}
+main.bnf .comments-parent-container {
+  border-left-color: #ff0087;
+}
+main.glit .comments-parent-container {
+  border-left-color: #00aeef;
+}
+main.habitus .comments-parent-container {
+  border-left-color: #0058ed;
+}
+main.jenseits .comments-parent-container {
+  border-left-color: #ff5b00;
+}
+main.tellyou .comments-parent-container {
+  border-left-color: #ac8cff;
+}

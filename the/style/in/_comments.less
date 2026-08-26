@@ -1,0 +1,46 @@
+/* Thread depth is 5 on the live site. Leftover width is split into
+   five spacers; comments stay between (container - 40px) and 200mm
+   (same readable measure as article paragraphs). */
+#comments {
+  container-type: inline-size;
+}
+
+.comment {
+  box-sizing: border-box;
+  width: ~"calc(100cqi - 40px)";
+  max-width: 150mm;
+}
+
+.comments-parent-container {
+  box-sizing: border-box;
+  padding-left: ~"calc((100cqi - min(150mm, 100cqi - 40px)) / 5 - 2px)";
+  border-left: 2px solid;
+}
+
+.comments-thread(@author) {
+  .comments-parent-container {
+    border-left-color: #body-highlight-colour[@@author];
+  }
+}
+
+main {
+  .comments-thread(baseline);
+}
+main.baseline {
+  .comments-thread(baseline);
+}
+main.bnf {
+  .comments-thread(bnf);
+}
+main.glit {
+  .comments-thread(glit);
+}
+main.habitus {
+  .comments-thread(habitus);
+}
+main.jenseits {
+  .comments-thread(jenseits);
+}
+main.tellyou {
+  .comments-thread(tellyou);
+}
