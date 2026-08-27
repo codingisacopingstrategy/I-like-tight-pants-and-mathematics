@@ -15,32 +15,23 @@
   box-sizing: border-box;
   padding-left: ~"calc((100cqi - min(150mm, 100cqi - 40px)) / 5 - 2px)";
   border-left: 2px solid;
-}
-
-.comments-thread(@author) {
-  .comments-parent-container {
-    border-left-color: #body-highlight-colour[@@author];
+  border-left-color: #body-highlight-colour[@bnf];
+  &.baseline {
+    border-left-color: #body-highlight-colour[@baseline];
   }
-}
-
-main {
-  .comments-thread(baseline);
-}
-main.baseline {
-  .comments-thread(baseline);
-}
-main.bnf {
-  .comments-thread(bnf);
-}
-main.glit {
-  .comments-thread(glit);
-}
-main.habitus {
-  .comments-thread(habitus);
-}
-main.jenseits {
-  .comments-thread(jenseits);
-}
-main.tellyou {
-  .comments-thread(tellyou);
+  &.bnf {
+    border-left-color: #body-highlight-colour[@bnf];
+  }
+  &.glit {
+    border-left-color: #body-highlight-colour[@glit];
+  }
+  &.habitus {
+    border-left-color: #body-highlight-colour[@habitus];
+  }
+  &.jenseits {
+    border-left-color: #body-highlight-colour[@jenseits];
+  }
+  &.tellyou {
+    border-left-color: #body-highlight-colour[@tellyou];
+  }
 }
