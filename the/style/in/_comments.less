@@ -11,6 +11,47 @@
   max-width: 150mm;
 }
 
+.comment-voice(@author) {
+  background-color: #body-background-colour[@@author];
+  color: #body-text-colour[@@author];
+  font-family: #body-font[@@author], serif;
+  border-radius: 0.5cm;
+  padding: 0.5cm;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: #title-font[@@author], serif;
+    color: #header-text-colour[@@author];
+  }
+  a, a:active, a:visited {
+    color: #link-colour[@@author];
+    background-color: #link-highlight-colour[@@author];
+  }
+  .comment-editor {
+    padding-left: #paragraph-indent[@@author];
+    p {
+      .prose-highlight(@author);
+    }
+  }
+}
+
+.comment.baseline {
+  .comment-voice(baseline);
+}
+.comment.bnf {
+  .comment-voice(bnf);
+}
+.comment.glit {
+  .comment-voice(glit);
+}
+.comment.habitus {
+  .comment-voice(habitus);
+}
+.comment.jenseits {
+  .comment-voice(jenseits);
+}
+.comment.tellyou {
+  .comment-voice(tellyou);
+}
+
 .comments-parent-container {
   box-sizing: border-box;
   padding-left: ~"calc((100cqi - min(150mm, 100cqi - 40px)) / 5 - 2px)";

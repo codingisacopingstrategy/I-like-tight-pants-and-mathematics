@@ -1371,6 +1371,355 @@ input[type=submit] {
   width: calc(100cqi - 40px);
   max-width: 150mm;
 }
+.comment.baseline {
+  background-color: #ff0000;
+  color: #fff;
+  font-family: BBBSprat, serif;
+  border-radius: 0.5cm;
+  padding: 0.5cm;
+}
+.comment.baseline h1,
+.comment.baseline h2,
+.comment.baseline h3,
+.comment.baseline h4,
+.comment.baseline h5,
+.comment.baseline h6 {
+  font-family: ChaumontScript, serif;
+  color: #0058ed;
+}
+.comment.baseline a,
+.comment.baseline a:active,
+.comment.baseline a:visited {
+  color: #fff;
+  background-color: #ff0000;
+}
+.comment.baseline .comment-editor {
+  padding-left: 1cm;
+}
+.comment.baseline .comment-editor p {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background-color: transparent;
+  background-image: linear-gradient(#ff0087, #ff0087);
+  background-size: calc(100% + 0.7em) calc(100% - 2px);
+  background-position: -0.35em 1px;
+  background-repeat: no-repeat;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.comment.baseline .comment-editor p::before {
+  content: "";
+  margin-left: -1cm;
+  padding: 0 1cm 0 0;
+  margin-right: -1cm;
+  background-color: transparent;
+  background-image: linear-gradient(#ff0087, #ff0087);
+  background-size: calc(100% + 0.7em) calc(100% - 2px);
+  background-position: -0.35em 1px;
+  background-repeat: no-repeat;
+}
+.comment.baseline .comment-editor p::after {
+  content: "\A";
+  white-space: pre;
+  background: none;
+  background-image: none;
+  box-shadow: none;
+  padding: 0;
+  font-size: 0;
+  line-height: 14.4pt;
+}
+.comment.bnf {
+  background-color: #82babf;
+  color: #fff;
+  font-family: DINdong, serif;
+  border-radius: 0.5cm;
+  padding: 0.5cm;
+}
+.comment.bnf h1,
+.comment.bnf h2,
+.comment.bnf h3,
+.comment.bnf h4,
+.comment.bnf h5,
+.comment.bnf h6 {
+  font-family: Croisant, serif;
+  color: #0058ed;
+}
+.comment.bnf a,
+.comment.bnf a:active,
+.comment.bnf a:visited {
+  color: #fff;
+  background-color: #82babf;
+}
+.comment.bnf .comment-editor {
+  padding-left: 1cm;
+}
+.comment.bnf .comment-editor p {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background-color: transparent;
+  background-image: linear-gradient(#ff0087, #ff0087);
+  background-size: calc(100% + 0.7em) calc(100% - 2px);
+  background-position: -0.35em 1px;
+  background-repeat: no-repeat;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.comment.bnf .comment-editor p::before {
+  content: "";
+  margin-left: -1cm;
+  padding: 0 1cm 0 0;
+  margin-right: -1cm;
+  background-color: transparent;
+  background-image: linear-gradient(#ff0087, #ff0087);
+  background-size: calc(100% + 0.7em) calc(100% - 2px);
+  background-position: -0.35em 1px;
+  background-repeat: no-repeat;
+}
+.comment.bnf .comment-editor p::after {
+  content: "\A";
+  white-space: pre;
+  background: none;
+  background-image: none;
+  box-shadow: none;
+  padding: 0;
+  font-size: 0;
+  line-height: 14.4pt;
+}
+.comment.glit {
+  background-color: #ff0087;
+  color: #fff;
+  font-family: Chemins, serif;
+  border-radius: 0.5cm;
+  padding: 0.5cm;
+}
+.comment.glit h1,
+.comment.glit h2,
+.comment.glit h3,
+.comment.glit h4,
+.comment.glit h5,
+.comment.glit h6 {
+  font-family: QTSchoolCentury, serif;
+  color: #c6af00;
+}
+.comment.glit a,
+.comment.glit a:active,
+.comment.glit a:visited {
+  color: #fff;
+  background-color: #00aeef;
+}
+.comment.glit .comment-editor {
+  padding-left: 1cm;
+}
+.comment.glit .comment-editor p {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background-color: transparent;
+  background-image: linear-gradient(#00aeef, #00aeef);
+  background-size: calc(100% + 0.7em) calc(100% - 2px);
+  background-position: -0.35em 1px;
+  background-repeat: no-repeat;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.comment.glit .comment-editor p::before {
+  content: "";
+  margin-left: -1cm;
+  padding: 0 1cm 0 0;
+  margin-right: -1cm;
+  background-color: transparent;
+  background-image: linear-gradient(#00aeef, #00aeef);
+  background-size: calc(100% + 0.7em) calc(100% - 2px);
+  background-position: -0.35em 1px;
+  background-repeat: no-repeat;
+}
+.comment.glit .comment-editor p::after {
+  content: "\A";
+  white-space: pre;
+  background: none;
+  background-image: none;
+  box-shadow: none;
+  padding: 0;
+  font-size: 0;
+  line-height: 14.4pt;
+}
+.comment.habitus {
+  background-color: #c6af00;
+  color: #fff;
+  font-family: BBBBaskervvol, serif;
+  border-radius: 0.5cm;
+  padding: 0.5cm;
+}
+.comment.habitus h1,
+.comment.habitus h2,
+.comment.habitus h3,
+.comment.habitus h4,
+.comment.habitus h5,
+.comment.habitus h6 {
+  font-family: Artesanias, serif;
+  color: #ff0000;
+}
+.comment.habitus a,
+.comment.habitus a:active,
+.comment.habitus a:visited {
+  color: #000;
+  background-color: #ff5b00;
+}
+.comment.habitus .comment-editor {
+  padding-left: 0;
+}
+.comment.habitus .comment-editor p {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background-color: transparent;
+  background-image: linear-gradient(#0058ed, #0058ed);
+  background-size: calc(100% + 0.7em) calc(100% - 2px);
+  background-position: -0.35em 1px;
+  background-repeat: no-repeat;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.comment.habitus .comment-editor p::after {
+  content: "\A";
+  white-space: pre;
+  background: none;
+  background-image: none;
+  box-shadow: none;
+  padding: 0;
+  font-size: 0;
+  line-height: 14.4pt;
+}
+.comment.jenseits {
+  background-color: #ac8cff;
+  color: #ccc;
+  font-family: ParaRubber, serif;
+  border-radius: 0.5cm;
+  padding: 0.5cm;
+}
+.comment.jenseits h1,
+.comment.jenseits h2,
+.comment.jenseits h3,
+.comment.jenseits h4,
+.comment.jenseits h5,
+.comment.jenseits h6 {
+  font-family: Foglihten07, serif;
+  color: #89fe67;
+}
+.comment.jenseits a,
+.comment.jenseits a:active,
+.comment.jenseits a:visited {
+  color: #89fe67;
+  background-color: #ac8cff;
+}
+.comment.jenseits .comment-editor {
+  padding-left: 1cm;
+}
+.comment.jenseits .comment-editor p {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background-color: transparent;
+  background-image: linear-gradient(#ff5b00, #ff5b00);
+  background-size: calc(100% + 0.7em) calc(100% - 2px);
+  background-position: -0.35em 1px;
+  background-repeat: no-repeat;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.comment.jenseits .comment-editor p::before {
+  content: "";
+  margin-left: -1cm;
+  padding: 0 1cm 0 0;
+  margin-right: -1cm;
+  background-color: transparent;
+  background-image: linear-gradient(#ff5b00, #ff5b00);
+  background-size: calc(100% + 0.7em) calc(100% - 2px);
+  background-position: -0.35em 1px;
+  background-repeat: no-repeat;
+}
+.comment.jenseits .comment-editor p::after {
+  content: "\A";
+  white-space: pre;
+  background: none;
+  background-image: none;
+  box-shadow: none;
+  padding: 0;
+  font-size: 0;
+  line-height: 14.4pt;
+}
+.comment.tellyou {
+  background-color: #009600;
+  color: #000;
+  font-family: BBBPoppinsTN, serif;
+  border-radius: 0.5cm;
+  padding: 0.5cm;
+}
+.comment.tellyou h1,
+.comment.tellyou h2,
+.comment.tellyou h3,
+.comment.tellyou h4,
+.comment.tellyou h5,
+.comment.tellyou h6 {
+  font-family: Movement, serif;
+  color: #ff5b00;
+}
+.comment.tellyou a,
+.comment.tellyou a:active,
+.comment.tellyou a:visited {
+  color: #fff;
+  background-color: #ac8cff;
+}
+.comment.tellyou .comment-editor {
+  padding-left: 1cm;
+}
+.comment.tellyou .comment-editor p {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background-color: transparent;
+  background-image: linear-gradient(#ac8cff, #ac8cff);
+  background-size: calc(100% + 0.7em) calc(100% - 2px);
+  background-position: -0.35em 1px;
+  background-repeat: no-repeat;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.comment.tellyou .comment-editor p::before {
+  content: "";
+  margin-left: -1cm;
+  padding: 0 1cm 0 0;
+  margin-right: -1cm;
+  background-color: transparent;
+  background-image: linear-gradient(#ac8cff, #ac8cff);
+  background-size: calc(100% + 0.7em) calc(100% - 2px);
+  background-position: -0.35em 1px;
+  background-repeat: no-repeat;
+}
+.comment.tellyou .comment-editor p::after {
+  content: "\A";
+  white-space: pre;
+  background: none;
+  background-image: none;
+  box-shadow: none;
+  padding: 0;
+  font-size: 0;
+  line-height: 14.4pt;
+}
 .comments-parent-container {
   box-sizing: border-box;
   padding-left: calc((100cqi - min(150mm, 100cqi - 40px)) / 5 - 2px);
