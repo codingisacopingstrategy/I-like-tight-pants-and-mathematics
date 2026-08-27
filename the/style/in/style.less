@@ -72,8 +72,13 @@ main {
     img {
       height: auto;
     }
-    p {
+    container-type: inline-size;
+    section.entry {
       max-width: 200mm;
+      figure {
+        width: 100cqi;
+        max-width: none;
+      }
     }
     a, a:active, a:visited {
       text-decoration: none;
@@ -299,6 +304,71 @@ footer {
   background-color: #body-background-colour[@@author];
 }
 
+// Highlight without wrapping every line in a <span>.
+//
+// A <p> is a block. Set its background colour and you get one solid
+// rectangle. We want each wrapped line highlighted on its own, so
+// the colour follows the ragged edge, with a little of the page
+// showing between the lines.
+//
+// display: inline does that. The browser treats the p like a span:
+// the background only covers as far as each line of text.
+//
+// Inline also drops the space after the paragraph. An empty block
+// ::after, 14.4pt tall and with no fill, puts that gap back, except
+// on the last p so a one-line comment has no extra tail.
+//
+// Most authors have a hanging first line (padding + negative
+// text-indent). text-indent does not apply to inlines, so
+// .hanging-highlight is a ::before that moves back by the set
+// indent and highlights that part too. habitus has indent 0;
+// the mixin does nothing then.
+//
+// We would normally put that indent padding on the p itself. On an
+// inline that would pad every line, including the first.
+// So the padding sits on the parents (section.entry, .comment-editor)
+// and full-width children like section.entry figure get a
+// matching negative margin-left.
+//
+// The box-decoration-break: clone; (default: slice) is not really
+// used right now, but would allow us to set a border-radius
+// on the background for each line (by default only the top left
+// and bottom right ends of the background would get this).
+
+.hanging-highlight(@indent, @highlight) when (not (@indent = 0)) {
+  &::before {
+    content: "";
+    margin-left: -@indent;
+    padding: 0 @indent 0 0;
+    margin-right: -@indent;
+    background: @highlight;
+  }
+}
+
+.prose-highlight(@author) {
+  @indent: #paragraph-indent[@@author];
+  @highlight: #body-highlight-colour[@@author];
+  display: inline;
+  color: inherit;
+  font-size: @paragraph-text-size;
+  line-height: 1.35;
+  padding: 0;
+  background: @highlight;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  .hanging-highlight(@indent, @highlight);
+  &:not(:last-of-type)::after {
+    content: "";
+    display: block;
+    height: @paragraph-margin-bottom;
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background: none;
+  }
+}
+
 .main(@author) {
   font-family: #body-font[@@author], serif;
   color: #body-text-colour[@@author];
@@ -312,14 +382,17 @@ footer {
   }
   article {
     border-color: #body-background-colour[@@author];
-    p {
-      font-size: @paragraph-text-size;
-      padding-left: #paragraph-indent[@@author];
-      text-indent: (0 - #paragraph-indent[@@author]);
-      line-height: @paragraph-line-height;
-      & > span {
-        background-color: #body-highlight-colour[@@author];
-      }
+    @indent: #paragraph-indent[@@author];
+    section.entry,
+    .comment-editor {
+      padding-left: @indent;
+    }
+    section.entry figure {
+      margin-left: -@indent;
+    }
+    section.entry p,
+    .comment-editor p {
+      .prose-highlight(@author);
     }
     img {
       width: #main-image-size[@@author];
@@ -328,15 +401,14 @@ footer {
     }
     figure {
       position: relative;
-      display: inline-block;
+      display: block;
       & > figcaption {
         position: absolute;
         left: 0;
         top: 20px;
         max-width: 400px;
-       & > span {
-          background-color: #body-highlight-colour[@@author];
-        }
+        width: max-content;
+        background-color: #body-highlight-colour[@@author];
       }
     }
     a, a:active, a:visited {

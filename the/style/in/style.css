@@ -223,12 +223,17 @@ main article {
   border-width: 0 9px 0 0;
   border-image: url('../../../assets/called/bubble-border-vertical.svg') 0 9 0 0 stretch repeat;
   padding-right: 10px;
+  container-type: inline-size;
 }
 main article img {
   height: auto;
 }
-main article p {
+main article section.entry {
   max-width: 200mm;
+}
+main article section.entry figure {
+  width: 100cqi;
+  max-width: none;
 }
 main article a,
 main article a:active,
@@ -478,14 +483,42 @@ main h2 {
 main article {
   border-color: #ff0000;
 }
-main article p {
-  font-size: 12pt;
+main article section.entry,
+main article .comment-editor {
   padding-left: 1cm;
-  text-indent: -1cm;
-  line-height: 1.2;
 }
-main article p > span {
-  background-color: #ff0087;
+main article section.entry figure {
+  margin-left: -1cm;
+}
+main article section.entry p,
+main article .comment-editor p {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #ff0087;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+main article section.entry p::before,
+main article .comment-editor p::before {
+  content: "";
+  margin-left: -1cm;
+  padding: 0 1cm 0 0;
+  margin-right: -1cm;
+  background: #ff0087;
+}
+main article section.entry p:not(:last-of-type)::after,
+main article .comment-editor p:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  height: 14.4pt;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
 }
 main article img {
   width: 100%;
@@ -494,15 +527,14 @@ main article img {
 }
 main article figure {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 main article figure > figcaption {
   position: absolute;
   left: 0;
   top: 20px;
   max-width: 400px;
-}
-main article figure > figcaption > span {
+  width: max-content;
   background-color: #ff0087;
 }
 main article a,
@@ -543,14 +575,42 @@ main.baseline h2 {
 main.baseline article {
   border-color: #ff0000;
 }
-main.baseline article p {
-  font-size: 12pt;
+main.baseline article section.entry,
+main.baseline article .comment-editor {
   padding-left: 1cm;
-  text-indent: -1cm;
-  line-height: 1.2;
 }
-main.baseline article p > span {
-  background-color: #ff0087;
+main.baseline article section.entry figure {
+  margin-left: -1cm;
+}
+main.baseline article section.entry p,
+main.baseline article .comment-editor p {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #ff0087;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+main.baseline article section.entry p::before,
+main.baseline article .comment-editor p::before {
+  content: "";
+  margin-left: -1cm;
+  padding: 0 1cm 0 0;
+  margin-right: -1cm;
+  background: #ff0087;
+}
+main.baseline article section.entry p:not(:last-of-type)::after,
+main.baseline article .comment-editor p:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  height: 14.4pt;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
 }
 main.baseline article img {
   width: 100%;
@@ -559,15 +619,14 @@ main.baseline article img {
 }
 main.baseline article figure {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 main.baseline article figure > figcaption {
   position: absolute;
   left: 0;
   top: 20px;
   max-width: 400px;
-}
-main.baseline article figure > figcaption > span {
+  width: max-content;
   background-color: #ff0087;
 }
 main.baseline article a,
@@ -611,14 +670,42 @@ main.bnf h2 {
 main.bnf article {
   border-color: #82babf;
 }
-main.bnf article p {
-  font-size: 12pt;
+main.bnf article section.entry,
+main.bnf article .comment-editor {
   padding-left: 1cm;
-  text-indent: -1cm;
-  line-height: 1.2;
 }
-main.bnf article p > span {
-  background-color: #ff0087;
+main.bnf article section.entry figure {
+  margin-left: -1cm;
+}
+main.bnf article section.entry p,
+main.bnf article .comment-editor p {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #ff0087;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+main.bnf article section.entry p::before,
+main.bnf article .comment-editor p::before {
+  content: "";
+  margin-left: -1cm;
+  padding: 0 1cm 0 0;
+  margin-right: -1cm;
+  background: #ff0087;
+}
+main.bnf article section.entry p:not(:last-of-type)::after,
+main.bnf article .comment-editor p:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  height: 14.4pt;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
 }
 main.bnf article img {
   width: 100%;
@@ -627,15 +714,14 @@ main.bnf article img {
 }
 main.bnf article figure {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 main.bnf article figure > figcaption {
   position: absolute;
   left: 0;
   top: 20px;
   max-width: 400px;
-}
-main.bnf article figure > figcaption > span {
+  width: max-content;
   background-color: #ff0087;
 }
 main.bnf article a,
@@ -676,14 +762,42 @@ main.glit h2 {
 main.glit article {
   border-color: #ff0087;
 }
-main.glit article p {
-  font-size: 12pt;
+main.glit article section.entry,
+main.glit article .comment-editor {
   padding-left: 1cm;
-  text-indent: -1cm;
-  line-height: 1.2;
 }
-main.glit article p > span {
-  background-color: #00aeef;
+main.glit article section.entry figure {
+  margin-left: -1cm;
+}
+main.glit article section.entry p,
+main.glit article .comment-editor p {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #00aeef;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+main.glit article section.entry p::before,
+main.glit article .comment-editor p::before {
+  content: "";
+  margin-left: -1cm;
+  padding: 0 1cm 0 0;
+  margin-right: -1cm;
+  background: #00aeef;
+}
+main.glit article section.entry p:not(:last-of-type)::after,
+main.glit article .comment-editor p:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  height: 14.4pt;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
 }
 main.glit article img {
   width: 88%;
@@ -692,15 +806,14 @@ main.glit article img {
 }
 main.glit article figure {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 main.glit article figure > figcaption {
   position: absolute;
   left: 0;
   top: 20px;
   max-width: 400px;
-}
-main.glit article figure > figcaption > span {
+  width: max-content;
   background-color: #00aeef;
 }
 main.glit article a,
@@ -741,14 +854,34 @@ main.habitus h2 {
 main.habitus article {
   border-color: #c6af00;
 }
-main.habitus article p {
-  font-size: 12pt;
+main.habitus article section.entry,
+main.habitus article .comment-editor {
   padding-left: 0;
-  text-indent: 0;
-  line-height: 1.2;
 }
-main.habitus article p > span {
-  background-color: #0058ed;
+main.habitus article section.entry figure {
+  margin-left: 0;
+}
+main.habitus article section.entry p,
+main.habitus article .comment-editor p {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #0058ed;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+main.habitus article section.entry p:not(:last-of-type)::after,
+main.habitus article .comment-editor p:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  height: 14.4pt;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
 }
 main.habitus article img {
   width: 100%;
@@ -757,15 +890,14 @@ main.habitus article img {
 }
 main.habitus article figure {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 main.habitus article figure > figcaption {
   position: absolute;
   left: 0;
   top: 20px;
   max-width: 400px;
-}
-main.habitus article figure > figcaption > span {
+  width: max-content;
   background-color: #0058ed;
 }
 main.habitus article a,
@@ -806,14 +938,42 @@ main.jenseits h2 {
 main.jenseits article {
   border-color: #ac8cff;
 }
-main.jenseits article p {
-  font-size: 12pt;
+main.jenseits article section.entry,
+main.jenseits article .comment-editor {
   padding-left: 1cm;
-  text-indent: -1cm;
-  line-height: 1.2;
 }
-main.jenseits article p > span {
-  background-color: #ff5b00;
+main.jenseits article section.entry figure {
+  margin-left: -1cm;
+}
+main.jenseits article section.entry p,
+main.jenseits article .comment-editor p {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #ff5b00;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+main.jenseits article section.entry p::before,
+main.jenseits article .comment-editor p::before {
+  content: "";
+  margin-left: -1cm;
+  padding: 0 1cm 0 0;
+  margin-right: -1cm;
+  background: #ff5b00;
+}
+main.jenseits article section.entry p:not(:last-of-type)::after,
+main.jenseits article .comment-editor p:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  height: 14.4pt;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
 }
 main.jenseits article img {
   width: 100%;
@@ -822,15 +982,14 @@ main.jenseits article img {
 }
 main.jenseits article figure {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 main.jenseits article figure > figcaption {
   position: absolute;
   left: 0;
   top: 20px;
   max-width: 400px;
-}
-main.jenseits article figure > figcaption > span {
+  width: max-content;
   background-color: #ff5b00;
 }
 main.jenseits article a,
@@ -871,14 +1030,42 @@ main.tellyou h2 {
 main.tellyou article {
   border-color: #009600;
 }
-main.tellyou article p {
-  font-size: 12pt;
+main.tellyou article section.entry,
+main.tellyou article .comment-editor {
   padding-left: 1cm;
-  text-indent: -1cm;
-  line-height: 1.2;
 }
-main.tellyou article p > span {
-  background-color: #ac8cff;
+main.tellyou article section.entry figure {
+  margin-left: -1cm;
+}
+main.tellyou article section.entry p,
+main.tellyou article .comment-editor p {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #ac8cff;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+main.tellyou article section.entry p::before,
+main.tellyou article .comment-editor p::before {
+  content: "";
+  margin-left: -1cm;
+  padding: 0 1cm 0 0;
+  margin-right: -1cm;
+  background: #ac8cff;
+}
+main.tellyou article section.entry p:not(:last-of-type)::after,
+main.tellyou article .comment-editor p:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  height: 14.4pt;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
 }
 main.tellyou article img {
   width: 100%;
@@ -887,15 +1074,14 @@ main.tellyou article img {
 }
 main.tellyou article figure {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 main.tellyou article figure > figcaption {
   position: absolute;
   left: 0;
   top: 20px;
   max-width: 400px;
-}
-main.tellyou article figure > figcaption > span {
+  width: max-content;
   background-color: #ac8cff;
 }
 main.tellyou article a,
