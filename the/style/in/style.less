@@ -357,6 +357,9 @@ footer {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   .hanging-highlight(@indent, @highlight);
+  &::selection {
+    background-color: #body-background-colour[@@author];
+  }
   &:not(:last-of-type)::after {
     content: "";
     display: block;
