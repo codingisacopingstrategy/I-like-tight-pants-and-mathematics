@@ -1402,11 +1402,7 @@ input[type=submit] {
   font-size: 12pt;
   line-height: 1.35;
   padding: 0;
-  background-color: transparent;
-  background-image: linear-gradient(#ff0087, #ff0087);
-  background-size: calc(100% + 0.7em) calc(100% - 2px);
-  background-position: -0.35em 1px;
-  background-repeat: no-repeat;
+  background: #ff0087;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
@@ -1415,21 +1411,20 @@ input[type=submit] {
   margin-left: -1cm;
   padding: 0 1cm 0 0;
   margin-right: -1cm;
-  background-color: transparent;
-  background-image: linear-gradient(#ff0087, #ff0087);
-  background-size: calc(100% + 0.7em) calc(100% - 2px);
-  background-position: -0.35em 1px;
-  background-repeat: no-repeat;
+  background: #ff0087;
 }
-.comment.baseline .comment-editor p::after {
-  content: "\A";
-  white-space: pre;
-  background: none;
-  background-image: none;
-  box-shadow: none;
+.comment.baseline .comment-editor p::selection {
+  background-color: #ff0000;
+}
+.comment.baseline .comment-editor p:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  height: 14.4pt;
+  width: 0;
+  overflow: hidden;
   padding: 0;
-  font-size: 0;
-  line-height: 14.4pt;
+  margin: 0;
+  background: none;
 }
 .comment.bnf {
   background-color: #82babf;
@@ -1462,11 +1457,7 @@ input[type=submit] {
   font-size: 12pt;
   line-height: 1.35;
   padding: 0;
-  background-color: transparent;
-  background-image: linear-gradient(#ff0087, #ff0087);
-  background-size: calc(100% + 0.7em) calc(100% - 2px);
-  background-position: -0.35em 1px;
-  background-repeat: no-repeat;
+  background: #ff0087;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
@@ -1475,21 +1466,20 @@ input[type=submit] {
   margin-left: -1cm;
   padding: 0 1cm 0 0;
   margin-right: -1cm;
-  background-color: transparent;
-  background-image: linear-gradient(#ff0087, #ff0087);
-  background-size: calc(100% + 0.7em) calc(100% - 2px);
-  background-position: -0.35em 1px;
-  background-repeat: no-repeat;
+  background: #ff0087;
 }
-.comment.bnf .comment-editor p::after {
-  content: "\A";
-  white-space: pre;
-  background: none;
-  background-image: none;
-  box-shadow: none;
+.comment.bnf .comment-editor p::selection {
+  background-color: #82babf;
+}
+.comment.bnf .comment-editor p:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  height: 14.4pt;
+  width: 0;
+  overflow: hidden;
   padding: 0;
-  font-size: 0;
-  line-height: 14.4pt;
+  margin: 0;
+  background: none;
 }
 .comment.glit {
   background-color: #ff0087;
@@ -1522,11 +1512,7 @@ input[type=submit] {
   font-size: 12pt;
   line-height: 1.35;
   padding: 0;
-  background-color: transparent;
-  background-image: linear-gradient(#00aeef, #00aeef);
-  background-size: calc(100% + 0.7em) calc(100% - 2px);
-  background-position: -0.35em 1px;
-  background-repeat: no-repeat;
+  background: #00aeef;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
@@ -1535,21 +1521,20 @@ input[type=submit] {
   margin-left: -1cm;
   padding: 0 1cm 0 0;
   margin-right: -1cm;
-  background-color: transparent;
-  background-image: linear-gradient(#00aeef, #00aeef);
-  background-size: calc(100% + 0.7em) calc(100% - 2px);
-  background-position: -0.35em 1px;
-  background-repeat: no-repeat;
+  background: #00aeef;
 }
-.comment.glit .comment-editor p::after {
-  content: "\A";
-  white-space: pre;
-  background: none;
-  background-image: none;
-  box-shadow: none;
+.comment.glit .comment-editor p::selection {
+  background-color: #ff0087;
+}
+.comment.glit .comment-editor p:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  height: 14.4pt;
+  width: 0;
+  overflow: hidden;
   padding: 0;
-  font-size: 0;
-  line-height: 14.4pt;
+  margin: 0;
+  background: none;
 }
 .comment.habitus {
   background-color: #c6af00;
@@ -1582,23 +1567,22 @@ input[type=submit] {
   font-size: 12pt;
   line-height: 1.35;
   padding: 0;
-  background-color: transparent;
-  background-image: linear-gradient(#0058ed, #0058ed);
-  background-size: calc(100% + 0.7em) calc(100% - 2px);
-  background-position: -0.35em 1px;
-  background-repeat: no-repeat;
+  background: #0058ed;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
-.comment.habitus .comment-editor p::after {
-  content: "\A";
-  white-space: pre;
-  background: none;
-  background-image: none;
-  box-shadow: none;
+.comment.habitus .comment-editor p::selection {
+  background-color: #c6af00;
+}
+.comment.habitus .comment-editor p:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  height: 14.4pt;
+  width: 0;
+  overflow: hidden;
   padding: 0;
-  font-size: 0;
-  line-height: 14.4pt;
+  margin: 0;
+  background: none;
 }
 .comment.jenseits {
   background-color: #ac8cff;
@@ -1631,11 +1615,7 @@ input[type=submit] {
   font-size: 12pt;
   line-height: 1.35;
   padding: 0;
-  background-color: transparent;
-  background-image: linear-gradient(#ff5b00, #ff5b00);
-  background-size: calc(100% + 0.7em) calc(100% - 2px);
-  background-position: -0.35em 1px;
-  background-repeat: no-repeat;
+  background: #ff5b00;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
@@ -1644,21 +1624,20 @@ input[type=submit] {
   margin-left: -1cm;
   padding: 0 1cm 0 0;
   margin-right: -1cm;
-  background-color: transparent;
-  background-image: linear-gradient(#ff5b00, #ff5b00);
-  background-size: calc(100% + 0.7em) calc(100% - 2px);
-  background-position: -0.35em 1px;
-  background-repeat: no-repeat;
+  background: #ff5b00;
 }
-.comment.jenseits .comment-editor p::after {
-  content: "\A";
-  white-space: pre;
-  background: none;
-  background-image: none;
-  box-shadow: none;
+.comment.jenseits .comment-editor p::selection {
+  background-color: #ac8cff;
+}
+.comment.jenseits .comment-editor p:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  height: 14.4pt;
+  width: 0;
+  overflow: hidden;
   padding: 0;
-  font-size: 0;
-  line-height: 14.4pt;
+  margin: 0;
+  background: none;
 }
 .comment.tellyou {
   background-color: #009600;
@@ -1691,11 +1670,7 @@ input[type=submit] {
   font-size: 12pt;
   line-height: 1.35;
   padding: 0;
-  background-color: transparent;
-  background-image: linear-gradient(#ac8cff, #ac8cff);
-  background-size: calc(100% + 0.7em) calc(100% - 2px);
-  background-position: -0.35em 1px;
-  background-repeat: no-repeat;
+  background: #ac8cff;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
@@ -1704,21 +1679,20 @@ input[type=submit] {
   margin-left: -1cm;
   padding: 0 1cm 0 0;
   margin-right: -1cm;
-  background-color: transparent;
-  background-image: linear-gradient(#ac8cff, #ac8cff);
-  background-size: calc(100% + 0.7em) calc(100% - 2px);
-  background-position: -0.35em 1px;
-  background-repeat: no-repeat;
+  background: #ac8cff;
 }
-.comment.tellyou .comment-editor p::after {
-  content: "\A";
-  white-space: pre;
-  background: none;
-  background-image: none;
-  box-shadow: none;
+.comment.tellyou .comment-editor p::selection {
+  background-color: #009600;
+}
+.comment.tellyou .comment-editor p:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  height: 14.4pt;
+  width: 0;
+  overflow: hidden;
   padding: 0;
-  font-size: 0;
-  line-height: 14.4pt;
+  margin: 0;
+  background: none;
 }
 .comments-parent-container {
   box-sizing: border-box;
