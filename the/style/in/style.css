@@ -1636,7 +1636,7 @@ header#site > img.fourth-tightpants {
   }
 }
 textarea,
-input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not([type="file"]) {
+input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not([type="file"]):not([type="date"]):not([type="time"]) {
   border: 2px solid #D8127E;
   box-sizing: border-box;
   font-family: ComputerModern, serif;
@@ -1652,9 +1652,49 @@ textarea {
   border-radius: 1cm;
   padding: 1cm;
 }
-input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not([type="file"]) {
+input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not([type="file"]):not([type="date"]):not([type="time"]) {
   border-radius: 0.5cm;
   padding: 0.5cm;
+}
+.created-on {
+  font-family: ComputerModern, serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 12pt;
+  color: #000;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.25em;
+}
+.created-on input[type="date"],
+.created-on select {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+.created-on input[type="date"]::-webkit-datetime-edit,
+.created-on input[type="date"]::-webkit-datetime-edit-fields-wrapper,
+.created-on input[type="date"]::-webkit-datetime-edit-text,
+.created-on input[type="date"]::-webkit-datetime-edit-year-field,
+.created-on input[type="date"]::-webkit-datetime-edit-month-field,
+.created-on input[type="date"]::-webkit-datetime-edit-day-field {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+.created-on select {
+  appearance: auto;
+  cursor: pointer;
 }
 button {
   border: 2px solid #D8127E;

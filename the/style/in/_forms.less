@@ -6,7 +6,7 @@
 }
 
 textarea,
-input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not([type="file"]) {
+input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not([type="file"]):not([type="date"]):not([type="time"]) {
   .form-control();
   width: 100%;
   margin-bottom: @paragraph-margin-bottom;
@@ -17,9 +17,50 @@ textarea {
   padding: 1cm;
 }
 
-input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not([type="file"]) {
+input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not([type="file"]):not([type="date"]):not([type="time"]) {
   border-radius: 0.5cm;
   padding: 0.5cm;
+}
+
+// Date uses the native calendar. WebKit has no time popup (not on
+// datetime-local, not on type=time), so hour and minute are selects.
+.created-on {
+  .meta-font();
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.25em;
+  input[type="date"],
+  select {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+  }
+  input[type="date"] {
+    &::-webkit-datetime-edit,
+    &::-webkit-datetime-edit-fields-wrapper,
+    &::-webkit-datetime-edit-text,
+    &::-webkit-datetime-edit-year-field,
+    &::-webkit-datetime-edit-month-field,
+    &::-webkit-datetime-edit-day-field {
+      font-family: inherit;
+      font-size: inherit;
+      font-style: inherit;
+      font-weight: inherit;
+      color: inherit;
+    }
+  }
+  select {
+    appearance: auto;
+    cursor: pointer;
+  }
 }
 
 button {
