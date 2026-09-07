@@ -2294,25 +2294,54 @@ input[type=submit] {
 }
 .comments-parent-container {
   box-sizing: border-box;
+  position: relative;
   padding-left: calc((100cqi - min(150mm, 100cqi - 40px)) / 5 - 2px);
   border-left: 2px solid;
   border-left-color: #ff0087;
 }
+.comments-parent-container:has(.comment)::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -0.5cm;
+  width: 2px;
+  height: 0.5cm;
+  background-color: #ff0087;
+  pointer-events: none;
+}
 .comments-parent-container.baseline {
   border-left-color: #ff0087;
+}
+.comments-parent-container.baseline::before {
+  background-color: #ff0087;
 }
 .comments-parent-container.bnf {
   border-left-color: #ff0087;
 }
+.comments-parent-container.bnf::before {
+  background-color: #ff0087;
+}
 .comments-parent-container.glit {
   border-left-color: #00aeef;
+}
+.comments-parent-container.glit::before {
+  background-color: #00aeef;
 }
 .comments-parent-container.habitus {
   border-left-color: #0058ed;
 }
+.comments-parent-container.habitus::before {
+  background-color: #0058ed;
+}
 .comments-parent-container.jenseits {
   border-left-color: #ff5b00;
 }
+.comments-parent-container.jenseits::before {
+  background-color: #ff5b00;
+}
 .comments-parent-container.tellyou {
   border-left-color: #ac8cff;
+}
+.comments-parent-container.tellyou::before {
+  background-color: #ac8cff;
 }

@@ -1,6 +1,8 @@
 /* Thread depth is 5 on the live site. Leftover width is split into
    five spacers; comments stay between (container - 40px) and 200mm
    (same readable measure as article paragraphs). */
+@comment-radius: 0.5cm;
+
 #comments {
   container-type: inline-size;
 }
@@ -15,7 +17,7 @@
   background-color: #body-background-colour[@@author];
   color: #body-text-colour[@@author];
   font-family: #body-font[@@author], serif;
-  border-radius: 0.5cm;
+  border-radius: @comment-radius;
   padding: 0.5cm;
   h1, h2, h3, h4, h5, h6 {
     font-family: #title-font[@@author], serif;
@@ -68,25 +70,58 @@
 
 .comments-parent-container {
   box-sizing: border-box;
+  position: relative;
   padding-left: ~"calc((100cqi - min(150mm, 100cqi - 40px)) / 5 - 2px)";
   border-left: 2px solid;
   border-left-color: #body-highlight-colour[@bnf];
+  // The line lives on this sibling, so it would start under the bubble.
+  // Reach back by the corner radius so it meets the curve, not the
+  // rectangular bottom. Only when there are replies, or empty
+  // containers would grow a stub.
+  &:has(.comment)::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -@comment-radius;
+    width: 2px;
+    height: @comment-radius;
+    background-color: #body-highlight-colour[@bnf];
+    pointer-events: none;
+  }
   &.baseline {
     border-left-color: #body-highlight-colour[@baseline];
+    &::before {
+      background-color: #body-highlight-colour[@baseline];
+    }
   }
   &.bnf {
     border-left-color: #body-highlight-colour[@bnf];
+    &::before {
+      background-color: #body-highlight-colour[@bnf];
+    }
   }
   &.glit {
     border-left-color: #body-highlight-colour[@glit];
+    &::before {
+      background-color: #body-highlight-colour[@glit];
+    }
   }
   &.habitus {
     border-left-color: #body-highlight-colour[@habitus];
+    &::before {
+      background-color: #body-highlight-colour[@habitus];
+    }
   }
   &.jenseits {
     border-left-color: #body-highlight-colour[@jenseits];
+    &::before {
+      background-color: #body-highlight-colour[@jenseits];
+    }
   }
   &.tellyou {
     border-left-color: #body-highlight-colour[@tellyou];
+    &::before {
+      background-color: #body-highlight-colour[@tellyou];
+    }
   }
 }
