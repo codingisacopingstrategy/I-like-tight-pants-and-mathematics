@@ -487,8 +487,9 @@ main article section.entry,
 main article .comment-editor {
   padding-left: 1cm;
 }
-main article section.entry figure {
-  margin-left: -1cm;
+main article section.entry figure,
+main article .comment-editor figure {
+  margin: 0 0 14.4pt -1cm;
 }
 main article section.entry p,
 main article .comment-editor p {
@@ -583,8 +584,9 @@ main.baseline article section.entry,
 main.baseline article .comment-editor {
   padding-left: 1cm;
 }
-main.baseline article section.entry figure {
-  margin-left: -1cm;
+main.baseline article section.entry figure,
+main.baseline article .comment-editor figure {
+  margin: 0 0 14.4pt -1cm;
 }
 main.baseline article section.entry p,
 main.baseline article .comment-editor p {
@@ -682,8 +684,9 @@ main.bnf article section.entry,
 main.bnf article .comment-editor {
   padding-left: 1cm;
 }
-main.bnf article section.entry figure {
-  margin-left: -1cm;
+main.bnf article section.entry figure,
+main.bnf article .comment-editor figure {
+  margin: 0 0 14.4pt -1cm;
 }
 main.bnf article section.entry p,
 main.bnf article .comment-editor p {
@@ -778,8 +781,9 @@ main.glit article section.entry,
 main.glit article .comment-editor {
   padding-left: 1cm;
 }
-main.glit article section.entry figure {
-  margin-left: -1cm;
+main.glit article section.entry figure,
+main.glit article .comment-editor figure {
+  margin: 0 0 14.4pt -1cm;
 }
 main.glit article section.entry p,
 main.glit article .comment-editor p {
@@ -877,8 +881,9 @@ main.habitus article section.entry,
 main.habitus article .comment-editor {
   padding-left: 0;
 }
-main.habitus article section.entry figure {
-  margin-left: 0;
+main.habitus article section.entry figure,
+main.habitus article .comment-editor figure {
+  margin: 0 0 14.4pt 0;
 }
 main.habitus article section.entry p,
 main.habitus article .comment-editor p {
@@ -965,8 +970,9 @@ main.jenseits article section.entry,
 main.jenseits article .comment-editor {
   padding-left: 1cm;
 }
-main.jenseits article section.entry figure {
-  margin-left: -1cm;
+main.jenseits article section.entry figure,
+main.jenseits article .comment-editor figure {
+  margin: 0 0 14.4pt -1cm;
 }
 main.jenseits article section.entry p,
 main.jenseits article .comment-editor p {
@@ -1061,8 +1067,9 @@ main.tellyou article section.entry,
 main.tellyou article .comment-editor {
   padding-left: 1cm;
 }
-main.tellyou article section.entry figure {
-  margin-left: -1cm;
+main.tellyou article section.entry figure,
+main.tellyou article .comment-editor figure {
+  margin: 0 0 14.4pt -1cm;
 }
 main.tellyou article section.entry p,
 main.tellyou article .comment-editor p {

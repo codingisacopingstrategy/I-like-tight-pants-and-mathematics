@@ -389,13 +389,12 @@ footer {
     section.entry,
     .comment-editor {
       padding-left: @indent;
-    }
-    section.entry figure {
-      margin-left: -@indent;
-    }
-    section.entry p,
-    .comment-editor p {
-      .prose-highlight(@author);
+      figure {
+        margin: 0 0 @paragraph-margin-bottom -@indent;
+      }
+      p {
+        .prose-highlight(@author);
+      }
     }
     img {
       width: #main-image-size[@@author];
