@@ -324,6 +324,10 @@ footer {
 // whole spaces like a p. List items do not hang: they sit at the
 // parent’s #paragraph-indent padding, so every line is inset.
 //
+// list-style only paints on display: list-item. Inline li (needed
+// for the ragged highlight) never get a marker, so the disc is a
+// ::before in the indent gutter.
+//
 // Most authors have a hanging first line (padding + negative
 // text-indent). text-indent does not apply to inlines, so
 // .hanging-highlight is a ::before that moves back by the set
@@ -340,6 +344,33 @@ footer {
 // used right now, but would allow us to set a border-radius
 // on the background for each line (by default only the top left
 // and bottom right ends of the background would get this).
+
+// Fake list-style: disc. Real markers need display: list-item.
+.list-disc(@indent) when (not (@indent = 0)) {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 0.35em;
+    height: 0.35em;
+    border-radius: 50%;
+    background: currentColor;
+    vertical-align: 0.2em;
+    margin-left: -@indent;
+    margin-right: ~"calc(@{indent} - 0.35em)";
+  }
+}
+.list-disc(@indent) when (@indent = 0) {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 0.35em;
+    height: 0.35em;
+    border-radius: 50%;
+    background: currentColor;
+    vertical-align: 0.2em;
+    margin-right: 0.4em;
+  }
+}
 
 .hanging-highlight(@indent, @highlight) when (not (@indent = 0)) {
   &::before {
@@ -408,6 +439,7 @@ footer {
       }
       li {
         .prose-highlight(@author);
+        .list-disc(@indent);
         .prose-after(0);
       }
       ul, ol {

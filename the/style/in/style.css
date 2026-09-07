@@ -540,6 +540,18 @@ main article section.entry li::selection,
 main article .comment-editor li::selection {
   background-color: #ff0000;
 }
+main article section.entry li::before,
+main article .comment-editor li::before {
+  content: "";
+  display: inline-block;
+  width: 0.35em;
+  height: 0.35em;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: 0.2em;
+  margin-left: -1cm;
+  margin-right: calc(1cm - 0.35em);
+}
 main article section.entry li::after,
 main article .comment-editor li::after {
   content: "";
@@ -670,6 +682,18 @@ main.baseline article .comment-editor li {
 main.baseline article section.entry li::selection,
 main.baseline article .comment-editor li::selection {
   background-color: #ff0000;
+}
+main.baseline article section.entry li::before,
+main.baseline article .comment-editor li::before {
+  content: "";
+  display: inline-block;
+  width: 0.35em;
+  height: 0.35em;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: 0.2em;
+  margin-left: -1cm;
+  margin-right: calc(1cm - 0.35em);
 }
 main.baseline article section.entry li::after,
 main.baseline article .comment-editor li::after {
@@ -805,6 +829,18 @@ main.bnf article section.entry li::selection,
 main.bnf article .comment-editor li::selection {
   background-color: #82babf;
 }
+main.bnf article section.entry li::before,
+main.bnf article .comment-editor li::before {
+  content: "";
+  display: inline-block;
+  width: 0.35em;
+  height: 0.35em;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: 0.2em;
+  margin-left: -1cm;
+  margin-right: calc(1cm - 0.35em);
+}
 main.bnf article section.entry li::after,
 main.bnf article .comment-editor li::after {
   content: "";
@@ -936,6 +972,18 @@ main.glit article section.entry li::selection,
 main.glit article .comment-editor li::selection {
   background-color: #ff0087;
 }
+main.glit article section.entry li::before,
+main.glit article .comment-editor li::before {
+  content: "";
+  display: inline-block;
+  width: 0.35em;
+  height: 0.35em;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: 0.2em;
+  margin-left: -1cm;
+  margin-right: calc(1cm - 0.35em);
+}
 main.glit article section.entry li::after,
 main.glit article .comment-editor li::after {
   content: "";
@@ -1061,6 +1109,17 @@ main.habitus article .comment-editor li {
 main.habitus article section.entry li::selection,
 main.habitus article .comment-editor li::selection {
   background-color: #c6af00;
+}
+main.habitus article section.entry li::before,
+main.habitus article .comment-editor li::before {
+  content: "";
+  display: inline-block;
+  width: 0.35em;
+  height: 0.35em;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: 0.2em;
+  margin-right: 0.4em;
 }
 main.habitus article section.entry li::after,
 main.habitus article .comment-editor li::after {
@@ -1193,6 +1252,18 @@ main.jenseits article section.entry li::selection,
 main.jenseits article .comment-editor li::selection {
   background-color: #ac8cff;
 }
+main.jenseits article section.entry li::before,
+main.jenseits article .comment-editor li::before {
+  content: "";
+  display: inline-block;
+  width: 0.35em;
+  height: 0.35em;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: 0.2em;
+  margin-left: -1cm;
+  margin-right: calc(1cm - 0.35em);
+}
 main.jenseits article section.entry li::after,
 main.jenseits article .comment-editor li::after {
   content: "";
@@ -1323,6 +1394,18 @@ main.tellyou article .comment-editor li {
 main.tellyou article section.entry li::selection,
 main.tellyou article .comment-editor li::selection {
   background-color: #009600;
+}
+main.tellyou article section.entry li::before,
+main.tellyou article .comment-editor li::before {
+  content: "";
+  display: inline-block;
+  width: 0.35em;
+  height: 0.35em;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: 0.2em;
+  margin-left: -1cm;
+  margin-right: calc(1cm - 0.35em);
 }
 main.tellyou article section.entry li::after,
 main.tellyou article .comment-editor li::after {
@@ -1715,6 +1798,17 @@ input[type=submit] {
 .comment.baseline .comment-editor li::selection {
   background-color: #ff0000;
 }
+.comment.baseline .comment-editor li::before {
+  content: "";
+  display: inline-block;
+  width: 0.35em;
+  height: 0.35em;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: 0.2em;
+  margin-left: -1cm;
+  margin-right: calc(1cm - 0.35em);
+}
 .comment.baseline .comment-editor li::after {
   content: "";
   display: block;
@@ -1798,6 +1892,17 @@ input[type=submit] {
 }
 .comment.bnf .comment-editor li::selection {
   background-color: #82babf;
+}
+.comment.bnf .comment-editor li::before {
+  content: "";
+  display: inline-block;
+  width: 0.35em;
+  height: 0.35em;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: 0.2em;
+  margin-left: -1cm;
+  margin-right: calc(1cm - 0.35em);
 }
 .comment.bnf .comment-editor li::after {
   content: "";
@@ -1883,6 +1988,17 @@ input[type=submit] {
 .comment.glit .comment-editor li::selection {
   background-color: #ff0087;
 }
+.comment.glit .comment-editor li::before {
+  content: "";
+  display: inline-block;
+  width: 0.35em;
+  height: 0.35em;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: 0.2em;
+  margin-left: -1cm;
+  margin-right: calc(1cm - 0.35em);
+}
 .comment.glit .comment-editor li::after {
   content: "";
   display: block;
@@ -1959,6 +2075,16 @@ input[type=submit] {
 }
 .comment.habitus .comment-editor li::selection {
   background-color: #c6af00;
+}
+.comment.habitus .comment-editor li::before {
+  content: "";
+  display: inline-block;
+  width: 0.35em;
+  height: 0.35em;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: 0.2em;
+  margin-right: 0.4em;
 }
 .comment.habitus .comment-editor li::after {
   content: "";
@@ -2044,6 +2170,17 @@ input[type=submit] {
 .comment.jenseits .comment-editor li::selection {
   background-color: #ac8cff;
 }
+.comment.jenseits .comment-editor li::before {
+  content: "";
+  display: inline-block;
+  width: 0.35em;
+  height: 0.35em;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: 0.2em;
+  margin-left: -1cm;
+  margin-right: calc(1cm - 0.35em);
+}
 .comment.jenseits .comment-editor li::after {
   content: "";
   display: block;
@@ -2127,6 +2264,17 @@ input[type=submit] {
 }
 .comment.tellyou .comment-editor li::selection {
   background-color: #009600;
+}
+.comment.tellyou .comment-editor li::before {
+  content: "";
+  display: inline-block;
+  width: 0.35em;
+  height: 0.35em;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: 0.2em;
+  margin-left: -1cm;
+  margin-right: calc(1cm - 0.35em);
 }
 .comment.tellyou .comment-editor li::after {
   content: "";
