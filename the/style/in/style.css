@@ -502,6 +502,10 @@ main article .comment-editor p {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+main article section.entry p::selection,
+main article .comment-editor p::selection {
+  background-color: #ff0000;
+}
 main article section.entry p::before,
 main article .comment-editor p::before {
   content: "";
@@ -509,10 +513,6 @@ main article .comment-editor p::before {
   padding: 0 1cm 0 0;
   margin-right: -1cm;
   background: #ff0087;
-}
-main article section.entry p::selection,
-main article .comment-editor p::selection {
-  background-color: #ff0000;
 }
 main article section.entry p:not(:last-of-type)::after,
 main article .comment-editor p:not(:last-of-type)::after {
@@ -524,6 +524,40 @@ main article .comment-editor p:not(:last-of-type)::after {
   padding: 0;
   margin: 0;
   background: none;
+}
+main article section.entry li,
+main article .comment-editor li {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #ff0087;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+main article section.entry li::selection,
+main article .comment-editor li::selection {
+  background-color: #ff0000;
+}
+main article section.entry li::after,
+main article .comment-editor li::after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+main article section.entry ul,
+main article .comment-editor ul,
+main article section.entry ol,
+main article .comment-editor ol {
+  margin: 0 0 14.4pt;
+  padding: 0;
+  list-style: none;
 }
 main article img {
   width: 100%;
@@ -599,6 +633,10 @@ main.baseline article .comment-editor p {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+main.baseline article section.entry p::selection,
+main.baseline article .comment-editor p::selection {
+  background-color: #ff0000;
+}
 main.baseline article section.entry p::before,
 main.baseline article .comment-editor p::before {
   content: "";
@@ -606,10 +644,6 @@ main.baseline article .comment-editor p::before {
   padding: 0 1cm 0 0;
   margin-right: -1cm;
   background: #ff0087;
-}
-main.baseline article section.entry p::selection,
-main.baseline article .comment-editor p::selection {
-  background-color: #ff0000;
 }
 main.baseline article section.entry p:not(:last-of-type)::after,
 main.baseline article .comment-editor p:not(:last-of-type)::after {
@@ -621,6 +655,40 @@ main.baseline article .comment-editor p:not(:last-of-type)::after {
   padding: 0;
   margin: 0;
   background: none;
+}
+main.baseline article section.entry li,
+main.baseline article .comment-editor li {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #ff0087;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+main.baseline article section.entry li::selection,
+main.baseline article .comment-editor li::selection {
+  background-color: #ff0000;
+}
+main.baseline article section.entry li::after,
+main.baseline article .comment-editor li::after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+main.baseline article section.entry ul,
+main.baseline article .comment-editor ul,
+main.baseline article section.entry ol,
+main.baseline article .comment-editor ol {
+  margin: 0 0 14.4pt;
+  padding: 0;
+  list-style: none;
 }
 main.baseline article img {
   width: 100%;
@@ -699,6 +767,10 @@ main.bnf article .comment-editor p {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+main.bnf article section.entry p::selection,
+main.bnf article .comment-editor p::selection {
+  background-color: #82babf;
+}
 main.bnf article section.entry p::before,
 main.bnf article .comment-editor p::before {
   content: "";
@@ -706,10 +778,6 @@ main.bnf article .comment-editor p::before {
   padding: 0 1cm 0 0;
   margin-right: -1cm;
   background: #ff0087;
-}
-main.bnf article section.entry p::selection,
-main.bnf article .comment-editor p::selection {
-  background-color: #82babf;
 }
 main.bnf article section.entry p:not(:last-of-type)::after,
 main.bnf article .comment-editor p:not(:last-of-type)::after {
@@ -721,6 +789,40 @@ main.bnf article .comment-editor p:not(:last-of-type)::after {
   padding: 0;
   margin: 0;
   background: none;
+}
+main.bnf article section.entry li,
+main.bnf article .comment-editor li {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #ff0087;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+main.bnf article section.entry li::selection,
+main.bnf article .comment-editor li::selection {
+  background-color: #82babf;
+}
+main.bnf article section.entry li::after,
+main.bnf article .comment-editor li::after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+main.bnf article section.entry ul,
+main.bnf article .comment-editor ul,
+main.bnf article section.entry ol,
+main.bnf article .comment-editor ol {
+  margin: 0 0 14.4pt;
+  padding: 0;
+  list-style: none;
 }
 main.bnf article img {
   width: 100%;
@@ -796,6 +898,10 @@ main.glit article .comment-editor p {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+main.glit article section.entry p::selection,
+main.glit article .comment-editor p::selection {
+  background-color: #ff0087;
+}
 main.glit article section.entry p::before,
 main.glit article .comment-editor p::before {
   content: "";
@@ -803,10 +909,6 @@ main.glit article .comment-editor p::before {
   padding: 0 1cm 0 0;
   margin-right: -1cm;
   background: #00aeef;
-}
-main.glit article section.entry p::selection,
-main.glit article .comment-editor p::selection {
-  background-color: #ff0087;
 }
 main.glit article section.entry p:not(:last-of-type)::after,
 main.glit article .comment-editor p:not(:last-of-type)::after {
@@ -818,6 +920,40 @@ main.glit article .comment-editor p:not(:last-of-type)::after {
   padding: 0;
   margin: 0;
   background: none;
+}
+main.glit article section.entry li,
+main.glit article .comment-editor li {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #00aeef;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+main.glit article section.entry li::selection,
+main.glit article .comment-editor li::selection {
+  background-color: #ff0087;
+}
+main.glit article section.entry li::after,
+main.glit article .comment-editor li::after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+main.glit article section.entry ul,
+main.glit article .comment-editor ul,
+main.glit article section.entry ol,
+main.glit article .comment-editor ol {
+  margin: 0 0 14.4pt;
+  padding: 0;
+  list-style: none;
 }
 main.glit article img {
   width: 88%;
@@ -911,6 +1047,40 @@ main.habitus article .comment-editor p:not(:last-of-type)::after {
   margin: 0;
   background: none;
 }
+main.habitus article section.entry li,
+main.habitus article .comment-editor li {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #0058ed;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+main.habitus article section.entry li::selection,
+main.habitus article .comment-editor li::selection {
+  background-color: #c6af00;
+}
+main.habitus article section.entry li::after,
+main.habitus article .comment-editor li::after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+main.habitus article section.entry ul,
+main.habitus article .comment-editor ul,
+main.habitus article section.entry ol,
+main.habitus article .comment-editor ol {
+  margin: 0 0 14.4pt;
+  padding: 0;
+  list-style: none;
+}
 main.habitus article img {
   width: 100%;
   margin-left: 0;
@@ -985,6 +1155,10 @@ main.jenseits article .comment-editor p {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+main.jenseits article section.entry p::selection,
+main.jenseits article .comment-editor p::selection {
+  background-color: #ac8cff;
+}
 main.jenseits article section.entry p::before,
 main.jenseits article .comment-editor p::before {
   content: "";
@@ -992,10 +1166,6 @@ main.jenseits article .comment-editor p::before {
   padding: 0 1cm 0 0;
   margin-right: -1cm;
   background: #ff5b00;
-}
-main.jenseits article section.entry p::selection,
-main.jenseits article .comment-editor p::selection {
-  background-color: #ac8cff;
 }
 main.jenseits article section.entry p:not(:last-of-type)::after,
 main.jenseits article .comment-editor p:not(:last-of-type)::after {
@@ -1007,6 +1177,40 @@ main.jenseits article .comment-editor p:not(:last-of-type)::after {
   padding: 0;
   margin: 0;
   background: none;
+}
+main.jenseits article section.entry li,
+main.jenseits article .comment-editor li {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #ff5b00;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+main.jenseits article section.entry li::selection,
+main.jenseits article .comment-editor li::selection {
+  background-color: #ac8cff;
+}
+main.jenseits article section.entry li::after,
+main.jenseits article .comment-editor li::after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+main.jenseits article section.entry ul,
+main.jenseits article .comment-editor ul,
+main.jenseits article section.entry ol,
+main.jenseits article .comment-editor ol {
+  margin: 0 0 14.4pt;
+  padding: 0;
+  list-style: none;
 }
 main.jenseits article img {
   width: 100%;
@@ -1082,6 +1286,10 @@ main.tellyou article .comment-editor p {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+main.tellyou article section.entry p::selection,
+main.tellyou article .comment-editor p::selection {
+  background-color: #009600;
+}
 main.tellyou article section.entry p::before,
 main.tellyou article .comment-editor p::before {
   content: "";
@@ -1089,10 +1297,6 @@ main.tellyou article .comment-editor p::before {
   padding: 0 1cm 0 0;
   margin-right: -1cm;
   background: #ac8cff;
-}
-main.tellyou article section.entry p::selection,
-main.tellyou article .comment-editor p::selection {
-  background-color: #009600;
 }
 main.tellyou article section.entry p:not(:last-of-type)::after,
 main.tellyou article .comment-editor p:not(:last-of-type)::after {
@@ -1104,6 +1308,40 @@ main.tellyou article .comment-editor p:not(:last-of-type)::after {
   padding: 0;
   margin: 0;
   background: none;
+}
+main.tellyou article section.entry li,
+main.tellyou article .comment-editor li {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #ac8cff;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+main.tellyou article section.entry li::selection,
+main.tellyou article .comment-editor li::selection {
+  background-color: #009600;
+}
+main.tellyou article section.entry li::after,
+main.tellyou article .comment-editor li::after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+main.tellyou article section.entry ul,
+main.tellyou article .comment-editor ul,
+main.tellyou article section.entry ol,
+main.tellyou article .comment-editor ol {
+  margin: 0 0 14.4pt;
+  padding: 0;
+  list-style: none;
 }
 main.tellyou article img {
   width: 100%;
@@ -1444,15 +1682,15 @@ input[type=submit] {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+.comment.baseline .comment-editor p::selection {
+  background-color: #ff0000;
+}
 .comment.baseline .comment-editor p::before {
   content: "";
   margin-left: -1cm;
   padding: 0 1cm 0 0;
   margin-right: -1cm;
   background: #ff0087;
-}
-.comment.baseline .comment-editor p::selection {
-  background-color: #ff0000;
 }
 .comment.baseline .comment-editor p:not(:last-of-type)::after {
   content: "";
@@ -1463,6 +1701,35 @@ input[type=submit] {
   padding: 0;
   margin: 0;
   background: none;
+}
+.comment.baseline .comment-editor li {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #ff0087;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.comment.baseline .comment-editor li::selection {
+  background-color: #ff0000;
+}
+.comment.baseline .comment-editor li::after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+.comment.baseline .comment-editor ul,
+.comment.baseline .comment-editor ol {
+  margin: 0 0 14.4pt;
+  padding: 0;
+  list-style: none;
 }
 .comment.bnf {
   background-color: #82babf;
@@ -1499,15 +1766,15 @@ input[type=submit] {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+.comment.bnf .comment-editor p::selection {
+  background-color: #82babf;
+}
 .comment.bnf .comment-editor p::before {
   content: "";
   margin-left: -1cm;
   padding: 0 1cm 0 0;
   margin-right: -1cm;
   background: #ff0087;
-}
-.comment.bnf .comment-editor p::selection {
-  background-color: #82babf;
 }
 .comment.bnf .comment-editor p:not(:last-of-type)::after {
   content: "";
@@ -1518,6 +1785,35 @@ input[type=submit] {
   padding: 0;
   margin: 0;
   background: none;
+}
+.comment.bnf .comment-editor li {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #ff0087;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.comment.bnf .comment-editor li::selection {
+  background-color: #82babf;
+}
+.comment.bnf .comment-editor li::after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+.comment.bnf .comment-editor ul,
+.comment.bnf .comment-editor ol {
+  margin: 0 0 14.4pt;
+  padding: 0;
+  list-style: none;
 }
 .comment.glit {
   background-color: #ff0087;
@@ -1554,15 +1850,15 @@ input[type=submit] {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+.comment.glit .comment-editor p::selection {
+  background-color: #ff0087;
+}
 .comment.glit .comment-editor p::before {
   content: "";
   margin-left: -1cm;
   padding: 0 1cm 0 0;
   margin-right: -1cm;
   background: #00aeef;
-}
-.comment.glit .comment-editor p::selection {
-  background-color: #ff0087;
 }
 .comment.glit .comment-editor p:not(:last-of-type)::after {
   content: "";
@@ -1573,6 +1869,35 @@ input[type=submit] {
   padding: 0;
   margin: 0;
   background: none;
+}
+.comment.glit .comment-editor li {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #00aeef;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.comment.glit .comment-editor li::selection {
+  background-color: #ff0087;
+}
+.comment.glit .comment-editor li::after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+.comment.glit .comment-editor ul,
+.comment.glit .comment-editor ol {
+  margin: 0 0 14.4pt;
+  padding: 0;
+  list-style: none;
 }
 .comment.habitus {
   background-color: #c6af00;
@@ -1622,6 +1947,35 @@ input[type=submit] {
   margin: 0;
   background: none;
 }
+.comment.habitus .comment-editor li {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #0058ed;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.comment.habitus .comment-editor li::selection {
+  background-color: #c6af00;
+}
+.comment.habitus .comment-editor li::after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+.comment.habitus .comment-editor ul,
+.comment.habitus .comment-editor ol {
+  margin: 0 0 14.4pt;
+  padding: 0;
+  list-style: none;
+}
 .comment.jenseits {
   background-color: #ac8cff;
   color: #ccc;
@@ -1657,15 +2011,15 @@ input[type=submit] {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+.comment.jenseits .comment-editor p::selection {
+  background-color: #ac8cff;
+}
 .comment.jenseits .comment-editor p::before {
   content: "";
   margin-left: -1cm;
   padding: 0 1cm 0 0;
   margin-right: -1cm;
   background: #ff5b00;
-}
-.comment.jenseits .comment-editor p::selection {
-  background-color: #ac8cff;
 }
 .comment.jenseits .comment-editor p:not(:last-of-type)::after {
   content: "";
@@ -1676,6 +2030,35 @@ input[type=submit] {
   padding: 0;
   margin: 0;
   background: none;
+}
+.comment.jenseits .comment-editor li {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #ff5b00;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.comment.jenseits .comment-editor li::selection {
+  background-color: #ac8cff;
+}
+.comment.jenseits .comment-editor li::after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+.comment.jenseits .comment-editor ul,
+.comment.jenseits .comment-editor ol {
+  margin: 0 0 14.4pt;
+  padding: 0;
+  list-style: none;
 }
 .comment.tellyou {
   background-color: #009600;
@@ -1712,15 +2095,15 @@ input[type=submit] {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+.comment.tellyou .comment-editor p::selection {
+  background-color: #009600;
+}
 .comment.tellyou .comment-editor p::before {
   content: "";
   margin-left: -1cm;
   padding: 0 1cm 0 0;
   margin-right: -1cm;
   background: #ac8cff;
-}
-.comment.tellyou .comment-editor p::selection {
-  background-color: #009600;
 }
 .comment.tellyou .comment-editor p:not(:last-of-type)::after {
   content: "";
@@ -1731,6 +2114,35 @@ input[type=submit] {
   padding: 0;
   margin: 0;
   background: none;
+}
+.comment.tellyou .comment-editor li {
+  display: inline;
+  color: inherit;
+  font-size: 12pt;
+  line-height: 1.35;
+  padding: 0;
+  background: #ac8cff;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.comment.tellyou .comment-editor li::selection {
+  background-color: #009600;
+}
+.comment.tellyou .comment-editor li::after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+.comment.tellyou .comment-editor ul,
+.comment.tellyou .comment-editor ol {
+  margin: 0 0 14.4pt;
+  padding: 0;
+  list-style: none;
 }
 .comments-parent-container {
   box-sizing: border-box;

@@ -318,6 +318,12 @@ footer {
 // ::after, 14.4pt tall and with no fill, puts that gap back, except
 // on the last p so a one-line comment has no extra tail.
 //
+// A <li> is the same highlighter, ragged the same way, but its
+// ::after is only a line break (height 0). The <ul>/<ol> takes the
+// paragraph gap instead, so items stack flush and the list as a
+// whole spaces like a p. List items do not hang: they sit at the
+// parent’s #paragraph-indent padding, so every line is inset.
+//
 // Most authors have a hanging first line (padding + negative
 // text-indent). text-indent does not apply to inlines, so
 // .hanging-highlight is a ::before that moves back by the set
@@ -345,8 +351,20 @@ footer {
   }
 }
 
+.prose-after(@height) {
+  &::after {
+    content: "";
+    display: block;
+    height: @height;
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background: none;
+  }
+}
+
 .prose-highlight(@author) {
-  @indent: #paragraph-indent[@@author];
   @highlight: #body-highlight-colour[@@author];
   display: inline;
   color: inherit;
@@ -356,19 +374,8 @@ footer {
   background: @highlight;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  .hanging-highlight(@indent, @highlight);
   &::selection {
     background-color: #body-background-colour[@@author];
-  }
-  &:not(:last-of-type)::after {
-    content: "";
-    display: block;
-    height: @paragraph-margin-bottom;
-    width: 0;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    background: none;
   }
 }
 
@@ -394,6 +401,19 @@ footer {
       }
       p {
         .prose-highlight(@author);
+        .hanging-highlight(@indent, #body-highlight-colour[@@author]);
+        &:not(:last-of-type) {
+          .prose-after(@paragraph-margin-bottom);
+        }
+      }
+      li {
+        .prose-highlight(@author);
+        .prose-after(0);
+      }
+      ul, ol {
+        margin: 0 0 @paragraph-margin-bottom;
+        padding: 0;
+        list-style: none;
       }
     }
     img {

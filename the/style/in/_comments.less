@@ -29,6 +29,19 @@
     padding-left: #paragraph-indent[@@author];
     p {
       .prose-highlight(@author);
+      .hanging-highlight(#paragraph-indent[@@author], #body-highlight-colour[@@author]);
+      &:not(:last-of-type) {
+        .prose-after(@paragraph-margin-bottom);
+      }
+    }
+    li {
+      .prose-highlight(@author);
+      .prose-after(0);
+    }
+    ul, ol {
+      margin: 0 0 @paragraph-margin-bottom;
+      padding: 0;
+      list-style: none;
     }
   }
 }
