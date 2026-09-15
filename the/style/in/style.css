@@ -1729,6 +1729,14 @@ input[type=submit] {
 #comments-open {
   margin-top: 10px;
 }
+#comment-form-reply {
+  font-family: ComputerModern, serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 12pt;
+  color: #000;
+  margin: 0 0 14.4pt;
+}
 .meta-field,
 .publish-field {
   display: flex;
