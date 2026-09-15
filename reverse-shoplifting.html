@@ -8,7 +8,7 @@
         <link rel="start" href="/and/" title="Home"/>
         <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/and/feed/us/recent_entries.xml"/>
 
-        <!-- <script type="text/javascript" src="/and/scripts/being/scripts.js"></script> -->
+        <script type="text/javascript" src="/and/scripts/being/script.js"></script>
         <title>I like tight pants and reverse shoplifting</title>
         
     <meta property="og:title dc:title" content="I like tight pants and reverse shoplifting"/>
@@ -24,7 +24,8 @@
     <meta property="fb:admins" content="1488294875"/>
 
     <meta property="mt:entry_basename" content="reverse-shoplifting" />
-    <meta property="dc:modified" content="2026-06-18T10:21:25.300343+02:00" />
+    <meta property="dc:modified" content="2026-08-27T23:51:16.029583+02:00" />
+    
 
     </head>
     <body>
@@ -39,13 +40,14 @@
         </header>
         <main class="glit article">
             <header id="author" class="selected-author"><img alt="glit" src="/and/assets/that/are/logotypes/of/author/glit-cropped.svg"/></header>
-            <article  property="mt:entry_id" content="104">
+            <article  property="mt:entry_id" content="104" data-published="true">
                 
     <h2>
         <span property="dc:created" content="2026-06-17T23:58:01.142014+02:00">June 17, 2026</span>
         <span property="mt:entry_title">Reverse Shoplifting</span>
     </h2>
-    <section class="entry"><figure><div><img alt="" style="" src="/and/assets/scaled/to/2560/3R9A2066.JPG"><br></div><figcaption><span>The person who repaired my washing machine told me these trillingsdempers / amortisseurs are useless.</span></figcaption></figure><p><span>It used to frustrate me no end, plundering the earth’s precious resources for a new human made object, then finding out I don’t need, but having lost the receipt or simply being too late to return it.</span></p><p><span>Now I’ve gotten to enjoy reverse shoplifting. I make sure no-one’s looking when I fish it out of my bag, and put it back on the shelf at exactly the right spot.</span></p></section>
+    
+    <section class="entry"><figure><div><img alt="" src="/and/assets/scaled/to/2560/3R9A2066.JPG" width="2560" height="1707"><br></div><figcaption><span>The person who repaired my washing machine told me these trillingsdempers / amortisseurs are useless.</span></figcaption></figure><span><p>It used to frustrate me no end, plundering the earth’s precious resources for a new human made object, then finding out I don’t need, but having lost the receipt or simply being too late to return it.</p><p>Now I’ve gotten to enjoy reverse shoplifting. I make sure no-one’s looking when I fish it out of my bag, and put it back on the shelf at exactly the right spot.</p></span></section>
     <h3 class="comments-header">1 Comments</h3>
     <div id="comments" class="comments">
         <div class="comments-content">
@@ -60,10 +62,10 @@
 </div>
 <p class="byline" >
   by <a property="dc:creator" href="http://i.liketightpants.net/authors#baseline">baseline</a> - <a href="/and/reverse-shoplifting#comment-728"><span property="dc:created" content="2026-06-18T08:41:07.030000+02:00">June 18, 2026 8:41 AM</span></a><br />
-  <a title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(728, 'baseline')">Reply</a>
+  <button type="button" title="Reply" href="javascript:void(0);" onclick="mtReplyCommentOnClick(728, 'baseline')">Reply</button>
 </p>
 </div>
-  <div class="comments-parent-container" style="margin-left: 20px;">
+  <div class="comments-parent-container baseline">
   
     
 
@@ -77,7 +79,7 @@
 
 
           
-            <a title="Reply" href="#reply">Reply</a>
+            <a title="Reply" href="#reply" onclick="mtReplyCommentOnClick('', '')">Reply</a>
         </div>
     </div><!-- / comments -->
 
@@ -85,15 +87,15 @@
             <nav id="authors">
                 <ul class="colourful-authors">
             
-                <li class="jenseits"><a href="">jenseits</a></li>
+                <li class="jenseits"><a href="/and/stories/by/jenseits">jenseits</a></li>
             
-                <li class="habitus"><a href="">habitus</a></li>
+                <li class="habitus"><a href="/and/stories/by/habitus">habitus</a></li>
             
-                <li class="tellyou"><a href="">tell  you</a></li>
+                <li class="tellyou"><a href="/and/stories/by/tellyou">tell  you</a></li>
             
-                <li class="baseline"><a href="">baseline</a></li>
+                <li class="baseline"><a href="/and/stories/by/baseline">baseline</a></li>
             
-                <li class="bnf"><a href="">bnf<span>bnf</span></a></li>
+                <li class="bnf"><a href="/and/stories/by/bnf">bnf<span>bnf</span></a></li>
             
                 </ul>
             
@@ -103,9 +105,7 @@
                 <pre style="display:none;">
                     {}
                 </pre>
-                <form method="post" action="/comments.cgi">
-                  <input type="hidden" name="csrfmiddlewaretoken" value="v9skA9Cb1fUPLzuVflpg2HIAheyFdYtUAXhyrbJbGxLGzlrFLiCpfbf0HwGsNMI4">
-
+                <form method="post" action="/comments.cgi" id="reply">
                     
 
                     <div style="display: none;"><!-- hidden fields normally not visual to user -->
@@ -117,10 +117,10 @@
 </textarea>
                             <p class="byline">You can use html tags to format your post: &lt;a&gt;, &lt;em&gt;, &lt;strong&gt;, &lt;b&gt;, &lt;i&gt;, &lt;br&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;blockquote&gt;</p>
                         </div>
-                        <!--<div id="comment-form-reply">
+                        <div id="comment-form-reply" style="display:none">
                             <input type="checkbox" id="comment-reply" name="comment_reply" value="" onclick="mtSetCommentParentID()" />
                             <label for="comment-reply" id="comment-reply-label"></label>
-                        </div>-->
+                        </div>
                         <div id="comments-open-data">
                             <div id="comment-form-name">
                                 <input type="text" name="author" size="30" required="required" placeholder="Name (required)" maxlength="300" id="id_author">
@@ -153,9 +153,10 @@
         <footer>
             <ul>
                 <li>and reverse shoplifting</li>
-                <li class="current">latest</li>
-                <li><a href="/and/we-meet-again">previous</a></li>
                 
+                <li ><a href="/and/smartphones-never-die">latest</a></li>
+                <li><a href="/and/we-meet-again">previous</a></li>
+                <li><a href="/and/smartphones-never-die">next</a></li>
                 <li><a href="/and/about">about</a></li>
                 <li >
                         <a href="/and/archives">index</a></li>
@@ -163,27 +164,6 @@
         </footer>
         <div class="background-canvas glit"></div>
         
-  <script>
-    const paragraphs = document.querySelectorAll("article p");
-
-    paragraphs.forEach(p => {
-      if (
-        p.childNodes.length === 1 &&
-        p.firstChild.nodeType === Node.ELEMENT_NODE &&
-        p.firstChild.tagName === "SPAN"
-      ) {
-        return;
-      }
-
-      const span = document.createElement("span");
-
-      while (p.firstChild) {
-        span.appendChild(p.firstChild);
-      }
-
-      p.appendChild(span);
-    });
-  </script>
 
     
 

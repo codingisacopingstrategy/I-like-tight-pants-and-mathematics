@@ -1,1 +1,1 @@
-<?php header('Location: /and/reverse-shoplifting'); ?>
+<?php header('Location: /and/smartphones-never-die'); ?>
