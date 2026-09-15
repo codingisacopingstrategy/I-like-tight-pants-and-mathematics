@@ -332,7 +332,8 @@ footer {
 // text-indent). text-indent does not apply to inlines, so
 // .hanging-highlight is a ::before that moves back by the set
 // indent and highlights that part too. habitus has indent 0;
-// the mixin does nothing then.
+// the mixin then clears ::before so an article author's hanging
+// highlight cannot leak into a habitus comment.
 //
 // We would normally put that indent padding on the p itself. On an
 // inline that would pad every line, including the first.
@@ -379,6 +380,14 @@ footer {
     padding: 0 @indent 0 0;
     margin-right: -@indent;
     background: @highlight;
+  }
+}
+.hanging-highlight(@indent, @highlight) when (@indent = 0) {
+  &::before {
+    content: none;
+    margin: 0;
+    padding: 0;
+    background: none;
   }
 }
 

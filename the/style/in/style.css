@@ -1084,6 +1084,13 @@ main.habitus article section.entry p::selection,
 main.habitus article .comment-editor p::selection {
   background-color: #c6af00;
 }
+main.habitus article section.entry p::before,
+main.habitus article .comment-editor p::before {
+  content: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
 main.habitus article section.entry p:not(:last-of-type)::after,
 main.habitus article .comment-editor p:not(:last-of-type)::after {
   content: "";
@@ -2092,6 +2099,12 @@ input[type=submit] {
 }
 .comment.habitus .comment-editor p::selection {
   background-color: #c6af00;
+}
+.comment.habitus .comment-editor p::before {
+  content: none;
+  margin: 0;
+  padding: 0;
+  background: none;
 }
 .comment.habitus .comment-editor p:not(:last-of-type)::after {
   content: "";
