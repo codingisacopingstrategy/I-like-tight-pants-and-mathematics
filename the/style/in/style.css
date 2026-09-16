@@ -1737,6 +1737,73 @@ input[type=submit] {
   color: #000;
   margin: 0 0 14.4pt;
 }
+.comment-squire-wrap {
+  margin-bottom: 14.4pt;
+}
+.comment-squire-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 6px;
+}
+.comment-squire-toolbar button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border-radius: 0.25cm;
+}
+.comment-squire-toolbar button.active,
+.comment-squire-toolbar button.prompting {
+  background: #D8127E;
+  color: #fff;
+}
+.comment-squire-toolbar-sep {
+  width: 1px;
+  align-self: stretch;
+  margin: 2px 4px;
+  background: #D8127E;
+}
+.comment-squire-link {
+  width: auto !important;
+  min-width: 8em;
+  flex: 1 1 8em;
+  margin: 0 !important;
+  padding: 0.15cm 0.3cm !important;
+}
+.comment-squire {
+  border: 2px solid #D8127E;
+  box-sizing: border-box;
+  font-family: ComputerModern, serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 12pt;
+  color: #000;
+  min-height: 8em;
+  border-radius: 1cm;
+  padding: 0.6cm;
+  background: #fff;
+  outline: none;
+}
+.comment-squire p {
+  margin: 0 0 0.6em;
+}
+.comment-squire p:last-child {
+  margin-bottom: 0;
+}
+textarea.comment-squire-source {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 .meta-field,
 .publish-field {
   display: flex;

@@ -1,5 +1,5 @@
 function commentTextField() {
-    return document.getElementById("id_text") || document.getElementById("comment-text");
+    return document.getElementById("comment-squire") || document.getElementById("id_text") || document.getElementById("comment-text");
 }
 
 function mtReplyCommentOnClick(parent_id, author) {
