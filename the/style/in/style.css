@@ -1658,6 +1658,7 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not([type=
 textarea {
   border-radius: 1cm;
   padding: 1cm;
+  font-style: normal;
 }
 input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not([type="file"]):not([type="date"]):not([type="time"]) {
   border-radius: 0.5cm;
@@ -1740,14 +1741,14 @@ input[type=submit] {
 .comment-squire-wrap {
   margin-bottom: 14.4pt;
 }
-.comment-squire-toolbar {
+.squire-toolbar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 2px;
   margin-bottom: 6px;
 }
-.comment-squire-toolbar button {
+.squire-toolbar button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1756,23 +1757,39 @@ input[type=submit] {
   padding: 0;
   border-radius: 0.25cm;
 }
-.comment-squire-toolbar button.active,
-.comment-squire-toolbar button.prompting {
+.squire-toolbar button.active,
+.squire-toolbar button.prompting {
   background: #D8127E;
   color: #fff;
 }
-.comment-squire-toolbar-sep {
+.squire-toolbar-sep {
   width: 1px;
   align-self: stretch;
   margin: 2px 4px;
   background: #D8127E;
 }
-.comment-squire-link {
+.squire-toolbar input.squire-link-url {
   width: auto !important;
   min-width: 8em;
   flex: 1 1 8em;
   margin: 0 !important;
   padding: 0.15cm 0.3cm !important;
+}
+.squire-html-source {
+  border: 2px solid #D8127E;
+  box-sizing: border-box;
+  font-family: ComputerModern, serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 12pt;
+  color: #000;
+  background: #fff;
+  font-style: normal;
+  font-family: ui-monospace, monospace;
+  min-height: 8em;
+  border-radius: 1cm;
+  padding: 0.6cm;
+  resize: vertical;
 }
 .comment-squire {
   border: 2px solid #D8127E;
@@ -1782,6 +1799,7 @@ input[type=submit] {
   font-style: italic;
   font-size: 12pt;
   color: #000;
+  font-style: normal;
   min-height: 8em;
   border-radius: 1cm;
   padding: 0.6cm;

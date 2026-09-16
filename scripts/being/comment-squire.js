@@ -3,8 +3,8 @@
     var surface = document.getElementById("comment-squire");
     var toolbar = document.getElementById("comment-squire-toolbar");
     var form = document.getElementById("reply");
-    var linkUrl = document.getElementById("comment-squire-link");
     if (!textarea || !surface || !toolbar || typeof Squire === "undefined") return;
+    if (typeof bindSquireToolbar !== "function") return;
 
     var initial = textarea.value || "";
     var firstCall = true;
@@ -26,6 +26,7 @@
 
     surface.hidden = false;
     toolbar.hidden = false;
+    toolbar.classList.add("visible");
     textarea.classList.add("comment-squire-source");
     textarea.setAttribute("tabindex", "-1");
     textarea.removeAttribute("required");
@@ -36,87 +37,13 @@
     surface.addEventListener("input", sync);
     if (form) form.addEventListener("submit", sync);
 
-    var formatActions = {
-        bold: { tag: "B", on: "bold", off: "removeBold" },
-        italic: { tag: "I", on: "italic", off: "removeItalic" }
-    };
-
-    function updateActive() {
-        Object.keys(formatActions).forEach(function (action) {
-            var btn = toolbar.querySelector('[data-action="' + action + '"]');
-            if (btn) btn.classList.toggle("active", editor.hasFormat(formatActions[action].tag));
-        });
-        var linkBtn = toolbar.querySelector('[data-action="link"]');
-        if (linkBtn) linkBtn.classList.toggle("active", editor.hasFormat("A"));
-    }
-
-    editor.addEventListener("pathChange", updateActive);
-    editor.addEventListener("select", updateActive);
-    editor.addEventListener("cursor", updateActive);
-
-    function closeLinkPrompt() {
-        if (!linkUrl) return;
-        linkUrl.hidden = true;
-        linkUrl.value = "";
-        var linkBtn = toolbar.querySelector('[data-action="link"]');
-        if (linkBtn) linkBtn.classList.remove("prompting");
-    }
-
-    function applyLink() {
-        var url = linkUrl ? linkUrl.value.trim() : "";
-        closeLinkPrompt();
-        if (url) editor.makeLink(url);
-        surface.focus();
-    }
-
-    toolbar.addEventListener("mousedown", function (e) {
-        if (e.target.closest("input")) return;
-        e.preventDefault();
+    bindSquireToolbar({
+        toolbar: toolbar,
+        htmlSource: document.getElementById("comment-squire-html"),
+        getEditor: function () { return editor; },
+        getRoot: function () { return surface; },
+        onSave: sync
     });
-
-    toolbar.addEventListener("click", function (e) {
-        var btn = e.target.closest("button[data-action]");
-        if (!btn) return;
-        var action = btn.dataset.action;
-        if (action === "bold" || action === "italic") {
-            var fmt = formatActions[action];
-            if (editor.hasFormat(fmt.tag)) editor[fmt.off]();
-            else editor[fmt.on]();
-        } else if (action === "link") {
-            if (linkUrl && !linkUrl.hidden) {
-                applyLink();
-                return;
-            }
-            if (linkUrl) {
-                linkUrl.hidden = false;
-                linkUrl.value = "";
-                btn.classList.add("prompting");
-                linkUrl.focus();
-            }
-            return;
-        } else if (action === "ul") {
-            editor.makeUnorderedList();
-        } else if (action === "ol") {
-            editor.makeOrderedList();
-        } else if (action === "quote") {
-            editor.increaseQuoteLevel();
-        }
-        surface.focus();
-        updateActive();
-    });
-
-    if (linkUrl) {
-        linkUrl.addEventListener("keydown", function (e) {
-            if (e.key === "Enter") {
-                e.preventDefault();
-                applyLink();
-            } else if (e.key === "Escape") {
-                e.preventDefault();
-                closeLinkPrompt();
-                surface.focus();
-            }
-        });
-    }
 
     window.commentSquireFocus = function () {
         surface.focus();

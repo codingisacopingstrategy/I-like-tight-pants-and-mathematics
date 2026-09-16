@@ -1,67 +1,13 @@
-.squire-toolbar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2px;
-    padding: 0 6px;
-    background: #1a1a1a;
-    border-bottom: 1px solid #333;
+#squire-toolbar {
     overflow: hidden;
     max-height: 0;
     opacity: 0;
-    transition: max-height .25s ease, opacity .2s ease, padding .25s ease;
+    margin-bottom: 0;
+    transition: max-height .25s ease, opacity .2s ease;
 }
-.squire-toolbar.visible {
+#squire-toolbar.visible {
     max-height: 60px;
     opacity: 1;
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
-.squire-toolbar button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    padding: 0;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    background: none;
-    color: #aaa;
-    cursor: pointer;
-    transition: background .12s, color .12s;
-}
-.squire-toolbar button:hover {
-    background: #333;
-    color: #eee;
-}
-.squire-toolbar button.active,
-.squire-toolbar button.prompting {
-    background: #444;
-    color: #fff;
-    border-color: #666;
-}
-.squire-toolbar-sep {
-    width: 1px;
-    align-self: stretch;
-    margin: 2px 4px;
-    background: #333;
-}
-.squire-toolbar input.squire-link-url:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not([type="file"]) {
-    box-sizing: border-box;
-    flex: 0 0 auto;
-    width: 220px;
-    height: 26px;
-    margin: 1px 4px;
-    padding: 0 8px;
-    border: 1px solid #555;
-    border-radius: 3px;
-    background: #111;
-    color: #eee;
-    font: 13px/24px ui-sans-serif, sans-serif;
-}
-.squire-toolbar input.squire-link-url:focus {
-    outline: none;
-    border-color: #888;
 }
 article section[contenteditable] a,
 .comment-editor[contenteditable] a {
@@ -73,25 +19,9 @@ article section[contenteditable] a,
     background-color: Highlight;
     color: HighlightText;
 }
-.squire-html-source {
-    box-sizing: border-box;
-    width: 100%;
+article > .squire-html-source {
     min-height: 300px;
-    padding: 12px;
-    margin: 0;
-    border: none;
-    border-bottom: 1px solid #333;
-    background: #111;
-    color: #ccc;
-    font-family: monospace;
-    font-size: 13px;
-    line-height: 1.5;
-    tab-size: 2;
-    resize: vertical;
-}
-.squire-html-source:focus {
-    outline: none;
-    background: #0d0d0d;
+    margin: 0 0 14.4pt;
 }
 
 header#site.save-pending > img,
