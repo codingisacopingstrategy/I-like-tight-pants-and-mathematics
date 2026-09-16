@@ -439,7 +439,7 @@ footer ul li + li::before {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background: url("etoile.svg") center / contain no-repeat;
+  background: url("ornamented/etoile.svg") center / contain no-repeat;
   margin-right: 5px;
 }
 footer ul a,
@@ -747,7 +747,7 @@ main.baseline article .entry_list a:visited {
   color: #0058ed;
 }
 main.baseline article .entry_list {
-  list-style-image: url('etoile-chaos.svg');
+  list-style-image: url('ornamented/etoile-chaos.svg');
 }
 .background-canvas.bnf {
   background-color: #82babf;
