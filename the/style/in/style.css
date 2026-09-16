@@ -1787,6 +1787,7 @@ input[type=submit] {
   font-style: normal;
   font-family: ui-monospace, monospace;
   min-height: 8em;
+  margin-bottom: 0;
   border-radius: 1cm;
   padding: 0.6cm;
   resize: vertical;

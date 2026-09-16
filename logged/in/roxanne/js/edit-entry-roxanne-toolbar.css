@@ -8,6 +8,7 @@
 #squire-toolbar.visible {
     max-height: 60px;
     opacity: 1;
+    margin-bottom: 6px;
 }
 article section[contenteditable] a,
 .comment-editor[contenteditable] a {
