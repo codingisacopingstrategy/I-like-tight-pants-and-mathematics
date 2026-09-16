@@ -18,13 +18,13 @@
     <meta property="og:image" content="https://i.liketightpants.net/and/assets/that/are/california/previews/of/smartphones-never-die.jpg"/>
     <meta property="og:site_name" content="I like tight pants and mathematics"/>
     <meta property="og:description dc:description"
-          content=""/>
+          content="In this workshop, we will try to bring these phones back to life, transplant their digital brains, and start experimenting with new artistic uses for these objects. We will use software developed by a community, such as PostmarketOS, think together about the place of electronic objects in our everyday lives and their long-term survival, and imagine alternative futures."/>
     <meta name="description"
-          content=""/>
+          content="In this workshop, we will try to bring these phones back to life, transplant their digital brains, and start experimenting with new artistic uses for these objects. We will use software developed by a community, such as PostmarketOS, think together about the place of electronic objects in our everyday lives and their long-term survival, and imagine alternative futures."/>
     <meta property="fb:admins" content="1488294875"/>
 
     <meta property="mt:entry_basename" content="smartphones-never-die" />
-    <meta property="dc:modified" content="2026-09-16T11:50:17.487662+02:00" />
+    <meta property="dc:modified" content="2026-09-16T14:40:59.184895+02:00" />
     <style id="entry-custom-css">article p:has(> .as-page) {
   max-width: none;
   padding: 0;
@@ -100,11 +100,11 @@ article .as-shape {
     <body>
         <header id="site">
             <div>i . like tight pants . net</div>
-            <img src="/and/the/style/in/etoile.svg"/>
+            <img src="/and/the/style/in/ornamented/etoile.svg"/>
             <div class="second-tightpants">i . like tight pants . net</div>
-            <img class="third-tightpants" src="/and/the/style/in/etoile.svg"/>
+            <img class="third-tightpants" src="/and/the/style/in/ornamented/etoile.svg"/>
             <div class="third-tightpants">i . like tight pants . net</div>
-            <img class="fourth-tightpants" src="/and/the/style/in/etoile.svg"/>
+            <img class="fourth-tightpants" src="/and/the/style/in/ornamented/etoile.svg"/>
             <div class="fourth-tightpants">i . like tight pants . net</div>
         </header>
         <main class="bnf article">
@@ -346,6 +346,7 @@ article .as-shape {
             
                 </ul>
             
+    
             <div class="comments-open" id="comments-open">
             <div class="comments-open-content">
                 <div id="comment-greeting"></div>
@@ -360,9 +361,40 @@ article .as-shape {
                         <input type="hidden" name="entry" value="105" id="id_entry">
                     </div>
                         <div id="comments-open-text">
-                            <textarea name="text" cols="40" rows="15" style="width:100%" required placeholder="Leave a comment" id="id_text">
+                            
+                            <div class="comment-squire-wrap">
+                                <div id="comment-squire" class="comment-squire" hidden></div>
+                                <textarea id="comment-squire-html" class="squire-html-source" hidden></textarea>
+                                <textarea name="text" cols="40" rows="15" style="width:100%" required placeholder="Leave a comment" id="id_text">
 </textarea>
-                            <p class="byline">You can use html tags to format your post: &lt;a&gt;, &lt;em&gt;, &lt;strong&gt;, &lt;b&gt;, &lt;i&gt;, &lt;br&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;blockquote&gt;</p>
+                                <div class="squire-toolbar" id="comment-squire-toolbar" hidden>
+                                    <button type="button" data-action="bold" title="Bold">
+                                        <svg width="16" height="16" viewBox="0 0 16 16"><path d="M4 2h4.5a3.5 3.5 0 0 1 2.3 6.1A3.5 3.5 0 0 1 9 14H4V2zm2 5h2.5a1.5 1.5 0 0 0 0-3H6v3zm0 2v3h3a1.5 1.5 0 0 0 0-3H6z" fill="currentColor"/></svg>
+                                    </button>
+                                    <button type="button" data-action="italic" title="Italic">
+                                        <svg width="16" height="16" viewBox="0 0 16 16"><path d="M6 2h6v2h-2.2l-2.6 8H9v2H3v-2h2.2l2.6-8H6V2z" fill="currentColor"/></svg>
+                                    </button>
+                                    <span class="squire-toolbar-sep"></span>
+                                    <button type="button" data-action="link" title="Link">
+                                        <svg width="16" height="16" viewBox="0 0 16 16"><path d="M7 8.5H5a3 3 0 1 1 0-6h2V1H5a4.5 4.5 0 0 0 0 9h2V8.5zM9 1v1.5h2a3 3 0 1 1 0 6H9V10h2a4.5 4.5 0 0 0 0-9H9zM4.5 5h7v1.5h-7V5z" fill="currentColor" transform="translate(0,2)"/></svg>
+                                    </button>
+                                    <input class="squire-link-url" type="url" hidden placeholder="https://" inputmode="url" autocomplete="off" spellcheck="false">
+                                    <span class="squire-toolbar-sep"></span>
+                                    <button type="button" data-action="ul" title="Bulleted list">
+                                        <svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 3.5A1 1 0 1 1 1 3.5 1 1 0 0 1 3 3.5zM5 3h10v1H5V3zm-2 5A1 1 0 1 1 1 8a1 1 0 0 1 2 0zM5 7.5h10v1H5v-1zM3 12.5A1 1 0 1 1 1 12.5a1 1 0 0 1 2 0zM5 12h10v1H5v-1z" fill="currentColor"/></svg>
+                                    </button>
+                                    <button type="button" data-action="ol" title="Numbered list">
+                                        <svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 2h1v3H2V2zm3 0h9v1H5V2zm0 5h9v1H5V7zm0 5h9v1H5v-1zM2 7h1.5v1H2.7L3.5 9.2 2.3 10H1l1.1-1.4L1 7.2V7zm.2 5H3v3H1.2v-.8h1V12z" fill="currentColor"/></svg>
+                                    </button>
+                                    <button type="button" data-action="quote" title="Quote">
+                                        <svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 4h5v5H5.2C5.6 11 7 11.6 7 13H4.5C3 11.5 2 9.5 2 7.5V4zm7 0h5v5h-1.8c.4 2 1.8 2.6 1.8 4H11.5C10 11.5 9 9.5 9 7.5V4z" fill="currentColor"/></svg>
+                                    </button>
+                                    <span class="squire-toolbar-sep"></span>
+                                    <button type="button" data-action="html" title="Edit HTML source">
+                                        <svg width="16" height="16" viewBox="0 0 16 16"><path d="M4.7 12.7L0 8l4.7-4.7 1.4 1.4L2.8 8l3.3 3.3-1.4 1.4zm6.6 0L16 8l-4.7-4.7-1.4 1.4L13.2 8l-3.3 3.3 1.4 1.4zM6 14l2.5-12h1.5L7.5 14H6z" fill="currentColor"/></svg>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div id="comment-form-reply" style="display:none">
                             <input type="checkbox" id="comment-reply" name="comment_reply" value="" onclick="mtSetCommentParentID()" />
@@ -390,7 +422,11 @@ article .as-shape {
                 </form>
             </div>
         </div>
+        <script type="text/javascript" src="/and/logged/in/roxanne/squire/squire-raw.js"></script>
+        <script type="text/javascript" src="/and/logged/in/roxanne/js/squire-toolbar.js"></script>
+        <script type="text/javascript" src="/and/scripts/being/comment-squire.js"></script>
 
+    
     
 
 
