@@ -1741,6 +1741,10 @@ input[type=submit] {
 .comment-squire-wrap {
   margin-bottom: 14.4pt;
 }
+.comment-squire-wrap > .squire-toolbar {
+  margin-top: 6px;
+  margin-bottom: 0;
+}
 .squire-toolbar {
   display: flex;
   flex-wrap: wrap;
