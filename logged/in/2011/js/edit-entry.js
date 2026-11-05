@@ -153,6 +153,69 @@ Entry.prototype.makeHash = Comment.prototype.makeHash = function(keys) {
     return result;
 };
 
+Entry.prototype.save = function(includeBody) {
+    var that = this;
+    var fields = ['author', 'title', 'slug', 'published', 'created_on', 'modified_on',
+                  'excerpt', 'preview_image'];
+    if (includeBody) {
+        fields.push('body');
+    }
+    var postData = this.makeHash(fields);
+
+    console.log(JSON.stringify(postData));
+
+    return jQuery.ajax({
+        url: "/api/entry/" + this.id() + "/",
+        type: "PATCH",
+        data: JSON.stringify(postData),
+        dataType: "json",
+        contentType: "application/json",
+        processData: false,
+        success: function(data) {
+            console.log("Succesfully updated " + that.title());
+        },
+        error: function(xhr, status, error) {
+            console.log("error!");
+            console.log(xhr, status, error);
+            },
+        });
+};
+
+Entry.prototype.publishNow = function() {
+    var that = this;
+    var btn = $("#publish-entry");
+    var label = btn.text();
+    var failed = function(xhr, status, error) {
+        console.log(xhr, status, error);
+        btn.prop("disabled", false).text(label);
+        alert("Publishing failed");
+    };
+
+    btn.prop("disabled", true).text("Publishing…");
+    $('[property="dc:modified"]').attr("content", new Date().toISOish() + '+01:00');
+
+    // body() reads the article back from the page, which adds the template’s whitespace
+    // and moves #aside. Sending that for an untouched article would rewrite it on every publish.
+    var edited = Aloha.getEditableById($("article").attr("id")).isModified();
+
+    this.save(edited).done(function() {
+        jQuery.ajax({
+            url: "/api/entry/" + that.id() + "/publish/",
+            type: "POST",
+            data: JSON.stringify({ update_all: $("#publish-all").is(":checked") }),
+            dataType: "json",
+            contentType: "application/json",
+            processData: false,
+            success: function() {
+                // Every save sends this checkbox, so an unticked one would unpublish
+                $('[property="mt:entry_status"]').prop("checked", true);
+                btn.prop("disabled", false).text("Save Modifications");
+            },
+            error: failed,
+        });
+    }).fail(failed);
+};
+
 Comment.prototype.update = function(created) {
     if (this.id()) {
         console.log("it is an existing Comment object");
@@ -243,27 +306,7 @@ var smartUpdate = function(jQueryEvent, eventArgument) {
         
         if (entryId) {
             console.log("it is an existing Entry object");
-            
-            var postData = entry.makeHash(['author', 'title', 'slug', 'published', 'created_on', 'modified_on',
-                                           'excerpt', 'preview_image', 'body'] );
-            
-            console.log(JSON.stringify(postData));
-            
-            var request = jQuery.ajax({
-                url: "/api/entry/" + entryId + "/",
-                type: "PATCH",
-                data: JSON.stringify(postData),
-                dataType: "json",
-                contentType: "application/json",
-                processData: false,
-                success: function(data) {
-                    console.log("Succesfully updated " + entry.title());
-                },
-                error: function(xhr, status, error) {
-                    console.log("error!");
-                    console.log(xhr, status, error);
-                    },
-                });
+            entry.save(true);
         } else {
             
             console.log('creating a new entry object');

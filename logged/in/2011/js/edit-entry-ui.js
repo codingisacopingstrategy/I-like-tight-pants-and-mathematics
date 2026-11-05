@@ -55,4 +55,8 @@ $(function() {
         $('meta[property~="og:image"]').attr("content", thumbPrompt);
     });
 
+    $("#publish-entry").on("click", function(e) {
+        entry.publishNow();
+    });
+
 });
