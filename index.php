@@ -1,1 +1,0 @@
-<?php header('Location: /and/smartphones-never-die'); ?>
