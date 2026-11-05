@@ -1035,7 +1035,7 @@ main.glit article .entry_list a:active,
 main.glit article .entry_list a:visited {
   color: #c6af00;
 }
-main.glit a {
+main.glit article a {
   font-family: QTSchoolCentury;
 }
 .background-canvas.habitus {
